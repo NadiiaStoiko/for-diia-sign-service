@@ -2100,7 +2100,8 @@ input:checked ~ .HelpPanelItemContent {
 };
 		var LIBRARY_HOST_LOCALIZATION = null;
 		var LIBRARY_VERSION = "2025.08.25 13:00";
-		var STATISTICS_URL = "./Server/StatisticsController.php";
+		// var STATISTICS_URL = "./Server/StatisticsController.php"
+		var STATISTICS_URL = "";
 
 		var scripts = [
 			"js/lib/Blob.min.js",
@@ -2114,7 +2115,7 @@ input:checked ~ .HelpPanelItemContent {
 
 		scripts.forEach(function(src) {
 			var script = document.createElement('script');
-			script.src = src + "?v=2025.08.25 13:00";
+			script.src = src;
 			script.async = false;
 			document.head.appendChild(script);
 		});
