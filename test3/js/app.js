@@ -20954,6 +20954,7 @@
                 t = 3;
             }
             this.m_curStep = t;
+            this.m_maxSteps = 4;
             var n = s.format(p(o.LABEL_STEP), t, this.m_maxSteps);
             $("#stepLabel").text(n);
           }),
