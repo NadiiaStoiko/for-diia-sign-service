@@ -22,12 +22,12 @@ function getURLParameter(url, name, defaultValue) {
 	return param;
 }
 
-var EU_MAX_DATA_SIZE_MB = ((typeof EU_MAX_DATA_SIZE_MB) != 'undefined') ? 
+var EU_MAX_DATA_SIZE_MB = ((typeof EU_MAX_DATA_SIZE_MB) != 'undefined') ?
 	EU_MAX_DATA_SIZE_MB : parseInt(
 		getURLParameter(location.href, 'maxDataSize', '5'));
-var EU_LOG_EVENTS = getURLParameter(location.href, 'log', "false") == "true" ? 
+var EU_LOG_EVENTS = getURLParameter(location.href, 'log', "false") == "true" ?
 	true : false;
-var EU_DEBUG = getURLParameter(location.href, 'debug', "false") == "true" ? 
+var EU_DEBUG = getURLParameter(location.href, 'debug', "false") == "true" ?
 	true : false;
 
 //===============================================================================
@@ -48,7 +48,7 @@ if (!Uint8Array.prototype.slice) {
 //=============================================================================
 
 var EU_ONE_MB = 1024 * 1024;
-var EU_MAX_DATA_SIZE_MB = ((typeof EU_MAX_DATA_SIZE_MB) != 'undefined') ? 
+var EU_MAX_DATA_SIZE_MB = ((typeof EU_MAX_DATA_SIZE_MB) != 'undefined') ?
 	EU_MAX_DATA_SIZE_MB : 5;
 
 var EU_MAX_P7S_CONTAINER_SIZE = 100 * EU_ONE_MB;
@@ -371,32 +371,32 @@ var EU_ENCODE_ECDSA_SIGN_VALUE_CONTEXT_PARAMETER = "EncodeECDSASignValue";
 
 //=============================================================================
 
-var CP1251Table = {0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 9, 
+var CP1251Table = {0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 9,
 	10: 10, 11: 11, 12: 12, 13: 13, 14: 14, 15: 15, 16: 16, 17: 17, 18: 18, 19: 19,
-	20: 20, 21: 21, 22: 22, 23: 23, 24: 24, 25: 25, 26: 26, 27: 27, 28: 28, 29: 29, 
-	30: 30, 31: 31, 32: 32, 33: 33, 34: 34, 35: 35, 36: 36, 37: 37, 38: 38, 39: 39, 
-	40: 40, 41: 41, 42: 42, 43: 43, 44: 44, 45: 45, 46: 46, 47: 47, 48: 48, 49: 49, 
+	20: 20, 21: 21, 22: 22, 23: 23, 24: 24, 25: 25, 26: 26, 27: 27, 28: 28, 29: 29,
+	30: 30, 31: 31, 32: 32, 33: 33, 34: 34, 35: 35, 36: 36, 37: 37, 38: 38, 39: 39,
+	40: 40, 41: 41, 42: 42, 43: 43, 44: 44, 45: 45, 46: 46, 47: 47, 48: 48, 49: 49,
 	50: 50, 51: 51, 52: 52, 53: 53, 54: 54, 55: 55, 56: 56, 57: 57, 58: 58, 59: 59,
-	60: 60, 61: 61, 62: 62, 63: 63, 64: 64, 65: 65, 66: 66, 67: 67, 68: 68, 69: 69, 
-	70: 70, 71: 71, 72: 72, 73: 73, 74: 74, 75: 75, 76: 76, 77: 77, 78: 78, 79: 79, 
+	60: 60, 61: 61, 62: 62, 63: 63, 64: 64, 65: 65, 66: 66, 67: 67, 68: 68, 69: 69,
+	70: 70, 71: 71, 72: 72, 73: 73, 74: 74, 75: 75, 76: 76, 77: 77, 78: 78, 79: 79,
 	80: 80, 81: 81, 82: 82, 83: 83, 84: 84, 85: 85, 86: 86, 87: 87, 88: 88, 89: 89,
-	90: 90, 91: 91, 92: 92, 93: 93, 94: 94, 95: 95, 96: 96, 97: 97, 98: 98, 99: 99, 
-	100: 100, 101: 101, 102: 102, 103: 103, 104: 104, 105: 105, 106: 106, 107: 107, 108: 108, 109: 109, 
-	110: 110, 111: 111, 112: 112, 113: 113, 114: 114, 115: 115, 116: 116, 117: 117, 118: 118, 119: 119, 
-	120: 120, 121: 121, 122: 122, 123: 123, 124: 124, 125: 125, 126: 126, 127: 127, 1027: 129, 8225: 135, 
-	1046: 198, 8222: 132, 1047: 199, 1168: 165, 1048: 200, 1113: 154, 1049: 201, 1045: 197, 1050: 202, 
-	1028: 170, 160: 160, 1040: 192, 1051: 203, 164: 164, 166: 166, 167: 167, 169: 169, 171: 171, 172: 172, 
-	173: 173, 174: 174, 1053: 205, 176: 176, 177: 177, 1114: 156, 181: 181, 182: 182, 183: 183, 8221: 148, 
-	187: 187, 1029: 189, 1056: 208, 1057: 209, 1058: 210, 8364: 136, 1112: 188, 1115: 158, 1059: 211, 
-	1060: 212, 1030: 178, 1061: 213, 1062: 214, 1063: 215, 1116: 157, 1064: 216, 1065: 217, 1031: 175, 
-	1066: 218, 1067: 219, 1068: 220, 1069: 221, 1070: 222, 1032: 163, 8226: 149, 1071: 223, 1072: 224, 
-	8482: 153, 1073: 225, 8240: 137, 1118: 162, 1074: 226, 1110: 179, 8230: 133, 1075: 227, 1033: 138, 
-	1076: 228, 1077: 229, 8211: 150, 1078: 230, 1119: 159, 1079: 231, 1042: 194, 1080: 232, 1034: 140, 
-	1025: 168, 1081: 233, 1082: 234, 8212: 151, 1083: 235, 1169: 180, 1084: 236, 1052: 204, 1085: 237, 
-	1035: 142, 1086: 238, 1087: 239, 1088: 240, 1089: 241, 1090: 242, 1036: 141, 1041: 193, 1091: 243, 
-	1092: 244, 8224: 134, 1093: 245, 8470: 185, 1094: 246, 1054: 206, 1095: 247, 1096: 248, 8249: 139, 
+	90: 90, 91: 91, 92: 92, 93: 93, 94: 94, 95: 95, 96: 96, 97: 97, 98: 98, 99: 99,
+	100: 100, 101: 101, 102: 102, 103: 103, 104: 104, 105: 105, 106: 106, 107: 107, 108: 108, 109: 109,
+	110: 110, 111: 111, 112: 112, 113: 113, 114: 114, 115: 115, 116: 116, 117: 117, 118: 118, 119: 119,
+	120: 120, 121: 121, 122: 122, 123: 123, 124: 124, 125: 125, 126: 126, 127: 127, 1027: 129, 8225: 135,
+	1046: 198, 8222: 132, 1047: 199, 1168: 165, 1048: 200, 1113: 154, 1049: 201, 1045: 197, 1050: 202,
+	1028: 170, 160: 160, 1040: 192, 1051: 203, 164: 164, 166: 166, 167: 167, 169: 169, 171: 171, 172: 172,
+	173: 173, 174: 174, 1053: 205, 176: 176, 177: 177, 1114: 156, 181: 181, 182: 182, 183: 183, 8221: 148,
+	187: 187, 1029: 189, 1056: 208, 1057: 209, 1058: 210, 8364: 136, 1112: 188, 1115: 158, 1059: 211,
+	1060: 212, 1030: 178, 1061: 213, 1062: 214, 1063: 215, 1116: 157, 1064: 216, 1065: 217, 1031: 175,
+	1066: 218, 1067: 219, 1068: 220, 1069: 221, 1070: 222, 1032: 163, 8226: 149, 1071: 223, 1072: 224,
+	8482: 153, 1073: 225, 8240: 137, 1118: 162, 1074: 226, 1110: 179, 8230: 133, 1075: 227, 1033: 138,
+	1076: 228, 1077: 229, 8211: 150, 1078: 230, 1119: 159, 1079: 231, 1042: 194, 1080: 232, 1034: 140,
+	1025: 168, 1081: 233, 1082: 234, 8212: 151, 1083: 235, 1169: 180, 1084: 236, 1052: 204, 1085: 237,
+	1035: 142, 1086: 238, 1087: 239, 1088: 240, 1089: 241, 1090: 242, 1036: 141, 1041: 193, 1091: 243,
+	1092: 244, 8224: 134, 1093: 245, 8470: 185, 1094: 246, 1054: 206, 1095: 247, 1096: 248, 8249: 139,
 	1097: 249, 1098: 250, 1044: 196, 1099: 251, 1111: 191, 1055: 207, 1100: 252, 1038: 161, 8220: 147,
-	1101: 253, 8250: 155, 1102: 254, 8216: 145, 1103: 255, 1043: 195, 1105: 184, 1039: 143, 1026: 128, 
+	1101: 253, 8250: 155, 1102: 254, 8216: 145, 1103: 255, 1043: 195, 1105: 184, 1039: 143, 1026: 128,
 	1106: 144, 8218: 130, 1107: 131, 8217: 146, 1108: 186, 1109: 190};
 
 var UTF8Table = unescape(
@@ -443,22 +443,22 @@ EU_ERRORS_STRINGS[EU_EN_LANG] = EU_ERRORS_STRINGS_EN;
 
 //=============================================================================
 
-eu_wait = function(first){ 
-	return new (function(){ 
+eu_wait = function(first){
+	return new (function(){
 		var self = this;
 		var callback = function(){
 			var args;
 			if(self.deferred.length) {
-				args = [].slice.call(arguments); 
-				args.unshift(callback); 
-				self.deferred[0].apply(self, args); 
-				self.deferred.shift(); 
+				args = [].slice.call(arguments);
+				args.unshift(callback);
+				self.deferred[0].apply(self, args);
+				self.deferred.shift();
 			}
 		};
 		this.deferred = [];
 		this.eu_wait = function(run){
-			this.deferred.push(run); 
-			return self; 
+			this.deferred.push(run);
+			return self;
 		};
 		first(callback);
 	});
@@ -487,13 +487,13 @@ function StringToArray(s) {
 
 function ArrayToString(arr) {
 	var ret = [];
-	
+
 	var length = arr.length;
-	if (length > 0 && 
+	if (length > 0 &&
 		arr[length - 1] == 0) {
 		length -= 1;
 	}
-	
+
 	for (var i = 0; i < length; i++) {
 		var chr = arr[i];
 		if (chr > 0xFF) {
@@ -555,14 +555,14 @@ function CP1251PointerToUTF8(ptr) {
 	var code2char = function(code) {
 		if(code >= 0xC0 && code <= 0xFF)
 			return String.fromCharCode(code - 0xC0 + 0x0410);
-		if(code >= 0x80 && code <= 0xBF) 
+		if(code >= 0x80 && code <= 0xBF)
 			return UTF8Table.charAt(code - 0x80);
 		return String.fromCharCode(code);
 	};
 
 	while (1) {
 		t = HEAPU8[(((ptr)+(i))|0)];
-		if (t == 0) 
+		if (t == 0)
 			break;
 		ret += code2char(t);
 		i++;
@@ -582,7 +582,7 @@ function UTF8PointerToUTF8(ptr) {
 
 	while (1) {
 		t = HEAPU8[(((ptr)+(i))|0)];
-		if (t == 0) 
+		if (t == 0)
 			break;
 		ret.push(t);
 		i++;
@@ -606,12 +606,12 @@ function StringToUTF16LEArray(str, zero, normalize) {
 		L.push(c & 0xFF);
 		L.push((c & 0xFF00) >> 8);
 	}
-	
+
 	if (zero) {
 		L.push(0);
 		L.push(0);
 	}
-	
+
 	return L;
 }
 
@@ -624,14 +624,14 @@ function UTF16LEArrayToString(arr) {
 		return null;
 
 	length = arr.length;
-	if (length > 0 && 
-		arr[length - 2] == 0 && 
+	if (length > 0 &&
+		arr[length - 2] == 0 &&
 		arr[length - 1] == 0) {
 		length -= 2;
 	}
-		
+
 	while (i < length) {
-		ret += String.fromCharCode(arr[i] | (arr[i+1] << 8)); 
+		ret += String.fromCharCode(arr[i] | (arr[i+1] << 8));
 		i += 2;
 	}
 
@@ -645,10 +645,10 @@ var StringEncoder = function (charset, javaCompliant) {
 
 	this.charset = charset;
 	this.javaCompliant = javaCompliant;
-	
+
 	if (!StringEncoder.isSupported(charset))
 		throw Error("String charset not supported");
-	
+
 	if (charset == "UTF-16LE") {
 		this.encode = function(str) {
 			return StringToUTF16LEArray(str, !javaCompliant);
@@ -669,7 +669,7 @@ var StringEncoder = function (charset, javaCompliant) {
 };
 
 StringEncoder.isSupported = function(charset) {
-	if (charset != "UTF-16LE" && 
+	if (charset != "UTF-16LE" &&
 		charset != "UTF-8") {
 		return false;
 	}
@@ -683,7 +683,7 @@ var LibraryStringEncoder = function(charset) {
 	if (charset == EU_CP_ACP_ENCODING)
 		charset = EU_CP_1251_ENCODING;
 
-	if (charset != EU_CP_1251_ENCODING && 
+	if (charset != EU_CP_1251_ENCODING &&
 			charset != EU_UTF8_ENCODING) {
 		throw Error("Library charset not supported");
 	}
@@ -697,7 +697,7 @@ LibraryStringEncoder.prototype.encode = function(val) {
 	else if (this.charset == EU_UTF8_ENCODING)
 		return UTF8ToUTF8Array(val, false);
 	else
-		throw Error("Library charset not supported"); 
+		throw Error("Library charset not supported");
 };
 
 LibraryStringEncoder.prototype.decodePointer = function(val) {
@@ -706,7 +706,7 @@ LibraryStringEncoder.prototype.decodePointer = function(val) {
 	else if (this.charset == EU_UTF8_ENCODING)
 		return UTF8PointerToUTF8(val);
 	else
-		throw Error("Library charset not supported"); 
+		throw Error("Library charset not supported");
 };
 
 //=============================================================================
@@ -727,8 +727,8 @@ function intArrayFromStrings(strArr, encoder) {
 
 	var resArray = [];
 	for (var i = 0; i < strArr.length; i++) {
-		var tmpStrArr = encoder ? 
-			encoder.encode(strArr[i]) : 
+		var tmpStrArr = encoder ?
+			encoder.encode(strArr[i]) :
 			UTF8ToCP1251Array(strArr[i]);
 		resArray = resArray.concat(tmpStrArr);
 	}
@@ -783,8 +783,8 @@ function ClassSetDefaultValues(classPtr, variables) {
 	for (var key in variables) {
 		if (variables[key] == 'string') {
 			classPtr[key] = "";
-		} else if (variables[key] == 'word' || 
-			variables[key] == 'int' || 
+		} else if (variables[key] == 'word' ||
+			variables[key] == 'int' ||
 			variables[key] == 'long') {
 			classPtr[key] = 0;
 		} else if (variables[key] == 'boolean') {
@@ -800,7 +800,7 @@ function StructureToClass(classPtr, structPtr, variables, encoder) {
 		for (var key in variables) {
 			if (variables[key] == 'string') {
 				var tmpPtr = Module.getValue(structPtr, "i8*");
-				classPtr[key] = encoder ? 
+				classPtr[key] = encoder ?
 					encoder.decodePointer(tmpPtr) :
 					CP1251PointerToUTF8(tmpPtr);
 				structPtr+=EU_PTR_SIZE;
@@ -830,18 +830,18 @@ function StructureToClass(classPtr, structPtr, variables, encoder) {
 					structPtr, "i32") == EU_TRUE) ? true : false;
 				timeInfo.isTimeStamp = (Module.getValue(
 					structPtr + 4, "i32") == EU_TRUE) ? true : false;
-				timeInfo.time = timeInfo.isTimeAvail ? 
+				timeInfo.time = timeInfo.isTimeAvail ?
 					SystemTimeToDate(structPtr + 8) : null;
 
 				classPtr[key] = timeInfo;
 				structPtr += EU_TIME_INFO_SIZE;
 			} else {
-				console.error("Invalid type: " + variables[key] + 
+				console.error("Invalid type: " + variables[key] +
 					"for key: " + key);
 			}
 		}
 	} catch(e) {
-		console.error("Error: function: %s class: %s ex: %s", 
+		console.error("Error: function: %s class: %s ex: %s",
 			"StructureToClass", classPtr.className, e.toString());
 		classPtr.isFilled = false;
 	}
@@ -852,7 +852,7 @@ function StructureToClass(classPtr, structPtr, variables, encoder) {
 var MakeClass = function() {
 	return function( args ) {
 		if( this instanceof arguments.callee ) {
-			if( typeof this.__construct == "function" ) 
+			if( typeof this.__construct == "function" )
 				this.__construct.apply( this, args );
 		}
 		else return new arguments.callee( arguments );
@@ -1302,7 +1302,7 @@ var EndUserCertificateInfoFields = {
 	"isFilled": "boolean",
 
 	"version": "long",
-	
+
 	"issuer" : "string",
 	"issuerCN" : "string",
 	"serial" : "string",
@@ -1678,50 +1678,50 @@ var EndUserCertificateInfoExFields = {
 	"subjDNS" : "string",
 	"subjEDRPOUCode" : "string",
 	"subjDRFOCode" : "string",
-	
+
 	"subjNBUCode" : "string",
 	"subjSPFMCode" : "string",
 	"subjOCode" : "string",
 	"subjOUCode" : "string",
 	"subjUserCode" : "string",
-	
+
 	"certBeginTime" : "time",
 	"certEndTime" : "time",
 	"isPrivKeyTimesAvail" : "boolean",
 	"privKeyBeginTime" : "time",
 	"privKeyEndTime" : "time",
-	
+
 	"publicKeyBits" : "long",
 	"publicKey" : "string",
 	"publicKeyID" : "string",
-	
+
 	"issuerPublicKeyID" : "string",
-	
+
 	"keyUsage" : "string",
 	"extKeyUsages" : "string",
 	"policies" : "string",
-	
+
 	"crlDistribPoint1" : "string",
 	"crlDistribPoint2" : "string",
-	
+
 	"isPowerCert" : "boolean",
-	
+
 	"isSubjTypeAvail" : "boolean",
 	"isSubjCA" : "boolean",
 	"chainLength" : "int",
-	
+
 	"UPN" : "string",
-	
+
 	"publicKeyType" : "long",
 	"keyUsageType" : "long",
-	
+
 	"RSAModul" : "string",
 	"RSAExponent" : "string",
-	
+
 	"OCSPAccessInfo" : "string",
 	"issuerAccessInfo" : "string",
 	"TSPAccessInfo" : "string",
-	
+
 	"isLimitValueAvailable" : "boolean",
 	"limitValue" : "long",
 	"limitValueCurrency" : "string",
@@ -2141,7 +2141,7 @@ var EndUserRequestInfoFields = {
 	"version": "long",
 
 	"isSimple": "boolean",
-	
+
 	"subject" : "string",
 	"subjCN" : "string",
 	"subjOrg" : "string",
@@ -2161,24 +2161,24 @@ var EndUserRequestInfoFields = {
 	"subjOCode" : "string",
 	"subjOUCode" : "string",
 	"subjUserCode" : "string",
-	
+
 	"isCertTimesAvail" : "boolean",
 	"certBeginTime" : "time",
 	"certEndTime" : "time",
 	"isPrivKeyTimesAvail" : "boolean",
 	"privKeyBeginTime" : "time",
 	"privKeyEndTime" : "time",
-	
+
 	"publicKeyType" : "long",
-	
+
 	"publicKeyBits" : "long",
 	"publicKey" : "string",
 	"RSAModul" : "string",
 	"RSAExponent" : "string",
 	"publicKeyID" : "string",
-	
+
 	"extKeyUsages" : "string",
-	
+
 	"crlDistribPoint1" : "string",
 	"crlDistribPoint2" : "string",
 
@@ -2911,27 +2911,27 @@ function(issuerCN, address, port) {
 
 var EndUserInfoFields = {
 	'version': 'long',
-	'commonName': 'string', 
-	'locality': 'string', 
-	'state': 'string', 
-	'organization': 'string', 
-	'orgUnit': 'string', 
-	'title': 'string', 
-	'street': 'string', 
-	'phone': 'string', 
-	'surname': 'string', 
-	'givenname': 'string', 
-	'EMail': 'string', 
-	'DNS': 'string', 
-	'EDRPOUCode': 'string', 
-	'DRFOCode': 'string', 
-	'NBUCode': 'string', 
-	'SPFMCode': 'string', 
-	'OCode': 'string', 
-	'OUCode': 'string', 
-	'userCode': 'string', 
-	'UPN': 'string', 
-	'UNZR': 'string', 
+	'commonName': 'string',
+	'locality': 'string',
+	'state': 'string',
+	'organization': 'string',
+	'orgUnit': 'string',
+	'title': 'string',
+	'street': 'string',
+	'phone': 'string',
+	'surname': 'string',
+	'givenname': 'string',
+	'EMail': 'string',
+	'DNS': 'string',
+	'EDRPOUCode': 'string',
+	'DRFOCode': 'string',
+	'NBUCode': 'string',
+	'SPFMCode': 'string',
+	'OCode': 'string',
+	'OUCode': 'string',
+	'userCode': 'string',
+	'UPN': 'string',
+	'UNZR': 'string',
 	'country': 'string'
 };
 
@@ -3279,7 +3279,7 @@ var EndUserParamsFields = {
 
 //-----------------------------------------------------------------------------
 
-var EndUserParams = function(pParams) { 
+var EndUserParams = function(pParams) {
 	SetClassID('EndUserParams', '1.0.1', this);
 
 	ClassSetDefaultValues(this, EndUserParamsFields);
@@ -3298,13 +3298,13 @@ var EndUserParams = function(pParams) {
 			pCurPtr += 4;
 			return val;
 		};
-		
+
 		var GetString = function(maxLength) {
 			var val = CP1251PointerToUTF8(pCurPtr);
 			pCurPtr += maxLength;
 			return val;
 		};
-		
+
 		this.SN = GetInt();
 		this.commonName = GetString(EU_COMMON_NAME_MAX_LENGTH);
 		this.locality = GetString(EU_LOCALITY_MAX_LENGTH);
@@ -3747,7 +3747,7 @@ var EndUserContextFields = {
 
 //-----------------------------------------------------------------------------
 
-var EndUserContext = function(context) { 
+var EndUserContext = function(context) {
 	SetClassID('EndUserContext', '1.0.1', this);
 
 	this.context = context;
@@ -3780,7 +3780,7 @@ var EndUserPrivateKeyContextFields = {
 
 //-----------------------------------------------------------------------------
 
-var EndUserPrivateKeyContext = function(context, ownerInfo) { 
+var EndUserPrivateKeyContext = function(context, ownerInfo) {
 	SetClassID('EndUserPrivateKeyContext', '1.0.1', this);
 
 	this.context = context;
@@ -4062,7 +4062,7 @@ var EndUserCryptoHeaderFields = {
 
 //-----------------------------------------------------------------------------
 
-var EndUserCryptoHeader = function(caType, 
+var EndUserCryptoHeader = function(caType,
 	headerType, headerSize, cryptoData) {
 	SetClassID('EndUserCryptoHeader', '1.0.1', this);
 
@@ -4573,25 +4573,25 @@ function EUSignCPException(errorCode, message, messageEx) {
 	this.errorCode = errorCode;
 	this.message = message;
 	this.messageEx = messageEx || '';
-	
+
 	this.toString = function() {
 		return this.message + "(" + errorCode + ")";
 	};
-	
+
 	this.GetErrorCode = function() {
 		return this.errorCode;
 	};
-	
+
 	this.GetMessage = function() {
 		return this.message;
 	};
-	
+
 	this.toStringEx = function() {
-		return this.toString() + 
-			((this.messageEx != '') ? 
+		return this.toString() +
+			((this.messageEx != '') ?
 				". " + this.messageEx : '');
 	};
-	
+
 	this.GetMessageEx = function() {
 		return this.messageEx;
 	};
@@ -4646,15 +4646,15 @@ function EUPointerConstructor(size, isArray, moduleFreeFunc, context) {
 		try {
 			var strPtr = this.toPtr();
 			if (strPtr | 0) {
-				string = encoder ? 
-						encoder.decodePointer(strPtr) : 
+				string = encoder ?
+						encoder.decodePointer(strPtr) :
 						CP1251PointerToUTF8(strPtr);
 				if (context != null)
 					Module._EUCtxFreeMemory(context|0, strPtr);
 				else
 					Module._EUFreeMemory(strPtr);
 			}
-			
+
 			if (checkEmpty) {
 				if (string == "")
 					throw "Decoded string is empty";
@@ -4674,8 +4674,8 @@ function EUPointerConstructor(size, isArray, moduleFreeFunc, context) {
 			if (strPtr | 0) {
 				strings = [];
 				while (1) {
-					var str = encoder ? 
-						encoder.decodePointer(strPtr) : 
+					var str = encoder ?
+						encoder.decodePointer(strPtr) :
 						CP1251PointerToUTF8(strPtr);
 					strings.push(str);
 					while (HEAPU8[(strPtr|0)] != 0)
@@ -4725,12 +4725,12 @@ function EUPointerConstructor(size, isArray, moduleFreeFunc, context) {
 	this.toArrayOfByteArrays = function(count) {
 		if (count == 0)
 			return [];
-		
+
 		var array = [];
 		try {
 			var arraysPtr = Module.getValue(this.ptr, "i32*");
 			var arraysLengthsPtr = Module.getValue(this.lengthPtr, "i32");
-			
+
 			for (var i = 0; i < count; i++) {
 				var pCurPtr = (arraysPtr + i * EU_PTR_SIZE) | 0;
 				var arrPtr = Module.getValue(pCurPtr, "i8*");
@@ -4838,7 +4838,7 @@ function EUPointerCertOwnerInfo(context) {
 		context = null;
 
 	return new EUPointerConstructor(
-			EU_CERT_OWNER_INFO_SIZE, false, 
+			EU_CERT_OWNER_INFO_SIZE, false,
 			function (pPtr) {
 				if ((pPtr.ptr | 0) != 0)
 				{
@@ -4850,7 +4850,7 @@ function EUPointerCertOwnerInfo(context) {
 					else
 						Module._EUFreeCertOwnerInfo(pPtr.ptr);
 				}
-			}, 
+			},
 			context);
 }
 
@@ -4859,7 +4859,7 @@ function EUPointerSignerInfo(context) {
 		context = null;
 
 	return new EUPointerConstructor(
-			EU_SIGN_INFO_SIZE, false, 
+			EU_SIGN_INFO_SIZE, false,
 			function (pPtr) {
 				if ((pPtr.ptr | 0) != 0)
 				{
@@ -4880,7 +4880,7 @@ function EUPointerSenderInfo(context) {
 		context = null;
 
 	return new EUPointerConstructor(
-			EU_SENDER_INFO_SIZE, false, 
+			EU_SENDER_INFO_SIZE, false,
 			function (pPtr) {
 				if ((pPtr.ptr | 0) != 0)
 				{
@@ -4892,13 +4892,13 @@ function EUPointerSenderInfo(context) {
 					else
 						Module._EUFreeSenderInfo(pPtr.ptr);
 				}
-			}, 
+			},
 			context);
 }
 
 function EUPointerCertificateInfo() {
 	return new EUPointerConstructor(
-			EU_CERT_INFO_SIZE, false, 
+			EU_CERT_INFO_SIZE, false,
 			function (pPtr) {
 				if ((pPtr.ptr | 0) != 0)
 					Module._EUFreeCertificateInfo(pPtr.ptr);
@@ -4912,12 +4912,12 @@ function EUPointerKeyMedia(typeIndex, devIndex, password) {
 
 	try {
 		var pCurPtr = pPtr.ptr | 0;
-		
+
 		Module.setValue(pCurPtr, typeIndex | 0, "i32");
 		pCurPtr+= EU_INT_SIZE;
 		Module.setValue(pCurPtr, devIndex | 0, "i32");
 		pCurPtr+= EU_INT_SIZE;
-		
+
 		var strArr = UTF8ToCP1251Array(password);
 		if (strArr.length > EU_PASS_MAX_LENGTH)
 			throw { message: "Invalid parameter"};
@@ -5027,7 +5027,7 @@ function EUArrayFromArrayOfArray(array) {
 			Module._free(this.arraysPtr);
 			Module._free(this.arraysLengthPtr);
 		} catch (e) {}
-		
+
 		this.count = 0;
 		this.arraysPtr = 0;
 		this.arraysLengthPtr = 0;
@@ -5040,7 +5040,7 @@ function EUPointerIntArray(array) {
 
 	try {
 		var pCurPtr = pPtr.ptr | 0;
-		
+
 		for (var i = 0; i < array.length; i++) {
 			Module.setValue(pCurPtr, array[i] | 0, "i32");
 			pCurPtr+= EU_INT_SIZE;
@@ -5113,7 +5113,7 @@ function IsFileASyncSupported() {
 function MakeUID(length)
 {
 	var uid = "";
-	var uid_chars = 
+	var uid_chars =
 		"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
 	for (var i=0; i < length; i++ ) {
@@ -5126,8 +5126,8 @@ function MakeUID(length)
 
 //=============================================================================
 
-var EU_MODULE_INITIALIZE_ON_LOAD = 
-	((typeof EU_MODULE_INITIALIZE_ON_LOAD) != 'undefined') ? 
+var EU_MODULE_INITIALIZE_ON_LOAD =
+	((typeof EU_MODULE_INITIALIZE_ON_LOAD) != 'undefined') ?
 		EU_MODULE_INITIALIZE_ON_LOAD : true;
 
 //-----------------------------------------------------------------------------
@@ -5148,7 +5148,7 @@ function EUSignCPModuleInitialize() {
 		} catch(e) {
 			Module.setStatus('(не ініціалізовано)');
 		}
-		
+
 		try {
 			if (typeof(EUSignCPModuleInitialized) == "function")
 				EUSignCPModuleInitialized(isInitialized);
@@ -5164,17 +5164,17 @@ var EU_LIBRARY_SERVICE_MEMORY_MB = 1;
 var EU_MEMORY_GROWING_STEP_MB = (EU_MAX_DATA_SIZE_MB <= 2) ? 1 : 16;
 var EU_MAX_LIBRARY_STACK_MB = EU_MEMORY_GROWING_STEP_MB * 8;
 var EU_TOTAL_MEMORY_MB = EU_MAX_LIBRARY_STACK_MB + EU_MAX_DATA_SIZE_MB * 8;
-if (EU_MAX_DATA_SIZE_MB > (EU_MAX_LIBRARY_STACK_MB - 
+if (EU_MAX_DATA_SIZE_MB > (EU_MAX_LIBRARY_STACK_MB -
 		EU_LIBRARY_SERVICE_MEMORY_MB)) {
-	throw 'The EU_MAX_DATA_SIZE_MB (' + EU_MAX_DATA_SIZE_MB + 
-		' MB) constant is too big. Please set it less then ' + 
+	throw 'The EU_MAX_DATA_SIZE_MB (' + EU_MAX_DATA_SIZE_MB +
+		' MB) constant is too big. Please set it less then ' +
 		(EU_MAX_LIBRARY_STACK_MB - EU_LIBRARY_SERVICE_MEMORY_MB)+ ' MB';
 }
 
 if (EU_TOTAL_MEMORY_MB < EU_MAX_LIBRARY_STACK_MB)
 	EU_TOTAL_MEMORY_MB = EU_MAX_LIBRARY_STACK_MB + EU_MEMORY_GROWING_STEP_MB;
 if ((EU_TOTAL_MEMORY_MB % EU_MEMORY_GROWING_STEP_MB) != 0) {
-	EU_TOTAL_MEMORY_MB = Math.ceil(EU_TOTAL_MEMORY_MB / 
+	EU_TOTAL_MEMORY_MB = Math.ceil(EU_TOTAL_MEMORY_MB /
 		EU_MEMORY_GROWING_STEP_MB) * EU_MEMORY_GROWING_STEP_MB;
 }
 
@@ -5188,7 +5188,7 @@ var Module = {
 				try {
 					if (typeof(EUSignCPModuleLoaded) == "function")
 						EUSignCPModuleLoaded();
-						
+
 					if (EU_MODULE_INITIALIZE_ON_LOAD)
 						EUSignCPModuleInitialize();
 				} catch (e) {
@@ -5198,7 +5198,7 @@ var Module = {
 	],
 	print: (function() {
 		return function(text) {
-			if (typeof EU_LOG_EVENTS != 'undefined' && 
+			if (typeof EU_LOG_EVENTS != 'undefined' &&
 					EU_LOG_EVENTS) {
 				console.log(text);
 			}
@@ -5218,7 +5218,7 @@ var Module = {
 			return;
 
 		try {
-			if (!Module.setStatus.last) 
+			if (!Module.setStatus.last)
 				Module.setStatus.last = { time: Date.now(), text: '' };
 
 			if (text === Module.setStatus.text)
@@ -5227,7 +5227,7 @@ var Module = {
 			var m = text.match(/([^(]+)\((\d+(\.\d+)?)\/(\d+)\)/);
 			var now = Date.now();
 			if (m && now - Date.now() < 30)
-				return; 
+				return;
 
 			var statusElement = document.getElementById('status');
 			var progressElement = document.getElementById('progress');
@@ -5252,8 +5252,8 @@ var Module = {
 	totalDependencies: 0,
 	monitorRunDependencies: function(left) {
 		this.totalDependencies = Math.max(this.totalDependencies, left);
-		Module.setStatus(left ? 
-			'Підготовка... (' + (this.totalDependencies-left) + 
+		Module.setStatus(left ?
+			'Підготовка... (' + (this.totalDependencies-left) +
 				'/' + this.totalDependencies + ')' :
 			'Всі завантаження завершено.');
 	},
@@ -5295,7 +5295,7 @@ function() {
 			error = Module.ccall('EUGetFileSignTimeInfo',
 				'number',
 				['number', 'array', 'number'],
-				[signIndex, 
+				[signIndex,
 					UTF8ToCP1251Array(EUFS.getFilePath(signedFile)),
 					pTimeInfoPtr.ptr]);
 		} catch (e) {
@@ -5397,14 +5397,14 @@ function() {
 	},
 	IsInitialized: function() {
 		var isInitialized;
-		
+
 		try {
-			isInitialized = 
+			isInitialized =
 				(Module._EUIsInitialized() != EU_FALSE);
 		} catch (e) {
 			isInitialized = false;
 		}
-		
+
 		return isInitialized;
 	},
 	SetErrorMessageLanguage: function(langCode) {
@@ -5417,7 +5417,7 @@ function() {
 				case 'ru':
 					langCode = EU_RU_LANG;
 					break;
-					
+
 				case 'uk':
 				case 'ua':
 				default:
@@ -5438,7 +5438,7 @@ function() {
 	},
 //-----------------------------------------------------------------------------
 	CheckMaxDataSize: function(data) {
-		var length = (typeof data == 'number') ? 
+		var length = (typeof data == 'number') ?
 			data : data.length;
 		if (length > Module.MAX_DATA_SIZE)
 			this.RaiseError(EU_ERROR_BAD_PARAMETER);
@@ -5462,9 +5462,9 @@ function() {
 			strPtr.free();
 			this.RaiseError(error);
 		}
-		
+
 		return strPtr.toString();
-	}, 
+	},
 	Base64Decode: function(data) {
 		this.CheckMaxDataSize(data);
 
@@ -5480,12 +5480,12 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			arrPtr.free();
 			this.RaiseError(error);
 		}
-		
+
 		return arrPtr.toArray();
 	},
 	SetJavaStringCompliant: function(compliant) {
@@ -5536,7 +5536,7 @@ function() {
 			return;
 		}
 
-		if (!this.isFileSyncAPISupported && 
+		if (!this.isFileSyncAPISupported &&
 			!this.isFileASyncAPISupported) {
 			if (useASyncAPI) {
 				onError(this.MakeError(EU_ERROR_NOT_SUPPORTED));
@@ -5600,7 +5600,7 @@ function() {
 				onError(this.MakeError(EU_ERROR_BAD_PARAMETER));
 				return;
 			}
-			
+
 			this.RaiseError(EU_ERROR_BAD_PARAMETER);
 			return;
 		}
@@ -5613,7 +5613,7 @@ function() {
 			var _onSuccess = function(readedFile) {
 				processedFiles.push(readedFile);
 				curIndex++;
-				
+
 				if (curIndex < files.length) {
 					pThis.ReadFile(files[curIndex], _onSuccess, onError);
 					return;
@@ -5625,7 +5625,7 @@ function() {
 			pThis.ReadFile(files[curIndex], _onSuccess, onError);
 			return;
 		}
-		
+
 		var processedFiles = [];
 		for (var i = 0; i < files.length; i++) {
 			processedFiles.push(this.ReadFile(files[i]));
@@ -5664,12 +5664,12 @@ function() {
 				onError(pThis.MakeError(EU_ERROR_DOWNLOAD_FILE));
 			};
 
-			if (path.indexOf('http://') != 0 && 
+			if (path.indexOf('http://') != 0 &&
 					path.indexOf('https://') != 0 &&
 					path.indexOf('/') == 0) {
 				if (!location.origin) {
-					location.origin = location.protocol + 
-						"//" + location.hostname + 
+					location.origin = location.protocol +
+						"//" + location.hostname +
 						(location.port ? ':' + location.port: '');
 				}
 
@@ -5712,20 +5712,20 @@ function() {
 
 		var tsp = this.CreateTSPSettings();
 		this.SetTSPSettings(tsp);
-		
+
 		var ocsp = this.CreateOCSPSettings();
 		this.SetOCSPSettings(ocsp);
-		
+
 		var ldap = this.CreateLDAPSettings();
-		this.SetLDAPSettings(ldap);	
+		this.SetLDAPSettings(ldap);
 	},
 	CreateFileStoreSettings:function() {
-		return EndUserFileStoreSettings("/certificates", 
+		return EndUserFileStoreSettings("/certificates",
 			false, false, false, false, false, false, 3600);
 	},
 	SetFileStoreSettings: function(settings) {
 		var error;
-		
+
 		try {
 			error = Module.ccall('EUSetFileStoreSettings',
 				'number',
@@ -5752,7 +5752,7 @@ function() {
 	},
 	SetProxySettings:function(settings) {
 		var error;
-		
+
 		try {
 			error = Module.ccall('EUSetProxySettings',
 				'number',
@@ -5778,7 +5778,7 @@ function() {
 	},
 	SetTSPSettings:function(settings) {
 		var error;
-		
+
 		try {
 			error = Module.ccall('EUSetTSPSettings',
 				'number',
@@ -5799,7 +5799,7 @@ function() {
 	},
 	SetOCSPSettings:function(settings) {
 		var error;
-		
+
 		try {
 			error = Module.ccall('EUSetOCSPSettings',
 				'number',
@@ -5820,7 +5820,7 @@ function() {
 	},
 	SetCMPSettings:function(settings) {
 		var error;
-		
+
 		try {
 			error = Module.ccall('EUSetCMPSettings',
 				'number',
@@ -5842,7 +5842,7 @@ function() {
 	},
 	SetLDAPSettings:function(settings) {
 		var error;
-		
+
 		try {
 			error = Module.ccall('EUSetLDAPSettings',
 				'number',
@@ -5866,7 +5866,7 @@ function() {
 	},
 	SetModeSettings:function(settings) {
 		var error;
-		
+
 		try {
 			error = Module.ccall('EUSetModeSettings',
 				'number',
@@ -5884,7 +5884,7 @@ function() {
 	},
 	SetOCSPAccessInfoModeSettings:function(settings) {
 		var error;
-		
+
 		try {
 			error = Module.ccall('EUSetOCSPAccessInfoModeSettings',
 				'number',
@@ -5902,7 +5902,7 @@ function() {
 	},
 	SetOCSPAccessInfoSettings:function(settings) {
 		var error;
-		
+
 		try {
 			error = Module.ccall('EUSetOCSPAccessInfoSettings',
 				'number',
@@ -5922,7 +5922,7 @@ function() {
 		if (typeof value != 'boolean' && typeof value != 'number') {
 			this.RaiseError(EU_ERROR_BAD_PARAMETER);
 		}
-		
+
 		if (typeof value == 'boolean')
 			value = IntFromBool(value);
 
@@ -5935,7 +5935,7 @@ function() {
 			error = Module.ccall('EUSetRuntimeParameter',
 				'number',
 				['array', 'number', 'number'],
-				[UTF8ToCP1251Array(name), 
+				[UTF8ToCP1251Array(name),
 					intPtr.ptr, EU_INT_SIZE]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -5954,7 +5954,7 @@ function() {
 	},
 	SetOCSPResponseExpireTime:function(expireTime) {
 		var error;
-		
+
 		try {
 			error = Module.ccall('EUSetOCSPResponseExpireTime',
 				'number',
@@ -5972,7 +5972,7 @@ function() {
 	},
 	SetTSLSettings: function(settings) {
 		var error;
-		
+
 		try {
 			error = Module.ccall('EUSetTSLSettings',
 				'number',
@@ -6032,10 +6032,10 @@ function() {
 		try {
 			error = Module.ccall('EUSaveCertificatesEx',
 				'number',
-				['array', 'number', 
+				['array', 'number',
 					trustedStore ? 'array' : 'number', 'number'],
 				[certificates, certificates.length,
-					trustedStore ? trustedStore : 0, 
+					trustedStore ? trustedStore : 0,
 					trustedStore ? trustedStore.length : 0]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -6053,7 +6053,7 @@ function() {
 			error = Module.ccall('EUSaveCRL',
 				'number',
 				['number', 'array', 'number'],
-				[IntFromBool(isFullCRL), 
+				[IntFromBool(isFullCRL),
 					crl, crl.length]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -6080,7 +6080,7 @@ function() {
 			this.RaiseError(error);
 	},
 	GetCertificate: function(issuer, serial, asBase64String) {
-		var pPtr = asBase64String ? 
+		var pPtr = asBase64String ?
 			EUPointer() : EUPointerArray();
 		var error;
 
@@ -6088,8 +6088,8 @@ function() {
 			error = Module.ccall('EUGetCertificate',
 				'number',
 				['array', 'array', 'number', 'number', 'number'],
-				[UTF8ToCP1251Array(issuer), 
-				 UTF8ToCP1251Array(serial), 
+				[UTF8ToCP1251Array(issuer),
+				 UTF8ToCP1251Array(serial),
 					asBase64String ? pPtr.ptr : 0,
 					!asBase64String ? pPtr.ptr : 0,
 					!asBase64String ? pPtr.lengthPtr : 0]);
@@ -6104,7 +6104,7 @@ function() {
 
 		if (asBase64String)
 			return pPtr.toString(true);
-		else 
+		else
 			return pPtr.toArray();
 	},
 	GetCertificates: function() {
@@ -6141,7 +6141,7 @@ function() {
 			error = Module.ccall('EUGetCertificatesByKeyInfo',
 				'number',
 				['array', 'number', 'array', 'array', 'number', 'number'],
-				[keyInfo, keyInfo.length, 
+				[keyInfo, keyInfo.length,
 					addressesArray, portsArray,
 					pPtr.ptr, pPtr.lengthPtr]);
 		} catch (e) {
@@ -6169,7 +6169,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			infoPtr.free();
 			this.RaiseError(error);
@@ -6194,7 +6194,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			this.RaiseError(error);
@@ -6221,7 +6221,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			this.RaiseError(error);
@@ -6256,7 +6256,7 @@ function() {
 		return true;
 	},
 	EnumCertificatesEx: function(
-		subjectType, subjectSubType, 
+		subjectType, subjectSubType,
 		certKeyType, keyUsage, index) {
 		var pCertInfoExPtr = EUPointer();
 		var certArrPtr = EUPointerArray();
@@ -6265,11 +6265,11 @@ function() {
 		try {
 			error = Module.ccall('EUEnumCertificatesEx',
 				'number',
-				['number', 'number', 'number', 'number', 
+				['number', 'number', 'number', 'number',
 					'number', 'number', 'number', 'number'],
 				[subjectType, subjectSubType,
 					certKeyType, keyUsage,
-					index, pCertInfoExPtr.ptr, 
+					index, pCertInfoExPtr.ptr,
 					certArrPtr.ptr, certArrPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -6298,7 +6298,7 @@ function() {
 	IsPrivateKeyReaded: function() {
 		var error = EU_ERROR_NONE;
 		var isReaded;
-		
+
 		try {
 			isReaded = (Module._EUIsPrivateKeyReaded() != EU_FALSE);
 			error = EU_ERROR_NONE;
@@ -6306,7 +6306,7 @@ function() {
 			error = EU_ERROR_UNKNOWN;
 			isReaded = false;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			this.RaiseError(error);
 		}
@@ -6358,11 +6358,11 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			this.RaiseError(error);
 		}
-		
+
 		return this.privKeyOwnerInfo;
 	},
 	GetKeyInfoBinary: function (privateKey, password) {
@@ -6375,8 +6375,8 @@ function() {
 			error = Module.ccall('EUGetKeyInfoBinary',
 				'number',
 				['array', 'number', 'array', 'number', 'number'],
-				[privateKey, privateKey.length, 
-					UTF8ToCP1251Array(password), 
+				[privateKey, privateKey.length,
+					UTF8ToCP1251Array(password),
 					arrPtr.ptr, arrPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -6404,7 +6404,7 @@ function() {
 
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
-			
+
 			if (error == EU_WARNING_END_OF_ENUM)
 				return null;
 
@@ -6427,7 +6427,7 @@ function() {
 			if (certInfoEx == null)
 				break;
 
-			if ((certInfoEx.GetPublicKeyType() == keyType) && 
+			if ((certInfoEx.GetPublicKeyType() == keyType) &&
 				((certInfoEx.GetKeyUsageType() & keyUsage) == keyUsage))
 			{
 				break;
@@ -6435,10 +6435,10 @@ function() {
 
 			index++;
 		}
-	
+
 		if (certInfoEx == null)
 			return null;
-		
+
 		var cert = pThis.GetCertificate(
 			certInfoEx.GetIssuer(), certInfoEx.GetSerial())
 
@@ -6446,7 +6446,7 @@ function() {
 	},
 	GeneratePrivateKey: function(password,
 		uaKeysType, uaDSKeysSpec, useDSKeyAsKEP, uaKEPKeysSpec,
-		internationalKeysType, internationalKeysSpec, 
+		internationalKeysType, internationalKeysSpec,
 		userInfo, extKeyUsages) {
 		return this.GeneratePrivateKey2(password,
 			uaKeysType, uaDSKeysSpec, useDSKeyAsKEP, uaKEPKeysSpec,
@@ -6475,7 +6475,7 @@ function() {
 		var pkPtr = EUPointerArray();
 		var pkInfoPtr = EUPointerArray();
 
-		var uaReqPtr = null, uaReqNamePtr = null, 
+		var uaReqPtr = null, uaReqNamePtr = null,
 			uaKEPReqPtr = null, uaKEPReqNamePtr = null;
 		if (uaKeysType != EU_KEYS_TYPE_NONE) {
 			uaReqPtr = EUPointerArray();
@@ -6498,7 +6498,7 @@ function() {
 			ecdsaReqPtr = EUPointerArray();
 			ecdsaReqNamePtr = EUPointerMemory(EU_PATH_MAX_LENGTH);
 		}
-		
+
 		var _free = function() {
 			kmPtr.free();
 			pkPtr.free();
@@ -6526,10 +6526,10 @@ function() {
 		try {
 			error = Module.ccall('EUGeneratePrivateKey2',
 				'number',
-				['number', 'number', 
+				['number', 'number',
 				 'number', 'number', 'number', 'number',
 				  'number', 'number', 'number', 'number', 'number',
-				  'number', 
+				  'number',
 				  (extKeyUsages != null) ? 'array' : 'number',
 				  'number', 'number',
 				  'number', 'number',
@@ -6537,18 +6537,18 @@ function() {
 				  'number', 'number', 'number',
 				  'number', 'number', 'number',
 				  'number', 'number', 'number'],
-				[kmPtr.ptr, EU_FALSE, 
+				[kmPtr.ptr, EU_FALSE,
 				 uaKeysType, uaDSKeysSpec, uaKEPKeysSpec, null,
 				 internationalKeysType, rsaKeysSpec, null, ecdsaKeysSpec, null,
-				 (userInfo != null) ? 
-					userInfoPtr.ptr : null, 
-				 (extKeyUsages != null) ? 
+				 (userInfo != null) ?
+					userInfoPtr.ptr : null,
+				 (extKeyUsages != null) ?
 					UTF8ToCP1251Array(extKeyUsages) : null,
 				 pkPtr.ptr, pkPtr.lengthPtr,
 				 pkInfoPtr.ptr, pkInfoPtr.lengthPtr,
 				 (uaReqPtr != null) ? uaReqPtr.ptr : null,
 				 (uaReqPtr != null) ? uaReqPtr.lengthPtr : null,
-				 (uaReqNamePtr != null) ? uaReqNamePtr.ptr : null, 
+				 (uaReqNamePtr != null) ? uaReqNamePtr.ptr : null,
 				 (uaKEPReqPtr != null) ? uaKEPReqPtr.ptr : null,
 				 (uaKEPReqPtr != null) ? uaKEPReqPtr.lengthPtr : null,
 				 (uaKEPReqNamePtr != null) ? uaKEPReqNamePtr.ptr : null,
@@ -6575,7 +6575,7 @@ function() {
 
 			return str.substring(lastInd + 1, str.length);
 		};
-		
+
 		var euPrivateKey = new EndUserPrivateKey(
 			pkPtr.toArray(), pkInfoPtr.toArray(),
 			(uaReqPtr != null) ? uaReqPtr.toArray() : null,
@@ -6593,10 +6593,10 @@ function() {
 	},
 	MakeNewCertificate: function(privateKey, password,
 		uaKeysType, uaDSKeysSpec, useDSKeyAsKEP, uaKEPKeysSpec,
-		internationalKeysType, internationalKeysSpec, 
+		internationalKeysType, internationalKeysSpec,
 		newPrivateKeyPassword) {
 		this.CheckMaxDataSize(privateKey);
-		
+
 		var pkPtr = EUPointerArray();
 		var error;
 
@@ -6604,16 +6604,16 @@ function() {
 			error = Module.ccall('EUMakeNewCertificate',
 				'number',
 				['number', 'array', 'number', 'array',
-				  'number', 'number', 'number', 
+				  'number', 'number', 'number',
 				  'number', 'number',
 				  'number', 'number', 'number',
 				  'number', 'array',
 				  'number', 'number'],
 				[null, privateKey, privateKey.length, UTF8ToCP1251Array(password),
-				 uaKeysType, uaDSKeysSpec, IntFromBool(useDSKeyAsKEP), 
+				 uaKeysType, uaDSKeysSpec, IntFromBool(useDSKeyAsKEP),
 				 uaKEPKeysSpec, null,
 				 internationalKeysType, internationalKeysSpec, null,
-				 null, UTF8ToCP1251Array(newPrivateKeyPassword), 
+				 null, UTF8ToCP1251Array(newPrivateKeyPassword),
 				 pkPtr.ptr, pkPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -6637,9 +6637,9 @@ function() {
 			error = Module.ccall('EUChangeSoftwarePrivateKeyPassword',
 				'number',
 				['array', 'number', 'array', 'array', 'number', 'number'],
-				[privateKey, privateKey.length, 
-					UTF8ToCP1251Array(oldPassword), 
-					UTF8ToCP1251Array(newPassword), 
+				[privateKey, privateKey.length,
+					UTF8ToCP1251Array(oldPassword),
+					UTF8ToCP1251Array(newPassword),
 					arrPtr.ptr, arrPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -6686,10 +6686,10 @@ function() {
 		try {
 			error = Module.ccall('EUGetJKSPrivateKey',
 				'number',
-				['array', 'number',  'array', 
+				['array', 'number',  'array',
 					'number', 'number', 'number', 'number', 'number'],
 				[container, container.length,
-					UTF8ToCP1251Array(keyAlias), 
+					UTF8ToCP1251Array(keyAlias),
 					keyPtr.ptr, keyPtr.lengthPtr, certsCountPtr.ptr,
 					certsPtr.ptr, certsPtr.lengthPtr]);
 		} catch (e) {
@@ -6706,7 +6706,7 @@ function() {
 		var count = certsCountPtr.toNumber();
 
 		return new EndUserJKSPrivateKey(
-			keyPtr.toArray(), 
+			keyPtr.toArray(),
 			certsPtr.toArrayOfByteArrays(count));
 	},
 	ChangeOwnCertificatesStatus: function(requestType, revocationReason) {
@@ -6728,7 +6728,7 @@ function() {
 	CtxReadPrivateKeyBinary: function(context, privateKey, password) {
 		this.CheckMaxDataSize(privateKey);
 
-		var pkCtxPtr = EUPointer(); 
+		var pkCtxPtr = EUPointer();
 		var infoPtr = EUPointerCertOwnerInfo(context.GetContext());
 		var error;
 
@@ -6737,7 +6737,7 @@ function() {
 				'number',
 				['number', 'array', 'number', 'array', 'number', 'number'],
 				[context.GetContext(), privateKey, privateKey.length,
-					UTF8ToCP1251Array(password), 
+					UTF8ToCP1251Array(password),
 					pkCtxPtr.ptr, infoPtr.ptr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -6772,7 +6772,7 @@ function() {
 		try {
 			error = Module.ccall('EUCtxGetOwnCertificate',
 				'number',
-				['number', 'number', 'number', 
+				['number', 'number', 'number',
 					'number', 'number', 'number'],
 				[pkCtx, certKeyType, keyUsage, pCertInfoExPtr.ptr,
 					certArrPtr.ptr, certArrPtr.lengthPtr]);
@@ -6806,7 +6806,7 @@ function() {
 			error = Module.ccall('EUCtxEnumOwnCertificates',
 				'number',
 				['number', 'number', 'number', 'number', 'number'],
-				[pkCtx, index, pCertInfoExPtr.ptr, 
+				[pkCtx, index, pCertInfoExPtr.ptr,
 					certArrPtr.ptr, certArrPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -6844,21 +6844,21 @@ function() {
 				['number', 'number',
 					'number', 'number', 'number', 'number'],
 				[privateKeyContext.GetContext() | 0, index,
-					dwordKeyTypePtr.ptr, dwordKeyUsagePtr.ptr, 
+					dwordKeyTypePtr.ptr, dwordKeyUsagePtr.ptr,
 					dwordKeyIDsCountPtr.ptr, keyIDsPtr.ptr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			dwordKeyTypePtr.free();
 			dwordKeyUsagePtr.free();
 			dwordKeyIDsCountPtr.free();
 			keyIDsPtr.free();
-			
+
 			if (error == EU_WARNING_END_OF_ENUM)
 				return null;
-			
+
 			this.RaiseError(error);
 		}
 
@@ -6872,7 +6872,7 @@ function() {
 		return EndUserPrivateKeyInfo(
 			keyType, keyUsage, keyIDs);
 	},
-	CtxExportPrivateKeyContainer: function(privateKeyContext, 
+	CtxExportPrivateKeyContainer: function(privateKeyContext,
 		password, keyID, asBase64String) {
 		var pPtr = EUPointerArray(
 			privateKeyContext.GetContext());
@@ -6881,9 +6881,9 @@ function() {
 		try {
 			error = Module.ccall('EUCtxExportPrivateKeyContainer',
 				'number',
-				['number', 'array', 'array', 
+				['number', 'array', 'array',
 					'number', 'number'],
-				[privateKeyContext.GetContext(), 
+				[privateKeyContext.GetContext(),
 					UTF8ToCP1251Array(password),
 					UTF8ToCP1251Array(keyID),
 					pPtr.ptr, pPtr.lengthPtr]);
@@ -6911,15 +6911,15 @@ function() {
 		for (var i = 0; i < trustedKeyIDs.length; i++) {
 			trustedKeyIDsArray.push(IntFromBool(exportCerts));
 		}
-		
+
 		try {
-			var trustedKeyIDsPtr = 
+			var trustedKeyIDsPtr =
 				EUPointerIntArray(trustedKeyIDsArray);
 			error = Module.ccall('EUCtxExportPrivateKeyPFXContainer',
 				'number',
-				['number', 'array', 'number', 'number', 'number', 
+				['number', 'array', 'number', 'number', 'number',
 					'array', 'number', 'number'],
-				[privateKeyContext.GetContext(), 
+				[privateKeyContext.GetContext(),
 					UTF8ToCP1251Array(password),
 					IntFromBool(exportCerts),
 					keyIDs.length,
@@ -6950,11 +6950,11 @@ function() {
 		try {
 			error = Module.ccall('EUCtxGetCertificateFromPrivateKey',
 				'number',
-				['number', 'array', 
+				['number', 'array',
 					'number', 'number', 'number'],
-				[privateKeyContext.GetContext(), 
+				[privateKeyContext.GetContext(),
 					UTF8ToCP1251Array(keyID),
-					pCertInfoExPtr.ptr, 
+					pCertInfoExPtr.ptr,
 					certArrPtr.ptr, certArrPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -6985,7 +6985,7 @@ function() {
 			error = Module.ccall('EUCtxChangeOwnCertificatesStatus',
 				'number',
 				['number', 'number', 'number'],
-				[privateKeyContext.GetContext(), 
+				[privateKeyContext.GetContext(),
 					requestType, revocationReason]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -7031,7 +7031,7 @@ function() {
 				'number',
 				['number', 'array', 'array'],
 				[privateKeyContext.GetContext(),
-					UTF8ToCP1251Array(phone), 
+					UTF8ToCP1251Array(phone),
 					UTF8ToCP1251Array(email)]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -7043,14 +7043,14 @@ function() {
 		}
 	},
 	CtxMakeDeviceCertificate: function(
-		privateKeyContext, deviceName, 
-		uaRequest, uaKEPRequest, 
+		privateKeyContext, deviceName,
+		uaRequest, uaKEPRequest,
 		internationalRequest, ecdsaRequest,
 		cmpAddress, cmpPort) {
 		var pkCtx = privateKeyContext.GetContext();
-		var uaCertPtr = null, uaKEPCertPtr = null, 
+		var uaCertPtr = null, uaKEPCertPtr = null,
 			intCertPtr = null, ecdsaCertPtr = null;
-		
+
 		if (uaRequest != null)
 			uaCertPtr = EUPointerArray(pkCtx);
 		if (uaKEPRequest != null)
@@ -7063,13 +7063,13 @@ function() {
 		try {
 			error = Module.ccall('EUCtxMakeDeviceCertificate',
 				'number',
-				['number', 'array', 
-				(uaRequest != null) ? 'array' : 'number', 'number', 
+				['number', 'array',
+				(uaRequest != null) ? 'array' : 'number', 'number',
 				(uaKEPRequest != null) ? 'array' : 'number', 'number',
-				(internationalRequest != null) ? 'array' : 'number', 'number', 
+				(internationalRequest != null) ? 'array' : 'number', 'number',
 				(ecdsaRequest != null) ? 'array' : 'number', 'number',
-				(cmpAddress != null) ? 'array' : 'number', 
-				(cmpPort != null) ? 'array' : 'number', 
+				(cmpAddress != null) ? 'array' : 'number',
+				(cmpPort != null) ? 'array' : 'number',
 				'number', 'number', 'number', 'number',
 				'number', 'number', 'number', 'number'],
 				[pkCtx, UTF8ToCP1251Array(deviceName),
@@ -7077,9 +7077,9 @@ function() {
 					(uaRequest != null) ? uaRequest.length : 0,
 					(uaKEPRequest != null) ? uaKEPRequest : 0,
 					(uaKEPRequest != null) ? uaKEPRequest.length : 0,
-					(internationalRequest != null) ? 
+					(internationalRequest != null) ?
 						internationalRequest : 0,
-					(internationalRequest != null) ? 
+					(internationalRequest != null) ?
 						internationalRequest.length : 0,
 					(ecdsaRequest != null) ? ecdsaRequest : 0,
 					(ecdsaRequest != null) ? ecdsaRequest.length : 0,
@@ -7092,7 +7092,7 @@ function() {
 					(intCertPtr != null) ? intCertPtr.ptr : 0,
 					(intCertPtr != null) ? intCertPtr.lengthPtr : 0,
 					(ecdsaCertPtr != null) ? ecdsaCertPtr.ptr : 0,
-					(ecdsaCertPtr != null) ? ecdsaCertPtr.lengthPtr : 0	
+					(ecdsaCertPtr != null) ? ecdsaCertPtr.lengthPtr : 0
 				]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -7109,7 +7109,7 @@ function() {
 				ecdsaCertPtr.free();
 			this.RaiseError(error);
 		}
-		
+
 		var certificates = [];
 		if (uaCertPtr != null)
 			certificates.push(uaCertPtr.toArray());
@@ -7123,7 +7123,7 @@ function() {
 		return certificates;
 	},
 	CtxMakeNewOwnCertificateWithCR: function(
-		privateKeyContext, uaRequest, uaKEPRequest, 
+		privateKeyContext, uaRequest, uaKEPRequest,
 		rsaRequest, ecdsaRequest) {
 		var pkCtx = privateKeyContext.GetContext();
 
@@ -7131,9 +7131,9 @@ function() {
 			error = Module.ccall('EUCtxMakeNewOwnCertificateWithCR',
 				'number',
 				['number',
-				(uaRequest != null) ? 'array' : 'number', 'number', 
+				(uaRequest != null) ? 'array' : 'number', 'number',
 				(uaKEPRequest != null) ? 'array' : 'number', 'number',
-				(rsaRequest != null) ? 'array' : 'number', 'number', 
+				(rsaRequest != null) ? 'array' : 'number', 'number',
 				(ecdsaRequest != null) ? 'array' : 'number', 'number'],
 				[pkCtx,
 					(uaRequest != null) ? uaRequest : 0,
@@ -7160,7 +7160,7 @@ function() {
 
 		this.CheckMaxDataSize(data);
 
-		var pPtr = asBase64String ? 
+		var pPtr = asBase64String ?
 			EUPointer() : EUPointerArray();
 		var error;
 
@@ -7168,25 +7168,25 @@ function() {
 			error = Module.ccall('EUHashData',
 				'number',
 				['array', 'number', 'number', 'number', 'number'],
-				[data, data.length, 
+				[data, data.length,
 					asBase64String ? pPtr.ptr : 0,
 					!asBase64String ? pPtr.ptr : 0,
 					!asBase64String ? pPtr.lengthPtr : 0]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			this.RaiseError(error);
 		}
-		
+
 		if (asBase64String)
 			return pPtr.toString(true);
-		else 
+		else
 			return pPtr.toArray();
 	},
-	CtxHashData: function(context, hashAlgo, 
+	CtxHashData: function(context, hashAlgo,
 		certificate, data, asBase64String) {
 		if ((typeof data) == 'string')
 			data = this.StringToArray(data);
@@ -7208,7 +7208,7 @@ function() {
 				var chunkSize = (data.length - offset);
 				if (chunkSize > chunkMaxSize)
 					chunkSize = chunkMaxSize;
-	
+
 				var chunk = data.slice(
 					offset, offset + chunkSize);
 				this.CtxHashDataContinue(hashContext, chunk);
@@ -7241,10 +7241,10 @@ function() {
 		try {
 			error = Module.ccall('EUCtxHashDataBegin',
 				'number',
-				['number', 'number', 
-					certificate != null ? 'array' : 'number', 
+				['number', 'number',
+					certificate != null ? 'array' : 'number',
 					'number', 'number'],
-				[context.GetContext(), hashAlgo, 
+				[context.GetContext(), hashAlgo,
 					(certificate != null) ? certificate : 0,
 					(certificate != null) ? certificate.length : 0,
 					hashCtxPtr.ptr]);
@@ -7309,7 +7309,7 @@ function() {
 		} catch (e) {
 		}
 	},
-	CtxHashFile: function(context, hashAlgo, 
+	CtxHashFile: function(context, hashAlgo,
 		certificate, file, onSuccess, onError, asBase64String) {
 		var pThis = this;
 
@@ -7322,7 +7322,7 @@ function() {
 					onError(pThis.MakeError(EU_ERROR_JS_READ_FILE));
 				}, 1);
 				return;
-			} 
+			}
 
 			var pPtr = EUPointerArray(context.GetContext());
 			var error;
@@ -7330,10 +7330,10 @@ function() {
 			try {
 				error = Module.ccall('EUCtxHashFile',
 					'number',
-					['number', 'number', 
+					['number', 'number',
 						certificate != null ? 'array' : 'number', 'number',
 						'array', 'number', 'number'],
-					[context.GetContext(), hashAlgo, 
+					[context.GetContext(), hashAlgo,
 						(certificate != null) ? certificate : 0,
 						(certificate != null) ? certificate.length : 0,
 						UTF8ToCP1251Array(EUFS.getFilePath(file)),
@@ -7355,8 +7355,8 @@ function() {
 			EUFS.unlink(file);
 
 			try {
-				var data = asBase64String ? 
-					pThis.Base64Encode(pPtr.toArray()) : 
+				var data = asBase64String ?
+					pThis.Base64Encode(pPtr.toArray()) :
 					pPtr.toArray();
 				setTimeout(function() {
 					onSuccess(data);
@@ -7370,7 +7370,7 @@ function() {
 			var _onSuccess = function(fileReaded) {
 				try {
 					var data = pThis.CtxHashData(
-						context, hashAlgo, certificate, 
+						context, hashAlgo, certificate,
 						fileReaded.data, asBase64String);
 
 					onSuccess(data);
@@ -7410,7 +7410,7 @@ function() {
 			if (!EUFS.link(file)) {
 				onError(pThis.MakeError(EU_ERROR_JS_READ_FILE));
 				return;
-			} 
+			}
 
 			var error;
 
@@ -7457,7 +7457,7 @@ function() {
 		try {
 			error = Module.ccall('EUGetSignType',
 				'number',
-				['number', 
+				['number',
 					isSignStr ? 'array' : 'number',
 					(!isSignStr) ? 'array' : 'number',
 					'number', 'number'],
@@ -7487,7 +7487,7 @@ function() {
 				onError(pThis.MakeError(EU_ERROR_JS_READ_FILE));
 				return;
 			}
-		
+
 			var intPtr = EUPointerDWORD();
 			var error;
 
@@ -7495,7 +7495,7 @@ function() {
 				error = Module.ccall('EUGetFileSignType',
 					'number',
 					['number', 'array', 'number'],
-					[signIndex, 
+					[signIndex,
 						UTF8ToCP1251Array(EUFS.getFilePath(signedFile)),
 						intPtr.ptr]);
 			} catch (e) {
@@ -7547,7 +7547,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			intPtr.free();
 			this.RaiseError(error);
@@ -7570,12 +7570,12 @@ function() {
 					'number', 'number', 'number'],
 				[isSignStr ? StringToCString(signedData) : 0,
 					!isSignStr ? signedData : 0,
-					!isSignStr ? signedData.length : 0, 
+					!isSignStr ? signedData.length : 0,
 					arrPtr.ptr, arrPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			arrPtr.free();
 			this.RaiseError(error);
@@ -7593,7 +7593,7 @@ function() {
 		try {
 			error = Module.ccall('EUGetSignTimeInfo',
 				'number',
-				['number', 
+				['number',
 					isSignStr ? 'array' : 'number',
 					(!isSignStr) ? 'array' : 'number',
 					'number', 'number'],
@@ -7620,7 +7620,7 @@ function() {
 
 		return timeInfo;
 	},
-	GetFileSignTimeInfo: function(signIndex, signedFile, 
+	GetFileSignTimeInfo: function(signIndex, signedFile,
 		onSuccess, onError) {
 		var pThis = this;
 
@@ -7654,7 +7654,7 @@ function() {
 
 		this.CheckMaxDataSize(data);
 
-		var pPtr = asBase64String ? 
+		var pPtr = asBase64String ?
 			EUPointer() : EUPointerArray();
 		var error;
 
@@ -7662,14 +7662,14 @@ function() {
 			error = Module.ccall('EUSignData',
 				'number',
 				['array', 'number', 'number', 'number', 'number'],
-				[data, data.length, 
+				[data, data.length,
 					asBase64String ? pPtr.ptr : 0,
 					!asBase64String ? pPtr.ptr : 0,
 					!asBase64String ? pPtr.lengthPtr : 0]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			this.RaiseError(error);
@@ -7677,7 +7677,7 @@ function() {
 
 		if (asBase64String)
 			return pPtr.toString(true);
-		else 
+		else
 			return pPtr.toArray();
 	},
 	VerifyData: function(data, sign) {
@@ -7697,7 +7697,7 @@ function() {
 		try {
 			error = Module.ccall('EUVerifyData',
 				'number',
-				['array', 'number', 
+				['array', 'number',
 					isSignStr ? 'array' : 'number',
 					(!isSignStr) ? 'array' : 'number',
 					'number', 'number'],
@@ -7709,7 +7709,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			infoPtr.free();
 			this.RaiseError(error);
@@ -7721,14 +7721,14 @@ function() {
 			infoPtr.free();
 			throw e;
 		}
-		
-		var info = new EndUserSignInfo(infoPtr.ptr, 
+
+		var info = new EndUserSignInfo(infoPtr.ptr,
 			data, signTimeInfo);
 		infoPtr.free();
 
 		return info;
 	},
-	VerifyDataOnTimeEx: function(data, signIndex, sign, 
+	VerifyDataOnTimeEx: function(data, signIndex, sign,
 		onTime, offline, noCRL) {
 		if ((typeof data) == 'string')
 			data = this.StringToArray(data);
@@ -7739,7 +7739,7 @@ function() {
 		this.CheckMaxDataSize(sign);
 
 		var isSignStr = ((typeof sign) == 'string');
-		var onTimePtr = (onTime != null) ? 
+		var onTimePtr = (onTime != null) ?
 			EUPointerSystemtime(onTime) : 0;
 		var infoPtr = EUPointerSignerInfo();
 		var signTimeInfo = null;
@@ -7756,7 +7756,7 @@ function() {
 					isSignStr ? StringToCString(sign) : 0,
 					!isSignStr ? sign : 0,
 					!isSignStr ? sign.length : 0,
-					(onTime != null) ? onTimePtr.ptr : 0, 
+					(onTime != null) ? onTimePtr.ptr : 0,
 					IntFromBool(offline), IntFromBool(noCRL),
 					infoPtr.ptr]);
 		} catch (e) {
@@ -7777,8 +7777,8 @@ function() {
 			infoPtr.free();
 			throw e;
 		}
-		
-		var info = new EndUserSignInfo(infoPtr.ptr, 
+
+		var info = new EndUserSignInfo(infoPtr.ptr,
 			data, signTimeInfo);
 		infoPtr.free();
 
@@ -7790,24 +7790,24 @@ function() {
 
 		this.CheckMaxDataSize(data);
 
-		var pPtr = asBase64String ? 
+		var pPtr = asBase64String ?
 			EUPointer() : EUPointerArray();
 		var error;
 
 		try {
 			error = Module.ccall('EUSignDataInternal',
 				'number',
-				['number', 'array', 'number', 
+				['number', 'array', 'number',
 					'number', 'number', 'number'],
 				[IntFromBool(appendCert),
-					data, data.length, 
+					data, data.length,
 					asBase64String ? pPtr.ptr : 0,
 					!asBase64String ? pPtr.ptr : 0,
 					!asBase64String ? pPtr.lengthPtr : 0]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			this.RaiseError(error);
@@ -7815,7 +7815,7 @@ function() {
 
 		if (asBase64String)
 			return pPtr.toString(true);
-		else 
+		else
 			return pPtr.toArray();
 	},
 	VerifyDataInternal: function(sign) {
@@ -7837,12 +7837,12 @@ function() {
 					'number', 'number', 'number', 'number'],
 				[isSignStr ? StringToCString(sign) : 0,
 					!isSignStr ? sign : 0,
-					!isSignStr ? sign.length : 0, 
+					!isSignStr ? sign.length : 0,
 					arrPtr.ptr, arrPtr.lengthPtr, infoPtr.ptr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			infoPtr.free();
 			arrPtr.free();
@@ -7857,7 +7857,7 @@ function() {
 			throw e;
 		}
 
-		var info = new EndUserSignInfo(infoPtr.ptr, 
+		var info = new EndUserSignInfo(infoPtr.ptr,
 			arrPtr.toArray(), signTimeInfo);
 		infoPtr.free();
 
@@ -7870,7 +7870,7 @@ function() {
 		this.CheckDataStruct(sign);
 
 		var isSignStr = ((typeof sign) == 'string');
-		var onTimePtr = (onTime != null) ? 
+		var onTimePtr = (onTime != null) ?
 			EUPointerSystemtime(onTime) : 0;
 		var infoPtr = EUPointerSignerInfo();
 		var arrPtr = EUPointerArray();
@@ -7880,14 +7880,14 @@ function() {
 		try {
 			error = Module.ccall('EUVerifyDataInternalOnTimeEx',
 				'number',
-				['number', 
+				['number',
 					isSignStr ? 'array' : 'number',
 					(!isSignStr) ? 'array' : 'number', 'number',
 					'number', 'number', 'number',
 					'number', 'number', 'number'],
 				[signIndex, isSignStr ? StringToCString(sign) : 0,
 					!isSignStr ? sign : 0,
-					!isSignStr ? sign.length : 0, 
+					!isSignStr ? sign.length : 0,
 					(onTime != null) ? onTimePtr.ptr : 0,
 					IntFromBool(offline), IntFromBool(noCRL),
 					arrPtr.ptr, arrPtr.lengthPtr, infoPtr.ptr]);
@@ -7903,7 +7903,7 @@ function() {
 			arrPtr.free();
 			this.RaiseError(error);
 		}
-		
+
 		try {
 			signTimeInfo = this.GetSignTimeInfo(signIndex, sign);
 		} catch (e) {
@@ -7912,7 +7912,7 @@ function() {
 			throw e;
 		}
 
-		var info = new EndUserSignInfo(infoPtr.ptr, 
+		var info = new EndUserSignInfo(infoPtr.ptr,
 			arrPtr.toArray(), signTimeInfo);
 		infoPtr.free();
 
@@ -7922,7 +7922,7 @@ function() {
 		this.CheckMaxDataSize(hash);
 
 		var isHashStr = ((typeof hash) == 'string');
-		var pPtr = asBase64String ? 
+		var pPtr = asBase64String ?
 			EUPointer() : EUPointerArray();
 		var error;
 
@@ -7930,11 +7930,11 @@ function() {
 			error = Module.ccall('EUSignHash',
 				'number',
 				[isHashStr ? 'array' : 'number',
-					!isHashStr ? 'array' : 'number', 'number', 
+					!isHashStr ? 'array' : 'number', 'number',
 					'number', 'number', 'number'],
-				[isHashStr ? StringToCString(hash) : 0, 
-					!isHashStr ? hash : 0, 
-					!isHashStr ? hash.length : 0, 
+				[isHashStr ? StringToCString(hash) : 0,
+					!isHashStr ? hash : 0,
+					!isHashStr ? hash.length : 0,
 					asBase64String ? pPtr.ptr : 0,
 					!asBase64String ? pPtr.ptr : 0,
 					!asBase64String ? pPtr.lengthPtr : 0]);
@@ -7949,7 +7949,7 @@ function() {
 
 		if (asBase64String)
 			return pPtr.toString(true);
-		else 
+		else
 			return pPtr.toArray();
 	},
 	VerifyHash: function (hash, sign) {
@@ -7972,8 +7972,8 @@ function() {
 					isSignStr ? 'array' : 'number',
 					!isSignStr ? 'array' : 'number',
 					'number', 'number'],
-				[isHashStr ? StringToCString(hash) : 0, 
-					!isHashStr ? hash : 0, 
+				[isHashStr ? StringToCString(hash) : 0,
+					!isHashStr ? hash : 0,
 					!isHashStr ? hash.length : 0,
 					isSignStr ? StringToCString(sign) : 0,
 					!isSignStr ? sign : 0,
@@ -7982,7 +7982,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			infoPtr.free();
 			this.RaiseError(error);
@@ -7995,23 +7995,23 @@ function() {
 			throw e;
 		}
 
-		var info = new EndUserSignInfo(infoPtr.ptr, 
+		var info = new EndUserSignInfo(infoPtr.ptr,
 			null, signTimeInfo);
 		infoPtr.free();
 
 		return info;
 	},
-	VerifyHashOnTimeEx: function (hash, signIndex, sign, 
+	VerifyHashOnTimeEx: function (hash, signIndex, sign,
 		onTime, offline, noCRL) {
 		this.CheckMaxDataSize(hash);
 		this.CheckMaxDataSize(sign);
 
 		this.CheckDataStruct(sign);
-		
+
 		var isHashStr = ((typeof hash) == 'string');
 		var isSignStr = ((typeof sign) == 'string');
 		var infoPtr = EUPointerSignerInfo();
-		var onTimePtr = (onTime != null) ? 
+		var onTimePtr = (onTime != null) ?
 			EUPointerSystemtime(onTime) : 0;
 		var signTimeInfo = null;
 		var error;
@@ -8023,10 +8023,10 @@ function() {
 					!isHashStr ? 'array' : 'number', 'number',
 					'number',
 					isSignStr ? 'array' : 'number',
-					!isSignStr ? 'array' : 'number', 'number', 
+					!isSignStr ? 'array' : 'number', 'number',
 					'number', 'number', 'number', 'number'],
-				[isHashStr ? StringToCString(hash) : 0, 
-					!isHashStr ? hash : 0, 
+				[isHashStr ? StringToCString(hash) : 0,
+					!isHashStr ? hash : 0,
 					!isHashStr ? hash.length : 0,
 					signIndex,
 					isSignStr ? StringToCString(sign) : 0,
@@ -8054,7 +8054,7 @@ function() {
 			throw e;
 		}
 
-		var info = new EndUserSignInfo(infoPtr.ptr, 
+		var info = new EndUserSignInfo(infoPtr.ptr,
 			null, signTimeInfo);
 		infoPtr.free();
 
@@ -8064,7 +8064,7 @@ function() {
 		this.CheckMaxDataSize(hash);
 
 		var isHashStr = ((typeof hash) == 'string');
-		var pPtr = asBase64String ? 
+		var pPtr = asBase64String ?
 			EUPointer() : EUPointerArray();
 		var error;
 
@@ -8072,11 +8072,11 @@ function() {
 			error = Module.ccall('EUSignHashRSA',
 				'number',
 				[isHashStr ? 'array' : 'number',
-					!isHashStr ? 'array' : 'number', 'number', 
+					!isHashStr ? 'array' : 'number', 'number',
 					'number', 'number', 'number'],
-				[isHashStr ? StringToCString(hash) : 0, 
-					!isHashStr ? hash : 0, 
-					!isHashStr ? hash.length : 0, 
+				[isHashStr ? StringToCString(hash) : 0,
+					!isHashStr ? hash : 0,
+					!isHashStr ? hash.length : 0,
 					asBase64String ? pPtr.ptr : 0,
 					!asBase64String ? pPtr.ptr : 0,
 					!asBase64String ? pPtr.lengthPtr : 0]);
@@ -8091,26 +8091,26 @@ function() {
 
 		if (asBase64String)
 			return pPtr.toString(true);
-		else 
+		else
 			return pPtr.toArray();
 	},
-	SignDataRSA: function(data, appendCert, 
+	SignDataRSA: function(data, appendCert,
 		externalSgn, asBase64String) {
 		if ((typeof data) == 'string')
 			data = this.StringToArray(data);
 
 		this.CheckMaxDataSize(data);
 
-		var pPtr = asBase64String ? 
+		var pPtr = asBase64String ?
 			EUPointer() : EUPointerArray();
 		var error;
 
 		try {
 			error = Module.ccall('EUSignDataRSA',
 				'number',
-				['array', 'number', 'number', 'number', 
+				['array', 'number', 'number', 'number',
 					'number', 'number', 'number'],
-				[data, data.length, 
+				[data, data.length,
 					IntFromBool(appendCert),
 					IntFromBool(externalSgn),
 					asBase64String ? pPtr.ptr : 0,
@@ -8119,7 +8119,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			this.RaiseError(error);
@@ -8127,7 +8127,7 @@ function() {
 
 		if (asBase64String)
 			return pPtr.toString(true);
-		else 
+		else
 			return pPtr.toArray();
 	},
 	IsDataInSignedFileAvailable: function(signedFile, onSuccess, onError) {
@@ -8186,14 +8186,14 @@ function() {
 			if (!EUFS.link(signedFile)) {
 				onError(pThis.MakeError(EU_ERROR_JS_READ_FILE));
 				return;
-			} 
+			}
 
 			if (!EUFS.link(file)) {
 				EUFS.unlink(signedFile);
 
 				onError(pThis.MakeError(EU_ERROR_JS_READ_FILE));
 				return;
-			} 
+			}
 
 			var error;
 
@@ -8265,7 +8265,7 @@ function() {
 					error = Module.ccall('EUVerifyFile',
 						'number',
 						['array', 'array', 'number'],
-						[UTF8ToCP1251Array(EUFS.getFilePath(fileWithSign)), 
+						[UTF8ToCP1251Array(EUFS.getFilePath(fileWithSign)),
 							UTF8ToCP1251Array(EUFS.getFilePath(file)), infoPtr.ptr]);
 				}
 			} catch (e) {
@@ -8291,7 +8291,7 @@ function() {
 				return;
 			}
 
-			var info = new EndUserSignInfo(infoPtr.ptr, 
+			var info = new EndUserSignInfo(infoPtr.ptr,
 				null, timeInfo);
 			infoPtr.free();
 
@@ -8309,7 +8309,7 @@ function() {
 				}
 			};
 
-			pThis.ReadFiles([file, fileWithSign], 
+			pThis.ReadFiles([file, fileWithSign],
 				_onSuccess, onError);
 		}
 	},
@@ -8319,8 +8319,8 @@ function() {
 		if (pThis.isFileSyncAPISupported) {
 			var file;
 
-			file = (dataFile != null) ? 
-				dataFile : 
+			file = (dataFile != null) ?
+				dataFile :
 				(signedFile.name + MakeUID(10));
 
 			if (!EUFS.link(file, (dataFile == null))) {
@@ -8379,7 +8379,7 @@ function() {
 				return;
 			}
 
-			var info = new EndUserSignInfo(infoPtr.ptr, 
+			var info = new EndUserSignInfo(infoPtr.ptr,
 				data, timeInfo);
 			infoPtr.free();
 
@@ -8388,7 +8388,7 @@ function() {
 			var _onSuccess = function(fileReaded) {
 				try {
 					var info = pThis.VerifyDataInternal(fileReaded.data);
-					
+
 					if (dataFile == null)
 						info.data = null;
 
@@ -8401,7 +8401,7 @@ function() {
 			pThis.ReadFile(signedFile, _onSuccess, onError);
 		}
 	},
-	VerifyFileOnTimeEx: function(signIndex, fileWithSign, 
+	VerifyFileOnTimeEx: function(signIndex, fileWithSign,
 		file, onTime, offline, noCRL, onSuccess, onError) {
 		var pThis = this;
 
@@ -8411,7 +8411,7 @@ function() {
 			var dataFile = (file != null) ?
 				file :
 				(fileWithSign.name + MakeUID(10));
-			
+
 			if (internal) {
 				if (!EUFS.link(dataFile, (file == null))) {
 					onError(pThis.MakeError(EU_ERROR_JS_READ_FILE));
@@ -8431,7 +8431,7 @@ function() {
 				return;
 			}
 
-			var onTimePtr = (onTime != null) ? 
+			var onTimePtr = (onTime != null) ?
 				EUPointerSystemtime(onTime) : 0;
 			var infoPtr = EUPointerSignerInfo();
 			var timeInfo;
@@ -8445,11 +8445,11 @@ function() {
 				if (error == EU_ERROR_NONE) {
 					error = Module.ccall('EUVerifyFileOnTimeEx',
 						'number',
-						['number', 'array', 'array', 
+						['number', 'array', 'array',
 						'number', 'number', 'number',
 						'number'],
-						[signIndex, 
-							UTF8ToCP1251Array(EUFS.getFilePath(fileWithSign)), 
+						[signIndex,
+							UTF8ToCP1251Array(EUFS.getFilePath(fileWithSign)),
 							UTF8ToCP1251Array(EUFS.getFilePath(dataFile)),
 							(onTime != null) ? onTimePtr.ptr : 0,
 							IntFromBool(offline), IntFromBool(noCRL),
@@ -8461,7 +8461,7 @@ function() {
 
 			if (onTime != null)
 				onTimePtr.free();
-			
+
 			if (error != EU_ERROR_NONE) {
 				EUFS.unlink(fileWithSign);
 				EUFS.unlink(dataFile);
@@ -8476,7 +8476,7 @@ function() {
 
 			EUFS.unlink(fileWithSign);
 			EUFS.unlink(dataFile);
-			
+
 			try {
 				timeInfo = pThis._GetFileSignTimeInfoSync(
 					signIndex, fileWithSign);
@@ -8485,7 +8485,7 @@ function() {
 				return;
 			}
 
-			var info = new EndUserSignInfo(infoPtr.ptr, 
+			var info = new EndUserSignInfo(infoPtr.ptr,
 				data, timeInfo);
 			infoPtr.free();
 
@@ -8519,7 +8519,7 @@ function() {
 				files.push(file);
 			files.push(fileWithSign);
 
-			pThis.ReadFiles(files, 
+			pThis.ReadFiles(files,
 				_onSuccess, onError);
 		}
 	},
@@ -8532,7 +8532,7 @@ function() {
 				data = this.StringToArray(data);
 		}
 
-		var signPtr = asBase64String ? 
+		var signPtr = asBase64String ?
 			EUPointer() : EUPointerArray();
 		var error;
 
@@ -8541,7 +8541,7 @@ function() {
 				'number',
 				[isInternalSign ? 'array' : 'number', 'number',
 					'number', 'number', 'number'],
-				[isInternalSign ? data : 0, 
+				[isInternalSign ? data : 0,
 					isInternalSign ? data.length : 0,
 					asBase64String ? signPtr.ptr : 0,
 					!asBase64String ? signPtr.ptr : 0,
@@ -8549,7 +8549,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			signPtr.free();
 			this.RaiseError(error);
@@ -8564,17 +8564,17 @@ function() {
 		this.CheckMaxDataSize(hash);
 
 		var isHashStr = ((typeof hash) == 'string');
-		var signerPtr = asBase64String ? 
+		var signerPtr = asBase64String ?
 			EUPointer() : EUPointerArray();
 		var error;
 
 		try {
 			error = Module.ccall('EUCreateSigner',
 				'number',
-				[isHashStr ? 'array' : 'number', 
+				[isHashStr ? 'array' : 'number',
 					!isHashStr ? 'array' : 'number', 'number',
 					'number', 'number', 'number'],
-				[isHashStr ? StringToCString(hash) : 0, 
+				[isHashStr ? StringToCString(hash) : 0,
 					!isHashStr ? hash : 0,
 					!isHashStr ? hash.length : 0,
 					asBase64String ? signerPtr.ptr : 0,
@@ -8583,7 +8583,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			signerPtr.free();
 			this.RaiseError(error);
@@ -8594,7 +8594,7 @@ function() {
 		else
 			return signerPtr.toArray();
 	},
-	CreateSignerBeginEx: function (signerCert, 
+	CreateSignerBeginEx: function (signerCert,
 		hash, noSigningTime, noContentTimeStamp) {
 		this.CheckMaxDataSize(signerCert);
 		this.CheckMaxDataSize(hash);
@@ -8620,7 +8620,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pSignerPtr.free();
 			pAttrsHashPtr.free();
@@ -8655,7 +8655,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			this.RaiseError(error);
@@ -8663,7 +8663,7 @@ function() {
 
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	},
 	AppendSigner: function (signer, certificate, prevSign, asBase64String) {
@@ -8674,7 +8674,7 @@ function() {
 
 		var isSignerStr = ((typeof signer) == 'string');
 		var isPrevSignStr = ((typeof prevSign) == 'string');
-		var signPtr = asBase64String ? 
+		var signPtr = asBase64String ?
 			EUPointer() : EUPointerArray();
 		var error;
 
@@ -8684,15 +8684,15 @@ function() {
 				[isSignerStr ? 'array' : 'number',
 					!isSignerStr ? 'array' : 'number', 'number',
 					certificate != null ? 'array' : 'number', 'number',
-					isPrevSignStr ? 'array' : 'number', 
+					isPrevSignStr ? 'array' : 'number',
 					!isPrevSignStr ? 'array' : 'numer', 'number',
 					'number', 'number', 'number'],
-				[isSignerStr ? StringToCString(signer) : 0, 
+				[isSignerStr ? StringToCString(signer) : 0,
 					!isSignerStr ? signer : 0,
 					!isSignerStr ? signer.length : 0,
 					(certificate != null) ? certificate : 0,
 					(certificate != null) ? certificate.length : 0,
-					isPrevSignStr ? StringToCString(prevSign) : 0, 
+					isPrevSignStr ? StringToCString(prevSign) : 0,
 					!isPrevSignStr ? prevSign : 0,
 					!isPrevSignStr ? prevSign.length : 0,
 					asBase64String ? signPtr.ptr : 0,
@@ -8716,18 +8716,18 @@ function() {
 		this.CheckMaxDataSize(sign);
 
 		var isSignStr = ((typeof sign) == 'string');
-		var signerPtr = asBase64String ? 
+		var signerPtr = asBase64String ?
 			EUPointer() : EUPointerArray();
 		var error;
 
 		try {
 			error = Module.ccall('EUGetSigner',
 				'number',
-				['number', 
-					isSignStr ? 'array' : 'number', 
+				['number',
+					isSignStr ? 'array' : 'number',
 					!isSignStr ? 'array' : 'number', 'number',
 					'number', 'number', 'number'],
-				[signIndex, 
+				[signIndex,
 					isSignStr ? StringToCString(sign) : 0,
 					!isSignStr ? sign : 0,
 					!isSignStr ? sign.length : 0,
@@ -8754,7 +8754,7 @@ function() {
 			this.CheckMaxDataSize(certificate);
 
 		var isPrevSignerStr = ((typeof prevSigner) == 'string');
-		var signerPtr = asBase64String ? 
+		var signerPtr = asBase64String ?
 			EUPointer() : EUPointerArray();
 		var error;
 
@@ -8763,9 +8763,9 @@ function() {
 				'number',
 				[isPrevSignerStr ? 'array' : 'number',
 					!isPrevSignerStr ? 'array' : 'number', 'number',
-					certificate != null ? 'array' : 'number', 'number', 
+					certificate != null ? 'array' : 'number', 'number',
 					'number', 'number', 'number'],
-				[isPrevSignerStr ? StringToCString(prevSigner) : 0, 
+				[isPrevSignerStr ? StringToCString(prevSigner) : 0,
 					!isPrevSignerStr ? prevSigner : 0,
 					!isPrevSignerStr ? prevSigner.length : 0,
 					(certificate != null) ? certificate : 0,
@@ -8793,7 +8793,7 @@ function() {
 
 		this.CheckMaxDataSize(data);
 
-		var pPtr = asBase64String ? 
+		var pPtr = asBase64String ?
 			EUPointer() : EUPointerArray();
 		var error;
 
@@ -8801,7 +8801,7 @@ function() {
 			error = Module.ccall('EURawSignData',
 				'number',
 				['array', 'number', 'number', 'number', 'number'],
-				[data, data.length, 
+				[data, data.length,
 					asBase64String ? pPtr.ptr : 0,
 					!asBase64String ? pPtr.ptr : 0,
 					!asBase64String ? pPtr.lengthPtr : 0]);
@@ -8816,7 +8816,7 @@ function() {
 
 		if (asBase64String)
 			return pPtr.toString(true);
-		else 
+		else
 			return pPtr.toArray();
 	},
 	RawVerifyDataEx: function(cert, data, sign) {
@@ -8837,12 +8837,12 @@ function() {
 			error = Module.ccall('EURawVerifyDataEx',
 				'number',
 				[cert ? 'array' : 'numer', 'number',
-					'array', 'number', 
+					'array', 'number',
 					isSignStr ? 'array' : 'number',
 					!isSignStr ? 'array' : 'number',
 					'number', 'number'],
 				[(cert != null) ? cert : 0,
-					(cert != null) ? cert.length : 0, 
+					(cert != null) ? cert.length : 0,
 					data, data.length,
 					isSignStr ? StringToCString(sign) : 0,
 					!isSignStr ? sign : 0,
@@ -8866,7 +8866,7 @@ function() {
 		this.CheckMaxDataSize(hash);
 
 		var isHashStr = ((typeof hash) == 'string');
-		var pPtr = asBase64String ? 
+		var pPtr = asBase64String ?
 			EUPointer() : EUPointerArray();
 		var error;
 
@@ -8874,11 +8874,11 @@ function() {
 			error = Module.ccall('EURawSignHash',
 				'number',
 				[isHashStr ? 'array' : 'number',
-					!isHashStr ? 'array' : 'number', 'number', 
+					!isHashStr ? 'array' : 'number', 'number',
 					'number', 'number', 'number'],
-				[isHashStr ? StringToCString(hash) : 0, 
-					!isHashStr ? hash : 0, 
-					!isHashStr ? hash.length : 0, 
+				[isHashStr ? StringToCString(hash) : 0,
+					!isHashStr ? hash : 0,
+					!isHashStr ? hash.length : 0,
 					asBase64String ? pPtr.ptr : 0,
 					!asBase64String ? pPtr.ptr : 0,
 					!asBase64String ? pPtr.lengthPtr : 0]);
@@ -8893,7 +8893,7 @@ function() {
 
 		if (asBase64String)
 			return pPtr.toString(true);
-		else 
+		else
 			return pPtr.toArray();
 	},
 	RawVerifyHash: function (hash, sign) {
@@ -8910,10 +8910,10 @@ function() {
 				'number',
 				[isHashStr ? 'array' : 'number',
 					!isHashStr ? 'array' : 'number', 'number',
-					isSignStr ? 'array' : 'number', 
+					isSignStr ? 'array' : 'number',
 					!isSignStr ? 'array' : 'number', 'number', 'number'],
-				[isHashStr ? StringToCString(hash) : 0, 
-					!isHashStr ? hash : 0, 
+				[isHashStr ? StringToCString(hash) : 0,
+					!isHashStr ? hash : 0,
 					!isHashStr ? hash.length : 0,
 					isSignStr ? StringToCString(sign) : 0,
 					!isSignStr ? sign : 0,
@@ -8922,7 +8922,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			infoPtr.free();
 			this.RaiseError(error);
@@ -8933,7 +8933,7 @@ function() {
 
 		return info;
 	},
-	CtxSignHash: function (privateKeyContext, signAlgo, 
+	CtxSignHash: function (privateKeyContext, signAlgo,
 		hashContext, appendCert, asBase64String) {
 		var pPtr = EUPointerArray(
 			privateKeyContext.GetContext());
@@ -8945,7 +8945,7 @@ function() {
 				['number', 'number', 'number', 'number',
 					'number', 'number'],
 				[privateKeyContext.GetContext(), signAlgo,
-					hashContext.GetContext(), 
+					hashContext.GetContext(),
 					IntFromBool(appendCert),
 					pPtr.ptr, pPtr.lengthPtr]);
 		} catch (e) {
@@ -8959,7 +8959,7 @@ function() {
 
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	},
 	CtxVerifyHash: function (hashContext, signIndex, sign) {
@@ -8984,7 +8984,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			infoPtr.free();
 			this.RaiseError(error);
@@ -8996,14 +8996,14 @@ function() {
 			infoPtr.free();
 			throw e;
 		}
-		
-		var info = new EndUserSignInfo(infoPtr.ptr, 
+
+		var info = new EndUserSignInfo(infoPtr.ptr,
 			null, signTimeInfo);
 		infoPtr.free();
 
 		return info;
 	},
-	CtxSignHashValue: function (privateKeyContext, signAlgo, 
+	CtxSignHashValue: function (privateKeyContext, signAlgo,
 		hash, appendCert, asBase64String) {
 		if ((typeof hash) == 'string')
 			hash = this.Base64Decode(hash);
@@ -9031,12 +9031,12 @@ function() {
 
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	},
 	CtxVerifyHashValue: function (context, hash, signIndex, sign) {
 		this.CheckDataStruct(sign);
-		
+
 		this.CheckMaxDataSize(hash);
 		this.CheckMaxDataSize(sign);
 
@@ -9060,7 +9060,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			infoPtr.free();
 			this.RaiseError(error);
@@ -9072,14 +9072,14 @@ function() {
 			infoPtr.free();
 			throw e;
 		}
-		
-		var info = new EndUserSignInfo(infoPtr.ptr, 
+
+		var info = new EndUserSignInfo(infoPtr.ptr,
 			null, signTimeInfo);
 		infoPtr.free();
 
 		return info;
 	},
-	CtxSignData: function(privateKeyContext, signAlgo, 
+	CtxSignData: function(privateKeyContext, signAlgo,
 		data, external, appendCert, asBase64String) {
 		if ((typeof data) == 'string')
 			data = this.StringToArray(data);
@@ -9110,7 +9110,7 @@ function() {
 
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	},
 	CtxVerifyData: function(context, data, signIndex, sign) {
@@ -9132,7 +9132,7 @@ function() {
 		try {
 			error = Module.ccall('EUCtxVerifyData',
 				'number',
-				['number', 'array', 'number', 
+				['number', 'array', 'number',
 					'number', 'array', 'number', 'number'],
 				[context.GetContext(), data, data.length,
 					signIndex, sign, sign.length,
@@ -9140,7 +9140,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			infoPtr.free();
 			this.RaiseError(error);
@@ -9152,8 +9152,8 @@ function() {
 			infoPtr.free();
 			throw e;
 		}
-		
-		var info = new EndUserSignInfo(infoPtr.ptr, 
+
+		var info = new EndUserSignInfo(infoPtr.ptr,
 			data, signTimeInfo);
 		infoPtr.free();
 
@@ -9182,7 +9182,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			arrPtr.free();
 			infoPtr.free();
@@ -9196,23 +9196,23 @@ function() {
 			infoPtr.free();
 			throw e;
 		}
-		
-		var info = new EndUserSignInfo(infoPtr.ptr, 
+
+		var info = new EndUserSignInfo(infoPtr.ptr,
 			arrPtr.toArray(), signTimeInfo);
 		infoPtr.free();
 
 		return info;
 	},
-	CtxSignFile: function(privateKeyContext, signAlgo, 
-		file, external, appendCert, fileWithSign, 
+	CtxSignFile: function(privateKeyContext, signAlgo,
+		file, external, appendCert, fileWithSign,
 		onSuccess, onError) {
 		var pThis = this;
 
 		if (pThis.isFileSyncAPISupported) {
 			var signFile;
 
-			signFile = (fileWithSign != null) ? 
-				fileWithSign : 
+			signFile = (fileWithSign != null) ?
+				fileWithSign :
 				(file.name + MakeUID(10));
 
 			if (!EUFS.link(signFile, (signFile == null))) {
@@ -9232,7 +9232,7 @@ function() {
 			try {
 				error = Module.ccall('EUCtxSignFile',
 					'number',
-					['number', 'number', 'array', 
+					['number', 'number', 'array',
 						'number', 'number', 'array'],
 					[privateKeyContext.GetContext(), signAlgo,
 						UTF8ToCP1251Array(EUFS.getFilePath(file)),
@@ -9261,10 +9261,10 @@ function() {
 		} else {
 			var _onSuccess = function(fileReaded) {
 				try {
-					var signedData; 
+					var signedData;
 
 					signedData = pThis.CtxSignData(
-						privateKeyContext, signAlgo, 
+						privateKeyContext, signAlgo,
 						fileReaded.data, external, appendCert);
 
 					onSuccess(signedData);
@@ -9302,7 +9302,7 @@ function() {
 
 		return intPtr.toBoolean();
 	},
-	CtxAppendSignHash: function (privateKeyContext, signAlgo, 
+	CtxAppendSignHash: function (privateKeyContext, signAlgo,
 		hashContext, previousSign, appendCert, asBase64String) {
 		this.CheckMaxDataSize(previousSign);
 
@@ -9336,10 +9336,10 @@ function() {
 
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	},
-	CtxAppendSignHashValue: function (privateKeyContext, signAlgo, 
+	CtxAppendSignHashValue: function (privateKeyContext, signAlgo,
 		hash, previousSign, appendCert, asBase64String) {
 		this.CheckMaxDataSize(hash);
 		this.CheckMaxDataSize(previousSign);
@@ -9358,11 +9358,11 @@ function() {
 		try {
 			error = Module.ccall('EUCtxAppendSignHashValue',
 				'number',
-				['number', 'number', 'array', 'number', 
+				['number', 'number', 'array', 'number',
 					'array', 'number', 'number', 'number', 'number'],
 				[privateKeyContext.GetContext(), signAlgo,
-					hash, hash.length, 
-					previousSign, previousSign.length, 
+					hash, hash.length,
+					previousSign, previousSign.length,
 					IntFromBool(appendCert),
 					pPtr.ptr, pPtr.lengthPtr]);
 		} catch (e) {
@@ -9376,10 +9376,10 @@ function() {
 
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	},
-	CtxAppendSign: function(privateKeyContext, signAlgo, 
+	CtxAppendSign: function(privateKeyContext, signAlgo,
 		data, previousSign, appendCert, asBase64String) {
 		if ((data != null) && (typeof data) == 'string')
 			data = this.StringToArray(data);
@@ -9399,7 +9399,7 @@ function() {
 		try {
 			error = Module.ccall('EUCtxAppendSign',
 				'number',
-				['number', 'number', 
+				['number', 'number',
 					data ? 'array' : 'number', 'number',
 					'array', 'number', 'number', 'number', 'number'],
 				[privateKeyContext.GetContext(), signAlgo,
@@ -9419,10 +9419,10 @@ function() {
 
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	},
-	CtxCreateEmptySign: function(context, signAlgo, 
+	CtxCreateEmptySign: function(context, signAlgo,
 		data, certificate, asBase64String) {
 		if ((data != null) && (typeof data) == 'string')
 			data = this.StringToArray(data);
@@ -9437,7 +9437,7 @@ function() {
 		try {
 			error = Module.ccall('EUCtxCreateEmptySign',
 				'number',
-				['number', 'number', 
+				['number', 'number',
 					data ? 'array' : 'number', 'number',
 					'array', 'number', 'number', 'number'],
 				[context.GetContext(), signAlgo,
@@ -9456,10 +9456,10 @@ function() {
 
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	},
-	CtxCreateSigner: function(privateKeyContext, signAlgo, 
+	CtxCreateSigner: function(privateKeyContext, signAlgo,
 		hash, asBase64String) {
 		this.CheckMaxDataSize(hash);
 
@@ -9488,10 +9488,10 @@ function() {
 
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	},
-	CtxAppendSigner: function(context, signAlgo, 
+	CtxAppendSigner: function(context, signAlgo,
 		signer, certificate, previousSign, asBase64String) {
 		this.CheckMaxDataSize(signer);
 		if (certificate != null)
@@ -9531,10 +9531,10 @@ function() {
 
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	},
-	CtxGetSignValue: function(privateKeyContext, signAlgo, 
+	CtxGetSignValue: function(privateKeyContext, signAlgo,
 		hash, asBase64String) {
 		this.CheckMaxDataSize(hash);
 
@@ -9563,7 +9563,7 @@ function() {
 
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	},
 	CtxGetSignsCount: function(context, sign) {
@@ -9608,7 +9608,7 @@ function() {
 				['number', 'number', 'array', 'number',
 					'number', 'number', 'number'],
 				[context.GetContext(), signIndex, sign, sign.length,
-					pCertInfoExPtr.ptr, 
+					pCertInfoExPtr.ptr,
 					certArrPtr.ptr, certArrPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -9631,7 +9631,7 @@ function() {
 
 		return new EndUserCertificate(certInfoEx, certArrPtr.toArray());
 	},
-	CtxGetFileSignsCount: function(context, signFile, 
+	CtxGetFileSignsCount: function(context, signFile,
 		onSuccess, onError) {
 		var pThis = this;
 
@@ -9648,7 +9648,7 @@ function() {
 					'number',
 					['number',
 						'array', 'number'],
-					[context.GetContext(),  
+					[context.GetContext(),
 						UTF8ToCP1251Array(EUFS.getFilePath(signFile)),
 						intPtr.ptr]);
 			} catch (e) {
@@ -9668,7 +9668,7 @@ function() {
 		} else {
 			var _onSuccess = function(fileReaded) {
 				try {
-					var signsCount; 
+					var signsCount;
 
 					signsCount = pThis.CtxGetSignsCount(
 						context, fileReaded.data);
@@ -9682,7 +9682,7 @@ function() {
 			pThis.ReadFile(signFile, _onSuccess, onError);
 		}
 	},
-	CtxGetFileSignerInfo: function(context, signIndex, signFile, 
+	CtxGetFileSignerInfo: function(context, signIndex, signFile,
 		onSuccess, onError) {
 		var pThis = this;
 
@@ -9700,9 +9700,9 @@ function() {
 					'number',
 					['number', 'number', 'array',
 						'number', 'number', 'number'],
-					[context.GetContext(), signIndex, 
+					[context.GetContext(), signIndex,
 						UTF8ToCP1251Array(EUFS.getFilePath(signFile)),
-						pCertInfoExPtr.ptr, 
+						pCertInfoExPtr.ptr,
 						certArrPtr.ptr, certArrPtr.lengthPtr]);
 			} catch (e) {
 				error = EU_ERROR_UNKNOWN;
@@ -9731,7 +9731,7 @@ function() {
 		} else {
 			var _onSuccess = function(fileReaded) {
 				try {
-					var signerInfo; 
+					var signerInfo;
 
 					signerInfo = pThis.CtxGetSignerInfo(
 						context, signIndex, fileReaded.data);
@@ -9745,7 +9745,7 @@ function() {
 			pThis.ReadFile(signFile, _onSuccess, onError);
 		}
 	},
-	CtxVerifyFile: function(context, signIndex, fileWithSign, 
+	CtxVerifyFile: function(context, signIndex, fileWithSign,
 		file, onSuccess, onError) {
 		var pThis = this;
 
@@ -9788,9 +9788,9 @@ function() {
 					error = Module.ccall('EUCtxVerifyFile',
 						'number',
 						['number', 'number', 'array', 'array', 'number'],
-						[context.GetContext(), signIndex, 
-							UTF8ToCP1251Array(EUFS.getFilePath(fileWithSign)), 
-							UTF8ToCP1251Array(EUFS.getFilePath(dataFile)), 
+						[context.GetContext(), signIndex,
+							UTF8ToCP1251Array(EUFS.getFilePath(fileWithSign)),
+							UTF8ToCP1251Array(EUFS.getFilePath(dataFile)),
 							infoPtr.ptr]);
 				}
 			} catch (e) {
@@ -9811,7 +9811,7 @@ function() {
 
 			EUFS.unlink(fileWithSign);
 			EUFS.unlink(dataFile);
-			
+
 			try {
 				timeInfo = pThis._GetFileSignTimeInfoSync(
 					signIndex, fileWithSign);
@@ -9820,7 +9820,7 @@ function() {
 				return;
 			}
 
-			var info = new EndUserSignInfo(infoPtr.ptr, 
+			var info = new EndUserSignInfo(infoPtr.ptr,
 				data, timeInfo);
 			infoPtr.free();
 
@@ -9837,7 +9837,7 @@ function() {
 							info.data = null;
 					} else {
 						info = pThis.CtxVerifyData(
-							context, files[0].data, 
+							context, files[0].data,
 							signIndex, files[1].data);
 						info.data = null;
 					}
@@ -9853,12 +9853,12 @@ function() {
 				files.push(file);
 			files.push(fileWithSign);
 
-			pThis.ReadFiles(files, 
+			pThis.ReadFiles(files,
 				_onSuccess, onError);
 		}
 	},
 	GetTSPByAccessInfo: function(
-		hashAlgo, hash, accessInfo, accessInfoPort, 
+		hashAlgo, hash, accessInfo, accessInfoPort,
 		asBase64String) {
 		this.CheckMaxDataSize(hash);
 
@@ -9869,16 +9869,16 @@ function() {
 		try {
 			error = Module.ccall('EUGetTSPByAccessInfo',
 				'number',
-				['number', 
+				['number',
 					isHashStr ? 'array' : 'number',
 					!isHashStr ? 'array' : 'number', 'number',
 					accessInfo ? 'array' : 'number',
 					accessInfoPort ? 'array' : 'number',
 					'number', 'number'],
 				[hashAlgo,
-					isHashStr ? StringToCString(hash) : 0, 
-					!isHashStr ? hash : 0, 
-					!isHashStr ? hash.length : 0, 
+					isHashStr ? StringToCString(hash) : 0,
+					!isHashStr ? hash : 0,
+					!isHashStr ? hash.length : 0,
 					accessInfo ? UTF8ToCP1251Array(accessInfo) : 0,
 					accessInfoPort ? UTF8ToCP1251Array(accessInfoPort) : 0,
 					pPtr.ptr, pPtr.lengthPtr]);
@@ -9893,7 +9893,7 @@ function() {
 
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	},
 	CheckTSP: function(
@@ -9917,8 +9917,8 @@ function() {
 					'number', 'number',
 					hash ? 'array' : 'number', 'number'],
 				[tsp, tsp.length,
-					hashAlgo, 0, 
-					hash ? hash : 0, 
+					hashAlgo, 0,
+					hash ? hash : 0,
 					hash ? hash.length : 0]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -9947,21 +9947,21 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			this.RaiseError(error);
 		}
 
 		return isEnveloped;
 	},
-	EnvelopDataEx: function (recipientCertIssuers, recipientCertSerials, 
+	EnvelopDataEx: function (recipientCertIssuers, recipientCertSerials,
 		signData, data, asBase64String) {
 		if ((typeof data) == 'string')
 			data = this.StringToArray(data);
 
 		this.CheckMaxDataSize(data);
 
-		var envDataPtr = asBase64String ? 
+		var envDataPtr = asBase64String ?
 			EUPointer() : EUPointerArray();
 		var issuers = intArrayFromStrings(recipientCertIssuers);
 		var serials = intArrayFromStrings(recipientCertSerials);
@@ -9970,8 +9970,8 @@ function() {
 		try {
 			error = Module.ccall('EUEnvelopDataEx',
 				'number',
-				['array', 'array', 'number', 
-					data ? 'array' : 'number', 'number', 
+				['array', 'array', 'number',
+					data ? 'array' : 'number', 'number',
 					'number', 'number', 'number'],
 				[issuers, serials, IntFromBool(signData),
 					(data != null) ? data : 0,
@@ -9982,7 +9982,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			envDataPtr.free();
 			this.RaiseError(error);
@@ -10014,7 +10014,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			devDataPtr.free();
 			infoPtr.free();
@@ -10033,31 +10033,31 @@ function() {
 
 		this.CheckMaxDataSize(data);
 
-		var envDataPtr = asBase64String ? 
+		var envDataPtr = asBase64String ?
 			EUPointer() : EUPointerArray();
 
-		var recipientCertsArray = 
+		var recipientCertsArray =
 			new EUArrayFromArrayOfArray(recipientCertificates);
 		var error;
 
 		try {
 			error = Module.ccall('EUEnvelopDataToRecipientsWithDynamicKey',
 				'number',
-				['number', 'number', 'number', 'number', 'number', 
+				['number', 'number', 'number', 'number', 'number',
 					'array', 'number', 'number', 'number', 'number'],
 				[recipientCertsArray.count,
 					recipientCertsArray.arraysPtr,
 					recipientCertsArray.arraysLengthPtr,
 					IntFromBool(signData),
 					IntFromBool(appendCert),
-					data, data.length, 
+					data, data.length,
 					asBase64String ? envDataPtr.ptr : 0,
 					!asBase64String ? envDataPtr.ptr : 0,
 					!asBase64String ? envDataPtr.lengthPtr : 0]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			recipientCertsArray.free();
 			envDataPtr.free();
@@ -10071,15 +10071,15 @@ function() {
 		else
 			return envDataPtr.toArray();
 	},
-	EnvelopDataRSAEx: function (contentEncAlgoType, 
-		recipientCertIssuers, recipientCertSerials, 
+	EnvelopDataRSAEx: function (contentEncAlgoType,
+		recipientCertIssuers, recipientCertSerials,
 		signData, data, asBase64String) {
 		if ((typeof data) == 'string')
 			data = this.StringToArray(data);
 
 		this.CheckMaxDataSize(data);
 
-		var envDataPtr = asBase64String ? 
+		var envDataPtr = asBase64String ?
 			EUPointer() : EUPointerArray();
 		var issuers = intArrayFromStrings(recipientCertIssuers);
 		var serials = intArrayFromStrings(recipientCertSerials);
@@ -10088,8 +10088,8 @@ function() {
 		try {
 			error = Module.ccall('EUEnvelopDataRSAEx',
 				'number',
-				['number', 'array', 'array', 'number', 
-					data ? 'array' : 'number', 'number', 
+				['number', 'array', 'array', 'number',
+					data ? 'array' : 'number', 'number',
 					'number', 'number', 'number'],
 				[contentEncAlgoType, issuers, serials, IntFromBool(signData),
 					(data != null) ? data : 0,
@@ -10100,7 +10100,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			envDataPtr.free();
 			this.RaiseError(error);
@@ -10120,7 +10120,7 @@ function() {
 		this.CheckMaxDataSize(data);
 
 		var pPtr = EUPointerArray(privateKeyContext.GetContext());
-		var recipientCertsArray = 
+		var recipientCertsArray =
 			new EUArrayFromArrayOfArray(recipientCertificates);
 		var error;
 
@@ -10134,13 +10134,13 @@ function() {
 					recipientCertsArray.count,
 					recipientCertsArray.arraysPtr,
 					recipientCertsArray.arraysLengthPtr,
-					recipientAppendType, 
+					recipientAppendType,
 					IntFromBool(signData), IntFromBool(appendCert),
 					data, data.length, pPtr.ptr, pPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			recipientCertsArray.free();
 			pPtr.free();
@@ -10148,10 +10148,10 @@ function() {
 		}
 
 		recipientCertsArray.free();
-		
+
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	},
 	CtxDevelopData: function (privateKeyContext,
@@ -10168,8 +10168,8 @@ function() {
 		try {
 			error = Module.ccall('EUCtxDevelopData',
 				'number',
-				['number', 
-					isEnvDataStr ? 'array' : 'number', 
+				['number',
+					isEnvDataStr ? 'array' : 'number',
 					!isEnvDataStr ? 'array' : 'number', 'number',
 					senderCert ? 'array' : 'number', 'number',
 					'number', 'number', 'number'],
@@ -10183,13 +10183,13 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			devDataPtr.free();
 			infoPtr.free();
 			this.RaiseError(error);
 		}
-		
+
 		var info = new EndUserSenderInfo(infoPtr.ptr, devDataPtr.toArray());
 		devDataPtr.free();
 
@@ -10204,7 +10204,7 @@ function() {
 		this.CheckMaxDataSize(data);
 
 		var pPtr = EUPointerArray(privateKeyContext.GetContext());
-		var recipientCertsArray = 
+		var recipientCertsArray =
 			new EUArrayFromArrayOfArray(recipientCertificates);
 		var error;
 
@@ -10218,13 +10218,13 @@ function() {
 					recipientCertsArray.count,
 					recipientCertsArray.arraysPtr,
 					recipientCertsArray.arraysLengthPtr,
-					recipientAppendType, 
+					recipientAppendType,
 					IntFromBool(signData), IntFromBool(appendCert),
 					data, data.length, pPtr.ptr, pPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			recipientCertsArray.free();
 			pPtr.free();
@@ -10232,10 +10232,10 @@ function() {
 		}
 
 		recipientCertsArray.free();
-		
+
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	},
 	CtxGetSenderInfo: function(context, data, recipientCert) {
@@ -10309,7 +10309,7 @@ function() {
 
 		return intPtr.toNumber();
 	},
-	CtxGetRecipientInfo: function(context, 
+	CtxGetRecipientInfo: function(context,
 		recipientIndex, envelopedData) {
 		this.CheckMaxDataSize(envelopedData);
 
@@ -10357,16 +10357,16 @@ function() {
 
 		var isPrevEnvDataStr = ((typeof prevEnvData) == 'string');
 		var isRecipientStr = ((typeof recipient) == 'string');
-		var envDataPtr = asBase64String ? 
+		var envDataPtr = asBase64String ?
 			EUPointer() : EUPointerArray();
 		var error;
 
 		try {
 			error = Module.ccall('EUAppendRecipient',
 				'number',
-				[isPrevEnvDataStr ? 'array' : 'number', 
+				[isPrevEnvDataStr ? 'array' : 'number',
 					!isPrevEnvDataStr ? 'array' : 'number', 'number',
-					isRecipientStr ? 'array' : 'number', 
+					isRecipientStr ? 'array' : 'number',
 					!isRecipientStr ? 'array' : 'number', 'number',
 					'number', 'number', 'number'],
 				[isPrevEnvDataStr ? StringToCString(prevEnvData)  : 0,
@@ -10381,12 +10381,12 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			envDataPtr.free();
 			this.RaiseError(error);
 		}
-		
+
 		if (asBase64String)
 			return envDataPtr.toString(true);
 		else
@@ -10398,14 +10398,14 @@ function() {
 		this.CheckMaxDataSize(recipientCert);
 
 		var isEnvDataStr = ((typeof envData) == 'string');
-		var recipientPtr = asBase64String ? 
+		var recipientPtr = asBase64String ?
 			EUPointer() : EUPointerArray();
 		var error;
 
 		try {
 			error = Module.ccall('EUGetRecipient',
 				'number',
-				[isEnvDataStr ? 'array' : 'number', 
+				[isEnvDataStr ? 'array' : 'number',
 					!isEnvDataStr ? 'array' : 'number', 'number',
 					'array', 'number',
 					'number', 'number', 'number'],
@@ -10419,12 +10419,12 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			recipientPtr.free();
 			this.RaiseError(error);
 		}
-		
+
 		if (asBase64String)
 			return recipientPtr.toString(true);
 		else
@@ -10436,7 +10436,7 @@ function() {
 		this.CheckMaxDataSize(passwordRecipient);
 
 		var isEnvDataStr = ((typeof envData) == 'string');
-		var isPasswordRecipientStr = 
+		var isPasswordRecipientStr =
 			((typeof passwordRecipient) == 'string');
 		var devDataPtr = EUPointerArray();
 		var infoPtr = EUPointerSenderInfo();
@@ -10453,7 +10453,7 @@ function() {
 				[isEnvDataStr ? StringToCString(envData)  : 0,
 					!isEnvDataStr ? envData : 0,
 					!isEnvDataStr ? envData.length : 0,
-					isPasswordRecipientStr ? 
+					isPasswordRecipientStr ?
 						StringToCString(passwordRecipient)  : 0,
 					!isPasswordRecipientStr ? passwordRecipient : 0,
 					!isPasswordRecipientStr ? passwordRecipient.length : 0,
@@ -10462,7 +10462,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			devDataPtr.free();
 			infoPtr.free();
@@ -10508,9 +10508,9 @@ function() {
 		try {
 			error = Module.ccall('EUServerSessionCreateStep1',
 				'number',
-				['number', 'array', 'number', 
+				['number', 'array', 'number',
 					'number', 'number', 'number'],
-				[expireTime, clientData, clientData.length, 
+				[expireTime, clientData, clientData.length,
 					pPtr.ptr, dataPtr.ptr, dataPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -10533,9 +10533,9 @@ function() {
 		try {
 			error = Module.ccall('EUClientSessionCreateStep2',
 				'number',
-				['number', 'array', 'number', 
+				['number', 'array', 'number',
 					'number', 'number'],
-				[session.GetHandle()|0, serverData, serverData.length, 
+				[session.GetHandle()|0, serverData, serverData.length,
 					dataPtr.ptr, dataPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -10555,7 +10555,7 @@ function() {
 			error = Module.ccall('EUServerSessionCreateStep2',
 				'number',
 				['number', 'array', 'number'],
-				[session.GetHandle()|0, 
+				[session.GetHandle()|0,
 					clientData, clientData.length]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -10598,7 +10598,7 @@ function() {
 		if (error != EU_ERROR_NONE) {
 			this.RaiseError(error);
 		}
-		
+
 		return (isInitialized != EU_FALSE);
 	},
 	SessionCheckCertificates: function(session) {
@@ -10616,7 +10616,7 @@ function() {
 		if (error != EU_ERROR_NONE) {
 			this.RaiseError(error);
 		}
-		
+
 		return true;
 	},
 	SessionGetPeerCertificateInfo: function(session) {
@@ -10631,7 +10631,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			infoPtr.free();
 			this.RaiseError(error);
@@ -10651,7 +10651,7 @@ function() {
 			error = Module.ccall('EUSessionSave',
 				'number',
 				['number', 'number', 'number'],
-				[session.GetHandle()|0, 
+				[session.GetHandle()|0,
 					dataPtr.ptr, dataPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -10661,7 +10661,7 @@ function() {
 			dataPtr.free();
 			this.RaiseError(error);
 		}
-		
+
 		return dataPtr.toArray();
 	},
 	SessionLoad: function(sessionData) {
@@ -10697,12 +10697,12 @@ function() {
 			error = Module.ccall('EUClientDynamicKeySessionCreate',
 				'number',
 				['number',
-					isCertData ? 'number' : 'array', 
-					isCertData ? 'number' : 'array', 
+					isCertData ? 'number' : 'array',
+					isCertData ? 'number' : 'array',
 					isCertData ? 'array': 'number', 'number',
 					'number', 'number', 'number'],
-				[expireTime, 
-					isCertData ? 0 : UTF8ToCP1251Array(serverCertIssuer), 
+				[expireTime,
+					isCertData ? 0 : UTF8ToCP1251Array(serverCertIssuer),
 					isCertData ? 0 : UTF8ToCP1251Array(serverCertSerial),
 					isCertData ? serverCertIssuer : 0,
 					isCertData ? serverCertIssuer.length : 0,
@@ -10728,9 +10728,9 @@ function() {
 		try {
 			error = Module.ccall('EUServerDynamicKeySessionCreate',
 				'number',
-				['number', 'array', 'number', 
+				['number', 'array', 'number',
 					'number'],
-				[expireTime, clientData, clientData.length, 
+				[expireTime, clientData, clientData.length,
 					pPtr.ptr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -10781,7 +10781,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			this.RaiseError(error);
@@ -10789,7 +10789,7 @@ function() {
 
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	},
 	SessionDecrypt: function(session, encryptedData) {
@@ -10806,12 +10806,12 @@ function() {
 				'number',
 				['number', 'array', 'number', 'number', 'number'],
 				[session.GetHandle()|0,
-					encryptedData, encryptedData.length, 
+					encryptedData, encryptedData.length,
 					pPtr.ptr, pPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			this.RaiseError(error);
@@ -10836,7 +10836,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			this.RaiseError(error);
@@ -10844,7 +10844,7 @@ function() {
 
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	},
 	SessionDecryptContinue: function(session, encryptedData) {
@@ -10886,12 +10886,12 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			this.RaiseError(error);
 		}
-		
+
 		var context = new EndUserContext(pPtr.toPtr());
 
 		return context;
@@ -10908,7 +10908,7 @@ function() {
 		if (typeof value != 'boolean') {
 			this.RaiseError(EU_ERROR_BAD_PARAMETER);
 		}
-		
+
 		try {
 			Module.setValue(intPtr.ptr,
 				IntFromBool(value) | 0, "i32");
@@ -10916,7 +10916,7 @@ function() {
 			error = Module.ccall('EUCtxSetParameter',
 				'number',
 				['number', 'array', 'number', 'number'],
-				[context.GetContext()|0, 
+				[context.GetContext()|0,
 					UTF8ToCP1251Array(name), intPtr.ptr, EU_BOOL_SIZE]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -10936,18 +10936,18 @@ function() {
 
 		this.CheckMaxDataSize(data);
 
-		var protDataPtr = asBase64String ? 
+		var protDataPtr = asBase64String ?
 			EUPointer() : EUPointerArray();
 		var error;
 
 		try {
 			error = Module.ccall('EUProtectDataByPassword',
 				'number',
-				['array', 'number', 
+				['array', 'number',
 					password ? 'array' : 'number',
 					'number', 'number', 'number'],
-				[data, data.length, 
-					(password != null) ? 
+				[data, data.length,
+					(password != null) ?
 						UTF8ToCP1251Array(password) : 0,
 					asBase64String ? protDataPtr.ptr : 0,
 					!asBase64String ? protDataPtr.ptr : 0,
@@ -10955,7 +10955,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			protDataPtr.free();
 			this.RaiseError(error);
@@ -10983,13 +10983,13 @@ function() {
 				[isDataStr ? StringToCString(data) : 0,
 					!isDataStr ? data : 0,
 					!isDataStr ? data.length : 0,
-					(password != null) ? 
+					(password != null) ?
 						UTF8ToCP1251Array(password) : 0,
 					unprotDataPtr.ptr, unprotDataPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			unprotDataPtr.free();
 			this.RaiseError(error);
@@ -11047,7 +11047,7 @@ function() {
 			} else {
 				error = EU_ERROR_BAD_PARAMETER;
 			}
-			
+
 			_free();
 		} catch (e) {
 			_free();
@@ -11060,47 +11060,47 @@ function() {
 		return imgArray;
 	},
 //-----------------------------------------------------------------------------
-	AppendTransportHeader: function(caType, fileName, 
+	AppendTransportHeader: function(caType, fileName,
 		clientEMail, clientCert, data) {
 		return AppendTransportHeaderEx(
-			caType, null, null, null, fileName, 
+			caType, null, null, null, fileName,
 			clientEMail, clientCert, data);
 	},
 //-----------------------------------------------------------------------------
-	AppendTransportHeaderEx: function(caType, 
+	AppendTransportHeaderEx: function(caType,
 		programName, programVersion, sendDate,
 		fileName, clientEMail, clientCert, data) {
 		this.CheckMaxDataSize(data);
 
 		var resultDataPtr = EUPointerArray();
-		var sendDatePtr = (sendDate != null) ? 
+		var sendDatePtr = (sendDate != null) ?
 			EUPointerSystemtime(sendDate) : 0;
 		var error;
 
 		try {
 			error = Module.ccall('EUAppendTransportHeaderEx',
 				'number',
-				['array', 
+				['array',
 					programName ? 'array' : 'number',
-					programVersion ? 'array' : 'number', 
-					'number', 'array', 'array', 
-					'array', 'number', 'array', 'number', 
+					programVersion ? 'array' : 'number',
+					'number', 'array', 'array',
+					'array', 'number', 'array', 'number',
 					'number', 'number'],
 				[UTF8ToCP1251Array(caType),
-					programName ? 
+					programName ?
 						UTF8ToCP1251Array(programName) : 0,
-					programVersion ? 
+					programVersion ?
 						UTF8ToCP1251Array(programVersion) : 0,
 					sendDate ? sendDatePtr.ptr : 0,
 					UTF8ToCP1251Array(fileName),
 					UTF8ToCP1251Array(clientEMail),
-					clientCert, clientCert.length, 
+					clientCert, clientCert.length,
 					data, data.length,
 					resultDataPtr.ptr, resultDataPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (sendDate != null)
 			sendDatePtr.free();
 
@@ -11125,14 +11125,14 @@ function() {
 		try {
 			error = Module.ccall('EUParseTransportHeader',
 				'number',
-				['array', 'number', 
+				['array', 'number',
 					'number', 'number', 'number'],
 				[data, data.length, intPtr.ptr,
 					resultDataPtr.ptr, resultDataPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			intPtr.free();
 			resultDataPtr.free();
@@ -11152,10 +11152,10 @@ function() {
 		try {
 			error = Module.ccall('EUAppendCryptoHeader',
 				'number',
-				['array', 'number', 
+				['array', 'number',
 					'array', 'number',
 					'number', 'number'],
-				[UTF8ToCP1251Array(caType), 
+				[UTF8ToCP1251Array(caType),
 					headerType, data, data.length,
 					resultDataPtr.ptr, resultDataPtr.lengthPtr]);
 		} catch (e) {
@@ -11186,15 +11186,15 @@ function() {
 			error = Module.ccall('EUParseCryptoHeader',
 				'number',
 				['array', 'number',
-					'number', 'number', 'number', 
+					'number', 'number', 'number',
 					'number', 'number'],
-				[data, data.length, 
+				[data, data.length,
 					caTypePtr.ptr, headerTypePtr.ptr, headerSizePtr.ptr,
 					resultDataPtr.ptr, resultDataPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			caTypePtr.free();
 			headerTypePtr.free();
@@ -11205,9 +11205,9 @@ function() {
 
 		var caType = CP1251PointerToUTF8(caTypePtr.ptr);
 		caTypePtr.free();
-		
+
 		return new EndUserCryptoHeader(
-			caType, headerTypePtr.toNumber(), 
+			caType, headerTypePtr.toNumber(),
 			headerSizePtr.toNumber(),
 			resultDataPtr.toArray());
 	},
@@ -11223,10 +11223,10 @@ function() {
 		try {
 			error = Module.ccall('EUSServerClientSignHashAsync',
 				'number',
-				['array', 
-					isPort ? 'array' : 'number', 'array', 
-					originatorDescription ? 'array' : 'number', 
-					'array', 
+				['array',
+					isPort ? 'array' : 'number', 'array',
+					originatorDescription ? 'array' : 'number',
+					'array',
 					isHashStr ? 'array' : 'number',
 					(!isHashStr) ? 'array' : 'number',
 						'number', 'array', 'number'],
@@ -11243,7 +11243,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			this.RaiseError(error);
@@ -11252,18 +11252,18 @@ function() {
 		return pPtr.toString(true);
 	},
 	SServerClientCheckSignHashStatus: function(
-		serverAddress, serverPort, clientID, 
+		serverAddress, serverPort, clientID,
 		operationID, asBase64String) {
 		var isPort = serverPort != null && serverPort != "";
-		var pPtr = asBase64String ? 
+		var pPtr = asBase64String ?
 			EUPointer() : EUPointerArray();
 		var error;
 
 		try {
 			error = Module.ccall('EUSServerClientCheckSignHashStatus',
 				'number',
-				['array', 
-					isPort ? 'array' : 'number', 'array', 'array', 
+				['array',
+					isPort ? 'array' : 'number', 'array', 'array',
 					'number', 'number', 'number'],
 				[UTF8ToCP1251Array(serverAddress),
 					isPort ? UTF8ToCP1251Array(serverPort) : 0,
@@ -11275,13 +11275,13 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			this.RaiseError(error);
 		}
 
-		var sign = asBase64String ? 
+		var sign = asBase64String ?
 			pPtr.toString(true) : pPtr.toArray();
 		return sign && (sign.length > 0) ? sign : null;
 	},
@@ -11289,23 +11289,23 @@ function() {
 		serverAddress, serverPort, clientID, originatorDescription,
 		operationDescription, hashesDescriptions, hashes, signAlgorithmName) {
 		var isPort = serverPort != null && serverPort != "";
-		var hashesDescr = hashesDescriptions != null ? 
+		var hashesDescr = hashesDescriptions != null ?
 			intArrayFromStrings(hashesDescriptions) : 0;
 		var isHashesStr = (typeof hashes[0]) == 'string';
-		var hashesValues = isHashesStr ? 
-			intArrayFromStrings(hashes) : 
+		var hashesValues = isHashesStr ?
+			intArrayFromStrings(hashes) :
 			new EUArrayFromArrayOfArray(hashes);
-		
+
 		var pPtr = EUPointer();
 		var error;
 
 		try {
 			error = Module.ccall('EUSServerClientSignHashesAsync',
 				'number',
-				['array', 
-					isPort ? 'array' : 'number', 'array', 
-					originatorDescription ? 'array' : 'number', 
-					'array', 
+				['array',
+					isPort ? 'array' : 'number', 'array',
+					originatorDescription ? 'array' : 'number',
+					'array',
 					hashesDescr ? 'array' : 'number',
 					isHashesStr ? 'array' : 'number',
 					'number', 'number', 'number',
@@ -11325,7 +11325,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			this.RaiseError(error);
@@ -11342,8 +11342,8 @@ function() {
 		try {
 			error = Module.ccall('EUSServerClientCheckSignHashesStatus',
 				'number',
-				['array', 
-					isPort ? 'array' : 'number', 'array', 'array', 
+				['array',
+					isPort ? 'array' : 'number', 'array', 'array',
 					'number', 'number'],
 				[UTF8ToCP1251Array(serverAddress),
 					isPort ? UTF8ToCP1251Array(serverPort) : 0,
@@ -11353,7 +11353,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			intPtr.free();
@@ -11367,7 +11367,7 @@ function() {
 			for (var i = 0; i < itemsCount; i++) {
 				var pCurPtr = Module.getValue(
 					(itemsPtr + i * EU_PTR_SIZE) | 0, "i8*");
-				
+
 				results.push(new EndUserSSSignHashResult(pCurPtr));
 			}
 		} catch (e) {
@@ -11380,14 +11380,14 @@ function() {
 		return results;
 	},
 	SServerClientGeneratePrivateKeyAsync: function(
-		serverAddress, serverPort, clientID, 
-		originatorDescription, privateKeyDescription, 
+		serverAddress, serverPort, clientID,
+		originatorDescription, privateKeyDescription,
 		uaAlgorithmName, uaDSKeyLength, useDSKeyAsKEP, uaKEPKeyLength,
 		internationalAlgorithmName, internationalKeyLength) {
 		var isPort = serverPort != null && serverPort != "";
-		var isUAAlgorithmName = 
+		var isUAAlgorithmName =
 			((typeof uaAlgorithmName) == 'string');
-		var isIntAlgorithmName = 
+		var isIntAlgorithmName =
 			((typeof internationalAlgorithmName) == 'string');
 		var pPtr = EUPointer();
 		var error;
@@ -11395,10 +11395,10 @@ function() {
 		try {
 			error = Module.ccall('EUSServerClientGeneratePrivateKeyAsync',
 				'number',
-				['array', 
-					isPort ? 'array' : 'number', 'array', 
+				['array',
+					isPort ? 'array' : 'number', 'array',
 					originatorDescription ? 'array' : 'number',
-					'array', 
+					'array',
 					isUAAlgorithmName ? 'array' : 'number',
 					'number', 'number', 'number',
 					isIntAlgorithmName ? 'array' : 'number',
@@ -11408,19 +11408,19 @@ function() {
 					UTF8ToCP1251Array(clientID),
 					originatorDescription ? UTF8ToCP1251Array(originatorDescription) : 0,
 					UTF8ToCP1251Array(privateKeyDescription),
-					isUAAlgorithmName ? 
+					isUAAlgorithmName ?
 						UTF8ToCP1251Array(uaAlgorithmName) : 0,
-					uaDSKeyLength, 
+					uaDSKeyLength,
 					useDSKeyAsKEP ? 1 : 0,
-					uaKEPKeyLength, 
-					isIntAlgorithmName ? 
+					uaKEPKeyLength,
+					isIntAlgorithmName ?
 						UTF8ToCP1251Array(internationalAlgorithmName) : 0,
 					internationalKeyLength,
 					pPtr.ptr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			this.RaiseError(error);
@@ -11452,9 +11452,9 @@ function() {
 			error = Module.ccall(
 				'EUSServerClientCheckGeneratePrivateKeyStatus',
 				'number',
-				['array', 
-					isPort ? 'array' : 'number', 
-					'array', 'array', 
+				['array',
+					isPort ? 'array' : 'number',
+					'array', 'array',
 					'number', 'number', 'number',
 					'number', 'number', 'number',
 					'number', 'number', 'number'],
@@ -11463,10 +11463,10 @@ function() {
 					UTF8ToCP1251Array(clientID),
 					UTF8ToCP1251Array(operationID),
 					uaReqPtr.ptr, uaReqPtr.lengthPtr,
-					uaReqNamePtr.ptr, 
-					uaKEPReqPtr.ptr, uaKEPReqPtr.lengthPtr, 
+					uaReqNamePtr.ptr,
+					uaKEPReqPtr.ptr, uaKEPReqPtr.lengthPtr,
 					uaKEPReqNamePtr.ptr,
-					intReqPtr.ptr, intReqPtr.lengthPtr, 
+					intReqPtr.ptr, intReqPtr.lengthPtr,
 					intReqNamePtr.ptr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -11485,7 +11485,7 @@ function() {
 
 			return str.substring(lastInd + 1, str.length);
 		};
-		
+
 		var _toArray = function(arrPtr) {
 			var arr = arrPtr.toArray();
 			return (arr && (arr.length > 0)) ? arr : null;
@@ -11498,15 +11498,15 @@ function() {
 		var intReq = _toArray(intReqPtr);
 		var intReqName = _toString(intReqNamePtr.ptr);
 
-		if ((uaReq == null) && 
-			(uaKEPReq == null) && 
+		if ((uaReq == null) &&
+			(uaKEPReq == null) &&
 			(intReq == null)) {
 			return null;
 		}
 
 		var euPrivateKey = new EndUserPrivateKey(
-			null, null, uaReq, uaReqName, 
-			uaKEPReq, uaKEPReqName, 
+			null, null, uaReq, uaReqName,
+			uaKEPReq, uaKEPReqName,
 			intReq, intReqName, null, null);
 
 		_free();
@@ -11604,7 +11604,7 @@ function() {
 				['number', 'array', 'number',
 					'number', 'number', 'number'],
 				[signIndex, asicData, asicData.length,
-					pCertInfoExPtr.ptr, 
+					pCertInfoExPtr.ptr,
 					certArrPtr.ptr, certArrPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -11683,12 +11683,12 @@ function() {
 
 			this.RaiseError(error);
 		}
-		
+
 		return pPtr.toStringArray(this.fieldsEncoder);
 	},
 	ASiCGetReference: function(asicData, referenceName) {
 		this.CheckMaxDataSize(asicData);
-		
+
 		if ((typeof asicData) == 'string')
 			asicData = this.Base64Decode(asicData);
 
@@ -11699,13 +11699,13 @@ function() {
 			error = Module.ccall('EUASiCGetReference',
 				'number',
 				['array', 'number', 'array', 'number', 'number'],
-				[asicData, asicData.length, 
+				[asicData, asicData.length,
 					this.fieldsEncoder.encode(referenceName),
 					arrPtr.ptr, arrPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			arrPtr.free();
 			this.RaiseError(error);
@@ -11713,7 +11713,7 @@ function() {
 
 		return arrPtr.toArray();
 	},
-	ASiCSignData: function(asicType, signType, 
+	ASiCSignData: function(asicType, signType,
 		signLevel, references, asBase64String) {
 		var refNames = [];
 		var refData = [];
@@ -11725,7 +11725,7 @@ function() {
 		}
 
 		this.CheckMaxDataSize(refDataSize);
-		
+
 		var refNamesString = intArrayFromStrings(
 			refNames, this.fieldsEncoder);
 		var refDataArray = new EUArrayFromArrayOfArray(refData);
@@ -11736,17 +11736,17 @@ function() {
 		try {
 			error = Module.ccall('EUASiCSignData',
 				'number',
-				['number', 'number', 'number', 
-					'array', 'number', 'number', 
+				['number', 'number', 'number',
+					'array', 'number', 'number',
 					'number', 'number'],
-				[asicType, signType, signLevel, 
-					refNamesString, refDataArray.arraysPtr, 
+				[asicType, signType, signLevel,
+					refNamesString, refDataArray.arraysPtr,
 					refDataArray.arraysLengthPtr,
 					pPtr.ptr, pPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			this.RaiseError(error);
@@ -11754,7 +11754,7 @@ function() {
 
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	},
 	ASiCAppendSign: function(signLevel, referencesNames,
@@ -11764,8 +11764,8 @@ function() {
 		if ((typeof asicData) == 'string')
 			asicData = this.Base64Decode(asicData);
 
-		var refNamesString = referencesNames != null ? 
-			intArrayFromStrings(referencesNames, this.fieldsEncoder) : 
+		var refNamesString = referencesNames != null ?
+			intArrayFromStrings(referencesNames, this.fieldsEncoder) :
 			0;
 
 		var pPtr = EUPointerArray();
@@ -11774,9 +11774,9 @@ function() {
 		try {
 			error = Module.ccall('EUASiCAppendSign',
 				'number',
-				['number', 
+				['number',
 					refNamesString ? 'array' : 'number',
-					'array', 'number', 
+					'array', 'number',
 					'number', 'number'],
 				[signLevel,
 					refNamesString,
@@ -11785,7 +11785,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			this.RaiseError(error);
@@ -11793,12 +11793,12 @@ function() {
 
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	},
 	ASiCVerifyData: function(signIndex, asicData) {
 		this.CheckMaxDataSize(asicData);
-		
+
 		if ((typeof asicData) == 'string')
 			asicData = this.Base64Decode(asicData);
 
@@ -11809,14 +11809,14 @@ function() {
 		try {
 			error = Module.ccall('EUASiCVerifyData',
 				'number',
-				['number', 'array', 'number', 
+				['number', 'array', 'number',
 					'number'],
 				[signIndex, asicData, asicData.length,
 					infoPtr.ptr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			infoPtr.free();
 			this.RaiseError(error);
@@ -11829,15 +11829,15 @@ function() {
 			infoPtr.free();
 			throw e;
 		}
-		
-		var info = new EndUserSignInfo(infoPtr.ptr, 
+
+		var info = new EndUserSignInfo(infoPtr.ptr,
 			null, signTimeInfo);
 		infoPtr.free();
 
 		return info;
 	},
 	CtxASiCSignData: function(pkContext,
-		signAlgo, asicType, signType, 
+		signAlgo, asicType, signType,
 		signLevel, references, asBase64String) {
 		var refNames = [];
 		var refData = [];
@@ -11849,7 +11849,7 @@ function() {
 		}
 
 		this.CheckMaxDataSize(refDataSize);
-		
+
 		var refNamesString = intArrayFromStrings(
 			refNames, this.fieldsEncoder);
 		var refDataArray = new EUArrayFromArrayOfArray(refData);
@@ -11861,19 +11861,19 @@ function() {
 		try {
 			error = Module.ccall('EUCtxASiCSignData',
 				'number',
-				['number', 'number', 
-					'number', 'number', 'number', 
-					'array', 'number', 'number', 
+				['number', 'number',
+					'number', 'number', 'number',
+					'array', 'number', 'number',
 					'number', 'number'],
 				[pkContext.GetContext(), signAlgo,
-					asicType, signType, signLevel, 
-					refNamesString, refDataArray.arraysPtr, 
+					asicType, signType, signLevel,
+					refNamesString, refDataArray.arraysPtr,
 					refDataArray.arraysLengthPtr,
 					pPtr.ptr, pPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			this.RaiseError(error);
@@ -11881,18 +11881,18 @@ function() {
 
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	},
 	CtxASiCAppendSign: function(pkContext,
-		signAlgo, signLevel, referencesNames, asicData, 
+		signAlgo, signLevel, referencesNames, asicData,
 		asBase64String) {
 		this.CheckMaxDataSize(asicData);
 
 		if ((typeof asicData) == 'string')
 			asicData = this.Base64Decode(asicData);
 
-		var refNamesString = referencesNames != null ? 
+		var refNamesString = referencesNames != null ?
 			intArrayFromStrings(referencesNames, this.fieldsEncoder) :
 			0;
 
@@ -11905,16 +11905,16 @@ function() {
 				'number',
 				['number', 'number', 'number',
 					refNamesString ? 'array' : 'number',
-					'array', 'number', 
+					'array', 'number',
 					'number', 'number'],
-				[pkContext.GetContext(), signAlgo, signLevel, 
-					refNamesString, 
+				[pkContext.GetContext(), signAlgo, signLevel,
+					refNamesString,
 					asicData, asicData.length,
 					pPtr.ptr, pPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			this.RaiseError(error);
@@ -11922,7 +11922,7 @@ function() {
 
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	},
 	ASiCGetSignLevel: function(signIndex, asicData) {
@@ -11937,9 +11937,9 @@ function() {
 		try {
 			error = Module.ccall('EUASiCGetSignLevel',
 				'number',
-				['number', 'array', 'number', 
+				['number', 'array', 'number',
 					'number'],
-				[signIndex, asicData, asicData.length, 
+				[signIndex, asicData, asicData.length,
 					intPtr.ptr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -11967,9 +11967,9 @@ function() {
 				'number',
 				['number', 'number', 'array', 'number',
 					'number', 'number', 'number'],
-				[context.GetContext(), signIndex, 
+				[context.GetContext(), signIndex,
 					asicData, asicData.length,
-					pCertInfoExPtr.ptr, 
+					pCertInfoExPtr.ptr,
 					certArrPtr.ptr, certArrPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -12004,9 +12004,9 @@ function() {
 		try {
 			error = Module.ccall('EUASiCIsAllContentCovered',
 				'number',
-				['number', 'array', 'number', 
+				['number', 'array', 'number',
 					'number'],
-				[signIndex, asicData, asicData.length, 
+				[signIndex, asicData, asicData.length,
 					intPtr.ptr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -12019,7 +12019,7 @@ function() {
 
 		return intPtr.toBoolean();
 	},
-	ASiCCreateEmptySign: function(asicType, signType, 
+	ASiCCreateEmptySign: function(asicType, signType,
 		references, asBase64String) {
 		var refNames = [];
 		var refData = [];
@@ -12031,7 +12031,7 @@ function() {
 		}
 
 		this.CheckMaxDataSize(refDataSize);
-		
+
 		var refNamesString = intArrayFromStrings(
 			refNames, this.fieldsEncoder);
 		var refDataArray = new EUArrayFromArrayOfArray(refData);
@@ -12043,16 +12043,16 @@ function() {
 			error = Module.ccall('EUASiCCreateEmptySign',
 				'number',
 				['number', 'number',
-					'array', 'number', 'number', 
+					'array', 'number', 'number',
 					'number', 'number'],
-				[asicType, signType, 
-					refNamesString, refDataArray.arraysPtr, 
+				[asicType, signType,
+					refNamesString, refDataArray.arraysPtr,
 					refDataArray.arraysLengthPtr,
 					pPtr.ptr, pPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			this.RaiseError(error);
@@ -12060,7 +12060,7 @@ function() {
 
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	},
 	ASiCCreateSignerBegin: function(
@@ -12071,8 +12071,8 @@ function() {
 		if ((typeof asicData) == 'string')
 			asicData = this.Base64Decode(asicData);
 
-		var refNamesString = referencesNames != null ? 
-			intArrayFromStrings(referencesNames, this.fieldsEncoder) : 
+		var refNamesString = referencesNames != null ?
+			intArrayFromStrings(referencesNames, this.fieldsEncoder) :
 			0;
 
 		var pSignRefPtr = EUPointer();
@@ -12085,20 +12085,20 @@ function() {
 				'number',
 				['number', 'number', 'number',
 					refNamesString ? 'array' : 'number',
-					'array', 'number', 
-					'number', 
+					'array', 'number',
+					'number',
 					'number', 'number',
 					'number', 'number'],
 				[signAlgo, asicType, signType,
 					refNamesString,
 					asicData, asicData.length,
-					pSignRefPtr.ptr, 
+					pSignRefPtr.ptr,
 					pAttrsHashPtr.ptr, pAttrsHashPtr.lengthPtr,
 					pASiCDataPtr.ptr, pASiCDataPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pSignRefPtr.free();
 			pAttrsHashPtr.free();
@@ -12107,7 +12107,7 @@ function() {
 		}
 
 		return new EndUserASiCSigner(
-			pSignRefPtr.toString(false, this.fieldsEncoder), 
+			pSignRefPtr.toString(false, this.fieldsEncoder),
 			pAttrsHashPtr.toArray(), pASiCDataPtr.toArray());
 	},
 	ASiCCreateSignerBeginEx: function(
@@ -12120,8 +12120,8 @@ function() {
 		if ((typeof asicData) == 'string')
 			asicData = this.Base64Decode(asicData);
 
-		var refNamesString = referencesNames != null ? 
-			intArrayFromStrings(referencesNames, this.fieldsEncoder) : 
+		var refNamesString = referencesNames != null ?
+			intArrayFromStrings(referencesNames, this.fieldsEncoder) :
 			0;
 
 		var pSignRefPtr = EUPointer();
@@ -12135,22 +12135,22 @@ function() {
 				[signerCert ? 'array' : 'number', 'number',
 					'number', 'number', 'number',
 					refNamesString ? 'array' : 'number',
-					'array', 'number', 
-					'number', 
+					'array', 'number',
+					'number',
 					'number', 'number',
 					'number', 'number'],
-				[signerCert ? signerCert : 0, 
+				[signerCert ? signerCert : 0,
 					signerCert ? signerCert.length : 0,
 					signAlgo, asicType, signType,
 					refNamesString,
 					asicData, asicData.length,
-					pSignRefPtr.ptr, 
+					pSignRefPtr.ptr,
 					pAttrsHashPtr.ptr, pAttrsHashPtr.lengthPtr,
 					pASiCDataPtr.ptr, pASiCDataPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pSignRefPtr.free();
 			pAttrsHashPtr.free();
@@ -12159,12 +12159,12 @@ function() {
 		}
 
 		return new EndUserASiCSigner(
-			pSignRefPtr.toString(false, this.fieldsEncoder), 
+			pSignRefPtr.toString(false, this.fieldsEncoder),
 			pAttrsHashPtr.toArray(), pASiCDataPtr.toArray());
 	},
 	ASiCCreateSignerEnd: function(
 		asicType, signType, signLevel,
-		signatureReference, signature, 
+		signatureReference, signature,
 		asicData, asBase64String) {
 		this.CheckMaxDataSize(signature);
 		this.CheckMaxDataSize(asicData);
@@ -12181,7 +12181,7 @@ function() {
 			error = Module.ccall('EUASiCCreateSignerEnd',
 				'number',
 				['number', 'number', 'number',
-					'array', 'array', 'number', 
+					'array', 'array', 'number',
 					'array', 'number',
 					'number', 'number'],
 				[asicType, signType, signLevel,
@@ -12192,7 +12192,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			this.RaiseError(error);
@@ -12200,7 +12200,7 @@ function() {
 
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	},
 	PDFGetSignType: function(signIndex, signedPDFData) {
@@ -12215,9 +12215,9 @@ function() {
 		try {
 			error = Module.ccall('EUPDFGetSignType',
 				'number',
-				['number', 'array', 'number', 
+				['number', 'array', 'number',
 					'number'],
-				[signIndex, signedPDFData, signedPDFData.length, 
+				[signIndex, signedPDFData, signedPDFData.length,
 					intPtr.ptr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -12271,7 +12271,7 @@ function() {
 				['number', 'array', 'number',
 					'number', 'number', 'number'],
 				[signIndex, signedPDFData, signedPDFData.length,
-					pCertInfoExPtr.ptr, 
+					pCertInfoExPtr.ptr,
 					certArrPtr.ptr, certArrPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -12308,9 +12308,9 @@ function() {
 				'number',
 				['number', 'number', 'array', 'number',
 					'number', 'number', 'number'],
-				[context.GetContext(), signIndex, 
+				[context.GetContext(), signIndex,
 					signedPDFData, signedPDFData.length,
-					pCertInfoExPtr.ptr, 
+					pCertInfoExPtr.ptr,
 					certArrPtr.ptr, certArrPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -12368,21 +12368,21 @@ function() {
 	},
 	PDFSignData: function(pdfData, signType, asBase64String) {
 		this.CheckMaxDataSize(pdfData);
-		
+
 		var pPtr = EUPointerArray();
 		var error;
 
 		try {
 			error = Module.ccall('EUPDFSignData',
 				'number',
-				['array', 'number', 'number', 
+				['array', 'number', 'number',
 					'number', 'number'],
 				[pdfData, pdfData.length, signType,
 					pPtr.ptr, pPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			this.RaiseError(error);
@@ -12390,12 +12390,12 @@ function() {
 
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	},
 	PDFVerifyData: function(signIndex, signedPDFData) {
 		this.CheckMaxDataSize(signedPDFData);
-		
+
 		if ((typeof signedPDFData) == 'string')
 			signedPDFData = this.Base64Decode(signedPDFData);
 
@@ -12406,14 +12406,14 @@ function() {
 		try {
 			error = Module.ccall('EUPDFVerifyData',
 				'number',
-				['number', 'array', 'number', 
+				['number', 'array', 'number',
 					'number'],
 				[signIndex, signedPDFData, signedPDFData.length,
 					infoPtr.ptr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			infoPtr.free();
 			this.RaiseError(error);
@@ -12426,8 +12426,8 @@ function() {
 			infoPtr.free();
 			throw e;
 		}
-		
-		var info = new EndUserSignInfo(infoPtr.ptr, 
+
+		var info = new EndUserSignInfo(infoPtr.ptr,
 			null, signTimeInfo);
 		infoPtr.free();
 
@@ -12444,8 +12444,8 @@ function() {
 		try {
 			error = Module.ccall('EUCtxPDFSignData',
 				'number',
-				['number', 'number', 
-					'array', 'number', 'number', 
+				['number', 'number',
+					'array', 'number', 'number',
 					'number', 'number'],
 				[pkContext.GetContext(), signAlgo,
 					pdfData, pdfData.length, signType,
@@ -12453,7 +12453,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			this.RaiseError(error);
@@ -12461,12 +12461,12 @@ function() {
 
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	},
 	PDFCreateSignerBegin: function(signAlgo, pdfData) {
 		this.CheckMaxDataSize(pdfData);
-		
+
 		var pSignRefPtr = EUPointer();
 		var pAttrsHashPtr = EUPointerArray();
 		var pPDFDataPtr = EUPointerArray();
@@ -12476,15 +12476,15 @@ function() {
 			error = Module.ccall('EUPDFCreateSignerBegin',
 				'number',
 				['number', 'array', 'number', 'number',
-					'number', 'number', 
+					'number', 'number',
 					'number', 'number'],
-				[signAlgo, pdfData, pdfData.length, pSignRefPtr.ptr, 
+				[signAlgo, pdfData, pdfData.length, pSignRefPtr.ptr,
 					pAttrsHashPtr.ptr, pAttrsHashPtr.lengthPtr,
 					pPDFDataPtr.ptr, pPDFDataPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pSignRefPtr.free();
 			pAttrsHashPtr.free();
@@ -12493,10 +12493,10 @@ function() {
 		}
 
 		return new EndUserPDFSigner(
-			pSignRefPtr.toString(false, this.fieldsEncoder), 
+			pSignRefPtr.toString(false, this.fieldsEncoder),
 			pAttrsHashPtr.toArray(), pPDFDataPtr.toArray());
 	},
-	PDFCreateSignerEnd: function(pdfData, signType, 
+	PDFCreateSignerEnd: function(pdfData, signType,
 		signatureReference, signature, asBase64String) {
 		this.CheckMaxDataSize(pdfData);
 		this.CheckMaxDataSize(signature);
@@ -12505,7 +12505,7 @@ function() {
 			pdfData = this.Base64Decode(pdfData);
 		if ((typeof signature) == 'string')
 			signature = this.Base64Decode(signature);
-		
+
 		var pPtr = EUPointerArray();
 		var error;
 
@@ -12516,13 +12516,13 @@ function() {
 					'array', 'array', 'number',
 					'number', 'number'],
 				[pdfData, pdfData.length, signType,
-					this.fieldsEncoder.encode(signatureReference), 
+					this.fieldsEncoder.encode(signatureReference),
 					signature, signature.length,
 					pPtr.ptr, pPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			this.RaiseError(error);
@@ -12530,7 +12530,7 @@ function() {
 
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	},
 	XAdESGetType: function(xadesData) {
@@ -12595,9 +12595,9 @@ function() {
 		try {
 			error = Module.ccall('EUXAdESGetSignLevel',
 				'number',
-				['number', 'array', 'number', 
+				['number', 'array', 'number',
 					'number'],
-				[signIndex, xadesData, xadesData.length, 
+				[signIndex, xadesData, xadesData.length,
 					intPtr.ptr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -12626,7 +12626,7 @@ function() {
 				['number', 'array', 'number',
 					'number', 'number', 'number'],
 				[signIndex, xadesData, xadesData.length,
-					pCertInfoExPtr.ptr, 
+					pCertInfoExPtr.ptr,
 					certArrPtr.ptr, certArrPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -12705,12 +12705,12 @@ function() {
 
 			this.RaiseError(error);
 		}
-		
+
 		return pPtr.toStringArray(this.fieldsEncoder);
 	},
 	XAdESGetReference: function(xadesData, referenceName) {
 		this.CheckMaxDataSize(xadesData);
-		
+
 		if ((typeof xadesData) == 'string')
 			xadesData = this.Base64Decode(xadesData);
 
@@ -12721,13 +12721,13 @@ function() {
 			error = Module.ccall('EUXAdESGetReference',
 				'number',
 				['array', 'number', 'array', 'number', 'number'],
-				[xadesData, xadesData.length, 
+				[xadesData, xadesData.length,
 					this.fieldsEncoder.encode(referenceName),
 					arrPtr.ptr, arrPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			arrPtr.free();
 			this.RaiseError(error);
@@ -12735,7 +12735,7 @@ function() {
 
 		return arrPtr.toArray();
 	},
-	XAdESSignData: function(xadesType, signLevel, 
+	XAdESSignData: function(xadesType, signLevel,
 		references, asBase64String) {
 		var refNames = [];
 		var refData = [];
@@ -12747,7 +12747,7 @@ function() {
 		}
 
 		this.CheckMaxDataSize(refDataSize);
-		
+
 		var refNamesString = intArrayFromStrings(
 			refNames, this.fieldsEncoder);
 		var refDataArray = new EUArrayFromArrayOfArray(refData);
@@ -12758,17 +12758,17 @@ function() {
 		try {
 			error = Module.ccall('EUXAdESSignData',
 				'number',
-				['number', 'number', 
-					'array', 'number', 'number', 
+				['number', 'number',
+					'array', 'number', 'number',
 					'number', 'number'],
-				[xadesType, signLevel, 
-					refNamesString, refDataArray.arraysPtr, 
+				[xadesType, signLevel,
+					refNamesString, refDataArray.arraysPtr,
 					refDataArray.arraysLengthPtr,
 					pPtr.ptr, pPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			this.RaiseError(error);
@@ -12776,7 +12776,7 @@ function() {
 
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	},
 	XAdESVerifyData: function(references, signIndex, xadesData) {
@@ -12794,14 +12794,14 @@ function() {
 			}
 
 			this.CheckMaxDataSize(refDataSize);
-		
+
 			refNamesString = intArrayFromStrings(
 				refNames, this.fieldsEncoder);
 			refDataArray = new EUArrayFromArrayOfArray(refData);
 		}
 
 		this.CheckMaxDataSize(xadesData);
-		
+
 		if ((typeof xadesData) == 'string')
 			xadesData = this.Base64Decode(xadesData);
 
@@ -12812,19 +12812,19 @@ function() {
 		try {
 			error = Module.ccall('EUXAdESVerifyData',
 				'number',
-				[refNamesString != null ? 'array' : 'number', 
-					'number', 'number', 
-					'number', 'array', 'number', 
+				[refNamesString != null ? 'array' : 'number',
+					'number', 'number',
+					'number', 'array', 'number',
 					'number'],
-				[refNamesString, 
-					refDataArray != null ? refDataArray.arraysPtr : 0, 
+				[refNamesString,
+					refDataArray != null ? refDataArray.arraysPtr : 0,
 					refDataArray != null ? refDataArray.arraysLengthPtr : 0,
 					signIndex, xadesData, xadesData.length,
 					infoPtr.ptr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			infoPtr.free();
 			this.RaiseError(error);
@@ -12837,15 +12837,15 @@ function() {
 			infoPtr.free();
 			throw e;
 		}
-		
-		var info = new EndUserSignInfo(infoPtr.ptr, 
+
+		var info = new EndUserSignInfo(infoPtr.ptr,
 			null, signTimeInfo);
 		infoPtr.free();
 
 		return info;
 	},
 	CtxXAdESSignData: function(pkContext,
-		signAlgo, xadesType, 
+		signAlgo, xadesType,
 		signLevel, references, asBase64String) {
 		var refNames = [];
 		var refData = [];
@@ -12857,7 +12857,7 @@ function() {
 		}
 
 		this.CheckMaxDataSize(refDataSize);
-		
+
 		var refNamesString = intArrayFromStrings(
 			refNames, this.fieldsEncoder);
 		var refDataArray = new EUArrayFromArrayOfArray(refData);
@@ -12869,19 +12869,19 @@ function() {
 		try {
 			error = Module.ccall('EUCtxXAdESSignData',
 				'number',
-				['number', 'number', 
+				['number', 'number',
 					'number', 'number',
-					'array', 'number', 'number', 
+					'array', 'number', 'number',
 					'number', 'number'],
 				[pkContext.GetContext(), signAlgo,
-					xadesType, signLevel, 
-					refNamesString, refDataArray.arraysPtr, 
+					xadesType, signLevel,
+					refNamesString, refDataArray.arraysPtr,
 					refDataArray.arraysLengthPtr,
 					pPtr.ptr, pPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			this.RaiseError(error);
@@ -12889,7 +12889,7 @@ function() {
 
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	},
 	CtxXAdESGetSignerInfo: function(context, signIndex, xadesData) {
@@ -12907,9 +12907,9 @@ function() {
 				'number',
 				['number', 'number', 'array', 'number',
 					'number', 'number', 'number'],
-				[context.GetContext(), signIndex, 
+				[context.GetContext(), signIndex,
 					xadesData, xadesData.length,
-					pCertInfoExPtr.ptr, 
+					pCertInfoExPtr.ptr,
 					certArrPtr.ptr, certArrPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
@@ -12944,7 +12944,7 @@ function() {
 		}
 		this.CheckMaxDataSize(signerCert);
 		this.CheckMaxDataSize(refDataSize);
-		
+
 		var refNamesString = intArrayFromStrings(
 			refNames, this.fieldsEncoder);
 		var refDataArray = new EUArrayFromArrayOfArray(refData);
@@ -12957,21 +12957,21 @@ function() {
 		try {
 			error = Module.ccall('EUXAdESCreateSignerBegin',
 				'number',
-				['array', 'number', 'number', 'number', 
-					'array', 'number', 'number', 
-					'number', 
+				['array', 'number', 'number', 'number',
+					'array', 'number', 'number',
+					'number',
 					'number', 'number',
 					'number', 'number'],
-				[signerCert, signerCert.length, signAlgo, xadesType, 
-					refNamesString, refDataArray.arraysPtr, 
+				[signerCert, signerCert.length, signAlgo, xadesType,
+					refNamesString, refDataArray.arraysPtr,
 					refDataArray.arraysLengthPtr,
-					pSignRefPtr.ptr, 
+					pSignRefPtr.ptr,
 					pAttrsHashPtr.ptr, pAttrsHashPtr.lengthPtr,
 					pXAdESDataPtr.ptr, pXAdESDataPtr.lengthPtr]);
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pSignRefPtr.free();
 			pAttrsHashPtr.free();
@@ -12980,11 +12980,11 @@ function() {
 		}
 
 		return new EndUserXAdESSigner(
-			pSignRefPtr.toString(false, this.fieldsEncoder), 
+			pSignRefPtr.toString(false, this.fieldsEncoder),
 			pAttrsHashPtr.toArray(), pXAdESDataPtr.toArray());
 	},
 	XAdESCreateSignerEnd: function(
-		signLevel, signatureReference, signature, 
+		signLevel, signatureReference, signature,
 		xadesData, asBase64String) {
 		this.CheckMaxDataSize(signature);
 		this.CheckMaxDataSize(xadesData);
@@ -13001,7 +13001,7 @@ function() {
 			error = Module.ccall('EUXAdESCreateSignerEnd',
 				'number',
 				['number',
-					'array', 'array', 'number', 
+					'array', 'array', 'number',
 					'array', 'number',
 					'number', 'number'],
 				[signLevel,
@@ -13012,7 +13012,7 @@ function() {
 		} catch (e) {
 			error = EU_ERROR_UNKNOWN;
 		}
-		
+
 		if (error != EU_ERROR_NONE) {
 			pPtr.free();
 			this.RaiseError(error);
@@ -13020,7 +13020,7 @@ function() {
 
 		if (asBase64String)
 			return this.Base64Encode(pPtr.toArray());
-		else 
+		else
 			return pPtr.toArray();
 	}
 });
@@ -13076,7 +13076,7 @@ var SS_SERVER_QR_CODE_SCALE						= 3;
 //===============================================================================
 
 var EndUserKSPKey = function(
-	kspSettings, userId, keyId, signAlgos, signContainers, 
+	kspSettings, userId, keyId, signAlgos, signContainers,
 	certIssuerCN, certs, ownerInfo) {
 	this.kspSettings = kspSettings;
 	this.userId = userId;
@@ -13193,21 +13193,21 @@ EndUserKSP.EU_KSP_SIGN_FORMAT_XADES				= 2;
 EndUserKSP.EU_KSP_SIGN_FORMAT_PADES				= 3;
 
 EndUserKSP.ERROR_MAP = [];
-EndUserKSP.ERROR_MAP[EndUserKSP.EU_KSP_STATUS_REQUEST_OK]				= 
+EndUserKSP.ERROR_MAP[EndUserKSP.EU_KSP_STATUS_REQUEST_OK]				=
 	EU_ERROR_NONE;
-EndUserKSP.ERROR_MAP[EndUserKSP.EU_KSP_STATUS_WRONG_PARAM]				= 
+EndUserKSP.ERROR_MAP[EndUserKSP.EU_KSP_STATUS_WRONG_PARAM]				=
 	EU_ERROR_BAD_PARAMETER;
-EndUserKSP.ERROR_MAP[EndUserKSP.EU_KSP_STATUS_EXPIRED_TRANSACTION]		= 
+EndUserKSP.ERROR_MAP[EndUserKSP.EU_KSP_STATUS_EXPIRED_TRANSACTION]		=
 	EU_ERROR_TRANSMIT_REQUEST;
-EndUserKSP.ERROR_MAP[EndUserKSP.EU_KSP_STATUS_USER_CANCEL]				= 
+EndUserKSP.ERROR_MAP[EndUserKSP.EU_KSP_STATUS_USER_CANCEL]				=
 	EU_ERROR_CANCELED_BY_GUI;
-EndUserKSP.ERROR_MAP[EndUserKSP.EU_KSP_STATUS_NO_CERT_FOUND]			= 
+EndUserKSP.ERROR_MAP[EndUserKSP.EU_KSP_STATUS_NO_CERT_FOUND]			=
 	EU_ERROR_CERT_NOT_FOUND;
-EndUserKSP.ERROR_MAP[EndUserKSP.EU_KSP_STATUS_ERROR_CERTIFICATE]		= 
+EndUserKSP.ERROR_MAP[EndUserKSP.EU_KSP_STATUS_ERROR_CERTIFICATE]		=
 	EU_ERROR_BAD_CERT;
-EndUserKSP.ERROR_MAP[EndUserKSP.EU_KSP_STATUS_OUSTANDING_TRANSACTION]	= 
+EndUserKSP.ERROR_MAP[EndUserKSP.EU_KSP_STATUS_OUSTANDING_TRANSACTION]	=
 	EU_ERROR_TRANSMIT_REQUEST;
-EndUserKSP.ERROR_MAP[EndUserKSP.EU_KSP_STATUS_INTERNAL_ERROR]			= 
+EndUserKSP.ERROR_MAP[EndUserKSP.EU_KSP_STATUS_INTERNAL_ERROR]			=
 	EU_ERROR_UNKNOWN;
 
 //===============================================================================
@@ -13215,7 +13215,7 @@ EndUserKSP.ERROR_MAP[EndUserKSP.EU_KSP_STATUS_INTERNAL_ERROR]			=
 EndUserKSP.prototype.MakeError = function(errorCode, kspStatus) {
 	var pThis = this;
 
-	if ((kspStatus != null) && 
+	if ((kspStatus != null) &&
 			(EndUserKSP.ERROR_MAP[kspStatus.code] != undefined)) {
 		errorCode = EndUserKSP.ERROR_MAP.statusesMap[kspStatus.code];
 	}
@@ -13293,8 +13293,8 @@ EndUserKSP.prototype.MakeURL = function(url) {
 	}
 
 	if (s_origin && s_pathname) {
-		return s_origin + 
-			s_pathname.substr(0, s_pathname.lastIndexOf('/')) + 
+		return s_origin +
+			s_pathname.substr(0, s_pathname.lastIndexOf('/')) +
 			'/' + url;
 	}
 
@@ -13312,11 +13312,11 @@ EndUserKSP.prototype._GetKSPSettings = function(kspOrKSPName) {
 			if (pThis.m_KSPs[i].name == kspOrKSPName)
 				return pThis.m_KSPs[i];
 		}
-	
+
 		return null;
 	} else if (typeof kspOrKSPName == 'number') {
 		if (kspOrKSPName == EndUserKSP.EU_KSP_KYIVSTAR ||
-			kspOrKSPName == EndUserKSP.EU_KSP_VODAFONE || 
+			kspOrKSPName == EndUserKSP.EU_KSP_VODAFONE ||
 			kspOrKSPName == EndUserKSP.EU_KSP_LIFECELL) {
 			return {
 				name: 'MobileID',
@@ -13328,7 +13328,7 @@ EndUserKSP.prototype._GetKSPSettings = function(kspOrKSPName) {
 			if (pThis.m_KSPs[i].ksp == kspOrKSPName)
 				return pThis.m_KSPs[i];
 		}
-	
+
 		return null;
 	} else {
 		return null;
@@ -13356,7 +13356,7 @@ EndUserKSP.prototype._GetKSPSignContainers = function(kspSettings) {
 			EndUserKSP.EU_KSP_SIGN_CONTAINER_ASIC_E,
 			EndUserKSP.EU_KSP_SIGN_FORMAT_CADES,
 		));
-	
+
 	if (kspSettings.ksp == EndUserKSP.EU_KSP_DIIA) {
 		signContainers.push(
 			new EndUserKSPSignContainer(
@@ -13386,9 +13386,9 @@ EndUserKSP.prototype._GetKSPSignContainers = function(kspSettings) {
 //-------------------------------------------------------------------------------
 
 EndUserKSP.prototype._GetPollingInterval = function(kspSettings) {
-	return (kspSettings && 
-		typeof kspSettings.pollingInterval == 'number') ? 
-		(kspSettings.pollingInterval * 1000) : 
+	return (kspSettings &&
+		typeof kspSettings.pollingInterval == 'number') ?
+		(kspSettings.pollingInterval * 1000) :
 		EndUserKSP.EU_KSP_COMMAND_POLLING_INTERVAL * 1000;
 };
 
@@ -13406,16 +13406,16 @@ EndUserKSP.prototype._MakeExpireDate = function(expireTime) {
 
 EndUserKSP.prototype._MakeConfirmationURL = function(
 	kspSettings, operationType, userId, operationId) {
-	var action = (operationType == 
-		EndUserKSP.EU_KSP_OPERATION_TYPE_READ_PK) ? 
+	var action = (operationType ==
+		EndUserKSP.EU_KSP_OPERATION_TYPE_READ_PK) ?
 		'auth' : 'sign';
 
-	return kspSettings.confirmationURL + 
-		'?hash=rd/kep/' + 
-		'{' + 
-			'"clientId":"' + userId + '",' + 
-			'"operationId":"' + operationId + '",' + 
-			'"action":"' + action + '"' + 
+	return kspSettings.confirmationURL +
+		'?hash=rd/kep/' +
+		'{' +
+			'"clientId":"' + userId + '",' +
+			'"operationId":"' + operationId + '",' +
+			'"action":"' + action + '"' +
 		'}';
 };
 
@@ -13498,8 +13498,9 @@ EndUserKSP.prototype._SendRequest = function(
 //-------------------------------------------------------------------------------
 
 EndUserKSP.prototype._SendKSPRequest = function(
-	kspSettings, command, parameters, expireDate, 
+	kspSettings, command, parameters, expireDate,
 	onSign, onSuccess, onError) {
+console.log('kspSettings', kspSettings)
 	var pThis = this;
 
 	if ((new Date()) > expireDate) {
@@ -13516,20 +13517,20 @@ EndUserKSP.prototype._SendKSPRequest = function(
 
 	var kspURL = pThis.MakeURL(
 		command == EndUserKSP.EU_KSP_COMMAND_INITIALIZE_USER_REGISTRATION ||
-		command == EndUserKSP.EU_KSP_COMMAND_GET_USER_REGISTRATION_RESULT ? 
+		command == EndUserKSP.EU_KSP_COMMAND_GET_USER_REGISTRATION_RESULT ?
 		kspSettings.registrationURL : kspSettings.address || pThis.m_url);
 	var pollingInterval = pThis._GetPollingInterval(kspSettings);
-	
+
 	var request = new EndUserKSPRequest(command, parameters);
 	request = JSON.stringify(request);
 
 	pThis._SendRequest(
-		kspURL, request, 
+		kspURL, request,
 		function(response) {
 			var error;
 
 			if (!response.data) {
-				if (response.error.code != 
+				if (response.error.code !=
 						EndUserKSP.EU_KSP_STATUS_OUSTANDING_TRANSACTION) {
 					error = pThis.MakeError(
 						EU_ERROR_TRANSMIT_REQUEST, response.error);
@@ -13547,7 +13548,7 @@ EndUserKSP.prototype._SendKSPRequest = function(
 			}
 
 			if ((command == EndUserKSP.EU_KSP_COMMAND_INITIALIZE_READ_PKEY) ||
-				(command == EndUserKSP.EU_KSP_COMMAND_INITIALIZE_SIGN_HASH) || 
+				(command == EndUserKSP.EU_KSP_COMMAND_INITIALIZE_SIGN_HASH) ||
 				(command == EndUserKSP.EU_KSP_COMMAND_INITIALIZE_SIGN_HASHES) ||
 				(command == EndUserKSP.EU_KSP_COMMAND_INITIALIZE_USER_REGISTRATION)) {
 				if (!response.data.transactionId) {
@@ -13556,7 +13557,7 @@ EndUserKSP.prototype._SendKSPRequest = function(
 					onError(error);
 					return;
 				}
-				
+
 				parameters = {
 					"ksp": kspSettings.ksp,
 					"transactionId": response.data.transactionId
@@ -13581,7 +13582,7 @@ EndUserKSP.prototype._SendKSPRequest = function(
 					command = EndUserKSP.EU_KSP_COMMAND_GET_USER_REGISTRATION_RESULT;
 
 					try {
-						parameters['signature'] = 
+						parameters['signature'] =
 							onSign(response.data.transactionId);
 					} catch (e) {
 						onError(e);
@@ -13595,8 +13596,8 @@ EndUserKSP.prototype._SendKSPRequest = function(
 					try {
 						expireDate = pThis._MakeExpireDate(
 							response.data.expireTime);
-						
-						pThis._SendConfirmationOperationEvent(kspSettings, 
+
+						pThis._SendConfirmationOperationEvent(kspSettings,
 							response.data.confirmationURL, expireDate);
 					} catch (e) {
 						onError(e);
@@ -13634,12 +13635,12 @@ EndUserKSP.prototype._MakeKSPKeyContext = function(
 		if ((typeof certificate) == 'string')
 			certificate = pThis.m_euSign.Base64Decode(certificate);
 		var infoEx = pThis.m_euSign.ParseCertificateEx(certificate);
-		if ((infoEx.GetKeyUsageType() & 
-				(EU_KEY_USAGE_DIGITAL_SIGNATURE | 
+		if ((infoEx.GetKeyUsageType() &
+				(EU_KEY_USAGE_DIGITAL_SIGNATURE |
 					EU_KEY_USAGE_NON_REPUDATION)) != 0) {
 			switch (infoEx.GetPublicKeyType()) {
 				case EU_CERT_KEY_TYPE_DSTU4145:
-					if (infoEx.GetCertHashType() == 
+					if (infoEx.GetCertHashType() ==
 							EU_CERT_HASH_TYPE_GOST34311) {
 						signAlgos.push(EU_CTX_SIGN_DSTU4145_WITH_GOST34311);
 						signAlgos.push(EU_CTX_SIGN_DSTU4145_WITH_DSTU7564);
@@ -13676,7 +13677,7 @@ EndUserKSP.prototype._MakeKSPKeyContext = function(
 	}
 
 	return new EndUserKSPKey(
-		kspSettings, userId, keyId, signAlgos, 
+		kspSettings, userId, keyId, signAlgos,
 		pThis._GetKSPSignContainers(kspSettings),
 		ownerInfo.GetIssuerCN(), euCertificates, ownerInfo);
 };
@@ -13765,12 +13766,12 @@ EndUserKSP.prototype._SServerGeneratePrivateKey = function(
 		break;
 	}
 
-	var originatorDescription = 
-		SS_SERVER_ORIGINATOR_DESCRIPTION.replace("%s", 
+	var originatorDescription =
+		SS_SERVER_ORIGINATOR_DESCRIPTION.replace("%s",
 		kspSettings.systemId || s_origin);
 	if (operationDescription == null) {
-		operationDescription = 
-			SS_SERVER_GEN_KEY_DESCRIPTION.replace("%s", 
+		operationDescription =
+			SS_SERVER_GEN_KEY_DESCRIPTION.replace("%s",
 				kspSettings.systemId || s_origin);
 	}
 	var operationId = null;
@@ -13796,7 +13797,7 @@ EndUserKSP.prototype._SServerGeneratePrivateKey = function(
 	if (kspSettings.confirmationURL) {
 		try {
 			var confirmationURL = pThis._MakeConfirmationURL(
-				kspSettings, operationType, 
+				kspSettings, operationType,
 				keyContext.userId, operationId);
 			pThis._SendConfirmationOperationEvent(
 				kspSettings,
@@ -13807,7 +13808,7 @@ EndUserKSP.prototype._SServerGeneratePrivateKey = function(
 			return;
 		}
 	}
-		
+
 	var _getResult = function(expireDate) {
 		if ((new Date()) > expireDate) {
 			onError(pThis.MakeError(
@@ -13850,7 +13851,7 @@ EndUserKSP.prototype._SServerGeneratePrivateKey = function(
 //-------------------------------------------------------------------------------
 
 EndUserKSP.prototype._SServerSignHashes = function(
-	keyContext, signAlgo, hashes, operationType, 
+	keyContext, signAlgo, hashes, operationType,
 	originatorDescription, operationDescription, onSuccess, onError) {
 	var pThis = this;
 
@@ -13880,9 +13881,9 @@ EndUserKSP.prototype._SServerSignHashes = function(
 			break;
 	}
 
-	var originatorDescription = originatorDescription ? 
-		originatorDescription : 
-		SS_SERVER_ORIGINATOR_DESCRIPTION.replace("%s", 
+	var originatorDescription = originatorDescription ?
+		originatorDescription :
+		SS_SERVER_ORIGINATOR_DESCRIPTION.replace("%s",
 			kspSettings.systemId || s_origin);
 	var hashesDescriptions = [];
 	var hashesValues = [];
@@ -13894,8 +13895,8 @@ EndUserKSP.prototype._SServerSignHashes = function(
 		hashesDescriptions.push(item.name);
 		hashesValues.push(item.val);
 	}
-	
-	if (kspSettings.ksp == EndUserKSP.EU_KSP_PB) { 
+
+	if (kspSettings.ksp == EndUserKSP.EU_KSP_PB) {
 		try {
 			operationId = pThis.m_euSign.SServerClientSignHashesAsync(
 				kspSettings.address,
@@ -13916,7 +13917,7 @@ EndUserKSP.prototype._SServerSignHashes = function(
 		if (kspSettings.confirmationURL) {
 			try {
 				var confirmationURL = pThis._MakeConfirmationURL(
-					kspSettings, operationType, 
+					kspSettings, operationType,
 					keyContext.userId, operationId);
 				pThis._SendConfirmationOperationEvent(
 					kspSettings,
@@ -13924,7 +13925,7 @@ EndUserKSP.prototype._SServerSignHashes = function(
 					expireDate);
 			} catch (e) {
 				onError(e);
-				return;	
+				return;
 			}
 		}
 
@@ -13940,7 +13941,7 @@ EndUserKSP.prototype._SServerSignHashes = function(
 					EU_ERROR_CANCELED_BY_GUI, null));
 				return;
 			}
-	
+
 			try {
 				var signatures = [];
 				var results = pThis.m_euSign.SServerClientCheckSignHashesStatus(
@@ -13957,36 +13958,36 @@ EndUserKSP.prototype._SServerSignHashes = function(
 								break;
 							}
 						}
-	
+
 						if (result == null)
 							throw pThis.MakeError(EU_ERROR_TRANSMIT_REQUEST);
-	
+
 						if (result.GetError() != EU_ERROR_NONE) {
 							var kspStatus = new EndUserKSPStatus();
 							kspStatus.code = 0;
-							kspStatus.message = result.GetStatus() + 
+							kspStatus.message = result.GetStatus() +
 								"(" +  result.GetStatusCode() + ")";
 							throw pThis.MakeError(
 								result.GetError(), kspStatus);
 						}
-	
+
 						signatures.push(result.GetSignature());
 					});
 				}
-	
+
 				if (signatures.length == 0) {
 					setTimeout(function() {
 						_getResult(expireDate);
 					}, pollingInterval);
 					return;
 				}
-	
+
 				onSuccess(signatures);
 			} catch (e) {
 				onError(e);
 			}
 		};
-	
+
 		setTimeout(function() {
 			_getResult(expireDate);
 		}, pollingInterval);
@@ -13998,7 +13999,7 @@ EndUserKSP.prototype._SServerSignHashes = function(
 				onSuccess(signatures);
 				return;
 			}
-	
+
 			try {
 				operationId = pThis.m_euSign.SServerClientSignHashAsync(
 					kspSettings.address,
@@ -14018,7 +14019,7 @@ EndUserKSP.prototype._SServerSignHashes = function(
 			if (kspSettings.confirmationURL) {
 				try {
 					var confirmationURL = pThis._MakeConfirmationURL(
-						kspSettings, operationType, 
+						kspSettings, operationType,
 						keyContext.userId, operationId);
 					pThis._SendConfirmationOperationEvent(
 						kspSettings,
@@ -14026,17 +14027,17 @@ EndUserKSP.prototype._SServerSignHashes = function(
 						expireDate);
 				} catch (e) {
 					onError(e);
-					return;	
+					return;
 				}
 			}
-				
+
 			var _getResult = function(expireDate) {
 				if ((new Date()) > expireDate) {
 					onError(pThis.MakeError(
 						EU_ERROR_TRANSMIT_REQUEST, null));
 					return;
 				}
-		
+
 				if (!pThis.m_activeOperation) {
 					onError(pThis.MakeError(
 						EU_ERROR_CANCELED_BY_GUI, null));
@@ -14050,26 +14051,26 @@ EndUserKSP.prototype._SServerSignHashes = function(
 						keyContext.userId,
 						operationId,
 						true);
-		
+
 					if (sign == null) {
 						setTimeout(function() {
 							_getResult(expireDate);
 						}, pollingInterval);
 						return;
 					}
-		
+
 					signatures.push(sign);
 					_sendKSPRequest(index + 1);
 				} catch (e) {
 					onError(e);
 				}
 			};
-		
+
 			setTimeout(function() {
 				_getResult(expireDate);
 			}, pollingInterval);
 		};
-	
+
 		_sendKSPRequest(0);
 	}
 };
@@ -14077,7 +14078,7 @@ EndUserKSP.prototype._SServerSignHashes = function(
 //-------------------------------------------------------------------------------
 
 EndUserKSP.prototype._CtxReadPrivateKeyWithServer = function(
-	kspSettings, userId, getCerts, keyId, caption, authData, 
+	kspSettings, userId, getCerts, keyId, caption, authData,
 	onSuccess, onError) {
 	var pThis = this;
 
@@ -14090,8 +14091,8 @@ EndUserKSP.prototype._CtxReadPrivateKeyWithServer = function(
 
 	switch (kspSettings.ksp) {
 		case EndUserKSP.EU_KSP_IIT:
-			userId =  (typeof kspSettings.clientIdType === 'undefined' || 
-				kspSettings.clientIdType == 0) ? 
+			userId =  (typeof kspSettings.clientIdType === 'undefined' ||
+				kspSettings.clientIdType == 0) ?
 				userId.toUpperCase() : userId;
 			break;
 
@@ -14120,7 +14121,7 @@ EndUserKSP.prototype._CtxReadPrivateKeyWithServer = function(
 			return;
 	}
 
-	if (typeof keyId != 'undefined' && 
+	if (typeof keyId != 'undefined' &&
 		keyId != EU_CTX_SIGN_UNKNOWN) {
 		if (signAlgos.indexOf(keyId) == -1) {
 			setTimeout(function() {
@@ -14136,7 +14137,7 @@ EndUserKSP.prototype._CtxReadPrivateKeyWithServer = function(
 	}
 
 	var keyContext = new EndUserKSPKey(
-		kspSettings, userId, keyId, signAlgos, 
+		kspSettings, userId, keyId, signAlgos,
 		pThis._GetKSPSignContainers(kspSettings),
 		certIssuerCN, [], null);
 	if (!getCerts) {
@@ -14150,16 +14151,16 @@ EndUserKSP.prototype._CtxReadPrivateKeyWithServer = function(
 		authData.val = pThis.m_euSign.Base64Encode(item.val);
 	}
 
-	var originatorDescription = caption ? 
+	var originatorDescription = caption ?
 		caption :
-		SS_SERVER_ORIGINATOR_DESCRIPTION.replace("%s", 
+		SS_SERVER_ORIGINATOR_DESCRIPTION.replace("%s",
 			kspSettings.systemId || s_origin);
-	var operationDescription = authData ? 
-		authData.name : 
-		SS_SERVER_READ_KEY_DESCRIPTION.replace("%s", 
+	var operationDescription = authData ?
+		authData.name :
+		SS_SERVER_READ_KEY_DESCRIPTION.replace("%s",
 			kspSettings.systemId || s_origin);
-	var hashes = authData ? 
-		[authData] : 
+	var hashes = authData ?
+		[authData] :
 		[{
 			name: "Зчитування ос. ключа",
 			val: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
@@ -14171,7 +14172,7 @@ EndUserKSP.prototype._CtxReadPrivateKeyWithServer = function(
 		EndUserKSP.EU_KSP_SIGN_CONTAINER_CADES,
 		EndUserKSP.EU_KSP_SIGN_FORMAT_CADES,
 		EU_SIGN_TYPE_CADES_BES,
-		signAlgo, hashes, operationType, 
+		signAlgo, hashes, operationType,
 		originatorDescription, operationDescription,
 		function(signatures) {
 			try {
@@ -14199,7 +14200,7 @@ EndUserKSP.prototype._CtxReadPrivateKeyWithServer = function(
 //-------------------------------------------------------------------------------
 
 EndUserKSP.prototype._CtxSignHashesWithServer = function(
-	keyContext, signContainerType, signContainerSubType, signLevel, signAlgo, 
+	keyContext, signContainerType, signContainerSubType, signLevel, signAlgo,
 	hashes, operationType, originatorDescription, operationDescription,
 	onSuccess, onError) {
 	var pThis = this;
@@ -14234,7 +14235,7 @@ EndUserKSP.prototype._CtxSignHashesWithServer = function(
 
 	var isSignContainerSupported = keyContext.signContainers.some(
 		function(signContainer) {
-			return signContainer.type == signContainerType && 
+			return signContainer.type == signContainerType &&
 				signContainer.subType == signContainerSubType;
 		});
 
@@ -14248,34 +14249,37 @@ EndUserKSP.prototype._CtxSignHashesWithServer = function(
 	}
 
 	if (operationDescription == null) {
-		operationDescription = 
-			SS_SERVER_SIGN_HASH_DESCRIPTION.replace("%s", 
+		operationDescription =
+			SS_SERVER_SIGN_HASH_DESCRIPTION.replace("%s",
 			kspSettings.systemId || s_origin);
 	}
 
 	var expireDate = pThis._MakeExpireDate(
-		EndUserKSP.EU_KSP_COMMAND_EXPIRE_TIME);	
+		EndUserKSP.EU_KSP_COMMAND_EXPIRE_TIME);
 	pThis.m_activeOperation = true;
 
 	switch (kspSettings.ksp) {
 		case EndUserKSP.EU_KSP_IIT:
 		case EndUserKSP.EU_KSP_PB:
 			pThis._SServerSignHashes(
-				keyContext, signAlgo, hashes, 
+				keyContext, signAlgo, hashes,
 				operationType, originatorDescription, operationDescription,
-				onSuccess, 
+				onSuccess,
 				function(error) {
 					pThis.m_activeOperation = false;
-	
+
 					onError(error);
 				});
 			return;
-		
+
 		case EndUserKSP.EU_KSP_DIIA:
-			var signType = (signContainerType == 
+			var signType = (signContainerType ==
 				EndUserKSP.EU_KSP_SIGN_CONTAINER_PADES) &&
 				(signLevel > EU_SIGN_TYPE_CADES_T) ?
 					EU_SIGN_TYPE_CADES_T : signLevel;
+					console.log('kspSettings.systemId', kspSettings.systemId)
+					// console.log('s_origin',s_origin )
+					// s_origin = 'https://ca.diia.gov.ua/'
 			var params = {
 				"ksp": kspSettings.ksp,
 				"signContainer": signContainerType,
@@ -14283,29 +14287,32 @@ EndUserKSP.prototype._CtxSignHashesWithServer = function(
 				"signAlgo": signAlgo,
 				"signType": signType,
 				"hashes": hashes,
-				"systemId": kspSettings.systemId || s_origin
+				"systemId": 'https://ca.diia.gov.ua/'
+				// "systemId": kspSettings.systemId || s_origin
 			};
-	
+
+			console.log('params', params)
+
 			pThis._SendKSPRequest(
 				kspSettings,
-				EndUserKSP.EU_KSP_COMMAND_INITIALIZE_SIGN_HASHES, 
+				EndUserKSP.EU_KSP_COMMAND_INITIALIZE_SIGN_HASHES,
 				params,
 				expireDate, null,
 				function(data) {
 					pThis.m_activeOperation = false;
-	
+
 					if (!data || !data.signatures) {
 						var error = pThis.MakeError(
 							EU_ERROR_TRANSMIT_REQUEST, null);
 						onError(error);
 						return;
 					}
-		
+
 					onSuccess(data.signatures);
 				},
 				function(error) {
 					pThis.m_activeOperation = false;
-	
+
 					onError(error);
 				});
 			return;
@@ -14325,9 +14332,9 @@ EndUserKSP.prototype._CtxSignHashesWithServer = function(
 EndUserKSP.prototype._GetSignAlgoByCertificate = function(cert) {
 	switch (cert.GetInfoEx().GetPublicKeyType()) {
 		case EU_CERT_KEY_TYPE_DSTU4145:
-			return (cert.GetInfoEx().GetCertHashType() == 
-				EU_CERT_HASH_TYPE_GOST34311) ? 
-					EU_CTX_SIGN_DSTU4145_WITH_GOST34311 : 
+			return (cert.GetInfoEx().GetCertHashType() ==
+				EU_CERT_HASH_TYPE_GOST34311) ?
+					EU_CTX_SIGN_DSTU4145_WITH_GOST34311 :
 					EU_CTX_SIGN_DSTU4145_WITH_DSTU7564;
 
 		case EU_CERT_KEY_TYPE_RSA:
@@ -14347,7 +14354,7 @@ EndUserKSP.prototype._GetHashAlgo = function(signAlgo) {
 	switch (signAlgo) {
 		case EU_CTX_SIGN_DSTU4145_WITH_GOST34311:
 			return EU_CTX_HASH_ALGO_GOST34311;
-		
+
 		case EU_CTX_SIGN_DSTU4145_WITH_DSTU7564:
 			return EU_CTX_HASH_ALGO_DSTU7564_256;
 
@@ -14401,7 +14408,7 @@ EndUserKSP.prototype._GetOwnCertificate = function(
 		var infoEx = certs[i].infoEx;
 		if ((keyType != EU_CERT_KEY_TYPE_UNKNOWN ?
 				(keyType == infoEx.publicKeyType) : true) &&
-			(keyUsages != null && keyUsages.length != 0 ? 
+			(keyUsages != null && keyUsages.length != 0 ?
 				pThis._IsKeyUsageMatch(
 					infoEx.keyUsageType, keyUsages) : true)) {
 			cert = certs[i];
@@ -14413,7 +14420,7 @@ EndUserKSP.prototype._GetOwnCertificate = function(
 		pThis.m_euSign.RaiseError(EU_ERROR_CERT_NOT_FOUND);
 		return;
 	}
-	
+
 	return cert;
 };
 
@@ -14421,7 +14428,7 @@ EndUserKSP.prototype._GetOwnCertificate = function(
 
 EndUserKSP.prototype._SignHashOrData = function(
 	signContainerType, signContainerSubType, signLevel,
-	signAlgo, data, hash, external, appendCert, previousSign, 
+	signAlgo, data, hash, external, appendCert, previousSign,
 	asBase64String, onSuccess, onError) {
 	try {
 		var pThis = this;
@@ -14442,11 +14449,11 @@ EndUserKSP.prototype._SignHashOrData = function(
 		if (data != null || (previousSign != null && !external)) {
 			var hashAlgo = pThis._GetHashAlgo(signAlgo);
 			var datasToHash = (data != null) ? datas : previousSigns;
-			var datasHashes = []; 
+			var datasHashes = [];
 
 			for (var i = 0; i < datasToHash.length; i++) {
-				var dataToHash = (data != null) ? 
-					datasToHash[i].val : 
+				var dataToHash = (data != null) ?
+					datasToHash[i].val :
 					pThis.m_euSign.GetDataFromSignedData(datasToHash[i].val);
 				var dataHash = pThis.m_euSign.CtxHashData(
 					pThis.m_context, hashAlgo, null, dataToHash, true);
@@ -14457,7 +14464,7 @@ EndUserKSP.prototype._SignHashOrData = function(
 		}
 
 		hashes = hashes.map(function(item) {
-			var val = (typeof item.val != 'string') ? 
+			var val = (typeof item.val != 'string') ?
 				pThis.m_euSign.Base64Encode(item.val) : item.val;
 			return {name: item.name, val: val};
 		});
@@ -14469,15 +14476,15 @@ EndUserKSP.prototype._SignHashOrData = function(
 				pThis._AppendValidationDataToSign(
 					signContainerType, signContainerSubType,
 					signLevel, signAlgo, external ? [] : datas, signs,
-					previousSigns, appendCert, asBase64String, 
+					previousSigns, appendCert, asBase64String,
 					function(signs) {
-						var result = DataToResult((hash != null) ? 
-							hash : ((data != null) ? 
-								data : previousSign), 
+						var result = DataToResult((hash != null) ?
+							hash : ((data != null) ?
+								data : previousSign),
 							signs);
 						onSuccess(result);
 					}, onError);
-			}, 
+			},
 			onError);
 	} catch (e) {
 		setTimeout(function() {
@@ -14491,7 +14498,7 @@ EndUserKSP.prototype._SignHashOrData = function(
 
 EndUserKSP.prototype._AppendValidationDataToSign = function(
 	signContainerType, signContainerSubType, signLevel, signAlgo,
-	datas, signs, previousSigns, appendCert, asBase64String, 
+	datas, signs, previousSigns, appendCert, asBase64String,
 	onSuccess, onError) {
 	var pThis = this;
 	var euSign = pThis.m_euSign;
@@ -14515,7 +14522,7 @@ EndUserKSP.prototype._AppendValidationDataToSign = function(
 			var signerCert = signerInfo.GetData();
 			var previousSign = null;
 
-			if (previousSigns.length == 0 || 
+			if (previousSigns.length == 0 ||
 					previousSigns[i].val == null) {
 				previousSign = euSign.CtxCreateEmptySign(
 					pThis.m_context, signAlgo,
@@ -14530,7 +14537,7 @@ EndUserKSP.prototype._AppendValidationDataToSign = function(
 			signer = euSign.AppendValidationDataToSigner(
 				signer, signerCert);
 			signedData = euSign.AppendSigner(
-				signer, appendCert ? signerCert : null, 
+				signer, appendCert ? signerCert : null,
 				previousSign, asBase64String);
 
 			signedDatas.push(signedData);
@@ -14575,13 +14582,13 @@ EndUserKSP.prototype._ASiCAppendSign = function(
 			[EU_KEY_USAGE_DIGITAL_SIGNATURE, EU_KEY_USAGE_NON_REPUDATION]);
 
 		var asicSigner = pThis.m_euSign.ASiCCreateSignerBeginEx(
-			signerCert.data, signAlgo, asicType, signType, referencesNames, 
+			signerCert.data, signAlgo, asicType, signType, referencesNames,
 			previousASiCData[0].val);
 		var itemToSign = {
 			name: previousASiCData[0].name,
 			val: asicSigner.GetAttrsHash()
 		};
-	
+
 		var signContainer = new EndUserKSPSignContainer(
 			EndUserKSP.EU_KSP_SIGN_CONTAINER_UNKNOWN,
 			EndUserKSP.EU_KSP_SIGN_FORMAT_UNKNOWN);
@@ -14606,10 +14613,10 @@ EndUserKSP.prototype._ASiCAppendSign = function(
 		}
 
 		pThis._SignHashOrData(
-			signContainer.type, signContainer.subType, 
-			signType == EU_ASIC_SIGN_TYPE_CADES ? 
+			signContainer.type, signContainer.subType,
+			signType == EU_ASIC_SIGN_TYPE_CADES ?
 				EU_SIGN_TYPE_CADES_BES : EU_SIGN_TYPE_UNKNOWN,
-			signAlgo, null, itemToSign, 
+			signAlgo, null, itemToSign,
 			true, true, null, false, function(signature) {
 				try {
 					asicData = pThis.m_euSign.ASiCCreateSignerEnd(
@@ -14647,14 +14654,14 @@ EndUserKSP.prototype.SetRuntimeParameter = function(name, value) {
 //-------------------------------------------------------------------------------
 
 EndUserKSP.prototype.GetKeySupportedSignAlgos = function() {
-	return (this.m_keyContext != null) ? 
+	return (this.m_keyContext != null) ?
 		this.m_keyContext.signAlgos : [];
 };
 
 //-------------------------------------------------------------------------------
 
 EndUserKSP.prototype.GetKeyCertIssuerCN = function() {
-	return (this.m_keyContext != null) ? 
+	return (this.m_keyContext != null) ?
 		this.m_keyContext.certIssuerCN : null;
 };
 
@@ -14683,7 +14690,7 @@ EndUserKSP.prototype.ReadPrivateKey = function(
 	ksp, userId, getCerts, keyId, caption, authData, onSuccess, onError) {
 	var pThis = this;
 	var kspSettings = pThis._GetKSPSettings(ksp);
-	
+
 	if (kspSettings == null) {
 		setTimeout(function() {
 			var error = pThis.MakeError(
@@ -14694,7 +14701,7 @@ EndUserKSP.prototype.ReadPrivateKey = function(
 	}
 
 	pThis._CtxReadPrivateKeyWithServer(
-		kspSettings, userId, getCerts, keyId, 
+		kspSettings, userId, getCerts, keyId,
 		caption, authData,
 		function(keyContext) {
 			pThis.m_keyContext = keyContext;
@@ -14752,7 +14759,7 @@ EndUserKSP.prototype.MakeNewCertificate = function(
 	newUserId, newKSP, onSuccess, onError) {
 	var pThis = this;
 	var kspSettings = pThis._GetKSPSettings(newKSP);
-	
+
 	if (kspSettings == null) {
 		setTimeout(function() {
 			var error = pThis.MakeError(
@@ -14768,13 +14775,13 @@ EndUserKSP.prototype.MakeNewCertificate = function(
 
 	pThis._SServerGeneratePrivateKey(keyContext,
 		uaKeysType, uaDSKeysSpec, useDSKeyAsKEP, uaKEPKeysSpec,
-		internationalKeysType, internationalKeysSpec, 
+		internationalKeysType, internationalKeysSpec,
 		null, function(key) {
 			pThis.m_activeOperation = false;
 
 			try {
-				pThis.m_euSign.CtxMakeNewOwnCertificateWithCR(pkContext, 
-					key.GetUARequest(), key.GetUAKEPRequest(), 
+				pThis.m_euSign.CtxMakeNewOwnCertificateWithCR(pkContext,
+					key.GetUARequest(), key.GetUAKEPRequest(),
 					key.GetInternationalRequest(), null);
 			} catch (e) {
 				onError(e);
@@ -14824,7 +14831,7 @@ EndUserKSP.prototype.GetClientRegistrationToken = function(
 		"ksp": kspSettings.ksp
 	};
 
-	if (parameters && 
+	if (parameters &&
 		parameters['transactionId'] &&
 		parameters['signature']) {
 		params['transactionId'] = parameters['transactionId'];
@@ -14855,7 +14862,7 @@ EndUserKSP.prototype.GetClientRegistrationToken = function(
 		function(data) {
 			pThis.m_activeOperation = false;
 
-			if (parameters && command == 
+			if (parameters && command ==
 					EndUserKSP.EU_KSP_COMMAND_INITIALIZE_USER_REGISTRATION) {
 				if (!data) {
 					var error = pThis.MakeError(
@@ -14912,7 +14919,7 @@ EndUserKSP.prototype.GetClientRegistrationToken = function(
 
 //-------------------------------------------------------------------------------
 
-EndUserKSP.prototype.SignHash = function(signAlgo, hash, 
+EndUserKSP.prototype.SignHash = function(signAlgo, hash,
 	appendCert, asBase64String, onSuccess, onError) {
 	var pThis = this;
 
@@ -14920,13 +14927,13 @@ EndUserKSP.prototype.SignHash = function(signAlgo, hash,
 		EndUserKSP.EU_KSP_SIGN_CONTAINER_CADES,
 		EndUserKSP.EU_KSP_SIGN_FORMAT_CADES,
 		pThis.m_cadesLevel,
-		signAlgo, null, hash, true, 
+		signAlgo, null, hash, true,
 		appendCert, null, asBase64String, onSuccess, onError);
 };
 
 //-------------------------------------------------------------------------------
 
-EndUserKSP.prototype.SignDataEx = function(signAlgo, data, 
+EndUserKSP.prototype.SignDataEx = function(signAlgo, data,
 	external, appendCert, asBase64String, onSuccess, onError) {
 	var pThis = this;
 
@@ -14934,7 +14941,7 @@ EndUserKSP.prototype.SignDataEx = function(signAlgo, data,
 		EndUserKSP.EU_KSP_SIGN_CONTAINER_CADES,
 		EndUserKSP.EU_KSP_SIGN_FORMAT_CADES,
 		pThis.m_cadesLevel,
-		signAlgo, data, null, external, 
+		signAlgo, data, null, external,
 		appendCert, null, asBase64String, onSuccess, onError);
 };
 
@@ -14944,12 +14951,12 @@ EndUserKSP.prototype.AppendSign = function(
 	signAlgo, data, previousSign, appendCert, asBase64String,
 	onSuccess, onError) {
 	var pThis = this;
-	
+
 	pThis._SignHashOrData(
 		EndUserKSP.EU_KSP_SIGN_CONTAINER_CADES,
 		EndUserKSP.EU_KSP_SIGN_FORMAT_CADES,
 		pThis.m_cadesLevel,
-		signAlgo, data, null, data != null, 
+		signAlgo, data, null, data != null,
 		appendCert, previousSign, asBase64String, onSuccess, onError);
 };
 
@@ -14964,7 +14971,7 @@ EndUserKSP.prototype.AppendSignHash = function(
 		EndUserKSP.EU_KSP_SIGN_CONTAINER_CADES,
 		EndUserKSP.EU_KSP_SIGN_FORMAT_CADES,
 		pThis.m_cadesLevel,
-		signAlgo, null, hash, true, 
+		signAlgo, null, hash, true,
 		appendCert, previousSign, asBase64String, onSuccess, onError);
 };
 
@@ -14982,7 +14989,7 @@ EndUserKSP.prototype.GetSignValue = function(signAlgo, hash,
 //-------------------------------------------------------------------------------
 
 EndUserKSP.prototype.EnvelopData = function(
-	recipientsCerts, data, signData, appendCert, asBase64String, useDynamicKey, 
+	recipientsCerts, data, signData, appendCert, asBase64String, useDynamicKey,
 	onSuccess, onError) {
 	var pThis = this;
 
@@ -15047,16 +15054,16 @@ EndUserKSP.prototype.PDFSignData = function(
 		}
 
 		pThis._SignHashOrData(
-			EndUserKSP.EU_KSP_SIGN_CONTAINER_PADES, 
+			EndUserKSP.EU_KSP_SIGN_CONTAINER_PADES,
 			EndUserKSP.EU_KSP_SIGN_FORMAT_PADES,
-			signLevel, signAlgo, null, itemsToSigns, 
+			signLevel, signAlgo, null, itemsToSigns,
 			true, true, null, false, function(signatures) {
 				var signs = [];
 				try {
 					for (var i = 0; i < pdfDatas.length; i++) {
 						var signedPDF = pThis.m_euSign.PDFCreateSignerEnd(
 							pdfSigners[i].GetPDFData(), signLevel,
-							pdfSigners[i].GetSignatureReference(), 
+							pdfSigners[i].GetSignatureReference(),
 							signatures[i].val, asBase64String);
 						signs.push(signedPDF);
 					}
@@ -15098,10 +15105,10 @@ EndUserKSP.prototype.ASiCSignData = function(
 
 		var emptyASiCData = pThis.m_euSign.ASiCCreateEmptySign(
 			asicType, signType, asicReferences);
-		
+
 		var asicData = {
-			name: asicReferences[0].name + 
-				(asicType == EU_ASIC_TYPE_S ? 
+			name: asicReferences[0].name +
+				(asicType == EU_ASIC_TYPE_S ?
 					'.asics' : '.asice'),
 			val: emptyASiCData
 		};
@@ -15127,7 +15134,7 @@ EndUserKSP.prototype.ASiCAppendSign = function(
 	var pThis = this;
 
 	pThis._ASiCAppendSign(
-		signAlgo, EU_ASIC_TYPE_UNKNOWN, EU_ASIC_SIGN_TYPE_UNKNOWN, 
+		signAlgo, EU_ASIC_TYPE_UNKNOWN, EU_ASIC_SIGN_TYPE_UNKNOWN,
 		signLevel, referencesNames, asicData,
 		asBase64String, onSuccess, onError);
 };
@@ -15161,16 +15168,16 @@ EndUserKSP.prototype.XAdESSignData = function(
 		var xadesSigner = pThis.m_euSign.XAdESCreateSignerBegin(
 			signerCert.data, signAlgo, xadesType, xadesReferences);
 		var itemToSign = {
-			name: references[0].name + 
-				(references[0].name.endsWith(".xml") ? 
+			name: references[0].name +
+				(references[0].name.endsWith(".xml") ?
 					'' : '.xml'),
 			val: xadesSigner.GetAttrsHash()
 		};
 
 		pThis._SignHashOrData(
-			EndUserKSP.EU_KSP_SIGN_CONTAINER_XADES, 
+			EndUserKSP.EU_KSP_SIGN_CONTAINER_XADES,
 			EndUserKSP.EU_KSP_SIGN_FORMAT_XADES,
-			EU_SIGN_TYPE_UNKNOWN, signAlgo, null, itemToSign, 
+			EU_SIGN_TYPE_UNKNOWN, signAlgo, null, itemToSign,
 			true, true, null, false, function(signature) {
 				var xadesData = null;
 
@@ -15287,7 +15294,7 @@ function DataToNamedDataArray(data) {
 
 	for (var i = 0; i < data.length; i++) {
 		var named = data[i] !== null &&
-			typeof data[i].name !== 'undefined' && 
+			typeof data[i].name !== 'undefined' &&
 			typeof data[i].val !== 'undefined';
 		namedData.push({
 			name: named ? data[i].name : ('Ім\'я відсутнє (' + (i + 1) + ')'),
@@ -15302,10 +15309,10 @@ function DataToResult(data, dataResult) {
 	var results = [];
 	var single = !Array.isArray(data);
 	var arrData = single ? [data] : data;
-	
+
 	for (var i = 0; i < arrData.length; i++) {
 		var named = arrData[i] !== null &&
-			typeof arrData[i].name !== 'undefined' && 
+			typeof arrData[i].name !== 'undefined' &&
 			typeof arrData[i].val !== 'undefined';
 		var result = named ? {
 			name: arrData[i].name,
@@ -15364,6 +15371,7 @@ EndUser.prototype.OnMessage = function(msg) {
 	};
 
 	try {
+		console.log('msg',msg)
 		s_origin = msg.origin;
 		s_pathname = msg.pathname;
 
@@ -15386,7 +15394,7 @@ EndUser.prototype.OnEvent = function(event) {
 			result: event,
 			error: null
 		};
-	
+
 		postMessage(resp);
 	}
 };
@@ -15419,8 +15427,8 @@ EndUser.prototype.MakeURL = function(url) {
 	}
 
 	if (s_origin && s_pathname) {
-		return s_origin + 
-			s_pathname.substr(0, s_pathname.lastIndexOf('/')) + 
+		return s_origin +
+			s_pathname.substr(0, s_pathname.lastIndexOf('/')) +
 			'/' + url;
 	}
 
@@ -15431,8 +15439,8 @@ EndUser.prototype.MakeURL = function(url) {
 
 EndUser.prototype.DowloadData = function(url, dataType) {
 	try {
-		var xmlHttp = XMLHttpRequest ? 
-			(new XMLHttpRequest()) : 
+		var xmlHttp = XMLHttpRequest ?
+			(new XMLHttpRequest()) :
 			new ActiveXObject("Microsoft.XMLHTTP");
 
 		url = this.MakeURL(url);
@@ -15442,7 +15450,7 @@ EndUser.prototype.DowloadData = function(url, dataType) {
 			xmlHttp.responseType = 'arraybuffer';
 		xmlHttp.send();
 		if (xmlHttp.status != 200) {
-			throw 'Download data error. URL - ' + 
+			throw 'Download data error. URL - ' +
 				url + ', status - ' + xmlHttp.status;
 		}
 
@@ -15534,7 +15542,7 @@ EndUser.prototype.SetCMPSettings = function(CACommonName) {
 	var euSign = pThis.m_euSign;
 	var CA = pThis.GetCASettings(CACommonName);
 
-	if (CACommonName && (CA == null) && 
+	if (CACommonName && (CA == null) &&
 		!pThis.m_settings.allowForeignCAs) {
 		euSign.RaiseError(EU_ERROR_WRITE_SETTINGS);
 		return;
@@ -15598,8 +15606,8 @@ EndUser.prototype.CtxReadPrivateKeyBinaryInternal = function(
 			}
 		}
 
-		if (e.GetErrorCode() != 
-				EU_ERROR_CERT_NOT_FOUND || 
+		if (e.GetErrorCode() !=
+				EU_ERROR_CERT_NOT_FOUND ||
 			caCN || !autoSearch) {
 			throw e;
 		}
@@ -15648,8 +15656,8 @@ EndUser.prototype.SearchPrivateKeyCertificatesWithCMP = function(
 	var isCAsAccessChecked = false;
 
 	for (var i = 0; i < CAs.length; i++) {
-		var cmpCompatibility = caCN ? 
-			EU_CMP_COMPATIBILITY_DOWNLOAD_EU_CERTS : 
+		var cmpCompatibility = caCN ?
+			EU_CMP_COMPATIBILITY_DOWNLOAD_EU_CERTS :
 			EU_CMP_COMPATIBILITY_SEARCH_EU_CERTS;
 		if (!pThis.IsCMPCompatible(CAs[i], cmpCompatibility))
 			continue;
@@ -15663,9 +15671,9 @@ EndUser.prototype.SearchPrivateKeyCertificatesWithCMP = function(
 		} catch (e) {
 			var errorCode = e.GetErrorCode();
 
-			if (errorCode == EU_ERROR_CERT_NOT_FOUND || 
+			if (errorCode == EU_ERROR_CERT_NOT_FOUND ||
 					errorCode == EU_ERROR_TRANSMIT_REQUEST) {
-				isCAsAccessChecked = isCAsAccessChecked || 
+				isCAsAccessChecked = isCAsAccessChecked ||
 					(errorCode == EU_ERROR_CERT_NOT_FOUND);
 			}
 
@@ -15673,12 +15681,12 @@ EndUser.prototype.SearchPrivateKeyCertificatesWithCMP = function(
 		}
 
 		return {
-			"certs": certs, 
+			"certs": certs,
 			"CACommonName": CAs[i].issuerCNs[0]
 		};
 	}
-		
-	throw euSign.MakeError(isCAsAccessChecked ? 
+
+	throw euSign.MakeError(isCAsAccessChecked ?
 		EU_ERROR_CERT_NOT_FOUND : EU_ERROR_TRANSMIT_REQUEST);
 };
 
@@ -15687,9 +15695,9 @@ EndUser.prototype.SearchPrivateKeyCertificatesWithCMP = function(
 EndUser.prototype.GetSignAlgoByCertificate = function(cert) {
 	switch (cert.GetInfoEx().GetPublicKeyType()) {
 		case EU_CERT_KEY_TYPE_DSTU4145:
-			return (cert.GetInfoEx().GetCertHashType() == 
-				EU_CERT_HASH_TYPE_GOST34311) ? 
-					EU_CTX_SIGN_DSTU4145_WITH_GOST34311 : 
+			return (cert.GetInfoEx().GetCertHashType() ==
+				EU_CERT_HASH_TYPE_GOST34311) ?
+					EU_CTX_SIGN_DSTU4145_WITH_GOST34311 :
 					EU_CTX_SIGN_DSTU4145_WITH_DSTU7564;
 
 		case EU_CERT_KEY_TYPE_RSA:
@@ -15747,7 +15755,7 @@ EndUser.prototype.CtxSignHashInternal = function(
 		var hashes = DataToNamedDataArray(hash);
 		var previousSigns = DataToNamedDataArray(previousSign);
 		var signs = [];
-	
+
 		if (appendSign &&
 			hashes.length != previousSigns.length) {
 			euSign.RaiseError(EU_ERROR_BAD_PARAMETER);
@@ -15755,13 +15763,13 @@ EndUser.prototype.CtxSignHashInternal = function(
 		}
 
 		for (var i = 0; i < hashes.length; i++) {
-			var sign = appendSign ? 
+			var sign = appendSign ?
 				euSign.CtxAppendSignHashValue(
-					pkContext, signAlgo, hashes[i].val, 
+					pkContext, signAlgo, hashes[i].val,
 					previousSigns[i].val,
 					appendCert, asBase64String) :
 				euSign.CtxSignHashValue(
-					pkContext, signAlgo, hashes[i].val, 
+					pkContext, signAlgo, hashes[i].val,
 					appendCert, asBase64String);
 			signs.push(sign);
 		}
@@ -15775,8 +15783,8 @@ EndUser.prototype.CtxSignHashInternal = function(
 
 //-------------------------------------------------------------------------------
 
-EndUser.prototype.CtxSignDataInternal = function(pkContext, 
-	signAlgo, data, previousSign, external, appendCert, 
+EndUser.prototype.CtxSignDataInternal = function(pkContext,
+	signAlgo, data, previousSign, external, appendCert,
 	asBase64String, onSuccess, onError) {
 	var pThis = this;
 	var euSign = pThis.m_euSign;
@@ -15799,14 +15807,14 @@ EndUser.prototype.CtxSignDataInternal = function(pkContext,
 		var datas = DataToNamedDataArray(data);
 		var previousSigns = DataToNamedDataArray(previousSign);
 		var signs = [];
-	
-		if (appendSign && external && 
+
+		if (appendSign && external &&
 			datas.length != previousSigns.length) {
 			euSign.RaiseError(EU_ERROR_BAD_PARAMETER);
 			return;
 		}
 
-		var length = appendSign && !external ? 
+		var length = appendSign && !external ?
 			previousSigns.length : datas.length;
 		for (var i = 0; i < length; i++) {
 			var sign = null;
@@ -15814,37 +15822,37 @@ EndUser.prototype.CtxSignDataInternal = function(pkContext,
 			if (external) {
 				var hashAlgo = pThis.GetHashAlgoBySignAlgo(signAlgo);
 				var hash = euSign.CtxHashData(
-					pThis.m_context, hashAlgo, null, 
+					pThis.m_context, hashAlgo, null,
 					datas[i].val, true);
 
 				if (appendSign) {
 					sign = euSign.CtxAppendSignHashValue(
-						pkContext, signAlgo, hash, 
+						pkContext, signAlgo, hash,
 						previousSigns[i].val,
 						appendCert, asBase64String);
 				} else {
 					sign = euSign.CtxSignHashValue(
-						pkContext, signAlgo, hash, 
+						pkContext, signAlgo, hash,
 						appendCert, asBase64String);
 				}
 			} else {
 				if (appendSign) {
 					sign = euSign.CtxAppendSign(
-						pkContext, signAlgo, null, 
+						pkContext, signAlgo, null,
 						previousSigns[i].val,
 						appendCert, asBase64String);
 				} else {
 					sign = euSign.CtxSignData(
-						pkContext, signAlgo, datas[i].val, 
+						pkContext, signAlgo, datas[i].val,
 						external, appendCert, asBase64String);
 				}
 			}
 
-			signs.push(sign); 
+			signs.push(sign);
 		}
 
 		var result = DataToResult(
-			appendSign && !external ? 
+			appendSign && !external ?
 				previousSign : data, signs);
 		onSuccess(result);
 	} catch (e) {
@@ -15854,7 +15862,7 @@ EndUser.prototype.CtxSignDataInternal = function(pkContext,
 
 //-------------------------------------------------------------------------------
 
-EndUser.prototype.CtxGetSignValueInternal = function(pkContext, 
+EndUser.prototype.CtxGetSignValueInternal = function(pkContext,
 	signAlgo, hash, asBase64String, asASN1, onSuccess, onError) {
 	var pThis = this;
 	var euSign = pThis.m_euSign;
@@ -15866,7 +15874,7 @@ EndUser.prototype.CtxGetSignValueInternal = function(pkContext,
 		}
 
 		if (signAlgo == EU_CTX_SIGN_ECDSA_WITH_SHA) {
-			euSign.CtxSetParameter(pThis.m_context, 
+			euSign.CtxSetParameter(pThis.m_context,
 				EU_ENCODE_ECDSA_SIGN_VALUE_CONTEXT_PARAMETER, asASN1);
 		}
 
@@ -15875,10 +15883,10 @@ EndUser.prototype.CtxGetSignValueInternal = function(pkContext,
 
 		var hashes = DataToNamedDataArray(hash);
 		var signs = [];
-	
+
 		for (var i = 0; i < hashes.length; i++) {
 			var sign = euSign.CtxGetSignValue(
-				pkContext, signAlgo, hashes[i].val, 
+				pkContext, signAlgo, hashes[i].val,
 				asBase64String);
 			signs.push(sign);
 		}
@@ -15907,7 +15915,7 @@ EndUser.prototype.LoadTaxReportPKey = function(pkCtxs, keyUsages, isStamp) {
 			pkCtxs[i], EndUserPrivateKeyContext);
 	}
 
-	var pKey = new TaxReportPKey(); 
+	var pKey = new TaxReportPKey();
 
 	for (var i = 0; i < keyUsages.length; i++) {
 		var keyUsage = keyUsages[i];
@@ -15927,8 +15935,8 @@ EndUser.prototype.LoadTaxReportPKey = function(pkCtxs, keyUsages, isStamp) {
 			if (cert == null)
 				continue;
 
-			if (isStamp && 
-				(keyUsage & EU_KEY_USAGE_DIGITAL_SIGNATURE) && 
+			if (isStamp &&
+				(keyUsage & EU_KEY_USAGE_DIGITAL_SIGNATURE) &&
 				!(cert.GetInfoEx().GetExtKeyUsages().indexOf(
 					UA_OID_EXT_KEY_USAGE_STAMP) > -1)) {
 				throw euSign.MakeError(EU_ERROR_BAD_PARAMETER);
@@ -15958,28 +15966,28 @@ EndUser.prototype.LoadTaxReportPKey = function(pkCtxs, keyUsages, isStamp) {
 
 EndUser.prototype.ProtectTaxReport = function(
 	accountantPKey, directorPKey, stampPKey,
-	senderEMail, recipientCertificate, report, 
+	senderEMail, recipientCertificate, report,
 	returnIntermediateSign) {
 	var pThis = this;
 	var euSign = pThis.m_euSign;
 
 	var result = {
-		"name": report.name, 
-		"data": null, 
+		"name": report.name,
+		"data": null,
 		"error": null
 	};
 	try {
 		var _sign = function(pKey, data) {
-			data = euSign.CtxSignData(pKey.signPKCtx, 
+			data = euSign.CtxSignData(pKey.signPKCtx,
 				pThis.GetSignAlgoByCertificate(pKey.signCert),
 				data, false, true);
 			return euSign.AppendCryptoHeader(
-				EU_HEADER_CA_TYPE, 
+				EU_HEADER_CA_TYPE,
 				EU_HEADER_PART_TYPE_SIGNED, data);
 		};
 
 		var _isMultiCert = function(cert) {
-			var keyUsage = EU_KEY_USAGE_DIGITAL_SIGNATURE | 
+			var keyUsage = EU_KEY_USAGE_DIGITAL_SIGNATURE |
 				EU_KEY_USAGE_KEY_AGREEMENT;
 
 			return (keyUsage == (cert.GetInfoEx().
@@ -15991,38 +15999,38 @@ EndUser.prototype.ProtectTaxReport = function(
 
 		if (accountantPKey != null)
 			reportData = _sign(accountantPKey, reportData);
-		
+
 		if (directorPKey != null)
 			reportData = _sign(directorPKey, reportData);
-		
+
 		if (stampPKey != null)
 			reportData = _sign(stampPKey, reportData);
-		
+
 		if (returnIntermediateSign)
 			result.signedData = reportData;
 
 		if (directorPKey != null || stampPKey != null) {
-			var pKey = (stampPKey != null) ? 
+			var pKey = (stampPKey != null) ?
 				stampPKey : directorPKey;
 
 			reportData = euSign.CtxEnvelopData(
 				pKey.envelopPKCtx, [recipientCertificate],
 				EU_RECIPIENT_APPEND_TYPE_BY_ISSUER_SERIAL,
 				false, false, reportData);
-			
+
 			reportData = euSign.AppendCryptoHeader(
-				EU_HEADER_CA_TYPE, 
+				EU_HEADER_CA_TYPE,
 				EU_HEADER_PART_TYPE_ENCRYPTED, reportData);
-			
+
 			ownCert = pKey.envelopCert;
-			
+
 			if (!_isMultiCert(ownCert)) {
 				var certHeader = euSign.AppendCryptoHeader(
-					EU_HEADER_CA_TYPE, 
-					EU_HEADER_PART_TYPE_CERTCRYPT, 
+					EU_HEADER_CA_TYPE,
+					EU_HEADER_PART_TYPE_CERTCRYPT,
 					ownCert.GetData());
 
-				var tmp = new Uint8Array(certHeader.byteLength + 
+				var tmp = new Uint8Array(certHeader.byteLength +
 					reportData.byteLength);
 				tmp.set(new Uint8Array(certHeader), 0);
 				tmp.set(new Uint8Array(reportData), certHeader.byteLength);
@@ -16056,7 +16064,7 @@ EndUser.prototype.UnprotectTaxReceipt = function(
 	var euSign = this.m_euSign;
 
 	var result = {
-		"data": null, 
+		"data": null,
 		"receiptNumber": 0,
 		"initiators": [],
 		"error": null
@@ -16082,7 +16090,7 @@ EndUser.prototype.UnprotectTaxReceipt = function(
 				if (e.GetErrorCode() != EU_ERROR_BAD_PARAMETER) {
 					throw e;
 				}
-				
+
 				break;
 			}
 
@@ -16098,10 +16106,10 @@ EndUser.prototype.UnprotectTaxReceipt = function(
 					signInfo.signLevel = euSign.GetSignType(0, cryptoData);
 					result.initiators.push(signInfo);
 				break;
-				
+
 				case EU_HEADER_PART_TYPE_ENCRYPTED:
 					var senderInfo = euSign.CtxDevelopData(
-						directorOrStampPrivateKeyContext, 
+						directorOrStampPrivateKeyContext,
 						cryptoData, null);
 					receiptData = senderInfo.GetData();
 					senderInfo.data = null;
@@ -16166,17 +16174,17 @@ EndUser.prototype.Initialize = function(settings, onSuccess, onError) {
 
 	try {
 		if (typeof settings.CAs === 'string') {
-			settings.CAs = 
+			settings.CAs =
 				pThis.DowloadData(settings.CAs, 'json');
 		}
 
 		if (typeof settings.CACertificates === 'string') {
-			settings.CACertificates = 
+			settings.CACertificates =
 				pThis.DowloadData(settings.CACertificates, 'binary');
 		}
 
 		if (typeof settings.signInfoTmpl === 'string') {
-			settings.signInfoTmpl = 
+			settings.signInfoTmpl =
 				pThis.DowloadData(settings.signInfoTmpl, '');
 		}
 
@@ -16194,7 +16202,7 @@ EndUser.prototype.Initialize = function(settings, onSuccess, onError) {
 
 		euSign.SetRuntimeParameter(
 			EU_RESOLVE_OIDS_PARAMETER, false);
-		euSign.CtxSetParameter(pThis.m_context, 
+		euSign.CtxSetParameter(pThis.m_context,
 			EU_RESOLVE_OIDS_CONTEXT_PARAMETER, false);
 		euSign.SetRuntimeParameter(
 			EU_CHECK_CERT_CHAIN_ON_SIGN_TIME_PARAMETER, true);
@@ -16215,7 +16223,7 @@ EndUser.prototype.Initialize = function(settings, onSuccess, onError) {
 		var useOCSP = false;
 
 		for (var i = 0; i < CAs.length; i++) {
-			if (CAs[i].ocspAccessPointAddress && 
+			if (CAs[i].ocspAccessPointAddress &&
 					CAs[i].ocspAccessPointPort) {
 				useOCSP = true;
 				break;
@@ -16275,8 +16283,8 @@ EndUser.prototype.Initialize = function(settings, onSuccess, onError) {
 			if (uri == '')
 				return;
 
-			uri = (uri.indexOf("://") > -1) ? 
-				uri.split('/')[2] : 
+			uri = (uri.indexOf("://") > -1) ?
+				uri.split('/')[2] :
 				uri.split('/')[0];
 
 			if (dnsNames.indexOf(uri) >= 0)
@@ -16299,7 +16307,7 @@ EndUser.prototype.Initialize = function(settings, onSuccess, onError) {
 				_addDNSName(CAs[i].ocspAccessPointAddress,
 					directAccessURLs);
 			}
-			
+
 			KSPs = settings.KSPs || null;
 			if (KSPs) {
 				for (i = 0; i < KSPs.length; i++) {
@@ -16318,7 +16326,7 @@ EndUser.prototype.Initialize = function(settings, onSuccess, onError) {
 		var mssServiceURL = pThis.MakeURL(settings.mssServiceURL || "");
 		KSPs = settings.KSPs || null;
 		pThis.m_euKSP = new EndUserKSP(mssServiceURL, KSPs,
-			pThis.m_euSign, pThis.m_context, 
+			pThis.m_euSign, pThis.m_context,
 			function(event) {
 				pThis.OnEvent(event);
 			});
@@ -16350,7 +16358,7 @@ EndUser.prototype.AddEventListener = function(
 	try {
 		if (supportedEvents.indexOf(eventType) < 0)
 			throw pThis.m_euSign.MakeError(EU_ERROR_BAD_PARAMETER);
-		
+
 		switch (eventType) {
 			case EndUserEventType.None:
 				pThis.m_eventListeners = [];
@@ -16390,7 +16398,7 @@ EndUser.prototype.SetLanguage = function(language, onSuccess, onError) {
 
 //-------------------------------------------------------------------------------
 
-EndUser.prototype.SetRuntimeParameter = function(name, value, 
+EndUser.prototype.SetRuntimeParameter = function(name, value,
 	onSuccess, onError) {
 	try {
 		this.m_euSign.SetRuntimeParameter(name, value);
@@ -16511,10 +16519,10 @@ EndUser.prototype.GetJKSPrivateKeys = function(jks, onSuccess, onError) {
 				if (infoEx.GetSubjType() != EU_SUBJECT_TYPE_END_USER)
 					continue;
 
-				if ((infoEx.GetPublicKeyType() == 
+				if ((infoEx.GetPublicKeyType() ==
 						EU_CERT_KEY_TYPE_DSTU4145) &&
-					((infoEx.GetKeyUsageType() & 
-						EU_KEY_USAGE_DIGITAL_SIGNATURE) == 
+					((infoEx.GetKeyUsageType() &
+						EU_KEY_USAGE_DIGITAL_SIGNATURE) ==
 						EU_KEY_USAGE_DIGITAL_SIGNATURE))
 				{
 					stamp = infoEx.GetExtKeyUsages().indexOf(
@@ -16554,7 +16562,7 @@ EndUser.prototype.GetJKSPrivateKeys = function(jks, onSuccess, onError) {
 
 EndUser.prototype.IsPrivateKeyReaded = function(onSuccess, onError) {
 	try {
-		var isPrivateKeyReaded = (this.m_pkContext != null) || 
+		var isPrivateKeyReaded = (this.m_pkContext != null) ||
 			this.m_euKSP.IsPrivateKeyReaded();
 
 		onSuccess(isPrivateKeyReaded);
@@ -16606,7 +16614,7 @@ EndUser.prototype.ReadPrivateKeyBinary = function(
 		pThis.ReadPrivateKeyBinaryInternal(
 			privateKey, password, certs, CACommonName);
 		var info = pThis.m_pkContext.GetOwnerInfo();
-		
+
 		onSuccess(info.GetTransferableObject());
 	} catch (e) {
 		onError(e);
@@ -16617,7 +16625,7 @@ EndUser.prototype.ReadPrivateKeyBinary = function(
 
 EndUser.prototype.ReadPrivateKeySIM = function(
 	msisdn, operator, getCerts, keyId, onSuccess, onError) {
-	this.ReadPrivateKeyKSP(msisdn, operator, 
+	this.ReadPrivateKeyKSP(msisdn, operator,
 		getCerts, keyId, null, null, onSuccess, onError);
 };
 
@@ -16706,13 +16714,13 @@ EndUser.prototype.MakeNewCertificate = function(
 	oldKeyMedia, oldPrivateKey, oldPrivateKeyPassword,
 	uaKeysType, uaDSKeysSpec, useDSKeyAsKEP, uaKEPKeysSpec,
 	uaParamsPath, internationalKeysType, internationalKeysSpec,
-	internationalParamsPath, newKeyMedia, newPrivateKeyPassword, caCN, 
+	internationalParamsPath, newKeyMedia, newPrivateKeyPassword, caCN,
 	euParams, onReadedKey, newUserId, newKSP, onSuccess, onError) {
 	try {
 		var pThis = this;
 		var euSign = pThis.m_euSign;
 
-		if (oldKeyMedia != null || uaParamsPath != null || 
+		if (oldKeyMedia != null || uaParamsPath != null ||
 				internationalParamsPath != null || newKeyMedia != null) {
 			euSign.RaiseError(EU_ERROR_NOT_SUPPORTED);
 			return;
@@ -16732,12 +16740,12 @@ EndUser.prototype.MakeNewCertificate = function(
 		}
 
 		if (euParams) {
-			euSign.CtxModifyOwnEUserParams(pThis.m_pkContext, 
+			euSign.CtxModifyOwnEUserParams(pThis.m_pkContext,
 				euParams.phone, euParams.EMail);
 		}
 
 		var result = {
-			key: null, 
+			key: null,
 			certs: null
 		};
 
@@ -16762,8 +16770,8 @@ EndUser.prototype.MakeNewCertificate = function(
 			}
 
 			pThis.m_euKSP.MakeNewCertificate(
-				pThis.m_pkContext, 
-				uaKeysType, uaDSKeysSpec, useDSKeyAsKEP, uaKEPKeysSpec, 
+				pThis.m_pkContext,
+				uaKeysType, uaDSKeysSpec, useDSKeyAsKEP, uaKEPKeysSpec,
 				internationalKeysType, internationalKeysSpec,
 				newUserId, newKSP,
 				function(certs) {
@@ -16781,31 +16789,31 @@ EndUser.prototype.MakeNewCertificate = function(
 			pThis.ResetPrivateKeyInternal();
 
 			result.key = euSign.MakeNewCertificate(
-				oldPrivateKey, oldPrivateKeyPassword, 
-				uaKeysType, uaDSKeysSpec, useDSKeyAsKEP, uaKEPKeysSpec, 
+				oldPrivateKey, oldPrivateKeyPassword,
+				uaKeysType, uaDSKeysSpec, useDSKeyAsKEP, uaKEPKeysSpec,
 				internationalKeysType, internationalKeysSpec,
 				newPrivateKeyPassword);
-	
+
 			var context = null;
 			var pkContext = null;
 			try {
 				var cert = null;
 				var index = 0;
-	
+
 				context = euSign.CtxCreate();
 				euSign.CtxSetParameter(context,
 					EU_CHECK_PRIVATE_KEY_CONTEXT_PARAMETER, false);
 				pkContext = this.CtxReadPrivateKeyBinaryInternal(
 					context, result.key, newPrivateKeyPassword,
 					null, caCN, true);
-	
+
 				result.certs = [];
 				while ((cert = euSign.CtxEnumOwnCertificates(
 							pkContext, index)) != null) {
 					result.certs.push(cert.GetTransferableObject());
 					index++;
 				}
-	
+
 				euSign.CtxFree(context);
 				euSign.CtxFreePrivateKey(pkContext);
 			} catch (e) {
@@ -16815,7 +16823,7 @@ EndUser.prototype.MakeNewCertificate = function(
 					euSign.CtxFreePrivateKey(pkContext);
 				throw e;
 			}
-	
+
 			onSuccess(result);
 		}
 	} catch (e) {
@@ -16825,8 +16833,8 @@ EndUser.prototype.MakeNewCertificate = function(
 
 //-------------------------------------------------------------------------------
 
-EndUser.prototype.MakeDeviceCertificate = function(deviceName, 
-	uaRequest, uaKEPRequest, internationalRequest, ecdsaRequest, 
+EndUser.prototype.MakeDeviceCertificate = function(deviceName,
+	uaRequest, uaKEPRequest, internationalRequest, ecdsaRequest,
 	onSuccess, onError) {
 	var euSign = this.m_euSign;
 
@@ -16843,11 +16851,11 @@ EndUser.prototype.MakeDeviceCertificate = function(deviceName,
 			var ca = this.GetCASettings(info.GetIssuerCN());
 			if (!ca || !ca.cmpAddress || ca.cmpAddress == "") {
 				euSign.RaiseError(EU_ERROR_BAD_PARAMETER);
-				return;	
+				return;
 			}
 
 			var certsBinary = euSign.CtxMakeDeviceCertificate(
-				this.m_pkContext, deviceName, uaRequest, uaKEPRequest, 
+				this.m_pkContext, deviceName, uaRequest, uaKEPRequest,
 				internationalRequest, ecdsaRequest, ca.cmpAddress, "80");
 			var certs = [];
 			for (var i = 0; i < certsBinary.length; i++) {
@@ -16908,7 +16916,7 @@ EndUser.prototype.GeneratePrivateKey = function(
 	keyMedia, setKeyMediaPassword,
 	uaKeysType, uaDSKeysSpec, useDSKeyAsKEP, uaKEPKeysSpec,
 	uaParamsPath, internationalKeysType, internationalKeysSpec,
-	internationalParamsPath, endUserInfo, extKeyUsages, 
+	internationalParamsPath, endUserInfo, extKeyUsages,
 	onSuccess, onError) {
 	try {
 		this.m_euSign.RaiseError(EU_ERROR_NOT_SUPPORTED);
@@ -16922,7 +16930,7 @@ EndUser.prototype.GeneratePrivateKey = function(
 EndUser.prototype.GeneratePrivateKeyBinary = function(
 	password, uaKeysType, uaDSKeysSpec, useDSKeyAsKEP, uaKEPKeysSpec,
 	uaParamsPath, internationalKeysType, internationalKeysSpec,
-	internationalParamsPath, endUserInfo, extKeyUsages, 
+	internationalParamsPath, endUserInfo, extKeyUsages,
 	onSuccess, onError) {
 	try {
 		var euSign = this.m_euSign;
@@ -16933,7 +16941,7 @@ EndUser.prototype.GeneratePrivateKeyBinary = function(
 
 		var result = euSign.GeneratePrivateKey(password,
 			uaKeysType, uaDSKeysSpec, useDSKeyAsKEP, uaKEPKeysSpec,
-			internationalKeysType, internationalKeysSpec, 
+			internationalKeysType, internationalKeysSpec,
 			endUserInfo, extKeyUsages);
 
 		var _mapRequest = function(type, data, fileName) {
@@ -17032,10 +17040,10 @@ EndUser.prototype.HashData = function(
 
 		for (var i = 0; i < datas.length; i++) {
 			var hash = euSign.CtxHashData(
-				this.m_context, hashAlgo, null, 
+				this.m_context, hashAlgo, null,
 				datas[i].val, asBase64String);
 			hashes.push(hash);
-		}		
+		}
 
 		var result = DataToResult(data, hashes);
 		onSuccess(result);
@@ -17049,7 +17057,7 @@ EndUser.prototype.HashData = function(
 
 //-------------------------------------------------------------------------------
 
-EndUser.prototype.GetSigner = function(sign, signIndex, resolveOIDs, 
+EndUser.prototype.GetSigner = function(sign, signIndex, resolveOIDs,
 	onSuccess, onError) {
 	var euSign = this.m_euSign;
 	var context = null;
@@ -17062,7 +17070,7 @@ EndUser.prototype.GetSigner = function(sign, signIndex, resolveOIDs,
 		resolveOIDs = GetOptionalParam(resolveOIDs, false);
 
 		context = euSign.CtxCreate();
-		euSign.CtxSetParameter(context, 
+		euSign.CtxSetParameter(context,
 			EU_RESOLVE_OIDS_CONTEXT_PARAMETER, resolveOIDs);
 
 		if (signIndex == -1) {
@@ -17079,7 +17087,7 @@ EndUser.prototype.GetSigner = function(sign, signIndex, resolveOIDs,
 				context, signIndex, sign);
 			result = signerInfo.GetTransferableObject();
 		}
-		
+
 		euSign.CtxFree(context);
 
 		onSuccess(result);
@@ -17095,7 +17103,7 @@ EndUser.prototype.GetSigner = function(sign, signIndex, resolveOIDs,
 
 EndUser.prototype.SignData = function(
 	data, asBase64String, onSuccess, onError) {
-	this.SignDataEx(EU_CTX_SIGN_UNKNOWN, data, 
+	this.SignDataEx(EU_CTX_SIGN_UNKNOWN, data,
 		true, true, asBase64String, onSuccess, onError);
 };
 
@@ -17103,16 +17111,16 @@ EndUser.prototype.SignData = function(
 
 EndUser.prototype.SignDataInternal = function(
 	appendCert, data, asBase64String, onSuccess, onError) {
-	this.SignDataEx(EU_CTX_SIGN_UNKNOWN, data, 
+	this.SignDataEx(EU_CTX_SIGN_UNKNOWN, data,
 		false, appendCert, asBase64String, onSuccess, onError);
 };
 
 //-------------------------------------------------------------------------------
 
-EndUser.prototype.SignHash = function(signAlgo, hash, 
+EndUser.prototype.SignHash = function(signAlgo, hash,
 	appendCert, asBase64String, onSuccess, onError) {
 	if (this.m_euKSP.IsPrivateKeyReaded()) {
-		this.m_euKSP.SignHash(signAlgo, hash, appendCert, 
+		this.m_euKSP.SignHash(signAlgo, hash, appendCert,
 			asBase64String, onSuccess, onError);
 	} else {
 		this.CtxSignHashInternal(this.m_pkContext,
@@ -17123,40 +17131,40 @@ EndUser.prototype.SignHash = function(signAlgo, hash,
 
 //-------------------------------------------------------------------------------
 
-EndUser.prototype.SignDataEx = function(signAlgo, data, 
+EndUser.prototype.SignDataEx = function(signAlgo, data,
 	external, appendCert, asBase64String, onSuccess, onError) {
 	Debug("EndUser::SignDataEx", arguments);
 
 	if (this.m_euKSP.IsPrivateKeyReaded()) {
-		this.m_euKSP.SignDataEx(signAlgo, data, external, appendCert, 
+		this.m_euKSP.SignDataEx(signAlgo, data, external, appendCert,
 			asBase64String, onSuccess, onError);
 	} else {
-		this.CtxSignDataInternal(this.m_pkContext, 
-			signAlgo, data, null, external, appendCert, 
+		this.CtxSignDataInternal(this.m_pkContext,
+			signAlgo, data, null, external, appendCert,
 			asBase64String, onSuccess, onError);
 	}
 };
 
 //-------------------------------------------------------------------------------
 
-EndUser.prototype.AppendSign = function(signAlgo, data, 
+EndUser.prototype.AppendSign = function(signAlgo, data,
 	previousSign, appendCert, asBase64String, onSuccess, onError) {
 	if (this.m_euKSP.IsPrivateKeyReaded()) {
-		this.m_euKSP.AppendSign(signAlgo, data, previousSign, appendCert, 
+		this.m_euKSP.AppendSign(signAlgo, data, previousSign, appendCert,
 			asBase64String, onSuccess, onError);
 	} else {
-		this.CtxSignDataInternal(this.m_pkContext, 
-			signAlgo, data, previousSign, data != null, appendCert, 
+		this.CtxSignDataInternal(this.m_pkContext,
+			signAlgo, data, previousSign, data != null, appendCert,
 			asBase64String, onSuccess, onError);
 	}
 };
 
 //-------------------------------------------------------------------------------
 
-EndUser.prototype.AppendSignHash = function(signAlgo, hash, 
+EndUser.prototype.AppendSignHash = function(signAlgo, hash,
 	previousSign, appendCert, asBase64String, onSuccess, onError) {
 	if (this.m_euKSP.IsPrivateKeyReaded()) {
-		this.m_euKSP.AppendSignHash(signAlgo, hash, previousSign, appendCert, 
+		this.m_euKSP.AppendSignHash(signAlgo, hash, previousSign, appendCert,
 			asBase64String, onSuccess, onError);
 	} else {
 		this.CtxSignHashInternal(this.m_pkContext,
@@ -17173,7 +17181,7 @@ EndUser.prototype.GetSignValue = function(signAlgo, hash,
 		this.m_euKSP.GetSignValue(signAlgo, hash,
 			asBase64String, asASN1, onSuccess, onError);
 	} else {
-		this.CtxGetSignValueInternal(this.m_pkContext, 
+		this.CtxGetSignValueInternal(this.m_pkContext,
 			signAlgo, hash, asBase64String, asASN1, onSuccess, onError);
 	}
 };
@@ -17208,10 +17216,10 @@ EndUser.prototype.VerifyHash = function(
 				hash, signIndex, sign, onTime, offline, noCRL);
 			signInfo = signInfo.GetTransferableObject();
 			signInfo.signLevel = this.m_euSign.GetSignType(
-				signIndex, sign);				
+				signIndex, sign);
 			result = signInfo;
 		}
-		
+
 		onSuccess(result);
 	} catch (e) {
 		onError(e);
@@ -17242,7 +17250,7 @@ EndUser.prototype.VerifyData = function(
 					data, i, sign, onTime, offline, noCRL);
 				signInfo = signInfo.GetTransferableObject();
 				signInfo.signLevel = this.m_euSign.GetSignType(
-					i, sign);						
+					i, sign);
 				result.push(signInfo);
 			}
 		} else {
@@ -17250,10 +17258,10 @@ EndUser.prototype.VerifyData = function(
 				data, signIndex, sign, onTime, offline, noCRL);
 			signInfo = signInfo.GetTransferableObject();
 			signInfo.signLevel = this.m_euSign.GetSignType(
-				signIndex, sign);					
+				signIndex, sign);
 			result = signInfo;
 		}
-		
+
 		onSuccess(result);
 	} catch (e) {
 		onError(e);
@@ -17289,10 +17297,10 @@ EndUser.prototype.VerifyDataInternal = function(
 				signIndex, sign, onTime, offline, noCRL);
 			signInfo = signInfo.GetTransferableObject();
 			signInfo.signLevel = this.m_euSign.GetSignType(
-				signIndex, sign);				
+				signIndex, sign);
 			result = signInfo;
 		}
-		
+
 		onSuccess(result);
 	} catch (e) {
 		onError(e);
@@ -17301,7 +17309,7 @@ EndUser.prototype.VerifyDataInternal = function(
 
 //-------------------------------------------------------------------------------
 
-EndUser.prototype.EnvelopData = function(recipientsCerts, data, 
+EndUser.prototype.EnvelopData = function(recipientsCerts, data,
 	signData, appendCert, asBase64String, useDynamicKey, onSuccess, onError) {
 	if (this.m_euKSP.IsPrivateKeyReaded()) {
 		this.m_euKSP.EnvelopData(recipientsCerts, data, signData, appendCert,
@@ -17314,13 +17322,13 @@ EndUser.prototype.EnvelopData = function(recipientsCerts, data,
 			}
 
 			var recipientAppendType = EU_RECIPIENT_APPEND_TYPE_BY_ISSUER_SERIAL;
-			var envelopedData = useDynamicKey ? 
+			var envelopedData = useDynamicKey ?
 				(signData ?
 					this.m_euSign.CtxEnvelopDataWithDynamicKey(
 						this.m_pkContext, recipientsCerts, recipientAppendType,
 						signData, appendCert, data, asBase64String) :
 					this.m_euSign.EnvelopDataToRecipientsWithDynamicKey(
-						recipientsCerts, signData, 
+						recipientsCerts, signData,
 						appendCert, data, asBase64String)) :
 				this.m_euSign.CtxEnvelopData(
 					this.m_pkContext, recipientsCerts, recipientAppendType,
@@ -17335,7 +17343,7 @@ EndUser.prototype.EnvelopData = function(recipientsCerts, data,
 
 //-------------------------------------------------------------------------------
 
-EndUser.prototype.DevelopData = function(envelopedData, 
+EndUser.prototype.DevelopData = function(envelopedData,
 	senderCert, onSuccess, onError) {
 	if (this.m_euKSP.IsPrivateKeyReaded()) {
 		this.m_euKSP.DevelopData(
@@ -17382,7 +17390,7 @@ EndUser.prototype.ProtectDataByPassword = function(
 		onSuccess(result);
 	} catch (e) {
 		onError(e);
-	}	
+	}
 };
 
 //-------------------------------------------------------------------------------
@@ -17398,12 +17406,12 @@ EndUser.prototype.UnprotectDataByPassword = function(
 		onSuccess(result);
 	} catch (e) {
 		onError(e);
-	}	
+	}
 };
 
 //-------------------------------------------------------------------------------
 
-EndUser.prototype.GetTSPByAccessInfo = function(hashAlgo, hash, 
+EndUser.prototype.GetTSPByAccessInfo = function(hashAlgo, hash,
 	accessInfo, accessInfoPort, asBase64String, onSuccess, onError) {
 	try {
 		var result = this.m_euSign.GetTSPByAccessInfo(
@@ -17461,7 +17469,7 @@ EndUser.prototype.SessionEncrypt = function(
 	try {
 		session = EndUserInitFromTransferableObject(
 			session, EndUserSession);
-		
+
 		var encryptedData = this.m_euSign.SessionEncrypt(
 			session, data, asBase64String);
 		onSuccess(encryptedData);
@@ -17477,7 +17485,7 @@ EndUser.prototype.SessionDecrypt = function(
 	try {
 		session = EndUserInitFromTransferableObject(
 			session, EndUserSession);
-		
+
 		var data = this.m_euSign.SessionDecrypt(
 			session, encryptedData);
 		onSuccess(data);
@@ -17563,7 +17571,7 @@ EndUser.prototype.CtxFreePrivateKey = function(
 	try {
 		privateKeyContext = EndUserInitFromTransferableObject(
 			privateKeyContext, EndUserPrivateKeyContext);
-		
+
 		this.m_euSign.CtxFreePrivateKey(privateKeyContext);
 
 		onSuccess();
@@ -17604,7 +17612,7 @@ EndUser.prototype.CtxGetOwnCertificates = function(
 
 //-------------------------------------------------------------------------------
 
-EndUser.prototype.CtxSignHash = function(privateKeyContext, 
+EndUser.prototype.CtxSignHash = function(privateKeyContext,
 	signAlgo, hash, appendCert, asBase64String, onSuccess, onError) {
 	this.CtxSignHashInternal(privateKeyContext,
 		signAlgo, hash, null, appendCert, asBase64String,
@@ -17613,16 +17621,16 @@ EndUser.prototype.CtxSignHash = function(privateKeyContext,
 
 //-------------------------------------------------------------------------------
 
-EndUser.prototype.CtxSignData = function(privateKeyContext, 
+EndUser.prototype.CtxSignData = function(privateKeyContext,
 	signAlgo, data, external, appendCert, asBase64String, onSuccess, onError) {
-	this.CtxSignDataInternal(privateKeyContext, 
-		signAlgo, data, null, external, appendCert, 
+	this.CtxSignDataInternal(privateKeyContext,
+		signAlgo, data, null, external, appendCert,
 		asBase64String, onSuccess, onError);
 };
 
 //-------------------------------------------------------------------------------
 
-EndUser.prototype.CtxAppendSignHash = function(privateKeyContext, signAlgo, 
+EndUser.prototype.CtxAppendSignHash = function(privateKeyContext, signAlgo,
 	hash, previousSign, appendCert, asBase64String, onSuccess, onError) {
 	this.CtxSignHashInternal(privateKeyContext,
 		signAlgo, hash, previousSign, appendCert, asBase64String,
@@ -17631,24 +17639,24 @@ EndUser.prototype.CtxAppendSignHash = function(privateKeyContext, signAlgo,
 
 //-------------------------------------------------------------------------------
 
-EndUser.prototype.CtxAppendSign = function(privateKeyContext, signAlgo, data, 
+EndUser.prototype.CtxAppendSign = function(privateKeyContext, signAlgo, data,
 	previousSign, appendCert, asBase64String, onSuccess, onError) {
-	this.CtxSignDataInternal(privateKeyContext, 
-		signAlgo, data, previousSign, data != null, appendCert, 
+	this.CtxSignDataInternal(privateKeyContext,
+		signAlgo, data, previousSign, data != null, appendCert,
 		asBase64String, onSuccess, onError);
 };
 
 //-------------------------------------------------------------------------------
 
-EndUser.prototype.CtxGetSignValue = function(pkContext, 
+EndUser.prototype.CtxGetSignValue = function(pkContext,
 	signAlgo, hash, asBase64String, asASN1, onSuccess, onError) {
-	this.CtxGetSignValueInternal(pkContext, 
+	this.CtxGetSignValueInternal(pkContext,
 		signAlgo, hash, asBase64String, asASN1, onSuccess, onError);
 };
 
 //-------------------------------------------------------------------------------
 
-EndUser.prototype.CtxEnvelopData = function(privateKeyContext, 
+EndUser.prototype.CtxEnvelopData = function(privateKeyContext,
 	recipientsCerts, data, signData, appendCert, asBase64String,
 	useDynamicKey, onSuccess, onError) {
 	try {
@@ -17663,13 +17671,13 @@ EndUser.prototype.CtxEnvelopData = function(privateKeyContext,
 		}
 
 		var recipientAppendType = EU_RECIPIENT_APPEND_TYPE_BY_ISSUER_SERIAL;
-		var envelopedData = useDynamicKey ? 
+		var envelopedData = useDynamicKey ?
 			(signData ?
 				this.m_euSign.CtxEnvelopDataWithDynamicKey(
 					privateKeyContext, recipientsCerts, recipientAppendType,
 					signData, appendCert, data, asBase64String) :
 				this.m_euSign.EnvelopDataToRecipientsWithDynamicKey(
-					recipientsCerts, signData, 
+					recipientsCerts, signData,
 					appendCert, data, asBase64String)) :
 			this.m_euSign.CtxEnvelopData(
 				privateKeyContext, recipientsCerts, recipientAppendType,
@@ -17706,8 +17714,8 @@ EndUser.prototype.CtxDevelopData = function(privateKeyContext,
 //-------------------------------------------------------------------------------
 
 EndUser.prototype.ProtectTaxReports = function(
-	accountantPrivateKeyContext, directorPrivateKeyContext, 
-	stampPrivateKeyContext, senderEMail, recipientCertificate, 
+	accountantPrivateKeyContext, directorPrivateKeyContext,
+	stampPrivateKeyContext, senderEMail, recipientCertificate,
 	reports, returnIntermediateSign, onSuccess, onError) {
 	var pThis = this;
 	try {
@@ -17739,7 +17747,7 @@ EndUser.prototype.ProtectTaxReports = function(
 		}
 
 		if (stampPrivateKeyContext) {
-			keyUsages = [EU_KEY_USAGE_DIGITAL_SIGNATURE, 
+			keyUsages = [EU_KEY_USAGE_DIGITAL_SIGNATURE,
 				EU_KEY_USAGE_KEY_AGREEMENT];
 
 			stampPKey = pThis.LoadTaxReportPKey(
@@ -17753,8 +17761,8 @@ EndUser.prototype.ProtectTaxReports = function(
 
 		for (var i = 0; i < reports.length; i++) {
 			var result = pThis.ProtectTaxReport(
-				accountantPKey, directorPKey, stampPKey, 
-				senderEMail, recipientCertificate, reports[i], 
+				accountantPKey, directorPKey, stampPKey,
+				senderEMail, recipientCertificate, reports[i],
 				returnIntermediateSign);
 			results.push(result);
 		}
@@ -17804,7 +17812,7 @@ EndUser.prototype.ASiCGetSigner = function(
 		resolveOIDs = GetOptionalParam(resolveOIDs, false);
 
 		context = euSign.CtxCreate();
-		euSign.CtxSetParameter(context, 
+		euSign.CtxSetParameter(context,
 			EU_RESOLVE_OIDS_CONTEXT_PARAMETER, resolveOIDs);
 
 		if (signIndex == -1) {
@@ -17820,7 +17828,7 @@ EndUser.prototype.ASiCGetSigner = function(
 				context, signIndex, asicData);
 			result = signerInfo.GetTransferableObject();
 		}
-		
+
 		euSign.CtxFree(context);
 
 		onSuccess(result);
@@ -17867,12 +17875,12 @@ EndUser.prototype.ASiCSignData = function(
 			asicReferences.push(reference);
 		}
 
-		var asicData = euSign.CtxASiCSignData(pkContext, 
+		var asicData = euSign.CtxASiCSignData(pkContext,
 			signAlgo, asicType, signType, signLevel,
 			asicReferences, asBase64String);
 		var result = {
-			name: references[0].name + 
-				(asicType == EU_ASIC_TYPE_S ? 
+			name: references[0].name +
+				(asicType == EU_ASIC_TYPE_S ?
 					'.asics' : '.asice'),
 			val: asicData
 		};
@@ -17911,7 +17919,7 @@ EndUser.prototype.ASiCAppendSign = function(
 
 		var previousASiCData = DataToNamedDataArray(asicData);
 
-		asicData = euSign.CtxASiCAppendSign(pkContext, 
+		asicData = euSign.CtxASiCAppendSign(pkContext,
 			signAlgo, signLevel, referencesNames,
 			previousASiCData[0].val, asBase64String);
 		var result = {
@@ -17949,10 +17957,10 @@ EndUser.prototype.ASiCVerifyData = function(
 		} else {
 			signInfo = euSign.ASiCVerifyData(signIndex, asicData);
 			signInfo = signInfo.GetTransferableObject();
-			signInfo.signLevel = euSign.ASiCGetSignLevel(signIndex, asicData);			
+			signInfo.signLevel = euSign.ASiCGetSignLevel(signIndex, asicData);
 			result = signInfo;
 		}
-		
+
 		onSuccess(result);
 	} catch (e) {
 		onError(e);
@@ -17974,7 +17982,7 @@ EndUser.prototype.PDFGetSigner = function(
 		resolveOIDs = GetOptionalParam(resolveOIDs, false);
 
 		context = euSign.CtxCreate();
-		euSign.CtxSetParameter(context, 
+		euSign.CtxSetParameter(context,
 			EU_RESOLVE_OIDS_CONTEXT_PARAMETER, resolveOIDs);
 
 		if (signIndex == -1) {
@@ -17990,7 +17998,7 @@ EndUser.prototype.PDFGetSigner = function(
 				context, signIndex, signedPDFData);
 			result = signerInfo.GetTransferableObject();
 		}
-		
+
 		euSign.CtxFree(context);
 
 		onSuccess(result);
@@ -18007,7 +18015,7 @@ EndUser.prototype.PDFGetSigner = function(
 EndUser.prototype.PDFSignData = function(
 	signAlgo, pdfData, signType, asBase64String, onSuccess, onError) {
 	if (this.m_euKSP.IsPrivateKeyReaded()) {
-		this.m_euKSP.PDFSignData(signAlgo, pdfData, 
+		this.m_euKSP.PDFSignData(signAlgo, pdfData,
 			signType, asBase64String, onSuccess, onError);
 		return;
 	}
@@ -18031,10 +18039,10 @@ EndUser.prototype.PDFSignData = function(
 		var length = pdfDatas.length;
 		for (var i = 0; i < length; i++) {
 			var sign = euSign.CtxPDFSignData(
-				pkContext, signAlgo, pdfDatas[i].val, 
+				pkContext, signAlgo, pdfDatas[i].val,
 				signType, asBase64String);
 
-			signs.push(sign); 
+			signs.push(sign);
 		}
 
 		var result = DataToResult(pdfData, signs);
@@ -18069,10 +18077,10 @@ EndUser.prototype.PDFVerifyData = function(
 			signInfo = euSign.PDFVerifyData(signIndex, signedPDFData);
 			signInfo = signInfo.GetTransferableObject();
 			signInfo.signLevel = euSign.PDFGetSignType(
-				signIndex, signedPDFData);		
+				signIndex, signedPDFData);
 			result = signInfo;
 		}
-		
+
 		onSuccess(result);
 	} catch (e) {
 		onError(e);
@@ -18092,9 +18100,9 @@ EndUser.prototype.XAdESGetSigner = function(
 
 		signIndex = GetOptionalParam(signIndex, -1);
 		resolveOIDs = GetOptionalParam(resolveOIDs, false);
-		
+
 		context = euSign.CtxCreate();
-		euSign.CtxSetParameter(context, 
+		euSign.CtxSetParameter(context,
 			EU_RESOLVE_OIDS_CONTEXT_PARAMETER, resolveOIDs);
 
 		if (signIndex == -1) {
@@ -18110,7 +18118,7 @@ EndUser.prototype.XAdESGetSigner = function(
 				context, signIndex, xadesData);
 			result = signerInfo.GetTransferableObject();
 		}
-		
+
 		euSign.CtxFree(context);
 
 		onSuccess(result);
@@ -18155,12 +18163,12 @@ EndUser.prototype.XAdESSignData = function(
 			xadesReferences.push(reference);
 		}
 
-		var xadesData = euSign.CtxXAdESSignData(pkContext, 
+		var xadesData = euSign.CtxXAdESSignData(pkContext,
 			signAlgo, xadesType, signLevel,
 			xadesReferences, asBase64String);
 		var result = {
-			name: references[0].name + 
-				(references[0].name.endsWith(".xml") ? 
+			name: references[0].name +
+				(references[0].name.endsWith(".xml") ?
 					'' : '.xml'),
 			val: xadesData
 		};
@@ -18208,10 +18216,10 @@ EndUser.prototype.XAdESVerifyData = function(
 			signInfo = euSign.XAdESVerifyData(
 				xadesReferences, signIndex, xadesData);
 			signInfo = signInfo.GetTransferableObject();
-			signInfo.signLevel = euSign.XAdESGetSignLevel(signIndex, xadesData);				
+			signInfo.signLevel = euSign.XAdESGetSignLevel(signIndex, xadesData);
 			result = signInfo;
 		}
-		
+
 		onSuccess(result);
 	} catch (e) {
 		onError(e);
@@ -18239,10 +18247,10 @@ EndUser.prototype.GetSignContainerInfo = function(
 				var isInternal = euSign.IsDataInSignedDataAvailable(
 					signature);
 				return makeSignContainerInfo(
-					EU_SIGN_CONTAINER_TYPE_CADES, 
-					isInternal ? 
-						EU_CADES_TYPE_ENVELOPED : 
-						EU_CADES_TYPE_DETACHED, 
+					EU_SIGN_CONTAINER_TYPE_CADES,
+					isInternal ?
+						EU_CADES_TYPE_ENVELOPED :
+						EU_CADES_TYPE_DETACHED,
 					0);
 			} catch (e) {
 				return null;
@@ -18318,7 +18326,7 @@ EndUser.prototype.GetSignContainerInfo = function(
 			info = makeSignContainerInfo(
 				EU_SIGN_CONTAINER_TYPE_UNKNOWN, 0, 0);
 		}
-		
+
 		onSuccess(info);
 	} catch (e) {
 		onError(e);
