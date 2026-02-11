@@ -22168,11 +22168,11 @@ function uint8ToBase64(uint8Array) {
                 R = A.report,
                 g = new m(R.fileName, f.tmpl, A),
                 P = g.makeDocument(S.Pdf, d.Binary);
-              A.report.saveReportFileButton =
-                A.report.saveReportFileButton.replace(
-                  "__validation__report__size__",
-                  m.formatFileSize(P.length),
-                );
+              // A.report.saveReportFileButton =
+              //   A.report.saveReportFileButton.replace(
+              //     "__validation__report__size__",
+              //     m.formatFileSize(P.length),
+              //   );
               var v = g.makeDocument(S.Html, d.String),
                 I = function () {
                   return new Promise(function (e, t) {
