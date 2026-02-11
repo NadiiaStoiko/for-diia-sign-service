@@ -1,48 +1,242 @@
+let fileForSign;
+let isDocumentSignedSuccess = false;
 let fileName = "";
 let isItStamp = false;
-currentDocumentIndx = null;
-function getFile() {
-  var fileDat = {
-    name: "Лист.docx",
-    extension: "docx",
-    mfId: 557,
-    file: "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",
-  };
-  var ext = getMimeType(fileDat.extension);
-  var base64Data = fileDat.file;
-  const byteCharacters = atob(base64Data);
-  const byteNumbers = new Array(byteCharacters.length);
-  for (let i = 0; i < byteCharacters.length; i++) {
-    byteNumbers[i] = byteCharacters.charCodeAt(i);
+let isItMulti = false;
+let resultsArr = [];
+let companyEdrpou = undefined;
+let signerIpn = undefined;
+let certChecked = false;
+let stampCertNotValidByCompany = false;
+let stampCertNotValidByPerson = false;
+let stampCertNotValid = false;
+let signCertNotValid = false;
+let signCertNotValidByCompany = false;
+let signCertNotValidByPerson = false;
+let signCertIsNotKey = false;
+
+window.addEventListener("message", (event) => {
+  console.log("event", event.data.isItStamp);
+  if (event.data.file) {
+    if (event.data.file.length) {
+      fileForSign = event.data.file;
+    } else {
+      passErrorToMFiles(event.data);
+    }
   }
-  const byteArray = new Uint8Array(byteNumbers);
 
-  // Створюємо об'єкт типу File
-  const file = new File([byteArray], fileDat.name, { type: ext });
-  const file2 = new File([byteArray], "Лист2.docx", { type: ext });
+  if (fileForSign?.length > 1) {
+    isItMulti = true;
+  }
+  if (event.data.isItStamp) {
+    isItStamp = true;
+  }
+  console.log("isItStamp", isItStamp);
+  console.log("fileForSign:", fileForSign);
+  if (event.data.ourCompanyEdrpou) {
+    companyEdrpou = event.data.ourCompanyEdrpou;
+  }
+  if (event.data.signerIpn) {
+    signerIpn = event.data.signerIpn;
+  }
+});
 
-  // Імітуємо FileList вручну, якщо треба передати далі
-  const dataTransfer = new DataTransfer();
-  dataTransfer.items.add(file);
-  // dataTransfer.items.add(file2)
-  document.getElementById("signFilesInput").files = dataTransfer.files;
-  let fl = $("#signFilesInput").prop("files");
-  console.log("file", file);
-  console.log("fl", $("#signFilesInput").prop("files"));
-  return fl;
-}
-
-function fileNameCreatorUtil(str) {
-  console.log("srt", str);
-  const signerName = str.subjCN;
-  const signerSerialNumber = str.subjDRFOCode;
-  const companySerialNumber = str.subjEDRPOUCode;
-  const isItSign = str.subjOrg === "ФІЗИЧНА ОСОБА";
+function fileNameCreatorUtil(certInfo) {
+  const signerName = certInfo.subjCN;
+  const signerSerialNumber = certInfo.subjDRFOCode;
+  const companySerialNumber = certInfo.subjEDRPOUCode;
+  const isItSign = certInfo.subjOrg === "ФІЗИЧНА ОСОБА";
   const nameToReturn = isItSign
     ? `${signerName}-${signerSerialNumber}`
     : `${signerName}-${companySerialNumber}`;
   console.log("nameToReturn", nameToReturn);
   return nameToReturn;
+}
+
+function sendSignedDataToParent(stringBase64) {
+  console.log("fileForSign", fileForSign);
+  let signedFilesArr = [];
+  if (fileForSign.length === 1) {
+    signedFilesArr.push({
+      name: `${fileForSign[0].mfId}_${fileName}`,
+      content: stringBase64,
+    });
+  } else {
+    resultsArr.forEach((document) => {
+      signedFilesArr.push({
+        name: `${document.mfId}_${fileName}`,
+        content: document.signBase64,
+      });
+    });
+  }
+
+  window.parent.postMessage(
+    {
+      type: "signed-data",
+      signatures: signedFilesArr,
+    },
+    "*", // або вкажи конкретний origin замість '*', наприклад: 'http://localhost:81'
+  );
+}
+
+function checkCertsInfo(certificatesInfo) {
+  console.log("certificatesInfo", certificatesInfo);
+  let edrpou = certificatesInfo.subjEDRPOUCode;
+  let ipn = certificatesInfo.subjDRFOCode;
+  console.log("companyEdrpou", companyEdrpou);
+  console.log("signerIpn ", signerIpn);
+  console.log("edrpou", edrpou);
+  console.log("ipn", ipn);
+  //фільтруємо чи це підпис чи печатка за аліасом WfState
+  if (isItStamp) {
+    // якщо печатка то має бути тільки єдрпоу а іпн пустий
+
+    if (edrpou && edrpou === companyEdrpou && !ipn) {
+      certChecked = true;
+    } else if (edrpou && edrpou !== companyEdrpou && !ipn) {
+      stampCertNotValidByCompany = true;
+    } else if (edrpou && edrpou === companyEdrpou && ipn) {
+      stampCertNotValidByPerson = true;
+    } else if (!edrpou) {
+      stampCertNotValidByPerson = true;
+    } else {
+      stampCertNotValid = true;
+    }
+  } else {
+    //випадок підпису посадової особи організації
+    if (edrpou && edrpou === companyEdrpou && ipn === signerIpn) {
+      certChecked = true;
+    }
+    if (edrpou && edrpou !== companyEdrpou && ipn === signerIpn) {
+      signCertNotValidByCompany = true;
+    }
+    if (edrpou && edrpou === companyEdrpou && ipn !== signerIpn) {
+      signCertNotValidByPerson = true;
+    }
+    if (!ipn) {
+      signCertIsNotKey = true;
+    }
+
+    //випадок коли просто підпис фізичної особи
+    if (!edrpou && ipn === signerIpn) {
+      certChecked = true;
+    }
+    if (!edrpou && ipn !== signerIpn) {
+      signCertNotValidByPerson = true;
+    }
+  }
+
+  if (!certChecked) {
+    pasKeyValidationResToMFiles({
+      certChecked,
+      stampCertNotValidByCompany,
+      stampCertNotValidByPerson,
+      signCertNotValidByCompany,
+      signCertNotValidByPerson,
+      signCertIsNotKey,
+      stampCertNotValid,
+    });
+  }
+
+  console.log("certChecked", certChecked);
+  console.log("signCertNotValidByPerson", signCertNotValidByPerson);
+  console.log("signCertNotValidByCompany", signCertNotValidByCompany);
+  console.log("stampCertNotValidByCompany", stampCertNotValidByCompany);
+  console.log("stampCertNotValidByPerson", stampCertNotValidByPerson);
+  console.log("stampCertNotValid", stampCertNotValid);
+}
+
+function pasKeyValidationResToMFiles(checkRes) {
+  let validationMsg = "";
+  if (checkRes.signCertNotValidByPerson) {
+    validationMsg =
+      "Нажаль обраний Вами ключ, не належить підписанту, спобуйте, будь-ласка ще раз";
+  }
+  if (checkRes.signCertNotValidByCompany) {
+    validationMsg =
+      "Нажаль обраний Вами сертифікат ключа, не відповідає компанії від якої здійснюється підпис, спобуйте, будь-ласка ще раз";
+  }
+  if (checkRes.stampCertNotValidByCompany) {
+    validationMsg =
+      "Нажаль обраний Вами сертифікат печатки, не відповідає компанії від якої здійснюється накладання печатки, спобуйте, будь-ласка ще раз";
+  }
+  if (checkRes.stampCertNotValidByPerson) {
+    validationMsg =
+      "Нажаль обраний Вами сертифікат, не є серифікатом печатки, спобуйте, будь-ласка ще раз";
+  }
+  if (checkRes.signCertIsNotKey) {
+    validationMsg =
+      "Нажаль обраний Вами сертифікат, не є сертифікатом ключа, спобуйте, будь-ласка ще раз";
+  }
+  if (checkRes.stampCertNotValid) {
+    validationMsg =
+      "Нажаль обраний Вами сертифікат печатки, не є валідним, спобуйте, будь-ласка ще раз";
+  }
+
+  if (validationMsg !== "") {
+    window.parent.postMessage(
+      {
+        type: "key-validation-result",
+        validationMsg,
+      },
+      "*",
+    );
+  }
+}
+
+function passErrorToMFiles(data) {
+  let errMsg = "";
+  if (!data.isFileToBig && !data.isFileEmpty) {
+    errMsg = "Нажаль передача файлів не відбулась, спобуйте, будь-ласка ще раз";
+  }
+  if (data.isFileEmpty) {
+    errMsg =
+      "Документ містить файл або файли що є пустими, будь-ласка, перевірте файл/и, та спробуйте знову";
+  }
+  if (data.isFileToBig) {
+    errMsg =
+      "Документ містить файл або файли що є занадто великим/и (обсяг перевищує 25МБ), перевірте файл/и та спробуйте знову";
+  }
+  if (errMsg !== "") {
+    window.parent.postMessage(
+      {
+        type: "signed-data-error",
+        errMsg,
+      },
+      "*",
+    );
+  }
+}
+
+function filesArrCreator() {
+  const dataTransfer = new DataTransfer();
+  console.log("filesArrCreator");
+  if (fileForSign.length) {
+    fileForSign.forEach((fileInfo) => {
+      var ext = getMimeType(fileInfo?.extension);
+      var base64Data = fileInfo.file;
+      const byteCharacters = atob(base64Data);
+      const byteNumbers = new Array(byteCharacters.length);
+      for (let i = 0; i < byteCharacters.length; i++) {
+        byteNumbers[i] = byteCharacters.charCodeAt(i);
+      }
+      const byteArray = new Uint8Array(byteNumbers);
+      const file = new File([byteArray], fileInfo.fileName, { type: ext });
+      dataTransfer.items.add(file);
+    });
+    console.log("dataTransfer.files", dataTransfer.files);
+    return dataTransfer.files;
+  } else {
+    passErrorToMFiles();
+  }
+}
+
+function getFile() {
+  document.getElementById("signFilesInput").files = filesArrCreator();
+  let fl = $("#signFilesInput").prop("files");
+  // console.log('file', file)
+  // console.log('fl', $('#signFilesInput').prop('files'))
+  return fl;
 }
 
 function getMimeType(extension) {
@@ -12690,13 +12884,13 @@ function uint8ToBase64(uint8Array) {
       function (e, t, n) {
         (function (t, r) {
           var i;
-            /*!
-             * @overview es6-promise - a tiny implementation of Promises/A+.
-             * @copyright Copyright (c) 2014 Yehuda Katz, Tom Dale, Stefan Penner and contributors (Conversion to ES6 API by Jake Archibald)
-             * @license   Licensed under MIT license
-             *            See https://raw.githubusercontent.com/stefanpenner/es6-promise/master/LICENSE
-             * @version   3.3.1
-             */
+          /*!
+           * @overview es6-promise - a tiny implementation of Promises/A+.
+           * @copyright Copyright (c) 2014 Yehuda Katz, Tom Dale, Stefan Penner and contributors (Conversion to ES6 API by Jake Archibald)
+           * @license   Licensed under MIT license
+           *            See https://raw.githubusercontent.com/stefanpenner/es6-promise/master/LICENSE
+           * @version   3.3.1
+           */
           ((i = function () {
             "use strict";
             function e(e) {
@@ -19064,7 +19258,9 @@ function uint8ToBase64(uint8Array) {
           (e.SIGN_FILE_FORM_TITLE = "Підписати файл за допомогою"),
           (e.SIGN_FILE_FORM_SUB_TITLE =
             'Оберіть файл для підпису та натисніть "Підписати"'),
-          (e.SIGN_FILE_RESULT_FORM_TITLE = "👍 Документ підписано"),
+          (e.SIGN_FILE_RESULT_FORM_TITLE = isItStamp
+            ? "👍 Печатку накладено"
+            : "👍 Документ підписано"),
           (e.SIGN_FILE_RESULT_FORM_SUB_TITLE =
             "Ви можете зберігти підписаний файл."),
           (e.VIEW_PKEY_CERTIFICATES_FORM_TITLE =
@@ -21989,11 +22185,11 @@ function uint8ToBase64(uint8Array) {
                   });
                 };
               ($(_).append(v),
-                $(c).append(
-                  '<div id="saveAllButton" class="Block">\t\t\t\t<div class="DownloadIcon" style="float: left;"></div>\t\t\t\t<label class="i18n">' +
-                    p("Завантажити все архівом") +
-                    "</label>\t\t\t</div>",
-                ),
+                // $(c).append(
+                //   '<div id="saveAllButton" class="Block">\t\t\t\t<div class="DownloadIcon" style="float: left;"></div>\t\t\t\t<label class="i18n">' +
+                //     p("Завантажити все архівом") +
+                //     "</label>\t\t\t</div>",
+                // ),
                 $(c).append(_));
               var O = {
                 title: p(o.BUTTON_THANKS),
@@ -22405,6 +22601,19 @@ function uint8ToBase64(uint8Array) {
                   $("#pkBlock").hide());
                 break;
               case "#resultBlock":
+                if (isItStamp) {
+                  isItMulti
+                    ? $("#titleLabel").text(
+                        "👍 Печатку на всі документи успішно накладено",
+                      )
+                    : $("#titleLabel").text("👍 Печатку накладено");
+                } else {
+                  isItMulti
+                    ? $("#titleLabel").text(
+                        "👍 Всі документи успішно підписано",
+                      )
+                    : $("#titleLabel").text("👍 Документ підписано");
+                }
                 ($("#titleLabel").is(":visible")
                   ? ($("#titleBlock").show(), $("#subTitleLabel").show())
                   : ($("#titleBlock").hide(), $("#subTitleLabel").hide()),
@@ -24325,6 +24534,19 @@ function uint8ToBase64(uint8Array) {
             return t <= 0 ? e : e.substr(0, t);
           }),
           (e.prototype.makeSignReportData = function (e) {
+            console.log("e.signFile", e.signFile);
+            if (e.signFile.data.length) {
+              isDocumentSignedSuccess = true;
+              // console.log('base64String', base64String)
+              if (fileForSign.length === 1) {
+                const base64String = uint8ToBase64(e.signFile.data);
+                console.log("base64String from wiget", base64String);
+                sendSignedDataToParent(base64String);
+              }
+              if (resultsArr.length) {
+                sendSignedDataToParent("");
+              }
+            }
             for (
               var t = new Date(),
                 n = p(
@@ -24332,12 +24554,12 @@ function uint8ToBase64(uint8Array) {
                 ),
                 r = e.signFile.name,
                 i = m.formatFileSize(e.signFile.size),
-                o = this.makeFileDownloadHTML(
-                  "saveSignFileButton",
-                  p("Файл з підписом"),
-                  r,
-                  i,
-                ),
+                // o = this.makeFileDownloadHTML(
+                //   "saveSignFileButton",
+                //   p("Файл з підписом"),
+                //   r,
+                //   i,
+                // ),
                 s = [],
                 a = 0;
               a < e.files.length;
@@ -24352,21 +24574,21 @@ function uint8ToBase64(uint8Array) {
                   ? e.files[0].name
                   : this.removeFileExtension(e.signFile.name) + ".zip",
               l = m.formatFileSize(this.GetFilesSize(e.files)),
-              c = this.makeFileDownloadHTML(
-                "saveDataFileButton",
-                p("Файл(и) без підпису"),
-                u,
-                l,
-              ),
+              // c = this.makeFileDownloadHTML(
+              //   "saveDataFileButton",
+              //   p("Файл(и) без підпису"),
+              //   u,
+              //   l,
+              // ),
               _ = this.removeFileExtension(u) + "_Validation_Report.pdf",
-              f = this.makeFileDownloadHTML(
-                "saveReportFileButton",
-                p(
-                  "Протокол створення та перевірки кваліфікованого електронного підпису від ",
-                ) + m.formatDate(t, "dd.MM.yyyy"),
-                _,
-                "__validation__report__size__",
-              ),
+              // f = this.makeFileDownloadHTML(
+              //   "saveReportFileButton",
+              //   p(
+              //     "Протокол створення та перевірки кваліфікованого електронного підпису від ",
+              //   ) + m.formatDate(t, "dd.MM.yyyy"),
+              //   _,
+              //   "__validation__report__size__",
+              // ),
               E = r + ".zip",
               h = [],
               S = e.signsInfos,
@@ -24556,6 +24778,50 @@ function uint8ToBase64(uint8Array) {
               this.SetError(""),
               this.ShowForm("#signBlock", !1));
           }),
+          (e.prototype.SignAllFilesCAdESDetached = function (
+            lib,
+            filesData,
+            signAlgo,
+            hashAlgo,
+          ) {
+            var chain = Promise.resolve();
+            var results = [];
+            filesData.forEach(function (fd, currInd) {
+              chain = chain
+                .then(function () {
+                  // 1) Хешуємо конкретний файл
+                  return lib.HashData(hashAlgo, fd.data, !1);
+                })
+                .then(function (hash) {
+                  // 2) Підписуємо хеш (CAdES Detached)
+                  return lib.SignHash(
+                    signAlgo,
+                    {
+                      name: fd.name,
+                      val: hash,
+                    },
+                    !0,
+                    !1,
+                  );
+                })
+                .then(function (sign) {
+                  let signBytes = sign.val || sign;
+                  let signBase64 = uint8ToBase64(signBytes);
+
+                  results.push({
+                    mfId: fileForSign[currInd].mfId,
+                    fileName: fd.name + ".p7",
+                    signBytes: signBytes,
+                    signBase64: signBase64,
+                    size: signBytes.length,
+                  });
+                });
+            });
+
+            return chain.then(function () {
+              return results;
+            });
+          }),
           (e.prototype.OnSignFile = function () {
             var e = this,
               t = e.GetCurrentLibrary();
@@ -24605,10 +24871,18 @@ function uint8ToBase64(uint8Array) {
             if ("" != m)
               if ("" != g)
                 if (
+                  // R.length > 1 &&
+                  // n != N.ASiCE &&
+                  // (n != N.XAdES ||
+                  //   S != i.EndUserConstants.EndUserXAdESType.Detached)
                   R.length > 1 &&
                   n != N.ASiCE &&
                   (n != N.XAdES ||
-                    S != i.EndUserConstants.EndUserXAdESType.Detached)
+                    S != i.EndUserConstants.EndUserXAdESType.Detached) &&
+                  !(
+                    n == N.CAdES &&
+                    s == i.EndUserConstants.EndUserCAdESType.Detached
+                  )
                 )
                   e.SetError(p(o.ERROR_SIGN_MULTIPLE_FILES_NOT_SUPPORTED));
                 else if (
@@ -24639,14 +24913,47 @@ function uint8ToBase64(uint8Array) {
                         i.EndUserConstants.EU_SIGN_TYPE_PARAMETER,
                         a,
                       )
-                      .then(function () {
-                        return e.ReadFiles(R);
-                      })
-                      .then(function (e) {
-                        return (
-                          (I.filesData = e),
-                          A ? t.GetLibrary().HashData(c, e[0].data, !1) : null
-                        );
+                      // .then(function () {
+                      //   return e.ReadFiles(R);
+                      // })
+                      // .then(function (e) {
+                      //   return (
+                      //     (I.filesData = e),
+                      //     A ? t.GetLibrary().HashData(c, e[0].data, !1) : null
+                      //   );
+                      // })
+                      .then(async function () {
+                        // return e.ReadFiles(R)
+                        const filesArr = await e.ReadFiles(R);
+                        console.log("filesArr", filesArr);
+                        I.filesData = filesArr;
+                        if (A && I.filesData.length > 1) {
+                          e.SignAllFilesCAdESDetached(
+                            t.GetLibrary(),
+                            I.filesData,
+                            r, // signAlgo
+                            c, // hashAlgo
+                          ).then(function (results) {
+                            if (results) {
+                              resultsArr = [...results];
+                              console.log("results", results);
+                              console.log("resultsArr", resultsArr);
+                            }
+                            // e.CloseDimmerView()
+                            // e.StopOperationConfirmation()
+
+                            // Обірвати стандартний ланцюжок .then(), щоб не йти в SetSignFileResult
+                            throw "__MULTI_CADES_DONE__";
+                          });
+                        }
+                        return A
+                          ? t.GetLibrary().HashData(c, filesArr[0].data, !1)
+                          : null;
+
+                        // return (
+                        // 	(I.filesData = e),
+                        // 	A ? t.GetLibrary().HashData(c, e[0].data, !1) : null
+                        // )
                       })
                       .then(function (e) {
                         return (
@@ -24771,7 +25078,11 @@ function uint8ToBase64(uint8Array) {
                         );
                       })
                       .then(function (t) {
-                        ((e.m_signInfoTmpl = t),
+                        console.log("signsInfo", I);
+                        ((fileName = fileNameCreatorUtil(
+                          I.signsInfo[0].ownerInfo,
+                        )),
+                          ((e.m_signInfoTmpl = t),
                           e.SetSignFileResult(
                             I.filesData,
                             I.sign,
@@ -24784,7 +25095,7 @@ function uint8ToBase64(uint8Array) {
                           ),
                           e.ShowForm("#resultBlock", !0),
                           e.CloseDimmerView(),
-                          e.StopOperationConfirmation());
+                          e.StopOperationConfirmation()));
                       })
                       .catch(function (t) {
                         (e.CloseDimmerView(),
