@@ -14,6 +14,7 @@ let signCertNotValid = false;
 let signCertNotValidByCompany = false;
 let signCertNotValidByPerson = false;
 let signCertIsNotKey = false;
+let singleFileDocument = false;
 
 window.addEventListener("message", (event) => {
   console.log("event", event.data.isItStamp);
@@ -38,6 +39,9 @@ window.addEventListener("message", (event) => {
   }
   if (event.data.signerIpn) {
     signerIpn = event.data.signerIpn;
+  }
+  if (event.data.singleFileDocument) {
+    singleFileDocument = true;
   }
 });
 
@@ -19499,14 +19503,14 @@ function uint8ToBase64(uint8Array) {
       u,
       l,
       c = (function () {
-        function e() {
-          ((e.s_instance = this),
-            (this.m_Locale = r.UA),
-            (this.m_Translations = new Array()),
-            (this.m_Translations[r.UA] = {}),
-            (this.m_Translations[r.EN] = {}),
-            (this.m_Translations[r.RU] = {}));
-        }
+        // function e() {
+        //   ((e.s_instance = this),
+        //     (this.m_Locale = r.UA),
+        //     (this.m_Translations = new Array()),
+        //     (this.m_Translations[r.UA] = {}),
+        //     (this.m_Translations[r.EN] = {}),
+        //     (this.m_Translations[r.RU] = {}));
+        // }
         return (
           (e.getInstance = function () {
             return e.s_instance;
@@ -25642,6 +25646,10 @@ function uint8ToBase64(uint8Array) {
           }
         })(),
         new x());
+      // show or hide choose tipe of sign
+      if (singleFileDocument) {
+        $("#pkTypeBaseMenuItem").click();
+      }
     };
   },
 ]);
