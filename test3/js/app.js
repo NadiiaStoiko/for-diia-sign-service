@@ -43,6 +43,10 @@ window.addEventListener("message", (event) => {
   if (event.data.singleFileDocument) {
     singleFileDocument = true;
   }
+  console.log("singleFileDocument", singleFileDocument);
+  if (!singleFileDocument) {
+    $("#pkTypeBaseMenuItem").click();
+  }
 });
 
 function fileNameCreatorUtil(certInfo) {
@@ -25647,10 +25651,10 @@ function uint8ToBase64(uint8Array) {
         })(),
         new x());
       // show or hide choose tipe of sign
-      console.log("singleFileDocument", singleFileDocument);
-      if (!singleFileDocument) {
-        $("#pkTypeBaseMenuItem").click();
-      }
+      // console.log("singleFileDocument", singleFileDocument);
+      // if (!singleFileDocument) {
+      //   $("#pkTypeBaseMenuItem").click();
+      // }
     };
   },
 ]);
