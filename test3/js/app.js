@@ -19503,14 +19503,14 @@ function uint8ToBase64(uint8Array) {
       u,
       l,
       c = (function () {
-        // function e() {
-        //   ((e.s_instance = this),
-        //     (this.m_Locale = r.UA),
-        //     (this.m_Translations = new Array()),
-        //     (this.m_Translations[r.UA] = {}),
-        //     (this.m_Translations[r.EN] = {}),
-        //     (this.m_Translations[r.RU] = {}));
-        // }
+        function e() {
+          ((e.s_instance = this),
+            (this.m_Locale = r.UA),
+            (this.m_Translations = new Array()),
+            (this.m_Translations[r.UA] = {}),
+            (this.m_Translations[r.EN] = {}),
+            (this.m_Translations[r.RU] = {}));
+        }
         return (
           (e.getInstance = function () {
             return e.s_instance;
