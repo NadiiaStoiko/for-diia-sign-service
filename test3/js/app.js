@@ -25647,7 +25647,7 @@ function uint8ToBase64(uint8Array) {
         })(),
         new x());
       // show or hide choose tipe of sign
-      if (singleFileDocument) {
+      if (!singleFileDocument) {
         $("#pkTypeBaseMenuItem").click();
       }
     };
