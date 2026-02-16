@@ -33,7 +33,7 @@
                 <item visibility="pdf" title="Розмір файлу з підписом" id="signFileSize"></item>
                 <item visibility="pdf"></item>
                 <item visibility="pdf" i18n="true">Перевірені файли:</item>
-                <complexType id="dataFiles">
+                <!-- <complexType id="dataFiles">
                     <array>
                         <complexType id="dataFile">
                             <sequence>
@@ -42,12 +42,12 @@
                             </sequence>
                         </complexType>
                     </array>
-                </complexType>
-                <html visibility="html" id="saveSignFileButton"></html>
+                </complexType> -->
+                <!-- <html visibility="html" id="saveSignFileButton"></html>
                 <item visibility="html"></item>
                 <html visibility="html" id="saveDataFileButton"></html>
                 <item visibility="html"></item>
-                <html visibility="html" id="saveReportFileButton"></html>
+                <html visibility="html" id="saveReportFileButton"></html> -->
                 <!-- <item></item>
                 <item></item> -->
                 <complexType id="signInfo">
