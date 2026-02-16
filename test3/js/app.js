@@ -53,7 +53,8 @@ function fileNameCreatorUtil(certInfo) {
   const signerName = certInfo.subjCN;
   const signerSerialNumber = certInfo.subjDRFOCode;
   const companySerialNumber = certInfo.subjEDRPOUCode;
-  const isItSign = certInfo.subjOrg === "ФІЗИЧНА ОСОБА";
+  const isItSign =
+    certInfo.subjOrg === "ФІЗИЧНА ОСОБА" || certInfo.subjOrg === "";
   const nameToReturn = isItSign
     ? `${signerName}-${signerSerialNumber}`
     : `${signerName}-${companySerialNumber}`;
