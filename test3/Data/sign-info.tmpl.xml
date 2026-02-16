@@ -48,8 +48,8 @@
                 <html visibility="html" id="saveDataFileButton"></html>
                 <item visibility="html"></item>
                 <html visibility="html" id="saveReportFileButton"></html>
-                <item></item>
-                <item></item>
+                <!-- <item></item>
+                <item></item> -->
                 <complexType id="signInfo">
                     <sequence>
                         <item visibility="pdf" title="Результат перевірки підпису" id="signResult"></item>
