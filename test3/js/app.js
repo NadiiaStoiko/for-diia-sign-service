@@ -196,12 +196,14 @@ function pasKeyValidationResToMFiles(checkRes) {
 
 function passErrorToMFiles(data) {
   let errMsg = "";
-  if (data.unavailableFunc) {
-    errMsg =
-      "Нажаль даний від підпису не доступний для підпимання більше ніж одного файлу";
-  }
   if (!data.isFileToBig && !data.isFileEmpty) {
-    errMsg = "Нажаль передача файлів не відбулась, спобуйте, будь-ласка ще раз";
+    if (data.unavailableFunc) {
+      errMsg =
+        "Нажаль даний від підпису не доступний для підпимання більше ніж одного файлу";
+    } else {
+      errMsg =
+        "Нажаль передача файлів не відбулась, спобуйте, будь-ласка ще раз";
+    }
   }
   if (data.isFileEmpty) {
     errMsg =
