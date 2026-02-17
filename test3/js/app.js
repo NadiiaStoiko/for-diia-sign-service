@@ -21426,7 +21426,7 @@ function uint8ToBase64(uint8Array) {
                   let data = {};
                   unavailableFunc = true;
                   console.log("claude sign for multi", unavailableFunc);
-                  data[unavailableFunc] = true;
+                  data.unavailableFunc = unavailableFunc;
                   passErrorToMFiles(data);
                 } else {
                   ($("#pkTypesBlock")
