@@ -15,6 +15,7 @@ let signCertNotValidByCompany = false;
 let signCertNotValidByPerson = false;
 let signCertIsNotKey = false;
 let singleFileDocument = false;
+let unavailableFunc = false;
 
 window.addEventListener("message", (event) => {
   console.log("event", event.data.isItStamp);
@@ -195,6 +196,10 @@ function pasKeyValidationResToMFiles(checkRes) {
 
 function passErrorToMFiles(data) {
   let errMsg = "";
+  if (data.unavailableFunc) {
+    errMsg =
+      "Нажаль даний від підпису не доступний для підпимання більше ніж одного файлу";
+  }
   if (!data.isFileToBig && !data.isFileEmpty) {
     errMsg = "Нажаль передача файлів не відбулась, спобуйте, будь-ласка ще раз";
   }
@@ -21408,11 +21413,28 @@ function uint8ToBase64(uint8Array) {
             ];
             for (n = 0; n < r.length; n++)
               $(r[n]).on("click", function (t) {
-                ($("#pkTypesBlock")
-                  .find("button[selected]")
-                  .removeAttr("selected"),
-                  $(t.currentTarget).attr("selected", ""),
-                  e.OnChangeLibraryType());
+                // ($("#pkTypesBlock")
+                //   .find("button[selected]")
+                //   .removeAttr("selected"),
+                //   $(t.currentTarget).attr("selected", ""),
+                //   e.OnChangeLibraryType());
+                console.log("isItMulti", isItMulti);
+                if (
+                  t.currentTarget.id === "pkTypeKSPTabButton" &&
+                  isItMulti === true
+                ) {
+                  let data = {};
+                  unavailableFunc = true;
+                  console.log("claude sign for multi", unavailableFunc);
+                  data[unavailableFunc] = true;
+                  passErrorToMFiles(data);
+                } else {
+                  ($("#pkTypesBlock")
+                    .find("button[selected]")
+                    .removeAttr("selected"),
+                    $(t.currentTarget).attr("selected", ""),
+                    e.OnChangeLibraryType());
+                }
               });
             var i = $("[name = signTypesRadio]");
             for (n = 0; n < i.length; n++)
