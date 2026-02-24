@@ -70,7 +70,7 @@ function sendSignedDataToParent(signedDocData) {
   if (fileForSign.length === 1) {
     signedFilesArr.push({
       name: `${fileForSign[0].mfId}_${fileName}`,
-      signatureContent: signedDocData.stringBase64,
+      signatureContent: signedDocData.base64String,
       archiveName: signedDocData.archiveName,
       archiveFile: signedDocData.archiveFile,
     });
