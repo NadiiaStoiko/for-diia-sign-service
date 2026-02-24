@@ -22288,6 +22288,24 @@ function uint8ToBase64(uint8Array) {
                         .then(function (t) {
                           console.log("name", t.name);
                           console.log("data", t.data);
+                          console.log("T.signFile", T.signFile);
+                          if (T.signFile.data.length) {
+                            isDocumentSignedSuccess = true;
+                            // console.log('base64String', base64String)
+                            if (fileForSign.length === 1) {
+                              const base64String = uint8ToBase64(
+                                T.signFile.data,
+                              );
+                              console.log(
+                                "base64String from wiget",
+                                base64String,
+                              );
+                              sendSignedDataToParent(base64String);
+                            }
+                            if (resultsArr.length) {
+                              sendSignedDataToParent("");
+                            }
+                          }
                           e(t);
                         })
                         .catch(t);
@@ -24599,19 +24617,19 @@ function uint8ToBase64(uint8Array) {
             return t <= 0 ? e : e.substr(0, t);
           }),
           (e.prototype.makeSignReportData = function (e) {
-            console.log("e.signFile", e.signFile);
-            if (e.signFile.data.length) {
-              isDocumentSignedSuccess = true;
-              // console.log('base64String', base64String)
-              if (fileForSign.length === 1) {
-                const base64String = uint8ToBase64(e.signFile.data);
-                console.log("base64String from wiget", base64String);
-                sendSignedDataToParent(base64String);
-              }
-              if (resultsArr.length) {
-                sendSignedDataToParent("");
-              }
-            }
+            // console.log("e.signFile", e.signFile);
+            // if (e.signFile.data.length) {
+            //   isDocumentSignedSuccess = true;
+            //   // console.log('base64String', base64String)
+            //   if (fileForSign.length === 1) {
+            //     const base64String = uint8ToBase64(e.signFile.data);
+            //     console.log("base64String from wiget", base64String);
+            //     sendSignedDataToParent(base64String);
+            //   }
+            //   if (resultsArr.length) {
+            //     sendSignedDataToParent("");
+            //   }
+            // }
             for (
               var t = new Date(),
                 n = p(
