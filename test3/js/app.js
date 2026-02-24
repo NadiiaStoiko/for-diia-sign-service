@@ -22157,10 +22157,11 @@ function uint8ToBase64(uint8Array) {
                       return r.SaveFile(t, e.data);
                     })
                     .then(function () {
-                      var e = s.format(
-                        p('Файл {0} збережено до директорії "Завантаження"'),
-                        t,
-                      );
+                      // var e = s.format(
+                      //   p('Файл {0} збережено до директорії "Завантаження"'),
+                      //   t,
+                      // );
+                      var e = s.format(p(""), t);
                       r.SetStatus(e);
                     })
                     .catch(function (e) {
@@ -22923,7 +22924,8 @@ function uint8ToBase64(uint8Array) {
             var n = new Blob([t], {
               type: "application/octet-stream",
             });
-            saveAs(n, e);
+            // func for saving result of signing at download folder
+            // saveAs(n, e);
           }),
           (e.prototype.SetKSPs = function (e) {
             var t = $("#pkReadKSPSelect");
