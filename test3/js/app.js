@@ -22218,11 +22218,11 @@ function uint8ToBase64(uint8Array) {
                   });
                 };
               ($(_).append(v),
-                // $(c).append(
-                //   '<div id="saveAllButton" class="Block">\t\t\t\t<div class="DownloadIcon" style="float: left;"></div>\t\t\t\t<label class="i18n">' +
-                //     p("Завантажити все архівом") +
-                //     "</label>\t\t\t</div>",
-                // ),
+                $(c).append(
+                  '<div id="saveAllButton" style="color: white" class="Block">\t\t\t\t<div class="DownloadIcon" style="float: left;visibility: hidden"></div>\t\t\t\t<label class="i18n">' +
+                    p("Завантажити все архівом") +
+                    "</label>\t\t\t</div>",
+                ),
                 $(c).append(_));
               var O = {
                 title: p(o.BUTTON_THANKS),
@@ -22285,6 +22285,8 @@ function uint8ToBase64(uint8Array) {
                           return (n.push(e), l.makeZip(R.zipFileName, n));
                         })
                         .then(function (t) {
+                          console.log("name", t.name);
+                          console.log("data", t.data);
                           e(t);
                         })
                         .catch(t);
