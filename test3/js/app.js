@@ -63,13 +63,15 @@ function fileNameCreatorUtil(certInfo) {
   return nameToReturn;
 }
 
-function sendSignedDataToParent(stringBase64) {
+function sendSignedDataToParent(signedDocData) {
   console.log("fileForSign", fileForSign);
   let signedFilesArr = [];
   if (fileForSign.length === 1) {
     signedFilesArr.push({
       name: `${fileForSign[0].mfId}_${fileName}`,
-      content: stringBase64,
+      signatureContent: signedDocData.stringBase64,
+      archiveName: signedDocData.archiveName,
+      archiveFile: signedDocData.archiveFile,
     });
   } else {
     resultsArr.forEach((document) => {
@@ -22286,8 +22288,9 @@ function uint8ToBase64(uint8Array) {
                           return (n.push(e), l.makeZip(R.zipFileName, n));
                         })
                         .then(function (t) {
-                          console.log("name", t.name);
+                          const archiveName = t.name;
                           console.log("data", t.data);
+                          const archiveFile = uint8ToBase64(t.data);
                           console.log("T.signFile", T.signFile);
                           if (T.signFile.data.length) {
                             isDocumentSignedSuccess = true;
@@ -22296,11 +22299,18 @@ function uint8ToBase64(uint8Array) {
                               const base64String = uint8ToBase64(
                                 T.signFile.data,
                               );
+                              console.log("archiveName", archiveName);
+                              console.log("archiveFile", archiveFile);
                               console.log(
                                 "base64String from wiget",
                                 base64String,
                               );
-                              sendSignedDataToParent(base64String);
+                              const signedDocData = {
+                                base64String,
+                                archiveName,
+                                archiveFile,
+                              };
+                              sendSignedDataToParent(signedDocData);
                             }
                             if (resultsArr.length) {
                               sendSignedDataToParent("");
