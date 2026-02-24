@@ -64,6 +64,7 @@ function fileNameCreatorUtil(certInfo) {
 }
 
 function sendSignedDataToParent(signedDocData) {
+  console.log("signedDocData", signedDocData);
   console.log("fileForSign", fileForSign);
   let signedFilesArr = [];
   if (fileForSign.length === 1) {
