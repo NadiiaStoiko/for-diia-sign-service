@@ -22320,7 +22320,7 @@ function dateFormatter(dateString) {
                               ipn: signerInfo.subjDRFOCode,
                               pib: signerInfo.subjFullName,
                               sertOwner: signerInfo.issuerCN,
-                              sn: signerInfo.selial,
+                              sn: signerInfo.serial,
                               date: dateFormatter(signerInfo.timeInfo.value),
                             };
                           }
