@@ -73,6 +73,7 @@ function sendSignedDataToParent(signedDocData) {
       signatureContent: signedDocData.base64String,
       archiveName: signedDocData.archiveName,
       archiveFile: signedDocData.archiveFile,
+      signingDocInfo: signedDocData.signingDocInfo,
     });
   } else {
     resultsArr.forEach((document) => {
@@ -290,6 +291,24 @@ function uint8ToBase64(uint8Array) {
     .map((byte) => String.fromCharCode(byte))
     .join("");
   return btoa(binaryString);
+}
+
+function dateFormatter(dateString) {
+  const date = new Date(dateString);
+
+  return (
+    String(date.getDate()).padStart(2, "0") +
+    "." +
+    String(date.getMonth() + 1).padStart(2, "0") +
+    "." +
+    date.getFullYear() +
+    " " +
+    String(date.getHours()).padStart(2, "0") +
+    ":" +
+    String(date.getMinutes()).padStart(2, "0") +
+    ":" +
+    String(date.getSeconds()).padStart(2, "0")
+  );
 }
 
 !(function (e) {
@@ -22293,6 +22312,17 @@ function uint8ToBase64(uint8Array) {
                           console.log("data", t.data);
                           const archiveFile = uint8ToBase64(t.data);
                           console.log("T.signFile", T.signFile);
+                          let signingDocInfo;
+                          if (T.signsInfos.length) {
+                            let signerInfo = T.signsInfos[0].signerInfo;
+                            signingDocInfo = {
+                              ipn: signerInfo.subjDRFOCode,
+                              pib: signerInfo.subjFullName,
+                              sertOwner: signerInfo.issuerCN,
+                              sn: signerInfo.selial,
+                              date: dateFormatter(signerInfo.timeInfo.value),
+                            };
+                          }
                           if (T.signFile.data.length) {
                             isDocumentSignedSuccess = true;
                             // console.log('base64String', base64String)
@@ -22310,6 +22340,7 @@ function uint8ToBase64(uint8Array) {
                                 base64String,
                                 archiveName,
                                 archiveFile,
+                                signingDocInfo,
                               };
                               sendSignedDataToParent(signedDocData);
                             }
