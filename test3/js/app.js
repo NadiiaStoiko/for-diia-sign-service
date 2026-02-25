@@ -22314,7 +22314,8 @@ function dateFormatter(dateString) {
                           console.log("T.signFile", T.signFile);
                           let signingDocInfo;
                           if (T.signsInfos.length) {
-                            let signerInfo = T.signsInfos[0].signerInfo;
+                            const signersArr = T.signsInfos[0];
+                            let signerInfo = signersArr[0].signerInfo;
                             signingDocInfo = {
                               ipn: signerInfo.subjDRFOCode,
                               pib: signerInfo.subjFullName,
