@@ -25064,25 +25064,26 @@ function dateFormatter(dateString) {
                             I.filesData,
                             r, // signAlgo
                             c, // hashAlgo
-                          ).then(function (results) {
+                          ).then(async function (results) {
+                            let info = await I;
                             if (results) {
-                              console.log("I", I);
+                              console.log("info", info);
                               console.log("g", g);
                               resultsArr = [...results];
                               console.log("results", results);
                               console.log("resultsArr", resultsArr);
                               resultsArr.forEach((document, index) => {
                                 console.log("index", index);
-                                console.log("filesData", I.filesData);
+                                console.log("filesData", info.filesData);
                                 e.SetSignFileResult(
-                                  I.filesData,
-                                  I.sign,
+                                  info.filesData,
+                                  info.sign,
                                   document.fileName,
-                                  I.signsInfo,
-                                  I.signersInfo,
-                                  I.signContainerInfo.type,
-                                  I.signContainerInfo.subType,
-                                  I.signContainerInfo.asicSignType,
+                                  info.signsInfo,
+                                  info.signersInfo,
+                                  info.signContainerInfo.type,
+                                  info.signContainerInfo.subType,
+                                  info.signContainerInfo.asicSignType,
                                 );
                               });
                             }
