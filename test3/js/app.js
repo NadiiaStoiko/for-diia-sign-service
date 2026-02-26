@@ -25072,10 +25072,10 @@ function dateFormatter(dateString) {
                               console.log("results", results);
                               console.log("resultsArr", resultsArr);
                               resultsArr.forEach((document, index) => {
-                                let filesData = [...I.filesData[index]];
-                                console.log("filesData", filesData);
+                                console.log("index", index);
+                                console.log("filesData", I.filesData);
                                 e.SetSignFileResult(
-                                  filesData,
+                                  I.filesData,
                                   I.sign,
                                   document.fileName,
                                   I.signsInfo,
