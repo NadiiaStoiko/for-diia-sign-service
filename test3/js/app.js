@@ -25075,7 +25075,12 @@ function dateFormatter(dateString) {
                               resultsArr.forEach((document, index) => {
                                 console.log("index", index);
                                 console.log("filesData", info.filesData);
-                                console.log("fD", [...info.filesData[index]]);
+                                console.log(
+                                  "isArr",
+                                  Array.isArray(info.filesData),
+                                );
+                                console.log("filesData[1]", info.filesData[1]);
+                                console.log("fD", info.filesData[index]);
                                 e.SetSignFileResult(
                                   [...info.filesData[index]],
                                   info.sign,
