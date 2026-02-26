@@ -22200,6 +22200,7 @@ function dateFormatter(dateString) {
               }));
           }),
           (e.prototype.SetSignFileResult = function (e, t, n, r, i, s, a, u) {
+            console.log("SetSignFileResult work");
             var l = this,
               c = $("<div>"),
               _ = $('<div class="SignResult">'),
@@ -25075,14 +25076,12 @@ function dateFormatter(dateString) {
                               resultsArr.forEach((document, index) => {
                                 console.log("index", index);
                                 console.log("filesData", info.filesData);
-                                console.log(
-                                  "isArr",
-                                  Array.isArray(info.filesData),
-                                );
                                 console.log("filesData[1]", info.filesData[1]);
                                 console.log("fD", info.filesData[index]);
+                                let tempArr = [];
+                                tempArr.push(info.filesData[index]);
                                 e.SetSignFileResult(
-                                  [...info.filesData[index]],
+                                  tempArr,
                                   info.sign,
                                   document.fileName,
                                   info.signsInfo,
