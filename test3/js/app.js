@@ -19678,7 +19678,7 @@ function dateFormatter(dateString) {
               }
               return r;
             } catch (n) {
-              throw "No option: " + t + " in element " + e.nodeName;
+              throw "No option: " + t + " in element " + e?.nodeName;
             }
           }),
           (e.prototype.parseOptions = function (e) {
