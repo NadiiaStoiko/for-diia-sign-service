@@ -22308,45 +22308,50 @@ function dateFormatter(dateString) {
                           return (n.push(e), l.makeZip(R.zipFileName, n));
                         })
                         .then(function (t) {
-                          const archiveName = t.name;
-                          console.log("data", t.data);
-                          const archiveFile = uint8ToBase64(t.data);
-                          console.log("T.signFile", T.signFile);
-                          let signingDocInfo;
-                          if (T.signsInfos.length) {
-                            const signersArr = T.signsInfos[0];
-                            let signerInfo = signersArr[0].signerInfo;
-                            signingDocInfo = {
-                              ipn: signerInfo.subjDRFOCode,
-                              pib: signerInfo.subjFullName,
-                              sertOwner: signerInfo.issuerCN,
-                              sn: signerInfo.serial,
-                              date: dateFormatter(signerInfo.timeInfo.value),
-                            };
-                          }
-                          if (T.signFile.data.length) {
-                            isDocumentSignedSuccess = true;
-                            // console.log('base64String', base64String)
-                            if (fileForSign.length === 1) {
-                              const base64String = uint8ToBase64(
-                                T.signFile.data,
-                              );
-                              console.log("archiveName", archiveName);
-                              console.log("archiveFile", archiveFile);
-                              console.log(
-                                "base64String from wiget",
-                                base64String,
-                              );
-                              const signedDocData = {
-                                base64String,
-                                archiveName,
-                                archiveFile,
-                                signingDocInfo,
+                          if (resultsArr.length) {
+                            const archiveName = t.name;
+                            console.log("data", t.data);
+                            const archiveFile = uint8ToBase64(t.data);
+                            console.log("T.signFile", T.signFile);
+                            sendSignedDataToParent("");
+                          } else {
+                            const archiveName = t.name;
+                            console.log("data", t.data);
+                            const archiveFile = uint8ToBase64(t.data);
+                            console.log("T.signFile", T.signFile);
+                            let signingDocInfo;
+                            if (T.signsInfos.length) {
+                              const signersArr = T.signsInfos[0];
+                              let signerInfo = signersArr[0].signerInfo;
+                              signingDocInfo = {
+                                ipn: signerInfo.subjDRFOCode,
+                                pib: signerInfo.subjFullName,
+                                sertOwner: signerInfo.issuerCN,
+                                sn: signerInfo.serial,
+                                date: dateFormatter(signerInfo.timeInfo.value),
                               };
-                              sendSignedDataToParent(signedDocData);
                             }
-                            if (resultsArr.length) {
-                              sendSignedDataToParent("");
+                            if (T.signFile.data.length) {
+                              isDocumentSignedSuccess = true;
+                              // console.log('base64String', base64String)
+                              if (fileForSign.length === 1) {
+                                const base64String = uint8ToBase64(
+                                  T.signFile.data,
+                                );
+                                console.log("archiveName", archiveName);
+                                console.log("archiveFile", archiveFile);
+                                console.log(
+                                  "base64String from wiget",
+                                  base64String,
+                                );
+                                const signedDocData = {
+                                  base64String,
+                                  archiveName,
+                                  archiveFile,
+                                  signingDocInfo,
+                                };
+                                sendSignedDataToParent(signedDocData);
+                              }
                             }
                           }
                           e(t);
@@ -24936,7 +24941,7 @@ function dateFormatter(dateString) {
 
                   results.push({
                     mfId: fileForSign[currInd].mfId,
-                    fileName: fd.name + ".p7",
+                    fileName: fd.name + ".p7s",
                     signBytes: signBytes,
                     signBase64: signBase64,
                     size: signBytes.length,
@@ -25066,6 +25071,20 @@ function dateFormatter(dateString) {
                               resultsArr = [...results];
                               console.log("results", results);
                               console.log("resultsArr", resultsArr);
+                              resultsArr.forEach((document, index) => {
+                                let filesData = [...I.filesData[index]];
+                                console.log("filesData", filesData);
+                                e.SetSignFileResult(
+                                  filesData,
+                                  I.sign,
+                                  document.fileName,
+                                  I.signsInfo,
+                                  I.signersInfo,
+                                  I.signContainerInfo.type,
+                                  I.signContainerInfo.subType,
+                                  I.signContainerInfo.asicSignType,
+                                );
+                              });
                             }
                             // e.CloseDimmerView()
                             // e.StopOperationConfirmation()
