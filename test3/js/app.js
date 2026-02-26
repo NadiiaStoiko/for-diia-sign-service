@@ -25061,6 +25061,8 @@ function dateFormatter(dateString) {
                             c, // hashAlgo
                           ).then(function (results) {
                             if (results) {
+                              console.log("I", I);
+                              console.log("g", g);
                               resultsArr = [...results];
                               console.log("results", results);
                               console.log("resultsArr", resultsArr);
