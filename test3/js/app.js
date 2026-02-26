@@ -25069,7 +25069,6 @@ function dateFormatter(dateString) {
                             let info = await I;
                             if (results) {
                               console.log("info", info);
-                              console.log("g", g);
                               resultsArr = [...results];
                               console.log("results", results);
                               console.log("resultsArr", resultsArr);
@@ -25086,9 +25085,9 @@ function dateFormatter(dateString) {
                                   document.fileName,
                                   info.signsInfo,
                                   info.signersInfo,
-                                  info.signContainerInfo.type,
-                                  info.signContainerInfo.subType,
-                                  info.signContainerInfo.asicSignType,
+                                  1,
+                                  1,
+                                  0,
                                 );
                               });
                             }
