@@ -235,6 +235,7 @@ function filesArrCreator() {
     fileForSign.forEach((fileInfo) => {
       var ext = getMimeType(fileInfo?.extension);
       var base64Data = fileInfo.file;
+      console.log("base64Data", base64Data);
       const byteCharacters = atob(base64Data);
       const byteNumbers = new Array(byteCharacters.length);
       for (let i = 0; i < byteCharacters.length; i++) {
