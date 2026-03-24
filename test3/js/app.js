@@ -22202,7 +22202,16 @@ function dateFormatter(dateString) {
                 );
               }));
           }),
-          (e.prototype.SetSignFileResult = function (e, t, n, r, i, s, a, u) {
+          (e.prototype.SetSignFileResult = async function (
+            e,
+            t,
+            n,
+            r,
+            i,
+            s,
+            a,
+            u,
+          ) {
             console.log("SetSignFileResult work");
             var l = this,
               c = $("<div>"),
@@ -24984,7 +24993,7 @@ function dateFormatter(dateString) {
               return results;
             });
           }),
-          (e.prototype.OnSignFile = async function () {
+          (e.prototype.OnSignFile = function () {
             var e = this,
               t = e.GetCurrentLibrary();
             e.SetError("");
@@ -25130,7 +25139,7 @@ function dateFormatter(dateString) {
                             // e.StopOperationConfirmation()
 
                             // Обірвати стандартний ланцюжок .then(), щоб не йти в SetSignFileResult
-                            // throw "__MULTI_CADES_DONE__";
+                            throw "__MULTI_CADES_DONE__";
                           });
                         }
                         return A
