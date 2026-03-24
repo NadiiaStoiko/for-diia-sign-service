@@ -16,6 +16,7 @@ let signCertNotValidByPerson = false;
 let signCertIsNotKey = false;
 let singleFileDocument = false;
 let unavailableFunc = false;
+let arrForGroupedSignedDocs = [];
 
 window.addEventListener("message", (event) => {
   console.log("event", event.data.isItStamp);
@@ -77,6 +78,7 @@ function sendSignedDataToParent(signedDocData) {
     });
   } else {
     resultsArr.forEach((document) => {
+      console.log("signedFilesArr mult", signedFilesArr);
       signedFilesArr.push({
         name: `${document.mfId}_${fileName}`,
         content: document.signBase64,
@@ -22310,48 +22312,75 @@ function dateFormatter(dateString) {
                           return (n.push(e), l.makeZip(R.zipFileName, n));
                         })
                         .then(function (t) {
+                          const archiveName = t.name;
+                          console.log("data", t.data);
+                          const archiveFile = uint8ToBase64(t.data);
+                          console.log("T.signFile", T.signFile);
+                          let signingDocInfo;
+                          if (T.signsInfos.length) {
+                            const signersArr = T.signsInfos[0];
+                            let signerInfo = signersArr[0].signerInfo;
+                            signingDocInfo = {
+                              ipn: signerInfo.subjDRFOCode,
+                              pib: signerInfo.subjFullName,
+                              sertOwner: signerInfo.issuerCN,
+                              sn: signerInfo.serial,
+                              date: dateFormatter(signerInfo.timeInfo.value),
+                            };
+                          }
+                          const base64String = uint8ToBase64(T.signFile.data);
+                          console.log("archiveName", archiveName);
+                          console.log("archiveFile", archiveFile);
+                          console.log("base64String from wiget", base64String);
+                          const signedDocData = {
+                            base64String,
+                            archiveName,
+                            archiveFile,
+                            signingDocInfo,
+                          };
                           if (resultsArr.length) {
-                            const archiveName = t.name;
-                            console.log("data", t.data);
-                            const archiveFile = uint8ToBase64(t.data);
-                            console.log("T.signFile", T.signFile);
-                            sendSignedDataToParent("");
+                            // const archiveName = t.name;
+                            // console.log("data", t.data);
+                            // const archiveFile = uint8ToBase64(t.data);
+                            // console.log("T.signFile", T.signFile);
+                            // sendSignedDataToParent("");
+                            arrForGroupedSignedDocs.push(signedDocData);
                           } else {
-                            const archiveName = t.name;
-                            console.log("data", t.data);
-                            const archiveFile = uint8ToBase64(t.data);
-                            console.log("T.signFile", T.signFile);
-                            let signingDocInfo;
-                            if (T.signsInfos.length) {
-                              const signersArr = T.signsInfos[0];
-                              let signerInfo = signersArr[0].signerInfo;
-                              signingDocInfo = {
-                                ipn: signerInfo.subjDRFOCode,
-                                pib: signerInfo.subjFullName,
-                                sertOwner: signerInfo.issuerCN,
-                                sn: signerInfo.serial,
-                                date: dateFormatter(signerInfo.timeInfo.value),
-                              };
-                            }
+                            // const archiveName = t.name;
+                            // console.log("data", t.data);
+                            // const archiveFile = uint8ToBase64(t.data);
+                            // console.log("T.signFile", T.signFile);
+                            // let signingDocInfo;
+                            // if (T.signsInfos.length) {
+                            //   const signersArr = T.signsInfos[0];
+                            //   let signerInfo = signersArr[0].signerInfo;
+                            //   signingDocInfo = {
+                            //     ipn: signerInfo.subjDRFOCode,
+                            //     pib: signerInfo.subjFullName,
+                            //     sertOwner: signerInfo.issuerCN,
+                            //     sn: signerInfo.serial,
+                            //     date: dateFormatter(signerInfo.timeInfo.value),
+                            //   };
+                            // }
                             if (T.signFile.data.length) {
                               isDocumentSignedSuccess = true;
                               // console.log('base64String', base64String)
                               if (fileForSign.length === 1) {
-                                const base64String = uint8ToBase64(
-                                  T.signFile.data,
-                                );
-                                console.log("archiveName", archiveName);
-                                console.log("archiveFile", archiveFile);
-                                console.log(
-                                  "base64String from wiget",
-                                  base64String,
-                                );
-                                const signedDocData = {
-                                  base64String,
-                                  archiveName,
-                                  archiveFile,
-                                  signingDocInfo,
-                                };
+                                // const base64String = uint8ToBase64(
+                                //   T.signFile.data,
+                                // );
+                                // console.log("archiveName", archiveName);
+                                // console.log("archiveFile", archiveFile);
+                                // console.log(
+                                //   "base64String from wiget",
+                                //   base64String,
+                                // );
+                                // const signedDocData = {
+                                //   base64String,
+                                //   archiveName,
+                                //   archiveFile,
+                                //   signingDocInfo,
+                                // };
                                 sendSignedDataToParent(signedDocData);
                               }
                             }
@@ -25069,6 +25098,7 @@ function dateFormatter(dateString) {
                           ).then(async function (results) {
                             let info = await I;
                             if (results) {
+                              arrForGroupedSignedDocs = [];
                               console.log("info", info);
                               resultsArr = [...results];
                               console.log("results", results);
@@ -25091,6 +25121,10 @@ function dateFormatter(dateString) {
                                   0,
                                 );
                               });
+                              console.log(
+                                "arrForGroupedSignedDocs",
+                                arrForGroupedSignedDocs,
+                              );
                             }
                             // e.CloseDimmerView()
                             // e.StopOperationConfirmation()
