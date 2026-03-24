@@ -22202,16 +22202,7 @@ function dateFormatter(dateString) {
                 );
               }));
           }),
-          (e.prototype.SetSignFileResult = async function (
-            e,
-            t,
-            n,
-            r,
-            i,
-            s,
-            a,
-            u,
-          ) {
+          (e.prototype.SetSignFileResult = function (e, t, n, r, i, s, a, u) {
             console.log("SetSignFileResult work");
             var l = this,
               c = $("<div>"),
@@ -22338,9 +22329,9 @@ function dateFormatter(dateString) {
                             };
                           }
                           const base64String = uint8ToBase64(T.signFile.data);
-                          console.log("archiveName", archiveName);
-                          console.log("archiveFile", archiveFile);
-                          console.log("base64String from wiget", base64String);
+                          // console.log("archiveName", archiveName);
+                          // console.log("archiveFile", archiveFile);
+                          // console.log("base64String from wiget", base64String);
                           const signedDocData = {
                             base64String,
                             archiveName,
@@ -22353,7 +22344,12 @@ function dateFormatter(dateString) {
                             // const archiveFile = uint8ToBase64(t.data);
                             // console.log("T.signFile", T.signFile);
                             // sendSignedDataToParent("");
+                            console.log("signedDocData", signedDocData);
                             arrForGroupedSignedDocs.push(signedDocData);
+                            console.log(
+                              "arrForGroupedSignedDocs",
+                              arrForGroupedSignedDocs,
+                            );
                           } else {
                             // const archiveName = t.name;
                             // console.log("data", t.data);
@@ -25119,7 +25115,7 @@ function dateFormatter(dateString) {
                                 console.log("fD", info.filesData[index]);
                                 let tempArr = [];
                                 tempArr.push(info.filesData[index]);
-                                await e.SetSignFileResult(
+                                e.SetSignFileResult(
                                   tempArr,
                                   info.sign,
                                   document.fileName,
@@ -25130,10 +25126,6 @@ function dateFormatter(dateString) {
                                   0,
                                 );
                               });
-                              console.log(
-                                "arrForGroupedSignedDocs",
-                                arrForGroupedSignedDocs,
-                              );
                             }
                             // e.CloseDimmerView()
                             // e.StopOperationConfirmation()
