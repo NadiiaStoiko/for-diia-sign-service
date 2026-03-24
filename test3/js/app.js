@@ -19783,14 +19783,14 @@ function dateFormatter(dateString) {
             console.log("Send statistics error - " + e);
           },
           p = new XMLHttpRequest();
-        ((p.onload = function () {
-          4 == p.readyState &&
-            (204 == p.status || c(p.statusText + "(" + p.status + ")"));
-        }),
-          (p.onerror = c),
-          p.open("POST", e),
-          p.setRequestHeader("Content-Type", "application/json"),
-          p.send(JSON.stringify(l)));
+        // ((p.onload = function () {
+        //   4 == p.readyState &&
+        //     (204 == p.status || c(p.statusText + "(" + p.status + ")"));
+        // }),
+        //   (p.onerror = c),
+        //   p.open("POST", e),
+        //   p.setRequestHeader("Content-Type", "application/json"),
+        //   p.send(JSON.stringify(l)));
       } catch (e) {
         c(e);
       }
