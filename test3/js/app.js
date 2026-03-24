@@ -24984,7 +24984,7 @@ function dateFormatter(dateString) {
               return results;
             });
           }),
-          (e.prototype.OnSignFile = function () {
+          (e.prototype.OnSignFile = async function () {
             var e = this,
               t = e.GetCurrentLibrary();
             e.SetError("");
@@ -25103,14 +25103,14 @@ function dateFormatter(dateString) {
                               resultsArr = [...results];
                               console.log("results", results);
                               console.log("resultsArr", resultsArr);
-                              resultsArr.forEach((document, index) => {
+                              resultsArr.forEach(async (document, index) => {
                                 console.log("index", index);
                                 console.log("filesData", info.filesData);
                                 console.log("filesData[1]", info.filesData[1]);
                                 console.log("fD", info.filesData[index]);
                                 let tempArr = [];
                                 tempArr.push(info.filesData[index]);
-                                e.SetSignFileResult(
+                                await e.SetSignFileResult(
                                   tempArr,
                                   info.sign,
                                   document.fileName,
