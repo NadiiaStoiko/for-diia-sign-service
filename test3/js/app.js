@@ -22203,13 +22203,6 @@ function dateFormatter(dateString) {
               }));
           }),
           (e.prototype.SetSignFileResult = function (e, t, n, r, i, s, a, u) {
-            console.log("=== SetSignFileResult START ===");
-            console.log("files (e):", e);
-            console.log("signBytes (t):", t);
-            console.log("fileName (n):", n);
-            console.log("signsInfo (r):", r);
-            console.log("signersInfo (i):", i);
-            console.log("================================");
             console.log("SetSignFileResult work");
             var l = this,
               c = $("<div>"),
@@ -22301,7 +22294,6 @@ function dateFormatter(dateString) {
                         .then(function (e) {
                           return (
                             e.forEach(function (e) {
-                              console.log("FILES FOR ZIP (e):", e);
                               for (var t = 0; t < n.length; t++)
                                 if (e.name == n[t].name) {
                                   var r =
@@ -25194,40 +25186,8 @@ function dateFormatter(dateString) {
                                 arrForGroupedSignedDocs = [];
                                 resultsArr = [...results];
 
-                                // resultsArr.forEach(function (document, index) {
-                                //   let tempArr = [document.originalFile];
-
-                                //   e.SetSignFileResult(
-                                //     tempArr,
-                                //     document.signBytes,
-                                //     document.fileName,
-                                //     document.signsInfo,
-                                //     document.signersInfo,
-                                //     1,
-                                //     1,
-                                //     0,
-                                //   );
-                                // });
                                 resultsArr.forEach(function (document, index) {
-                                  console.log("---- DOCUMENT START ----");
-                                  console.log("index:", index);
-                                  console.log("document:", document);
-                                  console.log(
-                                    "document.originalFile:",
-                                    document.originalFile,
-                                  );
-                                  console.log(
-                                    "document.signsInfo:",
-                                    document.signsInfo,
-                                  );
-                                  console.log(
-                                    "document.signersInfo:",
-                                    document.signersInfo,
-                                  );
-
                                   let tempArr = [document.originalFile];
-
-                                  console.log("tempArr:", tempArr);
 
                                   e.SetSignFileResult(
                                     tempArr,
@@ -25239,8 +25199,6 @@ function dateFormatter(dateString) {
                                     1,
                                     0,
                                   );
-
-                                  console.log("---- DOCUMENT END ----");
                                 });
                               }
                               return;
