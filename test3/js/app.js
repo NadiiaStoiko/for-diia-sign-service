@@ -25132,6 +25132,7 @@ function dateFormatter(dateString) {
 
                             // Обірвати стандартний ланцюжок .then(), щоб не йти в SetSignFileResult
                             // throw "__MULTI_CADES_DONE__";
+                            return;
                           });
                         }
                         return A
