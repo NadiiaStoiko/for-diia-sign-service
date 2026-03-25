@@ -24954,9 +24954,9 @@ function dateFormatter(dateString) {
             });
           }),
           (e.prototype.OnSignFile = function () {
+            let remainingFilesForSilentSign;
             var e = this,
               t = e.GetCurrentLibrary();
-            remainingFilesForSilentSign = null;
             e.SetError("");
             var n = parseInt(
                 $("input[type='radio'][name=signTypesRadio]:checked").val(),
