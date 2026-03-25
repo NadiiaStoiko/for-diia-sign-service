@@ -24911,12 +24911,10 @@ function dateFormatter(dateString) {
             filesData,
             signAlgo,
             hashAlgo,
-            startIndex,
           ) {
             var chain = Promise.resolve();
             var results = [];
             filesData.forEach(function (fd, currInd) {
-              var originalIndex = startIndex + currInd;
               chain = chain
                 .then(function () {
                   // 1) Хешуємо конкретний файл
@@ -24939,7 +24937,6 @@ function dateFormatter(dateString) {
                   let signBase64 = uint8ToBase64(signBytes);
 
                   results.push({
-                    // mfId: fileForSign[currInd].mfId,
                     mfId: fileForSign[currInd].mfId,
                     fileName: fd.name + ".p7s",
                     signBytes: signBytes,
@@ -25045,84 +25042,69 @@ function dateFormatter(dateString) {
                         i.EndUserConstants.EU_SIGN_TYPE_PARAMETER,
                         a,
                       )
-                      // .then(function () {
-                      //   return e.ReadFiles(R);
-                      // })
-                      // .then(function (e) {
-                      //   return (
-                      //     (I.filesData = e),
-                      //     A ? t.GetLibrary().HashData(c, e[0].data, !1) : null
-                      //   );
-                      // })
-                      // .then(async function () {
-                      //   // return e.ReadFiles(R)
-                      //   const filesArr = await e.ReadFiles(R);
-                      //   console.log("filesArr", filesArr);
-                      //   I.filesData = filesArr;
-                      //   if (A && I.filesData.length > 1) {
-                      //     e.SignAllFilesCAdESDetached(
-                      //       t.GetLibrary(),
-                      //       I.filesData,
-                      //       r, // signAlgo
-                      //       c, // hashAlgo
-                      //     ).then(async function (results) {
-                      //       let info = await I;
-                      //       if (results) {
-                      //         arrForGroupedSignedDocs = [];
-                      //         console.log("info", info);
-                      //         resultsArr = [...results];
-                      //         console.log("results", results);
-                      //         console.log("resultsArr", resultsArr);
-                      //         resultsArr.forEach(async (document, index) => {
-                      //           console.log("index", index);
-                      //           console.log("filesData", info.filesData);
-                      //           console.log("filesData[1]", info.filesData[1]);
-                      //           console.log("fD", info.filesData[index]);
-                      //           let tempArr = [];
-                      //           tempArr.push(info.filesData[index]);
-                      //           e.SetSignFileResult(
-                      //             tempArr,
-                      //             info.sign,
-                      //             document.fileName,
-                      //             info.signsInfo,
-                      //             info.signersInfo,
-                      //             1,
-                      //             1,
-                      //             0,
-                      //           );
-                      //         });
-                      //       }
-                      //       // e.CloseDimmerView()
-                      //       // e.StopOperationConfirmation()
-
-                      //       // Обірвати стандартний ланцюжок .then(), щоб не йти в SetSignFileResult
-                      //       // throw "__MULTI_CADES_DONE__";
-                      //       return;
-                      //     });
-                      //   }
-                      //   return A
-                      //     ? t.GetLibrary().HashData(c, filesArr[0].data, !1)
-                      //     : null;
-
-                      //   // return (
-                      //   // 	(I.filesData = e),
-                      //   // 	A ? t.GetLibrary().HashData(c, e[0].data, !1) : null
-                      //   // )
-                      // })
+                      .then(function () {
+                        return e.ReadFiles(R);
+                      })
+                      .then(function (e) {
+                        return (
+                          (I.filesData = e),
+                          A ? t.GetLibrary().HashData(c, e[0].data, !1) : null
+                        );
+                      })
                       .then(async function () {
+                        // return e.ReadFiles(R)
                         const filesArr = await e.ReadFiles(R);
                         console.log("filesArr", filesArr);
                         I.filesData = filesArr;
-                        arrForGroupedSignedDocs = [];
-
                         if (A && I.filesData.length > 1) {
-                          remainingFilesForSilentSign = I.filesData.slice(1);
-                          I.filesData = [I.filesData[0]];
-                        }
+                          e.SignAllFilesCAdESDetached(
+                            t.GetLibrary(),
+                            I.filesData,
+                            r, // signAlgo
+                            c, // hashAlgo
+                          ).then(async function (results) {
+                            let info = await I;
+                            if (results) {
+                              arrForGroupedSignedDocs = [];
+                              console.log("info", info);
+                              resultsArr = [...results];
+                              console.log("results", results);
+                              console.log("resultsArr", resultsArr);
+                              resultsArr.forEach(async (document, index) => {
+                                console.log("index", index);
+                                console.log("filesData", info.filesData);
+                                console.log("filesData[1]", info.filesData[1]);
+                                console.log("fD", info.filesData[index]);
+                                let tempArr = [];
+                                tempArr.push(info.filesData[index]);
+                                e.SetSignFileResult(
+                                  tempArr,
+                                  info.sign,
+                                  document.fileName,
+                                  info.signsInfo,
+                                  info.signersInfo,
+                                  1,
+                                  1,
+                                  0,
+                                );
+                              });
+                            }
+                            // e.CloseDimmerView()
+                            // e.StopOperationConfirmation()
 
+                            // Обірвати стандартний ланцюжок .then(), щоб не йти в SetSignFileResult
+                            // throw "__MULTI_CADES_DONE__";
+                            return;
+                          });
+                        }
                         return A
-                          ? t.GetLibrary().HashData(c, I.filesData[0].data, !1)
+                          ? t.GetLibrary().HashData(c, filesArr[0].data, !1)
                           : null;
+
+                        // return (
+                        // 	(I.filesData = e),
+                        // 	A ? t.GetLibrary().HashData(c, e[0].data, !1) : null
+                        // )
                       })
                       .then(function (e) {
                         return (
@@ -25246,97 +25228,25 @@ function dateFormatter(dateString) {
                             : e.DownloadData(LIBRARY_SETTINGS.signInfoTmpl, "")
                         );
                       })
-                      // .then(function (t) {
-                      //   console.log("signsInfo", I);
-                      //   ((fileName = fileNameCreatorUtil(
-                      //     I.signsInfo[0].ownerInfo,
-                      //   )),
-                      //     ((e.m_signInfoTmpl = t),
-                      //     e.SetSignFileResult(
-                      //       I.filesData,
-                      //       I.sign,
-                      //       g,
-                      //       I.signsInfo,
-                      //       I.signersInfo,
-                      //       I.signContainerInfo.type,
-                      //       I.signContainerInfo.subType,
-                      //       I.signContainerInfo.asicSignType,
-                      //     ),
-                      //     e.ShowForm("#resultBlock", !0),
-                      //     e.CloseDimmerView(),
-                      //     e.StopOperationConfirmation()));
-                      // })
-                      .then(async function (tmpl) {
+                      .then(function (t) {
                         console.log("signsInfo", I);
-
-                        fileName = fileNameCreatorUtil(
+                        ((fileName = fileNameCreatorUtil(
                           I.signsInfo[0].ownerInfo,
-                        );
-                        e.m_signInfoTmpl = tmpl;
-
-                        e.SetSignFileResult(
-                          I.filesData,
-                          I.sign,
-                          g,
-                          I.signsInfo,
-                          I.signersInfo,
-                          I.signContainerInfo.type,
-                          I.signContainerInfo.subType,
-                          I.signContainerInfo.asicSignType,
-                        );
-
-                        let firstSigningDocInfo = null;
-                        if (I.signersInfo && I.signersInfo.length) {
-                          const signerInfo = I.signersInfo[0].infoEx;
-                          firstSigningDocInfo = {
-                            ipn: signerInfo.subjDRFOCode,
-                            pib: signerInfo.subjFullName,
-                            sertOwner: signerInfo.issuerCN,
-                            sn: signerInfo.serial,
-                            date: dateFormatter(I.signsInfo[0].timeInfo.value),
-                          };
-                        }
-
-                        arrForGroupedSignedDocs.push({
-                          mfId: fileForSign[0].mfId,
-                          base64String: uint8ToBase64(I.sign),
-                          archiveName: g,
-                          archiveFile: null,
-                          signingDocInfo: firstSigningDocInfo,
-                        });
-
-                        if (
-                          A &&
-                          remainingFilesForSilentSign &&
-                          remainingFilesForSilentSign.length
-                        ) {
-                          const restResults = await e.SignAllFilesCAdESDetached(
-                            t.GetLibrary(),
-                            remainingFilesForSilentSign,
-                            r,
-                            c,
-                            1,
-                          );
-
-                          restResults.forEach(function (doc) {
-                            arrForGroupedSignedDocs.push({
-                              mfId: doc.mfId,
-                              base64String: doc.signBase64,
-                              archiveName: doc.fileName,
-                              archiveFile: null,
-                              signingDocInfo: doc.signingDocInfo,
-                            });
-                          });
-                        }
-
-                        console.log(
-                          "arrForGroupedSignedDocs",
-                          arrForGroupedSignedDocs,
-                        );
-
-                        e.ShowForm("#resultBlock", !0);
-                        e.CloseDimmerView();
-                        e.StopOperationConfirmation();
+                        )),
+                          ((e.m_signInfoTmpl = t),
+                          e.SetSignFileResult(
+                            I.filesData,
+                            I.sign,
+                            g,
+                            I.signsInfo,
+                            I.signersInfo,
+                            I.signContainerInfo.type,
+                            I.signContainerInfo.subType,
+                            I.signContainerInfo.asicSignType,
+                          ),
+                          e.ShowForm("#resultBlock", !0),
+                          e.CloseDimmerView(),
+                          e.StopOperationConfirmation()));
                       })
                       .catch(function (t) {
                         (e.CloseDimmerView(),
