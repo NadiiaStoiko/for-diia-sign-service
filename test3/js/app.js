@@ -22357,8 +22357,7 @@ function dateFormatter(dateString) {
                     });
                   },
                 ));
-              // $("#saveAllButton").click();
-              $(c).find("#saveAllButton").click();
+              $("#saveAllButton").click();
             } else
               l.SetStatus(
                 p(
@@ -24915,66 +24914,34 @@ function dateFormatter(dateString) {
           ) {
             var chain = Promise.resolve();
             var results = [];
-
             filesData.forEach(function (fd, currInd) {
               chain = chain
                 .then(function () {
+                  // 1) Хешуємо конкретний файл
                   return lib.HashData(hashAlgo, fd.data, !1);
                 })
                 .then(function (hash) {
-                  return lib
-                    .SignHash(
-                      signAlgo,
-                      {
-                        name: fd.name,
-                        val: hash,
-                      },
-                      !0,
-                      !1,
-                    )
-                    .then(function (sign) {
-                      return {
-                        hash: hash,
-                        sign: sign,
-                      };
-                    });
+                  // 2) Підписуємо хеш (CAdES Detached)
+                  return lib.SignHash(
+                    signAlgo,
+                    {
+                      name: fd.name,
+                      val: hash,
+                    },
+                    !0,
+                    !1,
+                  );
                 })
-                .then(function (data) {
-                  let signBytes = data.sign.val || data.sign;
-
-                  return lib
-                    .VerifyHash(data.hash, signBytes, -1)
-                    .then(function (signsInfo) {
-                      return {
-                        hash: data.hash,
-                        signBytes: signBytes,
-                        signsInfo: signsInfo,
-                      };
-                    });
-                })
-                .then(function (data) {
-                  return lib
-                    .GetSigner(data.signBytes, -1, !0)
-                    .then(function (signersInfo) {
-                      return {
-                        signBytes: data.signBytes,
-                        signsInfo: data.signsInfo,
-                        signersInfo: signersInfo,
-                      };
-                    });
-                })
-                .then(function (data) {
-                  let signBase64 = uint8ToBase64(data.signBytes);
+                .then(function (sign) {
+                  let signBytes = sign.val || sign;
+                  let signBase64 = uint8ToBase64(signBytes);
 
                   results.push({
                     mfId: fileForSign[currInd].mfId,
                     fileName: fd.name + ".p7s",
-                    originalFile: fd,
-                    signBytes: data.signBytes,
+                    signBytes: signBytes,
                     signBase64: signBase64,
-                    signsInfo: data.signsInfo,
-                    signersInfo: data.signersInfo,
-                    size: data.signBytes.length,
+                    size: signBytes.length,
                   });
                 });
             });
@@ -24982,407 +24949,314 @@ function dateFormatter(dateString) {
             return chain.then(function () {
               return results;
             });
-          })(
-            // (e.prototype.SignAllFilesCAdESDetached = function (
-            //   lib,
-            //   filesData,
-            //   signAlgo,
-            //   hashAlgo,
-            // ) {
-            //   var chain = Promise.resolve();
-            //   var results = [];
-            //   filesData.forEach(function (fd, currInd) {
-            //     chain = chain
-            //       .then(function () {
-            //         // 1) Хешуємо конкретний файл
-            //         return lib.HashData(hashAlgo, fd.data, !1);
-            //       })
-            //       .then(function (hash) {
-            //         // 2) Підписуємо хеш (CAdES Detached)
-            //         return lib.SignHash(
-            //           signAlgo,
-            //           {
-            //             name: fd.name,
-            //             val: hash,
-            //           },
-            //           !0,
-            //           !1,
-            //         );
-            //       })
-            //       .then(function (sign) {
-            //         let signBytes = sign.val || sign;
-            //         let signBase64 = uint8ToBase64(signBytes);
-            //         results.push({
-            //           mfId: fileForSign[currInd].mfId,
-            //           fileName: fd.name + ".p7s",
-            //           signBytes: signBytes,
-            //           signBase64: signBase64,
-            //           size: signBytes.length,
-            //         });
-            //       });
-            //   });
-            //   return chain.then(function () {
-            //     return results;
-            //   });
-            // }),
-            (e.prototype.OnSignFile = function () {
-              let remainingFilesForSilentSign;
-              var e = this,
-                t = e.GetCurrentLibrary();
-              e.SetError("");
-              var n = parseInt(
-                  $("input[type='radio'][name=signTypesRadio]:checked").val(),
-                ),
-                r = parseInt($("#signAlgoSelect").val()),
-                s = parseInt($("#signTypeCAdESSelect").val()),
-                a = parseInt($("#signFormatCAdESSelect").val()),
-                u = parseInt($("#signFormatXAdESSelect").val()),
-                l = parseInt($("#signFormatPAdESSelect").val()),
-                c = e.SignAlgoToHashAlgo(r),
-                f = n == N.ASiCS || n == N.ASiCE,
-                E = n == N.PAdES,
-                h = n == N.XAdES,
-                S = parseInt($("#signTypeXAdESSelect").val()),
-                d = f
-                  ? n == N.ASiCS
-                    ? i.EndUserConstants.EndUserASiCType.S
-                    : i.EndUserConstants.EndUserASiCType.E
-                  : i.EndUserConstants.EndUserASiCType.Unknown,
-                y = parseInt($("#signTypeASiCSelect").val()),
-                C = y == i.EndUserConstants.EndUserASiCSignType.CAdES ? a : u,
-                A =
-                  n == N.CAdES &&
-                  s == i.EndUserConstants.EndUserCAdESType.Detached,
-                R = $("#signFilesInput").prop("files"),
-                m = R.length >= 1 ? R[0].name : "",
-                g = m + e.GetSignFileExt(m, n),
-                P = e.GetFilesSize(R),
-                v = e.GetFileExtension(m).toLowerCase(),
-                I =
-                  (new JSZip(),
-                  {
-                    filesData: null,
-                    namedData: null,
-                    hash: null,
-                    sign: null,
-                    signsInfo: null,
-                    signersInfo: null,
-                    signContainerInfo: null,
-                  });
-              console.log("n", n);
-              console.log("s", s);
-              console.log("R", R);
-              if ("" != m)
-                if ("" != g)
-                  if (
-                    // R.length > 1 &&
-                    // n != N.ASiCE &&
-                    // (n != N.XAdES ||
-                    //   S != i.EndUserConstants.EndUserXAdESType.Detached)
-                    R.length > 1 &&
-                    n != N.ASiCE &&
-                    (n != N.XAdES ||
-                      S != i.EndUserConstants.EndUserXAdESType.Detached) &&
-                    !(
-                      n == N.CAdES &&
-                      s == i.EndUserConstants.EndUserCAdESType.Detached
-                    )
+          }),
+          (e.prototype.OnSignFile = function () {
+            let remainingFilesForSilentSign;
+            var e = this,
+              t = e.GetCurrentLibrary();
+            e.SetError("");
+            var n = parseInt(
+                $("input[type='radio'][name=signTypesRadio]:checked").val(),
+              ),
+              r = parseInt($("#signAlgoSelect").val()),
+              s = parseInt($("#signTypeCAdESSelect").val()),
+              a = parseInt($("#signFormatCAdESSelect").val()),
+              u = parseInt($("#signFormatXAdESSelect").val()),
+              l = parseInt($("#signFormatPAdESSelect").val()),
+              c = e.SignAlgoToHashAlgo(r),
+              f = n == N.ASiCS || n == N.ASiCE,
+              E = n == N.PAdES,
+              h = n == N.XAdES,
+              S = parseInt($("#signTypeXAdESSelect").val()),
+              d = f
+                ? n == N.ASiCS
+                  ? i.EndUserConstants.EndUserASiCType.S
+                  : i.EndUserConstants.EndUserASiCType.E
+                : i.EndUserConstants.EndUserASiCType.Unknown,
+              y = parseInt($("#signTypeASiCSelect").val()),
+              C = y == i.EndUserConstants.EndUserASiCSignType.CAdES ? a : u,
+              A =
+                n == N.CAdES &&
+                s == i.EndUserConstants.EndUserCAdESType.Detached,
+              R = $("#signFilesInput").prop("files"),
+              m = R.length >= 1 ? R[0].name : "",
+              g = m + e.GetSignFileExt(m, n),
+              P = e.GetFilesSize(R),
+              v = e.GetFileExtension(m).toLowerCase(),
+              I =
+                (new JSZip(),
+                {
+                  filesData: null,
+                  namedData: null,
+                  hash: null,
+                  sign: null,
+                  signsInfo: null,
+                  signersInfo: null,
+                  signContainerInfo: null,
+                });
+            console.log("n", n);
+            console.log("s", s);
+            console.log("R", R);
+            if ("" != m)
+              if ("" != g)
+                if (
+                  // R.length > 1 &&
+                  // n != N.ASiCE &&
+                  // (n != N.XAdES ||
+                  //   S != i.EndUserConstants.EndUserXAdESType.Detached)
+                  R.length > 1 &&
+                  n != N.ASiCE &&
+                  (n != N.XAdES ||
+                    S != i.EndUserConstants.EndUserXAdESType.Detached) &&
+                  !(
+                    n == N.CAdES &&
+                    s == i.EndUserConstants.EndUserCAdESType.Detached
                   )
-                    e.SetError(p(o.ERROR_SIGN_MULTIPLE_FILES_NOT_SUPPORTED));
-                  else if (
-                    (n != N.CAdES ||
-                      (n == N.CAdES &&
-                        s != i.EndUserConstants.EndUserCAdESType.Detached)) &&
-                    P >= MAX_FILE_SIZE
-                  )
-                    e.SetError(p(o.ERROR_FILE_TO_BIG));
-                  else if (P <= 0) e.SetError(p(o.ERROR_FILE_EMPTY));
-                  else {
-                    switch (n) {
-                      case N.PAdES:
-                        if ("pdf" != v)
-                          return void e.SetError(p(o.ERROR_FILE_NOT_PDF));
-                        break;
-                      case N.XAdES:
-                        if (
-                          S == i.EndUserConstants.EndUserXAdESType.Enveloped &&
-                          "xml" != v
-                        )
-                          return void e.SetError(p(o.ERROR_FILE_NOT_XML));
-                    }
-                    (e.ShowDimmerView(p(o.PROCESS_STATUS_SIGN_FILE)),
-                      t
-                        .GetLibrary()
-                        .SetRuntimeParameter(
-                          i.EndUserConstants.EU_SIGN_TYPE_PARAMETER,
-                          a,
-                        )
-                        .then(function () {
-                          return e.ReadFiles(R);
-                        })
-                        .then(function (e) {
-                          return (
-                            (I.filesData = e),
-                            A ? t.GetLibrary().HashData(c, e[0].data, !1) : null
-                          );
-                        })
-                        .then(async function () {
-                          // return e.ReadFiles(R)
-                          const filesArr = await e.ReadFiles(R);
-                          console.log("filesArr", filesArr);
-                          I.filesData = filesArr;
-                          // if (A && I.filesData.length > 1) {
-                          //   e.SignAllFilesCAdESDetached(
-                          //     t.GetLibrary(),
-                          //     I.filesData,
-                          //     r, // signAlgo
-                          //     c, // hashAlgo
-                          //   ).then(async function (results) {
-                          //     let info = await I;
-                          //     if (results) {
-                          //       arrForGroupedSignedDocs = [];
-                          //       console.log("info", info);
-                          //       resultsArr = [...results];
-                          //       console.log("results", results);
-                          //       console.log("resultsArr", resultsArr);
-                          //       resultsArr.forEach(async (document, index) => {
-                          //         console.log("index", index);
-                          //         console.log("filesData", info.filesData);
-                          //         console.log(
-                          //           "filesData[1]",
-                          //           info.filesData[1],
-                          //         );
-                          //         console.log("fD", info.filesData[index]);
-                          //         let tempArr = [];
-                          //         tempArr.push(info.filesData[index]);
-                          //         e.SetSignFileResult(
-                          //           tempArr,
-                          //           info.sign,
-                          //           document.fileName,
-                          //           info.signsInfo,
-                          //           info.signersInfo,
-                          //           1,
-                          //           1,
-                          //           0,
-                          //         );
-                          //       });
-                          //     }
-                          //     // e.CloseDimmerView()
-                          //     // e.StopOperationConfirmation()
-
-                          //     // Обірвати стандартний ланцюжок .then(), щоб не йти в SetSignFileResult
-                          //     // throw "__MULTI_CADES_DONE__";
-                          //     return;
-                          //   });
-                          // }
-                          if (A && I.filesData.length > 1) {
-                            e.SignAllFilesCAdESDetached(
-                              t.GetLibrary(),
-                              I.filesData,
-                              r,
-                              c,
-                            ).then(function (results) {
-                              if (results) {
-                                arrForGroupedSignedDocs = [];
-                                resultsArr = [...results];
-
-                                resultsArr.forEach(function (document, index) {
-                                  let tempArr = [document.originalFile];
-
-                                  e.SetSignFileResult(
-                                    tempArr,
-                                    document.signBytes,
-                                    document.fileName,
-                                    document.signsInfo,
-                                    document.signersInfo,
-                                    1,
-                                    1,
-                                    0,
-                                  );
-                                });
-                              }
-                              return;
-                            });
-                          }
-                          return A
-                            ? t.GetLibrary().HashData(c, filesArr[0].data, !1)
-                            : null;
-
-                          // return (
-                          // 	(I.filesData = e),
-                          // 	A ? t.GetLibrary().HashData(c, e[0].data, !1) : null
-                          // )
-                        })
-                        .then(function (e) {
-                          return (
-                            (I.hash = e),
-                            1 == I.filesData.length && f
-                              ? t
-                                  .GetLibrary()
-                                  .GetSignContainerInfo(I.filesData[0].data)
-                              : null
-                          );
-                        })
-                        .then(function (e) {
-                          I.signContainerInfo =
-                            null != e &&
-                            e.type !=
-                              i.EndUserConstants.EndUserSignContainerType
-                                .Unknown
-                              ? e
-                              : null;
-                          var n = !1;
-                          (null != e &&
-                            (n =
-                              e.type ==
-                                i.EndUserConstants.EndUserSignContainerType
-                                  .ASiC &&
-                              e.subType == d &&
-                              e.asicSignType == y),
-                            (I.namedData = []),
-                            I.filesData.forEach(function (e) {
-                              I.namedData.push({
-                                name: e.name,
-                                val: e.data,
+                )
+                  e.SetError(p(o.ERROR_SIGN_MULTIPLE_FILES_NOT_SUPPORTED));
+                else if (
+                  (n != N.CAdES ||
+                    (n == N.CAdES &&
+                      s != i.EndUserConstants.EndUserCAdESType.Detached)) &&
+                  P >= MAX_FILE_SIZE
+                )
+                  e.SetError(p(o.ERROR_FILE_TO_BIG));
+                else if (P <= 0) e.SetError(p(o.ERROR_FILE_EMPTY));
+                else {
+                  switch (n) {
+                    case N.PAdES:
+                      if ("pdf" != v)
+                        return void e.SetError(p(o.ERROR_FILE_NOT_PDF));
+                      break;
+                    case N.XAdES:
+                      if (
+                        S == i.EndUserConstants.EndUserXAdESType.Enveloped &&
+                        "xml" != v
+                      )
+                        return void e.SetError(p(o.ERROR_FILE_NOT_XML));
+                  }
+                  (e.ShowDimmerView(p(o.PROCESS_STATUS_SIGN_FILE)),
+                    t
+                      .GetLibrary()
+                      .SetRuntimeParameter(
+                        i.EndUserConstants.EU_SIGN_TYPE_PARAMETER,
+                        a,
+                      )
+                      .then(function () {
+                        return e.ReadFiles(R);
+                      })
+                      .then(function (e) {
+                        return (
+                          (I.filesData = e),
+                          A ? t.GetLibrary().HashData(c, e[0].data, !1) : null
+                        );
+                      })
+                      .then(async function () {
+                        // return e.ReadFiles(R)
+                        const filesArr = await e.ReadFiles(R);
+                        console.log("filesArr", filesArr);
+                        I.filesData = filesArr;
+                        if (A && I.filesData.length > 1) {
+                          e.SignAllFilesCAdESDetached(
+                            t.GetLibrary(),
+                            I.filesData,
+                            r, // signAlgo
+                            c, // hashAlgo
+                          ).then(async function (results) {
+                            let info = await I;
+                            if (results) {
+                              arrForGroupedSignedDocs = [];
+                              console.log("info", info);
+                              resultsArr = [...results];
+                              console.log("results", results);
+                              console.log("resultsArr", resultsArr);
+                              resultsArr.forEach(async (document, index) => {
+                                console.log("index", index);
+                                console.log("filesData", info.filesData);
+                                console.log("filesData[1]", info.filesData[1]);
+                                console.log("fD", info.filesData[index]);
+                                let tempArr = [];
+                                tempArr.push(info.filesData[index]);
+                                e.SetSignFileResult(
+                                  tempArr,
+                                  info.sign,
+                                  document.fileName,
+                                  info.signsInfo,
+                                  info.signersInfo,
+                                  1,
+                                  1,
+                                  0,
+                                );
                               });
-                            }));
-                          var o = A
-                            ? {
-                                name: I.namedData[0].name,
-                                val: I.hash,
-                              }
+                            }
+                            // e.CloseDimmerView()
+                            // e.StopOperationConfirmation()
+
+                            // Обірвати стандартний ланцюжок .then(), щоб не йти в SetSignFileResult
+                            // throw "__MULTI_CADES_DONE__";
+                            return;
+                          });
+                        }
+                        return A
+                          ? t.GetLibrary().HashData(c, filesArr[0].data, !1)
+                          : null;
+
+                        // return (
+                        // 	(I.filesData = e),
+                        // 	A ? t.GetLibrary().HashData(c, e[0].data, !1) : null
+                        // )
+                      })
+                      .then(function (e) {
+                        return (
+                          (I.hash = e),
+                          1 == I.filesData.length && f
+                            ? t
+                                .GetLibrary()
+                                .GetSignContainerInfo(I.filesData[0].data)
+                            : null
+                        );
+                      })
+                      .then(function (e) {
+                        I.signContainerInfo =
+                          null != e &&
+                          e.type !=
+                            i.EndUserConstants.EndUserSignContainerType.Unknown
+                            ? e
                             : null;
-                          return f
-                            ? n
+                        var n = !1;
+                        (null != e &&
+                          (n =
+                            e.type ==
+                              i.EndUserConstants.EndUserSignContainerType
+                                .ASiC &&
+                            e.subType == d &&
+                            e.asicSignType == y),
+                          (I.namedData = []),
+                          I.filesData.forEach(function (e) {
+                            I.namedData.push({
+                              name: e.name,
+                              val: e.data,
+                            });
+                          }));
+                        var o = A
+                          ? {
+                              name: I.namedData[0].name,
+                              val: I.hash,
+                            }
+                          : null;
+                        return f
+                          ? n
+                            ? t
+                                .GetLibrary()
+                                .ASiCAppendSign(r, C, null, I.namedData[0], !1)
+                            : t
+                                .GetLibrary()
+                                .ASiCSignData(r, d, y, C, I.namedData, !1)
+                          : E
+                            ? t
+                                .GetLibrary()
+                                .PDFSignData(r, I.namedData[0], l, !1)
+                            : h
                               ? t
                                   .GetLibrary()
-                                  .ASiCAppendSign(
-                                    r,
-                                    C,
-                                    null,
-                                    I.namedData[0],
-                                    !1,
-                                  )
-                              : t
-                                  .GetLibrary()
-                                  .ASiCSignData(r, d, y, C, I.namedData, !1)
+                                  .XAdESSignData(r, S, u, I.namedData, !1)
+                              : A
+                                ? t.GetLibrary().SignHash(r, o, !0, !1)
+                                : t
+                                    .GetLibrary()
+                                    .SignDataEx(r, I.namedData[0], !1, !0, !1);
+                      })
+                      .then(function (i) {
+                        return (
+                          (I.sign = i.val),
+                          T(
+                            e.m_statisticsURL,
+                            _.Sign,
+                            e.m_mainPageOrigin,
+                            e.m_readedPKey.getKeyType(),
+                            e.m_readedPKey.getIssuerCN(),
+                            1,
+                            e.GetStatisticsSignContainerType(n, s, S, y),
+                            r,
+                            f ? C : E ? l : h ? u : a,
+                          ),
+                          f
+                            ? t.GetLibrary().ASiCVerifyData(I.sign, -1)
                             : E
-                              ? t
-                                  .GetLibrary()
-                                  .PDFSignData(r, I.namedData[0], l, !1)
+                              ? t.GetLibrary().PDFVerifyData(I.sign, -1)
                               : h
                                 ? t
                                     .GetLibrary()
-                                    .XAdESSignData(r, S, u, I.namedData, !1)
+                                    .XAdESVerifyData(I.namedData, I.sign, -1)
                                 : A
-                                  ? t.GetLibrary().SignHash(r, o, !0, !1)
+                                  ? t
+                                      .GetLibrary()
+                                      .VerifyHash(I.hash, I.sign, -1)
                                   : t
                                       .GetLibrary()
-                                      .SignDataEx(
-                                        r,
-                                        I.namedData[0],
-                                        !1,
-                                        !0,
-                                        !1,
-                                      );
-                        })
-                        .then(function (i) {
-                          return (
-                            (I.sign = i.val),
-                            T(
-                              e.m_statisticsURL,
-                              _.Sign,
-                              e.m_mainPageOrigin,
-                              e.m_readedPKey.getKeyType(),
-                              e.m_readedPKey.getIssuerCN(),
-                              1,
-                              e.GetStatisticsSignContainerType(n, s, S, y),
-                              r,
-                              f ? C : E ? l : h ? u : a,
-                            ),
-                            f
-                              ? t.GetLibrary().ASiCVerifyData(I.sign, -1)
-                              : E
-                                ? t.GetLibrary().PDFVerifyData(I.sign, -1)
-                                : h
-                                  ? t
-                                      .GetLibrary()
-                                      .XAdESVerifyData(I.namedData, I.sign, -1)
-                                  : A
-                                    ? t
-                                        .GetLibrary()
-                                        .VerifyHash(I.hash, I.sign, -1)
-                                    : t
-                                        .GetLibrary()
-                                        .VerifyDataInternal(I.sign, -1)
-                          );
-                        })
-                        .then(function (e) {
-                          return (
-                            (I.signsInfo = e),
-                            f
-                              ? t.GetLibrary().ASiCGetSigner(I.sign, -1, !0)
-                              : E
-                                ? t.GetLibrary().PDFGetSigner(I.sign, -1, !0)
-                                : h
-                                  ? t
-                                      .GetLibrary()
-                                      .XAdESGetSigner(I.sign, -1, !0)
-                                  : t.GetLibrary().GetSigner(I.sign, -1, !0)
-                          );
-                        })
-                        .then(function (e) {
-                          return (
-                            (I.signersInfo = e),
-                            null != I.signContainerInfo
-                              ? I.signContainerInfo
-                              : t.GetLibrary().GetSignContainerInfo(I.sign)
-                          );
-                        })
-                        .then(function (e) {
-                          return ((I.signContainerInfo = e), I.sign);
-                        })
-                        .then(function (t) {
-                          return (
-                            (I.sign = t),
-                            e.m_signInfoTmpl
-                              ? e.m_signInfoTmpl
-                              : e.DownloadData(
-                                  LIBRARY_SETTINGS.signInfoTmpl,
-                                  "",
-                                )
-                          );
-                        })
-                        .then(function (t) {
-                          console.log("signsInfo", I);
-                          ((fileName = fileNameCreatorUtil(
-                            I.signsInfo[0].ownerInfo,
-                          )),
-                            ((e.m_signInfoTmpl = t),
-                            e.SetSignFileResult(
-                              I.filesData,
-                              I.sign,
-                              g,
-                              I.signsInfo,
-                              I.signersInfo,
-                              I.signContainerInfo.type,
-                              I.signContainerInfo.subType,
-                              I.signContainerInfo.asicSignType,
-                            ),
-                            e.ShowForm("#resultBlock", !0),
-                            e.CloseDimmerView(),
-                            e.StopOperationConfirmation()));
-                        })
-                        .catch(function (t) {
-                          (e.CloseDimmerView(),
-                            e.StopOperationConfirmation(),
-                            e.SetError(p(o.ERROR_SIGN_FILE), t));
-                        }));
-                  }
-                else e.SetError(p(o.ERROR_FILE_TO_SIGN_RESULT_NOT_SET));
-              else e.SetError(p(o.ERROR_FILE_TO_SIGN_NOT_SET));
-            }),
-          ),
+                                      .VerifyDataInternal(I.sign, -1)
+                        );
+                      })
+                      .then(function (e) {
+                        return (
+                          (I.signsInfo = e),
+                          f
+                            ? t.GetLibrary().ASiCGetSigner(I.sign, -1, !0)
+                            : E
+                              ? t.GetLibrary().PDFGetSigner(I.sign, -1, !0)
+                              : h
+                                ? t.GetLibrary().XAdESGetSigner(I.sign, -1, !0)
+                                : t.GetLibrary().GetSigner(I.sign, -1, !0)
+                        );
+                      })
+                      .then(function (e) {
+                        return (
+                          (I.signersInfo = e),
+                          null != I.signContainerInfo
+                            ? I.signContainerInfo
+                            : t.GetLibrary().GetSignContainerInfo(I.sign)
+                        );
+                      })
+                      .then(function (e) {
+                        return ((I.signContainerInfo = e), I.sign);
+                      })
+                      .then(function (t) {
+                        return (
+                          (I.sign = t),
+                          e.m_signInfoTmpl
+                            ? e.m_signInfoTmpl
+                            : e.DownloadData(LIBRARY_SETTINGS.signInfoTmpl, "")
+                        );
+                      })
+                      .then(function (t) {
+                        console.log("signsInfo", I);
+                        ((fileName = fileNameCreatorUtil(
+                          I.signsInfo[0].ownerInfo,
+                        )),
+                          ((e.m_signInfoTmpl = t),
+                          e.SetSignFileResult(
+                            I.filesData,
+                            I.sign,
+                            g,
+                            I.signsInfo,
+                            I.signersInfo,
+                            I.signContainerInfo.type,
+                            I.signContainerInfo.subType,
+                            I.signContainerInfo.asicSignType,
+                          ),
+                          e.ShowForm("#resultBlock", !0),
+                          e.CloseDimmerView(),
+                          e.StopOperationConfirmation()));
+                      })
+                      .catch(function (t) {
+                        (e.CloseDimmerView(),
+                          e.StopOperationConfirmation(),
+                          e.SetError(p(o.ERROR_SIGN_FILE), t));
+                      }));
+                }
+              else e.SetError(p(o.ERROR_FILE_TO_SIGN_RESULT_NOT_SET));
+            else e.SetError(p(o.ERROR_FILE_TO_SIGN_NOT_SET));
+          }),
           (e.prototype.OnSignFileCancel = function () {
             this.m_showPKInfo && this.m_readedPKey.certificatesInfo.length > 0
               ? this.ShowForm(
