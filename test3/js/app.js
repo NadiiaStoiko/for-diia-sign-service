@@ -22320,12 +22320,13 @@ function dateFormatter(dateString) {
                           if (T.signsInfos.length) {
                             const signersArr = T.signsInfos[0];
                             let signerInfo = signersArr[0].signerInfo;
+                            console.log("signerInfo", signerInfo);
                             signingDocInfo = {
                               ipn: signerInfo.subjDRFOCode,
                               pib: signerInfo.subjFullName,
                               sertOwner: signerInfo.issuerCN,
                               sn: signerInfo.serial,
-                              date: dateFormatter(signerInfo.timeInfo.value),
+                              // date: dateFormatter(signerInfo.timeInfo.value),
                             };
                           }
                           const base64String = uint8ToBase64(T.signFile.data);
