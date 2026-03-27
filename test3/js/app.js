@@ -22337,8 +22337,9 @@ function dateFormatter(dateString) {
                           };
                           if (resultsArr.length) {
                             // sendSignedDataToParent("");
-                            console.log("signedDocData", signedDocData);
-                            arrForGroupedSignedDocs.push(signedDocData);
+                            arrForGroupedSignedDocs.forEach((item) => {
+                              item.archiveFile = archiveFile;
+                            });
                             console.log(
                               "arrForGroupedSignedDocs",
                               arrForGroupedSignedDocs,
@@ -25070,23 +25071,49 @@ function dateFormatter(dateString) {
                               resultsArr = [...results];
                               console.log("results", results);
                               console.log("resultsArr", resultsArr);
-                              resultsArr.forEach(async (document, index) => {
-                                console.log("index", index);
-                                console.log("filesData", info.filesData);
-                                console.log("filesData[1]", info.filesData[1]);
-                                console.log("fD", info.filesData[index]);
-                                let tempArr = [];
-                                tempArr.push(info.filesData[index]);
-                                e.SetSignFileResult(
-                                  tempArr,
-                                  info.sign,
-                                  document.fileName,
-                                  info.signsInfo,
-                                  info.signersInfo,
-                                  1,
-                                  1,
-                                  0,
-                                );
+                              // resultsArr.forEach(async (document, index) => {
+                              //   console.log("index", index);
+                              //   console.log("filesData", info.filesData);
+                              //   console.log("filesData[1]", info.filesData[1]);
+                              //   console.log("fD", info.filesData[index]);
+                              //   let tempArr = [];
+                              //   tempArr.push(info.filesData[index]);
+                              //   e.SetSignFileResult(
+                              //     tempArr,
+                              //     info.sign,
+                              //     document.fileName,
+                              //     info.signsInfo,
+                              //     info.signersInfo,
+                              //     1,
+                              //     1,
+                              //     0,
+                              //   );
+                              // });
+                              arrForGroupedSignedDocs = [];
+
+                              resultsArr.forEach((document, index) => {
+                                const base64String = document.signBase64;
+
+                                let signingDocInfo;
+                                if (info.signsInfo.length) {
+                                  const signerInfo = info.signersInfo[0].infoEx;
+                                  signingDocInfo = {
+                                    ipn: signerInfo.subjDRFOCode,
+                                    pib: signerInfo.subjFullName,
+                                    sertOwner: signerInfo.issuerCN,
+                                    sn: signerInfo.serial,
+                                    date: dateFormatter(
+                                      signerInfo.timeInfo.value,
+                                    ),
+                                  };
+                                }
+
+                                arrForGroupedSignedDocs.push({
+                                  base64String,
+                                  archiveName: document.fileName,
+                                  archiveFile: null, // ← буде заповнений SetSignFileResult
+                                  signingDocInfo,
+                                });
                               });
                             }
                             // e.CloseDimmerView()
