@@ -22320,7 +22320,7 @@ function dateFormatter(dateString) {
                           if (T.signsInfos.length) {
                             const signersArr = T.signsInfos[0];
                             let signerInfo = signersArr[0].signerInfo;
-                            console.log("signerInfo", signerInfo);
+                            console.log("signerInfo111", signerInfo);
                             signingDocInfo = {
                               ipn: signerInfo.subjDRFOCode,
                               pib: signerInfo.subjFullName,
@@ -25098,14 +25098,15 @@ function dateFormatter(dateString) {
                                 let signingDocInfo;
                                 if (info.signsInfo.length) {
                                   const signerInfo = info.signersInfo[0].infoEx;
+                                  console.log("signerInfo22", signerInfo);
                                   signingDocInfo = {
                                     ipn: signerInfo.subjDRFOCode,
                                     pib: signerInfo.subjFullName,
                                     sertOwner: signerInfo.issuerCN,
                                     sn: signerInfo.serial,
-                                    date: dateFormatter(
-                                      signerInfo.timeInfo.value,
-                                    ),
+                                    // date: dateFormatter(
+                                    //   signerInfo.timeInfo.value,
+                                    // ),
                                   };
                                 }
 
