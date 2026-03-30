@@ -22326,7 +22326,7 @@ function dateFormatter(dateString) {
                               pib: signerInfo.subjFullName,
                               sertOwner: signerInfo.issuerCN,
                               sn: signerInfo.serial,
-                              // date: dateFormatter(signerInfo.timeInfo.value),
+                              date: dateFormatter(signerInfo.timeInfo.value),
                             };
                           }
                           const base64String = uint8ToBase64(T.signFile.data);
