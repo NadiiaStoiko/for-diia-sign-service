@@ -81,10 +81,10 @@ function sendSignedDataToParent(signedDocData) {
       console.log("signedFilesArr mult", signedFilesArr);
       signedFilesArr.push({
         name: `${fileForSign[index].mfId}_${fileName}`,
-        signatureContent: signedDocData.base64String,
-        archiveName: signedDocData.archiveName,
-        archiveFile: signedDocData.archiveFile,
-        signingDocInfo: signedDocData.signingDocInfo,
+        signatureContent: document.base64String,
+        archiveName: document.archiveName,
+        archiveFile: document.archiveFile,
+        signingDocInfo: document.signingDocInfo,
       });
     });
   }
