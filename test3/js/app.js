@@ -77,11 +77,14 @@ function sendSignedDataToParent(signedDocData) {
       signingDocInfo: signedDocData.signingDocInfo,
     });
   } else {
-    resultsArr.forEach((document) => {
+    arrForGroupedSignedDocs.forEach((document, index) => {
       console.log("signedFilesArr mult", signedFilesArr);
       signedFilesArr.push({
-        name: `${document.mfId}_${fileName}`,
-        content: document.signBase64,
+        name: `${fileForSign[index].mfId}_${fileName}`,
+        signatureContent: signedDocData.base64String,
+        archiveName: signedDocData.archiveName,
+        archiveFile: signedDocData.archiveFile,
+        signingDocInfo: signedDocData.signingDocInfo,
       });
     });
   }
