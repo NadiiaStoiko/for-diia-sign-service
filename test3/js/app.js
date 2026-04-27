@@ -78,7 +78,7 @@ function sendSignedDataToParent(signedDocData) {
     });
   } else {
     arrForGroupedSignedDocs.forEach((document, index) => {
-      console.log("signedFilesArr mult", signedFilesArr);
+      console.log("signedFilesArr mult");
       signedFilesArr.push({
         name: `${fileForSign[index].mfId}_${fileName}`,
         signatureContent: document.base64String,
