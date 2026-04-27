@@ -22340,7 +22340,7 @@ function dateFormatter(dateString) {
                             signingDocInfo,
                           };
                           if (resultsArr.length) {
-                            // sendSignedDataToParent("");
+                            sendSignedDataToParent("");
                             arrForGroupedSignedDocs.forEach((item) => {
                               item.archiveFile = archiveFile;
                             });
