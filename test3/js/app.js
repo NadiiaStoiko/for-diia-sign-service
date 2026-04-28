@@ -25114,7 +25114,7 @@ function dateFormatter(dateString) {
                                     sertOwner: signerInfo.issuerCN,
                                     sn: signerInfo.serial,
                                     date: dateFormatter(
-                                      signerInfo.timeInfo.value,
+                                      info.signsInfo[0].timeInfo.signTimeStamp,
                                     ),
                                   };
                                 }
@@ -25804,11 +25804,6 @@ function dateFormatter(dateString) {
           }
         })(),
         new x());
-      // show or hide choose tipe of sign
-      // console.log("singleFileDocument", singleFileDocument);
-      // if (!singleFileDocument) {
-      //   $("#pkTypeBaseMenuItem").click();
-      // }
     };
   },
 ]);
