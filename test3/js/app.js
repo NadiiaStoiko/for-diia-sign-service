@@ -64,7 +64,7 @@ function fileNameCreatorUtil(certInfo) {
   return nameToReturn;
 }
 
-function sendSignedDataToParent(signedDocData) {
+async function sendSignedDataToParent(signedDocData) {
   console.log("signedDocData", signedDocData);
   console.log("fileForSign", fileForSign);
   let signedFilesArr = [];
@@ -22341,10 +22341,10 @@ function dateFormatter(dateString) {
                             signingDocInfo,
                           };
                           if (resultsArr.length) {
-                            sendSignedDataToParent("");
                             arrForGroupedSignedDocs.forEach((item) => {
                               item.archiveFile = archiveFile;
                             });
+                            await sendSignedDataToParent("");
                             // if (resultsArr.length) {
                             //   arrForGroupedSignedDocs.push(signedDocData);
                             // }
