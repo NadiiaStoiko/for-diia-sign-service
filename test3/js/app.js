@@ -22324,7 +22324,8 @@ function dateFormatter(dateString) {
                         })
                         .then(function (t) {
                           const archiveName = t.name;
-                          console.log("data", t.data);
+                          console.log("data333", t.data);
+                          console.log("archiveName333", t.name);
                           const archiveFile = uint8ToBase64(t.data);
                           console.log("T.signFile", T.signFile);
                           let signingDocInfo;
