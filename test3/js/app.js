@@ -51,6 +51,14 @@ window.addEventListener("message", (event) => {
   }
 });
 
+function changeExtension(fileName, newExt) {
+  const lastDot = fileName.lastIndexOf(".");
+
+  if (lastDot === -1) return fileName + "." + newExt;
+
+  return fileName.slice(0, lastDot) + "." + newExt;
+}
+
 function fileNameCreatorUtil(certInfo) {
   const signerName = certInfo.subjCN;
   const signerSerialNumber = certInfo.subjDRFOCode;
@@ -69,9 +77,9 @@ function sendSignedDataToParent(signedDocData) {
   let signedFilesArr = [];
   if (fileForSign.length === 1) {
     signedFilesArr.push({
-      name: `${fileForSign[0].mfId}_${fileName}`,
+      name: `${fileForSign[0].mfId}_${fileName}.p7s`,
       signatureContent: signedDocData.base64String,
-      archiveName: signedDocData.archiveName,
+      archiveName: changeExtension(signedDocData.archiveName, "zip"),
       archiveFile: signedDocData.archiveFile,
       signingDocInfo: signedDocData.signingDocInfo,
     });
@@ -80,9 +88,9 @@ function sendSignedDataToParent(signedDocData) {
       console.log("document", document);
       console.log("signedFilesArr mult");
       signedFilesArr.push({
-        name: `${fileForSign[index].mfId}_${fileName}`,
+        name: `${fileForSign[index].mfId}_${fileName}.p7s`,
         signatureContent: document.base64String,
-        archiveName: document.archiveName,
+        archiveName: changeExtension(document.archiveName, "zip"),
         archiveFile: document.archiveFile,
         signingDocInfo: document.signingDocInfo,
       });
