@@ -25104,10 +25104,6 @@ function dateFormatter(dateString) {
                                 if (info.signsInfo.length) {
                                   const signerInfo = info.signersInfo[0].infoEx;
                                   console.log("signerInfo22", signerInfo);
-                                  console.log(
-                                    "signerInfo.timeInfo.value",
-                                    signerInfo.timeInfo.value,
-                                  );
                                   signingDocInfo = {
                                     ipn: signerInfo.subjDRFOCode,
                                     pib: signerInfo.subjFullName,
