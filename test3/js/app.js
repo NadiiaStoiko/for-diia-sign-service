@@ -22390,7 +22390,8 @@ function dateFormatter(dateString) {
                     });
                   },
                 ));
-              $("#saveAllButton").click();
+              $(c).find("#saveAllButton").click();
+              // $("#saveAllButton").click();
             } else
               l.SetStatus(
                 p(
