@@ -22324,8 +22324,8 @@ function dateFormatter(dateString) {
                         })
                         .then(function (t) {
                           const archiveName = t.name;
-                          console.log("data333", t.data);
-                          console.log("archiveName333", t.name);
+                          console.log("data", t.data);
+                          console.log("archiveName", t.name);
                           const archiveFile = uint8ToBase64(t.data);
                           console.log("T.signFile", T.signFile);
                           let signingDocInfo;
@@ -22349,13 +22349,20 @@ function dateFormatter(dateString) {
                             signingDocInfo,
                           };
                           if (resultsArr.length) {
-                            arrForGroupedSignedDocs.forEach((item) => {
-                              item.archiveFile = archiveFile;
-                            });
-                            sendSignedDataToParent("");
-                            // if (resultsArr.length) {
-                            //   arrForGroupedSignedDocs.push(signedDocData);
-                            // }
+                            // arrForGroupedSignedDocs.forEach((item) => {
+                            //   item.archiveFile = archiveFile;
+                            // });
+                            // sendSignedDataToParent("");
+
+                            arrForGroupedSignedDocs.push(signedDocData);
+
+                            if (
+                              arrForGroupedSignedDocs.length ===
+                              resultsArr.length
+                            ) {
+                              sendSignedDataToParent("");
+                            }
+
                             console.log(
                               "arrForGroupedSignedDocs",
                               arrForGroupedSignedDocs,
