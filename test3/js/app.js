@@ -22349,28 +22349,28 @@ function dateFormatter(dateString) {
                             signingDocInfo,
                           };
                           if (resultsArr.length) {
-                            // arrForGroupedSignedDocs.forEach((item) => {
-                            //   item.archiveFile = archiveFile;
-                            // });
-                            // sendSignedDataToParent("");
-
-                            const currentIndex = arrForGroupedSignedDocs.length;
-                            const currentDoc = resultsArr[currentIndex];
-
-                            arrForGroupedSignedDocs.push({
-                              mfId: currentDoc?.mfId,
-                              base64String,
-                              archiveName,
-                              archiveFile,
-                              signingDocInfo,
+                            arrForGroupedSignedDocs.forEach((item) => {
+                              item.archiveFile = archiveFile;
                             });
+                            sendSignedDataToParent("");
 
-                            if (
-                              arrForGroupedSignedDocs.length ===
-                              resultsArr.length
-                            ) {
-                              sendSignedDataToParent("");
-                            }
+                            // const currentIndex = arrForGroupedSignedDocs.length;
+                            // const currentDoc = resultsArr[currentIndex];
+
+                            // arrForGroupedSignedDocs.push({
+                            //   mfId: currentDoc?.mfId,
+                            //   base64String,
+                            //   archiveName,
+                            //   archiveFile,
+                            //   signingDocInfo,
+                            // });
+
+                            // if (
+                            //   arrForGroupedSignedDocs.length ===
+                            //   resultsArr.length
+                            // ) {
+                            //   sendSignedDataToParent("");
+                            // }
 
                             console.log(
                               "arrForGroupedSignedDocs",
@@ -22390,8 +22390,7 @@ function dateFormatter(dateString) {
                     });
                   },
                 ));
-              // $("#saveAllButton").click();
-              $(c).find("#saveAllButton").click();
+              $("#saveAllButton").click();
             } else
               l.SetStatus(
                 p(
@@ -25102,67 +25101,47 @@ function dateFormatter(dateString) {
                               arrForGroupedSignedDocs = [];
                               resultsArr = [...results];
                               console.log("resultsArr", resultsArr);
-                              resultsArr.forEach(function (document, index) {
-                                e.SetSignFileResult(
-                                  [info.filesData[index]],
-                                  document.signBytes,
-                                  document.fileName,
-                                  document.signsInfo,
-                                  document.signersInfo,
-                                  1,
-                                  1,
-                                  0,
-                                );
-                              });
-
-                              // resultsArr.forEach(async (document, index) => {
-                              //   console.log("index", index);
-                              //   console.log("filesData", info.filesData);
-                              //   console.log("filesData[1]", info.filesData[1]);
-                              //   console.log("fD", info.filesData[index]);
-                              //   let tempArr = [];
-                              //   tempArr.push(info.filesData[index]);
+                              // resultsArr.forEach(function (document, index) {
                               //   e.SetSignFileResult(
-                              //     tempArr,
-                              //     info.sign,
+                              //     [info.filesData[index]],
+                              //     document.signBytes,
                               //     document.fileName,
-                              //     info.signsInfo,
-                              //     info.signersInfo,
+                              //     document.signsInfo,
+                              //     document.signersInfo,
                               //     1,
                               //     1,
                               //     0,
                               //   );
                               // });
 
-                              // resultsArr.forEach((document, index) => {
-                              //   const base64String = document.signBase64;
+                              resultsArr.forEach((document, index) => {
+                                const base64String = document.signBase64;
 
-                              //   let signingDocInfo;
-                              //   if (info.signsInfo.length) {
-                              //     const signerInfo = info.signersInfo[0].infoEx;
-                              //     console.log("signerInfo22", signerInfo);
-                              //     signingDocInfo = {
-                              //       ipn: signerInfo.subjDRFOCode,
-                              //       pib: signerInfo.subjFullName,
-                              //       sertOwner: signerInfo.issuerCN,
-                              //       sn: signerInfo.serial,
-                              //       date: dateFormatter(
-                              //         info.signsInfo[0].timeInfo.signTimeStamp,
-                              //       ),
-                              //     };
-                              //   }
+                                let signingDocInfo;
+                                if (info.signsInfo.length) {
+                                  const signerInfo = info.signersInfo[0].infoEx;
+                                  console.log("signerInfo22", signerInfo);
+                                  signingDocInfo = {
+                                    ipn: signerInfo.subjDRFOCode,
+                                    pib: signerInfo.subjFullName,
+                                    sertOwner: signerInfo.issuerCN,
+                                    sn: signerInfo.serial,
+                                    date: dateFormatter(
+                                      info.signsInfo[0].timeInfo.signTimeStamp,
+                                    ),
+                                  };
+                                }
 
-                              //   arrForGroupedSignedDocs.push({
-                              //     base64String,
-                              //     archiveName: document.fileName,
-                              //     archiveFile: null, // ← буде заповнений SetSignFileResult
-                              //     signingDocInfo,
-                              //   });
-                              // });
+                                arrForGroupedSignedDocs.push({
+                                  base64String,
+                                  archiveName: document.fileName,
+                                  archiveFile: null, // ← буде заповнений SetSignFileResult
+                                  signingDocInfo,
+                                });
+                              });
                             }
 
-                            // return;
-                            throw "__MULTI_CADES_DONE__";
+                            return;
                           });
                         }
                         return A
@@ -25317,11 +25296,6 @@ function dateFormatter(dateString) {
                           e.StopOperationConfirmation()));
                       })
                       .catch(function (t) {
-                        if (t === "__MULTI_CADES_DONE__") {
-                          e.CloseDimmerView();
-                          e.StopOperationConfirmation();
-                          return;
-                        }
                         (e.CloseDimmerView(),
                           e.StopOperationConfirmation(),
                           e.SetError(p(o.ERROR_SIGN_FILE), t));
