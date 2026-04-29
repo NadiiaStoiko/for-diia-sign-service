@@ -25114,6 +25114,7 @@ function dateFormatter(dateString) {
                                 const document = resultsArr[signResultIndex];
                                 const fileData =
                                   info.filesData[signResultIndex];
+                                const mfFileInfo = fileForSign[signResultIndex];
 
                                 console.log(
                                   "RUN SetSignFileResult index:",
@@ -25123,6 +25124,21 @@ function dateFormatter(dateString) {
                                   "document.fileName:",
                                   document.fileName,
                                 );
+
+                                if (
+                                  mfFileInfo &&
+                                  mfFileInfo.extension &&
+                                  fileData &&
+                                  fileData.name &&
+                                  !fileData.name
+                                    .toLowerCase()
+                                    .endsWith(
+                                      "." + mfFileInfo.extension.toLowerCase(),
+                                    )
+                                ) {
+                                  fileData.name =
+                                    fileData.name + "." + mfFileInfo.extension;
+                                }
 
                                 e.SetSignFileResult(
                                   [fileData],
