@@ -22354,7 +22354,16 @@ function dateFormatter(dateString) {
                             // });
                             // sendSignedDataToParent("");
 
-                            arrForGroupedSignedDocs.push(signedDocData);
+                            const currentIndex = arrForGroupedSignedDocs.length;
+                            const currentDoc = resultsArr[currentIndex];
+
+                            arrForGroupedSignedDocs.push({
+                              mfId: currentDoc?.mfId,
+                              base64String,
+                              archiveName,
+                              archiveFile,
+                              signingDocInfo,
+                            });
 
                             if (
                               arrForGroupedSignedDocs.length ===
@@ -22381,7 +22390,8 @@ function dateFormatter(dateString) {
                     });
                   },
                 ));
-              $("#saveAllButton").click();
+              // $("#saveAllButton").click();
+              $(c).find("#saveAllButton").click();
             } else
               l.SetStatus(
                 p(
@@ -25090,10 +25100,21 @@ function dateFormatter(dateString) {
                             let info = await I;
                             if (results) {
                               arrForGroupedSignedDocs = [];
-                              console.log("info", info);
                               resultsArr = [...results];
-                              console.log("results", results);
                               console.log("resultsArr", resultsArr);
+                              resultsArr.forEach(function (document, index) {
+                                e.SetSignFileResult(
+                                  [info.filesData[index]],
+                                  document.signBytes,
+                                  document.fileName,
+                                  document.signsInfo,
+                                  document.signersInfo,
+                                  1,
+                                  1,
+                                  0,
+                                );
+                              });
+
                               // resultsArr.forEach(async (document, index) => {
                               //   console.log("index", index);
                               //   console.log("filesData", info.filesData);
@@ -25113,37 +25134,33 @@ function dateFormatter(dateString) {
                               //   );
                               // });
 
-                              resultsArr.forEach((document, index) => {
-                                const base64String = document.signBase64;
+                              // resultsArr.forEach((document, index) => {
+                              //   const base64String = document.signBase64;
 
-                                let signingDocInfo;
-                                if (info.signsInfo.length) {
-                                  const signerInfo = info.signersInfo[0].infoEx;
-                                  console.log("signerInfo22", signerInfo);
-                                  signingDocInfo = {
-                                    ipn: signerInfo.subjDRFOCode,
-                                    pib: signerInfo.subjFullName,
-                                    sertOwner: signerInfo.issuerCN,
-                                    sn: signerInfo.serial,
-                                    date: dateFormatter(
-                                      info.signsInfo[0].timeInfo.signTimeStamp,
-                                    ),
-                                  };
-                                }
+                              //   let signingDocInfo;
+                              //   if (info.signsInfo.length) {
+                              //     const signerInfo = info.signersInfo[0].infoEx;
+                              //     console.log("signerInfo22", signerInfo);
+                              //     signingDocInfo = {
+                              //       ipn: signerInfo.subjDRFOCode,
+                              //       pib: signerInfo.subjFullName,
+                              //       sertOwner: signerInfo.issuerCN,
+                              //       sn: signerInfo.serial,
+                              //       date: dateFormatter(
+                              //         info.signsInfo[0].timeInfo.signTimeStamp,
+                              //       ),
+                              //     };
+                              //   }
 
-                                arrForGroupedSignedDocs.push({
-                                  base64String,
-                                  archiveName: document.fileName,
-                                  archiveFile: null, // ← буде заповнений SetSignFileResult
-                                  signingDocInfo,
-                                });
-                              });
+                              //   arrForGroupedSignedDocs.push({
+                              //     base64String,
+                              //     archiveName: document.fileName,
+                              //     archiveFile: null, // ← буде заповнений SetSignFileResult
+                              //     signingDocInfo,
+                              //   });
+                              // });
                             }
-                            // e.CloseDimmerView()
-                            // e.StopOperationConfirmation()
 
-                            // Обірвати стандартний ланцюжок .then(), щоб не йти в SetSignFileResult
-                            // throw "__MULTI_CADES_DONE__";
                             return;
                           });
                         }
