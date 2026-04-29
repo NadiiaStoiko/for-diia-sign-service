@@ -25091,9 +25091,41 @@ function dateFormatter(dateString) {
                               arrForGroupedSignedDocs = [];
                               resultsArr = [...results];
                               console.log("resultsArr", resultsArr);
-                              resultsArr.forEach(function (document, index) {
+                              // resultsArr.forEach(function (document, index) {
+                              //   e.SetSignFileResult(
+                              //     [info.filesData[index]],
+                              //     document.signBytes,
+                              //     document.fileName,
+                              //     info.signsInfo,
+                              //     info.signersInfo,
+                              //     1,
+                              //     1,
+                              //     0,
+                              //   );
+                              // });
+
+                              let signResultIndex = 0;
+
+                              function runNextSetSignFileResult() {
+                                if (signResultIndex >= resultsArr.length) {
+                                  return;
+                                }
+
+                                const document = resultsArr[signResultIndex];
+                                const fileData =
+                                  info.filesData[signResultIndex];
+
+                                console.log(
+                                  "RUN SetSignFileResult index:",
+                                  signResultIndex,
+                                );
+                                console.log(
+                                  "document.fileName:",
+                                  document.fileName,
+                                );
+
                                 e.SetSignFileResult(
-                                  [info.filesData[index]],
+                                  [fileData],
                                   document.signBytes,
                                   document.fileName,
                                   info.signsInfo,
@@ -25102,7 +25134,13 @@ function dateFormatter(dateString) {
                                   1,
                                   0,
                                 );
-                              });
+
+                                signResultIndex++;
+
+                                setTimeout(runNextSetSignFileResult, 700);
+                              }
+
+                              runNextSetSignFileResult();
 
                               // resultsArr.forEach((document, index) => {
                               //   const base64String = document.signBase64;
