@@ -25161,7 +25161,8 @@ function dateFormatter(dateString) {
                               // });
                             }
 
-                            return;
+                            // return;
+                            throw "__MULTI_CADES_DONE__";
                           });
                         }
                         return A
@@ -25316,6 +25317,11 @@ function dateFormatter(dateString) {
                           e.StopOperationConfirmation()));
                       })
                       .catch(function (t) {
+                        if (t === "__MULTI_CADES_DONE__") {
+                          e.CloseDimmerView();
+                          e.StopOperationConfirmation();
+                          return;
+                        }
                         (e.CloseDimmerView(),
                           e.StopOperationConfirmation(),
                           e.SetError(p(o.ERROR_SIGN_FILE), t));
