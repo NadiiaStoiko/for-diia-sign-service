@@ -51,12 +51,8 @@ window.addEventListener("message", (event) => {
   }
 });
 
-function changeExtension(fileName, newExt) {
-  const lastDot = fileName.lastIndexOf(".");
-
-  if (lastDot === -1) return fileName + "." + newExt;
-
-  return fileName.slice(0, lastDot) + "." + newExt;
+function changeExtension(fileName) {
+  return fileName.replace(/\.p7s(?=\.zip$)/i, "");
 }
 
 function fileNameCreatorUtil(certInfo) {
@@ -79,7 +75,7 @@ function sendSignedDataToParent(signedDocData) {
     signedFilesArr.push({
       name: `${fileForSign[0].mfId}_${fileName}.p7s`,
       signatureContent: signedDocData.base64String,
-      archiveName: changeExtension(signedDocData.archiveName, "zip"),
+      archiveName: changeExtension(signedDocData.archiveName),
       archiveFile: signedDocData.archiveFile,
       signingDocInfo: signedDocData.signingDocInfo,
     });
@@ -90,7 +86,7 @@ function sendSignedDataToParent(signedDocData) {
       signedFilesArr.push({
         name: `${fileForSign[index].mfId}_${fileName}.p7s`,
         signatureContent: document.base64String,
-        archiveName: changeExtension(document.archiveName, "zip"),
+        archiveName: changeExtension(document.archiveName),
         archiveFile: document.archiveFile,
         signingDocInfo: document.signingDocInfo,
       });
