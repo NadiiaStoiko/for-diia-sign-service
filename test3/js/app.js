@@ -22345,7 +22345,7 @@ function dateFormatter(dateString) {
                             archiveFile,
                             signingDocInfo,
                           };
-                          if (resultsArr.length) {
+                          if (resultsArr.length && T.files.length === 1) {
                             if (
                               arrForGroupedSignedDocs.length < resultsArr.length
                             ) {
