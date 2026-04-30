@@ -24956,13 +24956,22 @@ function dateFormatter(dateString) {
                   let signBytes = sign.val || sign;
                   let signBase64 = uint8ToBase64(signBytes);
 
-                  results.push({
-                    mfId: fileForSign[currInd].mfId,
-                    fileName: fd.name + ".p7s",
-                    signBytes: signBytes,
-                    signBase64: signBase64,
-                    size: signBytes.length,
-                  });
+                  return lib
+                    .VerifyHash(
+                      lib.HashData(hashAlgo, fd.data, !1),
+                      signBytes,
+                      -1,
+                    )
+                    .then(function (signsInfo) {
+                      results.push({
+                        mfId: fileForSign[currInd].mfId,
+                        fileName: fd.name + ".p7s",
+                        signBytes: signBytes,
+                        signBase64: signBase64,
+                        signsInfo: signsInfo,
+                        size: signBytes.length,
+                      });
+                    });
                 });
             });
 
@@ -25141,7 +25150,7 @@ function dateFormatter(dateString) {
                                   [fileData],
                                   document.signBytes,
                                   document.fileName,
-                                  info.signsInfo,
+                                  document.signsInfo || info.signsInfo,
                                   info.signersInfo,
                                   1,
                                   1,
