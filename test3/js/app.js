@@ -22219,7 +22219,8 @@ function dateFormatter(dateString) {
               for (var E = new M((n = n), t), h = [], y = 0; y < r.length; y++)
                 h.push({
                   signTimeInfo: r[y].timeInfo,
-                  signerInfo: i[y].infoEx,
+                  // signerInfo: i[y].infoEx,
+                  signerInfo: Object.assign({}, i[y].infoEx),
                   isDigitalStamp: l.IsDigitalStamp([i[y]]),
                   qscd: l.GetQSCD(i[y].infoEx),
                   signAlgo: l.GetSignAlgoByKeyType(i[y].infoEx.publicKeyType),
