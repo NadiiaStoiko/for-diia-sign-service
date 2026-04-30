@@ -22219,8 +22219,7 @@ function dateFormatter(dateString) {
               for (var E = new M((n = n), t), h = [], y = 0; y < r.length; y++)
                 h.push({
                   signTimeInfo: r[y].timeInfo,
-                  // signerInfo: i[y].infoEx,
-                  signerInfo: Object.assign({}, i[y].infoEx),
+                  signerInfo: i[y].infoEx,
                   isDigitalStamp: l.IsDigitalStamp([i[y]]),
                   qscd: l.GetQSCD(i[y].infoEx),
                   signAlgo: l.GetSignAlgoByKeyType(i[y].infoEx.publicKeyType),
@@ -24956,22 +24955,13 @@ function dateFormatter(dateString) {
                   let signBytes = sign.val || sign;
                   let signBase64 = uint8ToBase64(signBytes);
 
-                  return lib
-                    .VerifyHash(
-                      lib.HashData(hashAlgo, fd.data, !1),
-                      signBytes,
-                      -1,
-                    )
-                    .then(function (signsInfo) {
-                      results.push({
-                        mfId: fileForSign[currInd].mfId,
-                        fileName: fd.name + ".p7s",
-                        signBytes: signBytes,
-                        signBase64: signBase64,
-                        signsInfo: signsInfo,
-                        size: signBytes.length,
-                      });
-                    });
+                  results.push({
+                    mfId: fileForSign[currInd].mfId,
+                    fileName: fd.name + ".p7s",
+                    signBytes: signBytes,
+                    signBase64: signBase64,
+                    size: signBytes.length,
+                  });
                 });
             });
 
@@ -25150,7 +25140,7 @@ function dateFormatter(dateString) {
                                   [fileData],
                                   document.signBytes,
                                   document.fileName,
-                                  document.signsInfo || info.signsInfo,
+                                  info.signsInfo,
                                   info.signersInfo,
                                   1,
                                   1,
