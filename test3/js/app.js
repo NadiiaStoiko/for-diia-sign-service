@@ -22346,7 +22346,11 @@ function dateFormatter(dateString) {
                             signingDocInfo,
                           };
                           if (resultsArr.length) {
-                            arrForGroupedSignedDocs.push(signedDocData);
+                            if (
+                              arrForGroupedSignedDocs.length < resultsArr.length
+                            ) {
+                              arrForGroupedSignedDocs.push(signedDocData);
+                            }
 
                             if (
                               arrForGroupedSignedDocs.length ===
@@ -22354,10 +22358,6 @@ function dateFormatter(dateString) {
                             ) {
                               sendSignedDataToParent("");
                             }
-                            // arrForGroupedSignedDocs.forEach((item) => {
-                            //   item.archiveFile = archiveFile;
-                            // });
-                            // sendSignedDataToParent("");
 
                             console.log(
                               "arrForGroupedSignedDocs",
