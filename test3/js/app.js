@@ -25137,12 +25137,24 @@ function dateFormatter(dateString) {
                                     fileData.name + "." + mfFileInfo.extension;
                                 }
 
+                                const safeSignsInfo = info.signsInfo.map(
+                                  function (item) {
+                                    return {
+                                      ...item,
+                                      timeInfo: {
+                                        ...item.timeInfo,
+                                        time: new Date(item.timeInfo.time),
+                                      },
+                                    };
+                                  },
+                                );
+
                                 e.SetSignFileResult(
                                   [fileData],
                                   document.signBytes,
                                   document.fileName,
                                   // info.signsInfo,
-                                  JSON.parse(JSON.stringify(info.signsInfo)),
+                                  safeSignsInfo,
                                   info.signersInfo,
                                   1,
                                   1,
