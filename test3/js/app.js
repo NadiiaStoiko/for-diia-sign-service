@@ -22301,19 +22301,55 @@ function dateFormatter(dateString) {
                         })
                         .then(function (e) {
                           return (
-                            e.forEach(function (e) {
-                              for (var t = 0; t < n.length; t++)
-                                if (e.name == n[t].name) {
-                                  var r =
-                                    l.removeFileExtension(e.name) +
-                                    ".orig." +
-                                    l.getFileExtension(e.name);
-                                  e = new M(r, e.data, e.file);
-                                  break;
+                            // e.forEach(function (e) {
+                            //   for (var t = 0; t < n.length; t++)
+                            //     if (e.name == n[t].name) {
+                            //       var r =
+                            //         l.removeFileExtension(e.name) +
+                            //         ".orig." +
+                            //         l.getFileExtension(e.name);
+                            //       e = new M(r, e.data, e.file);
+                            //       break;
+                            //     }
+                            //   n.push(e);
+                            // }),
+                            (
+                              e.forEach(function (e) {
+                                var originalName = e.name;
+
+                                var currentIndex =
+                                  arrForGroupedSignedDocs.length;
+                                var mfFileInfo = fileForSign[currentIndex];
+
+                                if (
+                                  mfFileInfo &&
+                                  mfFileInfo.extension &&
+                                  originalName &&
+                                  !originalName
+                                    .toLowerCase()
+                                    .endsWith(
+                                      "." + mfFileInfo.extension.toLowerCase(),
+                                    )
+                                ) {
+                                  originalName =
+                                    originalName + "." + mfFileInfo.extension;
+                                  e = new M(originalName, e.data, e.file);
                                 }
-                              n.push(e);
-                            }),
-                            U()
+
+                                for (var t = 0; t < n.length; t++)
+                                  if (e.name == n[t].name) {
+                                    var r =
+                                      l.removeFileExtension(e.name) +
+                                      ".orig." +
+                                      l.getFileExtension(e.name);
+                                    e = new M(r, e.data, e.file);
+                                    break;
+                                  }
+
+                                n.push(e);
+                              }),
+                              U()
+                            )
                           );
                         })
                         .then(function (e) {
