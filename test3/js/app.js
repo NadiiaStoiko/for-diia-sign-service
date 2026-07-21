@@ -1,4 +1,4 @@
-let fileForSign;
+let fileForSign = [];
 let isDocumentSignedSuccess = false;
 let fileName = "";
 let isItStamp = false;
@@ -302,36 +302,109 @@ function passErrorToMFiles(data) {
   }
 }
 
+// function filesArrCreator() {
+//   const dataTransfer = new DataTransfer();
+//   console.log("filesArrCreator");
+//   if (fileForSign.length) {
+//     fileForSign.forEach((fileInfo) => {
+//       var ext = getMimeType(fileInfo?.extension);
+//       var base64Data = fileInfo.file;
+//       console.log("base64Data", base64Data);
+//       const byteCharacters = atob(base64Data);
+//       const byteNumbers = new Array(byteCharacters.length);
+//       for (let i = 0; i < byteCharacters.length; i++) {
+//         byteNumbers[i] = byteCharacters.charCodeAt(i);
+//       }
+//       const byteArray = new Uint8Array(byteNumbers);
+//       const file = new File([byteArray], fileInfo.fileName, { type: ext });
+//       dataTransfer.items.add(file);
+//     });
+//     console.log("dataTransfer.files", dataTransfer.files);
+//     return dataTransfer.files;
+//   } else {
+//     passErrorToMFiles();
+//   }
+// }
+
 function filesArrCreator() {
   const dataTransfer = new DataTransfer();
+
   console.log("filesArrCreator");
-  if (fileForSign.length) {
-    fileForSign.forEach((fileInfo) => {
-      var ext = getMimeType(fileInfo?.extension);
-      var base64Data = fileInfo.file;
-      console.log("base64Data", base64Data);
-      const byteCharacters = atob(base64Data);
-      const byteNumbers = new Array(byteCharacters.length);
-      for (let i = 0; i < byteCharacters.length; i++) {
-        byteNumbers[i] = byteCharacters.charCodeAt(i);
-      }
-      const byteArray = new Uint8Array(byteNumbers);
-      const file = new File([byteArray], fileInfo.fileName, { type: ext });
-      dataTransfer.items.add(file);
-    });
-    console.log("dataTransfer.files", dataTransfer.files);
+  console.log("fileForSign", fileForSign);
+
+  /*
+   * Віджет може викликати getFile() раніше,
+   * ніж dashboard передасть файл.
+   * У такому випадку просто повертаємо порожній FileList.
+   */
+  if (!Array.isArray(fileForSign) || fileForSign.length === 0) {
+    console.log("Файл від dashboard ще не отримано");
+
     return dataTransfer.files;
-  } else {
-    passErrorToMFiles();
   }
+
+  fileForSign.forEach((fileInfo) => {
+    const ext = getMimeType(fileInfo?.extension);
+    const base64Data = fileInfo.file;
+
+    console.log("base64Data", base64Data);
+
+    const byteCharacters = atob(base64Data);
+    const byteNumbers = new Array(byteCharacters.length);
+
+    for (let i = 0; i < byteCharacters.length; i++) {
+      byteNumbers[i] = byteCharacters.charCodeAt(i);
+    }
+
+    const byteArray = new Uint8Array(byteNumbers);
+
+    const createdFile = new File([byteArray], fileInfo.fileName, {
+      type: ext,
+    });
+
+    dataTransfer.items.add(createdFile);
+  });
+
+  console.log("dataTransfer.files", dataTransfer.files);
+
+  return dataTransfer.files;
 }
 
+// function getFile() {
+//   document.getElementById("signFilesInput").files = filesArrCreator();
+//   let fl = $("#signFilesInput").prop("files");
+//   // console.log('file', file)
+//   // console.log('fl', $('#signFilesInput').prop('files'))
+//   return fl;
+// }
+
 function getFile() {
-  document.getElementById("signFilesInput").files = filesArrCreator();
-  let fl = $("#signFilesInput").prop("files");
-  // console.log('file', file)
-  // console.log('fl', $('#signFilesInput').prop('files'))
-  return fl;
+  const input = document.getElementById("signFilesInput");
+
+  if (!input) {
+    console.error("Не знайдено input signFilesInput");
+    return null;
+  }
+
+  const receivedFiles = filesArrCreator();
+
+  /*
+   * Поки dashboard не передав файл,
+   * не намагаємося записувати undefined.
+   */
+  if (!receivedFiles || receivedFiles.length === 0) {
+    console.log("getFile: файл ще не отримано");
+
+    return receivedFiles;
+  }
+
+  input.files = receivedFiles;
+
+  const files = $("#signFilesInput").prop("files");
+
+  console.log("getFile result", files);
+
+  return files;
 }
 
 function getMimeType(extension) {
