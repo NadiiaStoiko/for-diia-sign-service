@@ -51,24 +51,77 @@ let arrForGroupedSignedDocs = [];
 //   }
 // });
 
+// window.addEventListener("message", (event) => {
+//   const data = event.data;
+
+//   // Ігноруємо повідомлення, які не містять файл.
+//   if (!data?.file) {
+//     return;
+//   }
+
+//   console.log("event", data.isItStamp);
+
+//   if (data.file.length) {
+//     fileForSign = data.file;
+
+//     // Повідомляємо dashboard, що файл успішно отримано.
+//     event.source?.postMessage(
+//       {
+//         type: "FILE_RECEIVED",
+//         requestId: data.requestId,
+//       },
+//       event.origin || "*",
+//     );
+//   } else {
+//     passErrorToMFiles(data);
+//     return;
+//   }
+
+//   if (fileForSign.length > 1) {
+//     isItMulti = true;
+//   }
+
+//   if (data.isItStamp) {
+//     isItStamp = true;
+//   }
+
+//   console.log("isItStamp", isItStamp);
+//   console.log("fileForSign:", fileForSign);
+
+//   if (data.ourCompanyEdrpou) {
+//     companyEdrpou = data.ourCompanyEdrpou;
+//   }
+
+//   if (data.signerIpn) {
+//     signerIpn = data.signerIpn;
+//   }
+
+//   if (data.singleFileDocument) {
+//     singleFileDocument = true;
+//   }
+
+//   console.log("singleFileDocument", singleFileDocument);
+
+//   if (!singleFileDocument) {
+//     $("#pkTypeBaseMenuItem").click();
+//   }
+// });
 window.addEventListener("message", (event) => {
   const data = event.data;
 
-  // Ігноруємо повідомлення, які не містять файл.
   if (!data?.file) {
     return;
   }
 
-  console.log("event", data.isItStamp);
+  console.log("Отримано файл від M-Files", data);
 
   if (data.file.length) {
     fileForSign = data.file;
 
-    // Повідомляємо dashboard, що файл успішно отримано.
+    // Підтверджуємо, що файл записаний у fileForSign
     event.source?.postMessage(
       {
         type: "FILE_RECEIVED",
-        requestId: data.requestId,
       },
       event.origin || "*",
     );
@@ -85,9 +138,6 @@ window.addEventListener("message", (event) => {
     isItStamp = true;
   }
 
-  console.log("isItStamp", isItStamp);
-  console.log("fileForSign:", fileForSign);
-
   if (data.ourCompanyEdrpou) {
     companyEdrpou = data.ourCompanyEdrpou;
   }
@@ -100,21 +150,10 @@ window.addEventListener("message", (event) => {
     singleFileDocument = true;
   }
 
-  console.log("singleFileDocument", singleFileDocument);
-
   if (!singleFileDocument) {
     $("#pkTypeBaseMenuItem").click();
   }
 });
-
-// Цей код виконується після реєстрації message listener.
-// Отже, віджет уже готовий отримати файл від dashboard.
-window.parent.postMessage(
-  {
-    type: "SIGN_WIDGET_READY",
-  },
-  "*",
-);
 
 function changeExtension(fileName) {
   return fileName.replace(/\.p7s(?=\.zip$)/i, "");
