@@ -26,11 +26,11 @@
       "CA of the Justice of Ukraine",
       "АЦСК Держінформ'юсту"
     ],
-    "address": "ca.informjust.ua",
-    "ocspAccessPointAddress": "ca.informjust.ua/services/ocsp/",
+    "address": "ca.diia.gov.ua",
+    "ocspAccessPointAddress": "ca.diia.gov.ua/services/ocsp/",
     "ocspAccessPointPort": "80",
-    "cmpAddress": "ca.informjust.ua",
-    "tspAddress": "ca.informjust.ua",
+    "cmpAddress": "ca.diia.gov.ua",
+    "tspAddress": "ca.diia.gov.ua",
     "tspAddressPort": "80",
     "directAccess": true,
     "qscdSNInCert": true,
@@ -97,6 +97,7 @@
   },
   {
     "issuerCNs": [
+      "КНЕДП АЦСК АТ КБ \"ПриватБанк\"",
       "КНЕДП АЦСК АТ КБ \"ПРИВАТБАНК\"",
       "АЦСК АТ КБ «ПРИВАТБАНК»",
       "АЦСК ПАТ КБ «ПРИВАТБАНК»",
@@ -114,6 +115,7 @@
   },
   {
     "issuerCNs": [
+      "КНЕДП АТ \"Сенс Банк\"",
       "КНЕДП АТ \"СЕНС БАНК\"",
       "КНЕДП АЦСК АТ \"Альфа-Банк\"",
       "Акредитований центр сертифікації ключів АТ \"Альфа-Банк\""
@@ -129,6 +131,7 @@
   },
   {
     "issuerCNs": [
+      "КНЕДП Акціонерного товариства \"КРЕДІ АГРІКОЛЬ БАНК\"",
       "КНЕДП Акціонерного товариства “КРЕДІ АГРІКОЛЬ БАНК”",
       "QTSP of Joint-stock company \"CREDIT-AGRICOLE BANK\""
     ],
@@ -317,6 +320,16 @@
     "tspAddress": "amokey.com.ua",
     "tspAddressPort": "80",
     "codeEDRPOU": "44669502"
+  },
+  {
+    "issuerCNs": ["КНЕДП EDIN ID ТОВ “АТС”", "QTSP EDIN ID of the ATS LLC"],
+    "address": "ca.edin.ua",
+    "ocspAccessPointAddress": "ca.edin.ua/services/ocsp/",
+    "ocspAccessPointPort": "80",
+    "cmpAddress": "ca.edin.ua",
+    "tspAddress": "ca.edin.ua",
+    "tspAddressPort": "80",
+    "codeEDRPOU": "37636185"
   },
   {
     "issuerCNs": [
