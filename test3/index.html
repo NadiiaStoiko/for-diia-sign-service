@@ -1030,7 +1030,7 @@ input:checked ~ .HelpPanelItemContent {
 
 	<script type="text/javascript">
 		var MAX_FILE_SIZE = 25 * 1024 * 1024
-		var JS_WORKER_PATH = "./js/euscp.worker.js"	
+		var JS_WORKER_PATH = "./js/euscp.worker.js"
 		var LIBRARY_SETTINGS = {
 	language: 'uk',
 	encoding: 'utf-8',
@@ -1056,8 +1056,8 @@ input:checked ~ .HelpPanelItemContent {
 		"е.ключ чи смарт-карта Автор 338 (PKCS#11)",
 		"смарт-карта Техноконс. TEllipse3 (PKCS#11)",
 		"смарт-карта Техноконс. TEllipse",
-	"смарт-карта Техноконс. TEllipse2/3",
-	"е.ключ SIS DIAMOND"
+		"смарт-карта Техноконс. TEllipse2/3",
+		"е.ключ SIS DIAMOND"
 	],
 	passwordRequirements: null,
 	KSPs: [
@@ -1069,150 +1069,222 @@ input:checked ~ .HelpPanelItemContent {
 			directAccess: false,
 			mobileAppName: "ДіЯ",
 			codeEDRPOU: "43395033",
-			signAlgos:[1, 3]
+			signAlgos:[4, 1, 3]
 		},
 		{
-			name: "DepositSign - хмарний підпис",
-			ksp: 4,
-			address: "https://depositsign.com/api/v1/informjust/sign-server",
-			port: "",
-			directAccess: true,
-			codeEDRPOU: "43005049"
+			"name": "DepositSign - хмарний підпис",
+			"ksp": 6,
+			"address": "https://depositsign.com/api/v1/informjust/sign-server",
+			"port": "",
+			"clientIdPrefix": "",
+			"directAccess": true,
+			"codeEDRPOU": "43005049",
+            "signAlgos":[4, 1]
 		},
 		{
-			name: "Приватбанк - хмарний підпис \"SmartID\"",
-			ksp: 6,
-			address: "https://acsk.privatbank.ua/cloud/api/back/",
-			port: "",
-			directAccess: true,
-			clientIdPrefix: "IEIS_",
-			confirmationURL: "https://www.privat24.ua/rd/kep",
-			mobileAppName: "Приват24",
-			codeEDRPOU: "14360570"
+			"name": "Приватбанк - хмарний підпис \"SmartID\"",
+			"ksp": 6,
+			"address": "https://acsk.privatbank.ua/cloud/api/back/",
+			"port": "",
+			"directAccess": true,
+			"clientIdPrefix": "IEIS_",
+			"confirmationURL": "https://www.privat24.ua/rd/kep",
+			"mobileAppName": "Приват24",
+			"codeEDRPOU": "14360570",
+			"signAlgos":[4, 1]
 		},
 		{
-			name: "Вчасно - хмарний підпис (QR)",
-			ksp: 6,
-			address: "https://cs.vchasno.ua/ss/",
-			port: "",
-			directAccess: true,
-			clientIdPrefix: "vchasno_",
-			confirmationURL: "https://cs.vchasno.ua/rd/",
-			mobileAppName: "Вчасно.КЕП"
+			"name": "Вчасно - хмарний підпис (QR)",
+			"ksp": 6,
+			"address": "https://cs.vchasno.ua/ss/",
+			"port": "",
+			"directAccess": true,
+			"clientIdPrefix": "vchasno_",
+			"confirmationURL": "https://cs.vchasno.ua/rd/",
+			"mobileAppName": "Вчасно.КЕП",
+			"signAlgos":[4, 1]
 		},
 		{ 
-			name: "ТОВ «ЦСК «Україна» - хмарний підпис CloudKey", 
-			ksp: 6, 
-			address: "https://sid.uakey.com.ua/smartid/iit/", 
-			port: "", 
-			directAccess: true, 
-			clientIdPrefix: "DIIA_2", 
-			confirmationURL: "https://sid.uakey.com.ua/kep?hash=rd/kep", 
-			mobileAppName: "CloudKey",
-			codeEDRPOU: "36865753"
+			"name": "ТОВ «ЦСК «Україна» - хмарний підпис CloudKey", 
+			"ksp": 6, 
+			"address": "https://sid.uakey.com.ua/smartid/iit/", 
+			"port": "", 
+			"directAccess": true, 
+			"clientIdPrefix": "DIIA_2", 
+			"confirmationURL": "https://sid.uakey.com.ua/kep?hash=rd/kep", 
+			"mobileAppName": "CloudKey",
+			"codeEDRPOU": "36865753",
+            "signAlgos":[4, 1]
 		},
 		{
-			name: "ESign - хмарний підпис",
-			ksp: 4,
-			address: "https://cabinet.e-life.com.ua/api/EDG/Sign",
-			port: "",
-			directAccess: true,
-			codeEDRPOU: "36049014"
+			"name": "ESign - хмарний підпис",
+			"ksp": 4,
+			"address": "https://cabinet.e-life.com.ua/api/EDG/Sign",
+			"port": "",
+			"directAccess": true,
+			"codeEDRPOU": "36049014",
+                        "signAlgos":[1, 4]
 		},
 		{ 
-			name: "ПУМБ - хмарний підпис", 
-			ksp: 6, 
-			address: "https://apiext.pumb.ua/hogsmeade/striga/v1", 
-			port: "", 
-			directAccess: false, 
-			clientIdPrefix: "DIIA_3", 
-			confirmationURL: "https://www.pumb.ua/qes", 
-			mobileAppName: "",
-			codeEDRPOU: "14282829"
+			"name": "ПУМБ - хмарний підпис", 
+			"ksp": 6, 
+			"address": "https://apiext.pumb.ua/hogsmeade/striga/v1", 
+			"port": "", 
+			"directAccess": false, 
+			"clientIdPrefix": "DIIA_3", 
+			"confirmationURL": "https://www.pumb.ua/qes", 
+			"mobileAppName": "",
+			"codeEDRPOU": "14282829",
+            "signAlgos":[4, 1]
 		},
 		{ 
-			name: "ДПС - хмарний підпис", 
-			ksp: 4, 
-			address: "https://smart-sign.tax.gov.ua/", 
-			port: "443", 
-			directAccess: true, 
-			clientIdType: 1,
-			codeEDRPOU: "43174711"
+			"name": "ДПС - хмарний підпис", 
+			"ksp": 4, 
+			"address": "https://smart-sign.tax.gov.ua/", 
+			"port": "443", 
+			"directAccess": true, 
+			"clientIdType": 1,
+			"codeEDRPOU": "43174711",
+            "signAlgos":[4, 1]
 		},
 		{
-			name: "Укргазбанк - хмарний підпис «EcoSign»",
-			ksp: 6,
-			address: "https://vtms-api-qca.ukrgasbank.com/iit-signer/api/v1",
-			port: "",
-			directAccess: false,
-			clientIdPrefix: "UGB_PROD",
-			confirmationURL: "https://cihsm-commiter-qca.ukrgasbank.com",
-			mobileAppName: "",
-			codeEDRPOU: "23697280"
+			"name": "Укргазбанк - хмарний підпис «EcoSign»",
+			"ksp": 6,
+			"address": "https://vtms-api-qca.ukrgasbank.com/iit-signer/api/v1",
+			"port": "",
+			"directAccess": false,
+			"clientIdPrefix": "UGB_PROD",
+			"confirmationURL": "https://cihsm-commiter-qca.ukrgasbank.com",
+			"mobileAppName": "",
+			"codeEDRPOU": "23697280",
+            "signAlgos":[4, 1]
 		},
 		{
-			name: "Банк Альянс - хмарний підпис",
-			ksp: 6,
-			address: "https://cihsm-api.bankalliance.ua/iit-signer/api/v1",
-			port: "",
-			directAccess: false,
-			clientIdPrefix: "ALLIANCE_PROD",
-			confirmationURL: "https://cihsm-commiter.bankalliance.ua",
-			mobileAppName: "",
-			codeEDRPOU: "14360506"
+			"name": "Банк Альянс - хмарний підпис",
+			"ksp": 6,
+			"address": "https://cihsm-api.bankalliance.ua/iit-signer/api/v1",
+			"port": "",
+			"directAccess": false,
+			"clientIdPrefix": "ALLIANCE_PROD",
+			"confirmationURL": "https://cihsm-commiter.bankalliance.ua",
+			"mobileAppName": "",
+			"codeEDRPOU": "14360506",
+            "signAlgos":[4, 1]
 		},
 		{
-			name: "КНЕДП органів прокуратури - хмарний підпис",
-			ksp: 6,
-			address: "https://cihsm-api.gp.gov.ua/iit-signer/api/v1",
-			port: "",
-			directAccess: false,
-			clientIdPrefix: "OGP_PROD",
-			confirmationURL: "https://cihsm-commiter.gp.gov.ua",
-			mobileAppName: "",
-			codeEDRPOU: "00034051"
+			"name": "КНЕДП органів прокуратури - хмарний підпис",
+			"ksp": 6,
+			"address": "https://cihsm-api.gp.gov.ua/iit-signer/api/v1",
+			"port": "",
+			"directAccess": false,
+			"clientIdPrefix": "OGP_PROD",
+			"confirmationURL": "https://cihsm-commiter.gp.gov.ua",
+			"mobileAppName": "",
+			"codeEDRPOU": "00034051",
+            "signAlgos":[4, 1]
 		},
 		{
-			name: "АМО ФІНТЕХ – хмарний підпис AMOKEY",
-			ksp: 6,
-			address: "https://sserver.amokey.com",
-			port: "443",
-			clientIdPrefix: "",
-			directAccess: true,
-			clientIdType: 1,
-			codeEDRPOU: "44669502"
+			"name": "АМО ФІНТЕХ – хмарний підпис AMOKEY",
+			"ksp": 6,
+			"address": "https://sserver.amokey.com",
+			"port": "443",
+			"clientIdPrefix": "",
+			"directAccess": true,
+			"clientIdType": 1,
+			"codeEDRPOU": "44669502",
+            "signAlgos":[1, 4]
 		},
 		{
-			name: "Ощадбанк - хмарний підпис",
-			ksp: 6,
-			address: "https://cihsm-api.oschadbank.ua/iit-signer/api/v1",
-			port: "",
-			directAccess: false,
-			clientIdPrefix: "OSCHADBANK_MOBILE_PROD",
-			confirmationURL: "https://smartid.oschadbank.ua/widgetidua",
-			mobileAppName: "BC.C SmartID",
-			codeEDRPOU: "00032129"
+			"name": "Ощадбанк - хмарний підпис",
+			"ksp": 6,
+			"address": "https://cihsm-api.oschadbank.ua/iit-signer/api/v1",
+			"port": "",
+			"directAccess": false,
+			"clientIdPrefix": "OSCHADBANK_MOBILE_PROD",
+			"confirmationURL": "https://smartid.oschadbank.ua/widgetidua",
+			"mobileAppName": "BC.C OschadID",
+			"codeEDRPOU": "00032129",
+            "signAlgos":[4, 1]
 		},
 		{
-			name: "Сервер підпису КНЕДП \"Військова частина 2428\" ДПСУ",
-			ksp: 6,
-			address: "https://smart-sign.dpsu.gov.ua/",
-			port: "443",
-			clientIdPrefix: "",
-			clientIdType: 1,
-			directAccess: true,
-			codeEDRPOU: "14321469"
+			"name": "Сервер підпису КНЕДП \"Військова частина 2428\" ДПСУ",
+			"ksp": 6,
+			"address": "https://smart-sign.dpsu.gov.ua/",
+			"port": "443",
+			"clientIdPrefix": "",
+			"clientIdType": 1,
+			"directAccess": true,
+			"codeEDRPOU": "14321469",
+            "signAlgos":[1, 4]
 		},
 		{
-            name: "Сервер підпису КНЕДП – АЦСК МВС",
-           	ksp: 6,
-            address: "https://sign-ca.mvs.gov.ua",
-            port: "443",
-            clientIdPrefix: "",
-            directAccess: true,
-            codeEDRPOU: "00032684"
-        	}
-
+            "name": "Сервер підпису КНЕДП – АЦСК МВС",
+           	"ksp": 6,
+            "address": "https://sign-ca.mvs.gov.ua",
+            "port": "443",
+            "clientIdPrefix": "",
+            "directAccess": true,
+            "codeEDRPOU": "00032684",
+            "signAlgos":[1, 4]
+        	},
+		{
+			"name": "Сервер підпису КНЕДП АТ \"ТАСКОМБАНК\"",
+			"ksp": 6,
+			"address": "https://smartsign.tascombank.ua",
+			"port": "443",
+			"clientIdPrefix": "",
+			"directAccess": true,
+			"clientIdType": 1,
+			"codeEDRPOU": "09806443",
+            "signAlgos":[4, 1]
+		},
+         	{
+			"name": "EDIN ID - хмарний підпис (QR)",
+			"ksp": 6,
+			"address": "https://id.edin.ua/api/ess/v1/",
+			"port": "",
+			"directAccess": true,
+			"clientIdPrefix": "EDIN_",
+			"confirmationURL": "https://id.edin.ua/mobile/sign",
+			"mobileAppName": "edinid",
+			"codeEDRPOU": "37636185",
+			"signAlgos":[1, 4]
+                },
+		{
+			"name": "EDIN ID - хмарний підпис",
+			"ksp": 6,
+			"address": "https://id.edin.ua/api/ess/v1/",
+			"port": "",
+			"clientIdPrefix": "",
+			"directAccess": true,
+			"clientIdType": 1,
+			"codeEDRPOU": "37636185",
+			"signAlgos":[1, 4]
+                },
+		{
+			"name": "УКРСИББАНК - хмарний підпис",
+			"ksp": 6,
+			"address": "https://business.ukrsibbank.com/morpheus/smart-sign/",
+			"port": "",
+			"directAccess": true,
+			"clientIdPrefix": "USB_",
+			"confirmationURL": "https://business.ukrsibbank.com/smartsign",
+			"mobileAppName": "UKRSIB business",
+			"codeEDRPOU": "09807750",
+            "signAlgos":[4, 1]
+        },
+		{
+			"name": "КРЕДІ АГРІКОЛЬ БАНК - хмарний підпис",
+			"ksp": 6,
+			"address": "https://caplusapp.credit-agricole.ua/cloud/keys/api/v1/external",
+			"port": "443",
+			"directAccess": false,
+			"clientIdPrefix": "IIT_",
+			"confirmationURL": "https://caplusapp.credit-agricole.ua/api/v1/authsv/mobile-app/qes",
+			"mobileAppName": "CA+ Digital bank",
+			"codeEDRPOU": "14361575",
+			"signAlgos":[4, 1]
+		}
 	],
 	allowMakeNewCertOnNewKeyMedia: false,
 	allowMakeNewCertOnFileKeyMedia: true,
@@ -1263,6 +1335,8 @@ input:checked ~ .HelpPanelItemContent {
 		"(зазвичай *.cer або *.crt)": "(зазвичай *.cer або *.crt)",
 		"Файл(и) з сертифікатами:": "Файл(и) з сертифікатами:",
 		"Оберіть файл з сертифікатами": "Оберіть файл з сертифікатами",
+		"Зберегти параметри ключа до локального сховища браузера": "Зберегти параметри ключа до локального сховища браузера",
+		"Зберегти параметри до локального сховища браузера": "Зберегти параметри до локального сховища браузера",
 		"Далі": "Далі",
 		"Носій особистого ключа": "Носій особистого ключа",
 		"Введіть пароль захисту ключа": "Введіть пароль захисту ключа",
@@ -1274,6 +1348,8 @@ input:checked ~ .HelpPanelItemContent {
 		"Підрозділ": "Підрозділ",
 		"УНЗР": "УНЗР",
 		"ЄДРПОУ": "ЄДРПОУ",
+		"Код іноземної юридичної особи": "Код іноземної юридичної особи",
+		"Код користувача іноземної юридичної особи": "Код користувача іноземної юридичної особи",
 		"Сертифікати": "Сертифікати",
 		"ДіЯ": "ДіЯ",
 
@@ -1292,6 +1368,9 @@ input:checked ~ .HelpPanelItemContent {
 		"смарт-карта Техноконс. TEllipse3 (PKCS#11)": "смарт-карта Техноконс. TEllipse3 (PKCS#11)",
 		"смарт-карта Техноконс. TEllipse": "смарт-карта Техноконс. TEllipse",
 		"смарт-карта Техноконс. TEllipse2/3": "смарт-карта Техноконс. TEllipse2/3",
+		"е.ключ Aruba Key (PKCS#11, RSA)": "е.ключ Aruba Key (PKCS#11, RSA)", 
+		"е.ключ SafeNet iKey (PKCS#11, RSA)": "е.ключ SafeNet iKey (PKCS#11, RSA)", 
+		"смарт-карта eID SK (PKCS#11, RSA)": "смарт-карта eID SK (PKCS#11, RSA)",
 
 		"Файл із запитом (ЕЦП, EU.p10)": "Файл із запитом (ЕЦП, EU.p10)",
 		"Файл із запитом (протокол розподілу ключів, EU-KEP.p10)": "Файл із запитом (протокол розподілу ключів, EU-KEP.p10)",
@@ -1391,6 +1470,10 @@ input:checked ~ .HelpPanelItemContent {
 		"ДСТУ 4145": "ДСТУ 4145",
 		"RSA": "RSA",
 		"ECDSA": "ECDSA",
+		"ДСТУ 4145 з ГОСТ 34.311": "ДСТУ 4145 з ГОСТ 34.311",
+		"ДСТУ 4145 з ДСТУ 7564": "ДСТУ 4145 з ДСТУ 7564",
+		"RSA з SHA-2": "RSA з SHA-2",
+		"ECDSA з SHA-2": "ECDSA з SHA-2",
 		"Результат накладання підпису": "Результат накладання підпису",
 		"Підпис накладено успішно. Цілісність даних підтверджено": "Підпис накладено успішно. Цілісність даних підтверджено",
 		"Назва файлу, що підписувався": "Назва файлу, що підписувався",
@@ -1502,6 +1585,11 @@ input:checked ~ .HelpPanelItemContent {
 		"Виникла помилка в шаблоні при відображенні результату підпису": "Виникла помилка в шаблоні при відображенні результату підпису",
 		"Виникла помилка при збереженні файлу {0}": "Виникла помилка при збереженні файлу {0}",
 		
+		"Виникла помилка при ініціалізації локального сховища браузера": "Виникла помилка при ініціалізації локального сховища браузера",
+		"Виникла помилка при отриманні особистого ключа з локального сховища браузера": "Виникла помилка при отриманні особистого ключа з локального сховища браузера",
+		"Виникла помилка при збереженні особистого ключа до локального сховища браузера": "Виникла помилка при збереженні особистого ключа до локального сховища браузера",
+		"Носій особистого ключа {0} не підключено": "Носій особистого ключа {0} не підключено",
+
 		"Ви відмовилися надавати ідентифікаційні дані ос. ключа. Продовжити?": "Ви відмовилися надавати ідентифікаційні дані ос. ключа. Продовжити?",
 	
 		"Файл(и) без підпису": "Файл(и) без підпису",
@@ -1704,6 +1792,8 @@ input:checked ~ .HelpPanelItemContent {
 		"(зазвичай *.cer або *.crt)": "(usually *.cer or *.crt)",
 		"Файл(и) з сертифікатами:": "File(s) with certificates:",
 		"Оберіть файл з сертифікатами": "Select certificate file",
+		"Зберегти параметри ключа до локального сховища браузера": "Save key parameters to local browser storage",
+		"Зберегти параметри до локального сховища браузера": "Save parameters to local browser storage",
 		"Далі": "Next",
 		"Носій особистого ключа": "Private key media",
 		"Введіть пароль захисту ключа": "Enter private key password",
@@ -1715,6 +1805,8 @@ input:checked ~ .HelpPanelItemContent {
 		"Підрозділ": "Organization unit",
 		"УНЗР": "UNZR",
 		"ЄДРПОУ": "TIN",
+		"Код іноземної юридичної особи": "Foreign legal entity code",
+		"Код користувача іноземної юридичної особи": "User code of a foreign legal entity",
 		"Сертифікати": "Certificates",
 		"ДіЯ": "Diia",
 
@@ -1733,6 +1825,9 @@ input:checked ~ .HelpPanelItemContent {
 		"смарт-карта Техноконс. TEllipse3 (PKCS#11)": "смарт-карта Техноконс. TEllipse3 (PKCS#11)",
 		"смарт-карта Техноконс. TEllipse": "smart card Technocons. TEllipse",
 		"смарт-карта Техноконс. TEllipse2/3": "smart card Technocons. TEllipse2/3",
+		"е.ключ Aruba Key (PKCS#11, RSA)": "e.key Aruba Key (PKCS#11, RSA)", 
+		"е.ключ SafeNet iKey (PKCS#11, RSA)": "e.key SafeNet iKey (PKCS#11, RSA)", 
+		"смарт-карта eID SK (PKCS#11, RSA)": "smart card eID SK (PKCS#11, RSA)",
 
 		"Файл із запитом (ЕЦП, EU.p10)": "File with request (Digital signature, EU.p10)",
 		"Файл із запитом (протокол розподілу ключів, EU-KEP.p10)": "File with request (Key agreement, EU-KEP.p10)",
@@ -1833,6 +1928,10 @@ input:checked ~ .HelpPanelItemContent {
 		"ДСТУ 4145": "DSTU 4145",
 		"RSA": "RSA",
 		"ECDSA": "ECDSA",
+		"ДСТУ 4145 з ГОСТ 34.311": "DSTU 4145 with GOST 34.311",
+		"ДСТУ 4145 з ДСТУ 7564": "DSTU 4145 with DSTU 7564",
+		"RSA з SHA-2": "RSA with SHA-2",
+		"ECDSA з SHA-2": "ECDSA with SHA-2",
 		"Результат накладання підпису": "Signature creation result",
 		"Підпис накладено успішно. Цілісність даних підтверджено": "Signature created successfully. Data integrity confirmed",
 		"Назва файлу, що підписувався": "Name of the file being signed",
@@ -1943,6 +2042,10 @@ input:checked ~ .HelpPanelItemContent {
 		"Виникла помилка при завантаженні даних": "An error occurred while loading data",
 		"Виникла помилка в шаблоні при відображенні результату підпису": "An error occurred in the template while displaying the signature result",
 		"Виникла помилка при збереженні файлу {0}": "An error occurred while saving {0} file",
+		"Виникла помилка при ініціалізації локального сховища браузера": "An error occurred while initializing the browser's local storage",
+		"Виникла помилка при отриманні особистого ключа з локального сховища браузера": "An error occurred while getting the private key from the browser's local storage",
+		"Виникла помилка при збереженні особистого ключа до локального сховища браузера": "An error occurred while saving the private key to the browser's local storage",
+		"Носій особистого ключа {0} не підключено": "Private key media {0} not connected",
 
 		"Ви відмовилися надавати ідентифікаційні дані ос. ключа. Продовжити?": "You refused to provide key credentials. Continue?",
 	
@@ -2106,7 +2209,7 @@ input:checked ~ .HelpPanelItemContent {
 	}
 };
 		var LIBRARY_HOST_LOCALIZATION = null;
-		var LIBRARY_VERSION = "2025.08.25 13:00";
+		var LIBRARY_VERSION = "2026.09.28 13:00";
 		// var STATISTICS_URL = "./Server/StatisticsController.php";
 		var STATISTICS_URL = "";
 
@@ -2122,7 +2225,7 @@ input:checked ~ .HelpPanelItemContent {
 
 		scripts.forEach(function(src) {
 			var script = document.createElement('script');
-			script.src = src + "?v=2025.08.25 13:00";
+			script.src = src + "?v=2026.09.28 13:00";
 			script.async = false;
 			document.head.appendChild(script);
 		});
@@ -2375,6 +2478,13 @@ input:checked ~ .HelpPanelItemContent {
 						<p class="FormHelperText error i18n" id="pkReadFileSelectCertsErrorLabel" style="display:none">Оберіть файл з сертифікатами</p>
 					</div>
 
+					<div id="pkReadFileSaveBlock" class="Block FormControl" style="display:none">
+						<br>
+						<div>
+							<input id="pkReadFileSaveCheckbox" class="Checkbox" type="checkbox"><span class="i18n">Зберегти параметри ключа до локального сховища браузера</span>
+						</div>
+					</div>
+
 					<div id="pkReadFileButtonBlock" class="ButtonBlock FlexBlock">
 						<div id="pkReadFileBackButton" class="Button FlexBlockItem i18n">Назад</div>
 						<div id="pkReadFileButton" class="Button ButtonBlack FlexBlockItem i18n" disabled>Далі</div>	
@@ -2436,7 +2546,14 @@ input:checked ~ .HelpPanelItemContent {
 						</div>
 
 						<p class="FormHelperText error i18n" id="pkReadKMSelectCertsErrorLabel" style="display:none">Оберіть файл з сертифікатами</p>
-					</div>	
+					</div>
+
+					<div id="pkReadKMSaveBlock" class="Block FormControl" style="display:none">
+						<br>
+						<div>
+							<input id="pkReadKMSaveCheckbox" class="Checkbox" type="checkbox"><span class="i18n">Зберегти параметри ключа до локального сховища браузера</span>
+						</div>
+					</div>
 
 					<div id="pkReadKMButtonBlock" class="ButtonBlock FlexBlock">
 						<div id="pkReadKMBackButton" class="Button FlexBlockItem i18n">Назад</div>
@@ -2462,6 +2579,13 @@ input:checked ~ .HelpPanelItemContent {
 							<input id="pkReadKSPUserIdTextField" class="TextField" type="text" disabled>
 						</div>
 						<p class="FormHelperText error i18n" id="pkReadKSPUserIdErrorLabel" style="display:none">Введіть ідентифікатор користувача</p>
+					</div>
+
+					<div id="pkReadKSPSaveBlock" class="Block FormControl" style="display:none">
+						<br>
+						<div>
+							<input id="pkReadKSPSaveCheckbox" class="Checkbox" type="checkbox"><span class="i18n">Зберегти параметри до локального сховища браузера</span>
+						</div>
 					</div>
 
 					<div id="pkReadKSPButtonBlock" class="ButtonBlock FlexBlock">
@@ -2562,6 +2686,16 @@ input:checked ~ .HelpPanelItemContent {
 						<div class="FlexBlockItem">
 							<h5 class="i18n">ЄДРПОУ</h5>
 							<label id="pkInfoSubjEDRPOUCode"></label>
+						</div>
+					</div>
+					<div id="pkInfoSubjForeignOrgCodesBlock" class="Block">
+						<div class="Block">
+							<h5 class="i18n">Код іноземної юридичної особи</h5>
+							<label id="pkInfoSubjOCode"></label>
+						</div>
+						<div class="Block">
+							<h5 class="i18n">Код користувача іноземної юридичної особи</h5>
+							<label id="pkInfoSubjUserCode"></label>
 						</div>
 					</div>
 					<br>
@@ -2816,7 +2950,7 @@ input:checked ~ .HelpPanelItemContent {
 			<br>
 			<br>
 			<div id="bottomBlock" class="Block">
-				<label class='i18n'>Версія від</label><label> 2025.08.25 13:00</label>
+				<label class='i18n'>Версія від</label><label> 2026.09.28 13:00</label>
 			</div>
 		</div>
 
