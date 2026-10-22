@@ -568,7 +568,7 @@ function dateFormatter(dateString) {
             return A;
           }),
           n.d(t, "EU_CERT_KEY_TYPE_ECDSA", function () {
-            return R;
+            return m;
           }),
           n.d(t, "EndUserCertKeyType", function () {
             return y;
@@ -577,10 +577,10 @@ function dateFormatter(dateString) {
             return g;
           }),
           n.d(t, "EU_CERT_HASH_TYPE_GOST34311", function () {
-            return P;
+            return v;
           }),
           n.d(t, "EU_CERT_HASH_TYPE_SHA1", function () {
-            return v;
+            return P;
           }),
           n.d(t, "EU_CERT_HASH_TYPE_SHA224", function () {
             return I;
@@ -589,22 +589,22 @@ function dateFormatter(dateString) {
             return U;
           }),
           n.d(t, "EU_CERT_HASH_TYPE_SHA384", function () {
-            return O;
+            return b;
           }),
           n.d(t, "EU_CERT_HASH_TYPE_SHA512", function () {
-            return D;
+            return O;
           }),
           n.d(t, "EU_CERT_HASH_TYPE_DSTU7564_256", function () {
-            return b;
+            return D;
           }),
           n.d(t, "EU_CERT_HASH_TYPE_DSTU7564_384", function () {
             return k;
           }),
           n.d(t, "EU_CERT_HASH_TYPE_DSTU7564_512", function () {
-            return N;
+            return w;
           }),
           n.d(t, "EndUserCertHashType", function () {
-            return m;
+            return R;
           }),
           n.d(t, "EU_KEY_USAGE_UNKNOWN", function () {
             return M;
@@ -619,25 +619,25 @@ function dateFormatter(dateString) {
             return L;
           }),
           n.d(t, "EndUserKeyUsage", function () {
-            return w;
+            return N;
           }),
           n.d(t, "EU_CCS_TYPE_REVOKE", function () {
-            return F;
+            return B;
           }),
           n.d(t, "EU_CCS_TYPE_HOLD", function () {
             return x;
           }),
           n.d(t, "EndUserCCSType", function () {
-            return B;
+            return F;
           }),
           n.d(t, "EU_REVOCATION_REASON_UNKNOWN", function () {
             return H;
           }),
           n.d(t, "EU_REVOCATION_REASON_KEY_COMPROMISE", function () {
-            return V;
+            return W;
           }),
           n.d(t, "EU_REVOCATION_REASON_NEW_ISSUED", function () {
-            return W;
+            return V;
           }),
           n.d(t, "EndUserRevocationReason", function () {
             return Y;
@@ -730,19 +730,19 @@ function dateFormatter(dateString) {
             return Ae;
           }),
           n.d(t, "EU_KEYS_LENGTH_DS_ECDSA_FILE", function () {
-            return Re;
+            return me;
           }),
           n.d(t, "EU_KEYS_LENGTH_DS_ECDSA_CERT", function () {
-            return me;
+            return Re;
           }),
           n.d(t, "EndUserKeysLengthDSECDSA", function () {
             return de;
           }),
           n.d(t, "EU_KEYS_REQUEST_TYPE_UA_DS", function () {
-            return Pe;
+            return ve;
           }),
           n.d(t, "EU_KEYS_REQUEST_TYPE_UA_KEP", function () {
-            return ve;
+            return Pe;
           }),
           n.d(t, "EU_KEYS_REQUEST_TYPE_INT_RSA", function () {
             return Ie;
@@ -751,19 +751,19 @@ function dateFormatter(dateString) {
             return ge;
           }),
           n.d(t, "EU_MOBILE_OPERATOR_ID_KYIVSTAR", function () {
-            return Oe;
+            return be;
           }),
           n.d(t, "EU_MOBILE_OPERATOR_ID_VODAFONE", function () {
-            return De;
+            return Oe;
           }),
           n.d(t, "EU_MOBILE_OPERATOR_ID_LIFECELL", function () {
-            return be;
+            return De;
           }),
           n.d(t, "EndUserMobileOperatorID", function () {
             return Ue;
           }),
           n.d(t, "EU_KSP_IIT", function () {
-            return we;
+            return Ne;
           }),
           n.d(t, "EU_KSP_UKEY", function () {
             return Me;
@@ -778,13 +778,13 @@ function dateFormatter(dateString) {
             return ke;
           }),
           n.d(t, "EndUserKSPClientIdType", function () {
-            return Ne;
+            return we;
           }),
           n.d(t, "EU_SIGN_TYPE_UNKNOWN", function () {
-            return Be;
+            return Fe;
           }),
           n.d(t, "EU_SIGN_TYPE_CADES_BES", function () {
-            return Fe;
+            return Be;
           }),
           n.d(t, "EU_SIGN_TYPE_CADES_T", function () {
             return xe;
@@ -796,7 +796,7 @@ function dateFormatter(dateString) {
             return He;
           }),
           n.d(t, "EU_SIGN_TYPE_CADES_X_LONG_TRUSTED", function () {
-            return Ve;
+            return We;
           }),
           n.d(t, "EndUserSignType", function () {
             return Le;
@@ -811,7 +811,7 @@ function dateFormatter(dateString) {
             return Xe;
           }),
           n.d(t, "EndUserCAdESType", function () {
-            return We;
+            return Ve;
           }),
           n.d(t, "EU_CTX_SIGN_UNKNOWN", function () {
             return Je;
@@ -892,19 +892,19 @@ function dateFormatter(dateString) {
             return At;
           }),
           n.d(t, "EU_ASIC_TYPE_S", function () {
-            return Rt;
+            return mt;
           }),
           n.d(t, "EU_ASIC_TYPE_E", function () {
-            return mt;
+            return Rt;
           }),
           n.d(t, "EndUserASiCType", function () {
             return Tt;
           }),
           n.d(t, "EU_ASIC_SIGN_TYPE_UNKNOWN", function () {
-            return Pt;
+            return vt;
           }),
           n.d(t, "EU_ASIC_SIGN_TYPE_CADES", function () {
-            return vt;
+            return Pt;
           }),
           n.d(t, "EU_ASIC_SIGN_TYPE_XADES", function () {
             return It;
@@ -913,13 +913,13 @@ function dateFormatter(dateString) {
             return gt;
           }),
           n.d(t, "EU_XADES_TYPE_UNKNOWN", function () {
-            return Ot;
+            return bt;
           }),
           n.d(t, "EU_XADES_TYPE_DETACHED", function () {
-            return Dt;
+            return Ot;
           }),
           n.d(t, "EU_XADES_TYPE_ENVELOPING", function () {
-            return bt;
+            return Dt;
           }),
           n.d(t, "EU_XADES_TYPE_ENVELOPED", function () {
             return kt;
@@ -928,7 +928,7 @@ function dateFormatter(dateString) {
             return Ut;
           }),
           n.d(t, "EU_XADES_SIGN_LEVEL_UNKNOWN", function () {
-            return wt;
+            return Nt;
           }),
           n.d(t, "EU_XADES_SIGN_LEVEL_B_B", function () {
             return Mt;
@@ -943,7 +943,7 @@ function dateFormatter(dateString) {
             return Lt;
           }),
           n.d(t, "EndUserXAdESSignLevel", function () {
-            return Nt;
+            return wt;
           }),
           n.d(t, "EU_PADES_SIGN_LEVEL_UNKNOWN", function () {
             return xt;
@@ -955,16 +955,16 @@ function dateFormatter(dateString) {
             return Ht;
           }),
           n.d(t, "EU_PADES_SIGN_LEVEL_B_LT", function () {
-            return Vt;
-          }),
-          n.d(t, "EU_PADES_SIGN_LEVEL_B_LTA", function () {
             return Wt;
           }),
+          n.d(t, "EU_PADES_SIGN_LEVEL_B_LTA", function () {
+            return Vt;
+          }),
           n.d(t, "EndUserPAdESSignLevel", function () {
-            return Bt;
+            return Ft;
           }),
           n.d(t, "EndUserEventType", function () {
-            return Ft;
+            return Bt;
           }),
           n.d(t, "EU_SIGN_CONTAINER_TYPE_UNKNOWN", function () {
             return jt;
@@ -1021,37 +1021,37 @@ function dateFormatter(dateString) {
           C = 0,
           T = 1,
           A = 2,
-          R = 4;
+          m = 4;
         !(function (e) {
           ((e[(e.Unknown = C)] = "Unknown"),
             (e[(e.DSTU4145 = T)] = "DSTU4145"),
             (e[(e.RSA = A)] = "RSA"),
-            (e[(e.ECDSA = R)] = "ECDSA"));
+            (e[(e.ECDSA = m)] = "ECDSA"));
         })(y || (y = {}));
-        var m,
+        var R,
           g = 0,
-          P = 1,
-          v = 2,
+          v = 1,
+          P = 2,
           I = 3,
           U = 4,
-          O = 5,
-          D = 6,
-          b = 7,
+          b = 5,
+          O = 6,
+          D = 7,
           k = 8,
-          N = 9;
+          w = 9;
         !(function (e) {
           ((e[(e.Unknown = g)] = "Unknown"),
-            (e[(e.GOST34311 = P)] = "GOST34311"),
-            (e[(e.SHA1 = v)] = "SHA1"),
+            (e[(e.GOST34311 = v)] = "GOST34311"),
+            (e[(e.SHA1 = P)] = "SHA1"),
             (e[(e.SHA224 = I)] = "SHA224"),
             (e[(e.SHA256 = U)] = "SHA256"),
-            (e[(e.SHA384 = O)] = "SHA384"),
-            (e[(e.SHA512 = D)] = "SHA512"),
-            (e[(e.DSTU7564_256 = b)] = "DSTU7564_256"),
+            (e[(e.SHA384 = b)] = "SHA384"),
+            (e[(e.SHA512 = O)] = "SHA512"),
+            (e[(e.DSTU7564_256 = D)] = "DSTU7564_256"),
             (e[(e.DSTU7564_384 = k)] = "DSTU7564_384"),
-            (e[(e.DSTU7564_512 = N)] = "DSTU7564_512"));
-        })(m || (m = {}));
-        var w,
+            (e[(e.DSTU7564_512 = w)] = "DSTU7564_512"));
+        })(R || (R = {}));
+        var N,
           M = 0,
           G = 1,
           K = 2,
@@ -1061,21 +1061,21 @@ function dateFormatter(dateString) {
             (e[(e.DigitalSignature = G)] = "DigitalSignature"),
             (e[(e.NonRepudation = K)] = "NonRepudation"),
             (e[(e.KeyAgreement = L)] = "KeyAgreement"));
-        })(w || (w = {}));
-        var B,
-          F = 1,
+        })(N || (N = {}));
+        var F,
+          B = 1,
           x = 2;
         !(function (e) {
-          ((e[(e.Revoke = F)] = "Revoke"), (e[(e.Hold = x)] = "Hold"));
-        })(B || (B = {}));
+          ((e[(e.Revoke = B)] = "Revoke"), (e[(e.Hold = x)] = "Hold"));
+        })(F || (F = {}));
         var Y,
           H = 0,
-          V = 1,
-          W = 2;
+          W = 1,
+          V = 2;
         !(function (e) {
           ((e[(e.Unknown = H)] = "Unknown"),
-            (e[(e.KeyCompromise = V)] = "KeyCompromise"),
-            (e[(e.NewIssued = W)] = "NewIssued"));
+            (e[(e.KeyCompromise = W)] = "KeyCompromise"),
+            (e[(e.NewIssued = V)] = "NewIssued"));
         })(Y || (Y = {}));
         var $,
           j = 0,
@@ -1136,45 +1136,45 @@ function dateFormatter(dateString) {
           Ce = 2,
           Te = 3,
           Ae = 4,
-          Re = 5,
-          me = 6;
+          me = 5,
+          Re = 6;
         !(function (e) {
           ((e[(e.EC_192 = ye)] = "EC_192"),
             (e[(e.EC_256 = Ce)] = "EC_256"),
             (e[(e.EC_384 = Te)] = "EC_384"),
             (e[(e.EC_521 = Ae)] = "EC_521"),
-            (e[(e.File = Re)] = "File"),
-            (e[(e.Cert = me)] = "Cert"));
+            (e[(e.File = me)] = "File"),
+            (e[(e.Cert = Re)] = "Cert"));
         })(de || (de = {}));
         var ge,
-          Pe = 1,
-          ve = 2,
+          ve = 1,
+          Pe = 2,
           Ie = 3;
         !(function (e) {
-          ((e[(e.uaDS = Pe)] = "uaDS"),
-            (e[(e.uaKEP = ve)] = "uaKEP"),
+          ((e[(e.uaDS = ve)] = "uaDS"),
+            (e[(e.uaKEP = Pe)] = "uaKEP"),
             (e[(e.intRSA = Ie)] = "intRSA"));
         })(ge || (ge = {}));
         var Ue,
-          Oe = 1,
-          De = 2,
-          be = 3;
+          be = 1,
+          Oe = 2,
+          De = 3;
         !(function (e) {
-          ((e[(e.Kyivstar = Oe)] = "Kyivstar"),
-            (e[(e.Vodafone = De)] = "Vodafone"),
-            (e[(e.Lifecell = be)] = "Lifecell"));
+          ((e[(e.Kyivstar = be)] = "Kyivstar"),
+            (e[(e.Vodafone = Oe)] = "Vodafone"),
+            (e[(e.Lifecell = De)] = "Lifecell"));
         })(Ue || (Ue = {}));
         var ke,
-          Ne,
-          we = 4,
+          we,
+          Ne = 4,
           Me = 5,
           Ge = 6,
           Ke = 7;
         (!(function (e) {
-          ((e[(e.Kyivstar = Oe)] = "Kyivstar"),
-            (e[(e.Vodafone = De)] = "Vodafone"),
-            (e[(e.Lifecell = be)] = "Lifecell"),
-            (e[(e.IIT = we)] = "IIT"),
+          ((e[(e.Kyivstar = be)] = "Kyivstar"),
+            (e[(e.Vodafone = Oe)] = "Vodafone"),
+            (e[(e.Lifecell = De)] = "Lifecell"),
+            (e[(e.IIT = Ne)] = "IIT"),
             (e[(e.UKey = Me)] = "UKey"),
             (e[(e.PB = Ge)] = "PB"),
             (e[(e.DIIA = Ke)] = "DIIA"));
@@ -1184,23 +1184,23 @@ function dateFormatter(dateString) {
               (e[(e.Name = 1)] = "Name"),
               (e[(e.Phone = 2)] = "Phone"),
               (e[(e.Email = 3)] = "Email"));
-          })(Ne || (Ne = {})));
+          })(we || (we = {})));
         var Le,
-          Be = 0,
-          Fe = 1,
+          Fe = 0,
+          Be = 1,
           xe = 4,
           Ye = 8,
           He = 16,
-          Ve = 128;
+          We = 128;
         !(function (e) {
-          ((e[(e.Unknown = Be)] = "Unknown"),
-            (e[(e.CAdES_BES = Fe)] = "CAdES_BES"),
+          ((e[(e.Unknown = Fe)] = "Unknown"),
+            (e[(e.CAdES_BES = Be)] = "CAdES_BES"),
             (e[(e.CAdES_T = xe)] = "CAdES_T"),
             (e[(e.CAdES_C = Ye)] = "CAdES_C"),
             (e[(e.CAdES_X_Long = He)] = "CAdES_X_Long"),
-            (e[(e.CAdES_X_Long_Trusted = Ve)] = "CAdES_X_Long_Trusted"));
+            (e[(e.CAdES_X_Long_Trusted = We)] = "CAdES_X_Long_Trusted"));
         })(Le || (Le = {}));
-        var We,
+        var Ve,
           $e = 0,
           je = 1,
           Xe = 3;
@@ -1208,7 +1208,7 @@ function dateFormatter(dateString) {
           ((e[(e.Unknown = $e)] = "Unknown"),
             (e[(e.Detached = je)] = "Detached"),
             (e[(e.Enveloped = Xe)] = "Enveloped"));
-        })(We || (We = {}));
+        })(Ve || (Ve = {}));
         var ze,
           Je = 0,
           qe = 1,
@@ -1260,65 +1260,65 @@ function dateFormatter(dateString) {
         })(lt || (lt = {}));
         var Tt,
           At = 0,
-          Rt = 1,
-          mt = 2;
+          mt = 1,
+          Rt = 2;
         !(function (e) {
           ((e[(e.Unknown = At)] = "Unknown"),
-            (e[(e.S = Rt)] = "S"),
-            (e[(e.E = mt)] = "E"));
+            (e[(e.S = mt)] = "S"),
+            (e[(e.E = Rt)] = "E"));
         })(Tt || (Tt = {}));
         var gt,
-          Pt = 0,
-          vt = 1,
+          vt = 0,
+          Pt = 1,
           It = 2;
         !(function (e) {
-          ((e[(e.Unknown = Pt)] = "Unknown"),
-            (e[(e.CAdES = vt)] = "CAdES"),
+          ((e[(e.Unknown = vt)] = "Unknown"),
+            (e[(e.CAdES = Pt)] = "CAdES"),
             (e[(e.XAdES = It)] = "XAdES"));
         })(gt || (gt = {}));
         var Ut,
-          Ot = 0,
-          Dt = 1,
-          bt = 2,
+          bt = 0,
+          Ot = 1,
+          Dt = 2,
           kt = 3;
         !(function (e) {
-          ((e[(e.Unknown = Ot)] = "Unknown"),
-            (e[(e.Detached = Dt)] = "Detached"),
-            (e[(e.Enveloping = bt)] = "Enveloping"),
+          ((e[(e.Unknown = bt)] = "Unknown"),
+            (e[(e.Detached = Ot)] = "Detached"),
+            (e[(e.Enveloping = Dt)] = "Enveloping"),
             (e[(e.Enveloped = kt)] = "Enveloped"));
         })(Ut || (Ut = {}));
-        var Nt,
-          wt = 0,
+        var wt,
+          Nt = 0,
           Mt = 1,
           Gt = 4,
           Kt = 16,
           Lt = 32;
         !(function (e) {
-          ((e[(e.Unknown = wt)] = "Unknown"),
+          ((e[(e.Unknown = Nt)] = "Unknown"),
             (e[(e.B_B = Mt)] = "B_B"),
             (e[(e.B_T = Gt)] = "B_T"),
             (e[(e.B_LT = Kt)] = "B_LT"),
             (e[(e.B_LTA = Lt)] = "B_LTA"));
-        })(Nt || (Nt = {}));
-        var Bt,
-          Ft,
+        })(wt || (wt = {}));
+        var Ft,
+          Bt,
           xt = 0,
           Yt = 1,
           Ht = 4,
-          Vt = 16,
-          Wt = 32;
+          Wt = 16,
+          Vt = 32;
         (!(function (e) {
-          ((e[(e.Unknown = wt)] = "Unknown"),
+          ((e[(e.Unknown = Nt)] = "Unknown"),
             (e[(e.B_B = Yt)] = "B_B"),
             (e[(e.B_T = Ht)] = "B_T"),
-            (e[(e.B_LT = Vt)] = "B_LT"),
-            (e[(e.B_LTA = Wt)] = "B_LTA"));
-        })(Bt || (Bt = {})),
+            (e[(e.B_LT = Wt)] = "B_LT"),
+            (e[(e.B_LTA = Vt)] = "B_LTA"));
+        })(Ft || (Ft = {})),
           (function (e) {
             ((e[(e.None = 0)] = "None"),
               (e[(e.All = 1)] = "All"),
               (e[(e.ConfirmKSPOperation = 2)] = "ConfirmKSPOperation"));
-          })(Ft || (Ft = {})));
+          })(Bt || (Bt = {})));
         var $t,
           jt = 0,
           Xt = 1,
@@ -1394,19 +1394,19 @@ function dateFormatter(dateString) {
             return A;
           }),
           n.d(t, "EU_ERROR_KEY_MEDIAS_WRITE_FAILED", function () {
-            return R;
+            return m;
           }),
           n.d(t, "EU_WARNING_KEY_MEDIAS_READ_ONLY", function () {
-            return m;
+            return R;
           }),
           n.d(t, "EU_ERROR_KEY_MEDIAS_DELETE", function () {
             return g;
           }),
           n.d(t, "EU_ERROR_KEY_MEDIAS_CLEAR", function () {
-            return P;
+            return v;
           }),
           n.d(t, "EU_ERROR_BAD_PRIVATE_KEY", function () {
-            return v;
+            return P;
           }),
           n.d(t, "EU_ERROR_PKI_FORMATS_FAILED", function () {
             return I;
@@ -1415,22 +1415,22 @@ function dateFormatter(dateString) {
             return U;
           }),
           n.d(t, "EU_ERROR_BAD_SIGNATURE", function () {
-            return O;
+            return b;
           }),
           n.d(t, "EU_ERROR_AUTH_FAILED", function () {
-            return D;
+            return O;
           }),
           n.d(t, "EU_ERROR_NOT_RECEIVER", function () {
-            return b;
+            return D;
           }),
           n.d(t, "EU_ERROR_STORAGE_FAILED", function () {
             return k;
           }),
           n.d(t, "EU_ERROR_BAD_CERT", function () {
-            return N;
+            return w;
           }),
           n.d(t, "EU_ERROR_CERT_NOT_FOUND", function () {
-            return w;
+            return N;
           }),
           n.d(t, "EU_ERROR_INVALID_CERT_TIME", function () {
             return M;
@@ -1445,10 +1445,10 @@ function dateFormatter(dateString) {
             return L;
           }),
           n.d(t, "EU_ERROR_GET_TIME_STAMP", function () {
-            return B;
+            return F;
           }),
           n.d(t, "EU_ERROR_BAD_TSP_RESPONSE", function () {
-            return F;
+            return B;
           }),
           n.d(t, "EU_ERROR_TSP_SERVER_CERT_NOT_FOUND", function () {
             return x;
@@ -1460,10 +1460,10 @@ function dateFormatter(dateString) {
             return H;
           }),
           n.d(t, "EU_ERROR_BAD_OCSP_RESPONSE", function () {
-            return V;
+            return W;
           }),
           n.d(t, "EU_ERROR_CERT_BAD_BY_OCSP", function () {
-            return W;
+            return V;
           }),
           n.d(t, "EU_ERROR_OCSP_SERVER_CERT_NOT_FOUND", function () {
             return $;
@@ -1496,30 +1496,30 @@ function dateFormatter(dateString) {
           C = 17,
           T = 18,
           A = 19,
-          R = 20,
-          m = 21,
+          m = 20,
+          R = 21,
           g = 22,
-          P = 23,
-          v = 24,
+          v = 23,
+          P = 24,
           I = 33,
           U = 34,
-          O = 35,
-          D = 36,
-          b = 37,
+          b = 35,
+          O = 36,
+          D = 37,
           k = 49,
-          N = 50,
-          w = 51,
+          w = 50,
+          N = 51,
           M = 52,
           G = 53,
           K = 54,
           L = 55,
-          B = 65,
-          F = 66,
+          F = 65,
+          B = 66,
           x = 67,
           Y = 68,
           H = 81,
-          V = 82,
-          W = 83,
+          W = 82,
+          V = 83,
           $ = 84,
           j = 85,
           X = 97,
@@ -2205,9 +2205,9 @@ function dateFormatter(dateString) {
                       (void 0 === e && (e = "UTF-8"),
                       null == (n = r.GetCoder(e)))
                     )
-                      throw new ne(
-                        (i = te.ERROR_BAD_PARAMETER),
-                        te.getErrorDescriptionEx(i, 0),
+                      throw new oe(
+                        (i = ie.ERROR_BAD_PARAMETER),
+                        ie.getErrorDescriptionEx(i, 0),
                       );
                     return n.decode(t);
                   },
@@ -3255,8 +3255,8 @@ function dateFormatter(dateString) {
                     var r = "";
                     return (
                       (r =
-                        te.getErrorDescriptionEx(
-                          te.ERROR_LIBRARY_COMUNICATION_FAILED,
+                        ie.getErrorDescriptionEx(
+                          ie.ERROR_LIBRARY_COMUNICATION_FAILED,
                           e.m_language,
                         ) + ". "),
                       (r += c.getString(
@@ -3274,7 +3274,7 @@ function dateFormatter(dateString) {
                       void e._onLoadError(
                         !0,
                         r,
-                        te.ERROR_LIBRARY_COMUNICATION_FAILED,
+                        ie.ERROR_LIBRARY_COMUNICATION_FAILED,
                         null,
                       )
                     );
@@ -3283,7 +3283,7 @@ function dateFormatter(dateString) {
                 }),
                 (p.prototype._appendWebWrapperObject = function (e, t, n, r) {
                   try {
-                    var i = new re(e, t),
+                    var i = new se(e, t),
                       o = document.createElement("object");
                     for (var s in (o.setAttribute("id", this.m_id),
                     n
@@ -3315,14 +3315,14 @@ function dateFormatter(dateString) {
                       p.isWebExtensionSupported() &&
                       !p.isWebExtensionInstalled() &&
                       this.m_webExtensionFirst),
-                    (i += te.getErrorDescriptionEx(
-                      te.ERROR_LIBRARY_COMUNICATION_FAILED,
+                    (i += ie.getErrorDescriptionEx(
+                      ie.ERROR_LIBRARY_COMUNICATION_FAILED,
                       this.m_language,
                     )),
                     (i += ". "),
                     e.GetErrorCode())
                   ) {
-                    case te.ERROR_LIBRARY_COMUNICATION_FAILED:
+                    case ie.ERROR_LIBRARY_COMUNICATION_FAILED:
                       i += c.getString(
                         t
                           ? c.WEB_LIBRARY_WEB_EXTENSION_NOT_INSTALLED_OR_RUN
@@ -3330,7 +3330,7 @@ function dateFormatter(dateString) {
                         this.m_language,
                       );
                       break;
-                    case te.ERROR_LIBRARY_VERSION_NOT_SUPPORTED:
+                    case ie.ERROR_LIBRARY_VERSION_NOT_SUPPORTED:
                       ((i += c.getString(
                         c.WEB_LIBRARY_INSTALLED_VERSION_NOT_SUPPORTED,
                         this.m_language,
@@ -3340,7 +3340,7 @@ function dateFormatter(dateString) {
                       break;
                     default:
                       i +=
-                        te.getErrorDescriptionEx(
+                        ie.getErrorDescriptionEx(
                           e.GetErrorCode(),
                           this.m_language,
                         ) + ".";
@@ -3348,7 +3348,7 @@ function dateFormatter(dateString) {
                   ((i += "<br><br>"),
                     null != n.GetInstallURL()
                       ? (e.GetErrorCode() ==
-                        te.ERROR_LIBRARY_VERSION_NOT_SUPPORTED
+                        ie.ERROR_LIBRARY_VERSION_NOT_SUPPORTED
                           ? (i +=
                               '<div><a style="text-indent:18px" href="' +
                               n.GetUpdateURL() +
@@ -3415,14 +3415,14 @@ function dateFormatter(dateString) {
                   )
                     this._loadWebLibrary();
                   else {
-                    var e = te.getErrorDescriptionEx(
-                      te.ERROR_LIBRARY_COMUNICATION_FAILED,
+                    var e = ie.getErrorDescriptionEx(
+                      ie.ERROR_LIBRARY_COMUNICATION_FAILED,
                       this.m_language,
                     );
                     this._onLoadError(
                       !0,
                       e,
-                      te.ERROR_LIBRARY_COMUNICATION_FAILED,
+                      ie.ERROR_LIBRARY_COMUNICATION_FAILED,
                       null,
                     );
                   }
@@ -3438,14 +3438,14 @@ function dateFormatter(dateString) {
                   )
                     this._loadWebLibrary();
                   else {
-                    var e = te.getErrorDescriptionEx(
-                      te.ERROR_LIBRARY_COMUNICATION_FAILED,
+                    var e = ie.getErrorDescriptionEx(
+                      ie.ERROR_LIBRARY_COMUNICATION_FAILED,
                       this.m_language,
                     );
                     this._onLoadError(
                       !0,
                       e,
-                      te.ERROR_LIBRARY_COMUNICATION_FAILED,
+                      ie.ERROR_LIBRARY_COMUNICATION_FAILED,
                       null,
                     );
                   }
@@ -3454,14 +3454,14 @@ function dateFormatter(dateString) {
                   if (this._appendWebWrapperObject(e, "", !0, r))
                     this._waitForPluginLoad(this, t, n);
                   else {
-                    var i = te.getErrorDescriptionEx(
-                      te.ERROR_LIBRARY_COMUNICATION_FAILED,
+                    var i = ie.getErrorDescriptionEx(
+                      ie.ERROR_LIBRARY_COMUNICATION_FAILED,
                       this.m_language,
                     );
                     this._onLoadError(
                       !0,
                       i,
-                      te.ERROR_LIBRARY_COMUNICATION_FAILED,
+                      ie.ERROR_LIBRARY_COMUNICATION_FAILED,
                       null,
                     );
                   }
@@ -3473,7 +3473,7 @@ function dateFormatter(dateString) {
                     },
                     function (r) {
                       r.GetErrorCode() !=
-                        te.ERROR_LIBRARY_COMUNICATION_FAILED || 0 == n
+                        ie.ERROR_LIBRARY_COMUNICATION_FAILED || 0 == n
                         ? e._onLoadWebLibraryError(r)
                         : setTimeout(
                             function () {
@@ -3640,23 +3640,23 @@ function dateFormatter(dateString) {
                       if ("time" == this.fields[n])
                         this[n] = this.dateCoder.decode(t[n]);
                       else if ("EndUserOwnerInfo" == this.fields[n])
-                        ((this[n] = new O()), this[n].decode(t[n]));
+                        ((this[n] = new b()), this[n].decode(t[n]));
                       else if ("EndUserTimeInfo" == this.fields[n])
-                        ((this[n] = new D()), this[n].decode(t[n]));
+                        ((this[n] = new O()), this[n].decode(t[n]));
                       else if ("EndUserKeyMedia" == this.fields[n])
                         ((this[n] = new d()), this[n].decode(t[n]));
                       else if ("EndUserCertificateInfoEx" == this.fields[n])
-                        ((this[n] = new w()), this[n].decode(t[n]));
+                        ((this[n] = new N()), this[n].decode(t[n]));
                       else if ("byteArray" == this.fields[n])
                         null != t[n] &&
                           (this[n] = this.base64Coder.decode(t[n]));
                       else if ("array" == this.fields[n]) {
                         this[n] = [];
                         for (var r = t[n], i = 0; i < r.length; i++) {
-                          var o = r[i].className,
-                            s = new h[o]();
-                          if (void 0 !== s) {
-                            if (!s.decode(r[i])) throw "invalid class";
+                          var o = r[i].className;
+                          if (void 0 !== o) {
+                            var s = new h[o]();
+                            if (!s.decode(r[i])) throw "Invalid class " + o;
                             ("EndUserByteArray" == s.className &&
                               (s = s.GetData()),
                               this[n].push(s));
@@ -3897,7 +3897,7 @@ function dateFormatter(dateString) {
                 (A.prototype.SetPort = function (e) {
                   this.port = e;
                 }));
-              var R = function () {
+              var m = function () {
                 (this.setClassInfo("EndUserLDAPSettings", 1),
                   (this.fields = {
                     useLDAP: "boolean",
@@ -3910,60 +3910,12 @@ function dateFormatter(dateString) {
                   this.initializeFields(),
                   (this.port = "389"));
               };
-              (h.makeTransferable(R),
-                (R.prototype.GetUseLDAP = function () {
+              (h.makeTransferable(m),
+                (m.prototype.GetUseLDAP = function () {
                   return this.useLDAP;
                 }),
-                (R.prototype.SetUseLDAP = function (e) {
+                (m.prototype.SetUseLDAP = function (e) {
                   this.useLDAP = e;
-                }),
-                (R.prototype.GetAddress = function () {
-                  return this.address;
-                }),
-                (R.prototype.SetAddress = function (e) {
-                  this.address = e;
-                }),
-                (R.prototype.GetPort = function () {
-                  return this.port;
-                }),
-                (R.prototype.SetPort = function (e) {
-                  this.port = e;
-                }),
-                (R.prototype.GetAnonymous = function () {
-                  return this.anonymous;
-                }),
-                (R.prototype.SetAnonymous = function (e) {
-                  this.anonymous = e;
-                }),
-                (R.prototype.GetUser = function () {
-                  return this.user;
-                }),
-                (R.prototype.SetUser = function (e) {
-                  this.user = e;
-                }),
-                (R.prototype.GetPassword = function () {
-                  return this.password;
-                }),
-                (R.prototype.SetPassword = function (e) {
-                  this.password = e;
-                }));
-              var m = function () {
-                (this.setClassInfo("EndUserCMPSettings", 1),
-                  (this.fields = {
-                    useCMP: "boolean",
-                    address: "string",
-                    port: "string",
-                    commonName: "string",
-                  }),
-                  this.initializeFields(),
-                  (this.port = "80"));
-              };
-              (h.makeTransferable(m),
-                (m.prototype.GetUseCMP = function () {
-                  return this.useCMP;
-                }),
-                (m.prototype.SetUseCMP = function (e) {
-                  this.useCMP = e;
                 }),
                 (m.prototype.GetAddress = function () {
                   return this.address;
@@ -3977,10 +3929,58 @@ function dateFormatter(dateString) {
                 (m.prototype.SetPort = function (e) {
                   this.port = e;
                 }),
-                (m.prototype.GetCommonName = function () {
+                (m.prototype.GetAnonymous = function () {
+                  return this.anonymous;
+                }),
+                (m.prototype.SetAnonymous = function (e) {
+                  this.anonymous = e;
+                }),
+                (m.prototype.GetUser = function () {
+                  return this.user;
+                }),
+                (m.prototype.SetUser = function (e) {
+                  this.user = e;
+                }),
+                (m.prototype.GetPassword = function () {
+                  return this.password;
+                }),
+                (m.prototype.SetPassword = function (e) {
+                  this.password = e;
+                }));
+              var R = function () {
+                (this.setClassInfo("EndUserCMPSettings", 1),
+                  (this.fields = {
+                    useCMP: "boolean",
+                    address: "string",
+                    port: "string",
+                    commonName: "string",
+                  }),
+                  this.initializeFields(),
+                  (this.port = "80"));
+              };
+              (h.makeTransferable(R),
+                (R.prototype.GetUseCMP = function () {
+                  return this.useCMP;
+                }),
+                (R.prototype.SetUseCMP = function (e) {
+                  this.useCMP = e;
+                }),
+                (R.prototype.GetAddress = function () {
+                  return this.address;
+                }),
+                (R.prototype.SetAddress = function (e) {
+                  this.address = e;
+                }),
+                (R.prototype.GetPort = function () {
+                  return this.port;
+                }),
+                (R.prototype.SetPort = function (e) {
+                  this.port = e;
+                }),
+                (R.prototype.GetCommonName = function () {
                   return this.commonName;
                 }),
-                (m.prototype.SetCommonName = function (e) {
+                (R.prototype.SetCommonName = function (e) {
                   this.commonName = e;
                 }));
               var g = function () {
@@ -3997,21 +3997,21 @@ function dateFormatter(dateString) {
                 (g.prototype.SetOfflineMode = function (e) {
                   this.offlineMode = e;
                 }));
-              var P = function () {
+              var v = function () {
                 (this.setClassInfo("EndUserOCSPAccessInfoModeSettings", 1),
                   (this.fields = {
                     enabled: "boolean",
                   }),
                   this.initializeFields());
               };
-              (h.makeTransferable(P),
-                (P.prototype.GetEnabled = function () {
+              (h.makeTransferable(v),
+                (v.prototype.GetEnabled = function () {
                   return this.enabled;
                 }),
-                (P.prototype.SetEnabled = function (e) {
+                (v.prototype.SetEnabled = function (e) {
                   this.enabled = e;
                 }));
-              var v = function () {
+              var P = function () {
                 (this.setClassInfo("EndUserOCSPAccessInfoSettings", 1),
                   (this.fields = {
                     issuerCN: "string",
@@ -4020,23 +4020,23 @@ function dateFormatter(dateString) {
                   }),
                   this.initializeFields());
               };
-              (h.makeTransferable(v),
-                (v.prototype.GetIssuerCN = function () {
+              (h.makeTransferable(P),
+                (P.prototype.GetIssuerCN = function () {
                   return this.issuerCN;
                 }),
-                (v.prototype.SetIssuerCN = function (e) {
+                (P.prototype.SetIssuerCN = function (e) {
                   this.issuerCN = e;
                 }),
-                (v.prototype.GetAddress = function () {
+                (P.prototype.GetAddress = function () {
                   return this.address;
                 }),
-                (v.prototype.SetAddress = function (e) {
+                (P.prototype.SetAddress = function (e) {
                   this.address = e;
                 }),
-                (v.prototype.GetPort = function () {
+                (P.prototype.GetPort = function () {
                   return this.port;
                 }),
-                (v.prototype.SetPort = function (e) {
+                (P.prototype.SetPort = function (e) {
                   this.port = e;
                 }));
               var I = function () {
@@ -4097,7 +4097,7 @@ function dateFormatter(dateString) {
                 (U.prototype.SetTSLAddress = function (e) {
                   this.tslAddress = e;
                 }));
-              var O = function () {
+              var b = function () {
                 (this.setClassInfo("EndUserOwnerInfo", 1),
                   (this.fields = {
                     isFilled: "boolean",
@@ -4121,62 +4121,62 @@ function dateFormatter(dateString) {
                   }),
                   this.initializeFields());
               };
-              (h.makeTransferable(O),
-                (O.prototype.IsFilled = function () {
+              (h.makeTransferable(b),
+                (b.prototype.IsFilled = function () {
                   return this.isFilled;
                 }),
-                (O.prototype.GetIssuer = function () {
+                (b.prototype.GetIssuer = function () {
                   return this.issuer;
                 }),
-                (O.prototype.GetIssuerCN = function () {
+                (b.prototype.GetIssuerCN = function () {
                   return this.issuerCN;
                 }),
-                (O.prototype.GetSerial = function () {
+                (b.prototype.GetSerial = function () {
                   return this.serial;
                 }),
-                (O.prototype.GetSubject = function () {
+                (b.prototype.GetSubject = function () {
                   return this.subject;
                 }),
-                (O.prototype.GetSubjCN = function () {
+                (b.prototype.GetSubjCN = function () {
                   return this.subjCN;
                 }),
-                (O.prototype.GetSubjOrg = function () {
+                (b.prototype.GetSubjOrg = function () {
                   return this.subjOrg;
                 }),
-                (O.prototype.GetSubjOrgUnit = function () {
+                (b.prototype.GetSubjOrgUnit = function () {
                   return this.subjOrgUnit;
                 }),
-                (O.prototype.GetSubjTitle = function () {
+                (b.prototype.GetSubjTitle = function () {
                   return this.subjTitle;
                 }),
-                (O.prototype.GetSubjState = function () {
+                (b.prototype.GetSubjState = function () {
                   return this.subjState;
                 }),
-                (O.prototype.GetSubjLocality = function () {
+                (b.prototype.GetSubjLocality = function () {
                   return this.subjLocality;
                 }),
-                (O.prototype.GetSubjFullName = function () {
+                (b.prototype.GetSubjFullName = function () {
                   return this.subjFullName;
                 }),
-                (O.prototype.GetSubjAddress = function () {
+                (b.prototype.GetSubjAddress = function () {
                   return this.subjAddress;
                 }),
-                (O.prototype.GetSubjPhone = function () {
+                (b.prototype.GetSubjPhone = function () {
                   return this.subjPhone;
                 }),
-                (O.prototype.GetSubjEMail = function () {
+                (b.prototype.GetSubjEMail = function () {
                   return this.subjEMail;
                 }),
-                (O.prototype.GetSubjDNS = function () {
+                (b.prototype.GetSubjDNS = function () {
                   return this.subjDNS;
                 }),
-                (O.prototype.GetSubjEDRPOUCode = function () {
+                (b.prototype.GetSubjEDRPOUCode = function () {
                   return this.subjEDRPOUCode;
                 }),
-                (O.prototype.GetSubjDRFOCode = function () {
+                (b.prototype.GetSubjDRFOCode = function () {
                   return this.subjDRFOCode;
                 }));
-              var D = function () {
+              var O = function () {
                 (this.setClassInfo("EndUserTimeInfo", 2),
                   (this.fields = {
                     version: "number",
@@ -4188,26 +4188,26 @@ function dateFormatter(dateString) {
                   }),
                   this.initializeFields());
               };
-              (h.makeTransferable(D),
-                (D.prototype.GetVersion = function () {
+              (h.makeTransferable(O),
+                (O.prototype.GetVersion = function () {
                   return this.version;
                 }),
-                (D.prototype.IsTimeAvail = function () {
+                (O.prototype.IsTimeAvail = function () {
                   return this.isTimeAvail;
                 }),
-                (D.prototype.IsTimeStamp = function () {
+                (O.prototype.IsTimeStamp = function () {
                   return this.isTimeStamp;
                 }),
-                (D.prototype.GetTime = function () {
+                (O.prototype.GetTime = function () {
                   return this.time;
                 }),
-                (D.prototype.IsSignTimeStampAvail = function () {
+                (O.prototype.IsSignTimeStampAvail = function () {
                   return this.isSignTimeStampAvail;
                 }),
-                (D.prototype.GetSignTimeStamp = function () {
+                (O.prototype.GetSignTimeStamp = function () {
                   return this.signTimeStamp;
                 }));
-              var b = function () {
+              var D = function () {
                 (this.setClassInfo("EndUserSignInfo", 1),
                   (this.fields = {
                     ownerInfo: "EndUserOwnerInfo",
@@ -4216,17 +4216,17 @@ function dateFormatter(dateString) {
                   }),
                   this.initializeFields());
               };
-              (h.makeTransferable(b),
-                (b.prototype.GetOwnerInfo = function () {
+              (h.makeTransferable(D),
+                (D.prototype.GetOwnerInfo = function () {
                   return this.ownerInfo;
                 }),
-                (b.prototype.GetTimeInfo = function () {
+                (D.prototype.GetTimeInfo = function () {
                   return this.timeInfo;
                 }),
-                (b.prototype.GetData = function () {
+                (D.prototype.GetData = function () {
                   return this.data;
                 }),
-                (b.prototype.GetDataString = function (e) {
+                (D.prototype.GetDataString = function (e) {
                   return r.ArrayToString(e, this.data);
                 }));
               var k = function () {
@@ -4251,7 +4251,7 @@ function dateFormatter(dateString) {
                 (k.prototype.GetDataString = function (e) {
                   return r.ArrayToString(e, this.data);
                 }));
-              var N = function () {
+              var w = function () {
                 (this.setClassInfo("EndUserCertificateInfo", 1),
                   (this.fields = {
                     isFilled: "boolean",
@@ -4301,213 +4301,6 @@ function dateFormatter(dateString) {
                     isSubjCA: "boolean",
                   }),
                   this.initializeFields());
-              };
-              (h.makeTransferable(N),
-                (N.prototype.IsFilled = function () {
-                  return this.isFilled;
-                }),
-                (N.prototype.GetVersion = function () {
-                  return this.version;
-                }),
-                (N.prototype.GetIssuer = function () {
-                  return this.issuer;
-                }),
-                (N.prototype.GetIssuerCN = function () {
-                  return this.issuerCN;
-                }),
-                (N.prototype.GetSerial = function () {
-                  return this.serial;
-                }),
-                (N.prototype.GetSubject = function () {
-                  return this.subject;
-                }),
-                (N.prototype.GetSubjCN = function () {
-                  return this.subjCN;
-                }),
-                (N.prototype.GetSubjOrg = function () {
-                  return this.subjOrg;
-                }),
-                (N.prototype.GetSubjOrgUnit = function () {
-                  return this.subjOrgUnit;
-                }),
-                (N.prototype.GetSubjTitle = function () {
-                  return this.subjTitle;
-                }),
-                (N.prototype.GetSubjState = function () {
-                  return this.subjState;
-                }),
-                (N.prototype.GetSubjLocality = function () {
-                  return this.subjLocality;
-                }),
-                (N.prototype.GetSubjFullName = function () {
-                  return this.subjFullName;
-                }),
-                (N.prototype.GetSubjAddress = function () {
-                  return this.subjAddress;
-                }),
-                (N.prototype.GetSubjPhone = function () {
-                  return this.subjPhone;
-                }),
-                (N.prototype.GetSubjEMail = function () {
-                  return this.subjEMail;
-                }),
-                (N.prototype.GetSubjDNS = function () {
-                  return this.subjDNS;
-                }),
-                (N.prototype.GetSubjEDRPOUCode = function () {
-                  return this.subjEDRPOUCode;
-                }),
-                (N.prototype.GetSubjDRFOCode = function () {
-                  return this.subjDRFOCode;
-                }),
-                (N.prototype.GetSubjNBUCode = function () {
-                  return this.subjNBUCode;
-                }),
-                (N.prototype.GetSubjSPFMCode = function () {
-                  return this.subjSPFMCode;
-                }),
-                (N.prototype.GetSubjOCode = function () {
-                  return this.subjOCode;
-                }),
-                (N.prototype.GetSubjOUCode = function () {
-                  return this.subjOUCode;
-                }),
-                (N.prototype.GetSubjUserCode = function () {
-                  return this.subjUserCode;
-                }),
-                (N.prototype.GetCertBeginTime = function () {
-                  return this.certBeginTime;
-                }),
-                (N.prototype.GetCertEndTime = function () {
-                  return this.certEndTime;
-                }),
-                (N.prototype.IsPrivKeyTimesAvail = function () {
-                  return this.isPrivKeyTimesAvail;
-                }),
-                (N.prototype.GetPrivKeyBeginTime = function () {
-                  return this.privKeyBeginTime;
-                }),
-                (N.prototype.GetPrivKeyEndTime = function () {
-                  return this.privKeyEndTime;
-                }),
-                (N.prototype.GetPublicKeyBits = function () {
-                  return this.publicKeyBits;
-                }),
-                (N.prototype.GetPublicKey = function () {
-                  return this.publicKey;
-                }),
-                (N.prototype.GetPublicKeyID = function () {
-                  return this.publicKeyID;
-                }),
-                (N.prototype.IsECDHPublicKeyAvail = function () {
-                  return this.isECDHPublicKeyAvail;
-                }),
-                (N.prototype.GetECDHPublicKeyBits = function () {
-                  return this.ECDHPublicKeyBits;
-                }),
-                (N.prototype.GetECDHPublicKey = function () {
-                  return this.ECDHPublicKey;
-                }),
-                (N.prototype.GetECDHPublicKeyID = function () {
-                  return this.ECDHPublicKeyID;
-                }),
-                (N.prototype.GetIssuerPublicKeyID = function () {
-                  return this.issuerPublicKeyID;
-                }),
-                (N.prototype.GetKeyUsage = function () {
-                  return this.keyUsage;
-                }),
-                (N.prototype.GetExtKeyUsages = function () {
-                  return this.extKeyUsages;
-                }),
-                (N.prototype.GetPolicies = function () {
-                  return this.policies;
-                }),
-                (N.prototype.GetCRLDistribPoint1 = function () {
-                  return this.crlDistribPoint1;
-                }),
-                (N.prototype.GetCRLDistribPoint2 = function () {
-                  return this.crlDistribPoint2;
-                }),
-                (N.prototype.IsPowerCert = function () {
-                  return this.isPowerCert;
-                }),
-                (N.prototype.IsSubjTypeAvail = function () {
-                  return this.isSubjTypeAvail;
-                }),
-                (N.prototype.IsSubjCA = function () {
-                  return this.isSubjCA;
-                }));
-              var w = function () {
-                (this.setClassInfo("EndUserCertificateInfoEx", 8),
-                  (this.fields = {
-                    isFilled: "boolean",
-                    version: "long",
-                    issuer: "string",
-                    issuerCN: "string",
-                    serial: "string",
-                    subject: "string",
-                    subjCN: "string",
-                    subjOrg: "string",
-                    subjOrgUnit: "string",
-                    subjTitle: "string",
-                    subjState: "string",
-                    subjLocality: "string",
-                    subjFullName: "string",
-                    subjAddress: "string",
-                    subjPhone: "string",
-                    subjEMail: "string",
-                    subjDNS: "string",
-                    subjEDRPOUCode: "string",
-                    subjDRFOCode: "string",
-                    subjNBUCode: "string",
-                    subjSPFMCode: "string",
-                    subjOCode: "string",
-                    subjOUCode: "string",
-                    subjUserCode: "string",
-                    certBeginTime: "time",
-                    certEndTime: "time",
-                    isPrivKeyTimesAvail: "boolean",
-                    privKeyBeginTime: "time",
-                    privKeyEndTime: "time",
-                    publicKeyBits: "long",
-                    publicKey: "string",
-                    publicKeyID: "string",
-                    issuerPublicKeyID: "string",
-                    keyUsage: "string",
-                    extKeyUsages: "string",
-                    policies: "string",
-                    crlDistribPoint1: "string",
-                    crlDistribPoint2: "string",
-                    isPowerCert: "boolean",
-                    isSubjTypeAvail: "boolean",
-                    isSubjCA: "boolean",
-                    chainLength: "int",
-                    UPN: "string",
-                    publicKeyType: "long",
-                    keyUsageType: "long",
-                    RSAModul: "string",
-                    RSAExponent: "string",
-                    OCSPAccessInfo: "string",
-                    issuerAccessInfo: "string",
-                    TSPAccessInfo: "string",
-                    isLimitValueAvailable: "boolean",
-                    limitValue: "long",
-                    limitValueCurrency: "string",
-                    subjType: "long",
-                    subjSubType: "long",
-                    subjUNZR: "string",
-                    subjCountry: "string",
-                    fingerprint: "string",
-                    isQSCD: "boolean",
-                    subjUserID: "string",
-                    certHashType: "number",
-                  }),
-                  this.initializeFields());
-                var e = this;
-                this.IsLimitValueAvailable = function () {
-                  return e.isLimitValueAvailable;
-                };
               };
               (h.makeTransferable(w),
                 (w.prototype.IsFilled = function () {
@@ -4606,6 +4399,18 @@ function dateFormatter(dateString) {
                 (w.prototype.GetPublicKeyID = function () {
                   return this.publicKeyID;
                 }),
+                (w.prototype.IsECDHPublicKeyAvail = function () {
+                  return this.isECDHPublicKeyAvail;
+                }),
+                (w.prototype.GetECDHPublicKeyBits = function () {
+                  return this.ECDHPublicKeyBits;
+                }),
+                (w.prototype.GetECDHPublicKey = function () {
+                  return this.ECDHPublicKey;
+                }),
+                (w.prototype.GetECDHPublicKeyID = function () {
+                  return this.ECDHPublicKeyID;
+                }),
                 (w.prototype.GetIssuerPublicKeyID = function () {
                   return this.issuerPublicKeyID;
                 }),
@@ -4632,65 +4437,260 @@ function dateFormatter(dateString) {
                 }),
                 (w.prototype.IsSubjCA = function () {
                   return this.isSubjCA;
+                }));
+              var N = function () {
+                (this.setClassInfo("EndUserCertificateInfoEx", 8),
+                  (this.fields = {
+                    isFilled: "boolean",
+                    version: "long",
+                    issuer: "string",
+                    issuerCN: "string",
+                    serial: "string",
+                    subject: "string",
+                    subjCN: "string",
+                    subjOrg: "string",
+                    subjOrgUnit: "string",
+                    subjTitle: "string",
+                    subjState: "string",
+                    subjLocality: "string",
+                    subjFullName: "string",
+                    subjAddress: "string",
+                    subjPhone: "string",
+                    subjEMail: "string",
+                    subjDNS: "string",
+                    subjEDRPOUCode: "string",
+                    subjDRFOCode: "string",
+                    subjNBUCode: "string",
+                    subjSPFMCode: "string",
+                    subjOCode: "string",
+                    subjOUCode: "string",
+                    subjUserCode: "string",
+                    certBeginTime: "time",
+                    certEndTime: "time",
+                    isPrivKeyTimesAvail: "boolean",
+                    privKeyBeginTime: "time",
+                    privKeyEndTime: "time",
+                    publicKeyBits: "long",
+                    publicKey: "string",
+                    publicKeyID: "string",
+                    issuerPublicKeyID: "string",
+                    keyUsage: "string",
+                    extKeyUsages: "string",
+                    policies: "string",
+                    crlDistribPoint1: "string",
+                    crlDistribPoint2: "string",
+                    isPowerCert: "boolean",
+                    isSubjTypeAvail: "boolean",
+                    isSubjCA: "boolean",
+                    chainLength: "int",
+                    UPN: "string",
+                    publicKeyType: "long",
+                    keyUsageType: "long",
+                    RSAModul: "string",
+                    RSAExponent: "string",
+                    OCSPAccessInfo: "string",
+                    issuerAccessInfo: "string",
+                    TSPAccessInfo: "string",
+                    isLimitValueAvailable: "boolean",
+                    limitValue: "long",
+                    limitValueCurrency: "string",
+                    subjType: "long",
+                    subjSubType: "long",
+                    subjUNZR: "string",
+                    subjCountry: "string",
+                    fingerprint: "string",
+                    isQSCD: "boolean",
+                    subjUserID: "string",
+                    certHashType: "number",
+                  }),
+                  this.initializeFields());
+                var e = this;
+                this.IsLimitValueAvailable = function () {
+                  return e.isLimitValueAvailable;
+                };
+              };
+              (h.makeTransferable(N),
+                (N.prototype.IsFilled = function () {
+                  return this.isFilled;
                 }),
-                (w.prototype.GetChainLength = function () {
+                (N.prototype.GetVersion = function () {
+                  return this.version;
+                }),
+                (N.prototype.GetIssuer = function () {
+                  return this.issuer;
+                }),
+                (N.prototype.GetIssuerCN = function () {
+                  return this.issuerCN;
+                }),
+                (N.prototype.GetSerial = function () {
+                  return this.serial;
+                }),
+                (N.prototype.GetSubject = function () {
+                  return this.subject;
+                }),
+                (N.prototype.GetSubjCN = function () {
+                  return this.subjCN;
+                }),
+                (N.prototype.GetSubjOrg = function () {
+                  return this.subjOrg;
+                }),
+                (N.prototype.GetSubjOrgUnit = function () {
+                  return this.subjOrgUnit;
+                }),
+                (N.prototype.GetSubjTitle = function () {
+                  return this.subjTitle;
+                }),
+                (N.prototype.GetSubjState = function () {
+                  return this.subjState;
+                }),
+                (N.prototype.GetSubjLocality = function () {
+                  return this.subjLocality;
+                }),
+                (N.prototype.GetSubjFullName = function () {
+                  return this.subjFullName;
+                }),
+                (N.prototype.GetSubjAddress = function () {
+                  return this.subjAddress;
+                }),
+                (N.prototype.GetSubjPhone = function () {
+                  return this.subjPhone;
+                }),
+                (N.prototype.GetSubjEMail = function () {
+                  return this.subjEMail;
+                }),
+                (N.prototype.GetSubjDNS = function () {
+                  return this.subjDNS;
+                }),
+                (N.prototype.GetSubjEDRPOUCode = function () {
+                  return this.subjEDRPOUCode;
+                }),
+                (N.prototype.GetSubjDRFOCode = function () {
+                  return this.subjDRFOCode;
+                }),
+                (N.prototype.GetSubjNBUCode = function () {
+                  return this.subjNBUCode;
+                }),
+                (N.prototype.GetSubjSPFMCode = function () {
+                  return this.subjSPFMCode;
+                }),
+                (N.prototype.GetSubjOCode = function () {
+                  return this.subjOCode;
+                }),
+                (N.prototype.GetSubjOUCode = function () {
+                  return this.subjOUCode;
+                }),
+                (N.prototype.GetSubjUserCode = function () {
+                  return this.subjUserCode;
+                }),
+                (N.prototype.GetCertBeginTime = function () {
+                  return this.certBeginTime;
+                }),
+                (N.prototype.GetCertEndTime = function () {
+                  return this.certEndTime;
+                }),
+                (N.prototype.IsPrivKeyTimesAvail = function () {
+                  return this.isPrivKeyTimesAvail;
+                }),
+                (N.prototype.GetPrivKeyBeginTime = function () {
+                  return this.privKeyBeginTime;
+                }),
+                (N.prototype.GetPrivKeyEndTime = function () {
+                  return this.privKeyEndTime;
+                }),
+                (N.prototype.GetPublicKeyBits = function () {
+                  return this.publicKeyBits;
+                }),
+                (N.prototype.GetPublicKey = function () {
+                  return this.publicKey;
+                }),
+                (N.prototype.GetPublicKeyID = function () {
+                  return this.publicKeyID;
+                }),
+                (N.prototype.GetIssuerPublicKeyID = function () {
+                  return this.issuerPublicKeyID;
+                }),
+                (N.prototype.GetKeyUsage = function () {
+                  return this.keyUsage;
+                }),
+                (N.prototype.GetExtKeyUsages = function () {
+                  return this.extKeyUsages;
+                }),
+                (N.prototype.GetPolicies = function () {
+                  return this.policies;
+                }),
+                (N.prototype.GetCRLDistribPoint1 = function () {
+                  return this.crlDistribPoint1;
+                }),
+                (N.prototype.GetCRLDistribPoint2 = function () {
+                  return this.crlDistribPoint2;
+                }),
+                (N.prototype.IsPowerCert = function () {
+                  return this.isPowerCert;
+                }),
+                (N.prototype.IsSubjTypeAvail = function () {
+                  return this.isSubjTypeAvail;
+                }),
+                (N.prototype.IsSubjCA = function () {
+                  return this.isSubjCA;
+                }),
+                (N.prototype.GetChainLength = function () {
                   return this.chainLength;
                 }),
-                (w.prototype.GetUPN = function () {
+                (N.prototype.GetUPN = function () {
                   return this.UPN;
                 }),
-                (w.prototype.GetPublicKeyType = function () {
+                (N.prototype.GetPublicKeyType = function () {
                   return this.publicKeyType;
                 }),
-                (w.prototype.GetKeyUsageType = function () {
+                (N.prototype.GetKeyUsageType = function () {
                   return this.keyUsageType;
                 }),
-                (w.prototype.GetRSAModul = function () {
+                (N.prototype.GetRSAModul = function () {
                   return this.RSAModul;
                 }),
-                (w.prototype.GetRSAExponent = function () {
+                (N.prototype.GetRSAExponent = function () {
                   return this.RSAExponent;
                 }),
-                (w.prototype.GetOCSPAccessInfo = function () {
+                (N.prototype.GetOCSPAccessInfo = function () {
                   return this.OCSPAccessInfo;
                 }),
-                (w.prototype.GetIssuerAccessInfo = function () {
+                (N.prototype.GetIssuerAccessInfo = function () {
                   return this.issuerAccessInfo;
                 }),
-                (w.prototype.GetTSPAccessInfo = function () {
+                (N.prototype.GetTSPAccessInfo = function () {
                   return this.TSPAccessInfo;
                 }),
-                (w.prototype.IsLimitValueAvail = function () {
+                (N.prototype.IsLimitValueAvail = function () {
                   return this.isLimitValueAvailable;
                 }),
-                (w.prototype.GetLimitValue = function () {
+                (N.prototype.GetLimitValue = function () {
                   return this.limitValue;
                 }),
-                (w.prototype.GetLimitValueCurrency = function () {
+                (N.prototype.GetLimitValueCurrency = function () {
                   return this.limitValueCurrency;
                 }),
-                (w.prototype.GetSubjType = function () {
+                (N.prototype.GetSubjType = function () {
                   return this.subjType;
                 }),
-                (w.prototype.GetSubjSubType = function () {
+                (N.prototype.GetSubjSubType = function () {
                   return this.subjSubType;
                 }),
-                (w.prototype.GetSubjUNZR = function () {
+                (N.prototype.GetSubjUNZR = function () {
                   return this.subjUNZR;
                 }),
-                (w.prototype.GetSubjCountry = function () {
+                (N.prototype.GetSubjCountry = function () {
                   return this.subjCountry;
                 }),
-                (w.prototype.GetFingerprint = function () {
+                (N.prototype.GetFingerprint = function () {
                   return this.fingerprint;
                 }),
-                (w.prototype.IsQSCD = function () {
+                (N.prototype.IsQSCD = function () {
                   return this.isQSCD;
                 }),
-                (w.prototype.GetSubjUserID = function () {
+                (N.prototype.GetSubjUserID = function () {
                   return this.subjUserID;
                 }),
-                (w.prototype.GetCertHashType = function () {
+                (N.prototype.GetCertHashType = function () {
                   return this.certHashType;
                 }));
               var M = function () {
@@ -4809,6 +4809,29 @@ function dateFormatter(dateString) {
                 (L.prototype.SetPrivateKeyInfo = function (e) {
                   this.privateKeyInfo = e;
                 }));
+              var F = function () {
+                (this.setClassInfo("EndUserPrivateKeyInfoEx", 1),
+                  (this.fields = {
+                    keyType: "number",
+                    keyUsage: "number",
+                    keyIDs: "array",
+                    isTrustedKeyIDs: "boolean",
+                  }),
+                  this.initializeFields());
+              };
+              (h.makeTransferable(F),
+                (F.prototype.GetKeyType = function () {
+                  return this.keyType;
+                }),
+                (F.prototype.GetKeyUsage = function () {
+                  return this.keyUsage;
+                }),
+                (F.prototype.GetKeyIDs = function () {
+                  return this.keyIDs;
+                }),
+                (F.prototype.GetIsTrustedKeyIDs = function () {
+                  return this.isTrustedKeyIDs;
+                }));
               var B = function () {
                 (this.setClassInfo("EndUserJKSPrivateKey", 1),
                   (this.fields = {
@@ -4832,7 +4855,7 @@ function dateFormatter(dateString) {
                 (B.prototype.GetCertificates = function () {
                   return this.certificates;
                 }));
-              var F = function () {
+              var x = function () {
                 (this.setClassInfo("EndUserRequestInfo", 4),
                   (this.fields = {
                     request: "byteArray",
@@ -4884,146 +4907,146 @@ function dateFormatter(dateString) {
                   }),
                   this.initializeFields());
               };
-              (h.makeTransferable(F),
-                (F.prototype.GetRequest = function () {
+              (h.makeTransferable(x),
+                (x.prototype.GetRequest = function () {
                   return this.request;
                 }),
-                (F.prototype.GetRequestType = function () {
+                (x.prototype.GetRequestType = function () {
                   return this.requestType;
                 }),
-                (F.prototype.GetDefaultRequestFileName = function () {
+                (x.prototype.GetDefaultRequestFileName = function () {
                   return this.defaultRequestFileName;
                 }),
-                (F.prototype.IsSimple = function () {
+                (x.prototype.IsSimple = function () {
                   return this.isSimple;
                 }),
-                (F.prototype.GetSubject = function () {
+                (x.prototype.GetSubject = function () {
                   return this.subject;
                 }),
-                (F.prototype.GetSubjCN = function () {
+                (x.prototype.GetSubjCN = function () {
                   return this.subjCN;
                 }),
-                (F.prototype.GetSubjOrg = function () {
+                (x.prototype.GetSubjOrg = function () {
                   return this.subjOrg;
                 }),
-                (F.prototype.GetSubjOrgUnit = function () {
+                (x.prototype.GetSubjOrgUnit = function () {
                   return this.subjOrgUnit;
                 }),
-                (F.prototype.GetSubjTitle = function () {
+                (x.prototype.GetSubjTitle = function () {
                   return this.subjTitle;
                 }),
-                (F.prototype.GetSubjState = function () {
+                (x.prototype.GetSubjState = function () {
                   return this.subjState;
                 }),
-                (F.prototype.GetSubjLocality = function () {
+                (x.prototype.GetSubjLocality = function () {
                   return this.subjLocality;
                 }),
-                (F.prototype.GetSubjFullName = function () {
+                (x.prototype.GetSubjFullName = function () {
                   return this.subjFullName;
                 }),
-                (F.prototype.GetSubjAddress = function () {
+                (x.prototype.GetSubjAddress = function () {
                   return this.subjAddress;
                 }),
-                (F.prototype.GetSubjPhone = function () {
+                (x.prototype.GetSubjPhone = function () {
                   return this.subjPhone;
                 }),
-                (F.prototype.GetSubjEMail = function () {
+                (x.prototype.GetSubjEMail = function () {
                   return this.subjEMail;
                 }),
-                (F.prototype.GetSubjDNS = function () {
+                (x.prototype.GetSubjDNS = function () {
                   return this.subjDNS;
                 }),
-                (F.prototype.GetSubjEDRPOUCode = function () {
+                (x.prototype.GetSubjEDRPOUCode = function () {
                   return this.subjEDRPOUCode;
                 }),
-                (F.prototype.GetSubjDRFOCode = function () {
+                (x.prototype.GetSubjDRFOCode = function () {
                   return this.subjDRFOCode;
                 }),
-                (F.prototype.GetSubjNBUCode = function () {
+                (x.prototype.GetSubjNBUCode = function () {
                   return this.subjNBUCode;
                 }),
-                (F.prototype.GetSubjSPFMCode = function () {
+                (x.prototype.GetSubjSPFMCode = function () {
                   return this.subjSPFMCode;
                 }),
-                (F.prototype.GetSubjOCode = function () {
+                (x.prototype.GetSubjOCode = function () {
                   return this.subjOCode;
                 }),
-                (F.prototype.GetSubjOUCode = function () {
+                (x.prototype.GetSubjOUCode = function () {
                   return this.subjOUCode;
                 }),
-                (F.prototype.GetSubjUserCode = function () {
+                (x.prototype.GetSubjUserCode = function () {
                   return this.subjUserCode;
                 }),
-                (F.prototype.GetCertBeginTime = function () {
+                (x.prototype.GetCertBeginTime = function () {
                   return this.certBeginTime;
                 }),
-                (F.prototype.GetCertEndTime = function () {
+                (x.prototype.GetCertEndTime = function () {
                   return this.certEndTime;
                 }),
-                (F.prototype.IsPrivKeyTimesAvail = function () {
+                (x.prototype.IsPrivKeyTimesAvail = function () {
                   return this.isPrivKeyTimesAvail;
                 }),
-                (F.prototype.GetPrivKeyBeginTime = function () {
+                (x.prototype.GetPrivKeyBeginTime = function () {
                   return this.privKeyBeginTime;
                 }),
-                (F.prototype.GetPrivKeyEndTime = function () {
+                (x.prototype.GetPrivKeyEndTime = function () {
                   return this.privKeyEndTime;
                 }),
-                (F.prototype.GetPublicKeyType = function () {
+                (x.prototype.GetPublicKeyType = function () {
                   return this.publicKeyType;
                 }),
-                (F.prototype.GetPublicKeyBits = function () {
+                (x.prototype.GetPublicKeyBits = function () {
                   return this.publicKeyBits;
                 }),
-                (F.prototype.GetRSAModul = function () {
+                (x.prototype.GetRSAModul = function () {
                   return this.RSAModul;
                 }),
-                (F.prototype.GetRSAExponent = function () {
+                (x.prototype.GetRSAExponent = function () {
                   return this.RSAExponent;
                 }),
-                (F.prototype.GetPublicKey = function () {
+                (x.prototype.GetPublicKey = function () {
                   return this.publicKey;
                 }),
-                (F.prototype.GetPublicKeyID = function () {
+                (x.prototype.GetPublicKeyID = function () {
                   return this.publicKeyID;
                 }),
-                (F.prototype.GetExtKeyUsages = function () {
+                (x.prototype.GetExtKeyUsages = function () {
                   return this.extKeyUsages;
                 }),
-                (F.prototype.GetCRLDistribPoint1 = function () {
+                (x.prototype.GetCRLDistribPoint1 = function () {
                   return this.crlDistribPoint1;
                 }),
-                (F.prototype.GetCRLDistribPoint2 = function () {
+                (x.prototype.GetCRLDistribPoint2 = function () {
                   return this.crlDistribPoint2;
                 }),
-                (F.prototype.IsSubjTypeAvail = function () {
+                (x.prototype.IsSubjTypeAvail = function () {
                   return this.isSubjTypeAvail;
                 }),
-                (F.prototype.GetSubjType = function () {
+                (x.prototype.GetSubjType = function () {
                   return this.subjType;
                 }),
-                (F.prototype.GetSubjSubType = function () {
+                (x.prototype.GetSubjSubType = function () {
                   return this.subjSubType;
                 }),
-                (F.prototype.IsSelfSigned = function () {
+                (x.prototype.IsSelfSigned = function () {
                   return this.isSelfSigned;
                 }),
-                (F.prototype.GetSignIssuer = function () {
+                (x.prototype.GetSignIssuer = function () {
                   return this.signIssuer;
                 }),
-                (F.prototype.GetSignSerial = function () {
+                (x.prototype.GetSignSerial = function () {
                   return this.signSerial;
                 }),
-                (F.prototype.GetSubjUNZR = function () {
+                (x.prototype.GetSubjUNZR = function () {
                   return this.subjUNZR;
                 }),
-                (F.prototype.GetSubjCountry = function () {
+                (x.prototype.GetSubjCountry = function () {
                   return this.subjCountry;
                 }),
-                (F.prototype.IsQSCD = function () {
+                (x.prototype.IsQSCD = function () {
                   return this.isQSCD;
                 }));
-              var x = function () {
+              var Y = function () {
                 (this.setClassInfo("EndUserInfo", 3),
                   (this.fields = {
                     commonName: "string",
@@ -5051,173 +5074,7 @@ function dateFormatter(dateString) {
                   }),
                   this.initializeFields());
               };
-              (h.makeTransferable(x),
-                (x.prototype.GetCommonName = function () {
-                  return this.commonName;
-                }),
-                (x.prototype.SetCommonName = function (e) {
-                  this.commonName = e;
-                }),
-                (x.prototype.GetLocality = function () {
-                  return this.locality;
-                }),
-                (x.prototype.SetLocality = function (e) {
-                  this.locality = e;
-                }),
-                (x.prototype.GetState = function () {
-                  return this.state;
-                }),
-                (x.prototype.SetState = function (e) {
-                  this.state = e;
-                }),
-                (x.prototype.GetOrganization = function () {
-                  return this.organization;
-                }),
-                (x.prototype.SetOrganization = function (e) {
-                  this.organization = e;
-                }),
-                (x.prototype.GetOrgUnit = function () {
-                  return this.orgUnit;
-                }),
-                (x.prototype.SetOrgUnit = function (e) {
-                  this.orgUnit = e;
-                }),
-                (x.prototype.GetTitle = function () {
-                  return this.title;
-                }),
-                (x.prototype.SetTitle = function (e) {
-                  this.title = e;
-                }),
-                (x.prototype.GetStreet = function () {
-                  return this.street;
-                }),
-                (x.prototype.SetStreet = function (e) {
-                  this.street = e;
-                }),
-                (x.prototype.GetPhone = function () {
-                  return this.phone;
-                }),
-                (x.prototype.SetPhone = function (e) {
-                  this.phone = e;
-                }),
-                (x.prototype.GetSurname = function () {
-                  return this.surname;
-                }),
-                (x.prototype.SetSurname = function (e) {
-                  this.surname = e;
-                }),
-                (x.prototype.GetGivenname = function () {
-                  return this.givenname;
-                }),
-                (x.prototype.SetGivenname = function (e) {
-                  this.givenname = e;
-                }),
-                (x.prototype.GetEMail = function () {
-                  return this.EMail;
-                }),
-                (x.prototype.SetEMail = function (e) {
-                  this.EMail = e;
-                }),
-                (x.prototype.GetDNS = function () {
-                  return this.DNS;
-                }),
-                (x.prototype.SetDNS = function (e) {
-                  this.DNS = e;
-                }),
-                (x.prototype.GetEDRPOUCode = function () {
-                  return this.EDRPOUCode;
-                }),
-                (x.prototype.SetEDRPOUCode = function (e) {
-                  this.EDRPOUCode = e;
-                }),
-                (x.prototype.GetDRFOCode = function () {
-                  return this.DRFOCode;
-                }),
-                (x.prototype.SetDRFOCode = function (e) {
-                  this.DRFOCode = e;
-                }),
-                (x.prototype.GetNBUCode = function () {
-                  return this.NBUCode;
-                }),
-                (x.prototype.SetNBUCode = function (e) {
-                  this.NBUCode = e;
-                }),
-                (x.prototype.GetSPFMCode = function () {
-                  return this.SPFMCode;
-                }),
-                (x.prototype.SetSPFMCode = function (e) {
-                  this.SPFMCode = e;
-                }),
-                (x.prototype.GetOCode = function () {
-                  return this.OCode;
-                }),
-                (x.prototype.SetOCode = function (e) {
-                  this.OCode = e;
-                }),
-                (x.prototype.GetOUCode = function () {
-                  return this.OUCode;
-                }),
-                (x.prototype.SetOUCode = function (e) {
-                  this.OUCode = e;
-                }),
-                (x.prototype.GetUserCode = function () {
-                  return this.userCode;
-                }),
-                (x.prototype.SetUserCode = function (e) {
-                  this.userCode = e;
-                }),
-                (x.prototype.GetUPN = function () {
-                  return this.UPN;
-                }),
-                (x.prototype.SetUPN = function (e) {
-                  this.UPN = e;
-                }),
-                (x.prototype.GetUNZR = function () {
-                  return this.UNZR;
-                }),
-                (x.prototype.SetUNZR = function (e) {
-                  this.UNZR = e;
-                }),
-                (x.prototype.GetCountry = function () {
-                  return this.country;
-                }),
-                (x.prototype.SetCountry = function (e) {
-                  this.country = e;
-                }));
-              var Y = function () {
-                (this.setClassInfo("EndUserParams", 1),
-                  (this.fields = {
-                    SN: "number",
-                    commonName: "string",
-                    locality: "string",
-                    state: "string",
-                    organization: "string",
-                    orgUnit: "string",
-                    title: "string",
-                    street: "string",
-                    phone: "string",
-                    surname: "string",
-                    givenname: "string",
-                    EMail: "string",
-                    DNS: "string",
-                    EDRPOUCode: "string",
-                    DRFOCode: "string",
-                    NBUCode: "string",
-                    SPFMCode: "string",
-                    information: "string",
-                    passPhrase: "string",
-                    isPublishCertificate: "boolean",
-                    RAAdminSN: "number",
-                  }),
-                  this.initializeFields());
-              };
               (h.makeTransferable(Y),
-                (Y.prototype.GetSN = function () {
-                  return this.SN;
-                }),
-                (Y.prototype.SetSN = function (e) {
-                  this.SN = e;
-                }),
                 (Y.prototype.GetCommonName = function () {
                   return this.commonName;
                 }),
@@ -5314,31 +5171,197 @@ function dateFormatter(dateString) {
                 (Y.prototype.SetSPFMCode = function (e) {
                   this.SPFMCode = e;
                 }),
-                (Y.prototype.GetInformation = function () {
-                  return this.information;
+                (Y.prototype.GetOCode = function () {
+                  return this.OCode;
                 }),
-                (Y.prototype.SetInformation = function (e) {
-                  this.information = e;
+                (Y.prototype.SetOCode = function (e) {
+                  this.OCode = e;
                 }),
-                (Y.prototype.GetPassPhrase = function () {
-                  return this.passPhrase;
+                (Y.prototype.GetOUCode = function () {
+                  return this.OUCode;
                 }),
-                (Y.prototype.SetPassPhrase = function (e) {
-                  this.passPhrase = e;
+                (Y.prototype.SetOUCode = function (e) {
+                  this.OUCode = e;
                 }),
-                (Y.prototype.GetIsPublishCertificate = function () {
-                  return this.isPublishCertificate;
+                (Y.prototype.GetUserCode = function () {
+                  return this.userCode;
                 }),
-                (Y.prototype.SetIsPublishCertificate = function (e) {
-                  this.isPublishCertificate = e;
+                (Y.prototype.SetUserCode = function (e) {
+                  this.userCode = e;
                 }),
-                (Y.prototype.GetRAAdminSN = function () {
-                  return this.RAAdminSN;
+                (Y.prototype.GetUPN = function () {
+                  return this.UPN;
                 }),
-                (Y.prototype.SetRAAdminSN = function (e) {
-                  this.RAAdminSN = e;
+                (Y.prototype.SetUPN = function (e) {
+                  this.UPN = e;
+                }),
+                (Y.prototype.GetUNZR = function () {
+                  return this.UNZR;
+                }),
+                (Y.prototype.SetUNZR = function (e) {
+                  this.UNZR = e;
+                }),
+                (Y.prototype.GetCountry = function () {
+                  return this.country;
+                }),
+                (Y.prototype.SetCountry = function (e) {
+                  this.country = e;
                 }));
               var H = function () {
+                (this.setClassInfo("EndUserParams", 1),
+                  (this.fields = {
+                    SN: "number",
+                    commonName: "string",
+                    locality: "string",
+                    state: "string",
+                    organization: "string",
+                    orgUnit: "string",
+                    title: "string",
+                    street: "string",
+                    phone: "string",
+                    surname: "string",
+                    givenname: "string",
+                    EMail: "string",
+                    DNS: "string",
+                    EDRPOUCode: "string",
+                    DRFOCode: "string",
+                    NBUCode: "string",
+                    SPFMCode: "string",
+                    information: "string",
+                    passPhrase: "string",
+                    isPublishCertificate: "boolean",
+                    RAAdminSN: "number",
+                  }),
+                  this.initializeFields());
+              };
+              (h.makeTransferable(H),
+                (H.prototype.GetSN = function () {
+                  return this.SN;
+                }),
+                (H.prototype.SetSN = function (e) {
+                  this.SN = e;
+                }),
+                (H.prototype.GetCommonName = function () {
+                  return this.commonName;
+                }),
+                (H.prototype.SetCommonName = function (e) {
+                  this.commonName = e;
+                }),
+                (H.prototype.GetLocality = function () {
+                  return this.locality;
+                }),
+                (H.prototype.SetLocality = function (e) {
+                  this.locality = e;
+                }),
+                (H.prototype.GetState = function () {
+                  return this.state;
+                }),
+                (H.prototype.SetState = function (e) {
+                  this.state = e;
+                }),
+                (H.prototype.GetOrganization = function () {
+                  return this.organization;
+                }),
+                (H.prototype.SetOrganization = function (e) {
+                  this.organization = e;
+                }),
+                (H.prototype.GetOrgUnit = function () {
+                  return this.orgUnit;
+                }),
+                (H.prototype.SetOrgUnit = function (e) {
+                  this.orgUnit = e;
+                }),
+                (H.prototype.GetTitle = function () {
+                  return this.title;
+                }),
+                (H.prototype.SetTitle = function (e) {
+                  this.title = e;
+                }),
+                (H.prototype.GetStreet = function () {
+                  return this.street;
+                }),
+                (H.prototype.SetStreet = function (e) {
+                  this.street = e;
+                }),
+                (H.prototype.GetPhone = function () {
+                  return this.phone;
+                }),
+                (H.prototype.SetPhone = function (e) {
+                  this.phone = e;
+                }),
+                (H.prototype.GetSurname = function () {
+                  return this.surname;
+                }),
+                (H.prototype.SetSurname = function (e) {
+                  this.surname = e;
+                }),
+                (H.prototype.GetGivenname = function () {
+                  return this.givenname;
+                }),
+                (H.prototype.SetGivenname = function (e) {
+                  this.givenname = e;
+                }),
+                (H.prototype.GetEMail = function () {
+                  return this.EMail;
+                }),
+                (H.prototype.SetEMail = function (e) {
+                  this.EMail = e;
+                }),
+                (H.prototype.GetDNS = function () {
+                  return this.DNS;
+                }),
+                (H.prototype.SetDNS = function (e) {
+                  this.DNS = e;
+                }),
+                (H.prototype.GetEDRPOUCode = function () {
+                  return this.EDRPOUCode;
+                }),
+                (H.prototype.SetEDRPOUCode = function (e) {
+                  this.EDRPOUCode = e;
+                }),
+                (H.prototype.GetDRFOCode = function () {
+                  return this.DRFOCode;
+                }),
+                (H.prototype.SetDRFOCode = function (e) {
+                  this.DRFOCode = e;
+                }),
+                (H.prototype.GetNBUCode = function () {
+                  return this.NBUCode;
+                }),
+                (H.prototype.SetNBUCode = function (e) {
+                  this.NBUCode = e;
+                }),
+                (H.prototype.GetSPFMCode = function () {
+                  return this.SPFMCode;
+                }),
+                (H.prototype.SetSPFMCode = function (e) {
+                  this.SPFMCode = e;
+                }),
+                (H.prototype.GetInformation = function () {
+                  return this.information;
+                }),
+                (H.prototype.SetInformation = function (e) {
+                  this.information = e;
+                }),
+                (H.prototype.GetPassPhrase = function () {
+                  return this.passPhrase;
+                }),
+                (H.prototype.SetPassPhrase = function (e) {
+                  this.passPhrase = e;
+                }),
+                (H.prototype.GetIsPublishCertificate = function () {
+                  return this.isPublishCertificate;
+                }),
+                (H.prototype.SetIsPublishCertificate = function (e) {
+                  this.isPublishCertificate = e;
+                }),
+                (H.prototype.GetRAAdminSN = function () {
+                  return this.RAAdminSN;
+                }),
+                (H.prototype.SetRAAdminSN = function (e) {
+                  this.RAAdminSN = e;
+                }));
+              var W = function () {
                 (this.setClassInfo("EndUserOperationContext", 1),
                   (this.fields = {
                     handle: "string",
@@ -5346,8 +5369,8 @@ function dateFormatter(dateString) {
                   this.initializeFields(),
                   (this.handle = null));
               };
-              (h.makeTransferable(H),
-                (H.prototype.GetHandle = function () {
+              (h.makeTransferable(W),
+                (W.prototype.GetHandle = function () {
                   return this.handle;
                 }));
               var V = function () {
@@ -5371,7 +5394,7 @@ function dateFormatter(dateString) {
                 (V.prototype.SetData = function (e) {
                   this.data = e;
                 }));
-              var W = function () {
+              var $ = function () {
                 (this.setClassInfo("EndUserSCClientStatistic", 1),
                   (this.fields = {
                     activeSessions: "number",
@@ -5381,20 +5404,20 @@ function dateFormatter(dateString) {
                   }),
                   this.initializeFields());
               };
-              (h.makeTransferable(W),
-                (W.prototype.GetActiveSessions = function () {
+              (h.makeTransferable($),
+                ($.prototype.GetActiveSessions = function () {
                   return this.activeSessions;
                 }),
-                (W.prototype.GetGatedSessions = function () {
+                ($.prototype.GetGatedSessions = function () {
                   return this.gatedSessions;
                 }),
-                (W.prototype.GetUnprotectedData = function () {
+                ($.prototype.GetUnprotectedData = function () {
                   return this.unprotectedData;
                 }),
-                (W.prototype.GetProtectedData = function () {
+                ($.prototype.GetProtectedData = function () {
                   return this.protectedData;
                 }));
-              var $ = function () {
+              var j = function () {
                 (this.setClassInfo("EndUserDeviceContext", 1),
                   (this.fields = {
                     handle: "string",
@@ -5402,11 +5425,11 @@ function dateFormatter(dateString) {
                   this.initializeFields(),
                   (this.handle = null));
               };
-              (h.makeTransferable($),
-                ($.prototype.GetHandle = function () {
+              (h.makeTransferable(j),
+                (j.prototype.GetHandle = function () {
                   return this.handle;
                 }));
-              var j = function () {
+              var X = function () {
                 (this.setClassInfo("EndUserTransportHeader", 1),
                   (this.fields = {
                     receiptNumber: "number",
@@ -5414,14 +5437,14 @@ function dateFormatter(dateString) {
                   }),
                   this.initializeFields());
               };
-              (h.makeTransferable(j),
-                (j.prototype.GetReceiptNumber = function () {
+              (h.makeTransferable(X),
+                (X.prototype.GetReceiptNumber = function () {
                   return this.receiptNumber;
                 }),
-                (j.prototype.GetCryptoData = function () {
+                (X.prototype.GetCryptoData = function () {
                   return this.cryptoData;
                 }));
-              var X = function () {
+              var z = function () {
                 (this.setClassInfo("EndUserCryptoHeader", 1),
                   (this.fields = {
                     caType: "string",
@@ -5431,32 +5454,21 @@ function dateFormatter(dateString) {
                   }),
                   this.initializeFields());
               };
-              (h.makeTransferable(X),
-                (X.prototype.GetCAType = function () {
+              (h.makeTransferable(z),
+                (z.prototype.GetCAType = function () {
                   return this.caType;
                 }),
-                (X.prototype.GetHeaderType = function () {
+                (z.prototype.GetHeaderType = function () {
                   return this.headerType;
                 }),
-                (X.prototype.GetHeaderSize = function () {
+                (z.prototype.GetHeaderSize = function () {
                   return this.headerSize;
                 }),
-                (X.prototype.GetCryptoData = function () {
+                (z.prototype.GetCryptoData = function () {
                   return this.cryptoData;
                 }));
-              var z = function () {
-                (this.setClassInfo("EndUserContext", 1),
-                  (this.fields = {
-                    handle: "string",
-                  }),
-                  this.initializeFields());
-              };
-              (h.makeTransferable(z),
-                (z.prototype.GetHandle = function () {
-                  return this.handle;
-                }));
               var J = function () {
-                (this.setClassInfo("EndUserHashContext", 1),
+                (this.setClassInfo("EndUserContext", 1),
                   (this.fields = {
                     handle: "string",
                   }),
@@ -5467,6 +5479,17 @@ function dateFormatter(dateString) {
                   return this.handle;
                 }));
               var q = function () {
+                (this.setClassInfo("EndUserHashContext", 1),
+                  (this.fields = {
+                    handle: "string",
+                  }),
+                  this.initializeFields());
+              };
+              (h.makeTransferable(q),
+                (q.prototype.GetHandle = function () {
+                  return this.handle;
+                }));
+              var Z = function () {
                 (this.setClassInfo("EndUserPrivateKeyContext", 1),
                   (this.fields = {
                     handle: "string",
@@ -5474,14 +5497,14 @@ function dateFormatter(dateString) {
                   }),
                   this.initializeFields());
               };
-              (h.makeTransferable(q),
-                (q.prototype.GetHandle = function () {
+              (h.makeTransferable(Z),
+                (Z.prototype.GetHandle = function () {
                   return this.handle;
                 }),
-                (q.prototype.GetOwnerInfo = function () {
+                (Z.prototype.GetOwnerInfo = function () {
                   return this.ownerInfo;
                 }));
-              var Z = function (e, t) {
+              var Q = function (e, t) {
                 (this.setClassInfo("EndUserReference", 1),
                   (this.fields = {
                     name: "string",
@@ -5491,20 +5514,20 @@ function dateFormatter(dateString) {
                   (this.name = e),
                   (this.data = t));
               };
-              (h.makeTransferable(Z),
-                (Z.prototype.GetName = function () {
+              (h.makeTransferable(Q),
+                (Q.prototype.GetName = function () {
                   return this.name;
                 }),
-                (Z.prototype.SetName = function (e) {
+                (Q.prototype.SetName = function (e) {
                   this.name = e;
                 }),
-                (Z.prototype.GetData = function () {
+                (Q.prototype.GetData = function () {
                   return this.data;
                 }),
-                (Z.prototype.SetData = function (e) {
+                (Q.prototype.SetData = function (e) {
                   this.data = e;
                 }));
-              var Q = function (e, t, n, r, i) {
+              var ee = function (e, t, n, r, i) {
                 (this.setClassInfo("EndUserSSSignHashResult", 1),
                   (this.fields = {
                     error: "number",
@@ -5520,23 +5543,23 @@ function dateFormatter(dateString) {
                   (this.statusCode = r),
                   (this.status = i));
               };
-              (h.makeTransferable(Q),
-                (Q.prototype.GetError = function () {
+              (h.makeTransferable(ee),
+                (ee.prototype.GetError = function () {
                   return this.error;
                 }),
-                (Q.prototype.GetHash = function () {
+                (ee.prototype.GetHash = function () {
                   return this.hash;
                 }),
-                (Q.prototype.GetSignature = function () {
+                (ee.prototype.GetSignature = function () {
                   return this.signature;
                 }),
-                (Q.prototype.GetStatusCode = function () {
+                (ee.prototype.GetStatusCode = function () {
                   return this.statusCode;
                 }),
-                (Q.prototype.GetStatus = function () {
+                (ee.prototype.GetStatus = function () {
                   return this.status;
                 }));
-              var ee = function () {
+              var te = function () {
                 (this.setClassInfo("EndUserMakeCertificateResult", 1),
                   (this.fields = {
                     privateKey: "byteArray",
@@ -5545,25 +5568,79 @@ function dateFormatter(dateString) {
                   }),
                   this.initializeFields());
               };
-              (h.makeTransferable(ee),
-                (ee.prototype.GetPrivateKey = function () {
+              (h.makeTransferable(te),
+                (te.prototype.GetPrivateKey = function () {
                   return this.privateKey;
                 }),
-                (ee.prototype.GetCertificate = function (e) {
+                (te.prototype.GetCertificate = function (e) {
                   return e < 0 || e >= this.certificates.length
                     ? null
                     : this.certificates[e];
                 }),
-                (ee.prototype.GetCertificatesCount = function () {
+                (te.prototype.GetCertificatesCount = function () {
                   return this.certificates.length;
                 }),
-                (ee.prototype.GetCertificates = function () {
+                (te.prototype.GetCertificates = function () {
                   return this.certificates;
                 }),
-                (ee.prototype.GetCMPRequest = function () {
+                (te.prototype.GetCMPRequest = function () {
                   return this.cmpRequest;
                 }));
-              var te = function (e, t) {
+              var ne = function () {
+                (this.setClassInfo("EndUserKeyMediaDeviceInfo", 1),
+                  (this.fields = {
+                    version: "number",
+                    deviceNameAlias: "string",
+                    isDeviceNameAliasAvailable: "boolean",
+                    isPasswordAttemptsAvailable: "boolean",
+                    leftPasswordAttempts: "number",
+                    maxPasswordAttempts: "number",
+                    isUAKeysAvailable: "boolean",
+                    isUAKeysExists: "boolean",
+                  }),
+                  this.initializeFields());
+              };
+              (h.makeTransferable(ne),
+                (ne.prototype.GetVersion = function () {
+                  return this.version;
+                }),
+                (ne.prototype.GetDeviceNameAlias = function () {
+                  return this.deviceNameAlias;
+                }),
+                (ne.prototype.IsDeviceNameAliasAvailable = function () {
+                  return this.isDeviceNameAliasAvailable;
+                }),
+                (ne.prototype.IsPasswordAttemptsAvailable = function () {
+                  return this.isPasswordAttemptsAvailable;
+                }),
+                (ne.prototype.GetLeftPasswordAttempts = function () {
+                  return this.leftPasswordAttempts;
+                }),
+                (ne.prototype.GetMaxPasswordAttempts = function () {
+                  return this.maxPasswordAttempts;
+                }),
+                (ne.prototype.IsUAKeysAvailable = function () {
+                  return this.isUAKeysAvailable;
+                }),
+                (ne.prototype.IsUAKeysExists = function () {
+                  return this.isUAKeysExists;
+                }));
+              var re = function () {
+                (this.setClassInfo("EndUserDataHash", 1),
+                  (this.fields = {
+                    hashAlgo: "number",
+                    hash: "string",
+                  }),
+                  this.initializeFields());
+              };
+              (h.makeTransferable(re),
+                (re.prototype.GetHashAlgo = function () {
+                  return this.hashAlgo;
+                }),
+                (re.prototype.GetHash = function () {
+                  return this.hash;
+                }));
+              var ie = function (e, t) {
                 ((this.errorCode = e),
                   (this.message = t),
                   (this.toString = function () {
@@ -5576,7 +5653,7 @@ function dateFormatter(dateString) {
                     return this.message;
                   }));
               };
-              function ne(e, t) {
+              function oe(e, t) {
                 ((this.errorCode = e),
                   (this.message = t),
                   (this.toString = function () {
@@ -5589,170 +5666,170 @@ function dateFormatter(dateString) {
                     return this.message;
                   }));
               }
-              ((te.ERROR_NONE = 0),
-                (te.ERROR_UNKNOWN = 65535),
-                (te.ERROR_NOT_SUPPORTED = 65534),
-                (te.ERROR_NOT_INITIALIZED = 1),
-                (te.ERROR_BAD_PARAMETER = 2),
-                (te.ERROR_LIBRARY_LOAD = 3),
-                (te.ERROR_READ_SETTINGS = 4),
-                (te.ERROR_TRANSMIT_REQUEST = 5),
-                (te.ERROR_MEMORY_ALLOCATION = 6),
-                (te.WARNING_END_OF_ENUM = 7),
-                (te.ERROR_PROXY_NOT_AUTHORIZED = 8),
-                (te.ERROR_NO_GUI_DIALOGS = 9),
-                (te.ERROR_DOWNLOAD_FILE = 10),
-                (te.ERROR_WRITE_SETTINGS = 11),
-                (te.ERROR_CANCELED_BY_GUI = 12),
-                (te.ERROR_OFFLINE_MODE = 13),
-                (te.ERROR_KEY_MEDIAS_FAILED = 17),
-                (te.ERROR_KEY_MEDIAS_ACCESS_FAILED = 18),
-                (te.ERROR_KEY_MEDIAS_READ_FAILED = 19),
-                (te.ERROR_KEY_MEDIAS_WRITE_FAILED = 20),
-                (te.WARNING_KEY_MEDIAS_READ_ONLY = 21),
-                (te.ERROR_KEY_MEDIAS_DELETE = 22),
-                (te.ERROR_KEY_MEDIAS_CLEAR = 23),
-                (te.ERROR_BAD_PRIVATE_KEY = 24),
-                (te.ERROR_PKI_FORMATS_FAILED = 33),
-                (te.ERROR_CSP_FAILED = 34),
-                (te.ERROR_BAD_SIGNATURE = 35),
-                (te.ERROR_AUTH_FAILED = 36),
-                (te.ERROR_NOT_RECEIVER = 37),
-                (te.ERROR_STORAGE_FAILED = 49),
-                (te.ERROR_BAD_CERT = 50),
-                (te.ERROR_CERT_NOT_FOUND = 51),
-                (te.ERROR_INVALID_CERT_TIME = 52),
-                (te.ERROR_CERT_IN_CRL = 53),
-                (te.ERROR_BAD_CRL = 54),
-                (te.ERROR_NO_VALID_CRLS = 55),
-                (te.ERROR_GET_TIME_STAMP = 65),
-                (te.ERROR_BAD_TSP_RESPONSE = 66),
-                (te.ERROR_TSP_SERVER_CERT_NOT_FOUND = 67),
-                (te.ERROR_TSP_SERVER_CERT_INVALID = 68),
-                (te.ERROR_GET_OCSP_STATUS = 81),
-                (te.ERROR_BAD_OCSP_RESPONSE = 82),
-                (te.ERROR_CERT_BAD_BY_OCSP = 83),
-                (te.ERROR_OCSP_SERVER_CERT_NOT_FOUND = 84),
-                (te.ERROR_OCSP_SERVER_CERT_INVALID = 85),
-                (te.ERROR_LDAP_ERROR = 97),
-                (te.ERROR_LIBRARY_COMUNICATION_FAILED = 4097),
-                (te.ERROR_LIBRARY_VERSION_NOT_SUPPORTED = 4098),
-                (te.ERROR_BROWSER_NOT_SUPPORTED = 65537),
-                (te.ERROR_OPEN_FILE = 65552),
-                (te.ERROR_READ_FILE = 65553),
-                (te.ERROR_WRITE_FILE = 65554),
-                (te.ERROR_DESCRIPTIONS_EX = []),
-                (te.ERROR_DESCRIPTIONS_EX[te.ERROR_NONE] = [
+              ((ie.ERROR_NONE = 0),
+                (ie.ERROR_UNKNOWN = 65535),
+                (ie.ERROR_NOT_SUPPORTED = 65534),
+                (ie.ERROR_NOT_INITIALIZED = 1),
+                (ie.ERROR_BAD_PARAMETER = 2),
+                (ie.ERROR_LIBRARY_LOAD = 3),
+                (ie.ERROR_READ_SETTINGS = 4),
+                (ie.ERROR_TRANSMIT_REQUEST = 5),
+                (ie.ERROR_MEMORY_ALLOCATION = 6),
+                (ie.WARNING_END_OF_ENUM = 7),
+                (ie.ERROR_PROXY_NOT_AUTHORIZED = 8),
+                (ie.ERROR_NO_GUI_DIALOGS = 9),
+                (ie.ERROR_DOWNLOAD_FILE = 10),
+                (ie.ERROR_WRITE_SETTINGS = 11),
+                (ie.ERROR_CANCELED_BY_GUI = 12),
+                (ie.ERROR_OFFLINE_MODE = 13),
+                (ie.ERROR_KEY_MEDIAS_FAILED = 17),
+                (ie.ERROR_KEY_MEDIAS_ACCESS_FAILED = 18),
+                (ie.ERROR_KEY_MEDIAS_READ_FAILED = 19),
+                (ie.ERROR_KEY_MEDIAS_WRITE_FAILED = 20),
+                (ie.WARNING_KEY_MEDIAS_READ_ONLY = 21),
+                (ie.ERROR_KEY_MEDIAS_DELETE = 22),
+                (ie.ERROR_KEY_MEDIAS_CLEAR = 23),
+                (ie.ERROR_BAD_PRIVATE_KEY = 24),
+                (ie.ERROR_PKI_FORMATS_FAILED = 33),
+                (ie.ERROR_CSP_FAILED = 34),
+                (ie.ERROR_BAD_SIGNATURE = 35),
+                (ie.ERROR_AUTH_FAILED = 36),
+                (ie.ERROR_NOT_RECEIVER = 37),
+                (ie.ERROR_STORAGE_FAILED = 49),
+                (ie.ERROR_BAD_CERT = 50),
+                (ie.ERROR_CERT_NOT_FOUND = 51),
+                (ie.ERROR_INVALID_CERT_TIME = 52),
+                (ie.ERROR_CERT_IN_CRL = 53),
+                (ie.ERROR_BAD_CRL = 54),
+                (ie.ERROR_NO_VALID_CRLS = 55),
+                (ie.ERROR_GET_TIME_STAMP = 65),
+                (ie.ERROR_BAD_TSP_RESPONSE = 66),
+                (ie.ERROR_TSP_SERVER_CERT_NOT_FOUND = 67),
+                (ie.ERROR_TSP_SERVER_CERT_INVALID = 68),
+                (ie.ERROR_GET_OCSP_STATUS = 81),
+                (ie.ERROR_BAD_OCSP_RESPONSE = 82),
+                (ie.ERROR_CERT_BAD_BY_OCSP = 83),
+                (ie.ERROR_OCSP_SERVER_CERT_NOT_FOUND = 84),
+                (ie.ERROR_OCSP_SERVER_CERT_INVALID = 85),
+                (ie.ERROR_LDAP_ERROR = 97),
+                (ie.ERROR_LIBRARY_COMUNICATION_FAILED = 4097),
+                (ie.ERROR_LIBRARY_VERSION_NOT_SUPPORTED = 4098),
+                (ie.ERROR_BROWSER_NOT_SUPPORTED = 65537),
+                (ie.ERROR_OPEN_FILE = 65552),
+                (ie.ERROR_READ_FILE = 65553),
+                (ie.ERROR_WRITE_FILE = 65554),
+                (ie.ERROR_DESCRIPTIONS_EX = []),
+                (ie.ERROR_DESCRIPTIONS_EX[ie.ERROR_NONE] = [
                   "Виконано успішно",
                   "Выполнено успешно",
                   "Executed successfully",
                 ]),
-                (te.ERROR_DESCRIPTIONS_EX[te.ERROR_NOT_SUPPORTED] = [
+                (ie.ERROR_DESCRIPTIONS_EX[ie.ERROR_NOT_SUPPORTED] = [
                   "Операція не підтримується",
                   "Операция не поддерживается",
                   "Operation is not supported",
                 ]),
-                (te.ERROR_DESCRIPTIONS_EX[te.ERROR_UNKNOWN] = [
+                (ie.ERROR_DESCRIPTIONS_EX[ie.ERROR_UNKNOWN] = [
                   "Невідома помилка",
                   "Неизвестная ошибка",
                   "Unknown error",
                 ]),
-                (te.ERROR_DESCRIPTIONS_EX[te.ERROR_LIBRARY_LOAD] = [
+                (ie.ERROR_DESCRIPTIONS_EX[ie.ERROR_LIBRARY_LOAD] = [
                   "Виникла помилка при завантаженні криптографічної бібліотеки",
                   "Возникла ошибка при загрузке криптографической библиотеки",
                   "Error at load crypto library",
                 ]),
-                (te.ERROR_DESCRIPTIONS_EX[te.ERROR_NOT_INITIALIZED] = [
+                (ie.ERROR_DESCRIPTIONS_EX[ie.ERROR_NOT_INITIALIZED] = [
                   "Бібліотека не ініціалізована",
                   "Библиотека не инициализирована",
                   "Library is not initialized",
                 ]),
-                (te.ERROR_DESCRIPTIONS_EX[te.ERROR_BAD_PARAMETER] = [
+                (ie.ERROR_DESCRIPTIONS_EX[ie.ERROR_BAD_PARAMETER] = [
                   "Невірний параметр",
                   "Неверный параметр",
                   "Incorrect parameter",
                 ]),
-                (te.ERROR_DESCRIPTIONS_EX[te.ERROR_BAD_CERT] = [
+                (ie.ERROR_DESCRIPTIONS_EX[ie.ERROR_BAD_CERT] = [
                   "Сертифікат пошкоджений або не може бути використаний",
                   "Сертификат поврежден или не может быть использован",
                   "Certificate corrupted or cannot be used",
                 ]),
-                (te.ERROR_DESCRIPTIONS_EX[te.ERROR_CERT_NOT_FOUND] = [
+                (ie.ERROR_DESCRIPTIONS_EX[ie.ERROR_CERT_NOT_FOUND] = [
                   "Сертифікат не знайдено",
                   "Сертификат не найден",
                   "Certificate not found",
                 ]),
-                (te.ERROR_DESCRIPTIONS_EX[te.ERROR_TRANSMIT_REQUEST] = [
+                (ie.ERROR_DESCRIPTIONS_EX[ie.ERROR_TRANSMIT_REQUEST] = [
                   "Виникла помилка при передачі запиту на сервер ЦСК за протоколом HTTP",
                   "Возникла ошибка при передаче запроса на сервер ЦСК по протоколу HTTP",
                   "Error at request transfer to CA's server by HTTP protocol",
                 ]),
-                (te.ERROR_DESCRIPTIONS_EX[te.ERROR_DOWNLOAD_FILE] = [
+                (ie.ERROR_DESCRIPTIONS_EX[ie.ERROR_DOWNLOAD_FILE] = [
                   "Виникла помилка при завантаженні файлу з HTTP-сервера",
                   "Возникла ошибка при загрузке файла с HTTP-сервера",
                   "Error at the load of file from a HTTP-server",
                 ]),
-                (te.ERROR_DESCRIPTIONS_EX[te.ERROR_WRITE_SETTINGS] = [
+                (ie.ERROR_DESCRIPTIONS_EX[ie.ERROR_WRITE_SETTINGS] = [
                   "Виникла помилка при записі параметрів",
                   "Возникла ошибка при записи параметров",
                   "Error at the writing settings",
                 ]),
-                (te.ERROR_DESCRIPTIONS_EX[te.ERROR_PKI_FORMATS_FAILED] = [
+                (ie.ERROR_DESCRIPTIONS_EX[ie.ERROR_PKI_FORMATS_FAILED] = [
                   "Виникла помилка при розборі чи формуванні даних (пошкоджені дані чи невірний формат)",
                   "Возникла ошибка при разборе или формировании данных (поврежденные данные или неверный формат)",
                   "Error at parsing or generating data (data corrupted or wrong format)",
                 ]),
-                (te.ERROR_DESCRIPTIONS_EX[
-                  te.ERROR_LIBRARY_COMUNICATION_FAILED
+                (ie.ERROR_DESCRIPTIONS_EX[
+                  ie.ERROR_LIBRARY_COMUNICATION_FAILED
                 ] = [
                   "Виникла помилка при взаємодії з криптографічною бібліотекою",
                   "Возникла ошибка при взаимодействии с криптографической библиотекой",
                   "Error at comunication with crypto library",
                 ]),
-                (te.ERROR_DESCRIPTIONS_EX[
-                  te.ERROR_LIBRARY_VERSION_NOT_SUPPORTED
+                (ie.ERROR_DESCRIPTIONS_EX[
+                  ie.ERROR_LIBRARY_VERSION_NOT_SUPPORTED
                 ] = [
                   "Встановлена версія бібліотеки не підтримується",
                   "Установленная версия библиотеки не поддерживается",
                   "The installed version of the library is not supported",
                 ]),
-                (te.ERROR_DESCRIPTIONS_EX[te.ERROR_BROWSER_NOT_SUPPORTED] = [
+                (ie.ERROR_DESCRIPTIONS_EX[ie.ERROR_BROWSER_NOT_SUPPORTED] = [
                   "Ваш браузер не підтримується",
                   "Ваш браузер не поддерживается",
                   "Your browser is not supported",
                 ]),
-                (te.ERROR_DESCRIPTIONS_EX[te.ERROR_OPEN_FILE] = [
+                (ie.ERROR_DESCRIPTIONS_EX[ie.ERROR_OPEN_FILE] = [
                   "Виникла помилка при відкритті файлу",
                   "Возникла ошибка при открытии файла",
                   "Error at open file",
                 ]),
-                (te.ERROR_DESCRIPTIONS_EX[te.ERROR_READ_FILE] = [
+                (ie.ERROR_DESCRIPTIONS_EX[ie.ERROR_READ_FILE] = [
                   "Виникла помилка при зчитуванні файлу",
                   "Возникла ошибка при чтении файла",
                   "Error at read file",
                 ]),
-                (te.ERROR_DESCRIPTIONS_EX[te.ERROR_WRITE_FILE] = [
+                (ie.ERROR_DESCRIPTIONS_EX[ie.ERROR_WRITE_FILE] = [
                   "Виникла помилка при записі файлу",
                   "Возникла ошибка при записи файла",
                   "Error at write file",
                 ]),
-                (te.isError = function (e) {
-                  return e != te.ERROR_NONE;
+                (ie.isError = function (e) {
+                  return e != ie.ERROR_NONE;
                 }),
-                (te.isSuccess = function (e) {
-                  return e == te.ERROR_NONE;
+                (ie.isSuccess = function (e) {
+                  return e == ie.ERROR_NONE;
                 }),
-                (te.getErrorDescriptionEx = function (e, t) {
+                (ie.getErrorDescriptionEx = function (e, t) {
                   var n, r;
                   return (
-                    void 0 === (n = te.ERROR_DESCRIPTIONS_EX[e]) &&
-                      (n = te.ERROR_DESCRIPTIONS_EX[te.ERROR_UNKNOWN]),
+                    void 0 === (n = ie.ERROR_DESCRIPTIONS_EX[e]) &&
+                      (n = ie.ERROR_DESCRIPTIONS_EX[ie.ERROR_UNKNOWN]),
                     void 0 === (r = n[t - 1]) ? n[0] : r
                   );
                 }));
-              var re = function (t, n) {
+              var se = function (t, n) {
                 ((this.vendor = "JSC IIT"),
-                  (this.classVersion = "1.3.98"),
+                  (this.classVersion = "1.3.108"),
                   (this.className = "EUSignCP"),
                   (this.SUBJECT_TYPE_UNDIFFERENCED = 0),
                   (this.SUBJECT_TYPE_CA = 1),
@@ -5969,7 +6046,7 @@ function dateFormatter(dateString) {
                   (this.EU_CP_1251_ENCODING = 1251),
                   (this.EU_UTF8_ENCODING = 65001),
                   (this.m_language = this.EU_DEFAULT_LANG),
-                  (this.m_lastErrorCode = te.ERROR_NONE),
+                  (this.m_lastErrorCode = ie.ERROR_NONE),
                   (this.m_lastError = ""),
                   (this.m_charset = "UTF-8"),
                   (this.m_stringCoder = new e()),
@@ -5993,12 +6070,12 @@ function dateFormatter(dateString) {
                   r,
                   t,
                   n,
-                  "https:" == window.location.protocol,
+                  !("http:" == window.location.protocol),
                 )),
                   (this.m_monitorLibraryTimer = null));
               };
               return (
-                (re.prototype._funcMakeParams = function (e) {
+                (se.prototype._funcMakeParams = function (e) {
                   var t = [];
                   null == e && (e = []);
                   for (
@@ -6019,7 +6096,7 @@ function dateFormatter(dateString) {
                     t[i] = n(e[i]);
                   return t;
                 }),
-                (re.prototype._funcCall = function (e, t, n, r, i) {
+                (se.prototype._funcCall = function (e, t, n, r, i) {
                   var o;
                   if (!this.IsAsync(n, r))
                     return (
@@ -6038,45 +6115,45 @@ function dateFormatter(dateString) {
                     a._funcHandleResult(e, s, r);
                   });
                 }),
-                (re.prototype._funcHandleResult = function (e, t, n) {
+                (se.prototype._funcHandleResult = function (e, t, n) {
                   var r,
                     i,
                     o = this.IsAsync(t, n);
                   if (null == e) {
                     if (
                       ((r = this.MakeError(
-                        te.ERROR_LIBRARY_COMUNICATION_FAILED,
+                        ie.ERROR_LIBRARY_COMUNICATION_FAILED,
                         "",
                       )),
                       o)
                     )
                       return void n(r);
-                    throw new ne(r.errorCode, r.message);
+                    throw new oe(r.errorCode, r.message);
                   }
-                  if (((i = (r = e.error).code), te.isError(i))) {
-                    if (i == te.WARNING_END_OF_ENUM)
+                  if (((i = (r = e.error).code), ie.isError(i))) {
+                    if (i == ie.WARNING_END_OF_ENUM)
                       return o ? void t(null) : null;
                     if (((r = this.MakeError(i, r.message)), o))
                       return void n(r);
-                    throw new ne(r.errorCode, r.message);
+                    throw new oe(r.errorCode, r.message);
                   }
                   try {
                     e = this._funcDecodeResult(e.result);
                   } catch (e) {
                     if (
                       ((r = this.MakeError(
-                        te.ERROR_LIBRARY_COMUNICATION_FAILED,
+                        ie.ERROR_LIBRARY_COMUNICATION_FAILED,
                         "",
                       )),
                       o)
                     )
                       return void n(r);
-                    throw new ne(r.errorCode, r.message);
+                    throw new oe(r.errorCode, r.message);
                   }
                   if (!o) return e;
                   t(e);
                 }),
-                (re.prototype._funcDecodeResult = function (e) {
+                (se.prototype._funcDecodeResult = function (e) {
                   if (null == e) return null;
                   var t = function (e) {
                     if (Array.isArray(e)) {
@@ -6097,7 +6174,7 @@ function dateFormatter(dateString) {
                   };
                   return t(e);
                 }),
-                (re.prototype._checkVersion = function (e) {
+                (se.prototype._checkVersion = function (e) {
                   try {
                     var t = this.classVersion;
                     if (t == e) return !0;
@@ -6114,11 +6191,11 @@ function dateFormatter(dateString) {
                   }
                   return !0;
                 }),
-                (re.prototype._stringToBytes = function (e, t) {
+                (se.prototype._stringToBytes = function (e, t) {
                   try {
                     return this.m_stringCoder.encode(e);
                   } catch (e) {
-                    var n = this.MakeError(te.ERROR_BAD_PARAMETER, "");
+                    var n = this.MakeError(ie.ERROR_BAD_PARAMETER, "");
                     if (void 0 !== t)
                       return (
                         setTimeout(function () {
@@ -6126,14 +6203,14 @@ function dateFormatter(dateString) {
                         }, 1),
                         null
                       );
-                    throw new ne(n.errorCode, n.message);
+                    throw new oe(n.errorCode, n.message);
                   }
                 }),
-                (re.prototype._bytesToString = function (e, t) {
+                (se.prototype._bytesToString = function (e, t) {
                   try {
                     return this.m_stringCoder.decode(e);
                   } catch (e) {
-                    var n = this.MakeError(te.ERROR_BAD_PARAMETER, "");
+                    var n = this.MakeError(ie.ERROR_BAD_PARAMETER, "");
                     if (void 0 !== t)
                       return (
                         setTimeout(function () {
@@ -6141,14 +6218,14 @@ function dateFormatter(dateString) {
                         }, 1),
                         null
                       );
-                    throw new ne(n.errorCode, n.message);
+                    throw new oe(n.errorCode, n.message);
                   }
                 }),
-                (re.prototype._base64Encode = function (e, t) {
+                (se.prototype._base64Encode = function (e, t) {
                   try {
                     return this.m_base64Coder.encode(e);
                   } catch (e) {
-                    var n = this.MakeError(te.ERROR_BAD_PARAMETER, "");
+                    var n = this.MakeError(ie.ERROR_BAD_PARAMETER, "");
                     if (void 0 !== t)
                       return (
                         setTimeout(function () {
@@ -6156,14 +6233,14 @@ function dateFormatter(dateString) {
                         }, 1),
                         null
                       );
-                    throw new ne(n.errorCode, n.message);
+                    throw new oe(n.errorCode, n.message);
                   }
                 }),
-                (re.prototype._base64Decode = function (e, t) {
+                (se.prototype._base64Decode = function (e, t) {
                   try {
                     return this.m_base64Coder.decode(e);
                   } catch (e) {
-                    var n = this.MakeError(te.ERROR_BAD_PARAMETER, "");
+                    var n = this.MakeError(ie.ERROR_BAD_PARAMETER, "");
                     if (void 0 !== t)
                       return (
                         setTimeout(function () {
@@ -6171,10 +6248,10 @@ function dateFormatter(dateString) {
                         }, 1),
                         null
                       );
-                    throw new ne(n.errorCode, n.message);
+                    throw new oe(n.errorCode, n.message);
                   }
                 }),
-                (re.prototype._copyArrayData = function (e, t) {
+                (se.prototype._copyArrayData = function (e, t) {
                   try {
                     if (e.length != t.length) return !1;
                     if (Array.isArray(t) || Array.isArray(e))
@@ -6185,7 +6262,7 @@ function dateFormatter(dateString) {
                     return !1;
                   }
                 }),
-                (re.prototype._startMonitorLibraryStatus = function () {
+                (se.prototype._startMonitorLibraryStatus = function () {
                   var e = this;
                   try {
                     e.m_monitorLibraryTimer = setInterval(function () {
@@ -6200,14 +6277,14 @@ function dateFormatter(dateString) {
                     }, 6e5);
                   } catch (e) {}
                 }),
-                (re.prototype._stopMonitorLibraryStatus = function () {
+                (se.prototype._stopMonitorLibraryStatus = function () {
                   try {
                     if (null == this.m_monitorLibraryTimer) return;
                     (clearInterval(this.m_monitorLibraryTimer),
                       (this.m_monitorLibraryTimer = null));
                   } catch (e) {}
                 }),
-                (re.prototype._getAndroidAppIntentURL = function (e, t) {
+                (se.prototype._getAndroidAppIntentURL = function (e, t) {
                   var n =
                     "intent://addurlandstart?url={URL_LOCATION}#Intent;scheme=saclient;package=ua.com.iit.signagentmanagement;S.browser_fallback_url={URL_INSTALL};end;";
                   return (n = n.replace(
@@ -6215,23 +6292,23 @@ function dateFormatter(dateString) {
                     encodeURIComponent(location.origin),
                   )).replace("{URL_INSTALL}", encodeURIComponent(e + "/" + t));
                 }),
-                (re.prototype.IsAsync = function (e, t) {
+                (se.prototype.IsAsync = function (e, t) {
                   return void 0 !== e && void 0 !== t;
                 }),
-                (re.prototype.MakeError = function (e, t) {
+                (se.prototype.MakeError = function (e, t) {
                   return (
                     "" == t &&
-                      (t = te.getErrorDescriptionEx(e, this.m_language)),
+                      (t = ie.getErrorDescriptionEx(e, this.m_language)),
                     (this.m_lastErrorCode = e),
                     (this.m_lastError = t),
-                    new te(e, t)
+                    new ie(e, t)
                   );
                 }),
-                (re.prototype.RaiseError = function (e, t) {
+                (se.prototype.RaiseError = function (e, t) {
                   var n;
-                  throw new ne((n = this.MakeError(e, t)).errorCode, n.message);
+                  throw new oe((n = this.MakeError(e, t)).errorCode, n.message);
                 }),
-                (re.prototype.GetInstallURL = function (e, t) {
+                (se.prototype.GetInstallURL = function (e, t) {
                   var n = this,
                     r = n.m_browserInfo.GetOSName(),
                     i = n.m_browserInfo.GetArch(),
@@ -6267,7 +6344,7 @@ function dateFormatter(dateString) {
                   }
                   return e ? o : o[0];
                 }),
-                (re.prototype.GetUpdateURL = function (e, t) {
+                (se.prototype.GetUpdateURL = function (e, t) {
                   var n = this,
                     r = n.m_browserInfo.GetOSName(),
                     i = n.m_browserInfo.GetArch(),
@@ -6303,7 +6380,7 @@ function dateFormatter(dateString) {
                   }
                   return e ? o : o[0];
                 }),
-                (re.prototype.GetHelpURL = function (e) {
+                (se.prototype.GetHelpURL = function (e) {
                   switch (
                     ((e = e || "https://iit.com.ua/download/productfiles"),
                     this.m_browserInfo.GetOSName())
@@ -6316,7 +6393,7 @@ function dateFormatter(dateString) {
                       return null;
                   }
                 }),
-                (re.prototype.GetWebExtensionInstallURL = function () {
+                (se.prototype.GetWebExtensionInstallURL = function () {
                   switch (this.m_browserInfo.GetName()) {
                     case a.BROWSER_NAME_CHROME:
                       return "https://chrome.google.com/webstore/detail/%D1%96%D1%96%D1%82-%D0%BA%D0%BE%D1%80%D0%B8%D1%81%D1%82%D1%83%D0%B2%D0%B0%D1%87-%D1%86%D1%81%D0%BA-1-%D0%B1%D1%96%D0%B1%D0%BB/jffafkigfgmjafhpkoibhfefeaebmccg?utm_source=chrome-app-launcher-info-dialog";
@@ -6328,41 +6405,41 @@ function dateFormatter(dateString) {
                       return null;
                   }
                 }),
-                (re.prototype.GetInstallPath = function (e, t) {
+                (se.prototype.GetInstallPath = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("GetInstallPath", n, e, t, null)
                   );
                 }),
-                (re.prototype.SelectFile = function (e, t, n, r) {
+                (se.prototype.SelectFile = function (e, t, n, r) {
                   return this.SelectFileEx(e, t, null, null, null, null, n, r);
                 }),
-                (re.prototype.SelectFileEx = function (e, t, n, r, i, o, s, a) {
+                (se.prototype.SelectFileEx = function (e, t, n, r, i, o, s, a) {
                   var u;
                   return (
                     (u = this._funcMakeParams([e, t, n, r, i, o])),
                     this._funcCall("SelectFile", u, s, a, null)
                   );
                 }),
-                (re.prototype.SelectFolder = function (e, t) {
+                (se.prototype.SelectFolder = function (e, t) {
                   return this.SelectFolderEx(null, null, null, e, t);
                 }),
-                (re.prototype.SelectFolderEx = function (e, t, n, r, i) {
+                (se.prototype.SelectFolderEx = function (e, t, n, r, i) {
                   var o;
                   return (
                     (o = this._funcMakeParams([e, t, n])),
                     this._funcCall("SelectFolder", o, r, i, null)
                   );
                 }),
-                (re.prototype.CreateFolder = function (e, t, n) {
+                (se.prototype.CreateFolder = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("CreateFolder", r, t, n, null)
                   );
                 }),
-                (re.prototype.ReadFile = function (e, t, n) {
+                (se.prototype.ReadFile = function (e, t, n) {
                   var r = this.IsAsync(t, n),
                     i = this,
                     o = i.EU_FILE_PROCESS_CHUNK_SIZE;
@@ -6416,7 +6493,7 @@ function dateFormatter(dateString) {
                     n,
                   );
                 }),
-                (re.prototype.WriteFile = function (e, t, n, r) {
+                (se.prototype.WriteFile = function (e, t, n, r) {
                   var i = this.IsAsync(n, r),
                     o = this,
                     s = o.EU_FILE_PROCESS_CHUNK_SIZE;
@@ -6453,43 +6530,43 @@ function dateFormatter(dateString) {
                       o.WriteFileWithOffset(e, c * s, o.Copy(t, c * s, p));
                   }
                 }),
-                (re.prototype.GetFileSize = function (e, t, n) {
+                (se.prototype.GetFileSize = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("GetFileSize", r, t, n, null)
                   );
                 }),
-                (re.prototype.ReadFileWithOffset = function (e, t, n, r, i) {
+                (se.prototype.ReadFileWithOffset = function (e, t, n, r, i) {
                   var o;
                   return (
                     (o = this._funcMakeParams([e, t, n])),
                     this._funcCall("ReadFileWithOffset", o, r, i, null)
                   );
                 }),
-                (re.prototype.WriteFileWithOffset = function (e, t, n, r, i) {
+                (se.prototype.WriteFileWithOffset = function (e, t, n, r, i) {
                   var o;
                   return (
                     (o = this._funcMakeParams([e, t, new S(n)])),
                     this._funcCall("WriteFileWithOffset", o, r, i, null)
                   );
                 }),
-                (re.prototype.DeleteFile = function (e, t, n) {
+                (se.prototype.DeleteFile = function (e, t, n) {
                   var r;
                   ((r = this._funcMakeParams([e])),
                     this._funcCall("DeleteFile", r, t, n, null));
                 }),
-                (re.prototype.AppendFile = function (e, t, n, r) {
+                (se.prototype.AppendFile = function (e, t, n, r) {
                   var i;
                   ((i = this._funcMakeParams([e, t])),
                     this._funcCall("AppendFile", i, n, r, null));
                 }),
-                (re.prototype.CopyFileWithOffset = function (e, t, n, r, i, o) {
+                (se.prototype.CopyFileWithOffset = function (e, t, n, r, i, o) {
                   var s;
                   ((s = this._funcMakeParams([e, t, n, r])),
                     this._funcCall("CopyFileWithOffset", s, i, o, null));
                 }),
-                (re.prototype.Load = function (e, t) {
+                (se.prototype.Load = function (e, t) {
                   var n = this.IsAsync(e, t),
                     r = this;
                   if (n)
@@ -6498,7 +6575,7 @@ function dateFormatter(dateString) {
                         if (r._checkVersion(n)) e();
                         else {
                           var i = r.MakeError(
-                            te.ERROR_LIBRARY_VERSION_NOT_SUPPORTED,
+                            ie.ERROR_LIBRARY_VERSION_NOT_SUPPORTED,
                             "",
                           );
                           t(i);
@@ -6506,7 +6583,7 @@ function dateFormatter(dateString) {
                       },
                       function (e) {
                         ((e = r.MakeError(
-                          te.ERROR_LIBRARY_COMUNICATION_FAILED,
+                          ie.ERROR_LIBRARY_COMUNICATION_FAILED,
                           "",
                         )),
                           t(e));
@@ -6517,30 +6594,30 @@ function dateFormatter(dateString) {
                     try {
                       i = this._checkVersion(this.GetVersion());
                     } catch (e) {
-                      this.RaiseError(te.ERROR_LIBRARY_COMUNICATION_FAILED, "");
+                      this.RaiseError(ie.ERROR_LIBRARY_COMUNICATION_FAILED, "");
                     }
                     i ||
                       this.RaiseError(
-                        te.ERROR_LIBRARY_VERSION_NOT_SUPPORTED,
+                        ie.ERROR_LIBRARY_VERSION_NOT_SUPPORTED,
                         "",
                       );
                   }
                 }),
-                (re.prototype.GetVersion = function (e, t) {
+                (se.prototype.GetVersion = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("GetVersion", n, e, t, null)
                   );
                 }),
-                (re.prototype.IsInitialized = function (e, t) {
+                (se.prototype.IsInitialized = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("IsInitialized", n, e, t, null)
                   );
                 }),
-                (re.prototype.Initialize = function (e, t) {
+                (se.prototype.Initialize = function (e, t) {
                   var n,
                     r = this,
                     i = this.IsAsync(e, t);
@@ -6558,23 +6635,23 @@ function dateFormatter(dateString) {
                     ),
                     i || r._startMonitorLibraryStatus());
                 }),
-                (re.prototype.Finalize = function (e, t) {
+                (se.prototype.Finalize = function (e, t) {
                   var n;
                   (this._stopMonitorLibraryStatus(),
                     (n = this._funcMakeParams(null)),
                     this._funcCall("Finalize", n, e, t, null));
                 }),
-                (re.prototype.ResetOperation = function (e, t) {
+                (se.prototype.ResetOperation = function (e, t) {
                   var n;
                   ((n = this._funcMakeParams(null)),
                     this._funcCall("ResetOperation", n, e, t, null));
                 }),
-                (re.prototype.SetUIMode = function (e, t, n) {
+                (se.prototype.SetUIMode = function (e, t, n) {
                   var r;
                   ((r = this._funcMakeParams([e])),
                     this._funcCall("SetUIMode", r, t, n, null));
                 }),
-                (re.prototype.SetLanguage = function (e, t, n) {
+                (se.prototype.SetLanguage = function (e, t, n) {
                   var r,
                     i = this,
                     o = this.IsAsync(t, n);
@@ -6592,16 +6669,16 @@ function dateFormatter(dateString) {
                     ),
                     o || (this.m_language = e));
                 }),
-                (re.prototype.SetCharset = function (e, t, n) {
+                (se.prototype.SetCharset = function (e, t, n) {
                   var i,
                     o = this.IsAsync(t, n);
                   if (null == (i = r.GetCoder(e))) {
-                    var s = this.MakeError(te.ERROR_BAD_PARAMETER, "");
+                    var s = this.MakeError(ie.ERROR_BAD_PARAMETER, "");
                     if (o)
                       return void setTimeout(function () {
                         n(s);
                       }, 1);
-                    throw new ne(s.errorCode, s.message);
+                    throw new oe(s.errorCode, s.message);
                   }
                   ((this.m_stringCoder = i),
                     (this.m_charset = e),
@@ -6610,62 +6687,62 @@ function dateFormatter(dateString) {
                         t();
                       }, 1));
                 }),
-                (re.prototype.SetRuntimeParameter = function (e, t, n, r) {
+                (se.prototype.SetRuntimeParameter = function (e, t, n, r) {
                   var i;
                   ("boolean" == typeof t && (t = t ? 1 : 0),
                     (i = this._funcMakeParams([e, t])),
                     this._funcCall("SetRuntimeParameter", i, n, r, null));
                 }),
-                (re.prototype.GetStorageParameter = function (e, t, n, r) {
+                (se.prototype.GetStorageParameter = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([e, t])),
                     this._funcCall("GetStorageParameter", i, n, r, null)
                   );
                 }),
-                (re.prototype.SetStorageParameter = function (e, t, n, r, i) {
+                (se.prototype.SetStorageParameter = function (e, t, n, r, i) {
                   var o;
                   ((o = this._funcMakeParams([e, t, n])),
                     this._funcCall("SetStorageParameter", o, r, i, null));
                 }),
-                (re.prototype.CreateArrayList = function () {
+                (se.prototype.CreateArrayList = function () {
                   return new _();
                 }),
-                (re.prototype.GetLastError = function () {
+                (se.prototype.GetLastError = function () {
                   return this.m_lastError;
                 }),
-                (re.prototype.GetLastErrorCode = function () {
+                (se.prototype.GetLastErrorCode = function () {
                   return this.m_lastErrorCode;
                 }),
-                (re.prototype.BASE64Encode = function (e, t, n) {
+                (se.prototype.BASE64Encode = function (e, t, n) {
                   var r = this._base64Encode(e, n);
                   if (!this.IsAsync(t, n)) return r;
                   setTimeout(function () {
                     t(r);
                   }, 1);
                 }),
-                (re.prototype.BASE64Decode = function (e, t, n) {
+                (se.prototype.BASE64Decode = function (e, t, n) {
                   var r = this._base64Decode(e, n);
                   if (!this.IsAsync(t, n)) return r;
                   setTimeout(function () {
                     t(r);
                   }, 1);
                 }),
-                (re.prototype.StringToBytes = function (e, t, n) {
+                (se.prototype.StringToBytes = function (e, t, n) {
                   var r = this._stringToBytes(e, n);
                   if (!this.IsAsync(t, n)) return r;
                   setTimeout(function () {
                     t(r);
                   }, 1);
                 }),
-                (re.prototype.BytesToString = function (e, t, n) {
+                (se.prototype.BytesToString = function (e, t, n) {
                   var r = this._bytesToString(e, n);
                   if (!this.IsAsync(t, n)) return r;
                   setTimeout(function () {
                     t(r);
                   }, 1);
                 }),
-                (re.prototype.Concatenate = function (e, t) {
+                (se.prototype.Concatenate = function (e, t) {
                   if (Array.isArray(e) && Array.isArray(t)) return e.concat(t);
                   var n,
                     r = e.length + t.length;
@@ -6677,22 +6754,22 @@ function dateFormatter(dateString) {
                   } else ((n = new f(r)).set(e), n.set(t, e.length));
                   return n;
                 }),
-                (re.prototype.Copy = function (e, t, n) {
+                (se.prototype.Copy = function (e, t, n) {
                   return e.slice(t, t + n);
                 }),
-                (re.prototype.SetSettings = function (e, t) {
+                (se.prototype.SetSettings = function (e, t) {
                   var n;
                   ((n = this._funcMakeParams(null)),
                     this._funcCall("SetSettings", n, e, t, null));
                 }),
-                (re.prototype.DoesNeedSetSettings = function (e, t) {
+                (se.prototype.DoesNeedSetSettings = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("DoesNeedSetSettings", n, e, t, null)
                   );
                 }),
-                (re.prototype.InitializeMandatorySettings = function (e, t) {
+                (se.prototype.InitializeMandatorySettings = function (e, t) {
                   var n = this;
                   if (this.IsAsync(e, t))
                     s(function (e) {
@@ -6750,85 +6827,85 @@ function dateFormatter(dateString) {
                     n.SetOCSPSettings(u);
                   }
                 }),
-                (re.prototype.CreateModeSettings = function () {
+                (se.prototype.CreateModeSettings = function () {
                   return new g();
                 }),
-                (re.prototype.GetModeSettings = function (e, t) {
+                (se.prototype.GetModeSettings = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("GetModeSettings", n, e, t, null)
                   );
                 }),
-                (re.prototype.SetModeSettings = function (e, t, n) {
+                (se.prototype.SetModeSettings = function (e, t, n) {
                   var r;
                   ((r = this._funcMakeParams([e])),
                     this._funcCall("SetModeSettings", r, t, n, null));
                 }),
-                (re.prototype.CreateKeyMediaSettings = function () {
+                (se.prototype.CreateKeyMediaSettings = function () {
                   return new I();
                 }),
-                (re.prototype.GetKeyMediaSettings = function (e, t) {
+                (se.prototype.GetKeyMediaSettings = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("GetKeyMediaSettings", n, e, t, null)
                   );
                 }),
-                (re.prototype.SetKeyMediaSettings = function (e, t, n) {
+                (se.prototype.SetKeyMediaSettings = function (e, t, n) {
                   var r;
                   ((r = this._funcMakeParams([e])),
                     this._funcCall("SetKeyMediaSettings", r, t, n, null));
                 }),
-                (re.prototype.CreateFileStoreSettings = function () {
+                (se.prototype.CreateFileStoreSettings = function () {
                   return new y();
                 }),
-                (re.prototype.GetFileStoreSettings = function (e, t) {
+                (se.prototype.GetFileStoreSettings = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("GetFileStoreSettings", n, e, t, null)
                   );
                 }),
-                (re.prototype.SetFileStoreSettings = function (e, t, n) {
+                (se.prototype.SetFileStoreSettings = function (e, t, n) {
                   var r;
                   ((r = this._funcMakeParams([e])),
                     this._funcCall("SetFileStoreSettings", r, t, n, null));
                 }),
-                (re.prototype.CreateProxySettings = function () {
+                (se.prototype.CreateProxySettings = function () {
                   return new C();
                 }),
-                (re.prototype.GetProxySettings = function (e, t) {
+                (se.prototype.GetProxySettings = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("GetProxySettings", n, e, t, null)
                   );
                 }),
-                (re.prototype.SetProxySettings = function (e, t, n) {
+                (se.prototype.SetProxySettings = function (e, t, n) {
                   var r;
                   ((r = this._funcMakeParams([e])),
                     this._funcCall("SetProxySettings", r, t, n, null));
                 }),
-                (re.prototype.CreateOCSPSettings = function () {
+                (se.prototype.CreateOCSPSettings = function () {
                   return new A();
                 }),
-                (re.prototype.GetOCSPSettings = function (e, t) {
+                (se.prototype.GetOCSPSettings = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("GetOCSPSettings", n, e, t, null)
                   );
                 }),
-                (re.prototype.SetOCSPSettings = function (e, t, n) {
+                (se.prototype.SetOCSPSettings = function (e, t, n) {
                   var r;
                   ((r = this._funcMakeParams([e])),
                     this._funcCall("SetOCSPSettings", r, t, n, null));
                 }),
-                (re.prototype.CreateOCSPAccessInfoModeSettings = function () {
-                  return new P();
+                (se.prototype.CreateOCSPAccessInfoModeSettings = function () {
+                  return new v();
                 }),
-                (re.prototype.GetOCSPAccessInfoModeSettings = function (e, t) {
+                (se.prototype.GetOCSPAccessInfoModeSettings = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
@@ -6841,7 +6918,7 @@ function dateFormatter(dateString) {
                     )
                   );
                 }),
-                (re.prototype.SetOCSPAccessInfoModeSettings = function (
+                (se.prototype.SetOCSPAccessInfoModeSettings = function (
                   e,
                   t,
                   n,
@@ -6856,24 +6933,24 @@ function dateFormatter(dateString) {
                       null,
                     ));
                 }),
-                (re.prototype.CreateOCSPAccessInfoSettings = function () {
-                  return new v();
+                (se.prototype.CreateOCSPAccessInfoSettings = function () {
+                  return new P();
                 }),
-                (re.prototype.EnumOCSPAccessInfoSettings = function (e, t, n) {
+                (se.prototype.EnumOCSPAccessInfoSettings = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("EnumOCSPAccessInfoSettings", r, t, n, null)
                   );
                 }),
-                (re.prototype.GetOCSPAccessInfoSettings = function (e, t, n) {
+                (se.prototype.GetOCSPAccessInfoSettings = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("GetOCSPAccessInfoSettings", r, t, n, null)
                   );
                 }),
-                (re.prototype.SetOCSPAccessInfoSettings = function (e, t, n) {
+                (se.prototype.SetOCSPAccessInfoSettings = function (e, t, n) {
                   var r,
                     i = this,
                     o = i.IsAsync(t, n);
@@ -6904,7 +6981,7 @@ function dateFormatter(dateString) {
                           null,
                         ));
                 }),
-                (re.prototype.DeleteOCSPAccessInfoSettings = function (
+                (se.prototype.DeleteOCSPAccessInfoSettings = function (
                   e,
                   t,
                   n,
@@ -6919,96 +6996,96 @@ function dateFormatter(dateString) {
                       null,
                     ));
                 }),
-                (re.prototype.CreateTSPSettings = function () {
+                (se.prototype.CreateTSPSettings = function () {
                   return new T();
                 }),
-                (re.prototype.GetTSPSettings = function (e, t) {
+                (se.prototype.GetTSPSettings = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("GetTSPSettings", n, e, t, null)
                   );
                 }),
-                (re.prototype.SetTSPSettings = function (e, t, n) {
+                (se.prototype.SetTSPSettings = function (e, t, n) {
                   var r;
                   ((r = this._funcMakeParams([e])),
                     this._funcCall("SetTSPSettings", r, t, n, null));
                 }),
-                (re.prototype.CreateLDAPSettings = function () {
-                  return new R();
+                (se.prototype.CreateLDAPSettings = function () {
+                  return new m();
                 }),
-                (re.prototype.GetLDAPSettings = function (e, t) {
+                (se.prototype.GetLDAPSettings = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("GetLDAPSettings", n, e, t, null)
                   );
                 }),
-                (re.prototype.SetLDAPSettings = function (e, t, n) {
+                (se.prototype.SetLDAPSettings = function (e, t, n) {
                   var r;
                   ((r = this._funcMakeParams([e])),
                     this._funcCall("SetLDAPSettings", r, t, n, null));
                 }),
-                (re.prototype.CreateCMPSettings = function () {
-                  return new m();
+                (se.prototype.CreateCMPSettings = function () {
+                  return new R();
                 }),
-                (re.prototype.GetCMPSettings = function (e, t) {
+                (se.prototype.GetCMPSettings = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("GetCMPSettings", n, e, t, null)
                   );
                 }),
-                (re.prototype.SetCMPSettings = function (e, t, n) {
+                (se.prototype.SetCMPSettings = function (e, t, n) {
                   var r;
                   ((r = this._funcMakeParams([e])),
                     this._funcCall("SetCMPSettings", r, t, n, null));
                 }),
-                (re.prototype.GetSystemProxySettings = function (e, t) {
+                (se.prototype.GetSystemProxySettings = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("GetSystemProxySettings", n, e, t, null)
                   );
                 }),
-                (re.prototype.SetOCSPResponseExpireTime = function (e, t, n) {
+                (se.prototype.SetOCSPResponseExpireTime = function (e, t, n) {
                   var r;
                   ((r = this._funcMakeParams([e])),
                     this._funcCall("SetOCSPResponseExpireTime", r, t, n, null));
                 }),
-                (re.prototype.CreateTSLSettings = function () {
+                (se.prototype.CreateTSLSettings = function () {
                   return new U();
                 }),
-                (re.prototype.GetTSLSettings = function (e, t) {
+                (se.prototype.GetTSLSettings = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("GetTSLSettings", n, e, t, null)
                   );
                 }),
-                (re.prototype.SetTSLSettings = function (e, t, n) {
+                (se.prototype.SetTSLSettings = function (e, t, n) {
                   var r;
                   ((r = this._funcMakeParams([e])),
                     this._funcCall("SetTSLSettings", r, t, n, null));
                 }),
-                (re.prototype.RefreshFileStore = function (e, t, n) {
+                (se.prototype.RefreshFileStore = function (e, t, n) {
                   var r;
                   ((r = this._funcMakeParams([e])),
                     this._funcCall("RefreshFileStore", r, t, n, null));
                 }),
-                (re.prototype.ShowCertificates = function (e, t) {
+                (se.prototype.ShowCertificates = function (e, t) {
                   var n;
                   ((n = this._funcMakeParams(null)),
                     this._funcCall("ShowCertificates", n, e, t, null));
                 }),
-                (re.prototype.SelectCertificateInfo = function (e, t) {
+                (se.prototype.SelectCertificateInfo = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("SelectCertificateInfo", n, e, t, null)
                   );
                 }),
-                (re.prototype.GetCertificatesCount = function (e, t, n, r) {
+                (se.prototype.GetCertificatesCount = function (e, t, n, r) {
                   var i;
                   return (
                     ("number" == typeof e && "number" == typeof t) ||
@@ -7020,7 +7097,7 @@ function dateFormatter(dateString) {
                     this._funcCall("GetCertificatesCount", i, n, r, null)
                   );
                 }),
-                (re.prototype.GetCACertificatesCount = function (e, t) {
+                (se.prototype.GetCACertificatesCount = function (e, t) {
                   return this.GetCertificatesCount(
                     this.SUBJECT_TYPE_CA,
                     this.SUBJECT_CA_SERVER_SUB_TYPE_UNDIFFERENCED,
@@ -7028,7 +7105,7 @@ function dateFormatter(dateString) {
                     t,
                   );
                 }),
-                (re.prototype.GetCAServerCertificatesCount = function (e, t) {
+                (se.prototype.GetCAServerCertificatesCount = function (e, t) {
                   return this.GetCertificatesCount(
                     this.SUBJECT_TYPE_CA_SERVER,
                     this.SUBJECT_CA_SERVER_SUB_TYPE_UNDIFFERENCED,
@@ -7036,7 +7113,7 @@ function dateFormatter(dateString) {
                     t,
                   );
                 }),
-                (re.prototype.GetCMPServerCertificatesCount = function (e, t) {
+                (se.prototype.GetCMPServerCertificatesCount = function (e, t) {
                   return this.GetCertificatesCount(
                     this.SUBJECT_TYPE_CA_SERVER,
                     this.SUBJECT_CA_SERVER_SUB_TYPE_CMP,
@@ -7044,7 +7121,7 @@ function dateFormatter(dateString) {
                     t,
                   );
                 }),
-                (re.prototype.GetOCSPServerCertificatesCount = function (e, t) {
+                (se.prototype.GetOCSPServerCertificatesCount = function (e, t) {
                   return this.GetCertificatesCount(
                     this.SUBJECT_TYPE_CA_SERVER,
                     this.SUBJECT_CA_SERVER_SUB_TYPE_OCSP,
@@ -7052,7 +7129,7 @@ function dateFormatter(dateString) {
                     t,
                   );
                 }),
-                (re.prototype.GetTSPServerCertificatesCount = function (e, t) {
+                (se.prototype.GetTSPServerCertificatesCount = function (e, t) {
                   return this.GetCertificatesCount(
                     this.SUBJECT_TYPE_CA_SERVER,
                     this.SUBJECT_CA_SERVER_SUB_TYPE_TSP,
@@ -7060,7 +7137,7 @@ function dateFormatter(dateString) {
                     t,
                   );
                 }),
-                (re.prototype.GetRAAdministratorCertificatesCount = function (
+                (se.prototype.GetRAAdministratorCertificatesCount = function (
                   e,
                   t,
                 ) {
@@ -7071,7 +7148,7 @@ function dateFormatter(dateString) {
                     t,
                   );
                 }),
-                (re.prototype.GetEndUserCertificatesCount = function (e, t) {
+                (se.prototype.GetEndUserCertificatesCount = function (e, t) {
                   return this.GetCertificatesCount(
                     this.SUBJECT_TYPE_END_USER,
                     this.SUBJECT_CA_SERVER_SUB_TYPE_UNDIFFERENCED,
@@ -7079,7 +7156,7 @@ function dateFormatter(dateString) {
                     t,
                   );
                 }),
-                (re.prototype.EnumCertificates = function (e, t, n, r, i) {
+                (se.prototype.EnumCertificates = function (e, t, n, r, i) {
                   var o;
                   return (
                     ("number" == typeof t && "number" == typeof n) ||
@@ -7092,7 +7169,7 @@ function dateFormatter(dateString) {
                     this._funcCall("EnumCertificates", o, r, i, null)
                   );
                 }),
-                (re.prototype.EnumCACertificates = function (e, t, n) {
+                (se.prototype.EnumCACertificates = function (e, t, n) {
                   return this.EnumCertificates(
                     e,
                     this.SUBJECT_TYPE_CA,
@@ -7101,7 +7178,7 @@ function dateFormatter(dateString) {
                     n,
                   );
                 }),
-                (re.prototype.EnumCAServerCertificates = function (e, t, n) {
+                (se.prototype.EnumCAServerCertificates = function (e, t, n) {
                   return this.EnumCertificates(
                     e,
                     this.SUBJECT_TYPE_CA_SERVER,
@@ -7110,7 +7187,7 @@ function dateFormatter(dateString) {
                     n,
                   );
                 }),
-                (re.prototype.EnumCMPServerCertificatesCount = function (
+                (se.prototype.EnumCMPServerCertificatesCount = function (
                   e,
                   t,
                   n,
@@ -7123,7 +7200,7 @@ function dateFormatter(dateString) {
                     n,
                   );
                 }),
-                (re.prototype.EnumOCSPServerCertificatesCount = function (
+                (se.prototype.EnumOCSPServerCertificatesCount = function (
                   e,
                   t,
                   n,
@@ -7136,7 +7213,7 @@ function dateFormatter(dateString) {
                     n,
                   );
                 }),
-                (re.prototype.EnumTSPServerCertificatesCount = function (
+                (se.prototype.EnumTSPServerCertificatesCount = function (
                   e,
                   t,
                   n,
@@ -7149,7 +7226,7 @@ function dateFormatter(dateString) {
                     n,
                   );
                 }),
-                (re.prototype.EnumRAAdministratorCertificatesCount = function (
+                (se.prototype.EnumRAAdministratorCertificatesCount = function (
                   e,
                   t,
                   n,
@@ -7162,7 +7239,7 @@ function dateFormatter(dateString) {
                     n,
                   );
                 }),
-                (re.prototype.EnumEndUserCertificatesCount = function (
+                (se.prototype.EnumEndUserCertificatesCount = function (
                   e,
                   t,
                   n,
@@ -7175,28 +7252,28 @@ function dateFormatter(dateString) {
                     n,
                   );
                 }),
-                (re.prototype.GetCertificateInfo = function (e, t, n, r) {
+                (se.prototype.GetCertificateInfo = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([e, t])),
                     this._funcCall("GetCertificateInfo", i, n, r, null)
                   );
                 }),
-                (re.prototype.GetCertificateInfoEx = function (e, t, n, r) {
+                (se.prototype.GetCertificateInfoEx = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([e, t])),
                     this._funcCall("GetCertificateInfoEx", i, n, r, null)
                   );
                 }),
-                (re.prototype.GetCertificate = function (e, t, n, r) {
+                (se.prototype.GetCertificate = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([e, t])),
                     this._funcCall("GetCertificate", i, n, r, null)
                   );
                 }),
-                (re.prototype.CheckCertificateByIssuerAndSerial = function (
+                (se.prototype.CheckCertificateByIssuerAndSerial = function (
                   e,
                   t,
                   n,
@@ -7214,49 +7291,49 @@ function dateFormatter(dateString) {
                     )
                   );
                 }),
-                (re.prototype.CheckCertificate = function (e, t, n) {
+                (se.prototype.CheckCertificate = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([new S(e)])),
                     this._funcCall("CheckCertificate", r, t, n, null)
                   );
                 }),
-                (re.prototype.ParseCertificate = function (e, t, n) {
+                (se.prototype.ParseCertificate = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([new S(e)])),
                     this._funcCall("ParseCertificate", r, t, n, null)
                   );
                 }),
-                (re.prototype.ParseCertificateEx = function (e, t, n) {
+                (se.prototype.ParseCertificateEx = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([new S(e)])),
                     this._funcCall("ParseCertificateEx", r, t, n, null)
                   );
                 }),
-                (re.prototype.SaveCertificate = function (e, t, n) {
+                (se.prototype.SaveCertificate = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([new S(e)])),
                     this._funcCall("SaveCertificate", r, t, n, null)
                   );
                 }),
-                (re.prototype.SaveCertificates = function (e, t, n) {
+                (se.prototype.SaveCertificates = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([new S(e)])),
                     this._funcCall("SaveCertificates", r, t, n, null)
                   );
                 }),
-                (re.prototype.SaveCertificatesEx = function (e, t, n, r) {
+                (se.prototype.SaveCertificatesEx = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([new S(e), t ? new S(t) : null])),
                     this._funcCall("SaveCertificatesEx", i, n, r, null)
                   );
                 }),
-                (re.prototype.GetCertificatesFromLDAPByEDRPOUCode = function (
+                (se.prototype.GetCertificatesFromLDAPByEDRPOUCode = function (
                   e,
                   t,
                   n,
@@ -7281,7 +7358,7 @@ function dateFormatter(dateString) {
                     )
                   );
                 }),
-                (re.prototype.GetCertificateByEmail = function (
+                (se.prototype.GetCertificateByEmail = function (
                   e,
                   t,
                   n,
@@ -7296,7 +7373,7 @@ function dateFormatter(dateString) {
                     this._funcCall("GetCertificateByEmail", s, i, o, null)
                   );
                 }),
-                (re.prototype.GetCertificateByNBUCode = function (
+                (se.prototype.GetCertificateByNBUCode = function (
                   e,
                   t,
                   n,
@@ -7311,14 +7388,14 @@ function dateFormatter(dateString) {
                     this._funcCall("GetCertificateByNBUCode", s, i, o, null)
                   );
                 }),
-                (re.prototype.GetReceiversCertificates = function (e, t) {
+                (se.prototype.GetReceiversCertificates = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("GetReceiversCertificates", n, e, t, null)
                   );
                 }),
-                (re.prototype.GetReceiversCertificatesInArrayList = function (
+                (se.prototype.GetReceiversCertificatesInArrayList = function (
                   e,
                   t,
                 ) {
@@ -7340,17 +7417,17 @@ function dateFormatter(dateString) {
                           t(o);
                         } catch (e) {
                           var a = r.MakeError(
-                            te.ERROR_LIBRARY_COMUNICATION_FAILED,
+                            ie.ERROR_LIBRARY_COMUNICATION_FAILED,
                             "",
                           );
                           if (i) return void n(a);
-                          throw new ne(a.errorCode, a.message);
+                          throw new oe(a.errorCode, a.message);
                         }
                       },
                     )
                   );
                 }),
-                (re.prototype.GetCertificates = function (e, t, n, r) {
+                (se.prototype.GetCertificates = function (e, t, n, r) {
                   var i,
                     o = this;
                   return (
@@ -7369,24 +7446,24 @@ function dateFormatter(dateString) {
                           t(i);
                         } catch (e) {
                           var a = o.MakeError(
-                            te.ERROR_LIBRARY_COMUNICATION_FAILED,
+                            ie.ERROR_LIBRARY_COMUNICATION_FAILED,
                             "",
                           );
                           if (r) return void n(a);
-                          throw new ne(a.errorCode, a.message);
+                          throw new oe(a.errorCode, a.message);
                         }
                       },
                     )
                   );
                 }),
-                (re.prototype.GetCertificateByFingerprint = function (e, t, n) {
+                (se.prototype.GetCertificateByFingerprint = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("GetCertificateByFingerprint", r, t, n, null)
                   );
                 }),
-                (re.prototype.GetCertificatesByEDRPOUAndDRFOCode = function (
+                (se.prototype.GetCertificatesByEDRPOUAndDRFOCode = function (
                   e,
                   t,
                   n,
@@ -7410,50 +7487,50 @@ function dateFormatter(dateString) {
                           t(i);
                         } catch (e) {
                           var a = o.MakeError(
-                            te.ERROR_LIBRARY_COMUNICATION_FAILED,
+                            ie.ERROR_LIBRARY_COMUNICATION_FAILED,
                             "",
                           );
                           if (r) return void n(a);
-                          throw new ne(a.errorCode, a.message);
+                          throw new oe(a.errorCode, a.message);
                         }
                       },
                     )
                   );
                 }),
-                (re.prototype.ShowCRLs = function (e, t) {
+                (se.prototype.ShowCRLs = function (e, t) {
                   var n;
                   ((n = this._funcMakeParams(null)),
                     this._funcCall("ShowCRLs", n, e, t, null));
                 }),
-                (re.prototype.GetCRLsCount = function (e, t) {
+                (se.prototype.GetCRLsCount = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("GetCRLsCount", n, e, t, null)
                   );
                 }),
-                (re.prototype.EnumCRLs = function (e, t, n) {
+                (se.prototype.EnumCRLs = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("EnumCRLs", r, t, n, null)
                   );
                 }),
-                (re.prototype.GetCRLDetailedInfo = function (e, t, n, r) {
+                (se.prototype.GetCRLDetailedInfo = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([e, parseInt(t)])),
                     this._funcCall("GetCRLDetailedInfo", i, n, r, null)
                   );
                 }),
-                (re.prototype.SaveCRL = function (e, t, n, r) {
+                (se.prototype.SaveCRL = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([e, new S(t)])),
                     this._funcCall("SaveCRL", i, n, r, null)
                   );
                 }),
-                (re.prototype.GetTSPByAccessInfo = function (e, t, n, r, i, o) {
+                (se.prototype.GetTSPByAccessInfo = function (e, t, n, r, i, o) {
                   var s;
                   if (
                     "string" == typeof t ||
@@ -7464,7 +7541,7 @@ function dateFormatter(dateString) {
                       this._funcCall("GetTSPByAccessInfo", s, i, o, null)
                     );
                 }),
-                (re.prototype.CheckTSP = function (e, t, n, r, i) {
+                (se.prototype.CheckTSP = function (e, t, n, r, i) {
                   var o;
                   ("string" == typeof e &&
                     null == (e = this._base64Decode(e, i))) ||
@@ -7474,7 +7551,7 @@ function dateFormatter(dateString) {
                     ((o = this._funcMakeParams([new S(e), t, n])),
                     this._funcCall("CheckTSP", o, r, i, null));
                 }),
-                (re.prototype.GetOCSPResponseByAccessInfo = function (
+                (se.prototype.GetOCSPResponseByAccessInfo = function (
                   e,
                   t,
                   n,
@@ -7487,7 +7564,7 @@ function dateFormatter(dateString) {
                     this._funcCall("GetOCSPResponseByAccessInfo", o, r, i, null)
                   );
                 }),
-                (re.prototype.CheckOCSPResponse = function (e, t, n, r) {
+                (se.prototype.CheckOCSPResponse = function (e, t, n, r) {
                   var i;
                   if (
                     "string" != typeof e ||
@@ -7501,10 +7578,10 @@ function dateFormatter(dateString) {
                       this._funcCall("CheckOCSPResponse", i, n, r, null)
                     );
                 }),
-                (re.prototype.CreateKeyMedia = function () {
+                (se.prototype.CreateKeyMedia = function () {
                   return new d();
                 }),
-                (re.prototype.GetPrivateKeyMedia = function (e, t, n) {
+                (se.prototype.GetPrivateKeyMedia = function (e, t, n) {
                   var r;
                   return (
                     "string" != typeof e && (e = null),
@@ -7512,28 +7589,28 @@ function dateFormatter(dateString) {
                     this._funcCall("GetPrivateKeyMedia", r, t, n, null)
                   );
                 }),
-                (re.prototype.EnumKeyMediaTypes = function (e, t, n) {
+                (se.prototype.EnumKeyMediaTypes = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("EnumKeyMediaTypes", r, t, n, null)
                   );
                 }),
-                (re.prototype.EnumKeyMediaDevices = function (e, t, n, r) {
+                (se.prototype.EnumKeyMediaDevices = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([e, t])),
                     this._funcCall("EnumKeyMediaDevices", i, n, r, null)
                   );
                 }),
-                (re.prototype.GetKeyMediaTypes = function (e, t) {
+                (se.prototype.GetKeyMediaTypes = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("GetKeyMediaTypes", n, e, t, null)
                   );
                 }),
-                (re.prototype.GetKeyMediaDevices = function (e, t, n) {
+                (se.prototype.GetKeyMediaDevices = function (e, t, n) {
                   var r;
                   return (
                     "number" == typeof e && (e = [e]),
@@ -7542,19 +7619,31 @@ function dateFormatter(dateString) {
                     this._funcCall("GetKeyMediaDevices", r, t, n, null)
                   );
                 }),
-                (re.prototype.IsPrivateKeyReaded = function (e, t) {
+                (se.prototype.GetKeyMediaDeviceInfo = function (e, t, n, r) {
+                  var i, o;
+                  return (
+                    "number" == typeof e
+                      ? (((o = new d()).typeIndex = e),
+                        (o.devIndex = t),
+                        (o.password = ""))
+                      : ((o = e), (r = n), (n = t)),
+                    (i = this._funcMakeParams([o])),
+                    this._funcCall("GetKeyMediaDeviceInfo", i, n, r, null)
+                  );
+                }),
+                (se.prototype.IsPrivateKeyReaded = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("IsPrivateKeyReaded", n, e, t, null)
                   );
                 }),
-                (re.prototype.ReadPrivateKey = function (e, t) {
+                (se.prototype.ReadPrivateKey = function (e, t) {
                   var n;
                   ((n = this._funcMakeParams(null)),
                     this._funcCall("ReadPrivateKey", n, e, t, null));
                 }),
-                (re.prototype.ReadPrivateKeySilently = function (
+                (se.prototype.ReadPrivateKeySilently = function (
                   e,
                   t,
                   n,
@@ -7570,17 +7659,17 @@ function dateFormatter(dateString) {
                     (o = this._funcMakeParams([s])),
                     this._funcCall("ReadPrivateKeySilently", o, r, i, null));
                 }),
-                (re.prototype.ReadPrivateKeyBinary = function (e, t, n, r) {
+                (se.prototype.ReadPrivateKeyBinary = function (e, t, n, r) {
                   var i;
                   ((i = this._funcMakeParams([new S(e), t])),
                     this._funcCall("ReadPrivateKeyBinary", i, n, r, null));
                 }),
-                (re.prototype.ReadPrivateKeyFile = function (e, t, n, r) {
+                (se.prototype.ReadPrivateKeyFile = function (e, t, n, r) {
                   var i;
                   ((i = this._funcMakeParams([e, t])),
                     this._funcCall("ReadPrivateKeyFile", i, n, r, null));
                 }),
-                (re.prototype.CtxReadPrivateKey = function (e, t, n, r, i, o) {
+                (se.prototype.CtxReadPrivateKey = function (e, t, n, r, i, o) {
                   var s, a;
                   return (
                     "number" == typeof t
@@ -7592,7 +7681,7 @@ function dateFormatter(dateString) {
                     this._funcCall("CtxReadPrivateKey", s, i, o, null)
                   );
                 }),
-                (re.prototype.CtxReadPrivateKeyBinary = function (
+                (se.prototype.CtxReadPrivateKeyBinary = function (
                   e,
                   t,
                   n,
@@ -7605,22 +7694,22 @@ function dateFormatter(dateString) {
                     this._funcCall("CtxReadPrivateKeyBinary", o, r, i, null)
                   );
                 }),
-                (re.prototype.ResetPrivateKey = function (e, t) {
+                (se.prototype.ResetPrivateKey = function (e, t) {
                   var n;
                   ((n = this._funcMakeParams(null)),
                     this._funcCall("ResetPrivateKey", n, e, t, null));
                 }),
-                (re.prototype.CtxFreePrivateKey = function (e, t, n) {
+                (se.prototype.CtxFreePrivateKey = function (e, t, n) {
                   var r;
                   ((r = this._funcMakeParams([e])),
                     this._funcCall("CtxFreePrivateKey", r, t, n, null));
                 }),
-                (re.prototype.ShowOwnCertificate = function (e, t) {
+                (se.prototype.ShowOwnCertificate = function (e, t) {
                   var n;
                   ((n = this._funcMakeParams(null)),
                     this._funcCall("ShowOwnCertificate", n, e, t, null));
                 }),
-                (re.prototype.GetOwnCertificate = function (e, t, n, r) {
+                (se.prototype.GetOwnCertificate = function (e, t, n, r) {
                   var i;
                   return (
                     ("number" == typeof e && "number" == typeof t) ||
@@ -7629,42 +7718,70 @@ function dateFormatter(dateString) {
                     this._funcCall("GetOwnCertificate", i, n, r, null)
                   );
                 }),
-                (re.prototype.EnumOwnCertificates = function (e, t, n) {
+                (se.prototype.EnumOwnCertificates = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("EnumOwnCertificates", r, t, n, null)
                   );
                 }),
-                (re.prototype.GetPrivateKeyOwnerInfo = function (e, t) {
+                (se.prototype.GetPrivateKeyOwnerInfo = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("GetPrivateKeyOwnerInfo", n, e, t, null)
                   );
                 }),
-                (re.prototype.CtxEnumOwnCertificates = function (e, t, n, r) {
+                (se.prototype.CtxEnumOwnCertificates = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([e, t])),
                     this._funcCall("CtxEnumOwnCertificates", i, n, r, null)
                   );
                 }),
-                (re.prototype.CtxGetOwnCertificate = function (e, t, n, r, i) {
+                (se.prototype.CtxGetOwnCertificate = function (e, t, n, r, i) {
                   var o;
                   return (
                     (o = this._funcMakeParams([e, t, n])),
                     this._funcCall("CtxGetOwnCertificate", o, r, i, null)
                   );
                 }),
-                (re.prototype.GetKeyInfo = function (e, t, n) {
+                (se.prototype.CtxEnumPrivateKeyInfo = function (e, t, n, r) {
+                  var i;
+                  return (
+                    (i = this._funcMakeParams([e, t])),
+                    this._funcCall("CtxEnumPrivateKeyInfo", i, n, r, null)
+                  );
+                }),
+                (se.prototype.CtxExportPrivateKeyPFXContainer = function (
+                  e,
+                  t,
+                  n,
+                  r,
+                  i,
+                  o,
+                  s,
+                ) {
+                  var a;
+                  return (
+                    (a = this._funcMakeParams([e, t, n, r, i])),
+                    this._funcCall(
+                      "CtxExportPrivateKeyPFXContainer",
+                      a,
+                      o,
+                      s,
+                      null,
+                    )
+                  );
+                }),
+                (se.prototype.GetKeyInfo = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("GetKeyInfo", r, t, n, null)
                   );
                 }),
-                (re.prototype.GetKeyInfoSilently = function (e, t, n, r, i) {
+                (se.prototype.GetKeyInfoSilently = function (e, t, n, r, i) {
                   var o;
                   return (
                     ((o = new d()).typeIndex = e),
@@ -7673,21 +7790,21 @@ function dateFormatter(dateString) {
                     this.GetKeyInfo(o, r, i)
                   );
                 }),
-                (re.prototype.GetKeyInfoBinary = function (e, t, n, r) {
+                (se.prototype.GetKeyInfoBinary = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([new S(e), t])),
                     this._funcCall("GetKeyInfoBinary", i, n, r, null)
                   );
                 }),
-                (re.prototype.GetKeyInfoFile = function (e, t, n, r) {
+                (se.prototype.GetKeyInfoFile = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([e, t])),
                     this._funcCall("GetKeyInfoFile", i, n, r, null)
                   );
                 }),
-                (re.prototype.GetCertificateByKeyInfo = function (e, t, n, r) {
+                (se.prototype.GetCertificateByKeyInfo = function (e, t, n, r) {
                   var i,
                     o = [];
                   return (
@@ -7700,7 +7817,7 @@ function dateFormatter(dateString) {
                     this._funcCall("GetCertificateByKeyInfo", i, n, r, null)
                   );
                 }),
-                (re.prototype.GetCertificatesByKeyInfo = function (
+                (se.prototype.GetCertificatesByKeyInfo = function (
                   e,
                   t,
                   n,
@@ -7719,7 +7836,7 @@ function dateFormatter(dateString) {
                     this._funcCall("GetCertificatesByKeyInfo", o, r, i, null)
                   );
                 }),
-                (re.prototype.ChangeSoftwarePrivateKeyPassword = function (
+                (se.prototype.ChangeSoftwarePrivateKeyPassword = function (
                   e,
                   t,
                   n,
@@ -7738,41 +7855,41 @@ function dateFormatter(dateString) {
                     )
                   );
                 }),
-                (re.prototype.EnumJKSPrivateKeys = function (e, t, n, r) {
+                (se.prototype.EnumJKSPrivateKeys = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([new S(e), t])),
                     this._funcCall("EnumJKSPrivateKeys", i, n, r, null)
                   );
                 }),
-                (re.prototype.EnumJKSPrivateKeysFile = function (e, t, n, r) {
+                (se.prototype.EnumJKSPrivateKeysFile = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([e, t])),
                     this._funcCall("EnumJKSPrivateKeysFile", i, n, r, null)
                   );
                 }),
-                (re.prototype.GetJKSPrivateKey = function (e, t, n, r) {
+                (se.prototype.GetJKSPrivateKey = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([new S(e), t])),
                     this._funcCall("GetJKSPrivateKey", i, n, r, null)
                   );
                 }),
-                (re.prototype.GetJKSPrivateKeyFile = function (e, t, n, r) {
+                (se.prototype.GetJKSPrivateKeyFile = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([e, t])),
                     this._funcCall("GetJKSPrivateKeyFile", i, n, r, null)
                   );
                 }),
-                (re.prototype.CreatePrivateKeyInfo = function () {
+                (se.prototype.CreatePrivateKeyInfo = function () {
                   return new L();
                 }),
-                (re.prototype.CreateEndUserInfo = function () {
-                  return new x();
+                (se.prototype.CreateEndUserInfo = function () {
+                  return new Y();
                 }),
-                (re.prototype._generatePrivateKey = function (
+                (se.prototype._generatePrivateKey = function (
                   e,
                   t,
                   n,
@@ -7836,7 +7953,7 @@ function dateFormatter(dateString) {
                     h,
                   );
                 }),
-                (re.prototype.GeneratePrivateKey = function (
+                (se.prototype.GeneratePrivateKey = function (
                   e,
                   t,
                   n,
@@ -7930,10 +8047,10 @@ function dateFormatter(dateString) {
                       c,
                       p,
                     );
-                  var S = this.MakeError(te.ERROR_BAD_PARAMETER, "");
-                  throw new ne(S.errorCode, S.message);
+                  var S = this.MakeError(ie.ERROR_BAD_PARAMETER, "");
+                  throw new oe(S.errorCode, S.message);
                 }),
-                (re.prototype._generatePrivateKeyEx = function (
+                (se.prototype._generatePrivateKeyEx = function (
                   e,
                   t,
                   n,
@@ -7955,18 +8072,18 @@ function dateFormatter(dateString) {
                   T,
                 ) {
                   var A,
-                    R,
-                    m = this;
+                    m,
+                    R = this;
                   return (
                     e
-                      ? (R = null)
-                      : (((R = new d()).typeIndex = t),
-                        (R.devIndex = n),
-                        (R.password = "string" != typeof r ? "" : r)),
+                      ? (m = null)
+                      : (((m = new d()).typeIndex = t),
+                        (m.devIndex = n),
+                        (m.password = "string" != typeof r ? "" : r)),
                     null == S && (y = !1),
                     (A = this._funcMakeParams([
                       e,
-                      R,
+                      m,
                       i,
                       o,
                       s,
@@ -7987,7 +8104,7 @@ function dateFormatter(dateString) {
                       C,
                       T,
                       function (e, t, n) {
-                        var r = m.IsAsync(t, n);
+                        var r = R.IsAsync(t, n);
                         try {
                           for (
                             var i = e[0], o = new _(), s = 0;
@@ -7998,18 +8115,18 @@ function dateFormatter(dateString) {
                           if ((null != S && S.set(e[1]), !r)) return o;
                           t(o);
                         } catch (e) {
-                          var a = m.MakeError(
-                            te.ERROR_LIBRARY_COMUNICATION_FAILED,
+                          var a = R.MakeError(
+                            ie.ERROR_LIBRARY_COMUNICATION_FAILED,
                             "",
                           );
                           if (r) return void n(a);
-                          throw new ne(a.errorCode, a.message);
+                          throw new oe(a.errorCode, a.message);
                         }
                       },
                     )
                   );
                 }),
-                (re.prototype.GeneratePrivateKeyEx = function (
+                (se.prototype.GeneratePrivateKeyEx = function (
                   e,
                   t,
                   n,
@@ -8206,17 +8323,17 @@ function dateFormatter(dateString) {
                           c,
                           p,
                         );
-                  var C = this.MakeError(te.ERROR_BAD_PARAMETER, "");
-                  throw new ne(C.errorCode, C.message);
+                  var C = this.MakeError(ie.ERROR_BAD_PARAMETER, "");
+                  throw new oe(C.errorCode, C.message);
                 }),
-                (re.prototype.GetCRInfo = function (e, t, n, r, i) {
+                (se.prototype.GetCRInfo = function (e, t, n, r, i) {
                   var o;
                   return (
                     (o = this._funcMakeParams([new S(e), t, n])),
                     this._funcCall("GetCRInfo", o, r, i, null)
                   );
                 }),
-                (re.prototype.IsHardwareKeyMedia = function (e, t, n, r, i) {
+                (se.prototype.IsHardwareKeyMedia = function (e, t, n, r, i) {
                   var o, s;
                   return (
                     "number" == typeof e
@@ -8228,7 +8345,7 @@ function dateFormatter(dateString) {
                     this._funcCall("IsHardwareKeyMedia", o, r, i, null)
                   );
                 }),
-                (re.prototype.IsPrivateKeyExists = function (e, t, n, r, i) {
+                (se.prototype.IsPrivateKeyExists = function (e, t, n, r, i) {
                   var o, s;
                   return (
                     "number" == typeof e
@@ -8240,7 +8357,7 @@ function dateFormatter(dateString) {
                     this._funcCall("IsPrivateKeyExists", o, r, i, null)
                   );
                 }),
-                (re.prototype.ChangePrivateKeyPassword = function (
+                (se.prototype.ChangePrivateKeyPassword = function (
                   e,
                   t,
                   n,
@@ -8257,7 +8374,7 @@ function dateFormatter(dateString) {
                     (s = this._funcMakeParams([a, r])),
                     this._funcCall("ChangePrivateKeyPassword", s, i, o, null));
                 }),
-                (re.prototype.BackupPrivateKey = function (
+                (se.prototype.BackupPrivateKey = function (
                   e,
                   t,
                   n,
@@ -8279,7 +8396,7 @@ function dateFormatter(dateString) {
                     (u = this._funcMakeParams([l, c])),
                     this._funcCall("BackupPrivateKey", u, s, a, null));
                 }),
-                (re.prototype.DestroyPrivateKey = function (e, t, n, r, i) {
+                (se.prototype.DestroyPrivateKey = function (e, t, n, r, i) {
                   var o, s;
                   ("number" == typeof e
                     ? (((s = new d()).typeIndex = e),
@@ -8289,7 +8406,7 @@ function dateFormatter(dateString) {
                     (o = this._funcMakeParams([s])),
                     this._funcCall("DestroyPrivateKey", o, r, i, null));
                 }),
-                (re.prototype.SetKeyMediaPassword = function (e, t, n, r, i) {
+                (se.prototype.SetKeyMediaPassword = function (e, t, n, r, i) {
                   var o, s;
                   ("number" == typeof e
                     ? (((s = new d()).typeIndex = e),
@@ -8299,7 +8416,7 @@ function dateFormatter(dateString) {
                     (o = this._funcMakeParams([s])),
                     this._funcCall("SetKeyMediaPassword", o, r, i, null));
                 }),
-                (re.prototype.SetKeyMediaUserPassword = function (
+                (se.prototype.SetKeyMediaUserPassword = function (
                   e,
                   t,
                   n,
@@ -8316,7 +8433,7 @@ function dateFormatter(dateString) {
                     (s = this._funcMakeParams([e, a])),
                     this._funcCall("SetKeyMediaUserPassword", s, i, o, null));
                 }),
-                (re.prototype.ChangeOwnCertificatesStatus = function (
+                (se.prototype.ChangeOwnCertificatesStatus = function (
                   e,
                   t,
                   n,
@@ -8332,7 +8449,7 @@ function dateFormatter(dateString) {
                       null,
                     ));
                 }),
-                (re.prototype.CtxChangeOwnCertificatesStatus = function (
+                (se.prototype.CtxChangeOwnCertificatesStatus = function (
                   e,
                   t,
                   n,
@@ -8349,7 +8466,7 @@ function dateFormatter(dateString) {
                       null,
                     ));
                 }),
-                (re.prototype.MakeNewCertificate = function (
+                (se.prototype.MakeNewCertificate = function (
                   e,
                   t,
                   n,
@@ -8387,7 +8504,7 @@ function dateFormatter(dateString) {
                     this._funcCall("MakeNewCertificate", h, f, E, null)
                   );
                 }),
-                (re.prototype.MakeNewCertificateEx = function (
+                (se.prototype.MakeNewCertificateEx = function (
                   e,
                   t,
                   n,
@@ -8429,7 +8546,7 @@ function dateFormatter(dateString) {
                     this._funcCall("MakeNewCertificateEx", y, h, d, null)
                   );
                 }),
-                (re.prototype.MakeNewOwnCertificate = function (
+                (se.prototype.MakeNewOwnCertificate = function (
                   e,
                   t,
                   n,
@@ -8447,7 +8564,7 @@ function dateFormatter(dateString) {
                     this._funcCall("MakeNewOwnCertificate", c, u, l, null)
                   );
                 }),
-                (re.prototype.CtxMakeNewOwnCertificate = function (
+                (se.prototype.CtxMakeNewOwnCertificate = function (
                   e,
                   t,
                   n,
@@ -8466,7 +8583,7 @@ function dateFormatter(dateString) {
                     this._funcCall("CtxMakeNewOwnCertificate", p, l, c, null)
                   );
                 }),
-                (re.prototype.CtxMakeNewOwnCertificateEx = function (
+                (se.prototype.CtxMakeNewOwnCertificateEx = function (
                   e,
                   t,
                   n,
@@ -8499,7 +8616,7 @@ function dateFormatter(dateString) {
                     this._funcCall("CtxMakeNewOwnCertificateEx", f, p, _, null)
                   );
                 }),
-                (re.prototype.CtxMakeNewOwnCertificateWithCR = function (
+                (se.prototype.CtxMakeNewOwnCertificateWithCR = function (
                   e,
                   t,
                   n,
@@ -8524,7 +8641,7 @@ function dateFormatter(dateString) {
                     )
                   );
                 }),
-                (re.prototype.CtxMakeDeviceCertificate = function (
+                (se.prototype.CtxMakeDeviceCertificate = function (
                   e,
                   t,
                   n,
@@ -8546,28 +8663,28 @@ function dateFormatter(dateString) {
                     this._funcCall("CtxMakeDeviceCertificate", c, u, l, null)
                   );
                 }),
-                (re.prototype.GetOwnEUserParams = function (e, t) {
+                (se.prototype.GetOwnEUserParams = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("GetOwnEUserParams", n, e, t, null)
                   );
                 }),
-                (re.prototype.ModifyOwnEUserParams = function (e, t, n, r) {
+                (se.prototype.ModifyOwnEUserParams = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([e, t])),
                     this._funcCall("ModifyOwnEUserParams", i, n, r, null)
                   );
                 }),
-                (re.prototype.CtxGetOwnEUserParams = function (e, t, n) {
+                (se.prototype.CtxGetOwnEUserParams = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("CtxGetOwnEUserParams", r, t, n, null)
                   );
                 }),
-                (re.prototype.CtxModifyOwnEUserParams = function (
+                (se.prototype.CtxModifyOwnEUserParams = function (
                   e,
                   t,
                   n,
@@ -8580,7 +8697,7 @@ function dateFormatter(dateString) {
                     this._funcCall("CtxModifyOwnEUserParams", o, r, i, null)
                   );
                 }),
-                (re.prototype.Hash = function (e, t, n) {
+                (se.prototype.Hash = function (e, t, n) {
                   var r;
                   if (
                     "string" != typeof e ||
@@ -8591,7 +8708,7 @@ function dateFormatter(dateString) {
                       this._funcCall("Hash", r, t, n, null)
                     );
                 }),
-                (re.prototype.ContinueHash = function (e, t, n, r, i) {
+                (se.prototype.ContinueHash = function (e, t, n, r, i) {
                   var o;
                   (("number" == typeof t && "number" == typeof n) ||
                     ((r = t), (i = n)),
@@ -8603,14 +8720,14 @@ function dateFormatter(dateString) {
                       (o = this._funcMakeParams([new S(e)])),
                       this._funcCall("ContinueHash", o, r, i, null)));
                 }),
-                (re.prototype.EndHash = function (e, t) {
+                (se.prototype.EndHash = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("EndHash", n, e, t, null)
                   );
                 }),
-                (re.prototype.HashWithParams = function (e, t, n, r) {
+                (se.prototype.HashWithParams = function (e, t, n, r) {
                   var i;
                   if (
                     "string" != typeof t ||
@@ -8621,26 +8738,26 @@ function dateFormatter(dateString) {
                       this._funcCall("HashWithParams", i, n, r, null)
                     );
                 }),
-                (re.prototype.HashBeginWithParams = function (e, t, n) {
+                (se.prototype.HashBeginWithParams = function (e, t, n) {
                   var r;
                   ((r = this._funcMakeParams([new S(e)])),
                     this._funcCall("HashBeginWithParams", r, t, n, null));
                 }),
-                (re.prototype.HashFile = function (e, t, n) {
+                (se.prototype.HashFile = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("HashFile", r, t, n, null)
                   );
                 }),
-                (re.prototype.HashFileWithParams = function (e, t, n, r) {
+                (se.prototype.HashFileWithParams = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([new S(e), t])),
                     this._funcCall("HashFileWithParams", i, n, r, null)
                   );
                 }),
-                (re.prototype.CtxHash = function (e, t, n, r, i, o) {
+                (se.prototype.CtxHash = function (e, t, n, r, i, o) {
                   var a = this,
                     u = this.IsAsync(i, o),
                     l = a.EU_FILE_PROCESS_CHUNK_SIZE;
@@ -8718,50 +8835,50 @@ function dateFormatter(dateString) {
                       }
                     }
                 }),
-                (re.prototype.CtxHashBegin = function (e, t, n, r, i) {
+                (se.prototype.CtxHashBegin = function (e, t, n, r, i) {
                   var o;
                   return (
                     (o = this._funcMakeParams([e, t, n ? new S(n) : null])),
                     this._funcCall("CtxHashBegin", o, r, i, null)
                   );
                 }),
-                (re.prototype.CtxHashContinue = function (e, t, n, r) {
+                (se.prototype.CtxHashContinue = function (e, t, n, r) {
                   var i;
                   ((i = this._funcMakeParams([e, new S(t)])),
                     this._funcCall("CtxHashContinue", i, n, r, null));
                 }),
-                (re.prototype.CtxHashEnd = function (e, t, n) {
+                (se.prototype.CtxHashEnd = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("CtxHashEnd", r, t, n, null)
                   );
                 }),
-                (re.prototype.CtxHashFree = function (e, t, n) {
+                (se.prototype.CtxHashFree = function (e, t, n) {
                   var r;
                   ((r = this._funcMakeParams([e])),
                     this._funcCall("CtxHashFree", r, t, n, null));
                 }),
-                (re.prototype.ShowSignInfo = function (e, t, n) {
+                (se.prototype.ShowSignInfo = function (e, t, n) {
                   var r;
                   ((r = this._funcMakeParams([e])),
                     this._funcCall("ShowSignInfo", r, t, n, null));
                 }),
-                (re.prototype.IsSigned = function (e, t, n) {
+                (se.prototype.IsSigned = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([new S(e)])),
                     this._funcCall("IsSigned", r, t, n, null)
                   );
                 }),
-                (re.prototype.IsSignedFile = function (e, t, n) {
+                (se.prototype.IsSignedFile = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("IsSignedFile", r, t, n, null)
                   );
                 }),
-                (re.prototype.GetSignType = function (e, t, n, r) {
+                (se.prototype.GetSignType = function (e, t, n, r) {
                   var i;
                   if (
                     "string" == typeof t ||
@@ -8772,14 +8889,14 @@ function dateFormatter(dateString) {
                       this._funcCall("GetSignType", i, n, r, null)
                     );
                 }),
-                (re.prototype.GetFileSignType = function (e, t, n, r) {
+                (se.prototype.GetFileSignType = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([e, t])),
                     this._funcCall("GetFileSignType", i, n, r, null)
                   );
                 }),
-                (re.prototype.GetSignsCount = function (e, t, n) {
+                (se.prototype.GetSignsCount = function (e, t, n) {
                   var r;
                   if (
                     "string" == typeof e ||
@@ -8790,42 +8907,42 @@ function dateFormatter(dateString) {
                       this._funcCall("GetSignsCount", r, t, n, null)
                     );
                 }),
-                (re.prototype.GetSignerInfo = function (e, t, n, r) {
+                (se.prototype.GetSignerInfo = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([e, t])),
                     this._funcCall("GetSignerInfo", i, n, r, null)
                   );
                 }),
-                (re.prototype.GetSignerCertificate = function (e, t, n, r) {
+                (se.prototype.GetSignerCertificate = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([e, t])),
                     this._funcCall("GetSignerCertificate", i, n, r, null)
                   );
                 }),
-                (re.prototype.GetFileSignsCount = function (e, t, n) {
+                (se.prototype.GetFileSignsCount = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("GetFileSignsCount", r, t, n, null)
                   );
                 }),
-                (re.prototype.GetFileSignerInfo = function (e, t, n, r) {
+                (se.prototype.GetFileSignerInfo = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([e, t])),
                     this._funcCall("GetFileSignerInfo", i, n, r, null)
                   );
                 }),
-                (re.prototype.GetFileSignerCertificate = function (e, t, n, r) {
+                (se.prototype.GetFileSignerCertificate = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([e, t])),
                     this._funcCall("GetFileSignerCertificate", i, n, r, null)
                   );
                 }),
-                (re.prototype.CtxGetSignerInfo = function (e, t, n, r, i) {
+                (se.prototype.CtxGetSignerInfo = function (e, t, n, r, i) {
                   var o;
                   if (
                     "string" == typeof n ||
@@ -8836,7 +8953,7 @@ function dateFormatter(dateString) {
                       this._funcCall("CtxGetSignerInfo", o, r, i, null)
                     );
                 }),
-                (re.prototype.Sign = function (e, t, n) {
+                (se.prototype.Sign = function (e, t, n) {
                   var r;
                   if (
                     "string" != typeof e ||
@@ -8847,7 +8964,7 @@ function dateFormatter(dateString) {
                       this._funcCall("Sign", r, t, n, null)
                     );
                 }),
-                (re.prototype.Verify = function (e, t, n, r, i) {
+                (se.prototype.Verify = function (e, t, n, r, i) {
                   var o,
                     s = [];
                   if (
@@ -8863,7 +8980,7 @@ function dateFormatter(dateString) {
                       this._funcCall("Verify", o, r, i, null)
                     );
                 }),
-                (re.prototype.ContinueSign = function (e, t, n, r, i) {
+                (se.prototype.ContinueSign = function (e, t, n, r, i) {
                   var o;
                   (("number" == typeof t && "number" == typeof n) ||
                     ((r = t), (i = n)),
@@ -8875,19 +8992,19 @@ function dateFormatter(dateString) {
                       (o = this._funcMakeParams([new S(e)])),
                       this._funcCall("ContinueSign", o, r, i, null)));
                 }),
-                (re.prototype.EndSign = function (e, t) {
+                (se.prototype.EndSign = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("EndSign", n, e, t, null)
                   );
                 }),
-                (re.prototype.BeginVerify = function (e, t, n) {
+                (se.prototype.BeginVerify = function (e, t, n) {
                   var r;
                   ((r = this._funcMakeParams([e])),
                     this._funcCall("BeginVerify", r, t, n, null));
                 }),
-                (re.prototype.ContinueVerify = function (e, t, n, r, i) {
+                (se.prototype.ContinueVerify = function (e, t, n, r, i) {
                   var o;
                   (("number" == typeof t && "number" == typeof n) ||
                     ((r = t), (i = n)),
@@ -8899,7 +9016,7 @@ function dateFormatter(dateString) {
                       (o = this._funcMakeParams([new S(e)])),
                       this._funcCall("ContinueVerify", o, r, i, null)));
                 }),
-                (re.prototype.EndVerify = function (e, t, n) {
+                (se.prototype.EndVerify = function (e, t, n) {
                   var r,
                     i = [];
                   return (
@@ -8909,14 +9026,14 @@ function dateFormatter(dateString) {
                     this._funcCall("EndVerify", r, t, n, null)
                   );
                 }),
-                (re.prototype.SignHash = function (e, t, n) {
+                (se.prototype.SignHash = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("SignHash", r, t, n, null)
                   );
                 }),
-                (re.prototype.VerifyHash = function (e, t, n, r, i) {
+                (se.prototype.VerifyHash = function (e, t, n, r, i) {
                   var o,
                     s = [];
                   return (
@@ -8928,7 +9045,7 @@ function dateFormatter(dateString) {
                     this._funcCall("VerifyHash", o, r, i, null)
                   );
                 }),
-                (re.prototype.SignInternal = function (e, t, n, r) {
+                (se.prototype.SignInternal = function (e, t, n, r) {
                   var i;
                   if (
                     "string" != typeof t ||
@@ -8939,7 +9056,7 @@ function dateFormatter(dateString) {
                       this._funcCall("SignInternal", i, n, r, null)
                     );
                 }),
-                (re.prototype.VerifyInternal = function (e, t, n, r) {
+                (se.prototype.VerifyInternal = function (e, t, n, r) {
                   var i,
                     o = [];
                   return (
@@ -8950,7 +9067,7 @@ function dateFormatter(dateString) {
                     this._funcCall("VerifyInternal", i, n, r, null)
                   );
                 }),
-                (re.prototype.VerifyInternalString = function (e, t, n, r) {
+                (se.prototype.VerifyInternalString = function (e, t, n, r) {
                   var i = this;
                   if (
                     ("boolean" != typeof t && ((r = n), (n = t)),
@@ -8968,12 +9085,12 @@ function dateFormatter(dateString) {
                     r,
                   );
                 }),
-                (re.prototype.SignFile = function (e, t, n, r, i) {
+                (se.prototype.SignFile = function (e, t, n, r, i) {
                   var o;
                   ((o = this._funcMakeParams([e, t, n])),
                     this._funcCall("SignFile", o, r, i, null));
                 }),
-                (re.prototype.VerifyFile = function (e, t, n, r, i) {
+                (se.prototype.VerifyFile = function (e, t, n, r, i) {
                   var o,
                     s = [];
                   return (
@@ -8985,7 +9102,7 @@ function dateFormatter(dateString) {
                     this._funcCall("VerifyFile", o, r, i, null)
                   );
                 }),
-                (re.prototype.VerifyFileWithExternalSign = function (
+                (se.prototype.VerifyFileWithExternalSign = function (
                   e,
                   t,
                   n,
@@ -8994,7 +9111,7 @@ function dateFormatter(dateString) {
                 ) {
                   return this.VerifyFile(t, e, n, r, i);
                 }),
-                (re.prototype.VerifyFileWithInternalSign = function (
+                (se.prototype.VerifyFileWithInternalSign = function (
                   e,
                   t,
                   n,
@@ -9003,21 +9120,21 @@ function dateFormatter(dateString) {
                 ) {
                   return this.VerifyFile(e, t, n, r, i);
                 }),
-                (re.prototype.IsAlreadySigned = function (e, t, n) {
+                (se.prototype.IsAlreadySigned = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("IsAlreadySigned", r, t, n, null)
                   );
                 }),
-                (re.prototype.IsFileAlreadySigned = function (e, t, n) {
+                (se.prototype.IsFileAlreadySigned = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("IsFileAlreadySigned", r, t, n, null)
                   );
                 }),
-                (re.prototype.AppendSign = function (e, t, n, r) {
+                (se.prototype.AppendSign = function (e, t, n, r) {
                   var i;
                   if (
                     !(
@@ -9032,7 +9149,7 @@ function dateFormatter(dateString) {
                       this._funcCall("AppendSign", i, n, r, null)
                     );
                 }),
-                (re.prototype.VerifySpecific = function (e, t, n, r, i, o) {
+                (se.prototype.VerifySpecific = function (e, t, n, r, i, o) {
                   var s,
                     a = [];
                   if (
@@ -9049,19 +9166,19 @@ function dateFormatter(dateString) {
                       this._funcCall("VerifySpecific", s, i, o, null)
                     );
                 }),
-                (re.prototype.AppendSignBegin = function (e, t, n) {
+                (se.prototype.AppendSignBegin = function (e, t, n) {
                   var r;
                   ("string" != typeof e &&
                     null == (e = this._base64Encode(e, n))) ||
                     ((r = this._funcMakeParams([e])),
                     this._funcCall("AppendSignBegin", r, t, n, null));
                 }),
-                (re.prototype.VerifyDataSpecificBegin = function (e, t, n, r) {
+                (se.prototype.VerifyDataSpecificBegin = function (e, t, n, r) {
                   var i;
                   ((i = this._funcMakeParams([e, t])),
                     this._funcCall("VerifyDataSpecificBegin", i, n, r, null));
                 }),
-                (re.prototype.AppendSignHash = function (e, t, n, r) {
+                (se.prototype.AppendSignHash = function (e, t, n, r) {
                   var i;
                   if (
                     !(
@@ -9076,7 +9193,7 @@ function dateFormatter(dateString) {
                       this._funcCall("AppendSignHash", i, n, r, null)
                     );
                 }),
-                (re.prototype.VerifyHashSpecific = function (e, t, n, r, i, o) {
+                (se.prototype.VerifyHashSpecific = function (e, t, n, r, i, o) {
                   var s,
                     a = [];
                   return (
@@ -9089,7 +9206,7 @@ function dateFormatter(dateString) {
                     this._funcCall("VerifyHashSpecific", s, i, o, null)
                   );
                 }),
-                (re.prototype.AppendSignInternal = function (e, t, n, r) {
+                (se.prototype.AppendSignInternal = function (e, t, n, r) {
                   var i;
                   if (
                     "string" == typeof t ||
@@ -9100,7 +9217,7 @@ function dateFormatter(dateString) {
                       this._funcCall("AppendSignInternal", i, n, r, null)
                     );
                 }),
-                (re.prototype.VerifySpecificInternal = function (
+                (se.prototype.VerifySpecificInternal = function (
                   e,
                   t,
                   n,
@@ -9118,7 +9235,7 @@ function dateFormatter(dateString) {
                     this._funcCall("VerifySpecificInternal", o, r, i, null)
                   );
                 }),
-                (re.prototype.VerifySpecificInternalString = function (
+                (se.prototype.VerifySpecificInternalString = function (
                   e,
                   t,
                   n,
@@ -9143,14 +9260,14 @@ function dateFormatter(dateString) {
                     i,
                   );
                 }),
-                (re.prototype.AppendSignFile = function (e, t, n, r, i, o) {
+                (se.prototype.AppendSignFile = function (e, t, n, r, i, o) {
                   var s;
                   return (
                     (s = this._funcMakeParams([e, t, n, r])),
                     this._funcCall("AppendSignFile", s, i, o, null)
                   );
                 }),
-                (re.prototype.VerifyFileSpecific = function (e, t, n, r, i, o) {
+                (se.prototype.VerifyFileSpecific = function (e, t, n, r, i, o) {
                   var s,
                     a = [];
                   return (
@@ -9163,7 +9280,7 @@ function dateFormatter(dateString) {
                     this._funcCall("VerifyFileSpecific", s, i, o, null)
                   );
                 }),
-                (re.prototype.VerifyFileWithExternalSignSpecific = function (
+                (se.prototype.VerifyFileWithExternalSignSpecific = function (
                   e,
                   t,
                   n,
@@ -9173,7 +9290,7 @@ function dateFormatter(dateString) {
                 ) {
                   return this.VerifyFileSpecific(e, t, n, r, i, o);
                 }),
-                (re.prototype.VerifyFileWithInternalSignSpecific = function (
+                (se.prototype.VerifyFileWithInternalSignSpecific = function (
                   e,
                   t,
                   n,
@@ -9183,7 +9300,7 @@ function dateFormatter(dateString) {
                 ) {
                   return this.VerifyFileSpecific(e, t, n, r, i, o);
                 }),
-                (re.prototype.CreateEmptySign = function (e, t, n) {
+                (se.prototype.CreateEmptySign = function (e, t, n) {
                   var r,
                     i = [];
                   if (
@@ -9199,14 +9316,14 @@ function dateFormatter(dateString) {
                       this._funcCall("CreateEmptySign", r, t, n, null)
                     );
                 }),
-                (re.prototype.CreateSigner = function (e, t, n) {
+                (se.prototype.CreateSigner = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("CreateSigner", r, t, n, null)
                   );
                 }),
-                (re.prototype.CreateSignerEx = function (e, t, n, r, i) {
+                (se.prototype.CreateSignerEx = function (e, t, n, r, i) {
                   var o;
                   if (
                     "string" == typeof e ||
@@ -9217,7 +9334,7 @@ function dateFormatter(dateString) {
                       this._funcCall("CreateSignerEx", o, r, i, null)
                     );
                 }),
-                (re.prototype.AppendSigner = function (e, t, n, r, i) {
+                (se.prototype.AppendSigner = function (e, t, n, r, i) {
                   var o,
                     s = [];
                   return (
@@ -9228,7 +9345,7 @@ function dateFormatter(dateString) {
                     this._funcCall("AppendSigner", o, r, i, null)
                   );
                 }),
-                (re.prototype.AppendValidationDataToSignerEx = function (
+                (se.prototype.AppendValidationDataToSignerEx = function (
                   e,
                   t,
                   n,
@@ -9255,7 +9372,7 @@ function dateFormatter(dateString) {
                       )
                     );
                 }),
-                (re.prototype.IsDataInSignedDataAvailable = function (e, t, n) {
+                (se.prototype.IsDataInSignedDataAvailable = function (e, t, n) {
                   var r;
                   if (
                     "string" == typeof e ||
@@ -9272,26 +9389,60 @@ function dateFormatter(dateString) {
                       )
                     );
                 }),
-                (re.prototype.IsDataInSignedFileAvailable = function (e, t, n) {
+                (se.prototype.IsDataInSignedFileAvailable = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("IsDataInSignedFileAvailable", r, t, n, null)
                   );
                 }),
-                (re.prototype.GetDataFromSignedData = function (e, t, n) {
+                (se.prototype.GetDataFromSignedData = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("GetDataFromSignedData", r, t, n, null)
                   );
                 }),
-                (re.prototype.GetDataFromSignedFile = function (e, t, n, r) {
+                (se.prototype.GetDataFromSignedFile = function (e, t, n, r) {
                   var i;
                   ((i = this._funcMakeParams([e, t])),
                     this._funcCall("GetDataFromSignedFile", i, n, r, null));
                 }),
-                (re.prototype.GetCertificateFromSignedData = function (
+                (se.prototype.GetDataHashFromSignedDataEx = function (
+                  e,
+                  t,
+                  n,
+                  r,
+                ) {
+                  var i;
+                  if (
+                    "string" == typeof t ||
+                    null != (t = this._base64Encode(t, r))
+                  )
+                    return (
+                      (i = this._funcMakeParams([e, t])),
+                      this._funcCall(
+                        "GetDataHashFromSignedDataEx",
+                        i,
+                        n,
+                        r,
+                        null,
+                      )
+                    );
+                }),
+                (se.prototype.GetDataHashFromSignedFileEx = function (
+                  e,
+                  t,
+                  n,
+                  r,
+                ) {
+                  var i;
+                  return (
+                    (i = this._funcMakeParams([e, t])),
+                    this._funcCall("GetDataHashFromSignedFileEx", i, n, r, null)
+                  );
+                }),
+                (se.prototype.GetCertificateFromSignedData = function (
                   e,
                   t,
                   n,
@@ -9313,7 +9464,7 @@ function dateFormatter(dateString) {
                       )
                     );
                 }),
-                (re.prototype.GetCertificateFromSignedFile = function (
+                (se.prototype.GetCertificateFromSignedFile = function (
                   e,
                   t,
                   n,
@@ -9331,7 +9482,7 @@ function dateFormatter(dateString) {
                     )
                   );
                 }),
-                (re.prototype.GetSignTimeInfo = function (e, t, n, r) {
+                (se.prototype.GetSignTimeInfo = function (e, t, n, r) {
                   var i;
                   if (
                     "string" == typeof t ||
@@ -9342,14 +9493,14 @@ function dateFormatter(dateString) {
                       this._funcCall("GetSignTimeInfo", i, n, r, null)
                     );
                 }),
-                (re.prototype.GetFileSignTimeInfo = function (e, t, n, r) {
+                (se.prototype.GetFileSignTimeInfo = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([e, t])),
                     this._funcCall("GetFileSignTimeInfo", i, n, r, null)
                   );
                 }),
-                (re.prototype.VerifyHashOnTime = function (
+                (se.prototype.VerifyHashOnTime = function (
                   e,
                   t,
                   n,
@@ -9370,7 +9521,7 @@ function dateFormatter(dateString) {
                     s,
                   );
                 }),
-                (re.prototype.VerifyHashOnTimeEx = function (
+                (se.prototype.VerifyHashOnTimeEx = function (
                   e,
                   t,
                   n,
@@ -9399,7 +9550,7 @@ function dateFormatter(dateString) {
                       this._funcCall("VerifyHashOnTimeEx", l, a, u, null)
                     );
                 }),
-                (re.prototype.VerifyDataOnTime = function (
+                (se.prototype.VerifyDataOnTime = function (
                   e,
                   t,
                   n,
@@ -9420,7 +9571,7 @@ function dateFormatter(dateString) {
                     s,
                   );
                 }),
-                (re.prototype.VerifyDataOnTimeEx = function (
+                (se.prototype.VerifyDataOnTimeEx = function (
                   e,
                   t,
                   n,
@@ -9449,7 +9600,7 @@ function dateFormatter(dateString) {
                       this._funcCall("VerifyDataOnTimeEx", l, a, u, null)
                     );
                 }),
-                (re.prototype.VerifyDataInternalOnTime = function (
+                (se.prototype.VerifyDataInternalOnTime = function (
                   e,
                   t,
                   n,
@@ -9468,7 +9619,7 @@ function dateFormatter(dateString) {
                     o,
                   );
                 }),
-                (re.prototype.VerifyDataInternalOnTimeEx = function (
+                (se.prototype.VerifyDataInternalOnTimeEx = function (
                   e,
                   t,
                   n,
@@ -9498,7 +9649,7 @@ function dateFormatter(dateString) {
                       )
                     );
                 }),
-                (re.prototype.VerifyDataInternalOnTimeString = function (
+                (se.prototype.VerifyDataInternalOnTimeString = function (
                   e,
                   t,
                   n,
@@ -9517,7 +9668,7 @@ function dateFormatter(dateString) {
                     o,
                   );
                 }),
-                (re.prototype.VerifyDataInternalOnTimeStringEx = function (
+                (se.prototype.VerifyDataInternalOnTimeStringEx = function (
                   e,
                   t,
                   n,
@@ -9548,10 +9699,10 @@ function dateFormatter(dateString) {
                     a,
                   );
                 }),
-                (re.prototype.VerifyDataOnTimeBegin = function (e, t, n, r, i) {
+                (se.prototype.VerifyDataOnTimeBegin = function (e, t, n, r, i) {
                   this.VerifyDataOnTimeBeginEx(e, t, n, null != n, !1, r, i);
                 }),
-                (re.prototype.VerifyDataOnTimeBeginEx = function (
+                (se.prototype.VerifyDataOnTimeBeginEx = function (
                   e,
                   t,
                   n,
@@ -9564,7 +9715,7 @@ function dateFormatter(dateString) {
                   ((a = this._funcMakeParams([e, t, n, r, i])),
                     this._funcCall("VerifyDataOnTimeBeginEx", a, o, s, null));
                 }),
-                (re.prototype.VerifyFileOnTime = function (
+                (se.prototype.VerifyFileOnTime = function (
                   e,
                   t,
                   n,
@@ -9585,7 +9736,7 @@ function dateFormatter(dateString) {
                     this._funcCall("VerifyFileOnTimeEx", l, a, u, null)
                   );
                 }),
-                (re.prototype.VerifyFileWithExternalSignOnTime = function (
+                (se.prototype.VerifyFileWithExternalSignOnTime = function (
                   e,
                   t,
                   n,
@@ -9606,7 +9757,7 @@ function dateFormatter(dateString) {
                     s,
                   );
                 }),
-                (re.prototype.VerifyFileWithExternalSignOnTimeEx = function (
+                (se.prototype.VerifyFileWithExternalSignOnTimeEx = function (
                   e,
                   t,
                   n,
@@ -9619,7 +9770,7 @@ function dateFormatter(dateString) {
                 ) {
                   return this.VerifyFileOnTime(e, n, t, r, i, o, s, a, u);
                 }),
-                (re.prototype.VerifyFileWithInternalSignOnTime = function (
+                (se.prototype.VerifyFileWithInternalSignOnTime = function (
                   e,
                   t,
                   n,
@@ -9640,7 +9791,7 @@ function dateFormatter(dateString) {
                     s,
                   );
                 }),
-                (re.prototype.VerifyFileWithInternalSignOnTimeEx = function (
+                (se.prototype.VerifyFileWithInternalSignOnTimeEx = function (
                   e,
                   t,
                   n,
@@ -9653,10 +9804,10 @@ function dateFormatter(dateString) {
                 ) {
                   return this.VerifyFileOnTime(e, n, t, r, i, o, s, a, u);
                 }),
-                (re.prototype.ContinueSignCtx = function (e, t, n, r) {
+                (se.prototype.ContinueSignCtx = function (e, t, n, r) {
                   var i;
                   if (
-                    (null == e && (e = new H()),
+                    (null == e && (e = new W()),
                     "string" != typeof t ||
                       null != (t = this._stringToBytes(t, r)))
                   )
@@ -9665,7 +9816,7 @@ function dateFormatter(dateString) {
                       this._funcCall("ContinueSignCtx", i, n, r, null)
                     );
                 }),
-                (re.prototype.ContinueSignCtxWithOffset = function (
+                (se.prototype.ContinueSignCtxWithOffset = function (
                   e,
                   t,
                   n,
@@ -9678,21 +9829,21 @@ function dateFormatter(dateString) {
                     this.ContinueSignCtx(e, t, i, o)
                   );
                 }),
-                (re.prototype.EndSignCtx = function (e, t, n, r) {
+                (se.prototype.EndSignCtx = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([e, t])),
                     this._funcCall("EndSignCtx", i, n, r, null)
                   );
                 }),
-                (re.prototype.BeginVerifyCtx = function (e, t, n) {
+                (se.prototype.BeginVerifyCtx = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("BeginVerifyCtx", r, t, n, null)
                   );
                 }),
-                (re.prototype.ContinueVerifyCtx = function (e, t, n, r, i, o) {
+                (se.prototype.ContinueVerifyCtx = function (e, t, n, r, i, o) {
                   var s;
                   (("number" == typeof n && "number" == typeof r) ||
                     ((i = n), (o = r)),
@@ -9704,7 +9855,7 @@ function dateFormatter(dateString) {
                       (s = this._funcMakeParams([e, new S(t)])),
                       this._funcCall("ContinueVerifyCtx", s, i, o, null)));
                 }),
-                (re.prototype.EndVerifyCtx = function (e, t, n, r) {
+                (se.prototype.EndVerifyCtx = function (e, t, n, r) {
                   var i,
                     o = [];
                   return (
@@ -9715,19 +9866,19 @@ function dateFormatter(dateString) {
                     this._funcCall("EndVerifyCtx", i, n, r, null)
                   );
                 }),
-                (re.prototype.ResetOperationCtx = function (e, t, n) {
+                (se.prototype.ResetOperationCtx = function (e, t, n) {
                   var r;
                   ((r = this._funcMakeParams([e])),
                     this._funcCall("ResetOperationCtx", r, t, n, null));
                 }),
-                (re.prototype.SignHashRSA = function (e, t, n) {
+                (se.prototype.SignHashRSA = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("SignHashRSA", r, t, n, null)
                   );
                 }),
-                (re.prototype.SignRSA = function (e, t, n, r, i) {
+                (se.prototype.SignRSA = function (e, t, n, r, i) {
                   var o;
                   if (
                     "string" != typeof e ||
@@ -9738,14 +9889,14 @@ function dateFormatter(dateString) {
                       this._funcCall("SignRSA", o, r, i, null)
                     );
                 }),
-                (re.prototype.ContinueRSASign = function (e, t, n) {
+                (se.prototype.ContinueRSASign = function (e, t, n) {
                   var r;
                   ("string" == typeof e &&
                     null == (e = this._stringToBytes(e, n))) ||
                     ((r = this._funcMakeParams([new S(e)])),
                     this._funcCall("ContinueRSASign", r, t, n, null));
                 }),
-                (re.prototype.ContinueRSASignWithOffset = function (
+                (se.prototype.ContinueRSASignWithOffset = function (
                   e,
                   t,
                   n,
@@ -9757,24 +9908,24 @@ function dateFormatter(dateString) {
                     this.ContinueRSASign(e, r, i)
                   );
                 }),
-                (re.prototype.EndRSASign = function (e, t, n) {
+                (se.prototype.EndRSASign = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("EndRSASign", r, t, n, null)
                   );
                 }),
-                (re.prototype.SignRSAFile = function (e, t, n, r, i) {
+                (se.prototype.SignRSAFile = function (e, t, n, r, i) {
                   var o;
                   return (
                     (o = this._funcMakeParams([e, t, n])),
                     this._funcCall("SignRSAFile", o, r, i, null)
                   );
                 }),
-                (re.prototype.ContinueRSASignCtx = function (e, t, n, r) {
+                (se.prototype.ContinueRSASignCtx = function (e, t, n, r) {
                   var i;
                   if (
-                    (null == e && (e = new H()),
+                    (null == e && (e = new W()),
                     "string" != typeof t ||
                       null != (t = this._stringToBytes(t, r)))
                   )
@@ -9783,7 +9934,7 @@ function dateFormatter(dateString) {
                       this._funcCall("ContinueRSASignCtx", i, n, r, null)
                     );
                 }),
-                (re.prototype.ContinueRSASignCtxWithOffset = function (
+                (se.prototype.ContinueRSASignCtxWithOffset = function (
                   e,
                   t,
                   n,
@@ -9796,14 +9947,14 @@ function dateFormatter(dateString) {
                     this.ContinueRSASignCtx(t, i, o)
                   );
                 }),
-                (re.prototype.EndRSASignCtx = function (e, t, n, r) {
+                (se.prototype.EndRSASignCtx = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([e, t])),
                     this._funcCall("EndRSASignCtx", i, n, r, null)
                   );
                 }),
-                (re.prototype.SignECDSA = function (e, t, n, r, i) {
+                (se.prototype.SignECDSA = function (e, t, n, r, i) {
                   var o;
                   if (
                     "string" != typeof e ||
@@ -9814,7 +9965,7 @@ function dateFormatter(dateString) {
                       this._funcCall("SignECDSA", o, r, i, null)
                     );
                 }),
-                (re.prototype.RawSign = function (e, t, n) {
+                (se.prototype.RawSign = function (e, t, n) {
                   var r;
                   if (
                     "string" != typeof e ||
@@ -9825,7 +9976,7 @@ function dateFormatter(dateString) {
                       this._funcCall("RawSign", r, t, n, null)
                     );
                 }),
-                (re.prototype.RawVerify = function (e, t, n, r, i) {
+                (se.prototype.RawVerify = function (e, t, n, r, i) {
                   var o,
                     s = [];
                   if (
@@ -9841,14 +9992,14 @@ function dateFormatter(dateString) {
                       this._funcCall("RawVerify", o, r, i, null)
                     );
                 }),
-                (re.prototype.RawSignHash = function (e, t, n) {
+                (se.prototype.RawSignHash = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("RawSignHash", r, t, n, null)
                   );
                 }),
-                (re.prototype.RawVerifyHash = function (e, t, n, r, i) {
+                (se.prototype.RawVerifyHash = function (e, t, n, r, i) {
                   var o,
                     s = [];
                   return (
@@ -9860,12 +10011,12 @@ function dateFormatter(dateString) {
                     this._funcCall("RawVerifyHash", o, r, i, null)
                   );
                 }),
-                (re.prototype.RawSignFile = function (e, t, n, r) {
+                (se.prototype.RawSignFile = function (e, t, n, r) {
                   var i;
                   ((i = this._funcMakeParams([e, t])),
                     this._funcCall("RawSignFile", i, n, r, null));
                 }),
-                (re.prototype.RawVerifyFile = function (e, t, n, r, i) {
+                (se.prototype.RawVerifyFile = function (e, t, n, r, i) {
                   var o,
                     s = [];
                   return (
@@ -9877,7 +10028,7 @@ function dateFormatter(dateString) {
                     this._funcCall("RawVerifyFile", o, r, i, null)
                   );
                 }),
-                (re.prototype.NBUSign = function (e, t, n, r) {
+                (se.prototype.NBUSign = function (e, t, n, r) {
                   var i;
                   if (
                     "string" != typeof e ||
@@ -9888,7 +10039,7 @@ function dateFormatter(dateString) {
                       this._funcCall("NBUSign", i, n, r, null)
                     );
                 }),
-                (re.prototype.NBUVerify = function (e, t, n, r, i, o, s) {
+                (se.prototype.NBUVerify = function (e, t, n, r, i, o, s) {
                   var a,
                     u = [];
                   if (
@@ -9906,7 +10057,7 @@ function dateFormatter(dateString) {
                       this._funcCall("NBUVerify", a, o, s, null)
                     );
                 }),
-                (re.prototype.CtxSignHash = function (e, t, n, r, i, o) {
+                (se.prototype.CtxSignHash = function (e, t, n, r, i, o) {
                   var s;
                   if (
                     "string" == typeof n ||
@@ -9917,7 +10068,7 @@ function dateFormatter(dateString) {
                       this._funcCall("CtxSignHash", s, i, o, null)
                     );
                 }),
-                (re.prototype.CtxSign = function (e, t, n, r, i, o, s) {
+                (se.prototype.CtxSign = function (e, t, n, r, i, o, s) {
                   var a;
                   if (
                     "string" != typeof n ||
@@ -9928,12 +10079,12 @@ function dateFormatter(dateString) {
                       this._funcCall("CtxSign", a, o, s, null)
                     );
                 }),
-                (re.prototype.CtxSignFile = function (e, t, n, r, i, o, s, a) {
+                (se.prototype.CtxSignFile = function (e, t, n, r, i, o, s, a) {
                   var u;
                   ((u = this._funcMakeParams([e, t, n, r, i, o])),
                     this._funcCall("CtxSignFile", u, s, a, null));
                 }),
-                (re.prototype.CtxAppendSignHash = function (
+                (se.prototype.CtxAppendSignHash = function (
                   e,
                   t,
                   n,
@@ -9956,7 +10107,7 @@ function dateFormatter(dateString) {
                       this._funcCall("CtxAppendSignHash", a, o, s, null)
                     );
                 }),
-                (re.prototype.CtxAppendSign = function (e, t, n, r, i, o, s) {
+                (se.prototype.CtxAppendSign = function (e, t, n, r, i, o, s) {
                   var a;
                   if (
                     !(
@@ -9978,7 +10129,7 @@ function dateFormatter(dateString) {
                       this._funcCall("CtxAppendSign", a, o, s, null)
                     );
                 }),
-                (re.prototype.CtxAppendSignFile = function (
+                (se.prototype.CtxAppendSignFile = function (
                   e,
                   t,
                   n,
@@ -9992,7 +10143,7 @@ function dateFormatter(dateString) {
                   ((u = this._funcMakeParams([e, t, n, r, i, o])),
                     this._funcCall("CtxAppendSignFile", u, s, a, null));
                 }),
-                (re.prototype.CtxGetSignValue = function (e, t, n, r, i) {
+                (se.prototype.CtxGetSignValue = function (e, t, n, r, i) {
                   var o;
                   if (
                     "string" == typeof n ||
@@ -10003,7 +10154,7 @@ function dateFormatter(dateString) {
                       this._funcCall("CtxGetSignValue", o, r, i, null)
                     );
                 }),
-                (re.prototype.CtxCreateSignerEx = function (
+                (se.prototype.CtxCreateSignerEx = function (
                   e,
                   t,
                   n,
@@ -10022,28 +10173,28 @@ function dateFormatter(dateString) {
                       this._funcCall("CtxCreateSignerEx", a, o, s, null)
                     );
                 }),
-                (re.prototype.ShowSenderInfo = function (e, t, n) {
+                (se.prototype.ShowSenderInfo = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("ShowSenderInfo", r, t, n, null)
                   );
                 }),
-                (re.prototype.IsEnveloped = function (e, t, n) {
+                (se.prototype.IsEnveloped = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([new S(e)])),
                     this._funcCall("IsEnveloped", r, t, n, null)
                   );
                 }),
-                (re.prototype.IsEnvelopedFile = function (e, t, n) {
+                (se.prototype.IsEnvelopedFile = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("IsEnvelopedFile", r, t, n, null)
                   );
                 }),
-                (re.prototype.Envelop = function (e, t, n, r, i, o) {
+                (se.prototype.Envelop = function (e, t, n, r, i, o) {
                   var s;
                   if (
                     "string" != typeof r ||
@@ -10054,7 +10205,7 @@ function dateFormatter(dateString) {
                       this._funcCall("Envelop", s, i, o, null)
                     );
                 }),
-                (re.prototype.Develop = function (e, t, n, r) {
+                (se.prototype.Develop = function (e, t, n, r) {
                   var i,
                     o = [];
                   if (
@@ -10069,12 +10220,12 @@ function dateFormatter(dateString) {
                       this._funcCall("Develop", i, n, r, null)
                     );
                 }),
-                (re.prototype.EnvelopFile = function (e, t, n, r, i, o, s) {
+                (se.prototype.EnvelopFile = function (e, t, n, r, i, o, s) {
                   var a;
                   ((a = this._funcMakeParams([e, t, n, r, i])),
                     this._funcCall("EnvelopFile", a, o, s, null));
                 }),
-                (re.prototype.DevelopFile = function (e, t, n, r, i) {
+                (se.prototype.DevelopFile = function (e, t, n, r, i) {
                   var o,
                     s = [];
                   return (
@@ -10086,7 +10237,7 @@ function dateFormatter(dateString) {
                     this._funcCall("DevelopFile", o, r, i, null)
                   );
                 }),
-                (re.prototype.EnvelopEx = function (e, t, n, r, i, o) {
+                (se.prototype.EnvelopEx = function (e, t, n, r, i, o) {
                   var s;
                   if (
                     ("EndUserArrayList" == e.className && (e = e.m_array),
@@ -10099,7 +10250,7 @@ function dateFormatter(dateString) {
                       this._funcCall("EnvelopEx", s, i, o, null)
                     );
                 }),
-                (re.prototype.DevelopEx = function (e, t, n, r, i) {
+                (se.prototype.DevelopEx = function (e, t, n, r, i) {
                   var o,
                     s = [];
                   if (
@@ -10115,14 +10266,14 @@ function dateFormatter(dateString) {
                       this._funcCall("DevelopEx", o, r, i, null)
                     );
                 }),
-                (re.prototype.EnvelopFileEx = function (e, t, n, r, i, o, s) {
+                (se.prototype.EnvelopFileEx = function (e, t, n, r, i, o, s) {
                   var a;
                   ("EndUserArrayList" == e.className && (e = e.m_array),
                     "EndUserArrayList" == t.className && (t = t.m_array),
                     (a = this._funcMakeParams([e, t, n, r, i])),
                     this._funcCall("EnvelopFileEx", a, o, s, null));
                 }),
-                (re.prototype.EnvelopToRecipients = function (e, t, n, r, i) {
+                (se.prototype.EnvelopToRecipients = function (e, t, n, r, i) {
                   var o;
                   "EndUserArrayList" == e.className && (e = e.m_array);
                   for (var s = [], a = 0; a < e.length; a++)
@@ -10136,7 +10287,7 @@ function dateFormatter(dateString) {
                       this._funcCall("EnvelopToRecipients", o, r, i, null)
                     );
                 }),
-                (re.prototype.EnvelopFileToRecipients = function (
+                (se.prototype.EnvelopFileToRecipients = function (
                   e,
                   t,
                   n,
@@ -10151,7 +10302,7 @@ function dateFormatter(dateString) {
                   ((s = this._funcMakeParams([a, t, n, r])),
                     this._funcCall("EnvelopFileToRecipients", s, i, o, null));
                 }),
-                (re.prototype.EnvelopToRecipientsEx = function (
+                (se.prototype.EnvelopToRecipientsEx = function (
                   e,
                   t,
                   n,
@@ -10172,7 +10323,7 @@ function dateFormatter(dateString) {
                       this._funcCall("EnvelopToRecipientsEx", s, i, o, null)
                     );
                 }),
-                (re.prototype.EnvelopFileToRecipientsEx = function (
+                (se.prototype.EnvelopFileToRecipientsEx = function (
                   e,
                   t,
                   n,
@@ -10188,7 +10339,7 @@ function dateFormatter(dateString) {
                   ((a = this._funcMakeParams([u, t, n, r, i])),
                     this._funcCall("EnvelopFileToRecipientsEx", a, o, s, null));
                 }),
-                (re.prototype.EnvelopToRecipientsWithOCode = function (
+                (se.prototype.EnvelopToRecipientsWithOCode = function (
                   e,
                   t,
                   n,
@@ -10212,7 +10363,7 @@ function dateFormatter(dateString) {
                       )
                     );
                 }),
-                (re.prototype.EnvelopExWithDynamicKey = function (
+                (se.prototype.EnvelopExWithDynamicKey = function (
                   e,
                   t,
                   n,
@@ -10233,7 +10384,7 @@ function dateFormatter(dateString) {
                       this._funcCall("EnvelopExWithDynamicKey", a, o, s, null)
                     );
                 }),
-                (re.prototype.EnvelopFileExWithDynamicKey = function (
+                (se.prototype.EnvelopFileExWithDynamicKey = function (
                   e,
                   t,
                   n,
@@ -10255,7 +10406,7 @@ function dateFormatter(dateString) {
                       null,
                     ));
                 }),
-                (re.prototype.EnvelopToRecipientsWithDynamicKey = function (
+                (se.prototype.EnvelopToRecipientsWithDynamicKey = function (
                   e,
                   t,
                   n,
@@ -10282,7 +10433,7 @@ function dateFormatter(dateString) {
                       )
                     );
                 }),
-                (re.prototype.EnvelopFileToRecipientsWithDynamicKey = function (
+                (se.prototype.EnvelopFileToRecipientsWithDynamicKey = function (
                   e,
                   t,
                   n,
@@ -10304,7 +10455,7 @@ function dateFormatter(dateString) {
                       null,
                     ));
                 }),
-                (re.prototype.EnvelopToRecipientsWithSettings = function (
+                (se.prototype.EnvelopToRecipientsWithSettings = function (
                   e,
                   t,
                   n,
@@ -10335,7 +10486,7 @@ function dateFormatter(dateString) {
                     );
                   }
                 }),
-                (re.prototype.RawEnvelop = function (e, t, n, r) {
+                (se.prototype.RawEnvelop = function (e, t, n, r) {
                   var i;
                   if (
                     "string" != typeof t ||
@@ -10346,17 +10497,17 @@ function dateFormatter(dateString) {
                       this._funcCall("RawEnvelop", i, n, r, null)
                     );
                 }),
-                (re.prototype.RawDevelop = function (e, t, n, r) {
+                (se.prototype.RawDevelop = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([e, t])),
                     this._funcCall("RawDevelop", i, n, r, null)
                   );
                 }),
-                (re.prototype.EnvelopRSA = function (e, t, n, r, i, o, s) {
+                (se.prototype.EnvelopRSA = function (e, t, n, r, i, o, s) {
                   return this.EnvelopRSAEx(e, [t], [n], r, i, o, s);
                 }),
-                (re.prototype.EnvelopFileRSA = function (
+                (se.prototype.EnvelopFileRSA = function (
                   e,
                   t,
                   n,
@@ -10368,7 +10519,7 @@ function dateFormatter(dateString) {
                 ) {
                   this.EnvelopFileRSAEx(e, [t], [n], r, i, o, s, a);
                 }),
-                (re.prototype.EnvelopRSAEx = function (e, t, n, r, i, o, s) {
+                (se.prototype.EnvelopRSAEx = function (e, t, n, r, i, o, s) {
                   var a;
                   if (
                     ("EndUserArrayList" == t.className && (t = t.m_array),
@@ -10381,7 +10532,7 @@ function dateFormatter(dateString) {
                       this._funcCall("EnvelopRSAEx", a, o, s, null)
                     );
                 }),
-                (re.prototype.EnvelopFileRSAEx = function (
+                (se.prototype.EnvelopFileRSAEx = function (
                   e,
                   t,
                   n,
@@ -10397,7 +10548,7 @@ function dateFormatter(dateString) {
                     (u = this._funcMakeParams([e, t, n, r, i, o])),
                     this._funcCall("EnvelopFileRSAEx", u, s, a, null));
                 }),
-                (re.prototype.EnvelopToRecipientsRSA = function (
+                (se.prototype.EnvelopToRecipientsRSA = function (
                   e,
                   t,
                   n,
@@ -10418,7 +10569,7 @@ function dateFormatter(dateString) {
                       this._funcCall("EnvelopToRecipientsRSA", s, i, o, null)
                     );
                 }),
-                (re.prototype.EnvelopFileToRecipientsRSA = function (
+                (se.prototype.EnvelopFileToRecipientsRSA = function (
                   e,
                   t,
                   n,
@@ -10440,7 +10591,7 @@ function dateFormatter(dateString) {
                       null,
                     ));
                 }),
-                (re.prototype.CtxEnvelop = function (e, t, n, r, i, o, s, a) {
+                (se.prototype.CtxEnvelop = function (e, t, n, r, i, o, s, a) {
                   var u;
                   if (
                     "string" != typeof o ||
@@ -10455,7 +10606,7 @@ function dateFormatter(dateString) {
                     );
                   }
                 }),
-                (re.prototype.CtxEnvelopFile = function (
+                (se.prototype.CtxEnvelopFile = function (
                   e,
                   t,
                   n,
@@ -10473,7 +10624,7 @@ function dateFormatter(dateString) {
                   ((l = this._funcMakeParams([e, c, n, r, i, o, s])),
                     this._funcCall("CtxEnvelopFile", l, a, u, null));
                 }),
-                (re.prototype.CtxEnvelopWithDynamicKey = function (
+                (se.prototype.CtxEnvelopWithDynamicKey = function (
                   e,
                   t,
                   n,
@@ -10497,7 +10648,7 @@ function dateFormatter(dateString) {
                     );
                   }
                 }),
-                (re.prototype.CtxEnvelopFileWithDynamicKey = function (
+                (se.prototype.CtxEnvelopFileWithDynamicKey = function (
                   e,
                   t,
                   n,
@@ -10521,7 +10672,7 @@ function dateFormatter(dateString) {
                       null,
                     ));
                 }),
-                (re.prototype.CtxDevelop = function (e, t, n, r, i, o) {
+                (se.prototype.CtxDevelop = function (e, t, n, r, i, o) {
                   var s,
                     a = [];
                   if (
@@ -10538,7 +10689,7 @@ function dateFormatter(dateString) {
                       this._funcCall("CtxDevelop", s, i, o, null)
                     );
                 }),
-                (re.prototype.CtxDevelopFile = function (e, t, n, r, i, o, s) {
+                (se.prototype.CtxDevelopFile = function (e, t, n, r, i, o, s) {
                   var a,
                     u = [];
                   return (
@@ -10552,7 +10703,7 @@ function dateFormatter(dateString) {
                     this._funcCall("CtxDevelopFile", a, o, s, null)
                   );
                 }),
-                (re.prototype.CtxCreateAuthData = function (e, t, n, r, i) {
+                (se.prototype.CtxCreateAuthData = function (e, t, n, r, i) {
                   var o;
                   if (
                     "string" != typeof n ||
@@ -10563,7 +10714,7 @@ function dateFormatter(dateString) {
                       this._funcCall("CtxCreateAuthData", o, r, i, null)
                     );
                 }),
-                (re.prototype.ProtectDataByPassword = function (e, t, n, r) {
+                (se.prototype.ProtectDataByPassword = function (e, t, n, r) {
                   var i;
                   if (
                     "string" != typeof e ||
@@ -10574,7 +10725,7 @@ function dateFormatter(dateString) {
                       this._funcCall("ProtectDataByPassword", i, n, r, null)
                     );
                 }),
-                (re.prototype.UnprotectDataByPassword = function (e, t, n, r) {
+                (se.prototype.UnprotectDataByPassword = function (e, t, n, r) {
                   var i;
                   if (
                     "string" == typeof e ||
@@ -10585,10 +10736,10 @@ function dateFormatter(dateString) {
                       this._funcCall("UnprotectDataByPassword", i, n, r, null)
                     );
                 }),
-                (re.prototype.CreateEndUserSession = function () {
+                (se.prototype.CreateEndUserSession = function () {
                   return new V();
                 }),
-                (re.prototype.SessionIsInitialized = function (e, t, n) {
+                (se.prototype.SessionIsInitialized = function (e, t, n) {
                   var r;
                   return (
                     e.SetData(null),
@@ -10596,27 +10747,27 @@ function dateFormatter(dateString) {
                     this._funcCall("SessionIsInitialized", r, t, n, null)
                   );
                 }),
-                (re.prototype.SessionClose = function (e, t, n) {
+                (se.prototype.SessionClose = function (e, t, n) {
                   var r;
                   (e.SetData(null),
                     (r = this._funcMakeParams([e])),
                     this._funcCall("SessionClose", r, t, n, null));
                 }),
-                (re.prototype.ClientSessionCreateStep1 = function (e, t, n) {
+                (se.prototype.ClientSessionCreateStep1 = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("ClientSessionCreateStep1", r, t, n, null)
                   );
                 }),
-                (re.prototype.ServerSessionCreateStep1 = function (e, t, n, r) {
+                (se.prototype.ServerSessionCreateStep1 = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([e, new S(t)])),
                     this._funcCall("ServerSessionCreateStep1", i, n, r, null)
                   );
                 }),
-                (re.prototype.ClientSessionCreateStep2 = function (e, t, n, r) {
+                (se.prototype.ClientSessionCreateStep2 = function (e, t, n, r) {
                   var i,
                     o = this;
                   (e.SetData(null),
@@ -10631,13 +10782,13 @@ function dateFormatter(dateString) {
                       },
                     ));
                 }),
-                (re.prototype.ServerSessionCreateStep2 = function (e, t, n, r) {
+                (se.prototype.ServerSessionCreateStep2 = function (e, t, n, r) {
                   var i;
                   (e.SetData(null),
                     (i = this._funcMakeParams([e, new S(t)])),
                     this._funcCall("ServerSessionCreateStep2", i, n, r, null));
                 }),
-                (re.prototype.SessionSave = function (e, t, n) {
+                (se.prototype.SessionSave = function (e, t, n) {
                   var r;
                   return (
                     e.SetData(null),
@@ -10645,14 +10796,14 @@ function dateFormatter(dateString) {
                     this._funcCall("SessionSave", r, t, n, null)
                   );
                 }),
-                (re.prototype.SessionLoad = function (e, t, n) {
+                (se.prototype.SessionLoad = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([new S(e)])),
                     this._funcCall("SessionLoad", r, t, n, null)
                   );
                 }),
-                (re.prototype.SessionCheckCertificates = function (e, t, n) {
+                (se.prototype.SessionCheckCertificates = function (e, t, n) {
                   var r;
                   return (
                     e.SetData(null),
@@ -10660,7 +10811,7 @@ function dateFormatter(dateString) {
                     this._funcCall("SessionCheckCertificates", r, t, n, null)
                   );
                 }),
-                (re.prototype.SessionEncrypt = function (e, t, n, r) {
+                (se.prototype.SessionEncrypt = function (e, t, n, r) {
                   var i,
                     o = !1,
                     s = this;
@@ -10684,7 +10835,7 @@ function dateFormatter(dateString) {
                       )
                     );
                 }),
-                (re.prototype.SessionDecrypt = function (e, t, n, r) {
+                (se.prototype.SessionDecrypt = function (e, t, n, r) {
                   var i;
                   if (
                     "string" != typeof t ||
@@ -10696,7 +10847,7 @@ function dateFormatter(dateString) {
                       this._funcCall("SessionDecrypt", i, n, r, null)
                     );
                 }),
-                (re.prototype.SessionEncryptContinue = function (e, t, n, r) {
+                (se.prototype.SessionEncryptContinue = function (e, t, n, r) {
                   var i,
                     o = this,
                     s = !1;
@@ -10716,9 +10867,9 @@ function dateFormatter(dateString) {
                           if (s) return o.BASE64Encode(e, n, r);
                           var i = o.IsAsync(n, r);
                           if (!o._copyArrayData(t, e)) {
-                            var a = o.MakeError(te.ERROR_BAD_PARAMETER, "");
+                            var a = o.MakeError(ie.ERROR_BAD_PARAMETER, "");
                             if (i) return void r(a);
-                            throw new ne(a.errorCode, a.message);
+                            throw new oe(a.errorCode, a.message);
                           }
                           if (!i) return t;
                           n(t);
@@ -10726,7 +10877,7 @@ function dateFormatter(dateString) {
                       )
                     );
                 }),
-                (re.prototype.SessionDecryptContinue = function (e, t, n, r) {
+                (se.prototype.SessionDecryptContinue = function (e, t, n, r) {
                   var i,
                     o = this;
                   if (
@@ -10744,9 +10895,9 @@ function dateFormatter(dateString) {
                         function (e, n, r) {
                           var i = o.IsAsync(n, r);
                           if (!o._copyArrayData(t, e)) {
-                            var s = o.MakeError(te.ERROR_BAD_PARAMETER, "");
+                            var s = o.MakeError(ie.ERROR_BAD_PARAMETER, "");
                             if (i) return void r(s);
-                            throw new ne(s.errorCode, s.message);
+                            throw new oe(s.errorCode, s.message);
                           }
                           if (!i) return t;
                           n(t);
@@ -10754,7 +10905,7 @@ function dateFormatter(dateString) {
                       )
                     );
                 }),
-                (re.prototype.SessionGetPeerCertificateInfo = function (
+                (se.prototype.SessionGetPeerCertificateInfo = function (
                   e,
                   t,
                   n,
@@ -10772,7 +10923,7 @@ function dateFormatter(dateString) {
                     )
                   );
                 }),
-                (re.prototype.ClientDynamicKeySessionCreate = function (
+                (se.prototype.ClientDynamicKeySessionCreate = function (
                   e,
                   t,
                   n,
@@ -10798,7 +10949,7 @@ function dateFormatter(dateString) {
                     )
                   );
                 }),
-                (re.prototype.ServerDynamicKeySessionCreate = function (
+                (se.prototype.ServerDynamicKeySessionCreate = function (
                   e,
                   t,
                   n,
@@ -10816,31 +10967,31 @@ function dateFormatter(dateString) {
                     )
                   );
                 }),
-                (re.prototype.ClientDynamicKeySessionLoad = function (e, t, n) {
+                (se.prototype.ClientDynamicKeySessionLoad = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([new S(e)])),
                     this._funcCall("ClientDynamicKeySessionLoad", r, t, n, null)
                   );
                 }),
-                (re.prototype.SCClientIsRunning = function (e, t) {
+                (se.prototype.SCClientIsRunning = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("SCClientIsRunning", n, e, t, null)
                   );
                 }),
-                (re.prototype.SCClientStart = function (e, t) {
+                (se.prototype.SCClientStart = function (e, t) {
                   var n;
                   ((n = this._funcMakeParams(null)),
                     this._funcCall("SCClientStart", n, e, t, null));
                 }),
-                (re.prototype.SCClientStop = function (e, t) {
+                (se.prototype.SCClientStop = function (e, t) {
                   var n;
                   ((n = this._funcMakeParams(null)),
                     this._funcCall("SCClientStop", n, e, t, null));
                 }),
-                (re.prototype.SCClientAddGate = function (
+                (se.prototype.SCClientAddGate = function (
                   e,
                   t,
                   n,
@@ -10856,19 +11007,19 @@ function dateFormatter(dateString) {
                     (u = this._funcMakeParams([e, t, n, r, i, o])),
                     this._funcCall("SCClientAddGate", u, s, a, null));
                 }),
-                (re.prototype.SCClientRemoveGate = function (e, t, n) {
+                (se.prototype.SCClientRemoveGate = function (e, t, n) {
                   var r;
                   ((r = this._funcMakeParams([e])),
                     this._funcCall("SCClientRemoveGate", r, t, n, null));
                 }),
-                (re.prototype.SCClientGetStatistic = function (e, t) {
+                (se.prototype.SCClientGetStatistic = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("SCClientGetStatistic", n, e, t, null)
                   );
                 }),
-                (re.prototype.AppendTransportHeader = function (
+                (se.prototype.AppendTransportHeader = function (
                   e,
                   t,
                   n,
@@ -10883,28 +11034,28 @@ function dateFormatter(dateString) {
                     this._funcCall("AppendTransportHeader", a, o, s, null)
                   );
                 }),
-                (re.prototype.ParseTransportHeader = function (e, t, n) {
+                (se.prototype.ParseTransportHeader = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([new S(e)])),
                     this._funcCall("ParseTransportHeader", r, t, n, null)
                   );
                 }),
-                (re.prototype.AppendCryptoHeader = function (e, t, n, r, i) {
+                (se.prototype.AppendCryptoHeader = function (e, t, n, r, i) {
                   var o;
                   return (
                     (o = this._funcMakeParams([e, t, new S(n)])),
                     this._funcCall("AppendCryptoHeader", o, r, i, null)
                   );
                 }),
-                (re.prototype.ParseCryptoHeader = function (e, t, n) {
+                (se.prototype.ParseCryptoHeader = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([new S(e)])),
                     this._funcCall("ParseCryptoHeader", r, t, n, null)
                   );
                 }),
-                (re.prototype.AppendFileTransportHeader = function (
+                (se.prototype.AppendFileTransportHeader = function (
                   e,
                   t,
                   n,
@@ -10918,14 +11069,14 @@ function dateFormatter(dateString) {
                   ((u = this._funcMakeParams([e, t, n, new S(r), i, o])),
                     this._funcCall("AppendFileTransportHeader", u, s, a, null));
                 }),
-                (re.prototype.ParseFileTransportHeader = function (e, t, n, r) {
+                (se.prototype.ParseFileTransportHeader = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([e, t])),
                     this._funcCall("ParseFileTransportHeader", i, n, r, null)
                   );
                 }),
-                (re.prototype.AppendFileCryptoHeader = function (
+                (se.prototype.AppendFileCryptoHeader = function (
                   e,
                   t,
                   n,
@@ -10937,31 +11088,31 @@ function dateFormatter(dateString) {
                   ((s = this._funcMakeParams([e, t, n, r])),
                     this._funcCall("AppendFileCryptoHeader", s, i, o, null));
                 }),
-                (re.prototype.ParseFileCryptoHeader = function (e, t, n, r) {
+                (se.prototype.ParseFileCryptoHeader = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([e, t])),
                     this._funcCall("ParseFileCryptoHeader", i, n, r, null)
                   );
                 }),
-                (re.prototype.DevCtxEnum = function (e, t, n) {
+                (se.prototype.DevCtxEnum = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("DevCtxEnum", r, t, n, null)
                   );
                 }),
-                (re.prototype.DevCtxOpen = function (e, t, n, r, i) {
+                (se.prototype.DevCtxOpen = function (e, t, n, r, i) {
                   var o;
                   return (
                     (o = this._funcMakeParams([e, t, n])),
                     this._funcCall("DevCtxOpen", o, r, i, null)
                   );
                 }),
-                (re.prototype.CreateDeviceContext = function () {
-                  return new $();
+                (se.prototype.CreateDeviceContext = function () {
+                  return new j();
                 }),
-                (re.prototype.DevCtxEnumVirtual = function (e, t, n) {
+                (se.prototype.DevCtxEnumVirtual = function (e, t, n) {
                   var r,
                     i = this;
                   return (
@@ -10982,73 +11133,73 @@ function dateFormatter(dateString) {
                           n(t[0]);
                         } catch (e) {
                           var s = i.MakeError(
-                            te.ERROR_LIBRARY_COMUNICATION_FAILED,
+                            ie.ERROR_LIBRARY_COMUNICATION_FAILED,
                             "",
                           );
                           if (o) return void r(s);
-                          throw new ne(s.errorCode, s.message);
+                          throw new oe(s.errorCode, s.message);
                         }
                       },
                     )
                   );
                 }),
-                (re.prototype.DevCtxClose = function (e, t, n) {
+                (se.prototype.DevCtxClose = function (e, t, n) {
                   var r;
                   return (
                     (r = this._funcMakeParams([e])),
                     this._funcCall("DevCtxClose", r, t, n, null)
                   );
                 }),
-                (re.prototype.DevCtxGetData = function (e, t, n, r) {
+                (se.prototype.DevCtxGetData = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([e, t])),
                     this._funcCall("DevCtxGetData", i, n, r, null)
                   );
                 }),
-                (re.prototype.DevCtxChangePassword = function (e, t, n, r) {
+                (se.prototype.DevCtxChangePassword = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([e, t])),
                     this._funcCall("DevCtxChangePassword", i, n, r, null)
                   );
                 }),
-                (re.prototype.GetHostInfo = function (e, t) {
+                (se.prototype.GetHostInfo = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("GetHostInfo", n, e, t, null)
                   );
                 }),
-                (re.prototype.IsRemotelyControlled = function (e, t) {
+                (se.prototype.IsRemotelyControlled = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("IsRemotelyControlled", n, e, t, null)
                   );
                 }),
-                (re.prototype.CtxCreate = function (e, t) {
+                (se.prototype.CtxCreate = function (e, t) {
                   var n;
                   return (
                     (n = this._funcMakeParams(null)),
                     this._funcCall("CtxCreate", n, e, t, null)
                   );
                 }),
-                (re.prototype.CtxFree = function (e, t, n) {
+                (se.prototype.CtxFree = function (e, t, n) {
                   var r;
                   ((r = this._funcMakeParams([e])),
                     this._funcCall("CtxFree", r, t, n, null));
                 }),
-                (re.prototype.CtxSetParameter = function (e, t, n, r, i) {
+                (se.prototype.CtxSetParameter = function (e, t, n, r, i) {
                   var o;
                   ("boolean" == typeof n && (n = n ? 1 : 0),
                     (o = this._funcMakeParams([e, t, n])),
                     this._funcCall("CtxSetParameter", o, r, i, null));
                 }),
-                (re.prototype.CreateReference = function (e, t) {
-                  return new Z(e, t);
+                (se.prototype.CreateReference = function (e, t) {
+                  return new Q(e, t);
                 }),
-                (re.prototype.ASiCGetASiCType = function (e, t, n) {
+                (se.prototype.ASiCGetASiCType = function (e, t, n) {
                   var r;
                   if (
                     "string" != typeof e ||
@@ -11059,7 +11210,7 @@ function dateFormatter(dateString) {
                       this._funcCall("ASiCGetASiCType", r, t, n, null)
                     );
                 }),
-                (re.prototype.ASiCGetSignType = function (e, t, n) {
+                (se.prototype.ASiCGetSignType = function (e, t, n) {
                   var r;
                   if (
                     "string" != typeof e ||
@@ -11070,7 +11221,7 @@ function dateFormatter(dateString) {
                       this._funcCall("ASiCGetSignType", r, t, n, null)
                     );
                 }),
-                (re.prototype.ASiCGetSignsCount = function (e, t, n) {
+                (se.prototype.ASiCGetSignsCount = function (e, t, n) {
                   var r;
                   if (
                     "string" != typeof e ||
@@ -11081,7 +11232,7 @@ function dateFormatter(dateString) {
                       this._funcCall("ASiCGetSignsCount", r, t, n, null)
                     );
                 }),
-                (re.prototype.ASiCGetSignerInfo = function (e, t, n, r) {
+                (se.prototype.ASiCGetSignerInfo = function (e, t, n, r) {
                   var i;
                   if (
                     "string" != typeof t ||
@@ -11092,7 +11243,7 @@ function dateFormatter(dateString) {
                       this._funcCall("ASiCGetSignerInfo", i, n, r, null)
                     );
                 }),
-                (re.prototype.ASiCGetSignTimeInfo = function (e, t, n, r) {
+                (se.prototype.ASiCGetSignTimeInfo = function (e, t, n, r) {
                   var i;
                   if (
                     "string" != typeof t ||
@@ -11103,7 +11254,7 @@ function dateFormatter(dateString) {
                       this._funcCall("ASiCGetSignTimeInfo", i, n, r, null)
                     );
                 }),
-                (re.prototype.ASiCGetSignReferences = function (e, t, n, r) {
+                (se.prototype.ASiCGetSignReferences = function (e, t, n, r) {
                   var i;
                   if (
                     "string" != typeof t ||
@@ -11114,7 +11265,7 @@ function dateFormatter(dateString) {
                       this._funcCall("ASiCGetSignReferences", i, n, r, null)
                     );
                 }),
-                (re.prototype.ASiCGetReference = function (e, t, n, r) {
+                (se.prototype.ASiCGetReference = function (e, t, n, r) {
                   var i;
                   if (
                     "string" != typeof e ||
@@ -11125,7 +11276,7 @@ function dateFormatter(dateString) {
                       this._funcCall("ASiCGetReference", i, n, r, null)
                     );
                 }),
-                (re.prototype.ASiCSign = function (e, t, n, r, i, o) {
+                (se.prototype.ASiCSign = function (e, t, n, r, i, o) {
                   for (var s, a = [], u = [], l = 0; l < r.length; l++)
                     (a.push(r[l].GetName()), u.push(new S(r[l].GetData())));
                   return (
@@ -11133,7 +11284,7 @@ function dateFormatter(dateString) {
                     this._funcCall("ASiCSign", s, i, o, null)
                   );
                 }),
-                (re.prototype.ASiCAppendSign = function (e, t, n, r, i) {
+                (se.prototype.ASiCAppendSign = function (e, t, n, r, i) {
                   var o;
                   if (
                     "string" != typeof n ||
@@ -11144,7 +11295,7 @@ function dateFormatter(dateString) {
                       this._funcCall("ASiCAppendSign", o, r, i, null)
                     );
                 }),
-                (re.prototype.ASiCVerify = function (e, t, n, r, i) {
+                (se.prototype.ASiCVerify = function (e, t, n, r, i) {
                   var o,
                     s = [];
                   if (
@@ -11160,7 +11311,7 @@ function dateFormatter(dateString) {
                       this._funcCall("ASiCVerify", o, r, i, null)
                     );
                 }),
-                (re.prototype.CtxASiCSign = function (e, t, n, r, i, o, s, a) {
+                (se.prototype.CtxASiCSign = function (e, t, n, r, i, o, s, a) {
                   for (var u, l = [], c = [], p = 0; p < o.length; p++)
                     (l.push(o[p].GetName()), c.push(new S(o[p].GetData())));
                   return (
@@ -11168,7 +11319,7 @@ function dateFormatter(dateString) {
                     this._funcCall("CtxASiCSign", u, s, a, null)
                   );
                 }),
-                (re.prototype.CtxASiCAppendSign = function (
+                (se.prototype.CtxASiCAppendSign = function (
                   e,
                   t,
                   n,
@@ -11187,7 +11338,7 @@ function dateFormatter(dateString) {
                       this._funcCall("CtxASiCAppendSign", a, o, s, null)
                     );
                 }),
-                (re.prototype.CtxASiCGetSignerInfo = function (e, t, n, r, i) {
+                (se.prototype.CtxASiCGetSignerInfo = function (e, t, n, r, i) {
                   var o;
                   if (
                     "string" != typeof n ||
@@ -11198,7 +11349,7 @@ function dateFormatter(dateString) {
                       this._funcCall("CtxASiCGetSignerInfo", o, r, i, null)
                     );
                 }),
-                (re.prototype.ASiCGetSignLevel = function (e, t, n, r) {
+                (se.prototype.ASiCGetSignLevel = function (e, t, n, r) {
                   var i;
                   if (
                     "string" != typeof t ||
@@ -11209,7 +11360,7 @@ function dateFormatter(dateString) {
                       this._funcCall("ASiCGetSignLevel", i, n, r, null)
                     );
                 }),
-                (re.prototype.ASiCIsAllContentCovered = function (e, t, n, r) {
+                (se.prototype.ASiCIsAllContentCovered = function (e, t, n, r) {
                   var i;
                   if (
                     "string" != typeof t ||
@@ -11220,7 +11371,7 @@ function dateFormatter(dateString) {
                       this._funcCall("ASiCIsAllContentCovered", i, n, r, null)
                     );
                 }),
-                (re.prototype.PDFGetSignType = function (e, t, n, r) {
+                (se.prototype.PDFGetSignType = function (e, t, n, r) {
                   var i;
                   if (
                     "string" != typeof t ||
@@ -11231,7 +11382,7 @@ function dateFormatter(dateString) {
                       this._funcCall("PDFGetSignType", i, n, r, null)
                     );
                 }),
-                (re.prototype.PDFGetSignsCount = function (e, t, n) {
+                (se.prototype.PDFGetSignsCount = function (e, t, n) {
                   var r;
                   if (
                     "string" != typeof e ||
@@ -11242,7 +11393,7 @@ function dateFormatter(dateString) {
                       this._funcCall("PDFGetSignsCount", r, t, n, null)
                     );
                 }),
-                (re.prototype.PDFGetSignerInfo = function (e, t, n, r) {
+                (se.prototype.PDFGetSignerInfo = function (e, t, n, r) {
                   var i;
                   if (
                     "string" != typeof t ||
@@ -11253,7 +11404,7 @@ function dateFormatter(dateString) {
                       this._funcCall("PDFGetSignerInfo", i, n, r, null)
                     );
                 }),
-                (re.prototype.PDFGetSignTimeInfo = function (e, t, n, r) {
+                (se.prototype.PDFGetSignTimeInfo = function (e, t, n, r) {
                   var i;
                   if (
                     "string" != typeof t ||
@@ -11264,14 +11415,14 @@ function dateFormatter(dateString) {
                       this._funcCall("PDFGetSignTimeInfo", i, n, r, null)
                     );
                 }),
-                (re.prototype.PDFSign = function (e, t, n, r) {
+                (se.prototype.PDFSign = function (e, t, n, r) {
                   var i;
                   return (
                     (i = this._funcMakeParams([new S(e), t])),
                     this._funcCall("PDFSign", i, n, r, null)
                   );
                 }),
-                (re.prototype.PDFVerify = function (e, t, n, r, i) {
+                (se.prototype.PDFVerify = function (e, t, n, r, i) {
                   var o,
                     s = [];
                   if (
@@ -11287,14 +11438,14 @@ function dateFormatter(dateString) {
                       this._funcCall("PDFVerify", o, r, i, null)
                     );
                 }),
-                (re.prototype.CtxPDFSign = function (e, t, n, r, i, o) {
+                (se.prototype.CtxPDFSign = function (e, t, n, r, i, o) {
                   var s;
                   return (
                     (s = this._funcMakeParams([e, t, new S(n), r])),
                     this._funcCall("CtxPDFSign", s, i, o, null)
                   );
                 }),
-                (re.prototype.CtxPDFGetSignerInfo = function (e, t, n, r, i) {
+                (se.prototype.CtxPDFGetSignerInfo = function (e, t, n, r, i) {
                   var o;
                   if (
                     "string" != typeof n ||
@@ -11305,7 +11456,7 @@ function dateFormatter(dateString) {
                       this._funcCall("CtxPDFGetSignerInfo", o, r, i, null)
                     );
                 }),
-                (re.prototype.XAdESGetType = function (e, t, n) {
+                (se.prototype.XAdESGetType = function (e, t, n) {
                   var r;
                   if (
                     "string" != typeof e ||
@@ -11316,7 +11467,7 @@ function dateFormatter(dateString) {
                       this._funcCall("XAdESGetType", r, t, n, null)
                     );
                 }),
-                (re.prototype.XAdESGetSignsCount = function (e, t, n) {
+                (se.prototype.XAdESGetSignsCount = function (e, t, n) {
                   var r;
                   if (
                     "string" != typeof e ||
@@ -11327,7 +11478,7 @@ function dateFormatter(dateString) {
                       this._funcCall("XAdESGetSignsCount", r, t, n, null)
                     );
                 }),
-                (re.prototype.XAdESGetSignLevel = function (e, t, n, r) {
+                (se.prototype.XAdESGetSignLevel = function (e, t, n, r) {
                   var i;
                   if (
                     "string" != typeof t ||
@@ -11338,7 +11489,7 @@ function dateFormatter(dateString) {
                       this._funcCall("XAdESGetSignLevel", i, n, r, null)
                     );
                 }),
-                (re.prototype.XAdESGetSignerInfo = function (e, t, n, r) {
+                (se.prototype.XAdESGetSignerInfo = function (e, t, n, r) {
                   var i;
                   if (
                     "string" != typeof t ||
@@ -11349,7 +11500,7 @@ function dateFormatter(dateString) {
                       this._funcCall("XAdESGetSignerInfo", i, n, r, null)
                     );
                 }),
-                (re.prototype.XAdESGetSignTimeInfo = function (e, t, n, r) {
+                (se.prototype.XAdESGetSignTimeInfo = function (e, t, n, r) {
                   var i;
                   if (
                     "string" != typeof t ||
@@ -11360,7 +11511,7 @@ function dateFormatter(dateString) {
                       this._funcCall("XAdESGetSignTimeInfo", i, n, r, null)
                     );
                 }),
-                (re.prototype.XAdESGetSignReferences = function (e, t, n, r) {
+                (se.prototype.XAdESGetSignReferences = function (e, t, n, r) {
                   var i;
                   if (
                     "string" != typeof t ||
@@ -11371,7 +11522,7 @@ function dateFormatter(dateString) {
                       this._funcCall("XAdESGetSignReferences", i, n, r, null)
                     );
                 }),
-                (re.prototype.XAdESGetReference = function (e, t, n, r) {
+                (se.prototype.XAdESGetReference = function (e, t, n, r) {
                   var i;
                   if (
                     "string" != typeof e ||
@@ -11382,7 +11533,7 @@ function dateFormatter(dateString) {
                       this._funcCall("XAdESGetReference", i, n, r, null)
                     );
                 }),
-                (re.prototype.XAdESSign = function (e, t, n, r, i) {
+                (se.prototype.XAdESSign = function (e, t, n, r, i) {
                   for (var o, s = [], a = [], u = 0; u < n.length; u++)
                     (s.push(n[u].GetName()), a.push(new S(n[u].GetData())));
                   return (
@@ -11390,7 +11541,7 @@ function dateFormatter(dateString) {
                     this._funcCall("XAdESSign", o, r, i, null)
                   );
                 }),
-                (re.prototype.XAdESVerify = function (e, t, n, r, i, o) {
+                (se.prototype.XAdESVerify = function (e, t, n, r, i, o) {
                   var s,
                     a = [],
                     u = null,
@@ -11415,7 +11566,7 @@ function dateFormatter(dateString) {
                       this._funcCall("XAdESVerify", s, i, o, null)
                     );
                 }),
-                (re.prototype.CtxXAdESSign = function (e, t, n, r, i, o, s) {
+                (se.prototype.CtxXAdESSign = function (e, t, n, r, i, o, s) {
                   for (var a, u = [], l = [], c = 0; c < i.length; c++)
                     (u.push(i[c].GetName()), l.push(new S(i[c].GetData())));
                   return (
@@ -11423,7 +11574,7 @@ function dateFormatter(dateString) {
                     this._funcCall("CtxXAdESSign", a, o, s, null)
                   );
                 }),
-                (re.prototype.CtxXAdESGetSignerInfo = function (e, t, n, r, i) {
+                (se.prototype.CtxXAdESGetSignerInfo = function (e, t, n, r, i) {
                   var o;
                   if (
                     "string" != typeof n ||
@@ -11434,7 +11585,7 @@ function dateFormatter(dateString) {
                       this._funcCall("CtxXAdESGetSignerInfo", o, r, i, null)
                     );
                 }),
-                (re.prototype.SServerClientGeneratePrivateKeyAsync = function (
+                (se.prototype.SServerClientGeneratePrivateKeyAsync = function (
                   e,
                   t,
                   n,
@@ -11473,7 +11624,7 @@ function dateFormatter(dateString) {
                     )
                   );
                 }),
-                (re.prototype.SServerClientCheckGeneratePrivateKeyStatus =
+                (se.prototype.SServerClientCheckGeneratePrivateKeyStatus =
                   function (e, t, n, r, i, o) {
                     var s,
                       a = this;
@@ -11493,17 +11644,17 @@ function dateFormatter(dateString) {
                             t(i);
                           } catch (e) {
                             var s = a.MakeError(
-                              te.ERROR_LIBRARY_COMUNICATION_FAILED,
+                              ie.ERROR_LIBRARY_COMUNICATION_FAILED,
                               "",
                             );
                             if (r) return void n(s);
-                            throw new ne(s.errorCode, s.message);
+                            throw new oe(s.errorCode, s.message);
                           }
                         },
                       )
                     );
                   }),
-                (re.prototype.SServerClientSignHashAsync = function (
+                (se.prototype.SServerClientSignHashAsync = function (
                   e,
                   t,
                   n,
@@ -11530,7 +11681,7 @@ function dateFormatter(dateString) {
                       )
                     );
                 }),
-                (re.prototype.SServerClientCheckSignHashStatus = function (
+                (se.prototype.SServerClientCheckSignHashStatus = function (
                   e,
                   t,
                   n,
@@ -11550,7 +11701,7 @@ function dateFormatter(dateString) {
                     )
                   );
                 }),
-                (re.prototype.SServerClientSignHashesAsync = function (
+                (se.prototype.SServerClientSignHashesAsync = function (
                   e,
                   t,
                   n,
@@ -11576,7 +11727,7 @@ function dateFormatter(dateString) {
                     )
                   );
                 }),
-                (re.prototype.SServerClientCheckSignHashesStatus = function (
+                (se.prototype.SServerClientCheckSignHashesStatus = function (
                   e,
                   t,
                   n,
@@ -11602,11 +11753,11 @@ function dateFormatter(dateString) {
                           t(i);
                         } catch (e) {
                           var s = a.MakeError(
-                            te.ERROR_LIBRARY_COMUNICATION_FAILED,
+                            ie.ERROR_LIBRARY_COMUNICATION_FAILED,
                             "",
                           );
                           if (r) return void n(s);
-                          throw new ne(s.errorCode, s.message);
+                          throw new oe(s.errorCode, s.message);
                         }
                       },
                     )
@@ -11614,8 +11765,8 @@ function dateFormatter(dateString) {
                 }),
                 {
                   EndUserLibraryLoader: p,
-                  EUSignCP: re,
-                  EndUserError: te,
+                  EUSignCP: se,
+                  EndUserError: ie,
                 }
               );
             })
@@ -11625,935 +11776,234 @@ function dateFormatter(dateString) {
       function (e, t, n) {
         "use strict";
         (n.r(t),
-          n.d(t, "CASettings", function () {
-            return s.a;
-          }),
-          n.d(t, "KSPSettings", function () {
-            return s.d;
-          }),
-          n.d(t, "EndUserError", function () {
-            return i;
-          }),
-          n.d(t, "EndUserConstants", function () {
-            return E;
-          }),
-          n.d(t, "EndUserEvents", function () {
-            return r;
-          }),
-          n.d(t, "EndUserLibraryInfoJS", function () {
-            return o.a;
-          }),
-          n.d(t, "EndUserLibraryInfoSW", function () {
-            return o.b;
-          }),
-          n.d(t, "EndUserSettings", function () {
-            return s.c;
-          }),
-          n.d(t, "EndUserProxySettings", function () {
-            return s.b;
-          }),
-          n.d(t, "EndUserOwnerInfo", function () {
-            return a.a;
-          }),
-          n.d(t, "EndUserCertificateInfoEx", function () {
-            return u.a;
-          }),
-          n.d(t, "EndUserCertificate", function () {
-            return l;
-          }),
-          n.d(t, "EndUserKeyMedia", function () {
-            return c;
-          }),
-          n.d(t, "EndUserJKSPrivateKeyInfo", function () {
-            return p.a;
-          }),
-          n.d(t, "EndUserContext", function () {
-            return _;
-          }),
-          n.d(t, "EndUserPrivateKeyContext", function () {
-            return f;
-          }),
-          n.d(t, "EndUserTimeInfo", function () {
-            return S.a;
-          }),
-          n.d(t, "EndUserSignContainerInfo", function () {
-            return d.a;
-          }),
-          n.d(t, "EndUserSignInfo", function () {
-            return y.a;
-          }),
-          n.d(t, "EndUserSenderInfo", function () {
-            return C.a;
-          }),
-          n.d(t, "EndUserParams", function () {
-            return T.a;
-          }),
-          n.d(t, "EndUserInfo", function () {
-            return A;
-          }),
-          n.d(t, "EndUserRequestInfo", function () {
-            return R.a;
-          }),
-          n.d(t, "EndUserClientRegistrationParameters", function () {
-            return m;
-          }),
-          n.d(t, "EndUserClientRegistrationToken", function () {
-            return g;
-          }),
-          n.d(t, "EndUserTaxReport", function () {
-            return h.b;
-          }),
-          n.d(t, "EndUserTaxReceipt", function () {
-            return h.a;
-          }),
-          n.d(t, "EndUser", function () {
-            return O;
-          }));
-        var r = {};
-        (n.r(r),
-          n.d(r, "EndUserConfirmKSPOperationEvent", function () {
-            return P;
-          }));
-        var i = n(1),
-          o = n(13),
-          s = n(9),
-          a = n(10),
-          u = n(8),
-          l = function () {},
-          c = function (e) {
-            ((this.type = e ? e.type : ""),
-              (this.device = e ? e.device : ""),
-              (this.visibleName = e ? e.visibleName : ""),
-              (this.typeIndex = e ? e.typeIndex : -1),
-              (this.devIndex = e ? e.devIndex : -1),
-              (this.password = e ? e.password : ""),
-              (this.user = e ? e.user : ""));
-          },
-          p = n(14),
-          _ = function () {},
-          f = function () {},
-          E = n(0),
-          h = n(11),
-          S = n(6),
-          d = n(7),
-          y = n(5),
-          C = n(12),
-          T = n(15),
-          A = function () {
-            ((this.version = E.EU_USER_INFO_VERSION),
-              (this.commonName = ""),
-              (this.locality = ""),
-              (this.state = ""),
-              (this.organization = ""),
-              (this.orgUnit = ""),
-              (this.title = ""),
-              (this.street = ""),
-              (this.phone = ""),
-              (this.surname = ""),
-              (this.givenname = ""),
-              (this.EMail = ""),
-              (this.DNS = ""),
-              (this.EDRPOUCode = ""),
-              (this.DRFOCode = ""),
-              (this.NBUCode = ""),
-              (this.SPFMCode = ""),
-              (this.OCode = ""),
-              (this.OUCode = ""),
-              (this.userCode = ""),
-              (this.UPN = ""),
-              (this.UNZR = ""),
-              (this.country = "UA"));
-          },
-          R = n(16),
-          m = function () {},
-          g = function () {},
-          P = function () {
-            this.type = E.EndUserEventType.ConfirmKSPOperation;
-          },
-          v = n(18),
-          I = (function () {
-            function e(e, t) {
-              var n = this,
-                r = "";
-              ("number" == typeof t &&
-                t > 0 &&
-                ("string" == typeof r &&
-                  r.length > 0 &&
-                  (r = "var EU_MAX_DATA_SIZE_MB = " + t + ";" + r),
-                "string" == typeof e &&
-                  e.length > 0 &&
-                  (e += (e.includes("?") ? "&" : "?") + "maxDataSize=" + t)),
-                (this.m_worker = new v.a(r, e, function (e) {
-                  n.OnEvent(e);
-                })),
-                (this.m_eventListeners = new Array()));
-            }
-            return (
-              (e.prototype.OnEvent = function (e) {
-                try {
-                  var t =
-                    this.m_eventListeners[e.type] ||
-                    this.m_eventListeners[E.EndUserEventType.All];
-                  t && t(e);
-                } catch (e) {}
+          function (e) {
+            n.d(t, "EndUser", function () {
+              return v;
+            });
+            var r = n(1);
+            n.d(t, "EndUserError", function () {
+              return r;
+            });
+            var i = n(14);
+            (n.d(t, "EndUserLibraryInfoJS", function () {
+              return i.a;
+            }),
+              n.d(t, "EndUserLibraryInfoSW", function () {
+                return i.b;
+              }));
+            var o = n(9);
+            (n.d(t, "CASettings", function () {
+              return o.a;
+            }),
+              n.d(t, "KSPSettings", function () {
+                return o.d;
               }),
-              (e.prototype.AddEventListener = function (e, t) {
-                switch (e) {
-                  case E.EndUserEventType.None:
-                    this.m_eventListeners = [];
-                    break;
-                  case E.EndUserEventType.All:
-                    ((this.m_eventListeners = []),
-                      (this.m_eventListeners[e] = t));
-                    break;
-                  default:
-                    this.m_eventListeners[e] = t;
+              n.d(t, "EndUserSettings", function () {
+                return o.c;
+              }),
+              n.d(t, "EndUserProxySettings", function () {
+                return o.b;
+              }));
+            var s = n(10);
+            n.d(t, "EndUserOwnerInfo", function () {
+              return s.a;
+            });
+            var a = n(8);
+            n.d(t, "EndUserCertificateInfoEx", function () {
+              return a.a;
+            });
+            var u = n(20);
+            n.d(t, "EndUserCertificate", function () {
+              return u.a;
+            });
+            var l = n(21);
+            n.d(t, "EndUserKeyMedia", function () {
+              return l.a;
+            });
+            var c = n(15);
+            n.d(t, "EndUserJKSPrivateKeyInfo", function () {
+              return c.a;
+            });
+            var p = n(18);
+            (n.d(t, "EndUserContext", function () {
+              return p.a;
+            }),
+              n.d(t, "EndUserPrivateKeyContext", function () {
+                return p.b;
+              }));
+            var _ = n(0);
+            n.d(t, "EndUserConstants", function () {
+              return _;
+            });
+            var f = n(11);
+            (n.d(t, "EndUserTaxReport", function () {
+              return f.b;
+            }),
+              n.d(t, "EndUserTaxReceipt", function () {
+                return f.a;
+              }));
+            var E = n(6);
+            n.d(t, "EndUserTimeInfo", function () {
+              return E.a;
+            });
+            var h = n(7);
+            n.d(t, "EndUserSignContainerInfo", function () {
+              return h.a;
+            });
+            var S = n(5);
+            n.d(t, "EndUserSignInfo", function () {
+              return S.a;
+            });
+            var d = n(12);
+            n.d(t, "EndUserSenderInfo", function () {
+              return d.a;
+            });
+            var y = n(16);
+            n.d(t, "EndUserParams", function () {
+              return y.a;
+            });
+            var C = n(22);
+            n.d(t, "EndUserInfo", function () {
+              return C.a;
+            });
+            var T = n(17);
+            n.d(t, "EndUserRequestInfo", function () {
+              return T.a;
+            });
+            var A = n(19);
+            (n.d(t, "EndUserClientRegistrationParameters", function () {
+              return A.a;
+            }),
+              n.d(t, "EndUserClientRegistrationToken", function () {
+                return A.b;
+              }));
+            var m = n(23);
+            n.d(t, "EndUserEvents", function () {
+              return m;
+            });
+            var R = n(24),
+              g = n(26),
+              v = (function () {
+                function t(e, t, n) {
+                  switch (
+                    (void 0 === t && (t = _.EndUserLibraryType.JS),
+                    void 0 === n && (n = 20),
+                    t)
+                  ) {
+                    case _.EndUserLibraryType.SW:
+                      this.m_library = new g.a();
+                      break;
+                    case _.EndUserLibraryType.JS:
+                    case _.EndUserLibraryType.MS:
+                    default:
+                      this.m_library = new R.a(e, n);
+                  }
                 }
-                return this.m_worker.postMessage("AddEventListener", [e]);
-              }),
-              (e.prototype.GetLibraryInfo = function (e) {
-                return this.m_worker.postMessage(
-                  "GetLibraryInfo",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.IsInitialized = function () {
-                return this.m_worker.postMessage(
-                  "IsInitialized",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.Initialize = function (e) {
-                return this.m_worker.postMessage(
-                  "Initialize",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.SetLanguage = function (e) {
-                return this.m_worker.postMessage(
-                  "SetLanguage",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.SetRuntimeParameter = function (e, t) {
-                return this.m_worker.postMessage(
-                  "SetRuntimeParameter",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.GetStorageParameter = function (e, t) {
-                return this.m_worker.postMessage(
-                  "GetStorageParameter",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.SetStorageParameter = function (e, t, n) {
-                return this.m_worker.postMessage(
-                  "SetStorageParameter",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.GetCAs = function () {
-                return this.m_worker.postMessage(
-                  "GetCAs",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.GetProxySettings = function () {
-                return this.m_worker.postMessage(
-                  "GetProxySettings",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.SetProxySettings = function (e) {
-                return this.m_worker.postMessage(
-                  "SetProxySettings",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.GetHostInfo = function () {
-                return this.m_worker.postMessage(
-                  "GetHostInfo",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.GetKeyMedias = function () {
-                return this.m_worker.postMessage(
-                  "GetKeyMedias",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.GetJKSPrivateKeys = function (e) {
-                return this.m_worker.postMessage(
-                  "GetJKSPrivateKeys",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.IsPrivateKeyReaded = function () {
-                return this.m_worker.postMessage(
-                  "IsPrivateKeyReaded",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.ResetPrivateKey = function () {
-                return this.m_worker.postMessage(
-                  "ResetPrivateKey",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.ResetOperationKSP = function () {
-                return this.m_worker.postMessage(
-                  "ResetOperationKSP",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.ReadPrivateKey = function (e, t, n) {
-                return this.m_worker.postMessage(
-                  "ReadPrivateKey",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.ReadPrivateKeyBinary = function (e, t, n, r) {
-                return this.m_worker.postMessage(
-                  "ReadPrivateKeyBinary",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.ReadPrivateKeySIM = function (e, t, n, r) {
-                return this.m_worker.postMessage(
-                  "ReadPrivateKeySIM",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.ReadPrivateKeyKSP = function (e, t, n, r, i, o) {
-                return this.m_worker.postMessage(
-                  "ReadPrivateKeyKSP",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.GetOwnCertificates = function () {
-                return this.m_worker.postMessage(
-                  "GetOwnCertificates",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.GetOwnEUserParams = function () {
-                return this.m_worker.postMessage(
-                  "GetOwnEUserParams",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.ChangeOwnCertificatesStatus = function (e, t) {
-                return this.m_worker.postMessage(
-                  "ChangeOwnCertificatesStatus",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.MakeNewCertificate = function (
-                e,
-                t,
-                n,
-                r,
-                i,
-                o,
-                s,
-                a,
-                u,
-                l,
-                c,
-                p,
-                _,
-                f,
-                E,
-                h,
-                S,
-                d,
-                y,
-                C,
-              ) {
                 return (
-                  void 0 === h && (h = !1),
-                  void 0 === S && (S = null),
-                  void 0 === d && (d = null),
-                  void 0 === y && (y = 0),
-                  void 0 === C && (C = null),
-                  this.m_worker.postMessage(
-                    "MakeNewCertificate",
-                    Array.prototype.slice.call(arguments),
-                  )
-                );
-              }),
-              (e.prototype.MakeDeviceCertificate = function (e, t, n, r, i) {
-                return this.m_worker.postMessage(
-                  "MakeDeviceCertificate",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.SetKeyMediaUserPassword = function (e, t) {
-                return this.m_worker.postMessage(
-                  "SetKeyMediaUserPassword",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.ChangePrivateKeyPassword = function (e, t) {
-                return this.m_worker.postMessage(
-                  "ChangePrivateKeyPassword",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.ChangePrivateKeyPasswordBinary = function (e, t, n) {
-                return this.m_worker.postMessage(
-                  "ChangePrivateKeyPasswordBinary",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.GeneratePrivateKey = function (
-                e,
-                t,
-                n,
-                r,
-                i,
-                o,
-                s,
-                a,
-                u,
-                l,
-                c,
-                p,
-              ) {
-                return this.m_worker.postMessage(
-                  "GeneratePrivateKey",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.GeneratePrivateKeyBinary = function (
-                e,
-                t,
-                n,
-                r,
-                i,
-                o,
-                s,
-                a,
-                u,
-                l,
-                c,
-              ) {
-                return this.m_worker.postMessage(
-                  "GeneratePrivateKeyBinary",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.GetKeyInfo = function (e) {
-                return this.m_worker.postMessage(
-                  "GetKeyInfo",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.GetKeyInfoBinary = function (e, t) {
-                return this.m_worker.postMessage(
-                  "GetKeyInfoBinary",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.GetClientRegistrationTokenKSP = function (e, t) {
-                return (
-                  void 0 === t && (t = null),
-                  this.m_worker.postMessage(
-                    "GetClientRegistrationTokenKSP",
-                    Array.prototype.slice.call(arguments),
-                  )
-                );
-              }),
-              (e.prototype.HashData = function (e, t, n) {
-                return this.m_worker.postMessage(
-                  "HashData",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.GetSigner = function (e, t, n) {
-                return (
-                  void 0 === t && (t = -1),
-                  void 0 === n && (n = !1),
-                  this.m_worker.postMessage(
-                    "GetSigner",
-                    Array.prototype.slice.call(arguments),
-                  )
-                );
-              }),
-              (e.prototype.SignData = function (e, t) {
-                return (
-                  void 0 === t && (t = !1),
-                  this.m_worker.postMessage(
-                    "SignData",
-                    Array.prototype.slice.call(arguments),
-                  )
-                );
-              }),
-              (e.prototype.SignDataInternal = function (e, t, n) {
-                return (
-                  void 0 === n && (n = !1),
-                  this.m_worker.postMessage(
-                    "SignDataInternal",
-                    Array.prototype.slice.call(arguments),
-                  )
-                );
-              }),
-              (e.prototype.SignHash = function (e, t, n, r) {
-                return this.m_worker.postMessage(
-                  "SignHash",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.SignDataEx = function (e, t, n, r, i) {
-                return this.m_worker.postMessage(
-                  "SignDataEx",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.AppendSign = function (e, t, n, r, i) {
-                return this.m_worker.postMessage(
-                  "AppendSign",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.AppendSignHash = function (e, t, n, r, i) {
-                return this.m_worker.postMessage(
-                  "AppendSignHash",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.GetSignValue = function (e, t, n, r) {
-                return (
-                  void 0 === r && (r = !1),
-                  this.m_worker.postMessage(
-                    "GetSignValue",
-                    Array.prototype.slice.call(arguments),
-                  )
-                );
-              }),
-              (e.prototype.VerifyHash = function (e, t, n) {
-                return (
-                  void 0 === n && (n = -1),
-                  this.m_worker.postMessage(
-                    "VerifyHash",
-                    Array.prototype.slice.call(arguments),
-                  )
-                );
-              }),
-              (e.prototype.VerifyData = function (e, t, n) {
-                return (
-                  void 0 === n && (n = -1),
-                  this.m_worker.postMessage(
-                    "VerifyData",
-                    Array.prototype.slice.call(arguments),
-                  )
-                );
-              }),
-              (e.prototype.VerifyDataInternal = function (e, t) {
-                return (
-                  void 0 === t && (t = -1),
-                  this.m_worker.postMessage(
-                    "VerifyDataInternal",
-                    Array.prototype.slice.call(arguments),
-                  )
-                );
-              }),
-              (e.prototype.EnvelopData = function (e, t, n, r, i, o) {
-                return (
-                  void 0 === o && (o = !1),
-                  this.m_worker.postMessage(
-                    "EnvelopData",
-                    Array.prototype.slice.call(arguments),
-                  )
-                );
-              }),
-              (e.prototype.DevelopData = function (e, t) {
-                return this.m_worker.postMessage(
-                  "DevelopData",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.CreateAuthData = function (e, t, n) {
-                return this.m_worker.postMessage(
-                  "CreateAuthData",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.ProtectDataByPassword = function (e, t, n) {
-                return this.m_worker.postMessage(
-                  "ProtectDataByPassword",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.UnprotectDataByPassword = function (e, t, n) {
-                return this.m_worker.postMessage(
-                  "UnprotectDataByPassword",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.GetTSPByAccessInfo = function (e, t, n, r, i) {
-                return this.m_worker.postMessage(
-                  "GetTSPByAccessInfo",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.CheckTSP = function (e, t, n) {
-                return this.m_worker.postMessage(
-                  "CheckTSP",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.ClientDynamicKeySessionCreate = function (e) {
-                return this.m_worker.postMessage(
-                  "ClientDynamicKeySessionCreate",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.SessionClose = function (e) {
-                return this.m_worker.postMessage(
-                  "SessionClose",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.SessionEncrypt = function (e, t, n) {
-                return this.m_worker.postMessage(
-                  "SessionEncrypt",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.SessionDecrypt = function (e, t) {
-                return this.m_worker.postMessage(
-                  "SessionDecrypt",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.CtxCreate = function () {
-                return this.m_worker.postMessage(
-                  "CtxCreate",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.CtxFree = function (e) {
-                return this.m_worker.postMessage(
-                  "CtxFree",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.CtxSetParameter = function (e, t, n) {
-                return this.m_worker.postMessage(
-                  "CtxSetParameter",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.CtxReadPrivateKey = function (e, t, n, r) {
-                return this.m_worker.postMessage(
-                  "CtxReadPrivateKey",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.CtxReadPrivateKeyBinary = function (e, t, n, r, i) {
-                return this.m_worker.postMessage(
-                  "CtxReadPrivateKeyBinary",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.CtxFreePrivateKey = function (e) {
-                return this.m_worker.postMessage(
-                  "CtxFreePrivateKey",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.CtxGetOwnCertificates = function (e) {
-                return this.m_worker.postMessage(
-                  "CtxGetOwnCertificates",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.CtxSignHash = function (e, t, n, r, i) {
-                return this.m_worker.postMessage(
-                  "CtxSignHash",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.CtxSignData = function (e, t, n, r, i, o) {
-                return this.m_worker.postMessage(
-                  "CtxSignData",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.CtxAppendSignHash = function (e, t, n, r, i, o) {
-                return this.m_worker.postMessage(
-                  "CtxAppendSignHash",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.CtxAppendSign = function (e, t, n, r, i, o) {
-                return this.m_worker.postMessage(
-                  "CtxAppendSign",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.CtxGetSignValue = function (e, t, n, r, i) {
-                return (
-                  void 0 === i && (i = !1),
-                  this.m_worker.postMessage(
-                    "CtxGetSignValue",
-                    Array.prototype.slice.call(arguments),
-                  )
-                );
-              }),
-              (e.prototype.CtxEnvelopData = function (e, t, n, r, i, o, s) {
-                return this.m_worker.postMessage(
-                  "CtxEnvelopData",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.CtxDevelopData = function (e, t, n) {
-                return this.m_worker.postMessage(
-                  "CtxDevelopData",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.ProtectTaxReports = function (e, t, n, r, i, o, s) {
-                return (
-                  void 0 === e && (e = null),
-                  void 0 === t && (t = null),
-                  void 0 === n && (n = null),
-                  void 0 === s && (s = !1),
-                  this.m_worker.postMessage(
-                    "ProtectTaxReports",
-                    Array.prototype.slice.call(arguments),
-                  )
-                );
-              }),
-              (e.prototype.UnprotectTaxReceipts = function (e, t) {
-                return this.m_worker.postMessage(
-                  "UnprotectTaxReceipts",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.ASiCGetSigner = function (e, t, n) {
-                return this.m_worker.postMessage(
-                  "ASiCGetSigner",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.ASiCSignData = function (e, t, n, r, i, o) {
-                return this.m_worker.postMessage(
-                  "ASiCSignData",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.ASiCAppendSign = function (e, t, n, r, i) {
-                return this.m_worker.postMessage(
-                  "ASiCAppendSign",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.ASiCVerifyData = function (e, t) {
-                return (
-                  void 0 === t && (t = -1),
-                  this.m_worker.postMessage(
-                    "ASiCVerifyData",
-                    Array.prototype.slice.call(arguments),
-                  )
-                );
-              }),
-              (e.prototype.PDFSignData = function (e, t, n, r) {
-                return this.m_worker.postMessage(
-                  "PDFSignData",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.PDFVerifyData = function (e, t) {
-                return (
-                  void 0 === t && (t = -1),
-                  this.m_worker.postMessage(
-                    "PDFVerifyData",
-                    Array.prototype.slice.call(arguments),
-                  )
-                );
-              }),
-              (e.prototype.PDFGetSigner = function (e, t, n) {
-                return (
-                  void 0 === t && (t = -1),
-                  void 0 === n && (n = !1),
-                  this.m_worker.postMessage(
-                    "PDFGetSigner",
-                    Array.prototype.slice.call(arguments),
-                  )
-                );
-              }),
-              (e.prototype.XAdESGetSigner = function (e, t, n) {
-                return (
-                  void 0 === t && (t = -1),
-                  void 0 === n && (n = !1),
-                  this.m_worker.postMessage(
-                    "XAdESGetSigner",
-                    Array.prototype.slice.call(arguments),
-                  )
-                );
-              }),
-              (e.prototype.XAdESSignData = function (e, t, n, r, i) {
-                return this.m_worker.postMessage(
-                  "XAdESSignData",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              (e.prototype.XAdESVerifyData = function (e, t, n) {
-                return (
-                  void 0 === n && (n = -1),
-                  this.m_worker.postMessage(
-                    "XAdESVerifyData",
-                    Array.prototype.slice.call(arguments),
-                  )
-                );
-              }),
-              (e.prototype.GetSignContainerInfo = function (e) {
-                return this.m_worker.postMessage(
-                  "GetSignContainerInfo",
-                  Array.prototype.slice.call(arguments),
-                );
-              }),
-              e
-            );
-          })(),
-          U = n(19),
-          O = (function () {
-            function e(e, t, n) {
-              switch (
-                (void 0 === t && (t = E.EndUserLibraryType.JS),
-                void 0 === n && (n = 5),
-                t)
-              ) {
-                case E.EndUserLibraryType.SW:
-                  this.m_library = new U.a();
-                  break;
-                case E.EndUserLibraryType.JS:
-                case E.EndUserLibraryType.MS:
-                default:
-                  this.m_library = new I(e, n);
-              }
-            }
-            return (
-              (e.prototype.AddEventListener = function (e, t) {
-                return this.m_library.AddEventListener(e, t);
-              }),
-              (e.prototype.GetLibraryInfo = function (e) {
-                return this.m_library.GetLibraryInfo(e);
-              }),
-              (e.prototype.IsInitialized = function () {
-                return this.m_library.IsInitialized();
-              }),
-              (e.prototype.Initialize = function (e) {
-                return this.m_library.Initialize(e);
-              }),
-              (e.prototype.SetLanguage = function (e) {
-                return this.m_library.SetLanguage(e);
-              }),
-              (e.prototype.SetRuntimeParameter = function (e, t) {
-                return this.m_library.SetRuntimeParameter(e, t);
-              }),
-              (e.prototype.GetStorageParameter = function (e, t) {
-                return (
-                  void 0 === t && (t = !1),
-                  this.m_library.GetStorageParameter(e, t)
-                );
-              }),
-              (e.prototype.SetStorageParameter = function (e, t, n) {
-                return (
-                  void 0 === n && (n = !1),
-                  this.m_library.SetStorageParameter(e, t, n)
-                );
-              }),
-              (e.prototype.GetCAs = function () {
-                return this.m_library.GetCAs();
-              }),
-              (e.prototype.GetProxySettings = function () {
-                return this.m_library.GetProxySettings();
-              }),
-              (e.prototype.SetProxySettings = function (e) {
-                return this.m_library.SetProxySettings(e);
-              }),
-              (e.prototype.GetHostInfo = function () {
-                return this.m_library.GetHostInfo();
-              }),
-              (e.prototype.GetKeyMedias = function () {
-                return this.m_library.GetKeyMedias();
-              }),
-              (e.prototype.GetJKSPrivateKeys = function (e) {
-                return this.m_library.GetJKSPrivateKeys(e);
-              }),
-              (e.prototype.IsPrivateKeyReaded = function () {
-                return this.m_library.IsPrivateKeyReaded();
-              }),
-              (e.prototype.ResetPrivateKey = function () {
-                return this.m_library.ResetPrivateKey();
-              }),
-              (e.prototype.ResetOperationKSP = function () {
-                return this.m_library.ResetOperationKSP();
-              }),
-              (e.prototype.ReadPrivateKey = function (e, t, n) {
-                return this.m_library.ReadPrivateKey(e, t, n);
-              }),
-              (e.prototype.ReadPrivateKeyBinary = function (e, t, n, r) {
-                return this.m_library.ReadPrivateKeyBinary(e, t, n, r);
-              }),
-              (e.prototype.ReadPrivateKeySIM = function (e, t, n, r) {
-                return (
-                  void 0 === n && (n = !0),
-                  void 0 === r && (r = 0),
-                  this.m_library.ReadPrivateKeySIM(e, t, n, r)
-                );
-              }),
-              (e.prototype.ReadPrivateKeyKSP = function (e, t, n, r, i, o) {
-                return (
-                  void 0 === n && (n = !0),
-                  void 0 === r && (r = 0),
-                  void 0 === i && (i = null),
-                  void 0 === o && (o = null),
-                  this.m_library.ReadPrivateKeyKSP(e, t, n, r, i, o)
-                );
-              }),
-              (e.prototype.GetOwnCertificates = function () {
-                return this.m_library.GetOwnCertificates();
-              }),
-              (e.prototype.GetOwnEUserParams = function () {
-                return this.m_library.GetOwnEUserParams();
-              }),
-              (e.prototype.ChangeOwnCertificatesStatus = function (e, t) {
-                return this.m_library.ChangeOwnCertificatesStatus(e, t);
-              }),
-              (e.prototype.MakeNewCertificate = function (
-                e,
-                t,
-                n,
-                r,
-                i,
-                o,
-                s,
-                a,
-                u,
-                l,
-                c,
-                p,
-                _,
-                f,
-                E,
-                h,
-                S,
-                d,
-                y,
-                C,
-              ) {
-                return (
-                  void 0 === h && (h = !1),
-                  void 0 === S && (S = null),
-                  void 0 === d && (d = null),
-                  void 0 === y && (y = 0),
-                  void 0 === C && (C = null),
-                  this.m_library.MakeNewCertificate(
+                  (t.prototype.Destroy = function () {
+                    var t = this;
+                    return new e(function (e, n) {
+                      (t.m_library.Finalize(), (t.m_library = null), e());
+                    });
+                  }),
+                  (t.prototype.AddEventListener = function (e, t) {
+                    return this.m_library.AddEventListener(e, t);
+                  }),
+                  (t.prototype.GetLibraryInfo = function (e) {
+                    return this.m_library.GetLibraryInfo(e);
+                  }),
+                  (t.prototype.IsInitialized = function () {
+                    return this.m_library.IsInitialized();
+                  }),
+                  (t.prototype.Initialize = function (e) {
+                    return this.m_library.Initialize(e);
+                  }),
+                  (t.prototype.SetLanguage = function (e) {
+                    return this.m_library.SetLanguage(e);
+                  }),
+                  (t.prototype.SetRuntimeParameter = function (e, t) {
+                    return this.m_library.SetRuntimeParameter(e, t);
+                  }),
+                  (t.prototype.GetStorageParameter = function (e, t) {
+                    return (
+                      void 0 === t && (t = !1),
+                      this.m_library.GetStorageParameter(e, t)
+                    );
+                  }),
+                  (t.prototype.SetStorageParameter = function (e, t, n) {
+                    return (
+                      void 0 === n && (n = !1),
+                      this.m_library.SetStorageParameter(e, t, n)
+                    );
+                  }),
+                  (t.prototype.GetCAs = function () {
+                    return this.m_library.GetCAs();
+                  }),
+                  (t.prototype.GetProxySettings = function () {
+                    return this.m_library.GetProxySettings();
+                  }),
+                  (t.prototype.SetProxySettings = function (e) {
+                    return this.m_library.SetProxySettings(e);
+                  }),
+                  (t.prototype.GetHostInfo = function () {
+                    return this.m_library.GetHostInfo();
+                  }),
+                  (t.prototype.GetKeyMedias = function () {
+                    return this.m_library.GetKeyMedias();
+                  }),
+                  (t.prototype.GetJKSPrivateKeys = function (e) {
+                    return this.m_library.GetJKSPrivateKeys(e);
+                  }),
+                  (t.prototype.IsPrivateKeyReaded = function () {
+                    return this.m_library.IsPrivateKeyReaded();
+                  }),
+                  (t.prototype.ResetPrivateKey = function () {
+                    return this.m_library.ResetPrivateKey();
+                  }),
+                  (t.prototype.ResetOperationKSP = function () {
+                    return this.m_library.ResetOperationKSP();
+                  }),
+                  (t.prototype.ReadPrivateKey = function (e, t, n) {
+                    return this.m_library.ReadPrivateKey(e, t, n);
+                  }),
+                  (t.prototype.ReadPrivateKeyBinary = function (e, t, n, r) {
+                    return this.m_library.ReadPrivateKeyBinary(e, t, n, r);
+                  }),
+                  (t.prototype.ReadPrivateKeySIM = function (e, t, n, r) {
+                    return (
+                      void 0 === n && (n = !0),
+                      void 0 === r && (r = 0),
+                      this.m_library.ReadPrivateKeySIM(e, t, n, r)
+                    );
+                  }),
+                  (t.prototype.ReadPrivateKeyKSP = function (
+                    e,
+                    t,
+                    n,
+                    r,
+                    i,
+                    o,
+                    s,
+                  ) {
+                    return (
+                      void 0 === n && (n = !0),
+                      void 0 === r && (r = 0),
+                      void 0 === i && (i = null),
+                      void 0 === o && (o = null),
+                      void 0 === s && (s = null),
+                      this.m_library.ReadPrivateKeyKSP(e, t, n, r, i, o, s)
+                    );
+                  }),
+                  (t.prototype.GetOwnCertificates = function () {
+                    return this.m_library.GetOwnCertificates();
+                  }),
+                  (t.prototype.GetOwnEUserParams = function () {
+                    return this.m_library.GetOwnEUserParams();
+                  }),
+                  (t.prototype.ChangeOwnCertificatesStatus = function (e, t) {
+                    return this.m_library.ChangeOwnCertificatesStatus(e, t);
+                  }),
+                  (t.prototype.MakeNewCertificate = function (
                     e,
                     t,
                     n,
@@ -12574,283 +12024,340 @@ function dateFormatter(dateString) {
                     d,
                     y,
                     C,
-                  )
+                  ) {
+                    return (
+                      void 0 === h && (h = !1),
+                      void 0 === S && (S = null),
+                      void 0 === d && (d = null),
+                      void 0 === y && (y = 0),
+                      void 0 === C && (C = null),
+                      this.m_library.MakeNewCertificate(
+                        e,
+                        t,
+                        n,
+                        r,
+                        i,
+                        o,
+                        s,
+                        a,
+                        u,
+                        l,
+                        c,
+                        p,
+                        _,
+                        f,
+                        E,
+                        h,
+                        S,
+                        d,
+                        y,
+                        C,
+                      )
+                    );
+                  }),
+                  (t.prototype.MakeDeviceCertificate = function (
+                    e,
+                    t,
+                    n,
+                    r,
+                    i,
+                  ) {
+                    return this.m_library.MakeDeviceCertificate(e, t, n, r, i);
+                  }),
+                  (t.prototype.SetKeyMediaUserPassword = function (e, t) {
+                    return this.m_library.SetKeyMediaUserPassword(e, t);
+                  }),
+                  (t.prototype.ChangePrivateKeyPassword = function (e, t) {
+                    return this.m_library.ChangePrivateKeyPassword(e, t);
+                  }),
+                  (t.prototype.ChangePrivateKeyPasswordBinary = function (
+                    e,
+                    t,
+                    n,
+                  ) {
+                    return this.m_library.ChangePrivateKeyPasswordBinary(
+                      e,
+                      t,
+                      n,
+                    );
+                  }),
+                  (t.prototype.GeneratePrivateKey = function (
+                    e,
+                    t,
+                    n,
+                    r,
+                    i,
+                    o,
+                    s,
+                    a,
+                    u,
+                    l,
+                    c,
+                    p,
+                  ) {
+                    return this.m_library.GeneratePrivateKey(
+                      e,
+                      t,
+                      n,
+                      r,
+                      i,
+                      o,
+                      s,
+                      a,
+                      u,
+                      l,
+                      c,
+                      p,
+                    );
+                  }),
+                  (t.prototype.GeneratePrivateKeyBinary = function (
+                    e,
+                    t,
+                    n,
+                    r,
+                    i,
+                    o,
+                    s,
+                    a,
+                    u,
+                    l,
+                    c,
+                  ) {
+                    return this.m_library.GeneratePrivateKeyBinary(
+                      e,
+                      t,
+                      n,
+                      r,
+                      i,
+                      o,
+                      s,
+                      a,
+                      u,
+                      l,
+                      c,
+                    );
+                  }),
+                  (t.prototype.GetKeyInfo = function (e) {
+                    return this.m_library.GetKeyInfo(e);
+                  }),
+                  (t.prototype.GetKeyInfoBinary = function (e, t) {
+                    return this.m_library.GetKeyInfoBinary(e, t);
+                  }),
+                  (t.prototype.GetClientRegistrationTokenKSP = function (e, t) {
+                    return this.m_library.GetClientRegistrationTokenKSP(e, t);
+                  }),
+                  (t.prototype.HashData = function (e, t, n) {
+                    return this.m_library.HashData(e, t, n);
+                  }),
+                  (t.prototype.GetSigner = function (e, t, n) {
+                    return this.m_library.GetSigner(e, t, n);
+                  }),
+                  (t.prototype.SignData = function (e, t) {
+                    return (
+                      void 0 === t && (t = !1),
+                      this.m_library.SignData(e, t)
+                    );
+                  }),
+                  (t.prototype.SignDataInternal = function (e, t, n) {
+                    return (
+                      void 0 === n && (n = !1),
+                      this.m_library.SignDataInternal(e, t, n)
+                    );
+                  }),
+                  (t.prototype.SignHash = function (e, t, n, r) {
+                    return (
+                      void 0 === r && (r = !1),
+                      this.m_library.SignHash(e, t, n, r)
+                    );
+                  }),
+                  (t.prototype.SignDataEx = function (e, t, n, r, i) {
+                    return (
+                      void 0 === i && (i = !1),
+                      this.m_library.SignDataEx(e, t, n, r, i)
+                    );
+                  }),
+                  (t.prototype.AppendSign = function (e, t, n, r, i) {
+                    return (
+                      void 0 === i && (i = !1),
+                      this.m_library.AppendSign(e, t, n, r, i)
+                    );
+                  }),
+                  (t.prototype.AppendSignHash = function (e, t, n, r, i) {
+                    return this.m_library.AppendSignHash(e, t, n, r, i);
+                  }),
+                  (t.prototype.GetSignValue = function (e, t, n, r) {
+                    return (
+                      void 0 === r && (r = !1),
+                      this.m_library.GetSignValue(e, t, n, r)
+                    );
+                  }),
+                  (t.prototype.VerifyHash = function (e, t, n) {
+                    return (
+                      void 0 === n && (n = -1),
+                      this.m_library.VerifyHash(e, t, n)
+                    );
+                  }),
+                  (t.prototype.VerifyData = function (e, t, n) {
+                    return (
+                      void 0 === n && (n = -1),
+                      this.m_library.VerifyData(e, t, n)
+                    );
+                  }),
+                  (t.prototype.VerifyDataInternal = function (e, t) {
+                    return (
+                      void 0 === t && (t = -1),
+                      this.m_library.VerifyDataInternal(e, t)
+                    );
+                  }),
+                  (t.prototype.EnvelopData = function (e, t, n, r, i, o) {
+                    return (
+                      void 0 === o && (o = !1),
+                      this.m_library.EnvelopData(e, t, n, r, i, o)
+                    );
+                  }),
+                  (t.prototype.DevelopData = function (e, t) {
+                    return this.m_library.DevelopData(e, t);
+                  }),
+                  (t.prototype.ProtectDataByPassword = function (e, t, n) {
+                    return this.m_library.ProtectDataByPassword(e, t, n);
+                  }),
+                  (t.prototype.UnprotectDataByPassword = function (e, t, n) {
+                    return this.m_library.UnprotectDataByPassword(e, t, n);
+                  }),
+                  (t.prototype.CreateAuthData = function (e, t, n) {
+                    return this.m_library.CreateAuthData(e, t, n);
+                  }),
+                  (t.prototype.GetTSPByAccessInfo = function (e, t, n, r, i) {
+                    return this.m_library.GetTSPByAccessInfo(e, t, n, r, i);
+                  }),
+                  (t.prototype.CheckTSP = function (e, t, n) {
+                    return this.m_library.CheckTSP(e, t, n);
+                  }),
+                  (t.prototype.ClientDynamicKeySessionCreate = function (e) {
+                    return this.m_library.ClientDynamicKeySessionCreate(e);
+                  }),
+                  (t.prototype.SessionClose = function (e) {
+                    return this.m_library.SessionClose(e);
+                  }),
+                  (t.prototype.SessionEncrypt = function (e, t, n) {
+                    return this.m_library.SessionEncrypt(e, t, n);
+                  }),
+                  (t.prototype.SessionDecrypt = function (e, t) {
+                    return this.m_library.SessionDecrypt(e, t);
+                  }),
+                  (t.prototype.CtxCreate = function () {
+                    return this.m_library.CtxCreate();
+                  }),
+                  (t.prototype.CtxFree = function (e) {
+                    return this.m_library.CtxFree(e);
+                  }),
+                  (t.prototype.CtxSetParameter = function (e, t, n) {
+                    return this.m_library.CtxSetParameter(e, t, n);
+                  }),
+                  (t.prototype.CtxReadPrivateKey = function (e, t, n, r) {
+                    return (
+                      void 0 === e && (e = null),
+                      this.m_library.CtxReadPrivateKey(e, t, n, r)
+                    );
+                  }),
+                  (t.prototype.CtxReadPrivateKeyBinary = function (
+                    e,
+                    t,
+                    n,
+                    r,
+                    i,
+                  ) {
+                    return (
+                      void 0 === e && (e = null),
+                      this.m_library.CtxReadPrivateKeyBinary(e, t, n, r, i)
+                    );
+                  }),
+                  (t.prototype.CtxFreePrivateKey = function (e) {
+                    return this.m_library.CtxFreePrivateKey(e);
+                  }),
+                  (t.prototype.CtxGetOwnCertificates = function (e) {
+                    return this.m_library.CtxGetOwnCertificates(e);
+                  }),
+                  (t.prototype.CtxSignHash = function (e, t, n, r, i) {
+                    return this.m_library.CtxSignHash(e, t, n, r, i);
+                  }),
+                  (t.prototype.CtxSignData = function (e, t, n, r, i, o) {
+                    return this.m_library.CtxSignData(e, t, n, r, i, o);
+                  }),
+                  (t.prototype.CtxAppendSignHash = function (e, t, n, r, i, o) {
+                    return this.m_library.CtxAppendSignHash(e, t, n, r, i, o);
+                  }),
+                  (t.prototype.CtxAppendSign = function (e, t, n, r, i, o) {
+                    return this.m_library.CtxAppendSign(e, t, n, r, i, o);
+                  }),
+                  (t.prototype.CtxGetSignValue = function (e, t, n, r, i) {
+                    return (
+                      void 0 === i && (i = !1),
+                      this.m_library.CtxGetSignValue(e, t, n, r, i)
+                    );
+                  }),
+                  (t.prototype.CtxEnvelopData = function (e, t, n, r, i, o, s) {
+                    return this.m_library.CtxEnvelopData(e, t, n, r, i, o, s);
+                  }),
+                  (t.prototype.CtxDevelopData = function (e, t, n) {
+                    return this.m_library.CtxDevelopData(e, t, n);
+                  }),
+                  (t.prototype.ProtectTaxReports = function (
+                    e,
+                    t,
+                    n,
+                    r,
+                    i,
+                    o,
+                    s,
+                  ) {
+                    return (
+                      void 0 === e && (e = null),
+                      void 0 === t && (t = null),
+                      void 0 === n && (n = null),
+                      this.m_library.ProtectTaxReports(e, t, n, r, i, o, s)
+                    );
+                  }),
+                  (t.prototype.UnprotectTaxReceipts = function (e, t) {
+                    return this.m_library.UnprotectTaxReceipts(e, t);
+                  }),
+                  (t.prototype.ASiCGetSigner = function (e, t, n) {
+                    return this.m_library.ASiCGetSigner(e, t, n);
+                  }),
+                  (t.prototype.ASiCSignData = function (e, t, n, r, i, o) {
+                    return this.m_library.ASiCSignData(e, t, n, r, i, o);
+                  }),
+                  (t.prototype.ASiCAppendSign = function (e, t, n, r, i) {
+                    return this.m_library.ASiCAppendSign(e, t, n, r, i);
+                  }),
+                  (t.prototype.ASiCVerifyData = function (e, t) {
+                    return this.m_library.ASiCVerifyData(e, t);
+                  }),
+                  (t.prototype.PDFGetSigner = function (e, t, n) {
+                    return this.m_library.PDFGetSigner(e, t, n);
+                  }),
+                  (t.prototype.PDFSignData = function (e, t, n, r) {
+                    return this.m_library.PDFSignData(e, t, n, r);
+                  }),
+                  (t.prototype.PDFVerifyData = function (e, t) {
+                    return this.m_library.PDFVerifyData(e, t);
+                  }),
+                  (t.prototype.XAdESGetSigner = function (e, t, n) {
+                    return this.m_library.XAdESGetSigner(e, t, n);
+                  }),
+                  (t.prototype.XAdESSignData = function (e, t, n, r, i) {
+                    return this.m_library.XAdESSignData(e, t, n, r, i);
+                  }),
+                  (t.prototype.XAdESVerifyData = function (e, t, n) {
+                    return this.m_library.XAdESVerifyData(e, t, n);
+                  }),
+                  (t.prototype.GetSignContainerInfo = function (e) {
+                    return this.m_library.GetSignContainerInfo(e);
+                  }),
+                  t
                 );
-              }),
-              (e.prototype.MakeDeviceCertificate = function (e, t, n, r, i) {
-                return this.m_library.MakeDeviceCertificate(e, t, n, r, i);
-              }),
-              (e.prototype.SetKeyMediaUserPassword = function (e, t) {
-                return this.m_library.SetKeyMediaUserPassword(e, t);
-              }),
-              (e.prototype.ChangePrivateKeyPassword = function (e, t) {
-                return this.m_library.ChangePrivateKeyPassword(e, t);
-              }),
-              (e.prototype.ChangePrivateKeyPasswordBinary = function (e, t, n) {
-                return this.m_library.ChangePrivateKeyPasswordBinary(e, t, n);
-              }),
-              (e.prototype.GeneratePrivateKey = function (
-                e,
-                t,
-                n,
-                r,
-                i,
-                o,
-                s,
-                a,
-                u,
-                l,
-                c,
-                p,
-              ) {
-                return this.m_library.GeneratePrivateKey(
-                  e,
-                  t,
-                  n,
-                  r,
-                  i,
-                  o,
-                  s,
-                  a,
-                  u,
-                  l,
-                  c,
-                  p,
-                );
-              }),
-              (e.prototype.GeneratePrivateKeyBinary = function (
-                e,
-                t,
-                n,
-                r,
-                i,
-                o,
-                s,
-                a,
-                u,
-                l,
-                c,
-              ) {
-                return this.m_library.GeneratePrivateKeyBinary(
-                  e,
-                  t,
-                  n,
-                  r,
-                  i,
-                  o,
-                  s,
-                  a,
-                  u,
-                  l,
-                  c,
-                );
-              }),
-              (e.prototype.GetKeyInfo = function (e) {
-                return this.m_library.GetKeyInfo(e);
-              }),
-              (e.prototype.GetKeyInfoBinary = function (e, t) {
-                return this.m_library.GetKeyInfoBinary(e, t);
-              }),
-              (e.prototype.GetClientRegistrationTokenKSP = function (e, t) {
-                return this.m_library.GetClientRegistrationTokenKSP(e, t);
-              }),
-              (e.prototype.HashData = function (e, t, n) {
-                return this.m_library.HashData(e, t, n);
-              }),
-              (e.prototype.GetSigner = function (e, t, n) {
-                return this.m_library.GetSigner(e, t, n);
-              }),
-              (e.prototype.SignData = function (e, t) {
-                return (
-                  void 0 === t && (t = !1),
-                  this.m_library.SignData(e, t)
-                );
-              }),
-              (e.prototype.SignDataInternal = function (e, t, n) {
-                return (
-                  void 0 === n && (n = !1),
-                  this.m_library.SignDataInternal(e, t, n)
-                );
-              }),
-              (e.prototype.SignHash = function (e, t, n, r) {
-                return (
-                  void 0 === r && (r = !1),
-                  this.m_library.SignHash(e, t, n, r)
-                );
-              }),
-              (e.prototype.SignDataEx = function (e, t, n, r, i) {
-                return (
-                  void 0 === i && (i = !1),
-                  this.m_library.SignDataEx(e, t, n, r, i)
-                );
-              }),
-              (e.prototype.AppendSign = function (e, t, n, r, i) {
-                return (
-                  void 0 === i && (i = !1),
-                  this.m_library.AppendSign(e, t, n, r, i)
-                );
-              }),
-              (e.prototype.AppendSignHash = function (e, t, n, r, i) {
-                return this.m_library.AppendSignHash(e, t, n, r, i);
-              }),
-              (e.prototype.GetSignValue = function (e, t, n, r) {
-                return (
-                  void 0 === r && (r = !1),
-                  this.m_library.GetSignValue(e, t, n, r)
-                );
-              }),
-              (e.prototype.VerifyHash = function (e, t, n) {
-                return (
-                  void 0 === n && (n = -1),
-                  this.m_library.VerifyHash(e, t, n)
-                );
-              }),
-              (e.prototype.VerifyData = function (e, t, n) {
-                return (
-                  void 0 === n && (n = -1),
-                  this.m_library.VerifyData(e, t, n)
-                );
-              }),
-              (e.prototype.VerifyDataInternal = function (e, t) {
-                return (
-                  void 0 === t && (t = -1),
-                  this.m_library.VerifyDataInternal(e, t)
-                );
-              }),
-              (e.prototype.EnvelopData = function (e, t, n, r, i, o) {
-                return (
-                  void 0 === o && (o = !1),
-                  this.m_library.EnvelopData(e, t, n, r, i, o)
-                );
-              }),
-              (e.prototype.DevelopData = function (e, t) {
-                return this.m_library.DevelopData(e, t);
-              }),
-              (e.prototype.ProtectDataByPassword = function (e, t, n) {
-                return this.m_library.ProtectDataByPassword(e, t, n);
-              }),
-              (e.prototype.UnprotectDataByPassword = function (e, t, n) {
-                return this.m_library.UnprotectDataByPassword(e, t, n);
-              }),
-              (e.prototype.CreateAuthData = function (e, t, n) {
-                return this.m_library.CreateAuthData(e, t, n);
-              }),
-              (e.prototype.GetTSPByAccessInfo = function (e, t, n, r, i) {
-                return this.m_library.GetTSPByAccessInfo(e, t, n, r, i);
-              }),
-              (e.prototype.CheckTSP = function (e, t, n) {
-                return this.m_library.CheckTSP(e, t, n);
-              }),
-              (e.prototype.ClientDynamicKeySessionCreate = function (e) {
-                return this.m_library.ClientDynamicKeySessionCreate(e);
-              }),
-              (e.prototype.SessionClose = function (e) {
-                return this.m_library.SessionClose(e);
-              }),
-              (e.prototype.SessionEncrypt = function (e, t, n) {
-                return this.m_library.SessionEncrypt(e, t, n);
-              }),
-              (e.prototype.SessionDecrypt = function (e, t) {
-                return this.m_library.SessionDecrypt(e, t);
-              }),
-              (e.prototype.CtxCreate = function () {
-                return this.m_library.CtxCreate();
-              }),
-              (e.prototype.CtxFree = function (e) {
-                return this.m_library.CtxFree(e);
-              }),
-              (e.prototype.CtxSetParameter = function (e, t, n) {
-                return this.m_library.CtxSetParameter(e, t, n);
-              }),
-              (e.prototype.CtxReadPrivateKey = function (e, t, n, r) {
-                return (
-                  void 0 === e && (e = null),
-                  this.m_library.CtxReadPrivateKey(e, t, n, r)
-                );
-              }),
-              (e.prototype.CtxReadPrivateKeyBinary = function (e, t, n, r, i) {
-                return (
-                  void 0 === e && (e = null),
-                  this.m_library.CtxReadPrivateKeyBinary(e, t, n, r, i)
-                );
-              }),
-              (e.prototype.CtxFreePrivateKey = function (e) {
-                return this.m_library.CtxFreePrivateKey(e);
-              }),
-              (e.prototype.CtxGetOwnCertificates = function (e) {
-                return this.m_library.CtxGetOwnCertificates(e);
-              }),
-              (e.prototype.CtxSignHash = function (e, t, n, r, i) {
-                return this.m_library.CtxSignHash(e, t, n, r, i);
-              }),
-              (e.prototype.CtxSignData = function (e, t, n, r, i, o) {
-                return this.m_library.CtxSignData(e, t, n, r, i, o);
-              }),
-              (e.prototype.CtxAppendSignHash = function (e, t, n, r, i, o) {
-                return this.m_library.CtxAppendSignHash(e, t, n, r, i, o);
-              }),
-              (e.prototype.CtxAppendSign = function (e, t, n, r, i, o) {
-                return this.m_library.CtxAppendSign(e, t, n, r, i, o);
-              }),
-              (e.prototype.CtxGetSignValue = function (e, t, n, r, i) {
-                return (
-                  void 0 === i && (i = !1),
-                  this.m_library.CtxGetSignValue(e, t, n, r, i)
-                );
-              }),
-              (e.prototype.CtxEnvelopData = function (e, t, n, r, i, o, s) {
-                return this.m_library.CtxEnvelopData(e, t, n, r, i, o, s);
-              }),
-              (e.prototype.CtxDevelopData = function (e, t, n) {
-                return this.m_library.CtxDevelopData(e, t, n);
-              }),
-              (e.prototype.ProtectTaxReports = function (e, t, n, r, i, o, s) {
-                return (
-                  void 0 === e && (e = null),
-                  void 0 === t && (t = null),
-                  void 0 === n && (n = null),
-                  this.m_library.ProtectTaxReports(e, t, n, r, i, o, s)
-                );
-              }),
-              (e.prototype.UnprotectTaxReceipts = function (e, t) {
-                return this.m_library.UnprotectTaxReceipts(e, t);
-              }),
-              (e.prototype.ASiCGetSigner = function (e, t, n) {
-                return this.m_library.ASiCGetSigner(e, t, n);
-              }),
-              (e.prototype.ASiCSignData = function (e, t, n, r, i, o) {
-                return this.m_library.ASiCSignData(e, t, n, r, i, o);
-              }),
-              (e.prototype.ASiCAppendSign = function (e, t, n, r, i) {
-                return this.m_library.ASiCAppendSign(e, t, n, r, i);
-              }),
-              (e.prototype.ASiCVerifyData = function (e, t) {
-                return this.m_library.ASiCVerifyData(e, t);
-              }),
-              (e.prototype.PDFGetSigner = function (e, t, n) {
-                return this.m_library.PDFGetSigner(e, t, n);
-              }),
-              (e.prototype.PDFSignData = function (e, t, n, r) {
-                return this.m_library.PDFSignData(e, t, n, r);
-              }),
-              (e.prototype.PDFVerifyData = function (e, t) {
-                return this.m_library.PDFVerifyData(e, t);
-              }),
-              (e.prototype.XAdESGetSigner = function (e, t, n) {
-                return this.m_library.XAdESGetSigner(e, t, n);
-              }),
-              (e.prototype.XAdESSignData = function (e, t, n, r, i) {
-                return this.m_library.XAdESSignData(e, t, n, r, i);
-              }),
-              (e.prototype.XAdESVerifyData = function (e, t, n) {
-                return this.m_library.XAdESVerifyData(e, t, n);
-              }),
-              (e.prototype.GetSignContainerInfo = function (e) {
-                return this.m_library.GetSignContainerInfo(e);
-              }),
-              e
-            );
-          })();
+              })();
+          }.call(this, n(13).Promise));
       },
       function (e, t, n) {
         "use strict";
@@ -12930,54 +12437,6 @@ function dateFormatter(dateString) {
         var r = function () {};
       },
       function (e, t, n) {
-        "use strict";
-        (n.d(t, "a", function () {
-          return r;
-        }),
-          n.d(t, "b", function () {
-            return i;
-          }));
-        var r = function () {
-            ((this.version = null), (this.supported = !1), (this.loaded = !1));
-          },
-          i = function () {
-            ((this.version = null),
-              (this.supported = !1),
-              (this.loaded = !1),
-              (this.isSignAgentSupported = !1),
-              (this.isWebExtensionSupported = !1),
-              (this.isNPAPISupported = !1),
-              (this.isActiveXSupported = !1),
-              (this.isWebExtensionInstalled = !1),
-              (this.isNativeLibraryNeedUpdate = !1),
-              (this.nativeLibraryInstallURL = null),
-              (this.nativeLibraryUpdateURL = null),
-              (this.webExtensionInstallURL = null),
-              (this.helpURL = null));
-          };
-      },
-      function (e, t, n) {
-        "use strict";
-        n.d(t, "a", function () {
-          return r;
-        });
-        var r = function () {};
-      },
-      function (e, t, n) {
-        "use strict";
-        n.d(t, "a", function () {
-          return r;
-        });
-        var r = function () {};
-      },
-      function (e, t, n) {
-        "use strict";
-        n.d(t, "a", function () {
-          return r;
-        });
-        var r = function () {};
-      },
-      function (e, t, n) {
         (function (t, r) {
           var i;
           /*!
@@ -13035,11 +12494,11 @@ function dateFormatter(dateString) {
               C,
               T,
               A = void 0;
-            function R(e, t) {
+            function m(e, t) {
               var n = arguments,
                 r = this,
-                i = new this.constructor(P);
-              void 0 === i[g] && B(i);
+                i = new this.constructor(v);
+              void 0 === i[g] && F(i);
               var o,
                 s = r._state;
               return (
@@ -13048,14 +12507,14 @@ function dateFormatter(dateString) {
                     u(function () {
                       return K(s, i, o, r._result);
                     }))
-                  : N(r, i, e, t),
+                  : w(r, i, e, t),
                 i
               );
             }
-            function m(e) {
+            function R(e) {
               if (e && "object" == typeof e && e.constructor === this) return e;
-              var t = new this(P);
-              return (O(t, e), t);
+              var t = new this(v);
+              return (b(t, e), t);
             }
             _
               ? (A = function () {
@@ -13080,7 +12539,7 @@ function dateFormatter(dateString) {
                       void 0 === l
                         ? (function () {
                             try {
-                              var e = n(24);
+                              var e = n(31);
                               return (
                                 (s = e.runOnLoop || e.runOnContext),
                                 function () {
@@ -13093,39 +12552,39 @@ function dateFormatter(dateString) {
                           })()
                         : E());
             var g = Math.random().toString(36).substring(16);
-            function P() {}
-            var v = new M();
+            function v() {}
+            var P = new M();
             function I(e) {
               try {
                 return e.then;
               } catch (e) {
-                return ((v.error = e), v);
+                return ((P.error = e), P);
               }
             }
             function U(t, n, r) {
               n.constructor === t.constructor &&
-              r === R &&
-              n.constructor.resolve === m
+              r === m &&
+              n.constructor.resolve === R
                 ? (function (e, t) {
                     1 === t._state
-                      ? b(e, t._result)
+                      ? D(e, t._result)
                       : 2 === t._state
                         ? k(e, t._result)
-                        : N(
+                        : w(
                             t,
                             void 0,
                             function (t) {
-                              return O(e, t);
+                              return b(e, t);
                             },
                             function (t) {
                               return k(e, t);
                             },
                           );
                   })(t, n)
-                : r === v
-                  ? k(t, v.error)
+                : r === P
+                  ? k(t, P.error)
                   : void 0 === r
-                    ? b(t, n)
+                    ? D(t, n)
                     : e(r)
                       ? (function (e, t, n) {
                           u(function (e) {
@@ -13140,7 +12599,7 @@ function dateFormatter(dateString) {
                                 n,
                                 t,
                                 function (n) {
-                                  r || ((r = !0), t !== n ? O(e, n) : b(e, n));
+                                  r || ((r = !0), t !== n ? b(e, n) : D(e, n));
                                 },
                                 function (t) {
                                   r || ((r = !0), k(e, t));
@@ -13150,9 +12609,9 @@ function dateFormatter(dateString) {
                             !r && i && ((r = !0), k(e, i));
                           }, e);
                         })(t, n, r)
-                      : b(t, n);
+                      : D(t, n);
             }
-            function O(e, t) {
+            function b(e, t) {
               var n;
               e === t
                 ? k(
@@ -13162,30 +12621,30 @@ function dateFormatter(dateString) {
                 : "function" == typeof (n = t) ||
                     ("object" == typeof n && null !== n)
                   ? U(e, t, I(t))
-                  : b(e, t);
+                  : D(e, t);
             }
-            function D(e) {
-              (e._onerror && e._onerror(e._result), w(e));
+            function O(e) {
+              (e._onerror && e._onerror(e._result), N(e));
             }
-            function b(e, t) {
+            function D(e, t) {
               void 0 === e._state &&
                 ((e._result = t),
                 (e._state = 1),
-                0 !== e._subscribers.length && u(w, e));
+                0 !== e._subscribers.length && u(N, e));
             }
             function k(e, t) {
-              void 0 === e._state && ((e._state = 2), (e._result = t), u(D, e));
+              void 0 === e._state && ((e._state = 2), (e._result = t), u(O, e));
             }
-            function N(e, t, n, r) {
+            function w(e, t, n, r) {
               var i = e._subscribers,
                 o = i.length;
               ((e._onerror = null),
                 (i[o] = t),
                 (i[o + 1] = n),
                 (i[o + 2] = r),
-                0 === o && e._state && u(w, e));
+                0 === o && e._state && u(N, e));
             }
-            function w(e) {
+            function N(e) {
               var t = e._subscribers,
                 n = e._state;
               if (0 !== t.length) {
@@ -13230,34 +12689,34 @@ function dateFormatter(dateString) {
               } else ((s = i), (u = !0));
               void 0 !== n._state ||
                 (o && u
-                  ? O(n, s)
+                  ? b(n, s)
                   : l
                     ? k(n, a)
                     : 1 === t
-                      ? b(n, s)
+                      ? D(n, s)
                       : 2 === t && k(n, s));
             }
             var L = 0;
-            function B(e) {
+            function F(e) {
               ((e[g] = L++),
                 (e._state = void 0),
                 (e._result = void 0),
                 (e._subscribers = []));
             }
-            function F(e, t) {
+            function B(e, t) {
               ((this._instanceConstructor = e),
-                (this.promise = new e(P)),
-                this.promise[g] || B(this.promise),
+                (this.promise = new e(v)),
+                this.promise[g] || F(this.promise),
                 i(t)
                   ? ((this._input = t),
                     (this.length = t.length),
                     (this._remaining = t.length),
                     (this._result = new Array(this.length)),
                     0 === this.length
-                      ? b(this.promise, this._result)
+                      ? D(this.promise, this._result)
                       : ((this.length = this.length || 0),
                         this._enumerate(),
-                        0 === this._remaining && b(this.promise, this._result)))
+                        0 === this._remaining && D(this.promise, this._result)))
                   : k(
                       this.promise,
                       new Error("Array Methods must be provided an Array"),
@@ -13267,7 +12726,7 @@ function dateFormatter(dateString) {
               ((this[g] = L++),
                 (this._result = this._state = void 0),
                 (this._subscribers = []),
-                P !== e &&
+                v !== e &&
                   ("function" != typeof e &&
                     (function () {
                       throw new TypeError(
@@ -13279,7 +12738,7 @@ function dateFormatter(dateString) {
                         try {
                           t(
                             function (t) {
-                              O(e, t);
+                              b(e, t);
                             },
                             function (t) {
                               k(e, t);
@@ -13318,7 +12777,7 @@ function dateFormatter(dateString) {
               e.Promise = x;
             }
             return (
-              (F.prototype._enumerate = function () {
+              (B.prototype._enumerate = function () {
                 for (
                   var e = this.length, t = this._input, n = 0;
                   void 0 === this._state && n < e;
@@ -13326,17 +12785,17 @@ function dateFormatter(dateString) {
                 )
                   this._eachEntry(t[n], n);
               }),
-              (F.prototype._eachEntry = function (e, t) {
+              (B.prototype._eachEntry = function (e, t) {
                 var n = this._instanceConstructor,
                   r = n.resolve;
-                if (r === m) {
+                if (r === R) {
                   var i = I(e);
-                  if (i === R && void 0 !== e._state)
+                  if (i === m && void 0 !== e._state)
                     this._settledAt(e._state, t, e._result);
                   else if ("function" != typeof i)
                     (this._remaining--, (this._result[t] = e));
                   else if (n === x) {
-                    var o = new n(P);
+                    var o = new n(v);
                     (U(o, e, i), this._willSettleAt(o, t));
                   } else
                     this._willSettleAt(
@@ -13347,16 +12806,16 @@ function dateFormatter(dateString) {
                     );
                 } else this._willSettleAt(r(e), t);
               }),
-              (F.prototype._settledAt = function (e, t, n) {
+              (B.prototype._settledAt = function (e, t, n) {
                 var r = this.promise;
                 (void 0 === r._state &&
                   (this._remaining--,
                   2 === e ? k(r, n) : (this._result[t] = n)),
-                  0 === this._remaining && b(r, this._result));
+                  0 === this._remaining && D(r, this._result));
               }),
-              (F.prototype._willSettleAt = function (e, t) {
+              (B.prototype._willSettleAt = function (e, t) {
                 var n = this;
-                N(
+                w(
                   e,
                   void 0,
                   function (e) {
@@ -13368,7 +12827,7 @@ function dateFormatter(dateString) {
                 );
               }),
               (x.all = function (e) {
-                return new F(this, e).promise;
+                return new B(this, e).promise;
               }),
               (x.race = function (e) {
                 var t = this;
@@ -13383,9 +12842,9 @@ function dateFormatter(dateString) {
                       );
                     });
               }),
-              (x.resolve = m),
+              (x.resolve = R),
               (x.reject = function (e) {
-                var t = new this(P);
+                var t = new this(v);
                 return (k(t, e), t);
               }),
               (x._setScheduler = function (e) {
@@ -13397,7 +12856,7 @@ function dateFormatter(dateString) {
               (x._asap = u),
               (x.prototype = {
                 constructor: x,
-                then: R,
+                then: m,
                 catch: function (e) {
                   return this.then(null, e);
                 },
@@ -13409,7 +12868,833 @@ function dateFormatter(dateString) {
             );
           }),
             (e.exports = i()));
-        }).call(this, n(22), n(23));
+        }).call(this, n(29), n(30));
+      },
+      function (e, t, n) {
+        "use strict";
+        (n.d(t, "a", function () {
+          return r;
+        }),
+          n.d(t, "b", function () {
+            return i;
+          }));
+        var r = function () {
+            ((this.version = null), (this.supported = !1), (this.loaded = !1));
+          },
+          i = function () {
+            ((this.version = null),
+              (this.supported = !1),
+              (this.loaded = !1),
+              (this.isSignAgentSupported = !1),
+              (this.isWebExtensionSupported = !1),
+              (this.isNPAPISupported = !1),
+              (this.isActiveXSupported = !1),
+              (this.isWebExtensionInstalled = !1),
+              (this.isNativeLibraryNeedUpdate = !1),
+              (this.nativeLibraryInstallURL = null),
+              (this.nativeLibraryUpdateURL = null),
+              (this.webExtensionInstallURL = null),
+              (this.helpURL = null));
+          };
+      },
+      function (e, t, n) {
+        "use strict";
+        n.d(t, "a", function () {
+          return r;
+        });
+        var r = function () {};
+      },
+      function (e, t, n) {
+        "use strict";
+        n.d(t, "a", function () {
+          return r;
+        });
+        var r = function () {};
+      },
+      function (e, t, n) {
+        "use strict";
+        n.d(t, "a", function () {
+          return r;
+        });
+        var r = function () {};
+      },
+      function (e, t, n) {
+        "use strict";
+        (n.d(t, "a", function () {
+          return r;
+        }),
+          n.d(t, "b", function () {
+            return i;
+          }));
+        var r = function () {},
+          i = function () {};
+      },
+      function (e, t, n) {
+        "use strict";
+        (n.d(t, "a", function () {
+          return r;
+        }),
+          n.d(t, "b", function () {
+            return i;
+          }));
+        var r = function () {},
+          i = function () {};
+      },
+      function (e, t, n) {
+        "use strict";
+        n.d(t, "a", function () {
+          return r;
+        });
+        var r = function () {};
+      },
+      function (e, t, n) {
+        "use strict";
+        n.d(t, "a", function () {
+          return r;
+        });
+        var r = function (e) {
+          ((this.type = e ? e.type : ""),
+            (this.device = e ? e.device : ""),
+            (this.visibleName = e ? e.visibleName : ""),
+            (this.typeIndex = e ? e.typeIndex : -1),
+            (this.devIndex = e ? e.devIndex : -1),
+            (this.password = e ? e.password : ""),
+            (this.user = e ? e.user : ""));
+        };
+      },
+      function (e, t, n) {
+        "use strict";
+        n.d(t, "a", function () {
+          return i;
+        });
+        var r = n(0),
+          i = function () {
+            ((this.version = r.EU_USER_INFO_VERSION),
+              (this.commonName = ""),
+              (this.locality = ""),
+              (this.state = ""),
+              (this.organization = ""),
+              (this.orgUnit = ""),
+              (this.title = ""),
+              (this.street = ""),
+              (this.phone = ""),
+              (this.surname = ""),
+              (this.givenname = ""),
+              (this.EMail = ""),
+              (this.DNS = ""),
+              (this.EDRPOUCode = ""),
+              (this.DRFOCode = ""),
+              (this.NBUCode = ""),
+              (this.SPFMCode = ""),
+              (this.OCode = ""),
+              (this.OUCode = ""),
+              (this.userCode = ""),
+              (this.UPN = ""),
+              (this.UNZR = ""),
+              (this.country = "UA"));
+          };
+      },
+      function (e, t, n) {
+        "use strict";
+        (n.r(t),
+          n.d(t, "EndUserConfirmKSPOperationEvent", function () {
+            return i;
+          }));
+        var r = n(0),
+          i = function () {
+            this.type = r.EndUserEventType.ConfirmKSPOperation;
+          };
+      },
+      function (e, t, n) {
+        "use strict";
+        (function (e) {
+          var r = n(25),
+            i = n(0),
+            o = (function () {
+              function t(e, t) {
+                var n = this,
+                  i = "";
+                ("number" == typeof t &&
+                  t > 0 &&
+                  ("string" == typeof i &&
+                    i.length > 0 &&
+                    (i = "var EU_MAX_DATA_SIZE_MB = " + t + ";" + i),
+                  "string" == typeof e &&
+                    e.length > 0 &&
+                    (e += (e.includes("?") ? "&" : "?") + "maxDataSize=" + t)),
+                  (this.m_worker = new r.a(i, e, function (e) {
+                    n.OnEvent(e);
+                  })),
+                  (this.m_eventListeners = new Array()));
+              }
+              return (
+                (t.prototype.OnEvent = function (e) {
+                  try {
+                    var t =
+                      this.m_eventListeners[e.type] ||
+                      this.m_eventListeners[i.EndUserEventType.All];
+                    t && t(e);
+                  } catch (e) {}
+                }),
+                (t.prototype.AddEventListener = function (e, t) {
+                  switch (e) {
+                    case i.EndUserEventType.None:
+                      this.m_eventListeners = [];
+                      break;
+                    case i.EndUserEventType.All:
+                      ((this.m_eventListeners = []),
+                        (this.m_eventListeners[e] = t));
+                      break;
+                    default:
+                      this.m_eventListeners[e] = t;
+                  }
+                  return this.m_worker.postMessage("AddEventListener", [e]);
+                }),
+                (t.prototype.GetLibraryInfo = function (e) {
+                  return this.m_worker.postMessage(
+                    "GetLibraryInfo",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.IsInitialized = function () {
+                  return this.m_worker.postMessage(
+                    "IsInitialized",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.Initialize = function (e) {
+                  return this.m_worker.postMessage(
+                    "Initialize",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.Finalize = function () {
+                  var t = this;
+                  return new e(function (e, n) {
+                    (t.m_worker.terminate(),
+                      (t.m_worker = null),
+                      (t.m_eventListeners = []),
+                      e());
+                  });
+                }),
+                (t.prototype.SetLanguage = function (e) {
+                  return this.m_worker.postMessage(
+                    "SetLanguage",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.SetRuntimeParameter = function (e, t) {
+                  return this.m_worker.postMessage(
+                    "SetRuntimeParameter",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.GetStorageParameter = function (e, t) {
+                  return this.m_worker.postMessage(
+                    "GetStorageParameter",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.SetStorageParameter = function (e, t, n) {
+                  return this.m_worker.postMessage(
+                    "SetStorageParameter",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.GetCAs = function () {
+                  return this.m_worker.postMessage(
+                    "GetCAs",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.GetProxySettings = function () {
+                  return this.m_worker.postMessage(
+                    "GetProxySettings",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.SetProxySettings = function (e) {
+                  return this.m_worker.postMessage(
+                    "SetProxySettings",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.GetHostInfo = function () {
+                  return this.m_worker.postMessage(
+                    "GetHostInfo",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.GetKeyMedias = function () {
+                  return this.m_worker.postMessage(
+                    "GetKeyMedias",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.GetJKSPrivateKeys = function (e) {
+                  return this.m_worker.postMessage(
+                    "GetJKSPrivateKeys",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.IsPrivateKeyReaded = function () {
+                  return this.m_worker.postMessage(
+                    "IsPrivateKeyReaded",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.ResetPrivateKey = function () {
+                  return this.m_worker.postMessage(
+                    "ResetPrivateKey",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.ResetOperationKSP = function () {
+                  return this.m_worker.postMessage(
+                    "ResetOperationKSP",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.ReadPrivateKey = function (e, t, n) {
+                  return this.m_worker.postMessage(
+                    "ReadPrivateKey",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.ReadPrivateKeyBinary = function (e, t, n, r) {
+                  return this.m_worker.postMessage(
+                    "ReadPrivateKeyBinary",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.ReadPrivateKeySIM = function (e, t, n, r) {
+                  return this.m_worker.postMessage(
+                    "ReadPrivateKeySIM",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.ReadPrivateKeyKSP = function (
+                  e,
+                  t,
+                  n,
+                  r,
+                  i,
+                  o,
+                  s,
+                ) {
+                  return this.m_worker.postMessage(
+                    "ReadPrivateKeyKSP",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.GetOwnCertificates = function () {
+                  return this.m_worker.postMessage(
+                    "GetOwnCertificates",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.GetOwnEUserParams = function () {
+                  return this.m_worker.postMessage(
+                    "GetOwnEUserParams",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.ChangeOwnCertificatesStatus = function (e, t) {
+                  return this.m_worker.postMessage(
+                    "ChangeOwnCertificatesStatus",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.MakeNewCertificate = function (
+                  e,
+                  t,
+                  n,
+                  r,
+                  i,
+                  o,
+                  s,
+                  a,
+                  u,
+                  l,
+                  c,
+                  p,
+                  _,
+                  f,
+                  E,
+                  h,
+                  S,
+                  d,
+                  y,
+                  C,
+                ) {
+                  return (
+                    void 0 === h && (h = !1),
+                    void 0 === S && (S = null),
+                    void 0 === d && (d = null),
+                    void 0 === y && (y = 0),
+                    void 0 === C && (C = null),
+                    this.m_worker.postMessage(
+                      "MakeNewCertificate",
+                      Array.prototype.slice.call(arguments),
+                    )
+                  );
+                }),
+                (t.prototype.MakeDeviceCertificate = function (e, t, n, r, i) {
+                  return this.m_worker.postMessage(
+                    "MakeDeviceCertificate",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.SetKeyMediaUserPassword = function (e, t) {
+                  return this.m_worker.postMessage(
+                    "SetKeyMediaUserPassword",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.ChangePrivateKeyPassword = function (e, t) {
+                  return this.m_worker.postMessage(
+                    "ChangePrivateKeyPassword",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.ChangePrivateKeyPasswordBinary = function (
+                  e,
+                  t,
+                  n,
+                ) {
+                  return this.m_worker.postMessage(
+                    "ChangePrivateKeyPasswordBinary",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.GeneratePrivateKey = function (
+                  e,
+                  t,
+                  n,
+                  r,
+                  i,
+                  o,
+                  s,
+                  a,
+                  u,
+                  l,
+                  c,
+                  p,
+                ) {
+                  return this.m_worker.postMessage(
+                    "GeneratePrivateKey",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.GeneratePrivateKeyBinary = function (
+                  e,
+                  t,
+                  n,
+                  r,
+                  i,
+                  o,
+                  s,
+                  a,
+                  u,
+                  l,
+                  c,
+                ) {
+                  return this.m_worker.postMessage(
+                    "GeneratePrivateKeyBinary",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.GetKeyInfo = function (e) {
+                  return this.m_worker.postMessage(
+                    "GetKeyInfo",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.GetKeyInfoBinary = function (e, t) {
+                  return this.m_worker.postMessage(
+                    "GetKeyInfoBinary",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.GetClientRegistrationTokenKSP = function (e, t) {
+                  return (
+                    void 0 === t && (t = null),
+                    this.m_worker.postMessage(
+                      "GetClientRegistrationTokenKSP",
+                      Array.prototype.slice.call(arguments),
+                    )
+                  );
+                }),
+                (t.prototype.HashData = function (e, t, n) {
+                  return this.m_worker.postMessage(
+                    "HashData",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.GetSigner = function (e, t, n) {
+                  return (
+                    void 0 === t && (t = -1),
+                    void 0 === n && (n = !1),
+                    this.m_worker.postMessage(
+                      "GetSigner",
+                      Array.prototype.slice.call(arguments),
+                    )
+                  );
+                }),
+                (t.prototype.SignData = function (e, t) {
+                  return (
+                    void 0 === t && (t = !1),
+                    this.m_worker.postMessage(
+                      "SignData",
+                      Array.prototype.slice.call(arguments),
+                    )
+                  );
+                }),
+                (t.prototype.SignDataInternal = function (e, t, n) {
+                  return (
+                    void 0 === n && (n = !1),
+                    this.m_worker.postMessage(
+                      "SignDataInternal",
+                      Array.prototype.slice.call(arguments),
+                    )
+                  );
+                }),
+                (t.prototype.SignHash = function (e, t, n, r) {
+                  return this.m_worker.postMessage(
+                    "SignHash",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.SignDataEx = function (e, t, n, r, i) {
+                  return this.m_worker.postMessage(
+                    "SignDataEx",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.AppendSign = function (e, t, n, r, i) {
+                  return this.m_worker.postMessage(
+                    "AppendSign",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.AppendSignHash = function (e, t, n, r, i) {
+                  return this.m_worker.postMessage(
+                    "AppendSignHash",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.GetSignValue = function (e, t, n, r) {
+                  return (
+                    void 0 === r && (r = !1),
+                    this.m_worker.postMessage(
+                      "GetSignValue",
+                      Array.prototype.slice.call(arguments),
+                    )
+                  );
+                }),
+                (t.prototype.VerifyHash = function (e, t, n) {
+                  return (
+                    void 0 === n && (n = -1),
+                    this.m_worker.postMessage(
+                      "VerifyHash",
+                      Array.prototype.slice.call(arguments),
+                    )
+                  );
+                }),
+                (t.prototype.VerifyData = function (e, t, n) {
+                  return (
+                    void 0 === n && (n = -1),
+                    this.m_worker.postMessage(
+                      "VerifyData",
+                      Array.prototype.slice.call(arguments),
+                    )
+                  );
+                }),
+                (t.prototype.VerifyDataInternal = function (e, t) {
+                  return (
+                    void 0 === t && (t = -1),
+                    this.m_worker.postMessage(
+                      "VerifyDataInternal",
+                      Array.prototype.slice.call(arguments),
+                    )
+                  );
+                }),
+                (t.prototype.EnvelopData = function (e, t, n, r, i, o) {
+                  return (
+                    void 0 === o && (o = !1),
+                    this.m_worker.postMessage(
+                      "EnvelopData",
+                      Array.prototype.slice.call(arguments),
+                    )
+                  );
+                }),
+                (t.prototype.DevelopData = function (e, t) {
+                  return this.m_worker.postMessage(
+                    "DevelopData",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.CreateAuthData = function (e, t, n) {
+                  return this.m_worker.postMessage(
+                    "CreateAuthData",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.ProtectDataByPassword = function (e, t, n) {
+                  return this.m_worker.postMessage(
+                    "ProtectDataByPassword",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.UnprotectDataByPassword = function (e, t, n) {
+                  return this.m_worker.postMessage(
+                    "UnprotectDataByPassword",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.GetTSPByAccessInfo = function (e, t, n, r, i) {
+                  return this.m_worker.postMessage(
+                    "GetTSPByAccessInfo",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.CheckTSP = function (e, t, n) {
+                  return this.m_worker.postMessage(
+                    "CheckTSP",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.ClientDynamicKeySessionCreate = function (e) {
+                  return this.m_worker.postMessage(
+                    "ClientDynamicKeySessionCreate",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.SessionClose = function (e) {
+                  return this.m_worker.postMessage(
+                    "SessionClose",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.SessionEncrypt = function (e, t, n) {
+                  return this.m_worker.postMessage(
+                    "SessionEncrypt",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.SessionDecrypt = function (e, t) {
+                  return this.m_worker.postMessage(
+                    "SessionDecrypt",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.CtxCreate = function () {
+                  return this.m_worker.postMessage(
+                    "CtxCreate",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.CtxFree = function (e) {
+                  return this.m_worker.postMessage(
+                    "CtxFree",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.CtxSetParameter = function (e, t, n) {
+                  return this.m_worker.postMessage(
+                    "CtxSetParameter",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.CtxReadPrivateKey = function (e, t, n, r) {
+                  return this.m_worker.postMessage(
+                    "CtxReadPrivateKey",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.CtxReadPrivateKeyBinary = function (
+                  e,
+                  t,
+                  n,
+                  r,
+                  i,
+                ) {
+                  return this.m_worker.postMessage(
+                    "CtxReadPrivateKeyBinary",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.CtxFreePrivateKey = function (e) {
+                  return this.m_worker.postMessage(
+                    "CtxFreePrivateKey",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.CtxGetOwnCertificates = function (e) {
+                  return this.m_worker.postMessage(
+                    "CtxGetOwnCertificates",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.CtxSignHash = function (e, t, n, r, i) {
+                  return this.m_worker.postMessage(
+                    "CtxSignHash",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.CtxSignData = function (e, t, n, r, i, o) {
+                  return this.m_worker.postMessage(
+                    "CtxSignData",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.CtxAppendSignHash = function (e, t, n, r, i, o) {
+                  return this.m_worker.postMessage(
+                    "CtxAppendSignHash",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.CtxAppendSign = function (e, t, n, r, i, o) {
+                  return this.m_worker.postMessage(
+                    "CtxAppendSign",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.CtxGetSignValue = function (e, t, n, r, i) {
+                  return (
+                    void 0 === i && (i = !1),
+                    this.m_worker.postMessage(
+                      "CtxGetSignValue",
+                      Array.prototype.slice.call(arguments),
+                    )
+                  );
+                }),
+                (t.prototype.CtxEnvelopData = function (e, t, n, r, i, o, s) {
+                  return this.m_worker.postMessage(
+                    "CtxEnvelopData",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.CtxDevelopData = function (e, t, n) {
+                  return this.m_worker.postMessage(
+                    "CtxDevelopData",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.ProtectTaxReports = function (
+                  e,
+                  t,
+                  n,
+                  r,
+                  i,
+                  o,
+                  s,
+                ) {
+                  return (
+                    void 0 === e && (e = null),
+                    void 0 === t && (t = null),
+                    void 0 === n && (n = null),
+                    void 0 === s && (s = !1),
+                    this.m_worker.postMessage(
+                      "ProtectTaxReports",
+                      Array.prototype.slice.call(arguments),
+                    )
+                  );
+                }),
+                (t.prototype.UnprotectTaxReceipts = function (e, t) {
+                  return this.m_worker.postMessage(
+                    "UnprotectTaxReceipts",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.ASiCGetSigner = function (e, t, n) {
+                  return this.m_worker.postMessage(
+                    "ASiCGetSigner",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.ASiCSignData = function (e, t, n, r, i, o) {
+                  return this.m_worker.postMessage(
+                    "ASiCSignData",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.ASiCAppendSign = function (e, t, n, r, i) {
+                  return this.m_worker.postMessage(
+                    "ASiCAppendSign",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.ASiCVerifyData = function (e, t) {
+                  return (
+                    void 0 === t && (t = -1),
+                    this.m_worker.postMessage(
+                      "ASiCVerifyData",
+                      Array.prototype.slice.call(arguments),
+                    )
+                  );
+                }),
+                (t.prototype.PDFSignData = function (e, t, n, r) {
+                  return this.m_worker.postMessage(
+                    "PDFSignData",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.PDFVerifyData = function (e, t) {
+                  return (
+                    void 0 === t && (t = -1),
+                    this.m_worker.postMessage(
+                      "PDFVerifyData",
+                      Array.prototype.slice.call(arguments),
+                    )
+                  );
+                }),
+                (t.prototype.PDFGetSigner = function (e, t, n) {
+                  return (
+                    void 0 === t && (t = -1),
+                    void 0 === n && (n = !1),
+                    this.m_worker.postMessage(
+                      "PDFGetSigner",
+                      Array.prototype.slice.call(arguments),
+                    )
+                  );
+                }),
+                (t.prototype.XAdESGetSigner = function (e, t, n) {
+                  return (
+                    void 0 === t && (t = -1),
+                    void 0 === n && (n = !1),
+                    this.m_worker.postMessage(
+                      "XAdESGetSigner",
+                      Array.prototype.slice.call(arguments),
+                    )
+                  );
+                }),
+                (t.prototype.XAdESSignData = function (e, t, n, r, i) {
+                  return this.m_worker.postMessage(
+                    "XAdESSignData",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                (t.prototype.XAdESVerifyData = function (e, t, n) {
+                  return (
+                    void 0 === n && (n = -1),
+                    this.m_worker.postMessage(
+                      "XAdESVerifyData",
+                      Array.prototype.slice.call(arguments),
+                    )
+                  );
+                }),
+                (t.prototype.GetSignContainerInfo = function (e) {
+                  return this.m_worker.postMessage(
+                    "GetSignContainerInfo",
+                    Array.prototype.slice.call(arguments),
+                  );
+                }),
+                t
+              );
+            })();
+          t.a = o;
+        }).call(this, n(13).Promise);
       },
       function (e, t, n) {
         "use strict";
@@ -13454,6 +13739,13 @@ function dateFormatter(dateString) {
                   (this.m_promises = new Array()));
               }
               return (
+                (t.prototype.terminate = function () {
+                  try {
+                    this.m_worker.terminate();
+                  } catch (e) {
+                    ((this.m_worker = null), (this.m_promises = []));
+                  }
+                }),
                 (t.prototype.loadWorker = function (e, t) {
                   try {
                     if (!e) throw "No worker content";
@@ -13531,7 +13823,7 @@ function dateFormatter(dateString) {
                   this.m_initialized = !0;
                 }));
             })());
-        }).call(this, n(17).Promise);
+        }).call(this, n(13).Promise);
       },
       function (e, t, n) {
         "use strict";
@@ -13539,50 +13831,29 @@ function dateFormatter(dateString) {
           var r = n(1),
             i = n(9),
             o = n(10),
-            s = n(14),
-            a = n(20),
+            s = n(15),
+            a = n(27),
             u = n(4),
-            l = n(13),
+            l = n(14),
             c = n(2),
             p = n(8),
             _ = n(0),
             f = n(11),
-            E = n(15),
-            h = n(16),
+            E = n(16),
+            h = n(17),
             S = n(7),
             d = n(5),
             y = n(12),
             C = n(6),
-            T = n(21),
+            T = n(28),
             A = function () {},
-            R = (function () {
+            m = (function () {
               function t() {
-                ((this.GetDefaultTSPSettings = function (e) {
-                  var t = null;
-                  if (e.TSPServer) t = e.TSPServer;
-                  else {
-                    for (
-                      var n = null, r = e.CAs, i = 0;
-                      i < r.length &&
-                      (!r[i].tspAddress ||
-                        !r[i].tspAddressPort ||
-                        ((n && "80" != r[i].tspAddressPort) || (n = r[i]),
-                        "80" != n.tspAddressPort));
-                      i++
-                    );
-                    n &&
-                      (t = {
-                        address: n.tspAddress,
-                        port: n.tspAddressPort,
-                      });
-                  }
-                  return t;
+                ((this.MakeExpireDate = function (e) {
+                  e || (e = 300);
+                  var t = new Date();
+                  return (t.setTime(t.getTime() + 1e3 * e), t);
                 }),
-                  (this.MakeExpireDate = function (e) {
-                    e || (e = 300);
-                    var t = new Date();
-                    return (t.setTime(t.getTime() + 1e3 * e), t);
-                  }),
                   (this.m_library = new a.a()),
                   (this.m_settings = null),
                   (this.m_initialized = !1),
@@ -13728,6 +13999,27 @@ function dateFormatter(dateString) {
                       if (r[i] == e) return t[n];
                   return null;
                 }),
+                (t.prototype.GetDefaultTSPSettings = function (e) {
+                  var t = null;
+                  if (e.TSPServer) t = e.TSPServer;
+                  else {
+                    for (
+                      var n = null, r = e.CAs, i = 0;
+                      i < r.length &&
+                      (!r[i].tspAddress ||
+                        !r[i].tspAddressPort ||
+                        ((n && "80" != r[i].tspAddressPort) || (n = r[i]),
+                        "80" != n.tspAddressPort));
+                      i++
+                    );
+                    n &&
+                      (t = {
+                        address: n.tspAddress,
+                        port: n.tspAddressPort,
+                      });
+                  }
+                  return t;
+                }),
                 (t.prototype.IsCMPCompatible = function (e, t) {
                   return (
                     !!e.cmpAddress &&
@@ -13735,13 +14027,24 @@ function dateFormatter(dateString) {
                       (e.cmpCompatibility & t) == t)
                   );
                 }),
+                (t.prototype.IsCMPsAvailable = function (e) {
+                  for (var t = e.CAs, n = 0; n < t.length; n++)
+                    if (
+                      this.IsCMPCompatible(
+                        t[n],
+                        _.EndUserCMPCompatibility.DownloadEUCerts,
+                      )
+                    )
+                      return !0;
+                  return !1;
+                }),
                 (t.prototype.SetCMPSettings = function (t) {
                   var n = this,
                     i = n.m_library,
                     o = this.GetCASettings(t);
                   return new e(function (e, s) {
                     if (t && null == o && !n.m_settings.allowForeignCAs)
-                      throw i.MakeError(r.EU_ERROR_WRITE_SETTINGS, "");
+                      throw i.MakeError(r.EU_ERROR_READ_SETTINGS, "");
                     var a;
                     a = !(!o || !o.cmpAddress);
                     var u = i.CreateCMPSettings();
@@ -13974,55 +14277,61 @@ function dateFormatter(dateString) {
                     a = s.m_library,
                     u = s.m_settings.CAs;
                   return new e(function (e, l) {
-                    (null != t && null != n
-                      ? a.GetKeyInfoBinary(t, n)
-                      : a.GetKeyInfo(i)
-                    )
-                      .then(function (t) {
-                        var n = function (i, c) {
-                          if (i >= u.length) {
-                            var p = a.MakeError(
-                              c
-                                ? r.EU_ERROR_CERT_NOT_FOUND
-                                : r.EU_ERROR_TRANSMIT_REQUEST,
-                              "",
-                            );
-                            l(s.MapError(p));
-                          } else {
-                            var f = o
-                              ? _.EndUserCMPCompatibility.DownloadEUCerts
-                              : _.EndUserCMPCompatibility.SearchEUCerts;
-                            s.IsCMPCompatible(u[i], f)
-                              ? o && -1 == u[i].issuerCNs.indexOf(o)
-                                ? n(i + 1, c)
-                                : a
-                                    .GetCertificatesByKeyInfo(
-                                      t,
-                                      [u[i].cmpAddress],
-                                      ["80"],
-                                    )
-                                    .then(function (t) {
-                                      e({
-                                        certs: t,
-                                        CACommonName: u[i].issuerCNs[0],
-                                      });
-                                    })
-                                    .catch(function (e) {
-                                      var t = e.GetErrorCode();
-                                      ((t != r.EU_ERROR_CERT_NOT_FOUND &&
-                                        t != r.EU_ERROR_TRANSMIT_REQUEST) ||
-                                        (c =
-                                          c || t == r.EU_ERROR_CERT_NOT_FOUND),
-                                        n(i + 1, c));
-                                    })
-                              : n(i + 1, c);
-                          }
-                        };
-                        n(0, !1);
-                      })
-                      .catch(function (e) {
-                        return l(s.MapError(e));
-                      });
+                    if (s.IsCMPsAvailable(s.m_settings))
+                      (null != t && null != n
+                        ? a.GetKeyInfoBinary(t, n)
+                        : a.GetKeyInfo(i)
+                      )
+                        .then(function (t) {
+                          var n = function (i, c) {
+                            if (i >= u.length) {
+                              var p = a.MakeError(
+                                c
+                                  ? r.EU_ERROR_CERT_NOT_FOUND
+                                  : r.EU_ERROR_TRANSMIT_REQUEST,
+                                "",
+                              );
+                              l(s.MapError(p));
+                            } else {
+                              var f = o
+                                ? _.EndUserCMPCompatibility.DownloadEUCerts
+                                : _.EndUserCMPCompatibility.SearchEUCerts;
+                              s.IsCMPCompatible(u[i], f)
+                                ? o && -1 == u[i].issuerCNs.indexOf(o)
+                                  ? n(i + 1, c)
+                                  : a
+                                      .GetCertificatesByKeyInfo(
+                                        t,
+                                        [u[i].cmpAddress],
+                                        ["80"],
+                                      )
+                                      .then(function (t) {
+                                        e({
+                                          certs: t,
+                                          CACommonName: u[i].issuerCNs[0],
+                                        });
+                                      })
+                                      .catch(function (e) {
+                                        var t = e.GetErrorCode();
+                                        ((t != r.EU_ERROR_CERT_NOT_FOUND &&
+                                          t != r.EU_ERROR_TRANSMIT_REQUEST) ||
+                                          (c =
+                                            c ||
+                                            t == r.EU_ERROR_CERT_NOT_FOUND),
+                                          n(i + 1, c));
+                                      })
+                                : n(i + 1, c);
+                            }
+                          };
+                          n(0, !1);
+                        })
+                        .catch(function (e) {
+                          return l(s.MapError(e));
+                        });
+                    else {
+                      var c = a.MakeError(r.EU_ERROR_CERT_NOT_FOUND, "");
+                      l(s.MapError(c));
+                    }
                   });
                 }),
                 (t.prototype.GetUserCertificatesFromCertificates = function (
@@ -14083,9 +14392,9 @@ function dateFormatter(dateString) {
                     var C = null == t && null == r,
                       T = null != r,
                       A = d.CreatePrivateKeyInfo(),
-                      R = null;
+                      m = null;
                     (null != f &&
-                      (R = c.a.MapFromEndUserInfo(f, d.CreateEndUserInfo())),
+                      (m = c.a.MapFromEndUserInfo(f, d.CreateEndUserInfo())),
                       d
                         .GeneratePrivateKeyEx(
                           C,
@@ -14101,7 +14410,7 @@ function dateFormatter(dateString) {
                           l,
                           p,
                           _,
-                          R,
+                          m,
                           E,
                           A,
                           null != r,
@@ -14638,15 +14947,15 @@ function dateFormatter(dateString) {
                   C,
                   T,
                   A,
-                  R,
                   m,
+                  R,
                 ) {
                   (void 0 === A && (A = !1),
-                    void 0 === R && (R = null),
-                    void 0 === m && (m = null));
+                    void 0 === m && (m = null),
+                    void 0 === R && (R = null));
                   var g = this,
-                    P = g.m_library,
-                    v = {
+                    v = g.m_library,
+                    P = {
                       kspSettings: null,
                       userId: null,
                       operationId: null,
@@ -14665,18 +14974,18 @@ function dateFormatter(dateString) {
                         var e = null;
                         return (
                           null != t &&
-                            (e = c.a.MapFromKeyMedia(t, P.CreateKeyMedia())),
+                            (e = c.a.MapFromKeyMedia(t, v.CreateKeyMedia())),
                           A ? null : g.ReadPrivateKeyInternal(n, i, e, null, C)
                         );
                       })
                       .then(function (e) {
                         return T && !A
-                          ? P.CtxGetOwnEUserParams(g.m_pkContext)
+                          ? v.CtxGetOwnEUserParams(g.m_pkContext)
                           : null;
                       })
                       .then(function (e) {
                         return T
-                          ? P.CtxModifyOwnEUserParams(
+                          ? v.CtxModifyOwnEUserParams(
                               g.m_pkContext,
                               T.phone,
                               T.EMail,
@@ -14685,75 +14994,80 @@ function dateFormatter(dateString) {
                       })
                       .then(function () {
                         if (
-                          ((v.userId = R),
-                          (v.kspSettings = g.GetKSPSettings(m)),
-                          !v.kspSettings || !v.kspSettings.address)
+                          ((P.userId = m),
+                          (P.kspSettings = g.GetKSPSettings(R)),
+                          !P.kspSettings || !P.kspSettings.address)
                         )
-                          throw P.MakeError(r.EU_ERROR_BAD_PARAMETER, "");
+                          throw v.MakeError(r.EU_ERROR_BAD_PARAMETER, "");
                         if (
-                          _ != P.EU_KEYS_TYPE_NONE &&
-                          _ != P.EU_KEYS_TYPE_RSA_WITH_SHA &&
-                          _ != P.EU_KEYS_TYPE_ECDSA_WITH_SHA
+                          _ != v.EU_KEYS_TYPE_NONE &&
+                          _ != v.EU_KEYS_TYPE_RSA_WITH_SHA &&
+                          _ != v.EU_KEYS_TYPE_ECDSA_WITH_SHA
                         )
-                          throw P.MakeError(r.EU_ERROR_BAD_PARAMETER, "");
+                          throw v.MakeError(r.EU_ERROR_BAD_PARAMETER, "");
                         var e = [];
-                        ((e[P.EU_KEYS_TYPE_DSTU_AND_ECDH_WITH_GOSTS] =
+                        ((e[v.EU_KEYS_TYPE_DSTU_AND_ECDH_WITH_GOSTS] =
                           "DSTU4145"),
-                          (e[P.EU_KEYS_TYPE_RSA_WITH_SHA] = "RSA"),
-                          (e[P.EU_KEYS_TYPE_ECDSA_WITH_SHA] = "ECDSA"),
-                          (s != P.EU_KEYS_LENGTH_DS_UA_FILE &&
-                            s != P.EU_KEYS_LENGTH_DS_UA_CERT) ||
-                            (s = P.EU_KEYS_LENGTH_DS_UA_257),
-                          (l != P.EU_KEYS_LENGTH_KEP_UA_FILE &&
-                            l != P.EU_KEYS_LENGTH_KEP_UA_CERT) ||
-                            (l = P.EU_KEYS_LENGTH_KEP_UA_431),
-                          (f != P.EU_KEYS_LENGTH_DS_RSA_FILE &&
-                            f != P.EU_KEYS_LENGTH_DS_RSA_CERT) ||
-                            (f = P.EU_KEYS_LENGTH_DS_RSA_2048),
-                          (h != P.EU_KEYS_LENGTH_DS_ECDSA_FILE &&
-                            h != P.EU_KEYS_LENGTH_DS_ECDSA_CERT) ||
-                            (h = P.EU_KEYS_LENGTH_DS_ECDSA_256));
+                          (e[v.EU_KEYS_TYPE_RSA_WITH_SHA] = "RSA"),
+                          (e[v.EU_KEYS_TYPE_ECDSA_WITH_SHA] = "ECDSA"),
+                          (e[v.EU_KEYS_TYPE_DSTU_AND_ECDH_WITH_DSTU] =
+                            "DSTU4145-DSTU7564"),
+                          (s != v.EU_KEYS_LENGTH_DS_UA_FILE &&
+                            s != v.EU_KEYS_LENGTH_DS_UA_CERT) ||
+                            (s = v.EU_KEYS_LENGTH_DS_UA_257),
+                          (l != v.EU_KEYS_LENGTH_KEP_UA_FILE &&
+                            l != v.EU_KEYS_LENGTH_KEP_UA_CERT) ||
+                            (l = v.EU_KEYS_LENGTH_KEP_UA_431),
+                          (f != v.EU_KEYS_LENGTH_DS_RSA_FILE &&
+                            f != v.EU_KEYS_LENGTH_DS_RSA_CERT) ||
+                            (f = v.EU_KEYS_LENGTH_DS_RSA_2048),
+                          (h != v.EU_KEYS_LENGTH_DS_ECDSA_FILE &&
+                            h != v.EU_KEYS_LENGTH_DS_ECDSA_CERT) ||
+                            (h = v.EU_KEYS_LENGTH_DS_ECDSA_256));
                         var t = [];
-                        ((t[P.EU_KEYS_LENGTH_DS_UA_191] = 191),
-                          (t[P.EU_KEYS_LENGTH_DS_UA_257] = 257),
-                          (t[P.EU_KEYS_LENGTH_DS_UA_307] = 307));
+                        ((t[v.EU_KEYS_LENGTH_DS_UA_191] = 191),
+                          (t[v.EU_KEYS_LENGTH_DS_UA_257] = 257),
+                          (t[v.EU_KEYS_LENGTH_DS_UA_307] = 307));
                         var n = [];
-                        ((n[P.EU_KEYS_LENGTH_KEP_UA_257] = 257),
-                          (n[P.EU_KEYS_LENGTH_KEP_UA_431] = 431),
-                          (n[P.EU_KEYS_LENGTH_KEP_UA_571] = 571));
+                        ((n[v.EU_KEYS_LENGTH_KEP_UA_257] = 257),
+                          (n[v.EU_KEYS_LENGTH_KEP_UA_431] = 431),
+                          (n[v.EU_KEYS_LENGTH_KEP_UA_571] = 571));
                         var i = [];
-                        ((i[P.EU_KEYS_LENGTH_DS_RSA_1024] = 1024),
-                          (i[P.EU_KEYS_LENGTH_DS_RSA_2048] = 2048),
-                          (i[P.EU_KEYS_LENGTH_DS_RSA_3072] = 3072),
-                          (i[P.EU_KEYS_LENGTH_DS_RSA_4096] = 4096));
+                        ((i[v.EU_KEYS_LENGTH_DS_RSA_1024] = 1024),
+                          (i[v.EU_KEYS_LENGTH_DS_RSA_2048] = 2048),
+                          (i[v.EU_KEYS_LENGTH_DS_RSA_3072] = 3072),
+                          (i[v.EU_KEYS_LENGTH_DS_RSA_4096] = 4096));
                         var u = [];
-                        ((u[P.EU_KEYS_LENGTH_DS_ECDSA_192] = 192),
-                          (u[P.EU_KEYS_LENGTH_DS_ECDSA_256] = 256),
-                          (u[P.EU_KEYS_LENGTH_DS_ECDSA_384] = 384),
-                          (u[P.EU_KEYS_LENGTH_DS_ECDSA_521] = 521));
+                        ((u[v.EU_KEYS_LENGTH_DS_ECDSA_192] = 192),
+                          (u[v.EU_KEYS_LENGTH_DS_ECDSA_256] = 256),
+                          (u[v.EU_KEYS_LENGTH_DS_ECDSA_384] = 384),
+                          (u[v.EU_KEYS_LENGTH_DS_ECDSA_521] = 521));
                         var c = e[o] || null,
                           p = t[s] || 0,
                           E = n[l] || 0,
                           S = null,
                           d = 0;
-                        _ & P.EU_KEYS_TYPE_RSA_WITH_SHA
+                        _ & v.EU_KEYS_TYPE_RSA_WITH_SHA
                           ? ((S = "RSA"), (d = i[f] || 0))
-                          : _ & P.EU_KEYS_TYPE_ECDSA_WITH_SHA &&
+                          : _ & v.EU_KEYS_TYPE_ECDSA_WITH_SHA &&
                             ((S = "ECDSA"), (d = u[h] || 0));
-                        var y = "Веб-сайт: %s".replace(
+                        var y =
+                            "string" == typeof P.kspSettings.systemId
+                              ? P.kspSettings.systemId
+                              : (P.kspSettings.systemId &&
+                                  P.kspSettings.systemId.name) ||
+                                g.m_origin,
+                          C = "Веб-сайт: %s".replace("%s", y),
+                          T = "Генерація ос. ключа у системі %s".replace(
                             "%s",
-                            v.kspSettings.systemId || g.m_origin,
-                          ),
-                          C = "Генерація ос. ключа у системі %s".replace(
-                            "%s",
-                            v.kspSettings.systemId || g.m_origin,
+                            y,
                           );
-                        return P.SServerClientGeneratePrivateKeyAsync(
-                          v.kspSettings.address,
-                          v.kspSettings.port,
-                          v.userId,
-                          y,
+                        return v.SServerClientGeneratePrivateKeyAsync(
+                          P.kspSettings.address,
+                          P.kspSettings.port,
+                          P.userId,
                           C,
+                          T,
                           c,
                           p,
                           a,
@@ -14763,19 +15077,19 @@ function dateFormatter(dateString) {
                         );
                       })
                       .then(function (t) {
-                        v.operationId = t;
-                        var n = g.GetPollingInterval(v.kspSettings),
+                        P.operationId = t;
+                        var n = g.GetPollingInterval(P.kspSettings),
                           i = g.MakeExpireDate(300);
                         return new e(function (e, t) {
                           var o = function (i) {
                             new Date() > i
-                              ? t(P.MakeError(r.EU_ERROR_TRANSMIT_REQUEST, ""))
+                              ? t(v.MakeError(r.EU_ERROR_TRANSMIT_REQUEST, ""))
                               : g.m_library
                                   .SServerClientCheckGeneratePrivateKeyStatus(
-                                    v.kspSettings.address,
-                                    v.kspSettings.port,
-                                    v.userId,
-                                    v.operationId,
+                                    P.kspSettings.address,
+                                    P.kspSettings.port,
+                                    P.userId,
+                                    P.operationId,
                                   )
                                   .then(function (t) {
                                     null != t
@@ -14799,16 +15113,16 @@ function dateFormatter(dateString) {
                         ) {
                           var s = e.get(o);
                           switch (s.GetRequestType()) {
-                            case P.EU_KEYS_REQUEST_TYPE_UA_DS:
+                            case v.EU_KEYS_REQUEST_TYPE_UA_DS:
                               t = s.GetRequest();
                               break;
-                            case P.EU_KEYS_REQUEST_TYPE_UA_KEP:
+                            case v.EU_KEYS_REQUEST_TYPE_UA_KEP:
                               n = s.GetRequest();
                               break;
-                            case P.EU_KEYS_REQUEST_TYPE_INTERNATIONAL:
-                              _ & P.EU_KEYS_TYPE_RSA_WITH_SHA
+                            case v.EU_KEYS_REQUEST_TYPE_INTERNATIONAL:
+                              _ & v.EU_KEYS_TYPE_RSA_WITH_SHA
                                 ? (r = s.GetRequest())
-                                : _ & P.EU_KEYS_TYPE_ECDSA_WITH_SHA &&
+                                : _ & v.EU_KEYS_TYPE_ECDSA_WITH_SHA &&
                                   (i = s.GetRequest());
                           }
                         }
@@ -14821,39 +15135,50 @@ function dateFormatter(dateString) {
                         );
                       })
                       .then(function () {
-                        var e = "Веб-сайт: %s".replace(
+                        var e =
+                            "string" == typeof P.kspSettings.systemId
+                              ? P.kspSettings.systemId
+                              : (P.kspSettings.systemId &&
+                                  P.kspSettings.systemId.name) ||
+                                g.m_origin,
+                          t = "Веб-сайт: %s".replace("%s", e),
+                          n = "Ідентифікація клієнта у системі %s".replace(
                             "%s",
-                            v.kspSettings.systemId || g.m_origin,
+                            e,
                           ),
-                          t = "Ідентифікація клієнта у системі %s".replace(
-                            "%s",
-                            v.kspSettings.systemId || g.m_origin,
-                          );
-                        return P.SServerClientSignHashesAsync(
-                          v.kspSettings.address,
-                          v.kspSettings.port,
-                          v.userId,
-                          e,
+                          r =
+                            P.kspSettings.signAlgos &&
+                            P.kspSettings.signAlgos.indexOf(
+                              v.EU_CTX_SIGN_DSTU4145_WITH_DSTU7564,
+                            ) >= 0
+                              ? "DSTU4145-DSTU7564"
+                              : "DSTU4145";
+                        return v.SServerClientSignHashesAsync(
+                          P.kspSettings.address,
+                          P.kspSettings.port,
+                          P.userId,
                           t,
+                          n,
                           ["Зчитування ос. ключа"],
                           ["AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="],
-                          "DSTU4145",
+                          r,
                         );
                       })
                       .then(function (t) {
-                        v.operationId = t;
-                        var n = g.GetPollingInterval(v.kspSettings),
+                        P.operationId = t;
+                        var n = g.GetPollingInterval(P.kspSettings),
                           i = g.MakeExpireDate(300);
                         return new e(function (e, t) {
                           var o = function (i) {
                             new Date() > i
-                              ? t(P.MakeError(r.EU_ERROR_TRANSMIT_REQUEST, ""))
-                              : P.SServerClientCheckSignHashesStatus(
-                                  v.kspSettings.address,
-                                  v.kspSettings.port,
-                                  v.userId,
-                                  v.operationId,
-                                )
+                              ? t(v.MakeError(r.EU_ERROR_TRANSMIT_REQUEST, ""))
+                              : v
+                                  .SServerClientCheckSignHashesStatus(
+                                    P.kspSettings.address,
+                                    P.kspSettings.port,
+                                    P.userId,
+                                    P.operationId,
+                                  )
                                   .then(function (s) {
                                     if (null != s)
                                       if (1 == s.size()) {
@@ -14861,7 +15186,7 @@ function dateFormatter(dateString) {
                                         if (a.GetError() == r.EU_ERROR_NONE) {
                                           var l = a.GetSignature(),
                                             p = new u.EndUserCertificate();
-                                          P.CtxGetSignerInfo(g.m_context, 0, l)
+                                          v.CtxGetSignerInfo(g.m_context, 0, l)
                                             .then(function (t) {
                                               (c.a.MapToEndUserCertificate(
                                                 t,
@@ -14874,14 +15199,14 @@ function dateFormatter(dateString) {
                                             });
                                         } else
                                           t(
-                                            P.MakeError(
+                                            v.MakeError(
                                               a.GetError(),
                                               a.GetStatus(),
                                             ),
                                           );
                                       } else
                                         t(
-                                          P.MakeError(
+                                          v.MakeError(
                                             r.EU_ERROR_PKI_FORMATS_FAILED,
                                             "",
                                           ),
@@ -15000,6 +15325,7 @@ function dateFormatter(dateString) {
                     offline: !0,
                     tspSettings: null,
                     useOCSP: !1,
+                    useCMP: !1,
                   };
                   return new e(function (e, o) {
                     r.Load()
@@ -15054,7 +15380,9 @@ function dateFormatter(dateString) {
                             i.useOCSP = !0;
                             break;
                           }
-                        i.offline = !i.tspSettings && !i.useOCSP;
+                        ((i.useCMP = n.IsCMPsAvailable(n.m_settings)),
+                          (i.offline =
+                            !i.tspSettings && !i.useOCSP && !i.useCMP));
                         var o = r.CreateModeSettings();
                         return (
                           o.SetOfflineMode(i.offline),
@@ -15185,6 +15513,39 @@ function dateFormatter(dateString) {
                       })
                       .catch(function (e) {
                         return o(n.MapError(e));
+                      });
+                  });
+                }),
+                (t.prototype.Finalize = function () {
+                  var t = this,
+                    n = t.m_library;
+                  return new e(function (e, r) {
+                    t.CheckInitialize()
+                      .then(function () {
+                        if (null != t.m_pkContext)
+                          return n.CtxFreePrivateKey(t.m_pkContext);
+                      })
+                      .then(function () {
+                        if (((t.m_pkContext = null), null != t.m_context))
+                          return n.CtxFree(t.m_context);
+                      })
+                      .then(function () {
+                        return ((t.m_context = null), n.Finalize());
+                      })
+                      .then(function () {
+                        ((t.m_initialized = !1),
+                          (t.m_settings = null),
+                          (t.m_kmTypes = null),
+                          (t.m_kmActiveOperation = !1),
+                          (t.m_eventListeners = new Array()),
+                          (t.m_resolveOIDs = !1),
+                          e());
+                      })
+                      .then(function () {
+                        e();
+                      })
+                      .catch(function (e) {
+                        return r(t.MapError(e));
                       });
                   });
                 }),
@@ -15496,16 +15857,24 @@ function dateFormatter(dateString) {
                       });
                   });
                 }),
-                (t.prototype.ReadPrivateKeyKSP = function (t, n, i, o, s, a) {
-                  var u = this,
-                    l = this.m_library;
+                (t.prototype.ReadPrivateKeyKSP = function (
+                  t,
+                  n,
+                  i,
+                  o,
+                  s,
+                  a,
+                  u,
+                ) {
+                  var l = this,
+                    c = this.m_library;
                   return new e(function (e, t) {
-                    u.CheckInitialize()
+                    l.CheckInitialize()
                       .then(function () {
-                        throw l.MakeError(r.EU_ERROR_NOT_SUPPORTED, "");
+                        throw c.MakeError(r.EU_ERROR_NOT_SUPPORTED, "");
                       })
                       .catch(function (e) {
-                        return t(u.MapError(e));
+                        return t(l.MapError(e));
                       });
                   });
                 }),
@@ -15580,15 +15949,15 @@ function dateFormatter(dateString) {
                     void 0 === C && (C = null),
                     void 0 === T && (T = 0),
                     void 0 === A && (A = null));
-                  var R = this,
-                    m = R.m_library,
+                  var m = this,
+                    R = m.m_library,
                     g = {
                       key: null,
                       certs: null,
                       cmpRequest: null,
                     };
                   return null != y || null != C
-                    ? R.MakeNewCertificateKSP(
+                    ? m.MakeNewCertificateKSP(
                         t,
                         n,
                         r,
@@ -15611,9 +15980,9 @@ function dateFormatter(dateString) {
                         C,
                       )
                     : new e(function (y, C) {
-                        R.CheckInitialize()
+                        m.CheckInitialize()
                           .then(function () {
-                            return R.BeginKMOperation();
+                            return m.BeginKMOperation();
                           })
                           .then(function () {
                             var e = null;
@@ -15621,29 +15990,29 @@ function dateFormatter(dateString) {
                               null != t &&
                                 (e = c.a.MapFromKeyMedia(
                                   t,
-                                  m.CreateKeyMedia(),
+                                  R.CreateKeyMedia(),
                                 )),
                               d
                                 ? null
-                                : R.ReadPrivateKeyInternal(n, r, e, null, h)
+                                : m.ReadPrivateKeyInternal(n, r, e, null, h)
                             );
                           })
                           .then(function (e) {
                             return S && !d
-                              ? m.CtxGetOwnEUserParams(R.m_pkContext)
+                              ? R.CtxGetOwnEUserParams(m.m_pkContext)
                               : null;
                           })
                           .then(function (e) {
                             return S
-                              ? m.CtxModifyOwnEUserParams(
-                                  R.m_pkContext,
+                              ? R.CtxModifyOwnEUserParams(
+                                  m.m_pkContext,
                                   S.phone,
                                   S.EMail,
                                 )
                               : null;
                           })
                           .then(function () {
-                            return d ? null : R.ResetPrivateKeyInternal();
+                            return d ? null : m.ResetPrivateKeyInternal();
                           })
                           .then(function () {
                             if (d)
@@ -15651,8 +16020,8 @@ function dateFormatter(dateString) {
                                 var r = {
                                   makeCertResult: null,
                                 };
-                                m.CtxMakeNewOwnCertificateEx(
-                                  R.m_pkContext,
+                                R.CtxMakeNewOwnCertificateEx(
+                                  m.m_pkContext,
                                   i,
                                   o,
                                   s,
@@ -15667,16 +16036,16 @@ function dateFormatter(dateString) {
                                   .then(function (e) {
                                     return (
                                       (r.makeCertResult = e),
-                                      R.ResetPrivateKeyInternal()
+                                      m.ResetPrivateKeyInternal()
                                     );
                                   })
                                   .then(function () {
                                     var e = c.a.MapFromKeyMedia(
                                       t,
-                                      m.CreateKeyMedia(),
+                                      R.CreateKeyMedia(),
                                     );
                                     return f && f.password != t.password
-                                      ? m.ChangePrivateKeyPassword(
+                                      ? R.ChangePrivateKeyPassword(
                                           e,
                                           f.password,
                                         )
@@ -15686,7 +16055,7 @@ function dateFormatter(dateString) {
                                     e(r.makeCertResult);
                                   })
                                   .catch(function (e) {
-                                    n(R.MapError(e));
+                                    n(m.MapError(e));
                                   });
                               });
                             var h = null,
@@ -15695,14 +16064,14 @@ function dateFormatter(dateString) {
                               t &&
                                 (h = c.a.MapFromKeyMedia(
                                   t,
-                                  m.CreateKeyMedia(),
+                                  R.CreateKeyMedia(),
                                 )),
                               f &&
                                 (S = c.a.MapFromKeyMedia(
                                   f,
-                                  m.CreateKeyMedia(),
+                                  R.CreateKeyMedia(),
                                 )),
-                              m.MakeNewCertificateEx(
+                              R.MakeNewCertificateEx(
                                 h,
                                 n,
                                 r,
@@ -15729,9 +16098,9 @@ function dateFormatter(dateString) {
                               ((d && t) || f) &&
                                 (n = c.a.MapFromKeyMedia(
                                   f || t,
-                                  m.CreateKeyMedia(),
+                                  R.CreateKeyMedia(),
                                 )),
-                              R.SearchPrivateKeyCertificatesWithCMP(
+                              m.SearchPrivateKeyCertificatesWithCMP(
                                 g.key,
                                 E,
                                 n,
@@ -15740,15 +16109,15 @@ function dateFormatter(dateString) {
                             );
                           })
                           .then(function (e) {
-                            return R.GetUserCertificatesFromCertificates(
+                            return m.GetUserCertificatesFromCertificates(
                               e.certs,
                             );
                           })
                           .then(function (e) {
-                            (R.EndKMOperation(), (g.certs = e), y(g));
+                            (m.EndKMOperation(), (g.certs = e), y(g));
                           })
                           .catch(function (e) {
-                            (R.EndKMOperation(), C(R.MapError(e)));
+                            (m.EndKMOperation(), C(m.MapError(e)));
                           });
                       });
                 }),
@@ -17485,8 +17854,8 @@ function dateFormatter(dateString) {
                 t
               );
             })();
-          t.a = R;
-        }).call(this, n(17).Promise);
+          t.a = m;
+        }).call(this, n(13).Promise);
       },
       function (e, t, n) {
         "use strict";
@@ -17644,6 +18013,12 @@ function dateFormatter(dateString) {
                   (this.EU_ASIC_SIGN_TYPE_CADES = 1),
                   (this.EU_ASIC_SIGN_TYPE_XADES = 2),
                   (this.EU_ASIC_SIGN_LEVEL_BES = 1),
+                  (this.CtxCreateEmptySign = function (t, n, r, i) {
+                    var o = this.m_library;
+                    return new e(function (e, s) {
+                      o.CtxCreateEmptySign(t, n, r, i, e, s);
+                    });
+                  }),
                   (this.EnvelopToRecipientsEx = function (t, n, r, i) {
                     var o = this.m_library;
                     return new e(function (e, s) {
@@ -17999,6 +18374,31 @@ function dateFormatter(dateString) {
                         e,
                         s,
                       );
+                    });
+                  }),
+                  (this.SServerClientSignHashAsync = function (
+                    t,
+                    n,
+                    r,
+                    i,
+                    o,
+                    s,
+                    a,
+                  ) {
+                    var u = this.m_library;
+                    return new e(function (e, l) {
+                      u.SServerClientSignHashAsync(t, n, r, i, o, s, a, e, l);
+                    });
+                  }),
+                  (this.SServerClientCheckSignHashStatus = function (
+                    t,
+                    n,
+                    r,
+                    i,
+                  ) {
+                    var o = this.m_library;
+                    return new e(function (e, s) {
+                      o.SServerClientCheckSignHashStatus(t, n, r, i, e, s);
                     });
                   }),
                   (this.SServerClientSignHashesAsync = function (
@@ -19023,6 +19423,12 @@ function dateFormatter(dateString) {
                     r.GetSignType(t, n, e, i);
                   });
                 }),
+                (t.prototype.GetSigner = function (t, n) {
+                  var r = this.m_library;
+                  return new e(function (e, i) {
+                    r.GetSigner(t, n, e, i);
+                  });
+                }),
                 (t.prototype.CtxGetSignerInfo = function (t, n, r) {
                   var i = this.m_library;
                   return new e(function (e, o) {
@@ -19119,10 +19525,32 @@ function dateFormatter(dateString) {
                     a.CtxAppendSignFile(t, n, r, i, o, s, e, u);
                   });
                 }),
+                (t.prototype.AppendSigner = function (t, n, r) {
+                  var i = this.m_library;
+                  return new e(function (e, o) {
+                    i.AppendSigner(t, n, r, e, o);
+                  });
+                }),
+                (t.prototype.AppendValidationDataToSignerEx = function (
+                  t,
+                  n,
+                  r,
+                ) {
+                  var i = this.m_library;
+                  return new e(function (e, o) {
+                    i.AppendValidationDataToSignerEx(t, n, r, e, o);
+                  });
+                }),
                 (t.prototype.IsDataInSignedDataAvailable = function (t) {
                   var n = this.m_library;
                   return new e(function (e, r) {
                     n.IsDataInSignedDataAvailable(t, e, r);
+                  });
+                }),
+                (t.prototype.GetDataFromSignedData = function (t) {
+                  var n = this.m_library;
+                  return new e(function (e, r) {
+                    n.GetDataFromSignedData(t, e, r);
                   });
                 }),
                 (t.prototype.GetCertificateFromSignedData = function (t, n) {
@@ -19177,7 +19605,7 @@ function dateFormatter(dateString) {
               );
             })();
           t.a = i;
-        }).call(this, n(17).Promise);
+        }).call(this, n(13).Promise);
       },
       function (e, t, n) {
         "use strict";
@@ -19323,7 +19751,10 @@ function dateFormatter(dateString) {
   },
   function (e, t, n) {
     "use strict";
-    n.r(t);
+    (n.r(t),
+      n.d(t, "KSPKey", function () {
+        return x;
+      }));
     var r,
       i = n(0),
       o = (function () {
@@ -19354,9 +19785,7 @@ function dateFormatter(dateString) {
           (e.SIGN_FILE_FORM_TITLE = "Підписати файл за допомогою"),
           (e.SIGN_FILE_FORM_SUB_TITLE =
             'Оберіть файл для підпису та натисніть "Підписати"'),
-          (e.SIGN_FILE_RESULT_FORM_TITLE = isItStamp
-            ? "👍 Печатку накладено"
-            : "👍 Документ підписано"),
+          (e.SIGN_FILE_RESULT_FORM_TITLE = "👍 Документ підписано"),
           (e.SIGN_FILE_RESULT_FORM_SUB_TITLE =
             "Ви можете зберігти підписаний файл."),
           (e.VIEW_PKEY_CERTIFICATES_FORM_TITLE =
@@ -19405,6 +19834,11 @@ function dateFormatter(dateString) {
           (e.TEXT_SIGN_ALGO_DSTU4145 = "ДСТУ 4145"),
           (e.TEXT_SIGN_ALGO_RSA = "RSA"),
           (e.TEXT_SIGN_ALGO_ECDSA = "ECDSA"),
+          (e.TEXT_SIGN_ALGO_DSTU4145_WITH_GOST34311 =
+            "ДСТУ 4145 з ГОСТ 34.311"),
+          (e.TEXT_SIGN_ALGO_DSTU4145_WITH_DSTU7564 = "ДСТУ 4145 з ДСТУ 7564"),
+          (e.TEXT_SIGN_ALGO_RSA_WITH_SHA2 = "RSA з SHA-2"),
+          (e.TEXT_SIGN_ALGO_ECDSA_WITH_SHA2 = "ECDSA з SHA-2"),
           (e.TEXT_SIGN_RESULT_TITLE = "Результат накладання підпису"),
           (e.TEXT_SIGN_RESULT_SUCCESS =
             "Підпис накладено успішно. Цілісність даних підтверджено"),
@@ -19562,6 +19996,14 @@ function dateFormatter(dateString) {
           (e.ERROR_PARSE_SIGN_TEMPLATE =
             "Виникла помилка в шаблоні при відображенні результату підпису"),
           (e.ERROR_SAVE_FILE = "Виникла помилка при збереженні файлу {0}"),
+          (e.ERROR_INITIALIZE_BROWSER_STORAGE =
+            "Виникла помилка при ініціалізації локального сховища браузера"),
+          (e.ERROR_GET_KEY_FROM_BROWSER_STORAGE =
+            "Виникла помилка при отриманні особистого ключа з локального сховища браузера"),
+          (e.ERROR_SET_KEY_TO_BROWSER_STORAGE =
+            "Виникла помилка при збереженні особистого ключа до локального сховища браузера"),
+          (e.ERROR_KM_NOT_CONNECTED =
+            "Носій особистого ключа {0} не підключено"),
           (e.CONFIRM_CONTINUE_WITHOUT_PKEY_READED =
             "Ви відмовилися надавати ідентифікаційні дані ос. ключа. Продовжити?"),
           e
@@ -19736,7 +20178,7 @@ function dateFormatter(dateString) {
               }
               return r;
             } catch (n) {
-              throw "No option: " + t + " in element " + e?.nodeName;
+              throw "No option: " + t + " in element " + e.nodeName;
             }
           }),
           (e.prototype.parseOptions = function (e) {
@@ -19822,33 +20264,33 @@ function dateFormatter(dateString) {
         );
       })();
     function T(e, t, n, r, i, o, s, a, u) {
-      if (e) console.log("systemId n", n);
-      try {
-        var l = {
-            eventType: t,
-            systemId: n,
-            keyType: r,
-            certIssuer: i,
-            itemsCount: o,
-            signContainer: s,
-            signAlgo: a,
-            signLevel: u,
-          },
-          c = function (e) {
-            console.log("Send statistics error - " + e);
-          },
-          p = new XMLHttpRequest();
-        // ((p.onload = function () {
-        //   4 == p.readyState &&
-        //     (204 == p.status || c(p.statusText + "(" + p.status + ")"));
-        // }),
-        //   (p.onerror = c),
-        //   p.open("POST", e),
-        //   p.setRequestHeader("Content-Type", "application/json"),
-        //   p.send(JSON.stringify(l)));
-      } catch (e) {
-        c(e);
-      }
+      if (e)
+        try {
+          var l = {
+              eventType: t,
+              systemId: n,
+              keyType: r,
+              certIssuer: i,
+              itemsCount: o,
+              signContainer: s,
+              signAlgo: a,
+              signLevel: u,
+            },
+            c = function (e) {
+              console.log("Send statistics error - " + e);
+            },
+            p = new XMLHttpRequest();
+          ((p.onload = function () {
+            4 == p.readyState &&
+              (204 == p.status || c(p.statusText + "(" + p.status + ")"));
+          }),
+            (p.onerror = c),
+            p.open("POST", e),
+            p.setRequestHeader("Content-Type", "application/json"),
+            p.send(JSON.stringify(l)));
+        } catch (e) {
+          c(e);
+        }
     }
     (!(function (e) {
       ((e[(e.Sign = 1)] = "Sign"),
@@ -19886,7 +20328,8 @@ function dateFormatter(dateString) {
       (function (e) {
         ((e.String = "string"), (e.Binary = "binary"), (e.File = "file"));
       })(d || (d = {})));
-    var A = function () {
+    var A,
+      m = function () {
         this.html = "";
       },
       R = function (e, t) {
@@ -19912,7 +20355,7 @@ function dateFormatter(dateString) {
         }),
           (this.yOffset = this.page.margin));
       },
-      m = (function () {
+      g = (function () {
         function e(e, t, n) {
           ((this.m_name = e), (this.m_tmpl = t), (this.m_contents = n));
         }
@@ -19934,7 +20377,7 @@ function dateFormatter(dateString) {
           (e.prototype.makeDocument = function (e, t) {
             switch (((this.m_type = e), e)) {
               case S.Html:
-                this.m_htmlContext = new A();
+                this.m_htmlContext = new m();
                 break;
               case S.Pdf:
                 this.m_pdfContext = new R(
@@ -20166,7 +20609,7 @@ function dateFormatter(dateString) {
           e
         );
       })(),
-      g = [
+      v = [
         "AU",
         "AT",
         "AZ",
@@ -20771,19 +21214,271 @@ function dateFormatter(dateString) {
           "Japan",
         ],
       },
-      v = (function () {
+      I = (function () {
         function e() {}
         return (
           (e.getCountryName = function (e, t) {
             ((e = e.toLowerCase()), P[e] || (e = "ua"), (t = t.toUpperCase()));
-            var n = g.indexOf(t);
+            var n = v.indexOf(t);
             return n < 0 ? t : P[e][n];
           }),
           e
         );
       })(),
-      I = function () {
-        return (I =
+      U = (function () {
+        function e() {}
+        return (
+          (e.encode = function (t) {
+            var n;
+            ((t = new Uint8Array(t)), (n = ""));
+            for (var r = 0; r < t.length; r += 3)
+              ((n += e.MAP[t[r] >> 2]),
+                (n += e.MAP[((3 & t[r]) << 4) | (t[r + 1] >> 4)]),
+                (n += e.MAP[((15 & t[r + 1]) << 2) | (t[r + 2] >> 6)]),
+                (n += e.MAP[63 & t[r + 2]]));
+            return (
+              t.length % 3 == 2
+                ? (n = n.substring(0, n.length - 1) + "=")
+                : t.length % 3 == 1 &&
+                  (n = n.substring(0, n.length - 2) + "=="),
+              n
+            );
+          }),
+          (e.decode = function (t) {
+            var n, r, i, o, s, a, u, l, c, p;
+            if ("" == t) return new Uint8Array(0);
+            for (
+              r = 0.75 * t.length,
+                s = t.length,
+                "=" === t[t.length - 1] &&
+                  (r--, "=" === t[t.length - 2] && r--),
+                p = new ArrayBuffer(r),
+                n = new Uint8Array(p),
+                o = 0,
+                i = 0;
+              i < s;
+              i += 4
+            )
+              ((a = e.MAP.indexOf(t[i])),
+                (u = e.MAP.indexOf(t[i + 1])),
+                (l = e.MAP.indexOf(t[i + 2])),
+                (c = e.MAP.indexOf(t[i + 3])),
+                (n[o++] = (a << 2) | (u >> 4)),
+                (n[o++] = ((15 & u) << 4) | (l >> 2)),
+                (n[o++] = ((3 & l) << 6) | (63 & c)));
+            return n;
+          }),
+          (e.MAP =
+            "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"),
+          e
+        );
+      })();
+    !(function (e) {
+      ((e[(e.Local = 1)] = "Local"), (e[(e.Session = 2)] = "Session"));
+    })(A || (A = {}));
+    var b = (function () {
+        function e(t, n, r, i, o, s, a, u) {
+          (void 0 === u && (u = e.VERSION),
+            (this.version = e.VERSION),
+            (this.version = u),
+            (this.id = t),
+            (this.keyMedia = n),
+            (this.pkData = r),
+            (this.pkPassword = i),
+            (this.pkAlias = o),
+            (this.kspKey = s),
+            (this.certificates = a));
+        }
+        return (
+          (e.prototype.stringify = function () {
+            return JSON.stringify(this, function (e, t) {
+              if (!t) return t;
+              switch (e) {
+                case "pkData":
+                  t = U.encode(t);
+                  break;
+                case "certificates":
+                  t = t.map(function (e) {
+                    return U.encode(e);
+                  });
+              }
+              return t;
+            });
+          }),
+          (e.parse = function (t) {
+            try {
+              var n = JSON.parse(t, function (e, t) {
+                if (!t) return t;
+                switch (e) {
+                  case "pkData":
+                    t = U.decode(t);
+                    break;
+                  case "certificates":
+                    t = t.map(function (e) {
+                      return U.decode(e);
+                    });
+                    break;
+                  case "kspKey":
+                    t = new x(t.ksp, t.kspName, t.userId, t.keyId, t.issuerCN);
+                }
+                return t;
+              });
+              return new e(
+                n.id,
+                n.keyMedia,
+                n.pkData,
+                n.pkPassword,
+                n.pkAlias,
+                n.kspKey,
+                n.certificates,
+                n.version,
+              );
+            } catch (e) {
+              return null;
+            }
+          }),
+          (e.VERSION = 1),
+          e
+        );
+      })(),
+      O = (function () {
+        function e(t) {
+          if (!e.isSupported() || !this.validate(t))
+            throw p(o.ERROR_INITIALIZE_BROWSER_STORAGE);
+          var n = !t.id || !t.password;
+          (n &&
+            ((t.id = this.generateId()),
+            (t.password = this.generatePassword())),
+            (this.m_settings = t),
+            (this.m_storage = this.getStorage(t.type)),
+            n
+              ? (this.clear(),
+                this.m_storage.setItem(e.ID_KEY, this.m_settings.id))
+              : (this.m_settings.keys = this.getIds()));
+        }
+        return (
+          (e.prototype.generateId = function () {
+            return "undefined" != typeof crypto
+              ? ("" + [1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(
+                  /[018]/g,
+                  function (e) {
+                    var t = Number(e);
+                    return (
+                      t ^
+                      (crypto.getRandomValues(new Uint8Array(1))[0] &
+                        (15 >> (t / 4)))
+                    ).toString(16);
+                  },
+                )
+              : "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(
+                  /[xy]/g,
+                  function (e) {
+                    var t = (16 * Math.random()) | 0;
+                    return ("x" == e ? t : (3 & t) | 8).toString(16);
+                  },
+                );
+          }),
+          (e.prototype.generatePassword = function () {
+            var e = new Uint8Array(32);
+            if ("undefined" != typeof crypto) crypto.getRandomValues(e);
+            else
+              for (var t = 0; t < length; t++)
+                e[t] = Math.floor(256 * Math.random());
+            return U.encode(e);
+          }),
+          (e.prototype.getStorage = function (e) {
+            switch (e) {
+              case A.Local:
+                return localStorage;
+              case A.Session:
+                return sessionStorage;
+              default:
+                return null;
+            }
+          }),
+          (e.prototype.validate = function (t) {
+            if (!t) return !1;
+            var n = this.getStorage(t.type);
+            return !!n && (!t.id || t.id == n.getItem(e.ID_KEY));
+          }),
+          (e.prototype.getKey = function (t) {
+            return e.ITEM_KEY_PREFIX + t;
+          }),
+          (e.prototype.getIds = function () {
+            for (var t, n = 0, r = []; (t = this.m_storage.key(n)); ) {
+              if (t.startsWith(e.ITEM_KEY_PREFIX)) {
+                var i = t.slice(e.ITEM_KEY_PREFIX.length);
+                r.push(i);
+              }
+              n++;
+            }
+            return r;
+          }),
+          (e.isSupported = function () {
+            return (
+              void 0 !== window.sessionStorage && void 0 !== window.localStorage
+            );
+          }),
+          (e.prototype.clear = function () {
+            for (var t, n = 0; (t = this.m_storage.key(n)); )
+              (t.startsWith(e.ITEM_KEY_PREFIX) && this.m_storage.removeItem(t),
+                n++);
+            (this.m_storage.removeItem(e.ID_KEY), (this.m_settings.keys = []));
+          }),
+          (e.prototype.isExists = function (e) {
+            var t = this.getKey(e);
+            return null != this.m_storage.getItem(t);
+          }),
+          (e.prototype.add = function (e, t) {
+            var n = this,
+              r = this;
+            return new Promise(function (i, s) {
+              var a = n.getKey(t.id),
+                u = t.stringify();
+              e.ProtectDataByPassword(u, r.m_settings.password, !0)
+                .then(function (e) {
+                  (r.m_storage.setItem(a, e),
+                    r.m_settings.keys.push(t.id),
+                    i());
+                })
+                .catch(function (e) {
+                  s(p(o.ERROR_SET_KEY_TO_BROWSER_STORAGE));
+                });
+            });
+          }),
+          (e.prototype.get = function (e, t) {
+            var n = this;
+            return new Promise(function (r, i) {
+              var s = n.getKey(t),
+                a = n.m_storage.getItem(s);
+              e.UnprotectDataByPassword(a, n.m_settings.password, !0)
+                .then(function (e) {
+                  var t = b.parse(e);
+                  if (!t) throw p(o.ERROR_GET_KEY_FROM_BROWSER_STORAGE);
+                  r(t);
+                })
+                .catch(function (e) {
+                  (n.remove(t), i(p(o.ERROR_GET_KEY_FROM_BROWSER_STORAGE)));
+                });
+            });
+          }),
+          (e.prototype.remove = function (e) {
+            var t = this.getKey(e);
+            this.m_storage.removeItem(t);
+            var n = this.m_settings.keys.indexOf(e);
+            -1 !== n && this.m_settings.keys.splice(n, 1);
+          }),
+          (e.prototype.getSettings = function () {
+            return this.m_settings;
+          }),
+          (e.ID_KEY = "EUSignWidgetKeyStorageId"),
+          (e.ITEM_KEY_PREFIX = "EUSignWidgetKeyStorageItem_"),
+          e
+        );
+      })(),
+      D = O,
+      k = function () {
+        return (k =
           Object.assign ||
           function (e) {
             for (var t, n = 1, r = arguments.length; n < r; n++)
@@ -20792,13 +21487,14 @@ function dateFormatter(dateString) {
             return e;
           }).apply(this, arguments);
       },
-      U = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"],
-      O = [
+      w = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"],
+      N = [
         12, 33, 34, 35, 36, 37, 38, 39, 40, 45, 48, 49, 50, 51, 52, 53, 54, 55,
         56, 57, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105,
       ],
-      D = [
+      M = [
         "AddEventListener",
+        "InitKeysStorage",
         "ResetPrivateKey",
         "ReadPrivateKey",
         "MakeNewCertificate",
@@ -20813,18 +21509,18 @@ function dateFormatter(dateString) {
         "DevelopData",
         "GetSignValue",
       ],
-      b = ["криптомод. ІІТ Гряда-301"];
-    var k,
-      N,
-      w,
-      M = function (e, t, n) {
+      G = ["криптомод. ІІТ Гряда-301"];
+    var K,
+      L,
+      F,
+      B = function (e, t, n) {
         (void 0 === n && (n = null),
           (this.file = n),
           (this.name = e),
           (this.data = t),
           (this.size = t ? t.length : n ? n.size : 0));
       },
-      G = (function () {
+      x = (function () {
         function e(e, t, n, r, i) {
           ((this.ksp = e),
             (this.kspName = t),
@@ -20843,7 +21539,7 @@ function dateFormatter(dateString) {
           e
         );
       })(),
-      K = (function () {
+      Y = (function () {
         function e() {
           ((this.keyMedia = null),
             (this.file = null),
@@ -20874,7 +21570,7 @@ function dateFormatter(dateString) {
           e
         );
       })(),
-      L = function () {
+      H = function () {
         ((this.use = !1), (this.name = ""), (this.sn = ""));
       };
     (!(function (e) {
@@ -20883,7 +21579,7 @@ function dateFormatter(dateString) {
         (e[(e.SignFile = 3)] = "SignFile"),
         (e[(e.ViewPKeyCertificates = 4)] = "ViewPKeyCertificates"),
         (e[(e.MakeDeviceCertificate = 5)] = "MakeDeviceCertificate"));
-    })(k || (k = {})),
+    })(K || (K = {})),
       (function (e) {
         ((e[(e.Unknown = 0)] = "Unknown"),
           (e[(e.XAdES = 1)] = "XAdES"),
@@ -20891,7 +21587,7 @@ function dateFormatter(dateString) {
           (e[(e.CAdES = 3)] = "CAdES"),
           (e[(e.ASiCS = 4)] = "ASiCS"),
           (e[(e.ASiCE = 5)] = "ASiCE"));
-      })(N || (N = {})),
+      })(L || (L = {})),
       (function (e) {
         ((e[(e.None = 0)] = "None"),
           (e[(e.File = 1)] = "File"),
@@ -20899,8 +21595,8 @@ function dateFormatter(dateString) {
           (e[(e.KSP = 4)] = "KSP"),
           (e[(e.DIIA_UA = 5)] = "DIIA_UA"),
           (e[(e.DIIA_EU = 6)] = "DIIA_EU"));
-      })(w || (w = {})));
-    var B = (function () {
+      })(F || (F = {})));
+    var W = (function () {
         function e(e) {
           ((this.containerType = e
             ? i.EndUserConstants.EndUserSignContainerType.XAdES
@@ -20919,23 +21615,23 @@ function dateFormatter(dateString) {
           (e.prototype.getSignContainerType = function () {
             switch (this.containerType) {
               case i.EndUserConstants.EndUserSignContainerType.CAdES:
-                return N.CAdES;
+                return L.CAdES;
               case i.EndUserConstants.EndUserSignContainerType.XAdES:
-                return N.XAdES;
+                return L.XAdES;
               case i.EndUserConstants.EndUserSignContainerType.PAdES:
-                return N.PAdES;
+                return L.PAdES;
               case i.EndUserConstants.EndUserSignContainerType.ASiC:
                 return this.asicType == i.EndUserConstants.EndUserASiCType.S
-                  ? N.ASiCS
-                  : N.ASiCE;
+                  ? L.ASiCS
+                  : L.ASiCE;
               default:
-                return N.Unknown;
+                return L.Unknown;
             }
           }),
           e
         );
       })(),
-      F = (function () {
+      V = (function () {
         function e(e) {
           ((this.m_type = e),
             (this.m_library = new i.EndUser(JS_WORKER_PATH, e)),
@@ -20992,7 +21688,7 @@ function dateFormatter(dateString) {
           e
         );
       })(),
-      x = (function () {
+      j = (function () {
         function e() {
           ((this.m_mainPageOrigin = this.GetURLParameter(
             window.location.href,
@@ -21006,7 +21702,7 @@ function dateFormatter(dateString) {
               this.GetURLParameter(
                 window.location.href,
                 "formType",
-                k.ReadPrivateKey + "",
+                K.ReadPrivateKey + "",
               ),
             )),
             (this.m_ownCAOnly =
@@ -21048,13 +21744,13 @@ function dateFormatter(dateString) {
                 return e.ksp == i.EndUserConstants.EU_KSP_DIIA;
               }).length > 0),
             (this.m_keyMediaType = parseInt(
-              this.GetStorageItem("KeyMediaType", w.File),
+              this.GetStorageItem("KeyMediaType", F.File),
             )),
             (this.m_libraries = new Array()),
-            (this.m_libraries[i.EndUserConstants.EU_LIBRARY_TYPE_JS] = new F(
+            (this.m_libraries[i.EndUserConstants.EU_LIBRARY_TYPE_JS] = new V(
               i.EndUserConstants.EU_LIBRARY_TYPE_JS,
             )),
-            (this.m_libraries[i.EndUserConstants.EU_LIBRARY_TYPE_SW] = new F(
+            (this.m_libraries[i.EndUserConstants.EU_LIBRARY_TYPE_SW] = new V(
               i.EndUserConstants.EU_LIBRARY_TYPE_SW,
             )),
             (this.m_statisticsURL = STATISTICS_URL
@@ -21083,6 +21779,7 @@ function dateFormatter(dateString) {
               !LIBRARY_SETTINGS.allowMakeNewCertOnFileKeyMedia),
             (this.m_euParams = null),
             (this.m_listeners = []),
+            (this.m_keysStorage = null),
             this.m_showPKPreSelect
               ? (this.ShowForm("#pkTypesPreSelectBlock", !1),
                 this.CloseDimmerView())
@@ -21097,19 +21794,19 @@ function dateFormatter(dateString) {
                 break;
               case "#resultBlock":
                 switch (this.m_formType) {
-                  case k.MakeNewCertificate:
+                  case K.MakeNewCertificate:
                     t = p(o.PK_MAKE_NEW_CERTIFICATES_FORM_TITLE);
                     break;
-                  case k.SignFile:
+                  case K.SignFile:
                     t = p(o.SIGN_FILE_RESULT_FORM_TITLE);
                     break;
-                  case k.ViewPKeyCertificates:
+                  case K.ViewPKeyCertificates:
                     t = p(o.VIEW_PKEY_CERTIFICATES_FORM_TITLE);
                     break;
-                  case k.MakeDeviceCertificate:
+                  case K.MakeDeviceCertificate:
                     t = p(o.MAKE_TECHNICAL_CERTIFICATES_FORM_TITLE);
                     break;
-                  case k.ReadPrivateKey:
+                  case K.ReadPrivateKey:
                   default:
                     t = p(o.PK_READ_FORM_TITLE);
                 }
@@ -21118,33 +21815,33 @@ function dateFormatter(dateString) {
               case "#pkReadKMBlock":
               case "#pkReadKSPBlock":
                 switch (this.m_formType) {
-                  case k.MakeNewCertificate:
+                  case K.MakeNewCertificate:
                     t = p(o.PK_MAKE_NEW_CERTIFICATES_FORM_TITLE);
                     break;
-                  case k.SignFile:
+                  case K.SignFile:
                     t = p(o.PK_READ_FORM_TITLE);
                     break;
-                  case k.ViewPKeyCertificates:
+                  case K.ViewPKeyCertificates:
                     t = p(o.VIEW_PKEY_CERTIFICATES_FORM_TITLE);
                     break;
-                  case k.MakeDeviceCertificate:
+                  case K.MakeDeviceCertificate:
                     t = p(o.MAKE_TECHNICAL_CERTIFICATES_FORM_TITLE);
                     break;
-                  case k.ReadPrivateKey:
+                  case K.ReadPrivateKey:
                   default:
                     t = p(o.PK_READ_FORM_TITLE);
                 }
                 break;
               case "#pkInfoBlock":
                 switch (this.m_formType) {
-                  case k.SignFile:
+                  case K.SignFile:
                     t = p(o.PK_INFO_FORM_TITLE);
                 }
                 break;
               case "#preSignBlock":
               case "#signBlock":
                 switch (this.m_formType) {
-                  case k.SignFile:
+                  case K.SignFile:
                     t = p(o.PRE_SIGN_FILE_FORM_TITLE);
                 }
                 break;
@@ -21154,19 +21851,19 @@ function dateFormatter(dateString) {
               case "#makeTechnicalCertBlock":
               default:
                 switch (this.m_formType) {
-                  case k.MakeNewCertificate:
+                  case K.MakeNewCertificate:
                     t = p(o.PK_MAKE_NEW_CERTIFICATES_FORM_TITLE);
                     break;
-                  case k.SignFile:
+                  case K.SignFile:
                     t = p(o.SIGN_FILE_FORM_TITLE);
                     break;
-                  case k.ViewPKeyCertificates:
+                  case K.ViewPKeyCertificates:
                     t = p(o.VIEW_PKEY_CERTIFICATES_FORM_TITLE);
                     break;
-                  case k.MakeDeviceCertificate:
+                  case K.MakeDeviceCertificate:
                     t = p(o.MAKE_TECHNICAL_CERTIFICATES_FORM_TITLE);
                     break;
-                  case k.ReadPrivateKey:
+                  case K.ReadPrivateKey:
                   default:
                     t = p(o.PK_READ_FORM_TITLE);
                 }
@@ -21182,15 +21879,15 @@ function dateFormatter(dateString) {
               case "#pkReadFileBlock":
               case "#pkReadKMBlock":
                 switch (this.m_formType) {
-                  case k.MakeNewCertificate:
+                  case K.MakeNewCertificate:
                     t = p(o.PK_MAKE_NEW_CERTIFICATES_OLD_KEY_FORM_SUB_TITLE);
                     break;
-                  case k.MakeDeviceCertificate:
+                  case K.MakeDeviceCertificate:
                     t = p(o.MAKE_TECHNICAL_CERTIFICATES_PK_READ_FORM_SUB_TITLE);
                     break;
-                  case k.SignFile:
-                  case k.ReadPrivateKey:
-                  case k.ViewPKeyCertificates:
+                  case K.SignFile:
+                  case K.ReadPrivateKey:
+                  case K.ViewPKeyCertificates:
                   default:
                     t = p(o.PK_READ_FORM_SUB_TITLE);
                 }
@@ -21198,7 +21895,7 @@ function dateFormatter(dateString) {
               case "#pkWriteFileBlock":
               case "#pkWriteKMBlock":
                 switch (this.m_formType) {
-                  case k.MakeNewCertificate:
+                  case K.MakeNewCertificate:
                     t = this.m_noNewKMOnMakeNewCertificate
                       ? this.m_readedPKey.keyMedia
                         ? p(
@@ -21214,7 +21911,7 @@ function dateFormatter(dateString) {
                 break;
               case "#pkInfoBlock":
                 switch (this.m_formType) {
-                  case k.ViewPKeyCertificates:
+                  case K.ViewPKeyCertificates:
                     t = p(o.VIEW_PKEY_CERTIFICATES_RESULT_FORM_SUB_TITLE);
                     break;
                   default:
@@ -21230,16 +21927,16 @@ function dateFormatter(dateString) {
                 break;
               case "#resultBlock":
                 switch (this.m_formType) {
-                  case k.SignFile:
+                  case K.SignFile:
                     t = p(o.SIGN_FILE_RESULT_FORM_SUB_TITLE);
                     break;
-                  case k.MakeNewCertificate:
+                  case K.MakeNewCertificate:
                     t = p(o.PK_MAKE_NEW_CERTIFICATES_RESULT_FORM_SUB_TITLE);
                     break;
-                  case k.ViewPKeyCertificates:
+                  case K.ViewPKeyCertificates:
                     t = p(o.VIEW_PKEY_CERTIFICATES_RESULT_FORM_SUB_TITLE);
                     break;
-                  case k.MakeDeviceCertificate:
+                  case K.MakeDeviceCertificate:
                     t = p(o.MAKE_TECHNICAL_CERTIFICATES_RESULT_FORM_SUB_TITLE);
                 }
             }
@@ -21299,8 +21996,6 @@ function dateFormatter(dateString) {
             else n || $("#helpBlock").hide();
           }),
           (e.prototype.SetFormStep = function (e) {
-            let isItPreSignBlock = false;
-            let isItSignBlock = false;
             var t = this.m_curStep;
             switch (e) {
               case "#pkReadFileBlock":
@@ -21312,7 +22007,7 @@ function dateFormatter(dateString) {
               case "#pkWriteFileBlock":
               case "#pkWriteKMBlock":
                 switch (this.m_formType) {
-                  case k.MakeNewCertificate:
+                  case K.MakeNewCertificate:
                     t = 3;
                 }
                 break;
@@ -21321,50 +22016,27 @@ function dateFormatter(dateString) {
                 break;
               case "#preSignBlock":
                 t = this.m_showSignTip ? 3 : 4;
-                isItPreSignBlock = true;
                 break;
               case "#signBlock":
                 t = this.m_showSignTip ? 4 : 3;
-                isItSignBlock = true;
                 break;
               case "#makeTechnicalCertBlock":
                 t = 3;
             }
             this.m_curStep = t;
-            this.m_maxSteps = 2;
-            console.log("this.m_curStep", this.m_curStep);
-            console.log("this.m_maxSteps", this.m_maxSteps);
             var n = s.format(p(o.LABEL_STEP), t, this.m_maxSteps);
             $("#stepLabel").text(n);
-            if (t == 3 && isItPreSignBlock) {
-              $("#preSignBackButton").click();
-            }
-            if (t == 4 && isItSignBlock) {
-              $("#signTypeCAdESRadioInput").prop("checked", true);
-              $("#signTypeCAdESSelect").val("1");
-              getFile();
-
-              $("#signFilesSelectedList").append(
-                "<li>" +
-                  this.SanitizeHTML(
-                    $("#signFilesInput").prop("files")[0].name,
-                  ) +
-                  "</li>",
-              );
-              $("#signButton").removeAttr("disabled");
-              $("#signButton").click();
-            }
           }),
           (e.prototype.SetFormsLabels = function () {
             var e = "";
             switch (this.m_formType) {
-              case k.MakeNewCertificate:
+              case K.MakeNewCertificate:
                 e = p(o.LABEL_PK_MAKE_NEW_CERTIFICATES_SUPPORTED_FILES);
                 break;
-              case k.SignFile:
-              case k.ReadPrivateKey:
-              case k.ViewPKeyCertificates:
-              case k.MakeDeviceCertificate:
+              case K.SignFile:
+              case K.ReadPrivateKey:
+              case K.ViewPKeyCertificates:
+              case K.MakeDeviceCertificate:
               default:
                 e = p(o.LABEL_PK_SUPPORTED_FILES);
             }
@@ -21390,18 +22062,16 @@ function dateFormatter(dateString) {
               .click();
           }),
           (e.prototype.GetMaxSteps = function () {
-            this.m_formType = k.SignFile;
-            console.log("this.m_formType", this.m_formType);
             switch (this.m_formType) {
-              case k.MakeNewCertificate:
+              case K.MakeNewCertificate:
                 return 3;
-              case k.SignFile:
+              case K.SignFile:
                 return 4;
-              case k.ViewPKeyCertificates:
+              case K.ViewPKeyCertificates:
                 return 2;
-              case k.MakeDeviceCertificate:
+              case K.MakeDeviceCertificate:
                 return 3;
-              case k.ReadPrivateKey:
+              case K.ReadPrivateKey:
               default:
                 return 2;
             }
@@ -21425,14 +22095,14 @@ function dateFormatter(dateString) {
               })),
               this.m_formType)
             ) {
-              case k.MakeNewCertificate:
-              case k.MakeDeviceCertificate:
+              case K.MakeNewCertificate:
+              case K.MakeDeviceCertificate:
                 n = !1;
                 break;
-              case k.SignFile:
-              case k.ReadPrivateKey:
-              case k.ViewPKeyCertificates:
-              case k.MakeDeviceCertificate:
+              case K.SignFile:
+              case K.ReadPrivateKey:
+              case K.ViewPKeyCertificates:
+              case K.MakeDeviceCertificate:
               default:
                 n =
                   r.length > 0 &&
@@ -21441,11 +22111,11 @@ function dateFormatter(dateString) {
             n
               ? $("#pkTypeKSPTabButton").show()
               : $("#pkTypeKSPTabButton").hide();
-            var o = w.None;
-            ((o = e ? w.File : t ? w.Hardware : n ? w.KSP : w.None),
-              ((!e && this.m_keyMediaType == w.File) ||
-                (!t && this.m_keyMediaType == w.Hardware) ||
-                (!n && this.m_keyMediaType == w.KSP)) &&
+            var o = F.None;
+            ((o = e ? F.File : t ? F.Hardware : n ? F.KSP : F.None),
+              ((!e && this.m_keyMediaType == F.File) ||
+                (!t && this.m_keyMediaType == F.Hardware) ||
+                (!n && this.m_keyMediaType == F.KSP)) &&
                 (this.m_keyMediaType = o),
               n && this.SetKSPs(r),
               this.m_showPKPreSelect ||
@@ -21495,28 +22165,11 @@ function dateFormatter(dateString) {
             ];
             for (n = 0; n < r.length; n++)
               $(r[n]).on("click", function (t) {
-                // ($("#pkTypesBlock")
-                //   .find("button[selected]")
-                //   .removeAttr("selected"),
-                //   $(t.currentTarget).attr("selected", ""),
-                //   e.OnChangeLibraryType());
-                console.log("isItMulti", isItMulti);
-                if (
-                  t.currentTarget.id === "pkTypeKSPTabButton" &&
-                  isItMulti === true
-                ) {
-                  let data = {};
-                  unavailableFunc = true;
-                  console.log("claude sign for multi", unavailableFunc);
-                  data.unavailableFunc = unavailableFunc;
-                  passErrorToMFiles(data);
-                } else {
-                  ($("#pkTypesBlock")
-                    .find("button[selected]")
-                    .removeAttr("selected"),
-                    $(t.currentTarget).attr("selected", ""),
-                    e.OnChangeLibraryType());
-                }
+                ($("#pkTypesBlock")
+                  .find("button[selected]")
+                  .removeAttr("selected"),
+                  $(t.currentTarget).attr("selected", ""),
+                  e.OnChangeLibraryType());
               });
             var i = $("[name = signTypesRadio]");
             for (n = 0; n < i.length; n++)
@@ -21683,8 +22336,8 @@ function dateFormatter(dateString) {
                     t.ctrlKey,
                     t.metaKey,
                     t.shiftKey,
-                    U,
-                    O,
+                    w,
+                    N,
                   ) || t.preventDefault();
                 },
               ),
@@ -21777,8 +22430,8 @@ function dateFormatter(dateString) {
           }),
           (e.prototype.GetCurrentLibrary = function () {
             return this.m_libraries[
-              this.m_keyMediaType == w.Hardware ||
-              (this.m_formType == k.MakeNewCertificate &&
+              this.m_keyMediaType == F.Hardware ||
+              (this.m_formType == K.MakeNewCertificate &&
                 this.m_noNewFileKMOnMakeNewCertificate)
                 ? i.EndUserConstants.EndUserLibraryType.SW
                 : i.EndUserConstants.EndUserLibraryType.JS
@@ -21786,25 +22439,37 @@ function dateFormatter(dateString) {
           }),
           (e.prototype.GetKMSelect = function () {
             switch (this.m_formType) {
-              case k.ReadPrivateKey:
-              case k.SignFile:
-              case k.ViewPKeyCertificates:
-              case k.MakeDeviceCertificate:
+              case K.ReadPrivateKey:
+              case K.SignFile:
+              case K.ViewPKeyCertificates:
+              case K.MakeDeviceCertificate:
                 return $("#pkReadKMSelect");
-              case k.MakeNewCertificate:
+              case K.MakeNewCertificate:
                 return null == this.m_readedPKey
                   ? $("#pkReadKMSelect")
                   : $("#pkWriteKMSelect");
             }
           }),
+          (e.prototype.GetKMSaveCheckbox = function () {
+            switch (this.m_formType) {
+              case K.ReadPrivateKey:
+              case K.SignFile:
+              case K.ViewPKeyCertificates:
+                return $("#pkReadKMSaveCheckbox");
+              case K.MakeDeviceCertificate:
+              case K.MakeNewCertificate:
+              default:
+                return null;
+            }
+          }),
           (e.prototype.GetKMUserTextField = function () {
             switch (this.m_formType) {
-              case k.ReadPrivateKey:
-              case k.SignFile:
-              case k.ViewPKeyCertificates:
-              case k.MakeDeviceCertificate:
+              case K.ReadPrivateKey:
+              case K.SignFile:
+              case K.ViewPKeyCertificates:
+              case K.MakeDeviceCertificate:
                 return $("#pkReadKMUserTextField");
-              case k.MakeNewCertificate:
+              case K.MakeNewCertificate:
                 return null == this.m_readedPKey
                   ? $("#pkReadKMUserTextField")
                   : $("#pkWriteKMUserTextField");
@@ -21812,12 +22477,12 @@ function dateFormatter(dateString) {
           }),
           (e.prototype.GetKMUserBlock = function () {
             switch (this.m_formType) {
-              case k.ReadPrivateKey:
-              case k.SignFile:
-              case k.ViewPKeyCertificates:
-              case k.MakeDeviceCertificate:
+              case K.ReadPrivateKey:
+              case K.SignFile:
+              case K.ViewPKeyCertificates:
+              case K.MakeDeviceCertificate:
                 return $("#pkReadKMUserBlock");
-              case k.MakeNewCertificate:
+              case K.MakeNewCertificate:
                 return null == this.m_readedPKey
                   ? $("#pkReadKMUserBlock")
                   : $("#pkWriteKMUserBlock");
@@ -21825,12 +22490,12 @@ function dateFormatter(dateString) {
           }),
           (e.prototype.GetKMPasswordTextField = function () {
             switch (this.m_formType) {
-              case k.ReadPrivateKey:
-              case k.SignFile:
-              case k.ViewPKeyCertificates:
-              case k.MakeDeviceCertificate:
+              case K.ReadPrivateKey:
+              case K.SignFile:
+              case K.ViewPKeyCertificates:
+              case K.MakeDeviceCertificate:
                 return $("#pkReadKMPasswordTextField");
-              case k.MakeNewCertificate:
+              case K.MakeNewCertificate:
                 return null == this.m_readedPKey
                   ? $("#pkReadKMPasswordTextField")
                   : $("#pkWriteKMPasswordTextField");
@@ -21838,12 +22503,12 @@ function dateFormatter(dateString) {
           }),
           (e.prototype.GetKMPasswordConfirmTextField = function () {
             switch (this.m_formType) {
-              case k.ReadPrivateKey:
-              case k.SignFile:
-              case k.ViewPKeyCertificates:
-              case k.MakeDeviceCertificate:
+              case K.ReadPrivateKey:
+              case K.SignFile:
+              case K.ViewPKeyCertificates:
+              case K.MakeDeviceCertificate:
                 return null;
-              case k.MakeNewCertificate:
+              case K.MakeNewCertificate:
                 return null == this.m_readedPKey
                   ? null
                   : $("#pkWriteKMPasswordConfirmTextField");
@@ -21851,12 +22516,12 @@ function dateFormatter(dateString) {
           }),
           (e.prototype.GetKMCertsBlock = function () {
             switch (this.m_formType) {
-              case k.ReadPrivateKey:
-              case k.SignFile:
-              case k.ViewPKeyCertificates:
-              case k.MakeDeviceCertificate:
+              case K.ReadPrivateKey:
+              case K.SignFile:
+              case K.ViewPKeyCertificates:
+              case K.MakeDeviceCertificate:
                 return $("#pkReadKMCertsBlock");
-              case k.MakeNewCertificate:
+              case K.MakeNewCertificate:
                 return null == this.m_readedPKey
                   ? $("#pkReadKMCertsBlock")
                   : null;
@@ -21864,12 +22529,12 @@ function dateFormatter(dateString) {
           }),
           (e.prototype.GetKMButton = function () {
             switch (this.m_formType) {
-              case k.ReadPrivateKey:
-              case k.SignFile:
-              case k.ViewPKeyCertificates:
-              case k.MakeDeviceCertificate:
+              case K.ReadPrivateKey:
+              case K.SignFile:
+              case K.ViewPKeyCertificates:
+              case K.MakeDeviceCertificate:
                 return $("#pkReadKMButton");
-              case k.MakeNewCertificate:
+              case K.MakeNewCertificate:
                 return null == this.m_readedPKey
                   ? $("#pkReadKMButton")
                   : $("#pkWriteKMButton");
@@ -22047,7 +22712,7 @@ function dateFormatter(dateString) {
             }
           }),
           (e.prototype.GetSignFileParameters = function (e) {
-            var t = new B(e);
+            var t = new W(e);
             if (
               e &&
               this.m_signContainerType !=
@@ -22134,7 +22799,14 @@ function dateFormatter(dateString) {
                 i.infoEx.subjUNZR ||
                 i.infoEx.subjEDRPOUCode
                   ? $("#pkInfoSubjCodesBlock").show()
-                  : $("#pkInfoSubjCodesBlock").hide());
+                  : $("#pkInfoSubjCodesBlock").hide(),
+                t.IsForeignOrgCodeInCert(i.infoEx.issuerCN) &&
+                i.infoEx.subjOCode &&
+                i.infoEx.subjUserCode
+                  ? (o("#pkInfoSubjOCode", i.infoEx.subjOCode),
+                    o("#pkInfoSubjUserCode", i.infoEx.subjUserCode),
+                    $("#pkInfoSubjForeignOrgCodesBlock").show())
+                  : $("#pkInfoSubjForeignOrgCodesBlock").hide());
               for (var s = [], a = 0; a < r.length; a++) {
                 var u = t.MakeKeyUsageWithPublicKeyType(
                   r[a].infoEx.keyUsageType,
@@ -22202,7 +22874,7 @@ function dateFormatter(dateString) {
             return !1;
           }),
           (e.prototype.GetQSCD = function (e) {
-            var t = new L();
+            var t = new H();
             if (((t.use = e.isQSCD), t.use)) {
               for (var n = e.extKeyUsages.split(","), r = 0; r < n.length; r++)
                 if (n[r].indexOf("ЗНКІ") > -1) {
@@ -22237,11 +22909,10 @@ function dateFormatter(dateString) {
                       return r.SaveFile(t, e.data);
                     })
                     .then(function () {
-                      // var e = s.format(
-                      //   p('Файл {0} збережено до директорії "Завантаження"'),
-                      //   t,
-                      // );
-                      var e = s.format(p(""), t);
+                      var e = s.format(
+                        p('Файл {0} збережено до директорії "Завантаження"'),
+                        t,
+                      );
                       r.SetStatus(e);
                     })
                     .catch(function (e) {
@@ -22257,6 +22928,160 @@ function dateFormatter(dateString) {
                 );
               }));
           }),
+          (e.prototype.RemovePrivateKeyFromStorage = function (e) {
+            this.m_keysStorage.remove(e);
+          }),
+          (e.prototype.LoadPrivateKeyFromStorage = function (e) {
+            var t = this,
+              n = {
+                keyMediaType: F.None,
+                item: null,
+              };
+            return (
+              t.ShowDimmerView(p(o.PROCESS_STATUS_READ_PRIVATE_KEY)),
+              t.StopUpdateKMs(),
+              new Promise(function (r, i) {
+                t.ChangeLibraryType(t.m_keyMediaType)
+                  .then(function () {
+                    return t.m_keysStorage.get(
+                      t.GetCurrentLibrary().GetLibrary(),
+                      e,
+                    );
+                  })
+                  .then(function (e) {
+                    return (
+                      (n.item = e),
+                      e.pkData
+                        ? (n.keyMediaType = F.File)
+                        : e.keyMedia
+                          ? (n.keyMediaType = F.Hardware)
+                          : e.kspKey && (n.keyMediaType = F.KSP),
+                      t.ChangeLibraryType(n.keyMediaType)
+                    );
+                  })
+                  .then(function () {
+                    return (
+                      t.ShowDimmerView(p(o.PROCESS_STATUS_READ_PRIVATE_KEY)),
+                      n.keyMediaType != F.Hardware
+                        ? null
+                        : t.GetCurrentLibrary().GetLibrary().GetKeyMedias()
+                    );
+                  })
+                  .then(function (e) {
+                    if ((t.StopUpdateKMs(), n.keyMediaType == F.Hardware)) {
+                      for (var r = null, i = 0; i < e.length; i++)
+                        if (
+                          e[i].type == n.item.keyMedia.type &&
+                          e[i].device == n.item.keyMedia.device
+                        ) {
+                          r = e[i];
+                          break;
+                        }
+                      if (!r)
+                        throw s.format(
+                          p(o.ERROR_KM_NOT_CONNECTED),
+                          n.item.keyMedia.visibleName,
+                        );
+                    }
+                    return n.item.pkAlias
+                      ? t
+                          .GetCurrentLibrary()
+                          .GetLibrary()
+                          .GetJKSPrivateKeys(n.item.pkData)
+                      : null;
+                  })
+                  .then(function (e) {
+                    var r = n.item.pkData;
+                    if (n.item.pkAlias)
+                      for (var i = 0; i < e.length; i++)
+                        if (e[i].alias == n.item.pkAlias) {
+                          r = e[i].privateKey;
+                          break;
+                        }
+                    var o = t.GetCurrentLibrary();
+                    switch (n.keyMediaType) {
+                      case F.File:
+                        return o
+                          .GetLibrary()
+                          .ReadPrivateKeyBinary(
+                            r,
+                            n.item.pkPassword,
+                            n.item.certificates,
+                            null,
+                          );
+                      case F.Hardware:
+                        return o
+                          .GetLibrary()
+                          .ReadPrivateKey(
+                            n.item.keyMedia,
+                            n.item.certificates,
+                            null,
+                          );
+                      case F.KSP:
+                        return o
+                          .GetLibrary()
+                          .ReadPrivateKeyKSP(
+                            n.item.kspKey.userId,
+                            n.item.kspKey.GetKSPId(),
+                            !1,
+                            n.item.kspKey.keyId,
+                            null,
+                            null,
+                            n.item.certificates,
+                          );
+                    }
+                  })
+                  .then(function (e) {
+                    return (
+                      t.SetSelectedCA(e.issuerCN),
+                      t.GetCurrentLibrary().GetLibrary().GetOwnCertificates()
+                    );
+                  })
+                  .then(function (e) {
+                    var i = new Y();
+                    ((i.keyMedia = n.item.keyMedia),
+                      (i.certificates = n.item.certificates),
+                      (i.file = n.item.pkData
+                        ? new B("", n.item.pkData)
+                        : null),
+                      (i.password = n.item.pkPassword),
+                      (i.alias = n.item.pkAlias),
+                      (i.kspKey = n.item.kspKey),
+                      (i.certificatesInfo = e),
+                      t.SetViewPKeyInfo(i),
+                      t.OnPKeyReaded(i),
+                      t.CloseDimmerView(),
+                      r());
+                  })
+                  .catch(function (n) {
+                    (t.m_keysStorage.remove(e),
+                      t.BeginUpdateKMs(),
+                      t.CloseDimmerView(),
+                      t.SetError(n),
+                      i(n));
+                  });
+              })
+            );
+          }),
+          (e.prototype.SavePrivateKeyToStorage = function (e) {
+            if (this.m_keysStorage && !(e.certificatesInfo.length < 1)) {
+              var t = new b(
+                e.certificatesInfo[0].infoEx.publicKeyID,
+                e.keyMedia,
+                e.file ? e.file.data : null,
+                e.password,
+                e.alias,
+                e.kspKey,
+                e.certificatesInfo.map(function (e) {
+                  return e.data;
+                }),
+              );
+              this.m_keysStorage
+                .add(this.GetCurrentLibrary().GetLibrary(), t)
+                .then(function () {})
+                .catch(function (e) {});
+            }
+          }),
           (e.prototype.SetSignFileResult = function (e, t, n, r, i, s, a, u) {
             console.log("SetSignFileResult work");
             var l = this,
@@ -22264,7 +23089,7 @@ function dateFormatter(dateString) {
               _ = $('<div class="SignResult">'),
               f = new C();
             if (f.parse(l.m_signInfoTmpl)) {
-              for (var E = new M((n = n), t), h = [], y = 0; y < r.length; y++)
+              for (var E = new B((n = n), t), h = [], y = 0; y < r.length; y++)
                 h.push({
                   signTimeInfo: r[y].timeInfo,
                   // signerInfo: i[y].infoEx,
@@ -22282,14 +23107,14 @@ function dateFormatter(dateString) {
                 },
                 A = l.makeSignReportData(T),
                 R = A.report,
-                g = new m(R.fileName, f.tmpl, A),
-                P = g.makeDocument(S.Pdf, d.Binary);
+                reportGenerator = new g(R.fileName, f.tmpl, A),
+                P = reportGenerator.makeDocument(S.Pdf, d.Binary);
               // A.report.saveReportFileButton =
               //   A.report.saveReportFileButton.replace(
               //     "__validation__report__size__",
-              //     m.formatFileSize(P.length),
+              //     g.formatFileSize(P.length),
               //   );
-              var v = g.makeDocument(S.Html, d.String),
+              var v = reportGenerator.makeDocument(S.Html, d.String),
                 I = function () {
                   return new Promise(function (e, t) {
                     e(E);
@@ -22297,7 +23122,7 @@ function dateFormatter(dateString) {
                 },
                 U = function () {
                   return new Promise(function (e, t) {
-                    e(new M(R.fileName, P));
+                    e(new B(R.fileName, P));
                   });
                 };
               ($(_).append(v),
@@ -22334,7 +23159,7 @@ function dateFormatter(dateString) {
                 l.isSafariBrowser()
                   ? ($("#saveReportFileButton").off("click"),
                     $("#saveReportFileButton").click(function () {
-                      g.makeDocument(S.Pdf, d.File);
+                      reportGenerator.makeDocument(S.Pdf, d.File);
                     }))
                   : l.addSaveFileButton("#saveReportFileButton", R.fileName, U),
                 l.addSaveFileButton(
@@ -22356,7 +23181,7 @@ function dateFormatter(dateString) {
                             //         l.removeFileExtension(e.name) +
                             //         ".orig." +
                             //         l.getFileExtension(e.name);
-                            //       e = new M(r, e.data, e.file);
+                            //       e = new B(r, e.data, e.file);
                             //       break;
                             //     }
                             //   n.push(e);
@@ -22381,7 +23206,7 @@ function dateFormatter(dateString) {
                                 ) {
                                   originalName =
                                     originalName + "." + mfFileInfo.extension;
-                                  e = new M(originalName, e.data, e.file);
+                                  e = new B(originalName, e.data, e.file);
                                 }
 
                                 for (var t = 0; t < n.length; t++)
@@ -22390,7 +23215,7 @@ function dateFormatter(dateString) {
                                       l.removeFileExtension(e.name) +
                                       ".orig." +
                                       l.getFileExtension(e.name);
-                                    e = new M(r, e.data, e.file);
+                                    e = new B(r, e.data, e.file);
                                     break;
                                   }
 
@@ -22520,6 +23345,11 @@ function dateFormatter(dateString) {
                   $("#pkReadFileSelectCertsSelectedList").empty(),
                   $("#pkReadFilePasswordTextField").prop("disabled", !0),
                   $("#pkReadFileCertsBlock").hide(),
+                  this.m_keysStorage
+                    ? $("#pkReadFileSaveBlock").show()
+                    : $("#pkReadFileSaveBlock").hide(),
+                  $("#pkReadFileSaveCheckbox").prop("checked", !1),
+                  $("#pkReadFileSaveCheckbox").prop("disabled", !0),
                   $("#pkReadFileButton").attr("disabled", !0),
                   $("#pkReadFileSelectAliasBlock").hide());
                 break;
@@ -22535,6 +23365,11 @@ function dateFormatter(dateString) {
                   $("#pkReadKMSelectCertsSelectedList").empty(),
                   $("#pkReadKMUserBlock").hide(),
                   $("#pkReadKMCertsBlock").hide(),
+                  this.m_keysStorage
+                    ? $("#pkReadKMSaveBlock").show()
+                    : $("#pkReadKMSaveBlock").hide(),
+                  $("#pkReadKMSaveCheckbox").prop("checked", !1),
+                  $("#pkReadKMSaveCheckbox").prop("disabled", !0),
                   this.m_KMs
                     ? this.SetKMs(this.m_KMs)
                     : ($("#pkReadKMUserTextField").prop("disabled", !0),
@@ -22547,6 +23382,11 @@ function dateFormatter(dateString) {
                 ),
                   $("#pkReadKSPUserIdTextField").val(""),
                   $("#pkReadKSPUserIdTextField").change(),
+                  this.m_keysStorage
+                    ? $("#pkReadKSPSaveBlock").show()
+                    : $("#pkReadKSPSaveBlock").hide(),
+                  $("#pkReadKSPSaveCheckbox").prop("checked", !1),
+                  $("#pkReadKSPSaveCheckbox").prop("disabled", !0),
                   $("#pkReadKSPButton").attr("disabled", !0),
                   this.OnReadKSPSelectChange());
                 break;
@@ -22694,7 +23534,7 @@ function dateFormatter(dateString) {
                   $("#pkBlock").show(),
                   $("#pkCABloсk").show(),
                   (this.m_isPKActionDone = !1),
-                  this.m_formType == k.MakeNewCertificate &&
+                  this.m_formType == K.MakeNewCertificate &&
                   this.m_noNewFileKMOnMakeNewCertificate
                     ? $("#proxyButtonBlock").show()
                     : $("#proxyButtonBlock").hide());
@@ -22753,7 +23593,7 @@ function dateFormatter(dateString) {
                   $("#subTitleLabel").hide(),
                   $("#stepBlock").show());
                 var i =
-                  this.m_formType != k.MakeNewCertificate ||
+                  this.m_formType != K.MakeNewCertificate ||
                   !this.m_noNewKMOnMakeNewCertificate ||
                   null == this.m_readedPKey.keyMedia;
                 (i && !this.m_noNewFileKMOnMakeNewCertificate
@@ -22765,12 +23605,12 @@ function dateFormatter(dateString) {
                     ($("#pkWriteKMUserBlock").hide(),
                     $("#pkWriteKMSelectBlock").hide()),
                   (this.m_isPKActionDone = !1),
-                  this.m_formType != k.MakeNewCertificate
+                  this.m_formType != K.MakeNewCertificate
                     ? $("#proxyButtonBlock").show()
                     : $("#proxyButtonBlock").hide());
                 break;
               case "#pkInfoBlock":
-                (this.m_formType != k.ViewPKeyCertificates
+                (this.m_formType != K.ViewPKeyCertificates
                   ? $("#pkInfoNextButton").show()
                   : $("#pkInfoNextButton").hide(),
                   $("#titleBlock").show(),
@@ -22805,19 +23645,6 @@ function dateFormatter(dateString) {
                   $("#pkBlock").hide());
                 break;
               case "#resultBlock":
-                if (isItStamp) {
-                  isItMulti
-                    ? $("#titleLabel").text(
-                        "👍 Печатку на всі документи успішно накладено",
-                      )
-                    : $("#titleLabel").text("👍 Печатку накладено");
-                } else {
-                  isItMulti
-                    ? $("#titleLabel").text(
-                        "👍 Всі документи успішно підписано",
-                      )
-                    : $("#titleLabel").text("👍 Документ підписано");
-                }
                 ($("#titleLabel").is(":visible")
                   ? ($("#titleBlock").show(), $("#subTitleLabel").show())
                   : ($("#titleBlock").hide(), $("#subTitleLabel").hide()),
@@ -22849,11 +23676,12 @@ function dateFormatter(dateString) {
                     "disabled",
                     t || !n,
                   ),
+                  $("#pkReadFileSaveCheckbox").prop("disabled", t || !n),
                   $("#pkReadFileButton").attr("disabled", !n),
                   $("#pkReadFileButton").text(
                     p(t ? o.BUTTON_CLEAR : o.BUTTON_READ),
                   ),
-                  this.m_formType == k.MakeNewCertificate &&
+                  this.m_formType == K.MakeNewCertificate &&
                     (t
                       ? $("#pkReadFileButton").hide()
                       : $("#pkReadFileButton").show()));
@@ -22871,11 +23699,12 @@ function dateFormatter(dateString) {
                     "disabled",
                     t || !n,
                   ),
+                  $("#pkReadKMSaveCheckbox").prop("disabled", t || !n),
                   $("#pkReadKMButton").attr("disabled", !n),
                   $("#pkReadKMButton").text(
                     p(t ? o.BUTTON_CLEAR : o.BUTTON_READ),
                   ),
-                  this.m_formType == k.MakeNewCertificate &&
+                  this.m_formType == K.MakeNewCertificate &&
                     (t
                       ? $("#pkReadKMButton").hide()
                       : $("#pkReadKMButton").show()));
@@ -22885,9 +23714,10 @@ function dateFormatter(dateString) {
                   $("#pkReadKSPSelect").prop("disabled", t),
                   $("#pkReadKSPUserIdTextField").prop("disabled", t));
                 n = "" != $("#pkReadKSPUserIdTextField").val();
-                $("#pkReadKSPButton").text(
-                  p(t ? o.BUTTON_CLEAR : o.BUTTON_READ),
-                );
+                ($("#pkReadKSPSaveCheckbox").prop("disabled", t),
+                  $("#pkReadKSPButton").text(
+                    p(t ? o.BUTTON_CLEAR : o.BUTTON_READ),
+                  ));
                 break;
               case "#pkWriteFileBlock":
                 ($("#pkTypesBlock").find(".TabButton").prop("disabled", t),
@@ -22906,7 +23736,7 @@ function dateFormatter(dateString) {
                   $("#pkCASelect").prop("disabled", t));
                 n =
                   "" != $("#pkWriteKMSelect").find(":selected").text() ||
-                  (this.m_formType == k.MakeNewCertificate &&
+                  (this.m_formType == K.MakeNewCertificate &&
                     this.m_noNewKMOnMakeNewCertificate &&
                     !this.m_noNewFileKMOnMakeNewCertificate &&
                     null == this.m_readedPKey.keyMedia);
@@ -22958,43 +23788,16 @@ function dateFormatter(dateString) {
               this.SetStatus(n, !0));
           }),
           (e.prototype.SetResult = function (e, t) {
-            // (void 0 === e && (e = null),
-            //   void 0 === t && (t = null),
-            //   $("#resultContentBlock").empty(),
-            //   $("#resultContentBlock").append(e),
-            //   null != t
-            //     ? ($("#resultOKButton").off(),
-            //       $("#resultOKButton").on("click", t.handle),
-            //       $("#resultOKButton").text(t.title),
-            //       $("#resultButtonsBlock").show())
-            //     : $("#resultButtonsBlock").hide());
-            void 0 === e && (e = null);
-            void 0 === t && (t = null);
-            $("#resultContentBlock").empty();
-
-            if (e) {
-              if (typeof e === "string") {
-                const cleanedHtml = e.replace(/\[object Object\]/g, "");
-                $("#resultContentBlock").append(cleanedHtml);
-              } else {
-                const $root = $(e).clone(true, true);
-                $root
-                  .find("div")
-                  .filter(function () {
-                    return $(this).text().trim() === "[object Object]";
-                  })
-                  .remove();
-                $("#resultContentBlock").append($root);
-              }
-            }
-            if (null != t) {
-              $("#resultOKButton").off();
-              $("#resultOKButton").on("click", t.handle);
-              $("#resultOKButton").text(t.title);
-              $("#resultButtonsBlock").show();
-            } else {
-              $("#resultButtonsBlock").hide();
-            }
+            (void 0 === e && (e = null),
+              void 0 === t && (t = null),
+              $("#resultContentBlock").empty(),
+              $("#resultContentBlock").append(e),
+              null != t
+                ? ($("#resultOKButton").off(),
+                  $("#resultOKButton").on("click", t.handle),
+                  $("#resultOKButton").text(t.title),
+                  $("#resultButtonsBlock").show())
+                : $("#resultButtonsBlock").hide());
           }),
           (e.prototype.GetURLParameter = function (e, t, n) {
             if (!e) return n;
@@ -23059,7 +23862,7 @@ function dateFormatter(dateString) {
               var r = new FileReader();
               ((r.onloadend = function (n) {
                 if (n.target.readyState == FileReader.DONE) {
-                  var r = new M(e.name, new Uint8Array(n.target.result), e);
+                  var r = new B(e.name, new Uint8Array(n.target.result), e);
                   t(r);
                 }
               }),
@@ -23091,8 +23894,7 @@ function dateFormatter(dateString) {
             var n = new Blob([t], {
               type: "application/octet-stream",
             });
-            // func for saving result of signing at download folder
-            // saveAs(n, e);
+            saveAs(n, e);
           }),
           (e.prototype.SetKSPs = function (e) {
             var t = $("#pkReadKSPSelect");
@@ -23113,11 +23915,11 @@ function dateFormatter(dateString) {
             if (
               null == this.m_CAs ||
               this.m_CAs.length < 2 ||
-              this.m_keyMediaType == w.KSP ||
-              this.m_keyMediaType == w.DIIA_UA ||
-              this.m_keyMediaType == w.DIIA_EU ||
-              this.m_formType == k.MakeNewCertificate ||
-              this.m_formType == k.MakeDeviceCertificate ||
+              this.m_keyMediaType == F.KSP ||
+              this.m_keyMediaType == F.DIIA_UA ||
+              this.m_keyMediaType == F.DIIA_EU ||
+              this.m_formType == K.MakeNewCertificate ||
+              this.m_formType == K.MakeDeviceCertificate ||
               this.m_ownCAOnly
             )
               $("#pkCABloсk").hide();
@@ -23141,8 +23943,8 @@ function dateFormatter(dateString) {
             if (null == this.m_CAs || 0 == this.m_CAs.length) return null;
             if (
               1 == this.m_CAs.length ||
-              this.m_formType == k.MakeNewCertificate ||
-              this.m_formType == k.MakeDeviceCertificate ||
+              this.m_formType == K.MakeNewCertificate ||
+              this.m_formType == K.MakeDeviceCertificate ||
               this.m_ownCAOnly
             )
               return this.m_CAs[0];
@@ -23179,7 +23981,7 @@ function dateFormatter(dateString) {
             );
           }),
           (e.prototype.IsKMMultiKeyDevice = function (e) {
-            return b.indexOf(e.type) > -1;
+            return G.indexOf(e.type) > -1;
           }),
           (e.prototype.IsKMConnected = function (e, t) {
             for (var n = 0; n < t.length; n++) {
@@ -23217,7 +24019,7 @@ function dateFormatter(dateString) {
                         (e.WriteLog("KeyMedias: " + t),
                         (e.m_updatingKM = !1),
                         e.m_updateKM) &&
-                          (e.m_formType == k.MakeNewCertificate &&
+                          (e.m_formType == K.MakeNewCertificate &&
                             null != e.m_readedPKey &&
                             null != e.m_readedPKey.keyMedia &&
                             e.m_noNewKMOnMakeNewCertificate &&
@@ -23357,7 +24159,7 @@ function dateFormatter(dateString) {
               a = $("<div>");
             a.css("padding", "10px");
             var u = $("<a>");
-            (u.attr("href", e), u.attr("target", "_blank"));
+            (u.attr("href", encodeURI(e)), u.attr("target", "_blank"));
             var l = new Image();
             ((l.src = "data:image/bmp;base64," + t),
               $(l).css("padding", "10px"),
@@ -23393,6 +24195,14 @@ function dateFormatter(dateString) {
               $("#dimmerViewQRCodeBlock").empty(),
               $("#dimmerViewQRCodeBlock").hide());
           }),
+          (e.prototype.IsForeignOrgCodeInCert = function (e) {
+            for (var t = 0; t < this.m_CAs.length; t++) {
+              var n = this.m_CAs[t];
+              if (n.foreignOrgCodeInCert && n.issuerCNs.indexOf(e) > -1)
+                return !0;
+            }
+            return !1;
+          }),
           (e.prototype.IsDigitalStamp = function (e) {
             for (var t = 0; t < e.length; t++) {
               var n = e[t].infoEx;
@@ -23409,16 +24219,18 @@ function dateFormatter(dateString) {
                   ) < 0 && n.extKeyUsages.indexOf("Цифрова печатка") < 0
                 );
             }
+            return !1;
           }),
           (e.prototype.GetSignAlgo = function (e) {
             switch (e) {
               case i.EndUserConstants.EndUserSignAlgo.DSTU4145WithGOST34311:
+                return p(o.TEXT_SIGN_ALGO_DSTU4145_WITH_GOST34311);
               case i.EndUserConstants.EndUserSignAlgo.DSTU4145WithDSTU7564:
-                return p(o.TEXT_SIGN_ALGO_DSTU4145);
+                return p(o.TEXT_SIGN_ALGO_DSTU4145_WITH_DSTU7564);
               case i.EndUserConstants.EndUserSignAlgo.RSAWithSHA:
-                return p(o.TEXT_SIGN_ALGO_RSA);
+                return p(o.TEXT_SIGN_ALGO_RSA_WITH_SHA2);
               case i.EndUserConstants.EndUserSignAlgo.ECDSAWithSHA:
-                return p(o.TEXT_SIGN_ALGO_ECDSA);
+                return p(o.TEXT_SIGN_ALGO_ECDSA_WITH_SHA2);
               default:
                 return "";
             }
@@ -23437,17 +24249,17 @@ function dateFormatter(dateString) {
           }),
           (e.prototype.GetSignFileExt = function (e, t) {
             switch (t) {
-              case N.CAdES:
+              case L.CAdES:
                 return ".p7s";
-              case N.ASiCS:
+              case L.ASiCS:
                 return ".asics";
-              case N.ASiCE:
+              case L.ASiCE:
                 return e.endsWith(".asice") || e.endsWith(".sce")
                   ? ""
                   : ".asice";
-              case N.PAdES:
+              case L.PAdES:
                 return "";
-              case N.XAdES:
+              case L.XAdES:
                 return e.endsWith(".xml") ? "" : ".xml";
               default:
                 return "";
@@ -23566,18 +24378,19 @@ function dateFormatter(dateString) {
                 return p("Не визначено");
             }
           }),
-          (e.prototype.PublicKeyTypeToSignAlgo = function (e, t) {
+          (e.prototype.PublicKeyTypeToSignAlgos = function (e) {
             switch (e) {
               case i.EndUserConstants.EndUserCertKeyType.DSTU4145:
-                return t == i.EndUserConstants.EndUserCertHashType.GOST34311
-                  ? i.EndUserConstants.EndUserSignAlgo.DSTU4145WithGOST34311
-                  : i.EndUserConstants.EndUserSignAlgo.DSTU4145WithDSTU7564;
+                return [
+                  i.EndUserConstants.EndUserSignAlgo.DSTU4145WithDSTU7564,
+                  i.EndUserConstants.EndUserSignAlgo.DSTU4145WithGOST34311,
+                ];
               case i.EndUserConstants.EndUserCertKeyType.RSA:
-                return i.EndUserConstants.EndUserSignAlgo.RSAWithSHA;
+                return [i.EndUserConstants.EndUserSignAlgo.RSAWithSHA];
               case i.EndUserConstants.EndUserCertKeyType.ECDSA:
-                return i.EndUserConstants.EndUserSignAlgo.ECDSAWithSHA;
+                return [i.EndUserConstants.EndUserSignAlgo.ECDSAWithSHA];
               default:
-                return i.EndUserConstants.EndUserSignAlgo.Unknown;
+                return [];
             }
           }),
           (e.prototype.SignAlgoToPublicKeyType = function (e) {
@@ -23665,40 +24478,45 @@ function dateFormatter(dateString) {
           }),
           (e.prototype.GetSupportedSignAlgos = function (e) {
             for (
-              var t = e.certificatesInfo, n = 0, r = [], o = 0;
-              o < t.length;
-              o++
-            ) {
-              var s = t[o].infoEx;
-              ((s.keyUsageType &
-                i.EndUserConstants.EndUserKeyUsage.DigitalSignature) !=
-                i.EndUserConstants.EndUserKeyUsage.DigitalSignature &&
-                (s.keyUsageType &
-                  i.EndUserConstants.EndUserKeyUsage.NonRepudation) !=
-                  i.EndUserConstants.EndUserKeyUsage.NonRepudation) ||
-                ((n = this.PublicKeyTypeToSignAlgo(
-                  s.publicKeyType,
-                  s.certHashType,
-                )),
-                r.push({
-                  value: n,
-                  text: this.GetSignAlgo(n),
-                }));
-            }
-            if (null != e.kspKey) {
-              var a = this.GetKSPSettigs(e.kspKey.kspName).signAlgos || [],
-                u = function (e, t) {
-                  for (var n = 0; n < t.length; n++)
-                    if (e == t[n].value) return !0;
-                  return !1;
-                };
-              for (o = 0; o < a.length; o++)
-                u((n = a[o]), r) ||
-                  r.push({
-                    value: n,
-                    text: this.GetSignAlgo(n),
-                  });
-            }
+              var t = this,
+                n = e.certificatesInfo,
+                r = new Array(),
+                o = function (o) {
+                  var s = n[o].infoEx;
+                  if (
+                    (s.keyUsageType &
+                      i.EndUserConstants.EndUserKeyUsage.DigitalSignature) !=
+                      i.EndUserConstants.EndUserKeyUsage.DigitalSignature &&
+                    (s.keyUsageType &
+                      i.EndUserConstants.EndUserKeyUsage.NonRepudation) !=
+                      i.EndUserConstants.EndUserKeyUsage.NonRepudation
+                  )
+                    return "continue";
+                  var a = t.PublicKeyTypeToSignAlgos(s.publicKeyType);
+                  if (e.kspKey) {
+                    var u = t.GetKSPSettigs(e.kspKey.kspName).signAlgos || [
+                      i.EndUserConstants.EndUserSignAlgo.DSTU4145WithGOST34311,
+                    ];
+                    a.forEach(function (e) {
+                      u.indexOf(e) >= 0 &&
+                        r.push({
+                          value: e,
+                          text: t.GetSignAlgo(e),
+                        });
+                    });
+                  } else
+                    a.forEach(function (e) {
+                      r.push({
+                        value: e,
+                        text: t.GetSignAlgo(e),
+                      });
+                    });
+                },
+                s = 0;
+              s < n.length;
+              s++
+            )
+              o(s);
             return r;
           }),
           (e.prototype.GetSupportedEnvelopAlgos = function (e) {
@@ -23731,7 +24549,7 @@ function dateFormatter(dateString) {
           }),
           (e.prototype.GetStatisticsSignContainerType = function (e, t, n, r) {
             switch (e) {
-              case N.XAdES:
+              case L.XAdES:
                 switch (n) {
                   case i.EndUserConstants.EndUserXAdESType.Detached:
                     return E.XAdESDetached;
@@ -23743,9 +24561,9 @@ function dateFormatter(dateString) {
                     return E.Unknown;
                 }
                 break;
-              case N.PAdES:
+              case L.PAdES:
                 return E.PAdES;
-              case N.CAdES:
+              case L.CAdES:
                 switch (t) {
                   case i.EndUserConstants.EndUserCAdESType.Detached:
                     return E.CAdESDetached;
@@ -23755,7 +24573,7 @@ function dateFormatter(dateString) {
                     return E.Unknown;
                 }
                 break;
-              case N.ASiCS:
+              case L.ASiCS:
                 switch (r) {
                   case i.EndUserConstants.EndUserASiCSignType.CAdES:
                     return E.ASiCSCAdES;
@@ -23765,7 +24583,7 @@ function dateFormatter(dateString) {
                     return E.Unknown;
                 }
                 break;
-              case N.ASiCE:
+              case L.ASiCE:
                 switch (r) {
                   case i.EndUserConstants.EndUserASiCSignType.CAdES:
                     return E.ASiCECAdES;
@@ -23777,39 +24595,40 @@ function dateFormatter(dateString) {
             }
           }),
           (e.prototype.OnPKeyReaded = function (e) {
+            var t;
             switch (
               ((this.m_readedPKey = e),
               this.ShowForm(null, !0),
               this.SetStatus(p(o.STATUS_PRIVATE_KEY_READED)),
               this.m_formType)
             ) {
-              case k.MakeNewCertificate:
+              case K.MakeNewCertificate:
                 ((this.m_isPKActionDone = !1), this.BeginUpdateKMs());
                 break;
-              case k.ReadPrivateKey:
+              case K.ReadPrivateKey:
                 this.m_isPKActionDone = !0;
                 break;
-              case k.ViewPKeyCertificates:
+              case K.ViewPKeyCertificates:
                 ((this.m_isPKActionDone = !0), this.SetViewPKeyInfo(e));
                 break;
-              case k.SignFile:
+              case K.SignFile:
                 this.m_isPKActionDone = !0;
-                var t = this.GetSupportedSignAlgos(e);
-                if (0 == t.length) {
-                  var n = s.format(
+                var n = this.GetSupportedSignAlgos(e);
+                if (0 == n.length) {
+                  var r = s.format(
                     p(o.ERROR_PRIVATE_KEY_INVALID_TYPE_OR_ALGO),
                     p(o.TEXT_KEY_USAGE_SIGN),
                     "",
                   );
-                  return void this.SetError(n);
+                  return void this.SetError(r);
                 }
-                var r = $("#signAlgoSelect");
-                (r.empty(),
-                  $.each(t, function (e, n) {
-                    r.append(
+                var i = $("#signAlgoSelect");
+                (i.empty(),
+                  $.each(n, function (e, t) {
+                    i.append(
                       $("<option/>", {
-                        value: t[e].value,
-                        text: t[e].text,
+                        value: n[e].value,
+                        text: n[e].text,
                       }),
                     );
                   }),
@@ -23818,9 +24637,19 @@ function dateFormatter(dateString) {
                     !1,
                   ));
                 break;
-              case k.MakeDeviceCertificate:
+              case K.MakeDeviceCertificate:
                 this.m_isPKActionDone = !1;
             }
+            this.m_keysStorage &&
+              (t = e.file
+                ? $("#pkReadFileSaveCheckbox")
+                : e.keyMedia
+                  ? $("#pkReadKMSaveCheckbox")
+                  : e.kspKey
+                    ? $("#pkReadKSPSaveCheckbox")
+                    : null) &&
+              t.prop("checked") &&
+              this.SavePrivateKeyToStorage(e);
           }),
           (e.prototype.PostMessage = function (e, t, n, r) {
             var o = null;
@@ -23860,7 +24689,7 @@ function dateFormatter(dateString) {
                 void 0 !== e.data.cmd &&
                 "EndUserSignWidgetConnector" == e.data.sender &&
                 "EndUserSignWidget" == e.data.reciever &&
-                -1 != D.indexOf(e.data.cmd))
+                -1 != M.indexOf(e.data.cmd))
             ) {
               (t.WriteLog("Event data"),
                 t.WriteLog("id:" + e.data.id),
@@ -23881,132 +24710,152 @@ function dateFormatter(dateString) {
               }
             }
           }),
-          (e.prototype.OnChangeLibraryType = function (e) {
-            var t = this,
-              n = t.GetPreSelectMenuId(),
-              r =
-                "#pkTypeBaseMenuItem" == n
+          (e.prototype.ChangeLibraryType = function (e) {
+            var t = this;
+            return new Promise(function (n, r) {
+              (t.m_showPKPreSelect &&
+                ($("#pkTypesPreSelectBlock")
+                  .find(".MenuItem[selected]")
+                  .removeAttr("selected"),
+                $("#pkTypeBaseMenuItem").attr("selected", "")),
+                $("#pkTypesBlock")
+                  .find("button[selected]")
+                  .removeAttr("selected"),
+                $("#pkTypesBlock")
+                  .find("button[value=" + e + "]")
+                  .attr("selected", ""),
+                t.OnChangeLibraryType(n, r));
+            });
+          }),
+          (e.prototype.OnChangeLibraryType = function (e, t) {
+            var n = this,
+              r = n.GetPreSelectMenuId(),
+              s =
+                "#pkTypeBaseMenuItem" == r
                   ? parseInt(
                       $("#pkTypesBlock").find("button[selected]").attr("value"),
                     )
-                  : "#pkTypeDIIAUAMenuItem" == n
-                    ? w.DIIA_UA
-                    : w.DIIA_EU;
-            ((t.m_keyMediaType = r), t.SetStorageItem("KeyMediaType", r));
-            var s = null;
-            switch (t.m_formType) {
-              case k.ReadPrivateKey:
-              case k.SignFile:
-              case k.ViewPKeyCertificates:
-              case k.MakeDeviceCertificate:
-                switch (r) {
-                  case w.File:
-                    s = "#pkReadFileBlock";
+                  : "#pkTypeDIIAUAMenuItem" == r
+                    ? F.DIIA_UA
+                    : F.DIIA_EU;
+            ((n.m_keyMediaType = s), n.SetStorageItem("KeyMediaType", s));
+            var a = null;
+            switch (n.m_formType) {
+              case K.ReadPrivateKey:
+              case K.SignFile:
+              case K.ViewPKeyCertificates:
+              case K.MakeDeviceCertificate:
+                switch (s) {
+                  case F.File:
+                    a = "#pkReadFileBlock";
                     break;
-                  case w.Hardware:
-                    s = "#pkReadKMBlock";
+                  case F.Hardware:
+                    a = "#pkReadKMBlock";
                     break;
-                  case w.KSP:
-                    s = "#pkReadKSPBlock";
+                  case F.KSP:
+                    a = "#pkReadKSPBlock";
                     break;
-                  case w.DIIA_EU:
-                  case w.DIIA_UA:
-                    s = "#pkReadDIIABlock";
+                  case F.DIIA_EU:
+                  case F.DIIA_UA:
+                    a = "#pkReadDIIABlock";
                 }
                 break;
-              case k.MakeNewCertificate:
-                s =
-                  r == w.Hardware
-                    ? null == t.m_readedPKey
+              case K.MakeNewCertificate:
+                a =
+                  s == F.Hardware
+                    ? null == n.m_readedPKey
                       ? "#pkReadKMBlock"
                       : "#pkWriteKMBlock"
-                    : null == t.m_readedPKey
+                    : null == n.m_readedPKey
                       ? "#pkReadFileBlock"
                       : "#pkWriteFileBlock";
             }
-            t.ShowForm(s, !1);
-            var a = t.GetCurrentLibrary();
-            if (null == a.GetInfo())
+            n.ShowForm(a, !1);
+            var u = n.GetCurrentLibrary();
+            if (null == u.GetInfo())
               return (
-                t.ShowDimmerView(p(o.PROCESS_STATUS_LOAD_LIBRARY)),
-                void t.LoadLibrary(e)
+                n.ShowDimmerView(p(o.PROCESS_STATUS_LOAD_LIBRARY)),
+                void n.LoadLibrary(e)
               );
-            if ((t.CloseDimmerView(), !a.IsSupported()))
+            if ((n.CloseDimmerView(), !u.IsSupported()))
               return (
-                t.HideForm("#pkBlock"),
-                void t.SetError(p(o.ERROR_LIBRARY_NOT_SUPPORTED))
+                n.HideForm("#pkBlock"),
+                n.SetError(p(o.ERROR_LIBRARY_NOT_SUPPORTED)),
+                void t()
               );
-            if (!a.IsLoaded()) {
-              if (a.GetType() != i.EndUserConstants.EU_LIBRARY_TYPE_SW)
+            if (!u.IsLoaded()) {
+              if (u.GetType() != i.EndUserConstants.EU_LIBRARY_TYPE_SW)
                 return (
-                  t.HideForm("#pkBlock"),
-                  void t.SetError(p(o.ERROR_LIBRARY_NOT_LOADED))
+                  n.HideForm("#pkBlock"),
+                  n.SetError(p(o.ERROR_LIBRARY_NOT_LOADED)),
+                  void t()
                 );
-              var u = a.GetInfo();
+              var l = u.GetInfo();
               $("#installLabel").text(
-                u.isNativeLibraryNeedUpdate
+                l.isNativeLibraryNeedUpdate
                   ? p(o.TEXT_LIBRARY_NEED_UPDATE)
                   : p(o.TEXT_LIBRARY_NEED_INSTALL),
               );
-              var l = u.isNativeLibraryNeedUpdate
+              var c = l.isNativeLibraryNeedUpdate
                   ? p(o.TEXT_LIBRARY_UPDATE)
                   : p(o.TEXT_LIBRARY_INSTALL),
-                c = u.nativeLibraryInstallURL;
+                _ = l.nativeLibraryInstallURL;
               return (
-                !u.isWebExtensionSupported ||
-                  u.isWebExtensionInstalled ||
-                  u.isNativeLibraryNeedUpdate ||
-                  ((l = p(o.TEXT_LIBRARY_WEB_EXTENSION_INSTALL)),
-                  (c = u.webExtensionInstallURL)),
-                $("#installURL").text(l),
-                $("#installURL").attr("href", c),
+                !l.isWebExtensionSupported ||
+                  l.isWebExtensionInstalled ||
+                  l.isNativeLibraryNeedUpdate ||
+                  ((c = p(o.TEXT_LIBRARY_WEB_EXTENSION_INSTALL)),
+                  (_ = l.webExtensionInstallURL)),
+                $("#installURL").text(c),
+                $("#installURL").attr("href", _),
                 $("#installHelpURL").text(p(o.TEXT_LIBRARY_USER_MANUAL)),
-                $("#installHelpURL").attr("href", u.helpURL),
-                t.ShowForm("#installBlock", !1),
+                $("#installHelpURL").attr("href", l.helpURL),
+                n.ShowForm("#installBlock", !1),
                 void setTimeout(function () {
-                  t.LoadLibrary(e);
+                  n.LoadLibrary(e);
                 }, 500)
               );
             }
-            var _ = {
+            var f = {
               isInitialized: !1,
             };
-            a.GetLibrary()
+            u.GetLibrary()
               .IsInitialized()
               .then(function (e) {
                 return (
-                  (_.isInitialized = e),
-                  _.isInitialized
+                  (f.isInitialized = e),
+                  f.isInitialized
                     ? null
-                    : (t.ShowDimmerView(p(o.PROCESS_STATUS_INITIALIZE_LIBRARY)),
-                      a.GetLibrary().Initialize(I({}, LIBRARY_SETTINGS)))
+                    : (n.ShowDimmerView(p(o.PROCESS_STATUS_INITIALIZE_LIBRARY)),
+                      u.GetLibrary().Initialize(k({}, LIBRARY_SETTINGS)))
                 );
               })
               .then(function () {
-                return _.isInitialized
+                return f.isInitialized
                   ? null
-                  : a.GetLibrary().SetRuntimeParameter("StringEncoding", 65001);
+                  : u.GetLibrary().SetRuntimeParameter("StringEncoding", 65001);
               })
               .then(function () {
-                return a.GetLibrary().GetCAs();
+                return u.GetLibrary().GetCAs();
               })
-              .then(function (n) {
-                (t.SetCAs(n),
-                  t.CloseDimmerView(),
-                  t.BeginUpdateKMs(),
+              .then(function (t) {
+                (n.SetCAs(t),
+                  n.CloseDimmerView(),
+                  n.BeginUpdateKMs(),
                   e && e());
               })
               .catch(function (e) {
-                (t.CloseDimmerView(),
-                  t.HideForm("#pkTypesBlock"),
-                  t.HideForm("#pkBlock"),
-                  t.SetError(p(o.ERROR_LIBRARY_INITIALIZE), e));
+                (n.CloseDimmerView(),
+                  n.HideForm("#pkTypesBlock"),
+                  n.HideForm("#pkBlock"),
+                  n.SetError(p(o.ERROR_LIBRARY_INITIALIZE), e),
+                  t());
               });
           }),
           (e.prototype.OnSelectCA = function () {
             var e = this.GetSelectedCA(),
               t =
-                this.m_keyMediaType == w.Hardware
+                this.m_keyMediaType == F.Hardware
                   ? $("#pkReadKMCertsBlock")
                   : $("#pkReadFileCertsBlock");
             !e || e.cmpAddress || e.certsInKey ? t.hide() : t.show();
@@ -24021,6 +24870,7 @@ function dateFormatter(dateString) {
               $("#pkReadFileButton").attr("disabled", !n),
               $("#pkReadFileSelectCertsDropZone").prop("disabled", !n),
               $("#pkReadFileSelectCertsChangeButton").attr("disabled", !n),
+              $("#pkReadFileSaveCheckbox").prop("disabled", !n),
               $("#pkReadFileButton").attr("disabled", !n),
               n
                 ? ($("#pkReadFileSelectFileCenterBlock").hide(),
@@ -24071,11 +24921,13 @@ function dateFormatter(dateString) {
           }),
           (e.prototype.OnKMSelectChange = function () {
             var e = this.GetSelectedKM(),
-              t = this.GetKMUserTextField(),
-              n = this.GetKMUserBlock();
-            null != e && this.IsKMMultiKeyDevice(e)
-              ? (n.show(), t.prop("disabled", !1))
-              : (t.val(""), n.hide());
+              t = this.GetKMSaveCheckbox(),
+              n = this.GetKMUserTextField(),
+              r = this.GetKMUserBlock();
+            (null != e && this.IsKMMultiKeyDevice(e)
+              ? (r.show(), n.prop("disabled", !1))
+              : (n.val(""), r.hide()),
+              t && t.prop("disabled", null == e));
           }),
           (e.prototype.OnSelectPKeyCertificates = function (e, t, n, r) {
             if (($(n).empty(), r && r.length > 0)) {
@@ -24143,13 +24995,13 @@ function dateFormatter(dateString) {
               if ((this.SetError(null), r <= 0))
                 return void this.SetError(p(o.ERROR_FILE_EMPTY));
               if (
-                (e != N.CAdES ||
-                  (e == N.CAdES &&
+                (e != L.CAdES ||
+                  (e == L.CAdES &&
                     t != i.EndUserConstants.EndUserCAdESType.Detached)) &&
                 r >= MAX_FILE_SIZE
               )
                 return void this.SetError(p(o.ERROR_FILE_TO_BIG));
-              if (n.length > 1 && e != N.ASiCE)
+              if (n.length > 1 && e != L.ASiCE)
                 return void this.SetError(
                   p(o.ERROR_SIGN_MULTIPLE_FILES_NOT_SUPPORTED),
                 );
@@ -24159,13 +25011,13 @@ function dateFormatter(dateString) {
             var e = parseInt(
               $("input[type='radio'][name=signTypesRadio]:checked").val(),
             );
-            (e == N.ASiCS || e == N.ASiCE
+            (e == L.ASiCS || e == L.ASiCE
               ? $("#signTypeASiCBlock").show()
               : $("#signTypeASiCBlock").hide(),
-              e == N.CAdES
+              e == L.CAdES
                 ? $("#signTypeCAdESBlock").show()
                 : $("#signTypeCAdESBlock").hide(),
-              e == N.XAdES
+              e == L.XAdES
                 ? $("#signTypeXAdESBlock").show()
                 : $("#signTypeXAdESBlock").hide(),
               this.OnChangeASiCType(),
@@ -24176,12 +25028,12 @@ function dateFormatter(dateString) {
               t = parseInt(
                 $("input[type='radio'][name=signTypesRadio]:checked").val(),
               );
-            t == N.PAdES
+            t == L.PAdES
               ? ($("#signFormatPAdESBlock").show(),
                 $("#signFormatCAdESBlock").hide(),
                 $("#signFormatXAdESBlock").hide())
-              : t == N.CAdES ||
-                  ((t == N.ASiCS || t == N.ASiCE) &&
+              : t == L.CAdES ||
+                  ((t == L.ASiCS || t == L.ASiCE) &&
                     e == i.EndUserConstants.EndUserASiCSignType.CAdES)
                 ? ($("#signFormatCAdESBlock").show(),
                   $("#signFormatXAdESBlock").hide(),
@@ -24316,7 +25168,7 @@ function dateFormatter(dateString) {
               else {
                 (t.ShowDimmerView(p(o.PROCESS_STATUS_READ_PRIVATE_KEY)),
                   t.StopUpdateKMs());
-                var T = new K();
+                var T = new Y();
                 ((T.keyMedia = _),
                   (T.alias = h),
                   (T.password = d),
@@ -24397,7 +25249,7 @@ function dateFormatter(dateString) {
                         var a = e
                           ? "#pkReadFileCertsBlock"
                           : "#pkReadKMCertsBlock";
-                        t.m_formType == k.MakeNewCertificate
+                        t.m_formType == K.MakeNewCertificate
                           ? ((r = p(o.ERROR_MAKE_NEW_CERTIFICATE)),
                             (n = s.format(
                               p(o.ERROR_MAKE_NEW_CERTIFICATE_INVALID_CA),
@@ -24436,7 +25288,7 @@ function dateFormatter(dateString) {
                 l = null,
                 c = LIBRARY_SETTINGS.KSPs;
               switch (e.m_keyMediaType) {
-                case w.KSP:
+                case F.KSP:
                   if (
                     ((n = parseInt(
                       $("#pkReadKSPSelect").find(":selected").val(),
@@ -24449,15 +25301,15 @@ function dateFormatter(dateString) {
                       void e.SetError(p(o.ERROR_USER_ID_NOT_SET_OR_INVALID))
                     );
                   break;
-                case w.DIIA_UA:
-                case w.DIIA_EU:
+                case F.DIIA_UA:
+                case F.DIIA_EU:
                   ((n = i.EndUserConstants.EndUserKSP.DIIA),
                     (r = c.filter(function (e) {
                       return e.ksp == i.EndUserConstants.EU_KSP_DIIA;
                     })[0].name),
                     (a = ""),
                     (u =
-                      e.m_keyMediaType == w.DIIA_UA
+                      e.m_keyMediaType == F.DIIA_UA
                         ? i.EndUserConstants.EndUserSignAlgo
                             .DSTU4145WithGOST34311
                         : i.EndUserConstants.EndUserSignAlgo.ECDSAWithSHA));
@@ -24476,10 +25328,10 @@ function dateFormatter(dateString) {
                     }
                   break;
                 }
-              var E = new K();
+              var E = new Y();
               ((E.keyMedia = null),
                 (E.password = null),
-                (E.kspKey = new G(n, r, a, u, l)),
+                (E.kspKey = new x(n, r, a, u, l)),
                 t
                   .GetLibrary()
                   .ReadPrivateKeyKSP(
@@ -24587,7 +25439,7 @@ function dateFormatter(dateString) {
                   void t.SetError(p(o.ERROR_NEW_PASSWORD_AND_CONFIRM_NOT_EQUAL))
                 );
               var d = null != t.m_readedPKey.keyMedia,
-                y = t.m_keyMediaType == w.Hardware,
+                y = t.m_keyMediaType == F.Hardware,
                 C = d
                   ? t.m_readedPKey.keyMedia.password
                   : t.m_readedPKey.password;
@@ -24766,32 +25618,19 @@ function dateFormatter(dateString) {
             return t <= 0 ? e : e.substr(0, t);
           }),
           (e.prototype.makeSignReportData = function (e) {
-            // console.log("e.signFile", e.signFile);
-            // if (e.signFile.data.length) {
-            //   isDocumentSignedSuccess = true;
-            //   // console.log('base64String', base64String)
-            //   if (fileForSign.length === 1) {
-            //     const base64String = uint8ToBase64(e.signFile.data);
-            //     console.log("base64String from wiget", base64String);
-            //     sendSignedDataToParent(base64String);
-            //   }
-            //   if (resultsArr.length) {
-            //     sendSignedDataToParent("");
-            //   }
-            // }
             for (
               var t = new Date(),
                 n = p(
                   "Підпис створено та перевірено успішно. Цілісність даних підтверджено",
                 ),
                 r = e.signFile.name,
-                i = m.formatFileSize(e.signFile.size),
-                // o = this.makeFileDownloadHTML(
-                //   "saveSignFileButton",
-                //   p("Файл з підписом"),
-                //   r,
-                //   i,
-                // ),
+                i = g.formatFileSize(e.signFile.size),
+                o = this.makeFileDownloadHTML(
+                  "saveSignFileButton",
+                  p("Файл з підписом"),
+                  r,
+                  i,
+                ),
                 s = [],
                 a = 0;
               a < e.files.length;
@@ -24799,28 +25638,28 @@ function dateFormatter(dateString) {
             )
               s.push({
                 fileName: e.files[a].name,
-                fileSize: m.formatFileSize(e.files[a].size),
+                fileSize: g.formatFileSize(e.files[a].size),
               });
             var u =
                 1 == e.files.length
                   ? e.files[0].name
                   : this.removeFileExtension(e.signFile.name) + ".zip",
-              l = m.formatFileSize(this.GetFilesSize(e.files)),
-              // c = this.makeFileDownloadHTML(
-              //   "saveDataFileButton",
-              //   p("Файл(и) без підпису"),
-              //   u,
-              //   l,
-              // ),
+              l = g.formatFileSize(this.GetFilesSize(e.files)),
+              c = this.makeFileDownloadHTML(
+                "saveDataFileButton",
+                p("Файл(и) без підпису"),
+                u,
+                l,
+              ),
               _ = this.removeFileExtension(u) + "_Validation_Report.pdf",
-              // f = this.makeFileDownloadHTML(
-              //   "saveReportFileButton",
-              //   p(
-              //     "Протокол створення та перевірки кваліфікованого електронного підпису від ",
-              //   ) + m.formatDate(t, "dd.MM.yyyy"),
-              //   _,
-              //   "__validation__report__size__",
-              // ),
+              f = this.makeFileDownloadHTML(
+                "saveReportFileButton",
+                p(
+                  "Протокол створення та перевірки кваліфікованого електронного підпису від ",
+                ) + g.formatDate(t, "dd.MM.yyyy"),
+                _,
+                "__validation__report__size__",
+              ),
               E = r + ".zip",
               h = [],
               S = e.signsInfos,
@@ -24836,74 +25675,74 @@ function dateFormatter(dateString) {
                 value: null,
               };
             for (a = 0; a < S.length; a++)
-              for (var R = 0; R < S[a].length; R++) {
-                var g,
+              for (var m = 0; m < S[a].length; m++) {
+                var R,
+                  v,
                   P,
-                  I,
                   U,
-                  O = S[a][R],
-                  D = O.signTimeInfo,
-                  b = O.signerInfo,
-                  k = O.isDigitalStamp
+                  b = S[a][m],
+                  O = b.signTimeInfo,
+                  D = b.signerInfo,
+                  k = b.isDigitalStamp
                     ? p("Електронна печатка")
                     : p("Підписувач");
-                (C && (k += " - " + (O.isDigitalStamp ? y : d)),
-                  (b.subjCN = {
+                (C && (k += " - " + (b.isDigitalStamp ? y : d)),
+                  (D.subjCN = {
                     title: k,
-                    value: b.subjCN,
+                    value: D.subjCN,
                   }),
-                  (b.subjCountry = v.getCountryName(
+                  (D.subjCountry = I.getCountryName(
                     LIBRARY_SETTINGS.language,
-                    b.subjCountry,
+                    D.subjCountry,
                   )),
-                  D.isTimeAvail || D.isSignTimeStampAvail
-                    ? D.isSignTimeStampAvail
-                      ? ((g = "signTimeStamp"), (P = D.signTimeStamp))
-                      : ((g = D.isTimeStamp ? "timeStamp" : "time"),
-                        (P = D.time))
-                    : ((g = "none"), (P = p("Відсутній"))),
-                  (b.timeInfo = {
-                    id: g,
-                    value: P,
+                  O.isTimeAvail || O.isSignTimeStampAvail
+                    ? O.isSignTimeStampAvail
+                      ? ((R = "signTimeStamp"), (v = O.signTimeStamp))
+                      : ((R = O.isTimeStamp ? "timeStamp" : "time"),
+                        (v = O.time))
+                    : ((R = "none"), (v = p("Відсутній"))),
+                  (D.timeInfo = {
+                    id: R,
+                    value: v,
                   }),
-                  (D.isTimeAvail && D.isTimeStamp) ||
-                    D.isSignTimeStampAvail ||
+                  (O.isTimeAvail && O.isTimeStamp) ||
+                    O.isSignTimeStampAvail ||
                     (T = {
                       id: "noTSP",
                       value: null,
                     }),
-                  (b.isPowerCert = b.isPowerCert),
-                  (b.isQSCD = b.isQSCD),
-                  (b.qscdName = O.qscd.name),
-                  (b.qscdSN = O.qscd.sn),
-                  (b.signAlgo = O.signAlgo),
-                  (b.signContainerType = O.signContainerType),
-                  (b.signFormat = O.signFormat),
-                  (b.signType =
-                    b.isPowerCert && O.qscd.use
+                  (D.isPowerCert = D.isPowerCert),
+                  (D.isQSCD = D.isQSCD),
+                  (D.qscdName = b.qscd.name),
+                  (D.qscdSN = b.qscd.sn),
+                  (D.signAlgo = b.signAlgo),
+                  (D.signContainerType = b.signContainerType),
+                  (D.signFormat = b.signFormat),
+                  (D.signType =
+                    D.isPowerCert && b.qscd.use
                       ? p("Кваліфікований")
                       : p("Удосконалений")),
-                  (I = b.isPowerCert
+                  (P = D.isPowerCert
                     ? "qualified"
                     : LIBRARY_SETTINGS.supportAdvancedCertificates
                       ? "advanced"
                       : "advancedWarning"),
-                  (U = b.isPowerCert
+                  (U = D.isPowerCert
                     ? p("Кваліфікований")
                     : p("Удосконалений")),
-                  (b.certType = {
-                    id: I,
+                  (D.certType = {
+                    id: P,
                     value: U,
                   }),
-                  b.isPowerCert ||
+                  D.isPowerCert ||
                     LIBRARY_SETTINGS.supportAdvancedCertificates ||
                     (A = {
                       id: "advanced",
                       value: null,
                     }),
-                  O.isDigitalStamp ? y++ : d++,
+                  b.isDigitalStamp ? y++ : d++,
                   h.push({
-                    signerInfo: b,
+                    signerInfo: D,
                   }));
               }
             return {
@@ -24998,7 +25837,7 @@ function dateFormatter(dateString) {
                 },
               })
                 .then(function (t) {
-                  n(new M(e, t));
+                  n(new B(e, t));
                 })
                 .catch(function (t) {
                   r(p(s.format(o.ERROR_SAVE_FILE, e)));
@@ -25055,7 +25894,6 @@ function dateFormatter(dateString) {
             });
           }),
           (e.prototype.OnSignFile = function () {
-            let remainingFilesForSilentSign;
             var e = this,
               t = e.GetCurrentLibrary();
             e.SetError("");
@@ -25068,25 +25906,25 @@ function dateFormatter(dateString) {
               u = parseInt($("#signFormatXAdESSelect").val()),
               l = parseInt($("#signFormatPAdESSelect").val()),
               c = e.SignAlgoToHashAlgo(r),
-              f = n == N.ASiCS || n == N.ASiCE,
-              E = n == N.PAdES,
-              h = n == N.XAdES,
+              f = n == L.ASiCS || n == L.ASiCE,
+              E = n == L.PAdES,
+              h = n == L.XAdES,
               S = parseInt($("#signTypeXAdESSelect").val()),
               d = f
-                ? n == N.ASiCS
+                ? n == L.ASiCS
                   ? i.EndUserConstants.EndUserASiCType.S
                   : i.EndUserConstants.EndUserASiCType.E
                 : i.EndUserConstants.EndUserASiCType.Unknown,
               y = parseInt($("#signTypeASiCSelect").val()),
               C = y == i.EndUserConstants.EndUserASiCSignType.CAdES ? a : u,
               A =
-                n == N.CAdES &&
+                n == L.CAdES &&
                 s == i.EndUserConstants.EndUserCAdESType.Detached,
-              R = $("#signFilesInput").prop("files"),
-              m = R.length >= 1 ? R[0].name : "",
-              g = m + e.GetSignFileExt(m, n),
-              P = e.GetFilesSize(R),
-              v = e.GetFileExtension(m).toLowerCase(),
+              m = $("#signFilesInput").prop("files"),
+              R = m.length >= 1 ? m[0].name : "",
+              g = R + e.GetSignFileExt(R, n),
+              v = e.GetFilesSize(m),
+              P = e.GetFileExtension(R).toLowerCase(),
               I =
                 (new JSZip(),
                 {
@@ -25098,44 +25936,97 @@ function dateFormatter(dateString) {
                   signersInfo: null,
                   signContainerInfo: null,
                 });
-            console.log("n", n);
-            console.log("s", s);
-            console.log("R", R);
-            if ("" != m)
+            // M-Files integration: separate multi-file CAdES Detached flow.
+            // Keep the new IIT signing pipeline untouched for all other cases.
+            if (A && m.length > 1) {
+              (async function () {
+                try {
+                  e.ShowDimmerView(p(o.PROCESS_STATUS_SIGN_FILE));
+                  await t
+                    .GetLibrary()
+                    .SetRuntimeParameter(
+                      i.EndUserConstants.EU_SIGN_TYPE_PARAMETER,
+                      a,
+                    );
+                  var filesData = await e.ReadFiles(m);
+                  var results = await e.SignAllFilesCAdESDetached(
+                    t.GetLibrary(),
+                    filesData,
+                    r,
+                    c,
+                  );
+                  var template =
+                    e.m_signInfoTmpl ||
+                    (await e.DownloadData(LIBRARY_SETTINGS.signInfoTmpl, ""));
+                  e.m_signInfoTmpl = template;
+                  resultsArr = results.slice();
+                  arrForGroupedSignedDocs = [];
+                  for (var index = 0; index < results.length; index++) {
+                    var result = results[index];
+                    var hash = await t
+                      .GetLibrary()
+                      .HashData(c, filesData[index].data, !1);
+                    var signsInfo = await t
+                      .GetLibrary()
+                      .VerifyHash(hash, result.signBytes, -1);
+                    var signersInfo = await t
+                      .GetLibrary()
+                      .GetSigner(result.signBytes, -1, !0);
+                    var containerInfo = await t
+                      .GetLibrary()
+                      .GetSignContainerInfo(result.signBytes);
+                    if (index === 0 && signsInfo.length) {
+                      fileName = fileNameCreatorUtil(signsInfo[0].ownerInfo);
+                    }
+                    e.SetSignFileResult(
+                      [filesData[index]],
+                      result.signBytes,
+                      result.fileName,
+                      signsInfo,
+                      signersInfo,
+                      containerInfo.type,
+                      containerInfo.subType,
+                      containerInfo.asicSignType,
+                    );
+                  }
+                  e.ShowForm("#resultBlock", !0);
+                  e.CloseDimmerView();
+                  e.StopOperationConfirmation();
+                } catch (err) {
+                  e.CloseDimmerView();
+                  e.StopOperationConfirmation();
+                  e.SetError(p(o.ERROR_SIGN_FILE), err);
+                }
+              })();
+              return;
+            }
+            if ("" != R)
               if ("" != g)
                 if (
-                  // R.length > 1 &&
-                  // n != N.ASiCE &&
-                  // (n != N.XAdES ||
-                  //   S != i.EndUserConstants.EndUserXAdESType.Detached)
-                  R.length > 1 &&
-                  n != N.ASiCE &&
-                  (n != N.XAdES ||
-                    S != i.EndUserConstants.EndUserXAdESType.Detached) &&
-                  !(
-                    n == N.CAdES &&
-                    s == i.EndUserConstants.EndUserCAdESType.Detached
-                  )
+                  m.length > 1 &&
+                  n != L.ASiCE &&
+                  (n != L.XAdES ||
+                    S != i.EndUserConstants.EndUserXAdESType.Detached)
                 )
                   e.SetError(p(o.ERROR_SIGN_MULTIPLE_FILES_NOT_SUPPORTED));
                 else if (
-                  (n != N.CAdES ||
-                    (n == N.CAdES &&
+                  (n != L.CAdES ||
+                    (n == L.CAdES &&
                       s != i.EndUserConstants.EndUserCAdESType.Detached)) &&
-                  P >= MAX_FILE_SIZE
+                  v >= MAX_FILE_SIZE
                 )
                   e.SetError(p(o.ERROR_FILE_TO_BIG));
-                else if (P <= 0) e.SetError(p(o.ERROR_FILE_EMPTY));
+                else if (v <= 0) e.SetError(p(o.ERROR_FILE_EMPTY));
                 else {
                   switch (n) {
-                    case N.PAdES:
-                      if ("pdf" != v)
+                    case L.PAdES:
+                      if ("pdf" != P)
                         return void e.SetError(p(o.ERROR_FILE_NOT_PDF));
                       break;
-                    case N.XAdES:
+                    case L.XAdES:
                       if (
                         S == i.EndUserConstants.EndUserXAdESType.Enveloped &&
-                        "xml" != v
+                        "xml" != P
                       )
                         return void e.SetError(p(o.ERROR_FILE_NOT_XML));
                   }
@@ -25147,149 +26038,13 @@ function dateFormatter(dateString) {
                         a,
                       )
                       .then(function () {
-                        return e.ReadFiles(R);
+                        return e.ReadFiles(m);
                       })
                       .then(function (e) {
                         return (
                           (I.filesData = e),
                           A ? t.GetLibrary().HashData(c, e[0].data, !1) : null
                         );
-                      })
-                      .then(async function () {
-                        // return e.ReadFiles(R)
-                        const filesArr = await e.ReadFiles(R);
-                        console.log("filesArr", filesArr);
-                        I.filesData = filesArr;
-                        if (A && I.filesData.length > 1) {
-                          e.SignAllFilesCAdESDetached(
-                            t.GetLibrary(),
-                            I.filesData,
-                            r, // signAlgo
-                            c, // hashAlgo
-                          ).then(async function (results) {
-                            let info = await I;
-                            if (results) {
-                              arrForGroupedSignedDocs = [];
-                              resultsArr = [...results];
-                              console.log("resultsArr", resultsArr);
-                              // resultsArr.forEach(function (document, index) {
-                              //   e.SetSignFileResult(
-                              //     [info.filesData[index]],
-                              //     document.signBytes,
-                              //     document.fileName,
-                              //     info.signsInfo,
-                              //     info.signersInfo,
-                              //     1,
-                              //     1,
-                              //     0,
-                              //   );
-                              // });
-
-                              let signResultIndex = 0;
-
-                              function runNextSetSignFileResult() {
-                                if (signResultIndex >= resultsArr.length) {
-                                  return;
-                                }
-
-                                const document = resultsArr[signResultIndex];
-                                const fileData =
-                                  info.filesData[signResultIndex];
-                                const mfFileInfo = fileForSign[signResultIndex];
-
-                                console.log(
-                                  "RUN SetSignFileResult index:",
-                                  signResultIndex,
-                                );
-                                console.log(
-                                  "document.fileName:",
-                                  document.fileName,
-                                );
-
-                                if (
-                                  mfFileInfo &&
-                                  mfFileInfo.extension &&
-                                  fileData &&
-                                  fileData.name &&
-                                  !fileData.name
-                                    .toLowerCase()
-                                    .endsWith(
-                                      "." + mfFileInfo.extension.toLowerCase(),
-                                    )
-                                ) {
-                                  fileData.name =
-                                    fileData.name + "." + mfFileInfo.extension;
-                                }
-
-                                const safeSignsInfo = info.signsInfo.map(
-                                  function (item) {
-                                    return {
-                                      ...item,
-                                      timeInfo: {
-                                        ...item.timeInfo,
-                                        time: new Date(item.timeInfo.time),
-                                      },
-                                    };
-                                  },
-                                );
-
-                                e.SetSignFileResult(
-                                  [fileData],
-                                  document.signBytes,
-                                  document.fileName,
-                                  // info.signsInfo,
-                                  safeSignsInfo,
-                                  info.signersInfo,
-                                  1,
-                                  1,
-                                  0,
-                                );
-
-                                signResultIndex++;
-
-                                setTimeout(runNextSetSignFileResult, 700);
-                              }
-
-                              runNextSetSignFileResult();
-
-                              // resultsArr.forEach((document, index) => {
-                              //   const base64String = document.signBase64;
-
-                              //   let signingDocInfo;
-                              //   if (info.signsInfo.length) {
-                              //     const signerInfo = info.signersInfo[0].infoEx;
-                              //     console.log("signerInfo22", signerInfo);
-                              //     signingDocInfo = {
-                              //       ipn: signerInfo.subjDRFOCode,
-                              //       pib: signerInfo.subjFullName,
-                              //       sertOwner: signerInfo.issuerCN,
-                              //       sn: signerInfo.serial,
-                              //       date: dateFormatter(
-                              //         info.signsInfo[0].timeInfo.signTimeStamp,
-                              //       ),
-                              //     };
-                              //   }
-
-                              //   arrForGroupedSignedDocs.push({
-                              //     base64String,
-                              //     archiveName: document.fileName,
-                              //     archiveFile: null, // ← буде заповнений SetSignFileResult
-                              //     signingDocInfo,
-                              //   });
-                              // });
-                            }
-
-                            return;
-                          });
-                        }
-                        return A
-                          ? t.GetLibrary().HashData(c, filesArr[0].data, !1)
-                          : null;
-
-                        // return (
-                        // 	(I.filesData = e),
-                        // 	A ? t.GetLibrary().HashData(c, e[0].data, !1) : null
-                        // )
                       })
                       .then(function (e) {
                         return (
@@ -25414,11 +26169,12 @@ function dateFormatter(dateString) {
                         );
                       })
                       .then(function (t) {
-                        console.log("signsInfo", I);
-                        ((fileName = fileNameCreatorUtil(
-                          I.signsInfo[0].ownerInfo,
-                        )),
-                          ((e.m_signInfoTmpl = t),
+                        if (I.signsInfo && I.signsInfo.length) {
+                          fileName = fileNameCreatorUtil(
+                            I.signsInfo[0].ownerInfo,
+                          );
+                        }
+                        ((e.m_signInfoTmpl = t),
                           e.SetSignFileResult(
                             I.filesData,
                             I.sign,
@@ -25431,7 +26187,7 @@ function dateFormatter(dateString) {
                           ),
                           e.ShowForm("#resultBlock", !0),
                           e.CloseDimmerView(),
-                          e.StopOperationConfirmation()));
+                          e.StopOperationConfirmation());
                       })
                       .catch(function (t) {
                         (e.CloseDimmerView(),
@@ -25483,32 +26239,55 @@ function dateFormatter(dateString) {
                 n());
             });
           }),
-          (e.prototype.ResetPrivateKey = function () {
-            var e = this;
-            return new Promise(function (t, n) {
-              (e.OnResetPKey(), t());
+          (e.prototype.InitKeysStorage = function (e) {
+            var t = this;
+            return new Promise(function (n, r) {
+              try {
+                (t.m_keysStorage || (t.m_keysStorage = new D(e)),
+                  n(t.m_keysStorage.getSettings()));
+              } catch (e) {
+                return void r(e);
+              }
             });
           }),
-          (e.prototype.ReadPrivateKey = function () {
-            var e = this;
-            return new Promise(function (t, n) {
-              var r = function () {
-                e.m_readedPKey
-                  ? t(e.m_readedPKey.certificatesInfo)
-                  : ("#pkTypesPreSelectBlock" != e.GetVisibleFormId() &&
-                      "#installBlock" != e.GetVisibleFormId() &&
-                      "#proxySettingsBlock" != e.GetVisibleFormId() &&
-                      "#pkReadFileBlock" != e.GetVisibleFormId() &&
-                      "#pkReadKMBlock" != e.GetVisibleFormId() &&
-                      "#pkReadKSPBlock" != e.GetVisibleFormId() &&
-                      "#pkReadDIIABlock" != e.GetVisibleFormId() &&
-                      "#pkInfoBlock" != e.GetVisibleFormId() &&
-                      e.OnChangeLibraryType(),
-                    setTimeout(function () {
-                      r();
-                    }, 500));
-              };
-              r();
+          (e.prototype.ResetPrivateKey = function (e) {
+            var t = this;
+            return new Promise(function (n, r) {
+              (t.m_keysStorage && e && t.RemovePrivateKeyFromStorage(e),
+                t.OnResetPKey(),
+                n());
+            });
+          }),
+          (e.prototype.ReadPrivateKey = function (e) {
+            var t = this;
+            return new Promise(function (n, r) {
+              if (t.m_keysStorage && e)
+                t.LoadPrivateKeyFromStorage(e)
+                  .then(function () {
+                    n(t.m_readedPKey.certificatesInfo);
+                  })
+                  .catch(function (e) {
+                    return r(e);
+                  });
+              else {
+                var i = function () {
+                  t.m_readedPKey
+                    ? n(t.m_readedPKey.certificatesInfo)
+                    : ("#pkTypesPreSelectBlock" != t.GetVisibleFormId() &&
+                        "#installBlock" != t.GetVisibleFormId() &&
+                        "#proxySettingsBlock" != t.GetVisibleFormId() &&
+                        "#pkReadFileBlock" != t.GetVisibleFormId() &&
+                        "#pkReadKMBlock" != t.GetVisibleFormId() &&
+                        "#pkReadKSPBlock" != t.GetVisibleFormId() &&
+                        "#pkReadDIIABlock" != t.GetVisibleFormId() &&
+                        "#pkInfoBlock" != t.GetVisibleFormId() &&
+                        t.OnChangeLibraryType(),
+                      setTimeout(function () {
+                        i();
+                      }, 500));
+                };
+                i();
+              }
             });
           }),
           (e.prototype.MakeNewCertificate = function (e) {
@@ -25530,7 +26309,7 @@ function dateFormatter(dateString) {
                       var n =
                         null == t.m_readedPKey.keyMedia &&
                         !t.m_noNewFileKMOnMakeNewCertificate;
-                      t.SetKeyMediaType(n ? w.File : w.Hardware);
+                      t.SetKeyMediaType(n ? F.File : F.Hardware);
                     }
                     setTimeout(function () {
                       r();
@@ -25784,7 +26563,7 @@ function dateFormatter(dateString) {
                       a.m_readedPKey.getKeyType(),
                       a.m_readedPKey.getIssuerCN(),
                       1,
-                      a.GetStatisticsSignContainerType(N.XAdES, 0, e, 0),
+                      a.GetStatisticsSignContainerType(L.XAdES, 0, e, 0),
                       r,
                       s,
                     ),
@@ -25833,9 +26612,9 @@ function dateFormatter(dateString) {
                   .then(function (n) {
                     var r =
                       e == i.EndUserConstants.EndUserASiCType.S
-                        ? N.ASiCS
+                        ? L.ASiCS
                         : e == i.EndUserConstants.EndUserASiCType.E
-                          ? N.ASiCE
+                          ? L.ASiCE
                           : 0;
                     (T(
                       l.m_statisticsURL,
@@ -25950,7 +26729,7 @@ function dateFormatter(dateString) {
             n.text(p(n.text()));
           }
         })(),
-        new x());
+        new j());
     };
   },
 ]);
