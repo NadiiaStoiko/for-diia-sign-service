@@ -18,94 +18,6 @@ let singleFileDocument = false;
 let unavailableFunc = false;
 let arrForGroupedSignedDocs = [];
 
-// window.addEventListener("message", (event) => {
-//   console.log("event", event.data.isItStamp);
-//   if (event.data.file) {
-//     if (event.data.file.length) {
-//       fileForSign = event.data.file;
-//     } else {
-//       passErrorToMFiles(event.data);
-//     }
-//   }
-
-//   if (fileForSign?.length > 1) {
-//     isItMulti = true;
-//   }
-//   if (event.data.isItStamp) {
-//     isItStamp = true;
-//   }
-//   console.log("isItStamp", isItStamp);
-//   console.log("fileForSign:", fileForSign);
-//   if (event.data.ourCompanyEdrpou) {
-//     companyEdrpou = event.data.ourCompanyEdrpou;
-//   }
-//   if (event.data.signerIpn) {
-//     signerIpn = event.data.signerIpn;
-//   }
-//   if (event.data.singleFileDocument) {
-//     singleFileDocument = true;
-//   }
-//   console.log("singleFileDocument", singleFileDocument);
-//   if (!singleFileDocument) {
-//     $("#pkTypeBaseMenuItem").click();
-//   }
-// });
-
-// window.addEventListener("message", (event) => {
-//   const data = event.data;
-
-//   // Ігноруємо повідомлення, які не містять файл.
-//   if (!data?.file) {
-//     return;
-//   }
-
-//   console.log("event", data.isItStamp);
-
-//   if (data.file.length) {
-//     fileForSign = data.file;
-
-//     // Повідомляємо dashboard, що файл успішно отримано.
-//     event.source?.postMessage(
-//       {
-//         type: "FILE_RECEIVED",
-//         requestId: data.requestId,
-//       },
-//       event.origin || "*",
-//     );
-//   } else {
-//     passErrorToMFiles(data);
-//     return;
-//   }
-
-//   if (fileForSign.length > 1) {
-//     isItMulti = true;
-//   }
-
-//   if (data.isItStamp) {
-//     isItStamp = true;
-//   }
-
-//   console.log("isItStamp", isItStamp);
-//   console.log("fileForSign:", fileForSign);
-
-//   if (data.ourCompanyEdrpou) {
-//     companyEdrpou = data.ourCompanyEdrpou;
-//   }
-
-//   if (data.signerIpn) {
-//     signerIpn = data.signerIpn;
-//   }
-
-//   if (data.singleFileDocument) {
-//     singleFileDocument = true;
-//   }
-
-//   console.log("singleFileDocument", singleFileDocument);
-
-//   if (!singleFileDocument) {
-//     $("#pkTypeBaseMenuItem").click();
-//   }
-// });
 window.addEventListener("message", (event) => {
   const data = event.data;
 
@@ -202,7 +114,7 @@ function sendSignedDataToParent(signedDocData) {
       type: "signed-data",
       signatures: signedFilesArr,
     },
-    "*", // або вкажи конкретний origin замість '*', наприклад: 'http://localhost:81'
+    "*",
   );
 }
 
@@ -341,41 +253,12 @@ function passErrorToMFiles(data) {
   }
 }
 
-// function filesArrCreator() {
-//   const dataTransfer = new DataTransfer();
-//   console.log("filesArrCreator");
-//   if (fileForSign.length) {
-//     fileForSign.forEach((fileInfo) => {
-//       var ext = getMimeType(fileInfo?.extension);
-//       var base64Data = fileInfo.file;
-//       console.log("base64Data", base64Data);
-//       const byteCharacters = atob(base64Data);
-//       const byteNumbers = new Array(byteCharacters.length);
-//       for (let i = 0; i < byteCharacters.length; i++) {
-//         byteNumbers[i] = byteCharacters.charCodeAt(i);
-//       }
-//       const byteArray = new Uint8Array(byteNumbers);
-//       const file = new File([byteArray], fileInfo.fileName, { type: ext });
-//       dataTransfer.items.add(file);
-//     });
-//     console.log("dataTransfer.files", dataTransfer.files);
-//     return dataTransfer.files;
-//   } else {
-//     passErrorToMFiles();
-//   }
-// }
-
 function filesArrCreator() {
   const dataTransfer = new DataTransfer();
 
   console.log("filesArrCreator");
   console.log("fileForSign", fileForSign);
 
-  /*
-   * Віджет може викликати getFile() раніше,
-   * ніж dashboard передасть файл.
-   * У такому випадку просто повертаємо порожній FileList.
-   */
   if (!Array.isArray(fileForSign) || fileForSign.length === 0) {
     console.log("Файл від dashboard ще не отримано");
 
@@ -409,14 +292,6 @@ function filesArrCreator() {
   return dataTransfer.files;
 }
 
-// function getFile() {
-//   document.getElementById("signFilesInput").files = filesArrCreator();
-//   let fl = $("#signFilesInput").prop("files");
-//   // console.log('file', file)
-//   // console.log('fl', $('#signFilesInput').prop('files'))
-//   return fl;
-// }
-
 function getFile() {
   const input = document.getElementById("signFilesInput");
 
@@ -427,10 +302,6 @@ function getFile() {
 
   const receivedFiles = filesArrCreator();
 
-  /*
-   * Поки dashboard не передав файл,
-   * не намагаємося записувати undefined.
-   */
   if (!receivedFiles || receivedFiles.length === 0) {
     console.log("getFile: файл ще не отримано");
 
