@@ -21698,11 +21698,18 @@ function dateFormatter(dateString) {
             (this.m_debug =
               "true" ==
               this.GetURLParameter(window.location.href, "debug", "false")),
+            // (this.m_formType = parseInt(
+            //   this.GetURLParameter(
+            //     window.location.href,
+            //     "formType",
+            //     K.ReadPrivateKey + "",
+            //   ),
+            // )),
             (this.m_formType = parseInt(
               this.GetURLParameter(
                 window.location.href,
                 "formType",
-                K.ReadPrivateKey + "",
+                K.SignFile + "",
               ),
             )),
             (this.m_ownCAOnly =
