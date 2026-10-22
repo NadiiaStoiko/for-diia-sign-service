@@ -25852,10 +25852,27 @@ function dateFormatter(dateString) {
                 });
             });
           }),
+          // (e.prototype.OnShowSignFileForm = function (e) {
+          //   ($("#preSignShowParamsCheckbox").prop("checked", e),
+          //     this.SetError(""),
+          //     this.ShowForm("#signBlock", !1));
+          // }),
           (e.prototype.OnShowSignFileForm = function (e) {
-            ($("#preSignShowParamsCheckbox").prop("checked", e),
-              this.SetError(""),
-              this.ShowForm("#signBlock", !1));
+            $("#preSignShowParamsCheckbox").prop("checked", e);
+            this.SetError("");
+            this.ShowForm("#signBlock", false);
+
+            $("#signTypeCAdESRadioInput")
+              .prop("checked", true)
+              .trigger("change");
+
+            $("#signTypeCAdESSelect").val("1").trigger("change");
+
+            const files = getFile();
+
+            if (files && files.length > 0) {
+              this.OnSelectSignFile(files);
+            }
           }),
           (e.prototype.SignAllFilesCAdESDetached = function (
             lib,
