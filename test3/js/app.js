@@ -21766,6 +21766,7 @@ function dateFormatter(dateString) {
             (this.m_signInfoTmpl = null),
             (this.m_curStep = 0),
             (this.m_maxSteps = this.GetMaxSteps()),
+            (this.m_maxSteps = 2),
             this.SetFormTitle(null),
             this.SetFormHelp(null),
             this.SetFormSubTitle(null),
@@ -25872,6 +25873,11 @@ function dateFormatter(dateString) {
 
             if (files && files.length > 0) {
               this.OnSelectSignFile(files);
+            }
+
+            const signButton = document.querySelector("#signButton");
+            if (signButton && !signButton.hasAttribute("disabled")) {
+              signButton.click();
             }
           }),
           (e.prototype.SignAllFilesCAdESDetached = function (
