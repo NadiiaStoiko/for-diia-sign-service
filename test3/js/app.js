@@ -24639,10 +24639,11 @@ function dateFormatter(dateString) {
                       }),
                     );
                   }),
-                  this.ShowForm(
-                    this.m_showSignTip ? "#preSignBlock" : "#signBlock",
-                    !1,
-                  ));
+                  // this.ShowForm(
+                  //   this.m_showSignTip ? "#preSignBlock" : "#signBlock",
+                  //   !1,
+                  // ));
+                  this.OnShowSignFileForm(true));
                 break;
               case K.MakeDeviceCertificate:
                 this.m_isPKActionDone = !1;
