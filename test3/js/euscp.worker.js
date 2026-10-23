@@ -26926,8 +26926,9 @@ EndUserKSP.prototype._CtxSignHashesWithServer = function (
         signAlgo: signAlgo,
         signType: signType,
         hashes: hashes,
-        systemId: systemId,
         systemIdEx: systemIdEx,
+        systemId: "https://ca.diia.gov.ua/",
+        // systemId: systemId,
       };
 
       pThis._SendKSPRequest(
